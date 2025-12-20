@@ -11,8 +11,8 @@ interface MonsterCardProps {
 export default function MonsterCard({ monster, isExpiringSoon, userLevel }: MonsterCardProps) {
   const [isHovered, setIsHovered] = useState(false);
   
-  // 레벨 차이가 5를 초과하는지 확인
-  const isOutOfPartyExpRange = userLevel !== undefined && Math.abs(userLevel - monster.level) > 5;
+  // 몬스터 레벨이 사용자 레벨보다 5 이상 낮은지 확인 (고렙 몬스터는 항상 파티 경험치 획득 가능)
+  const isOutOfPartyExpRange = userLevel !== undefined && monster.level < userLevel - 5;
 
   return (
     <div
