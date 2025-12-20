@@ -36,10 +36,10 @@ export default function MonsterCard({ monster, isExpiringSoon }: MonsterCardProp
           unoptimized
         />
       </div>
-      <h3 className="mb-2 text-lg font-semibold text-gray-100">
+      <h3 className="mb-2 text-base font-semibold text-gray-100 sm:text-lg">
         {monster.name}
       </h3>
-      <div className="flex w-full flex-col gap-1 text-sm text-gray-400">
+      <div className="flex w-full flex-col gap-1 text-xs text-gray-400 sm:text-sm">
         <div className="flex justify-between">
           <span className="font-medium">레벨:</span>
           <span className="latin-font numeric">{monster.level}</span>

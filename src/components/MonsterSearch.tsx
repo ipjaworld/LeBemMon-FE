@@ -76,13 +76,13 @@ export default function MonsterSearch({ monsters }: MonsterSearchProps) {
   }, [level, monsters]) as MonsterWithExpiring[];
 
   return (
-    <div className="min-h-screen bg-gray-900">
-      <div className="container mx-auto px-4 py-8 sm:px-6 lg:px-8">
+    <div className="flex min-h-screen flex-col bg-gray-900">
+      <div className="container mx-auto flex-1 px-4 py-8 sm:px-6 lg:px-8">
         <div className="mb-8 text-center">
-          <h1 className="mb-4 text-4xl font-bold text-gray-100 sm:text-5xl">
+          <h1 className="mb-4 text-3xl font-bold text-gray-100 sm:text-4xl md:text-5xl">
             메이플랜드 레범몬
           </h1>
-          <p className="text-lg text-gray-400">
+          <p className="text-base text-gray-400 sm:text-lg">
             레벨을 입력하면 해당 레벨 ±10 범위의 몬스터를 확인할 수 있습니다
           </p>
         </div>
@@ -147,7 +147,9 @@ export default function MonsterSearch({ monsters }: MonsterSearchProps) {
           </div>
         )}
       </div>
-      <Footer />
+      <div className="mt-auto">
+        <Footer />
+      </div>
     </div>
   );
 }
