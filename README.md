@@ -1,36 +1,37 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 메이플랜드 레범몬
 
-## Getting Started
+메이플스토리월드 메이플랜드 레벨 범위 몬스터 검색 서비스
 
-First, run the development server:
+## 기능
+
+- 레벨 입력 시 해당 레벨 ±10 범위의 몬스터 검색
+- 레벨 80 이상일 경우 70 이상 몬스터도 포함
+- 곧 레범몬이 아니게 될 몬스터 표시
+
+## 기술 스택
+
+- Next.js 16.1.0
+- React 19
+- TypeScript
+- Tailwind CSS 4
+
+## 개발
 
 ```bash
+# 개발 서버 실행
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+# 프로덕션 빌드
+npm run build
+
+# 프로덕션 서버 실행
+npm start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 배포
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+이 프로젝트는 [Vercel](https://vercel.com)에 배포되어 있습니다.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 문의
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+오류 제보 및 제안: [ipjaworld@gmail.com](mailto:ipjaworld@gmail.com)

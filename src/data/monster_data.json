@@ -1,0 +1,5591 @@
+[
+  {
+    "id": "100100",
+    "name": "달팽이",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/100100/icon?resize=2",
+    "level": 1,
+    "hp": 8,
+    "exp": 3,
+    "isReleased": true
+  },
+  {
+    "id": "9500400",
+    "name": "박",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9500400/icon?resize=2",
+    "level": 1,
+    "hp": 10000,
+    "exp": 0,
+    "isReleased": false
+  },
+  {
+    "id": "9409000",
+    "name": "튜토리얼Mob1",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9409000/icon?resize=2",
+    "level": 1,
+    "hp": 8,
+    "exp": 1,
+    "isReleased": false
+  },
+  {
+    "id": "9409001",
+    "name": "튜토리얼Mob2",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9409001/icon?resize=2",
+    "level": 1,
+    "hp": 8,
+    "exp": 1,
+    "isReleased": false
+  },
+  {
+    "id": "120100",
+    "name": "스포아",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/120100/icon?resize=2",
+    "level": 2,
+    "hp": 20,
+    "exp": 5,
+    "isReleased": true
+  },
+  {
+    "id": "100101",
+    "name": "파란 달팽이",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/100101/icon?resize=2",
+    "level": 2,
+    "hp": 15,
+    "exp": 4,
+    "isReleased": true
+  },
+  {
+    "id": "130101",
+    "name": "빨간 달팽이",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/130101/icon?resize=2",
+    "level": 4,
+    "hp": 40,
+    "exp": 8,
+    "isReleased": true
+  },
+  {
+    "id": "130100",
+    "name": "스텀프",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/130100/icon?resize=2",
+    "level": 4,
+    "hp": 45,
+    "exp": 8,
+    "isReleased": true
+  },
+  {
+    "id": "9500302",
+    "name": "호박밭의 잭오랜턴",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9500302/icon?resize=2",
+    "level": 5,
+    "hp": 50,
+    "exp": 0,
+    "isReleased": false
+  },
+  {
+    "id": "210100",
+    "name": "슬라임",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/210100/icon?resize=2",
+    "level": 6,
+    "hp": 50,
+    "exp": 10,
+    "isReleased": true
+  },
+  {
+    "id": "9500203",
+    "name": "Zoo 돼지",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9500203/icon?resize=2",
+    "level": 7,
+    "hp": 10000,
+    "exp": 10,
+    "isReleased": false
+  },
+  {
+    "id": "1210100",
+    "name": "돼지",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/1210100/icon?resize=2",
+    "level": 7,
+    "hp": 75,
+    "exp": 15,
+    "isReleased": true
+  },
+  {
+    "id": "9420001",
+    "name": "개구리",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9420001/icon?resize=2",
+    "level": 8,
+    "hp": 75,
+    "exp": 17,
+    "isReleased": true
+  },
+  {
+    "id": "1210102",
+    "name": "주황버섯",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/1210102/icon?resize=2",
+    "level": 8,
+    "hp": 80,
+    "exp": 15,
+    "isReleased": true
+  },
+  {
+    "id": "9500204",
+    "name": "Zoo 리본돼지",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9500204/icon?resize=2",
+    "level": 10,
+    "hp": 10000,
+    "exp": 10,
+    "isReleased": false
+  },
+  {
+    "id": "9300156",
+    "name": "검은 마법사의 수하",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300156/icon?resize=2",
+    "level": 10,
+    "hp": 300,
+    "exp": 15,
+    "isReleased": false
+  },
+  {
+    "id": "9500320",
+    "name": "길잃은 루돌프",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9500320/icon?resize=2",
+    "level": 10,
+    "hp": 50,
+    "exp": 0,
+    "isReleased": false
+  },
+  {
+    "id": "9500317",
+    "name": "꼬마 눈사람",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9500317/icon?resize=2",
+    "level": 10,
+    "hp": 3000,
+    "exp": 20,
+    "isReleased": false
+  },
+  {
+    "id": "9500321",
+    "name": "눈사람",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9500321/icon?resize=2",
+    "level": 10,
+    "hp": 600,
+    "exp": 0,
+    "isReleased": false
+  },
+  {
+    "id": "1110101",
+    "name": "다크 스텀프",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/1110101/icon?resize=2",
+    "level": 10,
+    "hp": 250,
+    "exp": 18,
+    "isReleased": true
+  },
+  {
+    "id": "2130100",
+    "name": "다크 엑스텀프",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/2130100/icon?resize=2",
+    "level": 10,
+    "hp": 550,
+    "exp": 38,
+    "isReleased": true
+  },
+  {
+    "id": "1210101",
+    "name": "리본 돼지",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/1210101/icon?resize=2",
+    "level": 10,
+    "hp": 120,
+    "exp": 20,
+    "isReleased": true
+  },
+  {
+    "id": "9400513",
+    "name": "웨딩캔들",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9400513/icon?resize=2",
+    "level": 10,
+    "hp": 250,
+    "exp": 20,
+    "isReleased": false
+  },
+  {
+    "id": "9500197",
+    "name": "유령",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9500197/icon?resize=2",
+    "level": 10,
+    "hp": 50,
+    "exp": 0,
+    "isReleased": false
+  },
+  {
+    "id": "9500195",
+    "name": "잭오랜턴",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9500195/icon?resize=2",
+    "level": 10,
+    "hp": 10,
+    "exp": 16,
+    "isReleased": false
+  },
+  {
+    "id": "9500305",
+    "name": "잭오랜턴",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9500305/icon?resize=2",
+    "level": 10,
+    "hp": 10,
+    "exp": 0,
+    "isReleased": false
+  },
+  {
+    "id": "9500144",
+    "name": "코-크 달팽이",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9500144/icon?resize=2",
+    "level": 10,
+    "hp": 120,
+    "exp": 19,
+    "isReleased": false
+  },
+  {
+    "id": "9500167",
+    "name": "황금돼지",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9500167/icon?resize=2",
+    "level": 10,
+    "hp": 120,
+    "exp": 20,
+    "isReleased": false
+  },
+  {
+    "id": "9300064",
+    "name": "도깨비불",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300064/icon?resize=2",
+    "level": 11,
+    "hp": 155,
+    "exp": 22,
+    "isReleased": false
+  },
+  {
+    "id": "1120100",
+    "name": "옥토퍼스",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/1120100/icon?resize=2",
+    "level": 12,
+    "hp": 200,
+    "exp": 24,
+    "isReleased": true
+  },
+  {
+    "id": "9500184",
+    "name": "라이드워드",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9500184/icon?resize=2",
+    "level": 15,
+    "hp": 15,
+    "exp": 20,
+    "isReleased": false
+  },
+  {
+    "id": "9500186",
+    "name": "라이드워드B",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9500186/icon?resize=2",
+    "level": 15,
+    "hp": 15,
+    "exp": 20,
+    "isReleased": false
+  },
+  {
+    "id": "9500185",
+    "name": "라이드워드Y",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9500185/icon?resize=2",
+    "level": 15,
+    "hp": 15,
+    "exp": 20,
+    "isReleased": false
+  },
+  {
+    "id": "1210103",
+    "name": "버블링",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/1210103/icon?resize=2",
+    "level": 15,
+    "hp": 240,
+    "exp": 26,
+    "isReleased": true
+  },
+  {
+    "id": "9500196",
+    "name": "유령",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9500196/icon?resize=2",
+    "level": 15,
+    "hp": 15,
+    "exp": 16,
+    "isReleased": false
+  },
+  {
+    "id": "1110100",
+    "name": "초록버섯",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/1110100/icon?resize=2",
+    "level": 15,
+    "hp": 250,
+    "exp": 26,
+    "isReleased": true
+  },
+  {
+    "id": "9500151",
+    "name": "코-크 슬라임",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9500151/icon?resize=2",
+    "level": 15,
+    "hp": 240,
+    "exp": 26,
+    "isReleased": false
+  },
+  {
+    "id": "9420005",
+    "name": "흰 닭",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9420005/icon?resize=2",
+    "level": 15,
+    "hp": 230,
+    "exp": 28,
+    "isReleased": true
+  },
+  {
+    "id": "9500191",
+    "name": "고스트",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9500191/icon?resize=2",
+    "level": 16,
+    "hp": 20,
+    "exp": 20,
+    "isReleased": false
+  },
+  {
+    "id": "1130100",
+    "name": "엑스텀프",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/1130100/icon?resize=2",
+    "level": 17,
+    "hp": 300,
+    "exp": 30,
+    "isReleased": true
+  },
+  {
+    "id": "1140100",
+    "name": "고스텀프",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/1140100/icon?resize=2",
+    "level": 19,
+    "hp": 330,
+    "exp": 33,
+    "isReleased": true
+  },
+  {
+    "id": "9400538",
+    "name": "길거리 슬라임",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9400538/icon?resize=2",
+    "level": 19,
+    "hp": 320,
+    "exp": 35,
+    "isReleased": false
+  },
+  {
+    "id": "9500194",
+    "name": "거울 유령",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9500194/icon?resize=2",
+    "level": 20,
+    "hp": 350,
+    "exp": 1,
+    "isReleased": false
+  },
+  {
+    "id": "9500303",
+    "name": "거울 유령2",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9500303/icon?resize=2",
+    "level": 20,
+    "hp": 350,
+    "exp": 1,
+    "isReleased": false
+  },
+  {
+    "id": "9500304",
+    "name": "거울 유령3",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9500304/icon?resize=2",
+    "level": 20,
+    "hp": 350,
+    "exp": 1,
+    "isReleased": false
+  },
+  {
+    "id": "9600001",
+    "name": "닭",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9600001/icon?resize=2",
+    "level": 20,
+    "hp": 340,
+    "exp": 33,
+    "isReleased": true
+  },
+  {
+    "id": "9500187",
+    "name": "망가진 인형",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9500187/icon?resize=2",
+    "level": 20,
+    "hp": 20,
+    "exp": 25,
+    "isReleased": false
+  },
+  {
+    "id": "9500188",
+    "name": "부서진 인형",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9500188/icon?resize=2",
+    "level": 20,
+    "hp": 20,
+    "exp": 25,
+    "isReleased": false
+  },
+  {
+    "id": "2300100",
+    "name": "스티지",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/2300100/icon?resize=2",
+    "level": 20,
+    "hp": 300,
+    "exp": 33,
+    "isReleased": true
+  },
+  {
+    "id": "9500152",
+    "name": "코-크 버섯",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9500152/icon?resize=2",
+    "level": 20,
+    "hp": 350,
+    "exp": 32,
+    "isReleased": false
+  },
+  {
+    "id": "2220100",
+    "name": "파란버섯",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/2220100/icon?resize=2",
+    "level": 20,
+    "hp": 350,
+    "exp": 32,
+    "isReleased": true
+  },
+  {
+    "id": "2100100",
+    "name": "흰 모래토끼",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/2100100/icon?resize=2",
+    "level": 20,
+    "hp": 350,
+    "exp": 32,
+    "isReleased": true
+  },
+  {
+    "id": "2100101",
+    "name": "갈색 모래토끼",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/2100101/icon?resize=2",
+    "level": 21,
+    "hp": 400,
+    "exp": 34,
+    "isReleased": true
+  },
+  {
+    "id": "9400539",
+    "name": "도심가 버섯",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9400539/icon?resize=2",
+    "level": 21,
+    "hp": 350,
+    "exp": 37,
+    "isReleased": false
+  },
+  {
+    "id": "2130103",
+    "name": "주니어 네키",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/2130103/icon?resize=2",
+    "level": 21,
+    "hp": 285,
+    "exp": 38,
+    "isReleased": true
+  },
+  {
+    "id": "2110200",
+    "name": "뿔버섯",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/2110200/icon?resize=2",
+    "level": 22,
+    "hp": 300,
+    "exp": 35,
+    "isReleased": true
+  },
+  {
+    "id": "9600002",
+    "name": "오리",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9600002/icon?resize=2",
+    "level": 22,
+    "hp": 380,
+    "exp": 37,
+    "isReleased": true
+  },
+  {
+    "id": "2100102",
+    "name": "주니어 카투스",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/2100102/icon?resize=2",
+    "level": 22,
+    "hp": 450,
+    "exp": 37,
+    "isReleased": true
+  },
+  {
+    "id": "2230108",
+    "name": "핀붐",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/2230108/icon?resize=2",
+    "level": 22,
+    "hp": 400,
+    "exp": 36,
+    "isReleased": true
+  },
+  {
+    "id": "9410000",
+    "name": "들개",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9410000/icon?resize=2",
+    "level": 23,
+    "hp": 500,
+    "exp": 40,
+    "isReleased": true
+  },
+  {
+    "id": "2100105",
+    "name": "벨라모아",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/2100105/icon?resize=2",
+    "level": 23,
+    "hp": 500,
+    "exp": 42,
+    "isReleased": true
+  },
+  {
+    "id": "2230105",
+    "name": "씨클",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/2230105/icon?resize=2",
+    "level": 23,
+    "hp": 500,
+    "exp": 42,
+    "isReleased": true
+  },
+  {
+    "id": "9300027",
+    "name": "악마 슬라임",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300027/icon?resize=2",
+    "level": 23,
+    "hp": 1000,
+    "exp": 170,
+    "isReleased": false
+  },
+  {
+    "id": "2230110",
+    "name": "우드 마스크",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/2230110/icon?resize=2",
+    "level": 23,
+    "hp": 500,
+    "exp": 42,
+    "isReleased": true
+  },
+  {
+    "id": "5200000",
+    "name": "주니어 스톤볼",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/5200000/icon?resize=2",
+    "level": 23,
+    "hp": 600,
+    "exp": 40,
+    "isReleased": true
+  },
+  {
+    "id": "9500325",
+    "name": "킹슬라임",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9500325/icon?resize=2",
+    "level": 23,
+    "hp": 5000,
+    "exp": 210,
+    "isReleased": false
+  },
+  {
+    "id": "2230103",
+    "name": "트릭스터",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/2230103/icon?resize=2",
+    "level": 23,
+    "hp": 450,
+    "exp": 42,
+    "isReleased": true
+  },
+  {
+    "id": "2100106",
+    "name": "귀마개 프릴드",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/2100106/icon?resize=2",
+    "level": 24,
+    "hp": 550,
+    "exp": 45,
+    "isReleased": true
+  },
+  {
+    "id": "2110300",
+    "name": "모래 두더지",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/2110300/icon?resize=2",
+    "level": 24,
+    "hp": 600,
+    "exp": 55,
+    "isReleased": true
+  },
+  {
+    "id": "2230111",
+    "name": "스톤 마스크",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/2230111/icon?resize=2",
+    "level": 24,
+    "hp": 600,
+    "exp": 45,
+    "isReleased": true
+  },
+  {
+    "id": "2230101",
+    "name": "좀비버섯",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/2230101/icon?resize=2",
+    "level": 24,
+    "hp": 500,
+    "exp": 42,
+    "isReleased": true
+  },
+  {
+    "id": "2230107",
+    "name": "크라피",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/2230107/icon?resize=2",
+    "level": 24,
+    "hp": 500,
+    "exp": 45,
+    "isReleased": true
+  },
+  {
+    "id": "9400000",
+    "name": "까마귀",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9400000/icon?resize=2",
+    "level": 25,
+    "hp": 400,
+    "exp": 42,
+    "isReleased": false
+  },
+  {
+    "id": "9420004",
+    "name": "노란 도마뱀",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9420004/icon?resize=2",
+    "level": 25,
+    "hp": 500,
+    "exp": 46,
+    "isReleased": true
+  },
+  {
+    "id": "9410001",
+    "name": "멋쟁이 들개",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9410001/icon?resize=2",
+    "level": 25,
+    "hp": 550,
+    "exp": 43,
+    "isReleased": true
+  },
+  {
+    "id": "2230106",
+    "name": "씨코",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/2230106/icon?resize=2",
+    "level": 25,
+    "hp": 550,
+    "exp": 42,
+    "isReleased": true
+  },
+  {
+    "id": "9600003",
+    "name": "양",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9600003/icon?resize=2",
+    "level": 25,
+    "hp": 550,
+    "exp": 42,
+    "isReleased": true
+  },
+  {
+    "id": "2230102",
+    "name": "와일드보어",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/2230102/icon?resize=2",
+    "level": 25,
+    "hp": 550,
+    "exp": 42,
+    "isReleased": true
+  },
+  {
+    "id": "2100103",
+    "name": "카투스",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/2100103/icon?resize=2",
+    "level": 25,
+    "hp": 550,
+    "exp": 47,
+    "isReleased": true
+  },
+  {
+    "id": "9500153",
+    "name": "코-크텀프",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9500153/icon?resize=2",
+    "level": 25,
+    "hp": 560,
+    "exp": 43,
+    "isReleased": false
+  },
+  {
+    "id": "9400540",
+    "name": "킬라 비",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9400540/icon?resize=2",
+    "level": 25,
+    "hp": 730,
+    "exp": 60,
+    "isReleased": false
+  },
+  {
+    "id": "9400400",
+    "name": "하급닌자",
+    "imageUrl": "https://maplestory.io/api/gms/92/mob/9400400/icon?resize=2",
+    "level": 25,
+    "hp": 600,
+    "exp": 75,
+    "isReleased": true
+  },
+  {
+    "id": "2100107",
+    "name": "목도리 프릴드",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/2100107/icon?resize=2",
+    "level": 27,
+    "hp": 700,
+    "exp": 50,
+    "isReleased": true
+  },
+  {
+    "id": "9400547",
+    "name": "부머",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9400547/icon?resize=2",
+    "level": 27,
+    "hp": 700,
+    "exp": 55,
+    "isReleased": false
+  },
+  {
+    "id": "2230100",
+    "name": "이블아이",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/2230100/icon?resize=2",
+    "level": 27,
+    "hp": 720,
+    "exp": 50,
+    "isReleased": true
+  },
+  {
+    "id": "2230104",
+    "name": "그린 트릭스터",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/2230104/icon?resize=2",
+    "level": 28,
+    "hp": 780,
+    "exp": 55,
+    "isReleased": true
+  },
+  {
+    "id": "9420000",
+    "name": "두꺼비",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9420000/icon?resize=2",
+    "level": 28,
+    "hp": 720,
+    "exp": 58,
+    "isReleased": true
+  },
+  {
+    "id": "2100104",
+    "name": "로얄 카투스",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/2100104/icon?resize=2",
+    "level": 28,
+    "hp": 750,
+    "exp": 55,
+    "isReleased": true
+  },
+  {
+    "id": "2230109",
+    "name": "버블피쉬",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/2230109/icon?resize=2",
+    "level": 28,
+    "hp": 740,
+    "exp": 52,
+    "isReleased": true
+  },
+  {
+    "id": "2100108",
+    "name": "미요캐츠",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/2100108/icon?resize=2",
+    "level": 29,
+    "hp": 780,
+    "exp": 58,
+    "isReleased": true
+  },
+  {
+    "id": "2110301",
+    "name": "스콜피언",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/2110301/icon?resize=2",
+    "level": 29,
+    "hp": 780,
+    "exp": 58,
+    "isReleased": true
+  },
+  {
+    "id": "2230200",
+    "name": "플라워 피쉬",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/2230200/icon?resize=2",
+    "level": 29,
+    "hp": 790,
+    "exp": 58,
+    "isReleased": true
+  },
+  {
+    "id": "9400002",
+    "name": "구름여우",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9400002/icon?resize=2",
+    "level": 30,
+    "hp": 920,
+    "exp": 55,
+    "isReleased": false
+  },
+  {
+    "id": "9300129",
+    "name": "레츠",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300129/icon?resize=2",
+    "level": 30,
+    "hp": 1600,
+    "exp": 115,
+    "isReleased": false
+  },
+  {
+    "id": "9300133",
+    "name": "로보토이",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300133/icon?resize=2",
+    "level": 30,
+    "hp": 3000,
+    "exp": 120,
+    "isReleased": false
+  },
+  {
+    "id": "9300135",
+    "name": "마스터 크로노스",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300135/icon?resize=2",
+    "level": 30,
+    "hp": 3000,
+    "exp": 153,
+    "isReleased": false
+  },
+  {
+    "id": "9400548",
+    "name": "마이티 메이플 이터",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9400548/icon?resize=2",
+    "level": 30,
+    "hp": 950,
+    "exp": 65,
+    "isReleased": false
+  },
+  {
+    "id": "3230400",
+    "name": "북치는 토끼",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/3230400/icon?resize=2",
+    "level": 30,
+    "hp": 950,
+    "exp": 60,
+    "isReleased": true
+  },
+  {
+    "id": "9400001",
+    "name": "불너구리",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9400001/icon?resize=2",
+    "level": 30,
+    "hp": 1200,
+    "exp": 55,
+    "isReleased": false
+  },
+  {
+    "id": "9300127",
+    "name": "브라운테니",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300127/icon?resize=2",
+    "level": 30,
+    "hp": 1800,
+    "exp": 110,
+    "isReleased": false
+  },
+  {
+    "id": "9300128",
+    "name": "블록퍼스",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300128/icon?resize=2",
+    "level": 30,
+    "hp": 1800,
+    "exp": 113,
+    "isReleased": false
+  },
+  {
+    "id": "9500189",
+    "name": "선물상자",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9500189/icon?resize=2",
+    "level": 30,
+    "hp": 100,
+    "exp": 50,
+    "isReleased": false
+  },
+  {
+    "id": "3000000",
+    "name": "스톤볼",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/3000000/icon?resize=2",
+    "level": 30,
+    "hp": 900,
+    "exp": 55,
+    "isReleased": true
+  },
+  {
+    "id": "9100013",
+    "name": "아딘의 분신",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9100013/icon?resize=2",
+    "level": 30,
+    "hp": 8000,
+    "exp": 100,
+    "isReleased": false
+  },
+  {
+    "id": "9400404",
+    "name": "아시가루",
+    "imageUrl": "https://maplestory.io/api/gms/92/mob/9400404/icon?resize=2",
+    "level": 30,
+    "hp": 950,
+    "exp": 100,
+    "isReleased": true
+  },
+  {
+    "id": "5200001",
+    "name": "아이스 스톤볼",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/5200001/icon?resize=2",
+    "level": 30,
+    "hp": 900,
+    "exp": 55,
+    "isReleased": true
+  },
+  {
+    "id": "9600004",
+    "name": "염소",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9600004/icon?resize=2",
+    "level": 30,
+    "hp": 900,
+    "exp": 58,
+    "isReleased": true
+  },
+  {
+    "id": "9300061",
+    "name": "월묘",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300061/icon?resize=2",
+    "level": 30,
+    "hp": 5000,
+    "exp": 0,
+    "isReleased": false
+  },
+  {
+    "id": "9500154",
+    "name": "코-크텀프 라이트",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9500154/icon?resize=2",
+    "level": 30,
+    "hp": 930,
+    "exp": 56,
+    "isReleased": false
+  },
+  {
+    "id": "9300130",
+    "name": "크로노스",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300130/icon?resize=2",
+    "level": 30,
+    "hp": 2300,
+    "exp": 113,
+    "isReleased": false
+  },
+  {
+    "id": "3000006",
+    "name": "크립",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/3000006/icon?resize=2",
+    "level": 30,
+    "hp": 900,
+    "exp": 55,
+    "isReleased": true
+  },
+  {
+    "id": "3100102",
+    "name": "키요",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/3100102/icon?resize=2",
+    "level": 30,
+    "hp": 870,
+    "exp": 60,
+    "isReleased": true
+  },
+  {
+    "id": "9300134",
+    "name": "킹 블록골렘",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300134/icon?resize=2",
+    "level": 30,
+    "hp": 3300,
+    "exp": 135,
+    "isReleased": false
+  },
+  {
+    "id": "9300093",
+    "name": "타일러스",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300093/icon?resize=2",
+    "level": 30,
+    "hp": 100000,
+    "exp": 0,
+    "isReleased": false
+  },
+  {
+    "id": "9300132",
+    "name": "틱톡",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300132/icon?resize=2",
+    "level": 30,
+    "hp": 2400,
+    "exp": 117,
+    "isReleased": false
+  },
+  {
+    "id": "5200002",
+    "name": "파이어 스톤볼",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/5200002/icon?resize=2",
+    "level": 30,
+    "hp": 900,
+    "exp": 55,
+    "isReleased": true
+  },
+  {
+    "id": "3000001",
+    "name": "페어리",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/3000001/icon?resize=2",
+    "level": 30,
+    "hp": 800,
+    "exp": 120,
+    "isReleased": true
+  },
+  {
+    "id": "9300180",
+    "name": "포이즌 골렘",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300180/icon?resize=2",
+    "level": 30,
+    "hp": 10000,
+    "exp": 0,
+    "isReleased": false
+  },
+  {
+    "id": "3230307",
+    "name": "처프",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/3230307/icon?resize=2",
+    "level": 31,
+    "hp": 800,
+    "exp": 62,
+    "isReleased": true
+  },
+  {
+    "id": "3110102",
+    "name": "라츠",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/3110102/icon?resize=2",
+    "level": 32,
+    "hp": 1000,
+    "exp": 65,
+    "isReleased": true
+  },
+  {
+    "id": "3110100",
+    "name": "리게이터",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/3110100/icon?resize=2",
+    "level": 32,
+    "hp": 1200,
+    "exp": 60,
+    "isReleased": true
+  },
+  {
+    "id": "5300000",
+    "name": "리티",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/5300000/icon?resize=2",
+    "level": 32,
+    "hp": 1000,
+    "exp": 60,
+    "isReleased": true
+  },
+  {
+    "id": "3230104",
+    "name": "마스크피쉬",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/3230104/icon?resize=2",
+    "level": 32,
+    "hp": 1000,
+    "exp": 65,
+    "isReleased": true
+  },
+  {
+    "id": "3100101",
+    "name": "모래난쟁이",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/3100101/icon?resize=2",
+    "level": 32,
+    "hp": 1000,
+    "exp": 60,
+    "isReleased": true
+  },
+  {
+    "id": "3110301",
+    "name": "붉은 모래난쟁이",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/3110301/icon?resize=2",
+    "level": 32,
+    "hp": 1000,
+    "exp": 62,
+    "isReleased": true
+  },
+  {
+    "id": "9300005",
+    "name": "차원의 라츠",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300005/icon?resize=2",
+    "level": 32,
+    "hp": 3700,
+    "exp": 260,
+    "isReleased": false
+  },
+  {
+    "id": "3110300",
+    "name": "큐브슬라임",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/3110300/icon?resize=2",
+    "level": 32,
+    "hp": 1000,
+    "exp": 62,
+    "isReleased": true
+  },
+  {
+    "id": "3210100",
+    "name": "파이어보어",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/3210100/icon?resize=2",
+    "level": 32,
+    "hp": 1000,
+    "exp": 60,
+    "isReleased": true
+  },
+  {
+    "id": "3110101",
+    "name": "핑크테니",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/3110101/icon?resize=2",
+    "level": 32,
+    "hp": 1050,
+    "exp": 65,
+    "isReleased": true
+  },
+  {
+    "id": "5300001",
+    "name": "다크 리티",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/5300001/icon?resize=2",
+    "level": 33,
+    "hp": 1100,
+    "exp": 65,
+    "isReleased": true
+  },
+  {
+    "id": "9600006",
+    "name": "소",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9600006/icon?resize=2",
+    "level": 33,
+    "hp": 1200,
+    "exp": 66,
+    "isReleased": true
+  },
+  {
+    "id": "3210202",
+    "name": "주니어 그류핀",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/3210202/icon?resize=2",
+    "level": 33,
+    "hp": 1100,
+    "exp": 65,
+    "isReleased": true
+  },
+  {
+    "id": "3210201",
+    "name": "주니어 라이오너",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/3210201/icon?resize=2",
+    "level": 33,
+    "hp": 1100,
+    "exp": 65,
+    "isReleased": true
+  },
+  {
+    "id": "3210200",
+    "name": "주니어 샐리온",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/3210200/icon?resize=2",
+    "level": 33,
+    "hp": 1100,
+    "exp": 65,
+    "isReleased": true
+  },
+  {
+    "id": "3210204",
+    "name": "더키 패밀리",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/3210204/icon?resize=2",
+    "level": 34,
+    "hp": 1200,
+    "exp": 70,
+    "isReleased": true
+  },
+  {
+    "id": "3210205",
+    "name": "블랙 라츠",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/3210205/icon?resize=2",
+    "level": 34,
+    "hp": 1150,
+    "exp": 70,
+    "isReleased": true
+  },
+  {
+    "id": "9300006",
+    "name": "차원의 블랙 라츠",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300006/icon?resize=2",
+    "level": 34,
+    "hp": 4300,
+    "exp": 280,
+    "isReleased": false
+  },
+  {
+    "id": "9300170",
+    "name": "차원의 블랙라츠",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300170/icon?resize=2",
+    "level": 34,
+    "hp": 4300,
+    "exp": 280,
+    "isReleased": false
+  },
+  {
+    "id": "3210207",
+    "name": "티키",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/3210207/icon?resize=2",
+    "level": 34,
+    "hp": 1100,
+    "exp": 70,
+    "isReleased": true
+  },
+  {
+    "id": "9000300",
+    "name": "늪지괴물",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9000300/icon?resize=2",
+    "level": 35,
+    "hp": 800,
+    "exp": 0,
+    "isReleased": false
+  },
+  {
+    "id": "3110302",
+    "name": "루모",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/3110302/icon?resize=2",
+    "level": 35,
+    "hp": 1400,
+    "exp": 75,
+    "isReleased": true
+  },
+  {
+    "id": "9000101",
+    "name": "루팡",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9000101/icon?resize=2",
+    "level": 35,
+    "hp": 800,
+    "exp": 0,
+    "isReleased": false
+  },
+  {
+    "id": "6130104",
+    "name": "부기",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/6130104/icon?resize=2",
+    "level": 35,
+    "hp": 14800,
+    "exp": 400,
+    "isReleased": true
+  },
+  {
+    "id": "9001007",
+    "name": "수련용 허수아비",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9001007/icon?resize=2",
+    "level": 35,
+    "hp": 800,
+    "exp": 0,
+    "isReleased": false
+  },
+  {
+    "id": "9500182",
+    "name": "수박파수꾼 호걸",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9500182/icon?resize=2",
+    "level": 35,
+    "hp": 330000000,
+    "exp": 35,
+    "isReleased": false
+  },
+  {
+    "id": "9000100",
+    "name": "스켈독",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9000100/icon?resize=2",
+    "level": 35,
+    "hp": 600,
+    "exp": 0,
+    "isReleased": false
+  },
+  {
+    "id": "3230200",
+    "name": "스타픽시",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/3230200/icon?resize=2",
+    "level": 35,
+    "hp": 1300,
+    "exp": 72,
+    "isReleased": true
+  },
+  {
+    "id": "3220000",
+    "name": "스텀피",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/3220000/icon?resize=2",
+    "level": 35,
+    "hp": 7000,
+    "exp": 405,
+    "isReleased": true
+  },
+  {
+    "id": "9000201",
+    "name": "스톤골렘",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9000201/icon?resize=2",
+    "level": 35,
+    "hp": 600,
+    "exp": 0,
+    "isReleased": false
+  },
+  {
+    "id": "9000200",
+    "name": "이블아이",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9000200/icon?resize=2",
+    "level": 35,
+    "hp": 800,
+    "exp": 0,
+    "isReleased": false
+  },
+  {
+    "id": "9000001",
+    "name": "좀비루팡",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9000001/icon?resize=2",
+    "level": 35,
+    "hp": 800,
+    "exp": 0,
+    "isReleased": false
+  },
+  {
+    "id": "3230101",
+    "name": "주니어 레이스",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/3230101/icon?resize=2",
+    "level": 35,
+    "hp": 1200,
+    "exp": 70,
+    "isReleased": true
+  },
+  {
+    "id": "3230300",
+    "name": "주니어 부기",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/3230300/icon?resize=2",
+    "level": 35,
+    "hp": 1700,
+    "exp": 150,
+    "isReleased": true
+  },
+  {
+    "id": "5400000",
+    "name": "주니어 페페",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/5400000/icon?resize=2",
+    "level": 35,
+    "hp": 1400,
+    "exp": 75,
+    "isReleased": true
+  },
+  {
+    "id": "9300007",
+    "name": "차원의 블록퍼스",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300007/icon?resize=2",
+    "level": 35,
+    "hp": 4900,
+    "exp": 288,
+    "isReleased": false
+  },
+  {
+    "id": "3230100",
+    "name": "커즈아이",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/3230100/icon?resize=2",
+    "level": 35,
+    "hp": 1250,
+    "exp": 70,
+    "isReleased": true
+  },
+  {
+    "id": "9500143",
+    "name": "코-크 돼지",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9500143/icon?resize=2",
+    "level": 35,
+    "hp": 1400,
+    "exp": 72,
+    "isReleased": false
+  },
+  {
+    "id": "9500328",
+    "name": "크림슨발록",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9500328/icon?resize=2",
+    "level": 35,
+    "hp": 13000,
+    "exp": 360,
+    "isReleased": false
+  },
+  {
+    "id": "9000301",
+    "name": "파란 버섯",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9000301/icon?resize=2",
+    "level": 35,
+    "hp": 600,
+    "exp": 0,
+    "isReleased": false
+  },
+  {
+    "id": "9001005",
+    "name": "파이렛옥토",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9001005/icon?resize=2",
+    "level": 35,
+    "hp": 800,
+    "exp": 0,
+    "isReleased": false
+  },
+  {
+    "id": "9001006",
+    "name": "파이렛옥토",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9001006/icon?resize=2",
+    "level": 35,
+    "hp": 800,
+    "exp": 0,
+    "isReleased": false
+  },
+  {
+    "id": "9300166",
+    "name": "폭탄",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300166/icon?resize=2",
+    "level": 35,
+    "hp": 10000,
+    "exp": 0,
+    "isReleased": false
+  },
+  {
+    "id": "9600005",
+    "name": "흑염소",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9600005/icon?resize=2",
+    "level": 35,
+    "hp": 1250,
+    "exp": 71,
+    "isReleased": true
+  },
+  {
+    "id": "3210450",
+    "name": "스쿠버 페페",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/3210450/icon?resize=2",
+    "level": 36,
+    "hp": 1430,
+    "exp": 80,
+    "isReleased": true
+  },
+  {
+    "id": "9410009",
+    "name": "예티 인형",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9410009/icon?resize=2",
+    "level": 36,
+    "hp": 1550,
+    "exp": 81,
+    "isReleased": true
+  },
+  {
+    "id": "9410011",
+    "name": "주니어페페 인형",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9410011/icon?resize=2",
+    "level": 36,
+    "hp": 1400,
+    "exp": 81,
+    "isReleased": true
+  },
+  {
+    "id": "3210206",
+    "name": "치크세이버",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/3210206/icon?resize=2",
+    "level": 36,
+    "hp": 1350,
+    "exp": 77,
+    "isReleased": true
+  },
+  {
+    "id": "9400542",
+    "name": "파이어 터스크",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9400542/icon?resize=2",
+    "level": 36,
+    "hp": 1450,
+    "exp": 85,
+    "isReleased": false
+  },
+  {
+    "id": "3210203",
+    "name": "팬더테니",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/3210203/icon?resize=2",
+    "level": 36,
+    "hp": 1400,
+    "exp": 77,
+    "isReleased": true
+  },
+  {
+    "id": "9600008",
+    "name": "검은 양",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9600008/icon?resize=2",
+    "level": 37,
+    "hp": 1500,
+    "exp": 79,
+    "isReleased": true
+  },
+  {
+    "id": "3230102",
+    "name": "로랑",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/3230102/icon?resize=2",
+    "level": 37,
+    "hp": 1950,
+    "exp": 80,
+    "isReleased": true
+  },
+  {
+    "id": "3210800",
+    "name": "루팡",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/3210800/icon?resize=2",
+    "level": 37,
+    "hp": 1500,
+    "exp": 77,
+    "isReleased": true
+  },
+  {
+    "id": "3230303",
+    "name": "핑크세이버",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/3230303/icon?resize=2",
+    "level": 37,
+    "hp": 1700,
+    "exp": 82,
+    "isReleased": true
+  },
+  {
+    "id": "9410007",
+    "name": "그린 버블티",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9410007/icon?resize=2",
+    "level": 38,
+    "hp": 1900,
+    "exp": 90,
+    "isReleased": true
+  },
+  {
+    "id": "3220001",
+    "name": "데우",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/3220001/icon?resize=2",
+    "level": 38,
+    "hp": 7700,
+    "exp": 445,
+    "isReleased": true
+  },
+  {
+    "id": "9410005",
+    "name": "레드 버블티",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9410005/icon?resize=2",
+    "level": 38,
+    "hp": 1900,
+    "exp": 90,
+    "isReleased": true
+  },
+  {
+    "id": "3230304",
+    "name": "스카이세이버",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/3230304/icon?resize=2",
+    "level": 38,
+    "hp": 1830,
+    "exp": 85,
+    "isReleased": true
+  },
+  {
+    "id": "9410006",
+    "name": "옐로우 버블티",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9410006/icon?resize=2",
+    "level": 38,
+    "hp": 1900,
+    "exp": 90,
+    "isReleased": true
+  },
+  {
+    "id": "9600007",
+    "name": "쟁기소",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9600007/icon?resize=2",
+    "level": 38,
+    "hp": 1800,
+    "exp": 86,
+    "isReleased": true
+  },
+  {
+    "id": "3230405",
+    "name": "주니어 씰",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/3230405/icon?resize=2",
+    "level": 38,
+    "hp": 1850,
+    "exp": 85,
+    "isReleased": true
+  },
+  {
+    "id": "9500145",
+    "name": "코-크 씰",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9500145/icon?resize=2",
+    "level": 38,
+    "hp": 1850,
+    "exp": 87,
+    "isReleased": false
+  },
+  {
+    "id": "3230103",
+    "name": "킹 블록퍼스",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/3230103/icon?resize=2",
+    "level": 38,
+    "hp": 1850,
+    "exp": 85,
+    "isReleased": true
+  },
+  {
+    "id": "3110303",
+    "name": "트리플 루모",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/3110303/icon?resize=2",
+    "level": 38,
+    "hp": 1850,
+    "exp": 85,
+    "isReleased": true
+  },
+  {
+    "id": "9300131",
+    "name": "장난감 목마",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300131/icon?resize=2",
+    "level": 39,
+    "hp": 2300,
+    "exp": 115,
+    "isReleased": false
+  },
+  {
+    "id": "3230308",
+    "name": "트위터",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/3230308/icon?resize=2",
+    "level": 39,
+    "hp": 1900,
+    "exp": 85,
+    "isReleased": true
+  },
+  {
+    "id": "9410003",
+    "name": "광대 원숭이",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9410003/icon?resize=2",
+    "level": 40,
+    "hp": 1850,
+    "exp": 95,
+    "isReleased": true
+  },
+  {
+    "id": "4230600",
+    "name": "모래거인",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/4230600/icon?resize=2",
+    "level": 40,
+    "hp": 1800,
+    "exp": 95,
+    "isReleased": true
+  },
+  {
+    "id": "4230116",
+    "name": "바나드 그레이",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/4230116/icon?resize=2",
+    "level": 40,
+    "hp": 1930,
+    "exp": 95,
+    "isReleased": true
+  },
+  {
+    "id": "4230500",
+    "name": "별다람쥐",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/4230500/icon?resize=2",
+    "level": 40,
+    "hp": 1900,
+    "exp": 95,
+    "isReleased": true
+  },
+  {
+    "id": "9420003",
+    "name": "빨간 도마뱀",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9420003/icon?resize=2",
+    "level": 40,
+    "hp": 1920,
+    "exp": 95,
+    "isReleased": true
+  },
+  {
+    "id": "9400011",
+    "name": "제등귀신",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9400011/icon?resize=2",
+    "level": 40,
+    "hp": 1920,
+    "exp": 93,
+    "isReleased": false
+  },
+  {
+    "id": "4230101",
+    "name": "좀비루팡",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/4230101/icon?resize=2",
+    "level": 40,
+    "hp": 1800,
+    "exp": 90,
+    "isReleased": true
+  },
+  {
+    "id": "9300009",
+    "name": "차원의 블록골렘",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300009/icon?resize=2",
+    "level": 40,
+    "hp": 6500,
+    "exp": 408,
+    "isReleased": false
+  },
+  {
+    "id": "4230100",
+    "name": "콜드아이",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/4230100/icon?resize=2",
+    "level": 40,
+    "hp": 2000,
+    "exp": 85,
+    "isReleased": true
+  },
+  {
+    "id": "4230201",
+    "name": "포이즌 푸퍼",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/4230201/icon?resize=2",
+    "level": 40,
+    "hp": 1910,
+    "exp": 97,
+    "isReleased": true
+  },
+  {
+    "id": "9500178",
+    "name": "포장마차(변신전)",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9500178/icon?resize=2",
+    "level": 40,
+    "hp": 1435,
+    "exp": 0,
+    "isReleased": false
+  },
+  {
+    "id": "9500179",
+    "name": "포장마차(변신후)",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9500179/icon?resize=2",
+    "level": 40,
+    "hp": 5810,
+    "exp": 532,
+    "isReleased": false
+  },
+  {
+    "id": "4230200",
+    "name": "푸퍼",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/4230200/icon?resize=2",
+    "level": 40,
+    "hp": 1900,
+    "exp": 95,
+    "isReleased": true
+  },
+  {
+    "id": "9500318",
+    "name": "화난 눈사람",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9500318/icon?resize=2",
+    "level": 40,
+    "hp": 4500,
+    "exp": 85,
+    "isReleased": false
+  },
+  {
+    "id": "4230119",
+    "name": "마티안",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/4230119/icon?resize=2",
+    "level": 41,
+    "hp": 2080,
+    "exp": 99,
+    "isReleased": true
+  },
+  {
+    "id": "9400543",
+    "name": "일렉트로펀트",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9400543/icon?resize=2",
+    "level": 41,
+    "hp": 1600,
+    "exp": 95,
+    "isReleased": false
+  },
+  {
+    "id": "4230107",
+    "name": "플라이아이",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/4230107/icon?resize=2",
+    "level": 41,
+    "hp": 1600,
+    "exp": 95,
+    "isReleased": true
+  },
+  {
+    "id": "4230114",
+    "name": "플래툰 크로노스",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/4230114/icon?resize=2",
+    "level": 41,
+    "hp": 2050,
+    "exp": 99,
+    "isReleased": true
+  },
+  {
+    "id": "4230501",
+    "name": "호저",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/4230501/icon?resize=2",
+    "level": 41,
+    "hp": 2000,
+    "exp": 99,
+    "isReleased": true
+  },
+  {
+    "id": "4230105",
+    "name": "네펜데스",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/4230105/icon?resize=2",
+    "level": 42,
+    "hp": 2100,
+    "exp": 99,
+    "isReleased": true
+  },
+  {
+    "id": "4230109",
+    "name": "블록골렘",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/4230109/icon?resize=2",
+    "level": 42,
+    "hp": 2400,
+    "exp": 102,
+    "isReleased": true
+  },
+  {
+    "id": "4110300",
+    "name": "아이언 뮤테",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/4110300/icon?resize=2",
+    "level": 42,
+    "hp": 2400,
+    "exp": 102,
+    "isReleased": true
+  },
+  {
+    "id": "9300060",
+    "name": "아이언 호그",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300060/icon?resize=2",
+    "level": 42,
+    "hp": 1100,
+    "exp": 296,
+    "isReleased": false
+  },
+  {
+    "id": "4250000",
+    "name": "이끼 달팽이",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/4250000/icon?resize=2",
+    "level": 42,
+    "hp": 2400,
+    "exp": 102,
+    "isReleased": false
+  },
+  {
+    "id": "4230117",
+    "name": "제타 그레이",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/4230117/icon?resize=2",
+    "level": 42,
+    "hp": 2300,
+    "exp": 102,
+    "isReleased": true
+  },
+  {
+    "id": "4230124",
+    "name": "프리져",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/4230124/icon?resize=2",
+    "level": 42,
+    "hp": 2300,
+    "exp": 102,
+    "isReleased": true
+  },
+  {
+    "id": "9500146",
+    "name": "플레이 씰",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9500146/icon?resize=2",
+    "level": 42,
+    "hp": 2250,
+    "exp": 100,
+    "isReleased": false
+  },
+  {
+    "id": "9410002",
+    "name": "험악한 들개",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9410002/icon?resize=2",
+    "level": 42,
+    "hp": 2300,
+    "exp": 102,
+    "isReleased": true
+  },
+  {
+    "id": "4230123",
+    "name": "스파커",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/4230123/icon?resize=2",
+    "level": 43,
+    "hp": 2400,
+    "exp": 103,
+    "isReleased": true
+  },
+  {
+    "id": "4230108",
+    "name": "주니어 불독",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/4230108/icon?resize=2",
+    "level": 43,
+    "hp": 2300,
+    "exp": 102,
+    "isReleased": true
+  },
+  {
+    "id": "9300084",
+    "name": "죽음의 공포",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300084/icon?resize=2",
+    "level": 43,
+    "hp": 6500,
+    "exp": 340,
+    "isReleased": false
+  },
+  {
+    "id": "9300014",
+    "name": "차원의 다크아이",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300014/icon?resize=2",
+    "level": 43,
+    "hp": 6500,
+    "exp": 340,
+    "isReleased": false
+  },
+  {
+    "id": "9300008",
+    "name": "차원의 쉐도우아이",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300008/icon?resize=2",
+    "level": 43,
+    "hp": 7100,
+    "exp": 340,
+    "isReleased": false
+  },
+  {
+    "id": "4230502",
+    "name": "흑저",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/4230502/icon?resize=2",
+    "level": 43,
+    "hp": 2400,
+    "exp": 103,
+    "isReleased": true
+  },
+  {
+    "id": "9400546",
+    "name": "I.AM.ROBOT",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9400546/icon?resize=2",
+    "level": 44,
+    "hp": 2490,
+    "exp": 120,
+    "isReleased": false
+  },
+  {
+    "id": "4230112",
+    "name": "마스터 로보",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/4230112/icon?resize=2",
+    "level": 44,
+    "hp": 2450,
+    "exp": 105,
+    "isReleased": true
+  },
+  {
+    "id": "4230125",
+    "name": "스켈독",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/4230125/icon?resize=2",
+    "level": 44,
+    "hp": 2450,
+    "exp": 107,
+    "isReleased": true
+  },
+  {
+    "id": "4230120",
+    "name": "플라티안",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/4230120/icon?resize=2",
+    "level": 44,
+    "hp": 2480,
+    "exp": 105,
+    "isReleased": true
+  },
+  {
+    "id": "4230106",
+    "name": "루나픽시",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/4230106/icon?resize=2",
+    "level": 45,
+    "hp": 2500,
+    "exp": 105,
+    "isReleased": true
+  },
+  {
+    "id": "4220000",
+    "name": "세르프",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/4220000/icon?resize=2",
+    "level": 45,
+    "hp": 7800,
+    "exp": 330,
+    "isReleased": true
+  },
+  {
+    "id": "4220001",
+    "name": "세르프",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/4220001/icon?resize=2",
+    "level": 45,
+    "hp": 2550,
+    "exp": 0,
+    "isReleased": false
+  },
+  {
+    "id": "9400100",
+    "name": "수하 A",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9400100/icon?resize=2",
+    "level": 45,
+    "hp": 2800,
+    "exp": 130,
+    "isReleased": true
+  },
+  {
+    "id": "4230400",
+    "name": "아이언보어",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/4230400/icon?resize=2",
+    "level": 45,
+    "hp": 2650,
+    "exp": 115,
+    "isReleased": true
+  },
+  {
+    "id": "4230118",
+    "name": "울트라 그레이",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/4230118/icon?resize=2",
+    "level": 45,
+    "hp": 2550,
+    "exp": 110,
+    "isReleased": true
+  },
+  {
+    "id": "4230300",
+    "name": "월묘",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/4230300/icon?resize=2",
+    "level": 45,
+    "hp": 2600,
+    "exp": 110,
+    "isReleased": true
+  },
+  {
+    "id": "9500148",
+    "name": "이글루 터틀",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9500148/icon?resize=2",
+    "level": 45,
+    "hp": 2600,
+    "exp": 110,
+    "isReleased": false
+  },
+  {
+    "id": "4230503",
+    "name": "청화사",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/4230503/icon?resize=2",
+    "level": 45,
+    "hp": 2550,
+    "exp": 110,
+    "isReleased": true
+  },
+  {
+    "id": "9300160",
+    "name": "청화사",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300160/icon?resize=2",
+    "level": 45,
+    "hp": 2550,
+    "exp": 0,
+    "isReleased": false
+  },
+  {
+    "id": "4130100",
+    "name": "카파 드레이크",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/4130100/icon?resize=2",
+    "level": 45,
+    "hp": 2700,
+    "exp": 105,
+    "isReleased": true
+  },
+  {
+    "id": "9400004",
+    "name": "큰 구름여우",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9400004/icon?resize=2",
+    "level": 45,
+    "hp": 2600,
+    "exp": 110,
+    "isReleased": false
+  },
+  {
+    "id": "9500170",
+    "name": "파파 픽시",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9500170/icon?resize=2",
+    "level": 45,
+    "hp": 8925,
+    "exp": 543,
+    "isReleased": false
+  },
+  {
+    "id": "4230504",
+    "name": "홍화사",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/4230504/icon?resize=2",
+    "level": 45,
+    "hp": 2550,
+    "exp": 110,
+    "isReleased": true
+  },
+  {
+    "id": "9300161",
+    "name": "홍화사",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300161/icon?resize=2",
+    "level": 45,
+    "hp": 2550,
+    "exp": 0,
+    "isReleased": false
+  },
+  {
+    "id": "4230121",
+    "name": "메카티안",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/4230121/icon?resize=2",
+    "level": 46,
+    "hp": 2600,
+    "exp": 110,
+    "isReleased": true
+  },
+  {
+    "id": "4130101",
+    "name": "엄티",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/4130101/icon?resize=2",
+    "level": 46,
+    "hp": 2550,
+    "exp": 110,
+    "isReleased": true
+  },
+  {
+    "id": "4250001",
+    "name": "트리로드",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/4250001/icon?resize=2",
+    "level": 46,
+    "hp": 2600,
+    "exp": 112,
+    "isReleased": false
+  },
+  {
+    "id": "9300144",
+    "name": "강화된 미스릴 뮤테",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300144/icon?resize=2",
+    "level": 47,
+    "hp": 23000,
+    "exp": 300,
+    "isReleased": false
+  },
+  {
+    "id": "4130102",
+    "name": "다크 네펜데스",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/4130102/icon?resize=2",
+    "level": 47,
+    "hp": 2700,
+    "exp": 115,
+    "isReleased": true
+  },
+  {
+    "id": "4230505",
+    "name": "단지",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/4230505/icon?resize=2",
+    "level": 47,
+    "hp": 2700,
+    "exp": 117,
+    "isReleased": true
+  },
+  {
+    "id": "4130103",
+    "name": "롬바드",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/4130103/icon?resize=2",
+    "level": 47,
+    "hp": 11000,
+    "exp": 720,
+    "isReleased": true
+  },
+  {
+    "id": "4230126",
+    "name": "머미독",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/4230126/icon?resize=2",
+    "level": 47,
+    "hp": 2750,
+    "exp": 117,
+    "isReleased": true
+  },
+  {
+    "id": "4110302",
+    "name": "미스릴 뮤테",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/4110302/icon?resize=2",
+    "level": 47,
+    "hp": 2750,
+    "exp": 117,
+    "isReleased": true
+  },
+  {
+    "id": "9400101",
+    "name": "수하 B",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9400101/icon?resize=2",
+    "level": 47,
+    "hp": 2800,
+    "exp": 139,
+    "isReleased": true
+  },
+  {
+    "id": "9300010",
+    "name": "차원의 롬바드",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300010/icon?resize=2",
+    "level": 47,
+    "hp": 33000,
+    "exp": 850,
+    "isReleased": false
+  },
+  {
+    "id": "9410004",
+    "name": "폭주족 원숭이",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9410004/icon?resize=2",
+    "level": 47,
+    "hp": 2800,
+    "exp": 117,
+    "isReleased": true
+  },
+  {
+    "id": "4230102",
+    "name": "레이스",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/4230102/icon?resize=2",
+    "level": 48,
+    "hp": 2800,
+    "exp": 120,
+    "isReleased": true
+  },
+  {
+    "id": "4230506",
+    "name": "삼단지",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/4230506/icon?resize=2",
+    "level": 48,
+    "hp": 2800,
+    "exp": 123,
+    "isReleased": true
+  },
+  {
+    "id": "4230104",
+    "name": "클랑",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/4230104/icon?resize=2",
+    "level": 48,
+    "hp": 3000,
+    "exp": 128,
+    "isReleased": true
+  },
+  {
+    "id": "4240000",
+    "name": "원로 그레이",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/4240000/icon?resize=2",
+    "level": 49,
+    "hp": 9000,
+    "exp": 580,
+    "isReleased": true
+  },
+  {
+    "id": "9400544",
+    "name": "그리폰",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9400544/icon?resize=2",
+    "level": 50,
+    "hp": 3300,
+    "exp": 220,
+    "isReleased": false
+  },
+  {
+    "id": "9500177",
+    "name": "대왕지네",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9500177/icon?resize=2",
+    "level": 50,
+    "hp": 20692,
+    "exp": 1780,
+    "isReleased": true
+  },
+  {
+    "id": "5130100",
+    "name": "드레이크",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/5130100/icon?resize=2",
+    "level": 50,
+    "hp": 3200,
+    "exp": 135,
+    "isReleased": true
+  },
+  {
+    "id": "9400102",
+    "name": "수하 C",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9400102/icon?resize=2",
+    "level": 50,
+    "hp": 3100,
+    "exp": 148,
+    "isReleased": true
+  },
+  {
+    "id": "9410008",
+    "name": "예티 인형자판기",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9410008/icon?resize=2",
+    "level": 50,
+    "hp": 3800,
+    "exp": 150,
+    "isReleased": true
+  },
+  {
+    "id": "5100000",
+    "name": "주니어 예티",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/5100000/icon?resize=2",
+    "level": 50,
+    "hp": 3700,
+    "exp": 0,
+    "isReleased": false
+  },
+  {
+    "id": "9410010",
+    "name": "주니어페페 인형자판기",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9410010/icon?resize=2",
+    "level": 50,
+    "hp": 3800,
+    "exp": 152,
+    "isReleased": true
+  },
+  {
+    "id": "9400401",
+    "name": "중급닌자",
+    "imageUrl": "https://maplestory.io/api/gms/92/mob/9400401/icon?resize=2",
+    "level": 50,
+    "hp": 4200,
+    "exp": 190,
+    "isReleased": true
+  },
+  {
+    "id": "9500149",
+    "name": "코-크 골렘",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9500149/icon?resize=2",
+    "level": 50,
+    "hp": 3600,
+    "exp": 136,
+    "isReleased": false
+  },
+  {
+    "id": "5220002",
+    "name": "파우스트",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/5220002/icon?resize=2",
+    "level": 50,
+    "hp": 9800,
+    "exp": 410,
+    "isReleased": false
+  },
+  {
+    "id": "9500335",
+    "name": "프랑켄 로이드",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9500335/icon?resize=2",
+    "level": 50,
+    "hp": 30000,
+    "exp": 675,
+    "isReleased": false
+  },
+  {
+    "id": "5100003",
+    "name": "호돌이",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/5100003/icon?resize=2",
+    "level": 50,
+    "hp": 3800,
+    "exp": 140,
+    "isReleased": true
+  },
+  {
+    "id": "5120503",
+    "name": "훈련용 짚인형",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/5120503/icon?resize=2",
+    "level": 50,
+    "hp": 3000,
+    "exp": 135,
+    "isReleased": true
+  },
+  {
+    "id": "5250001",
+    "name": "스톤버그",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/5250001/icon?resize=2",
+    "level": 51,
+    "hp": 3600,
+    "exp": 142,
+    "isReleased": false
+  },
+  {
+    "id": "9300053",
+    "name": "여신 탑의 주니어 그류핀",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300053/icon?resize=2",
+    "level": 51,
+    "hp": 6400,
+    "exp": 305,
+    "isReleased": false
+  },
+  {
+    "id": "9300052",
+    "name": "여신 탑의 주니어 라이오너",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300052/icon?resize=2",
+    "level": 51,
+    "hp": 6400,
+    "exp": 305,
+    "isReleased": false
+  },
+  {
+    "id": "9300051",
+    "name": "여신 탑의 주니어 샐리온",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300051/icon?resize=2",
+    "level": 51,
+    "hp": 6400,
+    "exp": 305,
+    "isReleased": false
+  },
+  {
+    "id": "5100002",
+    "name": "파이어봄",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/5100002/icon?resize=2",
+    "level": 51,
+    "hp": 3600,
+    "exp": 142,
+    "isReleased": true
+  },
+  {
+    "id": "5120504",
+    "name": "훈련용 나무인형",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/5120504/icon?resize=2",
+    "level": 51,
+    "hp": 3200,
+    "exp": 142,
+    "isReleased": true
+  },
+  {
+    "id": "5120000",
+    "name": "러스터픽시",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/5120000/icon?resize=2",
+    "level": 52,
+    "hp": 4000,
+    "exp": 155,
+    "isReleased": true
+  },
+  {
+    "id": "5130103",
+    "name": "크로코",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/5130103/icon?resize=2",
+    "level": 52,
+    "hp": 3800,
+    "exp": 170,
+    "isReleased": true
+  },
+  {
+    "id": "5120003",
+    "name": "그류핀",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/5120003/icon?resize=2",
+    "level": 53,
+    "hp": 4200,
+    "exp": 160,
+    "isReleased": true
+  },
+  {
+    "id": "5120501",
+    "name": "도라지",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/5120501/icon?resize=2",
+    "level": 53,
+    "hp": 4200,
+    "exp": 160,
+    "isReleased": true
+  },
+  {
+    "id": "5120002",
+    "name": "라이오너",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/5120002/icon?resize=2",
+    "level": 53,
+    "hp": 4200,
+    "exp": 160,
+    "isReleased": true
+  },
+  {
+    "id": "5120001",
+    "name": "샐리온",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/5120001/icon?resize=2",
+    "level": 53,
+    "hp": 4200,
+    "exp": 160,
+    "isReleased": true
+  },
+  {
+    "id": "9300046",
+    "name": "여신 탑의 스타픽시",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300046/icon?resize=2",
+    "level": 53,
+    "hp": 6300,
+    "exp": 320,
+    "isReleased": false
+  },
+  {
+    "id": "9300055",
+    "name": "여신 탑의 스타픽시(보스 소환용)",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300055/icon?resize=2",
+    "level": 53,
+    "hp": 6300,
+    "exp": 320,
+    "isReleased": false
+  },
+  {
+    "id": "5100005",
+    "name": "호걸",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/5100005/icon?resize=2",
+    "level": 53,
+    "hp": 4500,
+    "exp": 165,
+    "isReleased": true
+  },
+  {
+    "id": "5120502",
+    "name": "늙은 도라지",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/5120502/icon?resize=2",
+    "level": 54,
+    "hp": 4400,
+    "exp": 168,
+    "isReleased": true
+  },
+  {
+    "id": "5120100",
+    "name": "머신 MT-09",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/5120100/icon?resize=2",
+    "level": 54,
+    "hp": 13500,
+    "exp": 980,
+    "isReleased": true
+  },
+  {
+    "id": "9300004",
+    "name": "미믹",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300004/icon?resize=2",
+    "level": 54,
+    "hp": 4100,
+    "exp": 165,
+    "isReleased": false
+  },
+  {
+    "id": "9300045",
+    "name": "여신 탑의 루나픽시",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300045/icon?resize=2",
+    "level": 54,
+    "hp": 6600,
+    "exp": 325,
+    "isReleased": false
+  },
+  {
+    "id": "9300054",
+    "name": "여신 탑의 루나픽시(보스 소환용)",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300054/icon?resize=2",
+    "level": 54,
+    "hp": 6600,
+    "exp": 335,
+    "isReleased": false
+  },
+  {
+    "id": "9300194",
+    "name": "다일",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300194/icon?resize=2",
+    "level": 55,
+    "hp": 8500,
+    "exp": 0,
+    "isReleased": false
+  },
+  {
+    "id": "9300186",
+    "name": "데우",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300186/icon?resize=2",
+    "level": 55,
+    "hp": 8500,
+    "exp": 0,
+    "isReleased": false
+  },
+  {
+    "id": "9300162",
+    "name": "델리",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300162/icon?resize=2",
+    "level": 55,
+    "hp": 95000,
+    "exp": 0,
+    "isReleased": false
+  },
+  {
+    "id": "9400204",
+    "name": "레드 슬라임",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9400204/icon?resize=2",
+    "level": 55,
+    "hp": 6000,
+    "exp": 240,
+    "isReleased": false
+  },
+  {
+    "id": "5300100",
+    "name": "멜러디",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/5300100/icon?resize=2",
+    "level": 55,
+    "hp": 4000,
+    "exp": 175,
+    "isReleased": true
+  },
+  {
+    "id": "5120506",
+    "name": "비급",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/5120506/icon?resize=2",
+    "level": 55,
+    "hp": 4500,
+    "exp": 175,
+    "isReleased": true
+  },
+  {
+    "id": "9300185",
+    "name": "스텀피",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300185/icon?resize=2",
+    "level": 55,
+    "hp": 8500,
+    "exp": 0,
+    "isReleased": false
+  },
+  {
+    "id": "5130101",
+    "name": "스톤골렘",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/5130101/icon?resize=2",
+    "level": 55,
+    "hp": 4000,
+    "exp": 170,
+    "isReleased": true
+  },
+  {
+    "id": "5250000",
+    "name": "이끼버섯",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/5250000/icon?resize=2",
+    "level": 55,
+    "hp": 4400,
+    "exp": 175,
+    "isReleased": false
+  },
+  {
+    "id": "9300175",
+    "name": "중독된 스프라이트",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300175/icon?resize=2",
+    "level": 55,
+    "hp": 8500,
+    "exp": 0,
+    "isReleased": false
+  },
+  {
+    "id": "5220000",
+    "name": "킹크랑",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/5220000/icon?resize=2",
+    "level": 55,
+    "hp": 25000,
+    "exp": 1210,
+    "isReleased": true
+  },
+  {
+    "id": "5220001",
+    "name": "킹크랑",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/5220001/icon?resize=2",
+    "level": 55,
+    "hp": 4000,
+    "exp": 0,
+    "isReleased": false
+  },
+  {
+    "id": "9300193",
+    "name": "타이머",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300193/icon?resize=2",
+    "level": 55,
+    "hp": 8500,
+    "exp": 0,
+    "isReleased": false
+  },
+  {
+    "id": "5130104",
+    "name": "헥터",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/5130104/icon?resize=2",
+    "level": 55,
+    "hp": 4600,
+    "exp": 170,
+    "isReleased": true
+  },
+  {
+    "id": "5130105",
+    "name": "다크 주니어 예티",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/5130105/icon?resize=2",
+    "level": 56,
+    "hp": 4400,
+    "exp": 180,
+    "isReleased": true
+  },
+  {
+    "id": "5130106",
+    "name": "다크 주니어 예티",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/5130106/icon?resize=2",
+    "level": 56,
+    "hp": 4400,
+    "exp": 0,
+    "isReleased": true
+  },
+  {
+    "id": "5120500",
+    "name": "달곰",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/5120500/icon?resize=2",
+    "level": 56,
+    "hp": 4800,
+    "exp": 185,
+    "isReleased": true
+  },
+  {
+    "id": "9300108",
+    "name": "데비존의 단지",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300108/icon?resize=2",
+    "level": 56,
+    "hp": 4300,
+    "exp": 92,
+    "isReleased": false
+  },
+  {
+    "id": "5100004",
+    "name": "삼미호",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/5100004/icon?resize=2",
+    "level": 56,
+    "hp": 4500,
+    "exp": 185,
+    "isReleased": true
+  },
+  {
+    "id": "5090000",
+    "name": "셰이드",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/5090000/icon?resize=2",
+    "level": 56,
+    "hp": 4800,
+    "exp": 180,
+    "isReleased": false
+  },
+  {
+    "id": "9300012",
+    "name": "알리샤르",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300012/icon?resize=2",
+    "level": 56,
+    "hp": 125000,
+    "exp": 4800,
+    "isReleased": false
+  },
+  {
+    "id": "9300047",
+    "name": "여신 탑의 러스터픽시",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300047/icon?resize=2",
+    "level": 56,
+    "hp": 7200,
+    "exp": 355,
+    "isReleased": false
+  },
+  {
+    "id": "9300056",
+    "name": "여신 탑의 러스터픽시(보스 소환용)",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300056/icon?resize=2",
+    "level": 56,
+    "hp": 7200,
+    "exp": 355,
+    "isReleased": false
+  },
+  {
+    "id": "9300109",
+    "name": "데비존의 삼단지",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300109/icon?resize=2",
+    "level": 57,
+    "hp": 4500,
+    "exp": 95,
+    "isReleased": false
+  },
+  {
+    "id": "5130108",
+    "name": "마이너 좀비",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/5130108/icon?resize=2",
+    "level": 57,
+    "hp": 4500,
+    "exp": 190,
+    "isReleased": true
+  },
+  {
+    "id": "5150001",
+    "name": "스켈레톤 사병",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/5150001/icon?resize=2",
+    "level": 57,
+    "hp": 4600,
+    "exp": 190,
+    "isReleased": true
+  },
+  {
+    "id": "9300042",
+    "name": "여신 탑의 그류핀",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300042/icon?resize=2",
+    "level": 57,
+    "hp": 7300,
+    "exp": 370,
+    "isReleased": false
+  },
+  {
+    "id": "9300043",
+    "name": "여신 탑의 라이오너",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300043/icon?resize=2",
+    "level": 57,
+    "hp": 7300,
+    "exp": 370,
+    "isReleased": false
+  },
+  {
+    "id": "9300041",
+    "name": "여신 탑의 샐리온",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300041/icon?resize=2",
+    "level": 57,
+    "hp": 7300,
+    "exp": 370,
+    "isReleased": false
+  },
+  {
+    "id": "5250002",
+    "name": "원시멧돼지",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/5250002/icon?resize=2",
+    "level": 57,
+    "hp": 4500,
+    "exp": 200,
+    "isReleased": false
+  },
+  {
+    "id": "5130107",
+    "name": "쿨리 좀비",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/5130107/icon?resize=2",
+    "level": 57,
+    "hp": 4500,
+    "exp": 190,
+    "isReleased": true
+  },
+  {
+    "id": "9500202",
+    "name": "Zoo 화이트팽",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9500202/icon?resize=2",
+    "level": 58,
+    "hp": 10000,
+    "exp": 10,
+    "isReleased": false
+  },
+  {
+    "id": "5130102",
+    "name": "다크 스톤골렘",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/5130102/icon?resize=2",
+    "level": 58,
+    "hp": 4800,
+    "exp": 200,
+    "isReleased": true
+  },
+  {
+    "id": "9300110",
+    "name": "데비존의 도라지",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300110/icon?resize=2",
+    "level": 58,
+    "hp": 4700,
+    "exp": 98,
+    "isReleased": false
+  },
+  {
+    "id": "9300114",
+    "name": "데비존의 사나운 게비알",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300114/icon?resize=2",
+    "level": 58,
+    "hp": 2700,
+    "exp": 68,
+    "isReleased": false
+  },
+  {
+    "id": "9300154",
+    "name": "실험용 네오 휴로이드",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300154/icon?resize=2",
+    "level": 58,
+    "hp": 5600,
+    "exp": 205,
+    "isReleased": false
+  },
+  {
+    "id": "5120505",
+    "name": "천록",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/5120505/icon?resize=2",
+    "level": 58,
+    "hp": 5600,
+    "exp": 205,
+    "isReleased": true
+  },
+  {
+    "id": "5140000",
+    "name": "화이트팽",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/5140000/icon?resize=2",
+    "level": 58,
+    "hp": 5800,
+    "exp": 220,
+    "isReleased": true
+  },
+  {
+    "id": "9300038",
+    "name": "고스트픽시",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300038/icon?resize=2",
+    "level": 59,
+    "hp": 9000,
+    "exp": 420,
+    "isReleased": false
+  },
+  {
+    "id": "9300112",
+    "name": "데비존의 100년 된 도라지",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300112/icon?resize=2",
+    "level": 59,
+    "hp": 4100,
+    "exp": 100,
+    "isReleased": false
+  },
+  {
+    "id": "9300123",
+    "name": "데비존의 게비알",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300123/icon?resize=2",
+    "level": 59,
+    "hp": 7350,
+    "exp": 150,
+    "isReleased": false
+  },
+  {
+    "id": "9300111",
+    "name": "데비존의 늙은 도라지",
+    "imageUrl": "https://maplestory.io/api/kms/284/mob/9300111/icon?resize=2",
+    "level": 59,
+    "hp": 4900,
+    "exp": 100,
+    "isReleased": false
+  },
+  {
+    "id": "9300120",
+    "name": "데비존의 더 사나운 게비알",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300120/icon?resize=2",
+    "level": 59,
+    "hp": 8820,
+    "exp": 180,
+    "isReleased": false
+  },
+  {
+    "id": "9300126",
+    "name": "데비존의 사나운 삼단지",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300126/icon?resize=2",
+    "level": 59,
+    "hp": 9500,
+    "exp": 105,
+    "isReleased": false
+  },
+  {
+    "id": "9300115",
+    "name": "데비존의 사나운 크루",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300115/icon?resize=2",
+    "level": 59,
+    "hp": 2820,
+    "exp": 70,
+    "isReleased": false
+  },
+  {
+    "id": "5150000",
+    "name": "믹스골렘",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/5150000/icon?resize=2",
+    "level": 59,
+    "hp": 6000,
+    "exp": 210,
+    "isReleased": true
+  },
+  {
+    "id": "5090001",
+    "name": "선인인형",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/5090001/icon?resize=2",
+    "level": 59,
+    "hp": 5600,
+    "exp": 220,
+    "isReleased": false
+  },
+  {
+    "id": "9300048",
+    "name": "여신 탑의 네펜데스",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300048/icon?resize=2",
+    "level": 59,
+    "hp": 10000,
+    "exp": 430,
+    "isReleased": false
+  },
+  {
+    "id": "9300049",
+    "name": "여신 탑의 로얄 네펜데스",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300049/icon?resize=2",
+    "level": 59,
+    "hp": 10000,
+    "exp": 430,
+    "isReleased": false
+  },
+  {
+    "id": "5220003",
+    "name": "타이머",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/5220003/icon?resize=2",
+    "level": 59,
+    "hp": 21000,
+    "exp": 650,
+    "isReleased": false
+  },
+  {
+    "id": "9420002",
+    "name": "구렁이",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9420002/icon?resize=2",
+    "level": 60,
+    "hp": 6000,
+    "exp": 230,
+    "isReleased": true
+  },
+  {
+    "id": "6130201",
+    "name": "깨비",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/6130201/icon?resize=2",
+    "level": 60,
+    "hp": 3500,
+    "exp": 0,
+    "isReleased": false
+  },
+  {
+    "id": "6130202",
+    "name": "깨비",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/6130202/icon?resize=2",
+    "level": 60,
+    "hp": 7000,
+    "exp": 330,
+    "isReleased": true
+  },
+  {
+    "id": "9300119",
+    "name": "데비존",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300119/icon?resize=2",
+    "level": 60,
+    "hp": 420000,
+    "exp": 7200,
+    "isReleased": false
+  },
+  {
+    "id": "9300113",
+    "name": "데비존의 100년 된 늙은 도라지",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300113/icon?resize=2",
+    "level": 60,
+    "hp": 4300,
+    "exp": 104,
+    "isReleased": false
+  },
+  {
+    "id": "9300121",
+    "name": "데비존의 더 사나운 크루",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300121/icon?resize=2",
+    "level": 60,
+    "hp": 9360,
+    "exp": 187,
+    "isReleased": false
+  },
+  {
+    "id": "9300116",
+    "name": "데비존의 사나운 캡틴",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300116/icon?resize=2",
+    "level": 60,
+    "hp": 2940,
+    "exp": 72,
+    "isReleased": false
+  },
+  {
+    "id": "9300124",
+    "name": "데비존의 크루",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300124/icon?resize=2",
+    "level": 60,
+    "hp": 7800,
+    "exp": 156,
+    "isReleased": false
+  },
+  {
+    "id": "6130100",
+    "name": "레드 드레이크",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/6130100/icon?resize=2",
+    "level": 60,
+    "hp": 6000,
+    "exp": 220,
+    "isReleased": true
+  },
+  {
+    "id": "9400003",
+    "name": "망령",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9400003/icon?resize=2",
+    "level": 60,
+    "hp": 7100,
+    "exp": 220,
+    "isReleased": false
+  },
+  {
+    "id": "6130101",
+    "name": "머쉬맘",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/6130101/icon?resize=2",
+    "level": 60,
+    "hp": 20000,
+    "exp": 1200,
+    "isReleased": true
+  },
+  {
+    "id": "9400012",
+    "name": "물도깨비",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9400012/icon?resize=2",
+    "level": 60,
+    "hp": 7100,
+    "exp": 220,
+    "isReleased": false
+  },
+  {
+    "id": "9500176",
+    "name": "블루 머쉬맘",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9500176/icon?resize=2",
+    "level": 60,
+    "hp": 50400,
+    "exp": 2260,
+    "isReleased": true
+  },
+  {
+    "id": "9500150",
+    "name": "아이스 골렘",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9500150/icon?resize=2",
+    "level": 60,
+    "hp": 6900,
+    "exp": 221,
+    "isReleased": false
+  },
+  {
+    "id": "9410013",
+    "name": "인형뽑기 기계",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9410013/icon?resize=2",
+    "level": 60,
+    "hp": 6000,
+    "exp": 440,
+    "isReleased": true
+  },
+  {
+    "id": "9410012",
+    "name": "인형자판기",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9410012/icon?resize=2",
+    "level": 60,
+    "hp": 1500,
+    "exp": 10,
+    "isReleased": true
+  },
+  {
+    "id": "9400406",
+    "name": "쿠노이치",
+    "imageUrl": "https://maplestory.io/api/gms/92/mob/9400406/icon?resize=2",
+    "level": 60,
+    "hp": 6500,
+    "exp": 290,
+    "isReleased": true
+  },
+  {
+    "id": "6130203",
+    "name": "판다곰",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/6130203/icon?resize=2",
+    "level": 60,
+    "hp": 6500,
+    "exp": 225,
+    "isReleased": true
+  },
+  {
+    "id": "6130102",
+    "name": "페페",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/6130102/icon?resize=2",
+    "level": 60,
+    "hp": 7200,
+    "exp": 420,
+    "isReleased": true
+  },
+  {
+    "id": "9300050",
+    "name": "플라잉 부기",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300050/icon?resize=2",
+    "level": 60,
+    "hp": 25000,
+    "exp": 515,
+    "isReleased": false
+  },
+  {
+    "id": "6130200",
+    "name": "버피",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/6130200/icon?resize=2",
+    "level": 61,
+    "hp": 7400,
+    "exp": 230,
+    "isReleased": true
+  },
+  {
+    "id": "9400110",
+    "name": "간부 A",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9400110/icon?resize=2",
+    "level": 62,
+    "hp": 10000,
+    "exp": 310,
+    "isReleased": true
+  },
+  {
+    "id": "9300122",
+    "name": "데비존의 더 사나운 캡틴",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300122/icon?resize=2",
+    "level": 62,
+    "hp": 10440,
+    "exp": 198,
+    "isReleased": false
+  },
+  {
+    "id": "9300117",
+    "name": "데비존의 심복 크루",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300117/icon?resize=2",
+    "level": 62,
+    "hp": 22800,
+    "exp": 313,
+    "isReleased": false
+  },
+  {
+    "id": "9300125",
+    "name": "데비존의 캡틴",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300125/icon?resize=2",
+    "level": 62,
+    "hp": 8700,
+    "exp": 165,
+    "isReleased": false
+  },
+  {
+    "id": "9300153",
+    "name": "방해물 뮤테",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300153/icon?resize=2",
+    "level": 62,
+    "hp": 7500,
+    "exp": 0,
+    "isReleased": false
+  },
+  {
+    "id": "6090003",
+    "name": "선비귀신",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/6090003/icon?resize=2",
+    "level": 62,
+    "hp": 6000,
+    "exp": 240,
+    "isReleased": false
+  },
+  {
+    "id": "6230100",
+    "name": "와일드카고",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/6230100/icon?resize=2",
+    "level": 62,
+    "hp": 5500,
+    "exp": 240,
+    "isReleased": true
+  },
+  {
+    "id": "6130207",
+    "name": "원공",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/6130207/icon?resize=2",
+    "level": 62,
+    "hp": 7500,
+    "exp": 240,
+    "isReleased": true
+  },
+  {
+    "id": "9300026",
+    "name": "주니어 가고일",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300026/icon?resize=2",
+    "level": 62,
+    "hp": 15000,
+    "exp": 430,
+    "isReleased": false
+  },
+  {
+    "id": "9300035",
+    "name": "주니어 가고일",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300035/icon?resize=2",
+    "level": 62,
+    "hp": 15000,
+    "exp": 0,
+    "isReleased": false
+  },
+  {
+    "id": "9300172",
+    "name": "중독된 트리로드",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300172/icon?resize=2",
+    "level": 62,
+    "hp": 10500,
+    "exp": 240,
+    "isReleased": false
+  },
+  {
+    "id": "9300182",
+    "name": "초강화형 포이즌 골렘",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300182/icon?resize=2",
+    "level": 62,
+    "hp": 10500,
+    "exp": 240,
+    "isReleased": false
+  },
+  {
+    "id": "6090004",
+    "name": "루루모",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/6090004/icon?resize=2",
+    "level": 63,
+    "hp": 7600,
+    "exp": 245,
+    "isReleased": true
+  },
+  {
+    "id": "9300020",
+    "name": "머슬스톤",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300020/icon?resize=2",
+    "level": 63,
+    "hp": 16000,
+    "exp": 520,
+    "isReleased": false
+  },
+  {
+    "id": "6230400",
+    "name": "소울테니",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/6230400/icon?resize=2",
+    "level": 63,
+    "hp": 7600,
+    "exp": 245,
+    "isReleased": true
+  },
+  {
+    "id": "6230602",
+    "name": "스켈레톤 장교",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/6230602/icon?resize=2",
+    "level": 63,
+    "hp": 7500,
+    "exp": 240,
+    "isReleased": true
+  },
+  {
+    "id": "6230401",
+    "name": "주니어 루이넬",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/6230401/icon?resize=2",
+    "level": 63,
+    "hp": 7600,
+    "exp": 245,
+    "isReleased": true
+  },
+  {
+    "id": "6230101",
+    "name": "푸코",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/6230101/icon?resize=2",
+    "level": 63,
+    "hp": 20000,
+    "exp": 190,
+    "isReleased": true
+  },
+  {
+    "id": "9300105",
+    "name": "화난 데비존",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300105/icon?resize=2",
+    "level": 63,
+    "hp": 480000,
+    "exp": 8800,
+    "isReleased": false
+  },
+  {
+    "id": "9400111",
+    "name": "간부 B",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9400111/icon?resize=2",
+    "level": 64,
+    "hp": 9000,
+    "exp": 320,
+    "isReleased": true
+  },
+  {
+    "id": "6130204",
+    "name": "게비알",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/6130204/icon?resize=2",
+    "level": 64,
+    "hp": 7800,
+    "exp": 250,
+    "isReleased": true
+  },
+  {
+    "id": "6230201",
+    "name": "다크 페페",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/6230201/icon?resize=2",
+    "level": 64,
+    "hp": 7800,
+    "exp": 700,
+    "isReleased": false
+  },
+  {
+    "id": "9300118",
+    "name": "데비존의 심복 캡틴",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300118/icon?resize=2",
+    "level": 64,
+    "hp": 28200,
+    "exp": 378,
+    "isReleased": false
+  },
+  {
+    "id": "6090001",
+    "name": "설산의 마녀",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/6090001/icon?resize=2",
+    "level": 64,
+    "hp": 7700,
+    "exp": 250,
+    "isReleased": false
+  },
+  {
+    "id": "6230600",
+    "name": "아이스 드레이크",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/6230600/icon?resize=2",
+    "level": 64,
+    "hp": 7700,
+    "exp": 250,
+    "isReleased": true
+  },
+  {
+    "id": "9500201",
+    "name": "Zoo 예티",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9500201/icon?resize=2",
+    "level": 65,
+    "hp": 11000,
+    "exp": 10,
+    "isReleased": false
+  },
+  {
+    "id": "9300181",
+    "name": "강화형 포이즌 골렘",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300181/icon?resize=2",
+    "level": 65,
+    "hp": 12500,
+    "exp": 255,
+    "isReleased": false
+  },
+  {
+    "id": "6220000",
+    "name": "다일",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/6220000/icon?resize=2",
+    "level": 65,
+    "hp": 31000,
+    "exp": 810,
+    "isReleased": false
+  },
+  {
+    "id": "9300188",
+    "name": "대왕지네",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300188/icon?resize=2",
+    "level": 65,
+    "hp": 3000,
+    "exp": 0,
+    "isReleased": false
+  },
+  {
+    "id": "9300179",
+    "name": "더 중독된 스프라이트",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300179/icon?resize=2",
+    "level": 65,
+    "hp": 3000,
+    "exp": 0,
+    "isReleased": false
+  },
+  {
+    "id": "6090000",
+    "name": "리치",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/6090000/icon?resize=2",
+    "level": 65,
+    "hp": 11000,
+    "exp": 255,
+    "isReleased": true
+  },
+  {
+    "id": "9300184",
+    "name": "마노",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300184/icon?resize=2",
+    "level": 65,
+    "hp": 13000,
+    "exp": 255,
+    "isReleased": false
+  },
+  {
+    "id": "9300019",
+    "name": "마스터 머슬스톤",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300019/icon?resize=2",
+    "level": 65,
+    "hp": 40000,
+    "exp": 1120,
+    "isReleased": false
+  },
+  {
+    "id": "9300176",
+    "name": "멀쩡한 스프라이트",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300176/icon?resize=2",
+    "level": 65,
+    "hp": 720000,
+    "exp": 0,
+    "isReleased": false
+  },
+  {
+    "id": "6300001",
+    "name": "변신한 예티",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/6300001/icon?resize=2",
+    "level": 65,
+    "hp": 11000,
+    "exp": 390,
+    "isReleased": false
+  },
+  {
+    "id": "9300183",
+    "name": "보스 몬스터 퇴치 체크용 투명 몬스터",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300183/icon?resize=2",
+    "level": 65,
+    "hp": 12500,
+    "exp": 255,
+    "isReleased": false
+  },
+  {
+    "id": "9300192",
+    "name": "알리샤르",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300192/icon?resize=2",
+    "level": 65,
+    "hp": 3000,
+    "exp": 0,
+    "isReleased": false
+  },
+  {
+    "id": "9300044",
+    "name": "여신 탑의 루이넬",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300044/icon?resize=2",
+    "level": 65,
+    "hp": 3000,
+    "exp": 0,
+    "isReleased": false
+  },
+  {
+    "id": "6300002",
+    "name": "예티",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/6300002/icon?resize=2",
+    "level": 65,
+    "hp": 11000,
+    "exp": 409,
+    "isReleased": false
+  },
+  {
+    "id": "6220001",
+    "name": "제노",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/6220001/icon?resize=2",
+    "level": 65,
+    "hp": 36000,
+    "exp": 940,
+    "isReleased": false
+  },
+  {
+    "id": "6300005",
+    "name": "좀비 머쉬맘",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/6300005/icon?resize=2",
+    "level": 65,
+    "hp": 35000,
+    "exp": 1500,
+    "isReleased": true
+  },
+  {
+    "id": "9300173",
+    "name": "중독된 스톤버그",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300173/icon?resize=2",
+    "level": 65,
+    "hp": 12500,
+    "exp": 255,
+    "isReleased": false
+  },
+  {
+    "id": "9300187",
+    "name": "킹슬라임",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300187/icon?resize=2",
+    "level": 65,
+    "hp": 13000,
+    "exp": 0,
+    "isReleased": false
+  },
+  {
+    "id": "9300190",
+    "name": "킹크랑",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300190/icon?resize=2",
+    "level": 65,
+    "hp": 3000,
+    "exp": 0,
+    "isReleased": false
+  },
+  {
+    "id": "9300189",
+    "name": "파우스트",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300189/icon?resize=2",
+    "level": 65,
+    "hp": 13000,
+    "exp": 0,
+    "isReleased": false
+  },
+  {
+    "id": "9300039",
+    "name": "파파픽시",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300039/icon?resize=2",
+    "level": 65,
+    "hp": 672000,
+    "exp": 17000,
+    "isReleased": false
+  },
+  {
+    "id": "9300141",
+    "name": "폐쇄된 연구실의 호문",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300141/icon?resize=2",
+    "level": 65,
+    "hp": 11000,
+    "exp": 255,
+    "isReleased": false
+  },
+  {
+    "id": "9300174",
+    "name": "포이즌 플라워",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300174/icon?resize=2",
+    "level": 65,
+    "hp": 13000,
+    "exp": 255,
+    "isReleased": false
+  },
+  {
+    "id": "6110300",
+    "name": "호문",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/6110300/icon?resize=2",
+    "level": 65,
+    "hp": 11000,
+    "exp": 346,
+    "isReleased": true
+  },
+  {
+    "id": "6230300",
+    "name": "레이지 버피",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/6230300/icon?resize=2",
+    "level": 66,
+    "hp": 9400,
+    "exp": 296,
+    "isReleased": true
+  },
+  {
+    "id": "6130209",
+    "name": "묘선",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/6130209/icon?resize=2",
+    "level": 66,
+    "hp": 9000,
+    "exp": 283,
+    "isReleased": true
+  },
+  {
+    "id": "9300023",
+    "name": "미스트 나이트",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300023/icon?resize=2",
+    "level": 66,
+    "hp": 40000,
+    "exp": 1060,
+    "isReleased": false
+  },
+  {
+    "id": "9300034",
+    "name": "미스트 나이트",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300034/icon?resize=2",
+    "level": 66,
+    "hp": 20000,
+    "exp": 0,
+    "isReleased": false
+  },
+  {
+    "id": "9300022",
+    "name": "블랙 나이트",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300022/icon?resize=2",
+    "level": 66,
+    "hp": 40000,
+    "exp": 1060,
+    "isReleased": false
+  },
+  {
+    "id": "6300004",
+    "name": "파츠",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/6300004/icon?resize=2",
+    "level": 66,
+    "hp": 38000,
+    "exp": 200,
+    "isReleased": true
+  },
+  {
+    "id": "6230500",
+    "name": "마스터 소울테니",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/6230500/icon?resize=2",
+    "level": 67,
+    "hp": 11000,
+    "exp": 346,
+    "isReleased": true
+  },
+  {
+    "id": "9300024",
+    "name": "퍼펫골렘",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300024/icon?resize=2",
+    "level": 67,
+    "hp": 35000,
+    "exp": 1100,
+    "isReleased": false
+  },
+  {
+    "id": "6300003",
+    "name": "푼코",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/6300003/icon?resize=2",
+    "level": 67,
+    "hp": 40000,
+    "exp": 210,
+    "isReleased": true
+  },
+  {
+    "id": "9300025",
+    "name": "가고일",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300025/icon?resize=2",
+    "level": 68,
+    "hp": 35000,
+    "exp": 1150,
+    "isReleased": false
+  },
+  {
+    "id": "6230601",
+    "name": "다크 드레이크",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/6230601/icon?resize=2",
+    "level": 68,
+    "hp": 13000,
+    "exp": 409,
+    "isReleased": true
+  },
+  {
+    "id": "6400000",
+    "name": "다크 예티",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/6400000/icon?resize=2",
+    "level": 68,
+    "hp": 13000,
+    "exp": 409,
+    "isReleased": true
+  },
+  {
+    "id": "6090002",
+    "name": "대나무 무사",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/6090002/icon?resize=2",
+    "level": 68,
+    "hp": 12500,
+    "exp": 265,
+    "isReleased": false
+  },
+  {
+    "id": "9300106",
+    "name": "분노한 데비존",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300106/icon?resize=2",
+    "level": 68,
+    "hp": 540000,
+    "exp": 12000,
+    "isReleased": false
+  },
+  {
+    "id": "6110301",
+    "name": "사이티",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/6110301/icon?resize=2",
+    "level": 68,
+    "hp": 13000,
+    "exp": 409,
+    "isReleased": true
+  },
+  {
+    "id": "6130208",
+    "name": "크루",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/6130208/icon?resize=2",
+    "level": 68,
+    "hp": 12500,
+    "exp": 393,
+    "isReleased": true
+  },
+  {
+    "id": "6400003",
+    "name": "쿠스코",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/6400003/icon?resize=2",
+    "level": 69,
+    "hp": 60000,
+    "exp": 240,
+    "isReleased": false
+  },
+  {
+    "id": "9500319",
+    "name": "거대 눈사람",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9500319/icon?resize=2",
+    "level": 70,
+    "hp": 6000,
+    "exp": 270,
+    "isReleased": false
+  },
+  {
+    "id": "7220001",
+    "name": "구미호",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/7220001/icon?resize=2",
+    "level": 70,
+    "hp": 89000,
+    "exp": 1300,
+    "isReleased": false
+  },
+  {
+    "id": "9300101",
+    "name": "길들일 수 있는 멧돼지",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300101/icon?resize=2",
+    "level": 70,
+    "hp": 200,
+    "exp": 0,
+    "isReleased": false
+  },
+  {
+    "id": "7130400",
+    "name": "노란 왕도깨비",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/7130400/icon?resize=2",
+    "level": 70,
+    "hp": 25000,
+    "exp": 400,
+    "isReleased": true
+  },
+  {
+    "id": "7130500",
+    "name": "레쉬",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/7130500/icon?resize=2",
+    "level": 70,
+    "hp": 14500,
+    "exp": 456,
+    "isReleased": true
+  },
+  {
+    "id": "9300138",
+    "name": "로미오",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300138/icon?resize=2",
+    "level": 70,
+    "hp": 30000,
+    "exp": 0,
+    "isReleased": false
+  },
+  {
+    "id": "9300103",
+    "name": "바나드 그레이",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300103/icon?resize=2",
+    "level": 70,
+    "hp": 4500,
+    "exp": 0,
+    "isReleased": false
+  },
+  {
+    "id": "9300107",
+    "name": "엿보는 데비존",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300107/icon?resize=2",
+    "level": 70,
+    "hp": 300000,
+    "exp": 4000,
+    "isReleased": false
+  },
+  {
+    "id": "9500147",
+    "name": "예티와 코-크텀프",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9500147/icon?resize=2",
+    "level": 70,
+    "hp": 20000,
+    "exp": 272,
+    "isReleased": false
+  },
+  {
+    "id": "6400004",
+    "name": "오파츠",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/6400004/icon?resize=2",
+    "level": 70,
+    "hp": 80000,
+    "exp": 250,
+    "isReleased": false
+  },
+  {
+    "id": "9300104",
+    "name": "제타 그레이",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300104/icon?resize=2",
+    "level": 70,
+    "hp": 4500,
+    "exp": 0,
+    "isReleased": false
+  },
+  {
+    "id": "9300137",
+    "name": "줄리엣",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300137/icon?resize=2",
+    "level": 70,
+    "hp": 30000,
+    "exp": 0,
+    "isReleased": false
+  },
+  {
+    "id": "7130402",
+    "name": "초록 왕도깨비",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/7130402/icon?resize=2",
+    "level": 70,
+    "hp": 25000,
+    "exp": 400,
+    "isReleased": true
+  },
+  {
+    "id": "9500323",
+    "name": "치즈 창고 고양이",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9500323/icon?resize=2",
+    "level": 70,
+    "hp": 5000000,
+    "exp": 0,
+    "isReleased": false
+  },
+  {
+    "id": "9500324",
+    "name": "치즈 창고 고양이",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9500324/icon?resize=2",
+    "level": 70,
+    "hp": 5000000,
+    "exp": 0,
+    "isReleased": false
+  },
+  {
+    "id": "7130104",
+    "name": "캡틴",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/7130104/icon?resize=2",
+    "level": 70,
+    "hp": 15000,
+    "exp": 472,
+    "isReleased": true
+  },
+  {
+    "id": "8140200",
+    "name": "클라크",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/8140200/icon?resize=2",
+    "level": 70,
+    "hp": 15000,
+    "exp": 472,
+    "isReleased": true
+  },
+  {
+    "id": "7130100",
+    "name": "타우로마시스",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/7130100/icon?resize=2",
+    "level": 70,
+    "hp": 15000,
+    "exp": 472,
+    "isReleased": true
+  },
+  {
+    "id": "7130401",
+    "name": "파란 왕도깨비",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/7130401/icon?resize=2",
+    "level": 70,
+    "hp": 25000,
+    "exp": 400,
+    "isReleased": true
+  },
+  {
+    "id": "9300102",
+    "name": "호위용 멧돼지",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300102/icon?resize=2",
+    "level": 70,
+    "hp": 24000,
+    "exp": 0,
+    "isReleased": false
+  },
+  {
+    "id": "8500003",
+    "name": "로우 다크스타",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/8500003/icon?resize=2",
+    "level": 71,
+    "hp": 10000,
+    "exp": 0,
+    "isReleased": true
+  },
+  {
+    "id": "7220000",
+    "name": "태륜",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/7220000/icon?resize=2",
+    "level": 71,
+    "hp": 93000,
+    "exp": 1580,
+    "isReleased": false
+  },
+  {
+    "id": "7130001",
+    "name": "불독",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/7130001/icon?resize=2",
+    "level": 72,
+    "hp": 15200,
+    "exp": 478,
+    "isReleased": true
+  },
+  {
+    "id": "7130002",
+    "name": "비틀",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/7130002/icon?resize=2",
+    "level": 72,
+    "hp": 15200,
+    "exp": 478,
+    "isReleased": true
+  },
+  {
+    "id": "9400103",
+    "name": "수하 D",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9400103/icon?resize=2",
+    "level": 72,
+    "hp": 15100,
+    "exp": 465,
+    "isReleased": true
+  },
+  {
+    "id": "7130600",
+    "name": "호브",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/7130600/icon?resize=2",
+    "level": 72,
+    "hp": 15000,
+    "exp": 472,
+    "isReleased": true
+  },
+  {
+    "id": "9300143",
+    "name": "강화된 아이언 뮤테",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300143/icon?resize=2",
+    "level": 73,
+    "hp": 20000,
+    "exp": 300,
+    "isReleased": false
+  },
+  {
+    "id": "7130000",
+    "name": "루이넬",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/7130000/icon?resize=2",
+    "level": 73,
+    "hp": 15500,
+    "exp": 488,
+    "isReleased": true
+  },
+  {
+    "id": "9300142",
+    "name": "숨겨진 연구실의 호문쿨루",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300142/icon?resize=2",
+    "level": 73,
+    "hp": 15500,
+    "exp": 320,
+    "isReleased": false
+  },
+  {
+    "id": "7130103",
+    "name": "스켈레톤 지휘관",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/7130103/icon?resize=2",
+    "level": 73,
+    "hp": 15300,
+    "exp": 481,
+    "isReleased": true
+  },
+  {
+    "id": "7130501",
+    "name": "다크 레쉬",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/7130501/icon?resize=2",
+    "level": 74,
+    "hp": 15500,
+    "exp": 488,
+    "isReleased": true
+  },
+  {
+    "id": "6300100",
+    "name": "버푼",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/6300100/icon?resize=2",
+    "level": 74,
+    "hp": 16000,
+    "exp": 504,
+    "isReleased": true
+  },
+  {
+    "id": "7110300",
+    "name": "D.로이",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/7110300/icon?resize=2",
+    "level": 75,
+    "hp": 16000,
+    "exp": 350,
+    "isReleased": true
+  },
+  {
+    "id": "9300177",
+    "name": "더 중독된 트리로드",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300177/icon?resize=2",
+    "level": 75,
+    "hp": 930000,
+    "exp": 0,
+    "isReleased": false
+  },
+  {
+    "id": "9300087",
+    "name": "돌진 타우로스피어",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300087/icon?resize=2",
+    "level": 75,
+    "hp": 18000,
+    "exp": 350,
+    "isReleased": false
+  },
+  {
+    "id": "8510100",
+    "name": "블러드붐",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/8510100/icon?resize=2",
+    "level": 75,
+    "hp": 10000,
+    "exp": 0,
+    "isReleased": true
+  },
+  {
+    "id": "7130200",
+    "name": "웨어울프",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/7130200/icon?resize=2",
+    "level": 75,
+    "hp": 16000,
+    "exp": 504,
+    "isReleased": true
+  },
+  {
+    "id": "7090000",
+    "name": "자동경비시스템",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/7090000/icon?resize=2",
+    "level": 75,
+    "hp": 16000,
+    "exp": 350,
+    "isReleased": false
+  },
+  {
+    "id": "7130101",
+    "name": "타우로스피어",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/7130101/icon?resize=2",
+    "level": 75,
+    "hp": 18000,
+    "exp": 567,
+    "isReleased": true
+  },
+  {
+    "id": "7130602",
+    "name": "가시덤불",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/7130602/icon?resize=2",
+    "level": 76,
+    "hp": 8000,
+    "exp": 0,
+    "isReleased": false
+  },
+  {
+    "id": "8140300",
+    "name": "다크 클라크",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/8140300/icon?resize=2",
+    "level": 76,
+    "hp": 18000,
+    "exp": 567,
+    "isReleased": true
+  },
+  {
+    "id": "7130003",
+    "name": "듀얼 비틀",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/7130003/icon?resize=2",
+    "level": 76,
+    "hp": 18000,
+    "exp": 567,
+    "isReleased": true
+  },
+  {
+    "id": "7130601",
+    "name": "핀호브",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/7130601/icon?resize=2",
+    "level": 76,
+    "hp": 18000,
+    "exp": 567,
+    "isReleased": true
+  },
+  {
+    "id": "6400100",
+    "name": "딥 버푼",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/6400100/icon?resize=2",
+    "level": 77,
+    "hp": 19000,
+    "exp": 598,
+    "isReleased": true
+  },
+  {
+    "id": "7220002",
+    "name": "요괴선사",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/7220002/icon?resize=2",
+    "level": 77,
+    "hp": 108000,
+    "exp": 2280,
+    "isReleased": false
+  },
+  {
+    "id": "9300147",
+    "name": "호문쿨루",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300147/icon?resize=2",
+    "level": 77,
+    "hp": 20000,
+    "exp": 488,
+    "isReleased": false
+  },
+  {
+    "id": "9300149",
+    "name": "로이드",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300149/icon?resize=2",
+    "level": 78,
+    "hp": 29000,
+    "exp": 295,
+    "isReleased": false
+  },
+  {
+    "id": "7130102",
+    "name": "예티와 페페",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/7130102/icon?resize=2",
+    "level": 78,
+    "hp": 20000,
+    "exp": 0,
+    "isReleased": true
+  },
+  {
+    "id": "9200020",
+    "name": "예티와 페페",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9200020/icon?resize=2",
+    "level": 78,
+    "hp": 20000,
+    "exp": 0,
+    "isReleased": true
+  },
+  {
+    "id": "9500133",
+    "name": "예티와 페페",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9500133/icon?resize=2",
+    "level": 78,
+    "hp": 20000,
+    "exp": 0,
+    "isReleased": true
+  },
+  {
+    "id": "9500200",
+    "name": "Zoo 발록",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9500200/icon?resize=2",
+    "level": 80,
+    "hp": 50000,
+    "exp": 0,
+    "isReleased": false
+  },
+  {
+    "id": "9300095",
+    "name": "납치범 라이칸스로프",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300095/icon?resize=2",
+    "level": 80,
+    "hp": 19000,
+    "exp": 850,
+    "isReleased": false
+  },
+  {
+    "id": "9300150",
+    "name": "네오 휴로이드",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300150/icon?resize=2",
+    "level": 80,
+    "hp": 35000,
+    "exp": 390,
+    "isReleased": false
+  },
+  {
+    "id": "9001003",
+    "name": "다크로드의 분신",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9001003/icon?resize=2",
+    "level": 80,
+    "hp": 120000,
+    "exp": 2400,
+    "isReleased": true
+  },
+  {
+    "id": "9300088",
+    "name": "다크로드의 제자",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300088/icon?resize=2",
+    "level": 80,
+    "hp": 120000,
+    "exp": 2400,
+    "isReleased": false
+  },
+  {
+    "id": "8090000",
+    "name": "디트와 로이",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/8090000/icon?resize=2",
+    "level": 80,
+    "hp": 27000,
+    "exp": 850,
+    "isReleased": false
+  },
+  {
+    "id": "8140000",
+    "name": "라이칸스로프",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/8140000/icon?resize=2",
+    "level": 80,
+    "hp": 27000,
+    "exp": 850,
+    "isReleased": true
+  },
+  {
+    "id": "9400402",
+    "name": "상급닌자",
+    "imageUrl": "https://maplestory.io/api/gms/92/mob/9400402/icon?resize=2",
+    "level": 80,
+    "hp": 25000,
+    "exp": 1150,
+    "isReleased": true
+  },
+  {
+    "id": "9400545",
+    "name": "울프 스파이더",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9400545/icon?resize=2",
+    "level": 80,
+    "hp": 28000,
+    "exp": 1200,
+    "isReleased": false
+  },
+  {
+    "id": "9300085",
+    "name": "이계의 주니어 발록",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300085/icon?resize=2",
+    "level": 80,
+    "hp": 50000,
+    "exp": 2000,
+    "isReleased": false
+  },
+  {
+    "id": "9300092",
+    "name": "잊혀진 신전의 주니어 발록",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300092/icon?resize=2",
+    "level": 80,
+    "hp": 50000,
+    "exp": 2000,
+    "isReleased": false
+  },
+  {
+    "id": "8130100",
+    "name": "주니어 발록",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/8130100/icon?resize=2",
+    "level": 80,
+    "hp": 50000,
+    "exp": 2000,
+    "isReleased": true
+  },
+  {
+    "id": "9001000",
+    "name": "주먹펴고 일어서의 분신",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9001000/icon?resize=2",
+    "level": 80,
+    "hp": 150000,
+    "exp": 2400,
+    "isReleased": true
+  },
+  {
+    "id": "9001004",
+    "name": "카이린의 분신",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9001004/icon?resize=2",
+    "level": 80,
+    "hp": 130000,
+    "exp": 2400,
+    "isReleased": true
+  },
+  {
+    "id": "9001008",
+    "name": "카이린의 분신의 분신",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9001008/icon?resize=2",
+    "level": 80,
+    "hp": 70000,
+    "exp": 0,
+    "isReleased": false
+  },
+  {
+    "id": "8500004",
+    "name": "하이 다크스타",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/8500004/icon?resize=2",
+    "level": 80,
+    "hp": 10000,
+    "exp": 0,
+    "isReleased": true
+  },
+  {
+    "id": "9001001",
+    "name": "하인즈의 분신",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9001001/icon?resize=2",
+    "level": 80,
+    "hp": 90000,
+    "exp": 2400,
+    "isReleased": true
+  },
+  {
+    "id": "8140001",
+    "name": "하프",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/8140001/icon?resize=2",
+    "level": 80,
+    "hp": 27000,
+    "exp": 850,
+    "isReleased": true
+  },
+  {
+    "id": "9001002",
+    "name": "헬레나의 분신",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9001002/icon?resize=2",
+    "level": 80,
+    "hp": 120000,
+    "exp": 2400,
+    "isReleased": true
+  },
+  {
+    "id": "9500161",
+    "name": "헹키",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9500161/icon?resize=2",
+    "level": 80,
+    "hp": 27000,
+    "exp": 850,
+    "isReleased": true
+  },
+  {
+    "id": "8110300",
+    "name": "호문스큘러",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/8110300/icon?resize=2",
+    "level": 80,
+    "hp": 27000,
+    "exp": 850,
+    "isReleased": false
+  },
+  {
+    "id": "9300139",
+    "name": "프랑켄로이드",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300139/icon?resize=2",
+    "level": 81,
+    "hp": 660000,
+    "exp": 12000,
+    "isReleased": false
+  },
+  {
+    "id": "8140100",
+    "name": "다크 예티와 페페",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/8140100/icon?resize=2",
+    "level": 82,
+    "hp": 29000,
+    "exp": 0,
+    "isReleased": true
+  },
+  {
+    "id": "8140002",
+    "name": "블러드 하프",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/8140002/icon?resize=2",
+    "level": 83,
+    "hp": 30000,
+    "exp": 1100,
+    "isReleased": true
+  },
+  {
+    "id": "8220000",
+    "name": "엘리쟈",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/8220000/icon?resize=2",
+    "level": 83,
+    "hp": 87000,
+    "exp": 2800,
+    "isReleased": false
+  },
+  {
+    "id": "7140000",
+    "name": "파이렛",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/7140000/icon?resize=2",
+    "level": 83,
+    "hp": 30000,
+    "exp": 1100,
+    "isReleased": true
+  },
+  {
+    "id": "9300140",
+    "name": "화난 프랑켄로이드",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300140/icon?resize=2",
+    "level": 84,
+    "hp": 850000,
+    "exp": 25000,
+    "isReleased": false
+  },
+  {
+    "id": "9300178",
+    "name": "더 중독된 스톤버그",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300178/icon?resize=2",
+    "level": 85,
+    "hp": 1350000,
+    "exp": 44950,
+    "isReleased": false
+  },
+  {
+    "id": "7130010",
+    "name": "데스테니",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/7130010/icon?resize=2",
+    "level": 85,
+    "hp": 32000,
+    "exp": 1300,
+    "isReleased": true
+  },
+  {
+    "id": "7130020",
+    "name": "망둥이",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/7130020/icon?resize=2",
+    "level": 85,
+    "hp": 17000,
+    "exp": 1400,
+    "isReleased": true
+  },
+  {
+    "id": "8140110",
+    "name": "버크",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/8140110/icon?resize=2",
+    "level": 85,
+    "hp": 32000,
+    "exp": 1420,
+    "isReleased": true
+  },
+  {
+    "id": "9300097",
+    "name": "일그러진 차원의 망둥이",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300097/icon?resize=2",
+    "level": 85,
+    "hp": 17000,
+    "exp": 1400,
+    "isReleased": false
+  },
+  {
+    "id": "8220002",
+    "name": "키메라",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/8220002/icon?resize=2",
+    "level": 85,
+    "hp": 96000,
+    "exp": 3000,
+    "isReleased": false
+  },
+  {
+    "id": "9410014",
+    "name": "포장마차",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9410014/icon?resize=2",
+    "level": 85,
+    "hp": 5000,
+    "exp": 0,
+    "isReleased": false
+  },
+  {
+    "id": "9410015",
+    "name": "포장마차",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9410015/icon?resize=2",
+    "level": 85,
+    "hp": 230000,
+    "exp": 4230,
+    "isReleased": true
+  },
+  {
+    "id": "7160000",
+    "name": "듀얼 파이렛",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/7160000/icon?resize=2",
+    "level": 87,
+    "hp": 35000,
+    "exp": 1500,
+    "isReleased": true
+  },
+  {
+    "id": "8140101",
+    "name": "검은 켄타우로스",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/8140101/icon?resize=2",
+    "level": 88,
+    "hp": 37000,
+    "exp": 1600,
+    "isReleased": true
+  },
+  {
+    "id": "8140111",
+    "name": "듀얼 버크",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/8140111/icon?resize=2",
+    "level": 88,
+    "hp": 37000,
+    "exp": 1620,
+    "isReleased": true
+  },
+  {
+    "id": "8140102",
+    "name": "붉은 켄타우로스",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/8140102/icon?resize=2",
+    "level": 88,
+    "hp": 37000,
+    "exp": 1600,
+    "isReleased": true
+  },
+  {
+    "id": "8140103",
+    "name": "푸른 켄타우로스",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/8140103/icon?resize=2",
+    "level": 88,
+    "hp": 37000,
+    "exp": 1600,
+    "isReleased": true
+  },
+  {
+    "id": "7130300",
+    "name": "마스터 데스테니",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/7130300/icon?resize=2",
+    "level": 89,
+    "hp": 40000,
+    "exp": 1720,
+    "isReleased": true
+  },
+  {
+    "id": "8140700",
+    "name": "블루 드래곤터틀",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/8140700/icon?resize=2",
+    "level": 90,
+    "hp": 40000,
+    "exp": 1780,
+    "isReleased": true
+  },
+  {
+    "id": "9400205",
+    "name": "블루머쉬맘",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9400205/icon?resize=2",
+    "level": 90,
+    "hp": 200000,
+    "exp": 10000,
+    "isReleased": true
+  },
+  {
+    "id": "8220001",
+    "name": "스노우맨",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/8220001/icon?resize=2",
+    "level": 90,
+    "hp": 120000,
+    "exp": 5200,
+    "isReleased": false
+  },
+  {
+    "id": "9500138",
+    "name": "파이어 독",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9500138/icon?resize=2",
+    "level": 90,
+    "hp": 45000,
+    "exp": 1800,
+    "isReleased": true
+  },
+  {
+    "id": "8140500",
+    "name": "파이어독",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/8140500/icon?resize=2",
+    "level": 90,
+    "hp": 45000,
+    "exp": 1800,
+    "isReleased": true
+  },
+  {
+    "id": "8140555",
+    "name": "폭렬 망둥이집",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/8140555/icon?resize=2",
+    "level": 90,
+    "hp": 40500,
+    "exp": 0,
+    "isReleased": true
+  },
+  {
+    "id": "8140600",
+    "name": "본피쉬",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/8140600/icon?resize=2",
+    "level": 92,
+    "hp": 42500,
+    "exp": 2000,
+    "isReleased": true
+  },
+  {
+    "id": "9300098",
+    "name": "일그러진 차원의 본피쉬",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300098/icon?resize=2",
+    "level": 92,
+    "hp": 42500,
+    "exp": 2000,
+    "isReleased": false
+  },
+  {
+    "id": "8140701",
+    "name": "레드 드래곤터틀",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/8140701/icon?resize=2",
+    "level": 93,
+    "hp": 49000,
+    "exp": 2100,
+    "isReleased": true
+  },
+  {
+    "id": "8141000",
+    "name": "바이킹",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/8141000/icon?resize=2",
+    "level": 93,
+    "hp": 50000,
+    "exp": 2100,
+    "isReleased": true
+  },
+  {
+    "id": "8141300",
+    "name": "스퀴드",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/8141300/icon?resize=2",
+    "level": 94,
+    "hp": 46000,
+    "exp": 2200,
+    "isReleased": true
+  },
+  {
+    "id": "9400120",
+    "name": "두목",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9400120/icon?resize=2",
+    "level": 95,
+    "hp": 85000,
+    "exp": 5500,
+    "isReleased": true
+  },
+  {
+    "id": "8140702",
+    "name": "리스튼",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/8140702/icon?resize=2",
+    "level": 95,
+    "hp": 50000,
+    "exp": 2280,
+    "isReleased": true
+  },
+  {
+    "id": "8142000",
+    "name": "팬텀워치",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/8142000/icon?resize=2",
+    "level": 95,
+    "hp": 53000,
+    "exp": 2300,
+    "isReleased": true
+  },
+  {
+    "id": "9300069",
+    "name": "동굴 레드 와이번1",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300069/icon?resize=2",
+    "level": 97,
+    "hp": 53000,
+    "exp": 800,
+    "isReleased": false
+  },
+  {
+    "id": "9300070",
+    "name": "동굴 레드 와이번2",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300070/icon?resize=2",
+    "level": 97,
+    "hp": 53000,
+    "exp": 800,
+    "isReleased": false
+  },
+  {
+    "id": "8150300",
+    "name": "레드 와이번",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/8150300/icon?resize=2",
+    "level": 97,
+    "hp": 53000,
+    "exp": 2500,
+    "isReleased": true
+  },
+  {
+    "id": "8142100",
+    "name": "리셀스퀴드",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/8142100/icon?resize=2",
+    "level": 97,
+    "hp": 49000,
+    "exp": 2500,
+    "isReleased": true
+  },
+  {
+    "id": "8140703",
+    "name": "브레스튼",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/8140703/icon?resize=2",
+    "level": 97,
+    "hp": 55000,
+    "exp": 2500,
+    "isReleased": true
+  },
+  {
+    "id": "8141100",
+    "name": "기간틱 바이킹",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/8141100/icon?resize=2",
+    "level": 98,
+    "hp": 58000,
+    "exp": 2600,
+    "isReleased": true
+  },
+  {
+    "id": "8143000",
+    "name": "G.팬텀워치",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/8143000/icon?resize=2",
+    "level": 99,
+    "hp": 60000,
+    "exp": 2800,
+    "isReleased": true
+  },
+  {
+    "id": "9300029",
+    "name": "사자석상 A",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300029/icon?resize=2",
+    "level": 99,
+    "hp": 1000000,
+    "exp": 0,
+    "isReleased": false
+  },
+  {
+    "id": "9300030",
+    "name": "사자석상 B",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300030/icon?resize=2",
+    "level": 99,
+    "hp": 800000,
+    "exp": 0,
+    "isReleased": false
+  },
+  {
+    "id": "8810022",
+    "name": "그린 코니언",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/8810022/icon?resize=2",
+    "level": 100,
+    "hp": 56000,
+    "exp": 1000,
+    "isReleased": false
+  },
+  {
+    "id": "8150200",
+    "name": "그린코니언",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/8150200/icon?resize=2",
+    "level": 100,
+    "hp": 56000,
+    "exp": 3000,
+    "isReleased": true
+  },
+  {
+    "id": "9300031",
+    "name": "기사석상 A",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300031/icon?resize=2",
+    "level": 100,
+    "hp": 900000,
+    "exp": 0,
+    "isReleased": false
+  },
+  {
+    "id": "9300032",
+    "name": "기사석상 B",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300032/icon?resize=2",
+    "level": 100,
+    "hp": 900000,
+    "exp": 0,
+    "isReleased": false
+  },
+  {
+    "id": "9300094",
+    "name": "납치범 크림슨 발록",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300094/icon?resize=2",
+    "level": 100,
+    "hp": 50000,
+    "exp": 3500,
+    "isReleased": false
+  },
+  {
+    "id": "9400403",
+    "name": "닌자두목",
+    "imageUrl": "https://maplestory.io/api/gms/92/mob/9400403/icon?resize=2",
+    "level": 100,
+    "hp": 71000,
+    "exp": 4050,
+    "isReleased": true
+  },
+  {
+    "id": "9300065",
+    "name": "동굴 그린 코니언1",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300065/icon?resize=2",
+    "level": 100,
+    "hp": 56000,
+    "exp": 1000,
+    "isReleased": false
+  },
+  {
+    "id": "9300066",
+    "name": "동굴 그린 코니언2",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300066/icon?resize=2",
+    "level": 100,
+    "hp": 56000,
+    "exp": 1000,
+    "isReleased": false
+  },
+  {
+    "id": "9400013",
+    "name": "몽롱귀신",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9400013/icon?resize=2",
+    "level": 100,
+    "hp": 68000,
+    "exp": 3200,
+    "isReleased": false
+  },
+  {
+    "id": "8150100",
+    "name": "샤크",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/8150100/icon?resize=2",
+    "level": 100,
+    "hp": 56000,
+    "exp": 3000,
+    "isReleased": true
+  },
+  {
+    "id": "8500000",
+    "name": "시간의 구",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/8500000/icon?resize=2",
+    "level": 100,
+    "hp": 16000,
+    "exp": 0,
+    "isReleased": false
+  },
+  {
+    "id": "9300099",
+    "name": "일그러진 차원의 샤크",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300099/icon?resize=2",
+    "level": 100,
+    "hp": 56000,
+    "exp": 3000,
+    "isReleased": false
+  },
+  {
+    "id": "8150000",
+    "name": "크림슨 발록",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/8150000/icon?resize=2",
+    "level": 100,
+    "hp": 100000,
+    "exp": 3500,
+    "isReleased": true
+  },
+  {
+    "id": "9500193",
+    "name": "파이어 스티드",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9500193/icon?resize=2",
+    "level": 100,
+    "hp": 10,
+    "exp": 12,
+    "isReleased": false
+  },
+  {
+    "id": "9500192",
+    "name": "호박기사",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9500192/icon?resize=2",
+    "level": 100,
+    "hp": 10,
+    "exp": 12,
+    "isReleased": false
+  },
+  {
+    "id": "9300071",
+    "name": "동굴 블루 와이번1",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300071/icon?resize=2",
+    "level": 101,
+    "hp": 57000,
+    "exp": 1000,
+    "isReleased": false
+  },
+  {
+    "id": "9300072",
+    "name": "동굴 블루 와이번2",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300072/icon?resize=2",
+    "level": 101,
+    "hp": 57000,
+    "exp": 1000,
+    "isReleased": false
+  },
+  {
+    "id": "8150301",
+    "name": "블루 와이번",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/8150301/icon?resize=2",
+    "level": 101,
+    "hp": 57000,
+    "exp": 3050,
+    "isReleased": true
+  },
+  {
+    "id": "8150101",
+    "name": "콜드샤크",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/8150101/icon?resize=2",
+    "level": 102,
+    "hp": 58500,
+    "exp": 3100,
+    "isReleased": true
+  },
+  {
+    "id": "8150302",
+    "name": "다크 와이번",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/8150302/icon?resize=2",
+    "level": 103,
+    "hp": 60000,
+    "exp": 3150,
+    "isReleased": true
+  },
+  {
+    "id": "9300073",
+    "name": "동굴 다크 와이번1",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300073/icon?resize=2",
+    "level": 103,
+    "hp": 60000,
+    "exp": 1050,
+    "isReleased": false
+  },
+  {
+    "id": "9300074",
+    "name": "동굴 다크 와이번2",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300074/icon?resize=2",
+    "level": 103,
+    "hp": 60000,
+    "exp": 1050,
+    "isReleased": false
+  },
+  {
+    "id": "8180001",
+    "name": "그리프",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/8180001/icon?resize=2",
+    "level": 105,
+    "hp": 3700000,
+    "exp": 13500,
+    "isReleased": true
+  },
+  {
+    "id": "8190000",
+    "name": "뉴트주니어",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/8190000/icon?resize=2",
+    "level": 105,
+    "hp": 68000,
+    "exp": 3800,
+    "isReleased": true
+  },
+  {
+    "id": "8190001",
+    "name": "뉴트주니어",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/8190001/icon?resize=2",
+    "level": 105,
+    "hp": 68000,
+    "exp": 0,
+    "isReleased": true
+  },
+  {
+    "id": "8810023",
+    "name": "다크 코니언",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/8810023/icon?resize=2",
+    "level": 105,
+    "hp": 67000,
+    "exp": 1200,
+    "isReleased": false
+  },
+  {
+    "id": "8150201",
+    "name": "다크코니언",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/8150201/icon?resize=2",
+    "level": 105,
+    "hp": 67000,
+    "exp": 3700,
+    "isReleased": true
+  },
+  {
+    "id": "9300078",
+    "name": "동굴 뉴트주니어",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300078/icon?resize=2",
+    "level": 105,
+    "hp": 68000,
+    "exp": 1250,
+    "isReleased": false
+  },
+  {
+    "id": "9300067",
+    "name": "동굴 다크 코니언1",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300067/icon?resize=2",
+    "level": 105,
+    "hp": 67000,
+    "exp": 1200,
+    "isReleased": false
+  },
+  {
+    "id": "9300068",
+    "name": "동굴 다크 코니언2",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300068/icon?resize=2",
+    "level": 105,
+    "hp": 67000,
+    "exp": 1200,
+    "isReleased": false
+  },
+  {
+    "id": "8180000",
+    "name": "마뇽",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/8180000/icon?resize=2",
+    "level": 105,
+    "hp": 3700000,
+    "exp": 13500,
+    "isReleased": true
+  },
+  {
+    "id": "8160000",
+    "name": "게이트키퍼",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/8160000/icon?resize=2",
+    "level": 108,
+    "hp": 78000,
+    "exp": 4300,
+    "isReleased": true
+  },
+  {
+    "id": "9300086",
+    "name": "속성의 타나토스",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300086/icon?resize=2",
+    "level": 108,
+    "hp": 70000,
+    "exp": 4100,
+    "isReleased": false
+  },
+  {
+    "id": "8170000",
+    "name": "타나토스",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/8170000/icon?resize=2",
+    "level": 108,
+    "hp": 70000,
+    "exp": 4100,
+    "isReleased": true
+  },
+  {
+    "id": "8190002",
+    "name": "네스트골렘",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/8190002/icon?resize=2",
+    "level": 110,
+    "hp": 80000,
+    "exp": 8050,
+    "isReleased": true
+  },
+  {
+    "id": "9300079",
+    "name": "동굴 네스트골렘",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300079/icon?resize=2",
+    "level": 110,
+    "hp": 80000,
+    "exp": 1500,
+    "isReleased": false
+  },
+  {
+    "id": "9300075",
+    "name": "동굴 스켈레곤1",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300075/icon?resize=2",
+    "level": 110,
+    "hp": 80000,
+    "exp": 1500,
+    "isReleased": false
+  },
+  {
+    "id": "9300076",
+    "name": "동굴 스켈레곤2",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300076/icon?resize=2",
+    "level": 110,
+    "hp": 80000,
+    "exp": 1500,
+    "isReleased": false
+  },
+  {
+    "id": "8190003",
+    "name": "스켈레곤",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/8190003/icon?resize=2",
+    "level": 110,
+    "hp": 80000,
+    "exp": 4500,
+    "isReleased": true
+  },
+  {
+    "id": "8510000",
+    "name": "피아누스",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/8510000/icon?resize=2",
+    "level": 110,
+    "hp": 30000000,
+    "exp": 1300000,
+    "isReleased": true
+  },
+  {
+    "id": "9300077",
+    "name": "동굴 T-스켈래곤",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300077/icon?resize=2",
+    "level": 113,
+    "hp": 85000,
+    "exp": 1500,
+    "isReleased": false
+  },
+  {
+    "id": "8190004",
+    "name": "스켈로스",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/8190004/icon?resize=2",
+    "level": 113,
+    "hp": 85000,
+    "exp": 4750,
+    "isReleased": true
+  },
+  {
+    "id": "9300028",
+    "name": "에레고스",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300028/icon?resize=2",
+    "level": 115,
+    "hp": 1700000,
+    "exp": 150000,
+    "isReleased": false
+  },
+  {
+    "id": "9400014",
+    "name": "천구",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9400014/icon?resize=2",
+    "level": 115,
+    "hp": 35000000,
+    "exp": 1780000,
+    "isReleased": false
+  },
+  {
+    "id": "9400405",
+    "name": "갑주무사",
+    "imageUrl": "https://maplestory.io/api/gms/92/mob/9400405/icon?resize=2",
+    "level": 120,
+    "hp": 78000000,
+    "exp": 3680000,
+    "isReleased": true
+  },
+  {
+    "id": "8220003",
+    "name": "레비아탄",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/8220003/icon?resize=2",
+    "level": 120,
+    "hp": 13400000,
+    "exp": 47355,
+    "isReleased": false
+  },
+  {
+    "id": "9300163",
+    "name": "묘선",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300163/icon?resize=2",
+    "level": 120,
+    "hp": 25000,
+    "exp": 0,
+    "isReleased": false
+  },
+  {
+    "id": "9300164",
+    "name": "비급",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300164/icon?resize=2",
+    "level": 120,
+    "hp": 28000,
+    "exp": 0,
+    "isReleased": false
+  },
+  {
+    "id": "9300165",
+    "name": "원공",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300165/icon?resize=2",
+    "level": 120,
+    "hp": 21000,
+    "exp": 0,
+    "isReleased": false
+  },
+  {
+    "id": "9300158",
+    "name": "카이린",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300158/icon?resize=2",
+    "level": 120,
+    "hp": 100000000,
+    "exp": 0,
+    "isReleased": false
+  },
+  {
+    "id": "9300159",
+    "name": "카이린",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300159/icon?resize=2",
+    "level": 120,
+    "hp": 100000000,
+    "exp": 0,
+    "isReleased": false
+  },
+  {
+    "id": "9300090",
+    "name": "프리저",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300090/icon?resize=2",
+    "level": 120,
+    "hp": 1350000,
+    "exp": 13500,
+    "isReleased": false
+  },
+  {
+    "id": "9300089",
+    "name": "피닉스",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300089/icon?resize=2",
+    "level": 120,
+    "hp": 1350000,
+    "exp": 13500,
+    "isReleased": false
+  },
+  {
+    "id": "8500002",
+    "name": "파풀라투스",
+    "imageUrl": "https://maplestory.io/api/kms/284/mob/8500002/icon?resize=2",
+    "level": 125,
+    "hp": 1590000,
+    "exp": 970000,
+    "isReleased": true
+  },
+  {
+    "id": "8500001",
+    "name": "파풀라투스의 시계",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/8500001/icon?resize=2",
+    "level": 125,
+    "hp": 23000000,
+    "exp": 596000,
+    "isReleased": true
+  },
+  {
+    "id": "9400121",
+    "name": "여두목",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9400121/icon?resize=2",
+    "level": 130,
+    "hp": 75000000,
+    "exp": 3900000,
+    "isReleased": true
+  },
+  {
+    "id": "8800000",
+    "name": "자쿰",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/8800000/icon?resize=2",
+    "level": 140,
+    "hp": 66000000,
+    "exp": 0,
+    "isReleased": true
+  },
+  {
+    "id": "8800001",
+    "name": "자쿰",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/8800001/icon?resize=2",
+    "level": 140,
+    "hp": 88000000,
+    "exp": 0,
+    "isReleased": true
+  },
+  {
+    "id": "8800002",
+    "name": "자쿰",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/8800002/icon?resize=2",
+    "level": 140,
+    "hp": 110000000,
+    "exp": 7000000,
+    "isReleased": true
+  },
+  {
+    "id": "8800003",
+    "name": "자쿰팔1",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/8800003/icon?resize=2",
+    "level": 140,
+    "hp": 33000000,
+    "exp": 1344000,
+    "isReleased": true
+  },
+  {
+    "id": "8800004",
+    "name": "자쿰팔2",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/8800004/icon?resize=2",
+    "level": 140,
+    "hp": 33000000,
+    "exp": 1344000,
+    "isReleased": true
+  },
+  {
+    "id": "8800005",
+    "name": "자쿰팔3",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/8800005/icon?resize=2",
+    "level": 140,
+    "hp": 22000000,
+    "exp": 896000,
+    "isReleased": true
+  },
+  {
+    "id": "8800006",
+    "name": "자쿰팔4",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/8800006/icon?resize=2",
+    "level": 140,
+    "hp": 22000000,
+    "exp": 896000,
+    "isReleased": true
+  },
+  {
+    "id": "8800007",
+    "name": "자쿰팔5",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/8800007/icon?resize=2",
+    "level": 140,
+    "hp": 27500000,
+    "exp": 1120000,
+    "isReleased": true
+  },
+  {
+    "id": "8800008",
+    "name": "자쿰팔6",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/8800008/icon?resize=2",
+    "level": 140,
+    "hp": 30000000,
+    "exp": 1120000,
+    "isReleased": true
+  },
+  {
+    "id": "8800009",
+    "name": "자쿰팔7",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/8800009/icon?resize=2",
+    "level": 140,
+    "hp": 25300000,
+    "exp": 1030400,
+    "isReleased": true
+  },
+  {
+    "id": "8800010",
+    "name": "자쿰팔8",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/8800010/icon?resize=2",
+    "level": 140,
+    "hp": 25300000,
+    "exp": 1030400,
+    "isReleased": true
+  },
+  {
+    "id": "9400408",
+    "name": "두꺼비 영주",
+    "imageUrl": "https://maplestory.io/api/gms/92/mob/9400408/icon?resize=2",
+    "level": 180,
+    "hp": 620000000,
+    "exp": 22550000,
+    "isReleased": true
+  },
+  {
+    "id": "9300021",
+    "name": "다크 머슬스톤",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300021/icon?resize=2",
+    "level": 200,
+    "hp": 9999999,
+    "exp": 0,
+    "isReleased": false
+  },
+  {
+    "id": "9100010",
+    "name": "슈퍼 검은 양",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9100010/icon?resize=2",
+    "level": 200,
+    "hp": 99999,
+    "exp": 0,
+    "isReleased": false
+  },
+  {
+    "id": "9100006",
+    "name": "슈퍼 그린 트릭스터",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9100006/icon?resize=2",
+    "level": 200,
+    "hp": 99999,
+    "exp": 0,
+    "isReleased": false
+  },
+  {
+    "id": "9100007",
+    "name": "슈퍼 리본돼지",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9100007/icon?resize=2",
+    "level": 200,
+    "hp": 9999,
+    "exp": 0,
+    "isReleased": false
+  },
+  {
+    "id": "9100002",
+    "name": "슈퍼 스티지",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9100002/icon?resize=2",
+    "level": 200,
+    "hp": 9999,
+    "exp": 0,
+    "isReleased": false
+  },
+  {
+    "id": "9100000",
+    "name": "슈퍼 슬라임",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9100000/icon?resize=2",
+    "level": 200,
+    "hp": 9999,
+    "exp": 0,
+    "isReleased": false
+  },
+  {
+    "id": "9100001",
+    "name": "슈퍼 주니어 네키",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9100001/icon?resize=2",
+    "level": 200,
+    "hp": 9999,
+    "exp": 0,
+    "isReleased": false
+  },
+  {
+    "id": "9100005",
+    "name": "슈퍼 트릭스터",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9100005/icon?resize=2",
+    "level": 200,
+    "hp": 99999,
+    "exp": 0,
+    "isReleased": false
+  },
+  {
+    "id": "9300091",
+    "name": "어둠의 머슬스톤",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300091/icon?resize=2",
+    "level": 200,
+    "hp": 9999999,
+    "exp": 0,
+    "isReleased": false
+  },
+  {
+    "id": "9100003",
+    "name": "울트라 주니어 네키",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9100003/icon?resize=2",
+    "level": 200,
+    "hp": 99999,
+    "exp": 0,
+    "isReleased": false
+  },
+  {
+    "id": "9100004",
+    "name": "울트라 주니어 네키",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9100004/icon?resize=2",
+    "level": 200,
+    "hp": 99999,
+    "exp": 0,
+    "isReleased": false
+  },
+  {
+    "id": "9100008",
+    "name": "울트라 코-크 달팽이",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9100008/icon?resize=2",
+    "level": 200,
+    "hp": 99999,
+    "exp": 0,
+    "isReleased": false
+  },
+  {
+    "id": "9100009",
+    "name": "울트라 코-크 달팽이",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9100009/icon?resize=2",
+    "level": 200,
+    "hp": 99999,
+    "exp": 0,
+    "isReleased": false
+  },
+  {
+    "id": "9300013",
+    "name": "차원의 킹 블록골렘",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9300013/icon?resize=2",
+    "level": 200,
+    "hp": 99999,
+    "exp": 1,
+    "isReleased": false
+  },
+  {
+    "id": "9500190",
+    "name": "삐에로 인형",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9500190/icon?resize=2",
+    "level": 1800,
+    "hp": 70,
+    "exp": 95,
+    "isReleased": false
+  }
+]
