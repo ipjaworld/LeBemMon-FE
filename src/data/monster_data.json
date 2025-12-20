@@ -375,7 +375,7 @@
     "level": 19,
     "hp": 320,
     "exp": 35,
-    "isReleased": false
+    "isReleased": true
   },
   {
     "id": "9500194",
@@ -483,7 +483,7 @@
     "level": 21,
     "hp": 350,
     "exp": 37,
-    "isReleased": false
+    "isReleased": true
   },
   {
     "id": "2130103",
@@ -726,7 +726,7 @@
     "level": 25,
     "hp": 730,
     "exp": 60,
-    "isReleased": false
+    "isReleased": true
   },
   {
     "id": "9400400",
@@ -753,7 +753,7 @@
     "level": 27,
     "hp": 700,
     "exp": 55,
-    "isReleased": false
+    "isReleased": true
   },
   {
     "id": "2230100",
@@ -870,7 +870,7 @@
     "level": 30,
     "hp": 950,
     "exp": 65,
-    "isReleased": false
+    "isReleased": true
   },
   {
     "id": "3230400",
@@ -1509,7 +1509,7 @@
     "level": 36,
     "hp": 1450,
     "exp": 85,
-    "isReleased": false
+    "isReleased": true
   },
   {
     "id": "3210203",
@@ -1806,7 +1806,7 @@
     "level": 41,
     "hp": 1600,
     "exp": 95,
-    "isReleased": false
+    "isReleased": true
   },
   {
     "id": "4230107",
@@ -1977,7 +1977,7 @@
     "level": 44,
     "hp": 2490,
     "exp": 120,
-    "isReleased": false
+    "isReleased": true
   },
   {
     "id": "4230112",
@@ -2292,7 +2292,7 @@
     "level": 50,
     "hp": 3300,
     "exp": 220,
-    "isReleased": false
+    "isReleased": true
   },
   {
     "id": "9500177",
@@ -2336,8 +2336,8 @@
     "imageUrl": "https://maplestory.io/api/gms/62/mob/5100000/icon?resize=2",
     "level": 50,
     "hp": 3700,
-    "exp": 0,
-    "isReleased": false
+    "exp": 135,
+    "isReleased": true
   },
   {
     "id": "9410010",
@@ -2679,7 +2679,7 @@
     "level": 55,
     "hp": 25000,
     "exp": 1210,
-    "isReleased": true
+    "isReleased": false
   },
   {
     "id": "5220001",
@@ -3534,7 +3534,7 @@
     "level": 65,
     "hp": 11000,
     "exp": 390,
-    "isReleased": false
+    "isReleased": true
   },
   {
     "id": "9300183",
@@ -4344,7 +4344,7 @@
     "level": 80,
     "hp": 28000,
     "exp": 1200,
-    "isReleased": false
+    "isReleased": true
   },
   {
     "id": "9300085",
