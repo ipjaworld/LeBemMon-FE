@@ -136,6 +136,7 @@ export default function MonsterSearch({ monsters }: MonsterSearchProps) {
                 key={monster.id}
                 monster={monster}
                 isExpiringSoon={monster.isExpiringSoon}
+                userLevel={level !== '' ? Number(level) : undefined}
               />
             ))}
           </div>

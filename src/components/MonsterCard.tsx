@@ -5,10 +5,14 @@ import { useState } from 'react';
 interface MonsterCardProps {
   monster: Monster;
   isExpiringSoon?: boolean;
+  userLevel?: number;
 }
 
-export default function MonsterCard({ monster, isExpiringSoon }: MonsterCardProps) {
+export default function MonsterCard({ monster, isExpiringSoon, userLevel }: MonsterCardProps) {
   const [isHovered, setIsHovered] = useState(false);
+  
+  // 레벨 차이가 5를 초과하는지 확인
+  const isOutOfPartyExpRange = userLevel !== undefined && Math.abs(userLevel - monster.level) > 5;
 
   return (
     <div
@@ -20,6 +24,35 @@ export default function MonsterCard({ monster, isExpiringSoon }: MonsterCardProp
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
+      {/* 경고 아이콘 (레벨 차이 5 초과) */}
+      {isOutOfPartyExpRange && (
+        <div className="absolute left-2 top-2 z-10">
+          <div className="relative">
+            <svg
+              className="h-5 w-5 cursor-help text-yellow-500"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="2" fill="none" />
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M12 8v4m0 4h.01"
+              />
+            </svg>
+            {isHovered && (
+              <div className="absolute left-0 top-6 z-20 w-48 rounded-md bg-yellow-600 px-3 py-1.5 text-xs text-white shadow-lg">
+                레벨 범위가 5 이내가 아니어서 파티 경험치를 획득할 수 없습니다
+                <div className="absolute -top-1 left-2 h-2 w-2 rotate-45 bg-yellow-600"></div>
+              </div>
+            )}
+          </div>
+        </div>
+      )}
+      
       {isExpiringSoon && isHovered && (
         <div className="absolute -top-10 left-1/2 z-10 -translate-x-1/2 rounded-md bg-red-600 px-3 py-1.5 text-sm text-white shadow-lg">
           곧 레범몬이 아니게 됩니다
