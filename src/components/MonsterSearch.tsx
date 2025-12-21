@@ -30,6 +30,7 @@ export default function MonsterSearch({ monsters }: MonsterSearchProps) {
   const [minExp, setMinExp] = useState<number | ''>('');
   const [maxExp, setMaxExp] = useState<number | ''>('');
   const [showExpiringOnly, setShowExpiringOnly] = useState(false);
+  const [showRecommendedOnly, setShowRecommendedOnly] = useState(false);
   const [selectedRegions, setSelectedRegions] = useState<string[]>([]);
   
   // 정렬 상태
@@ -74,8 +75,18 @@ export default function MonsterSearch({ monsters }: MonsterSearchProps) {
       }
     });
 
+    // 중복 ID 제거 (첫 번째 항목만 유지)
+    const seenIds = new Set<string | number>();
+    const uniqueFiltered = filtered.filter((monster) => {
+      if (seenIds.has(monster.id)) {
+        return false;
+      }
+      seenIds.add(monster.id);
+      return true;
+    });
+
     // 레벨 1업 시 레범몬이 아니게 되는지 판단
-    return filtered.map((monster): MonsterWithExpiring => {
+    return uniqueFiltered.map((monster): MonsterWithExpiring => {
       const levelNum = Number(level);
       return {
         ...monster,
@@ -106,6 +117,74 @@ export default function MonsterSearch({ monsters }: MonsterSearchProps) {
       }
     });
     return Array.from(regionIdSet);
+  }, [baseFilteredMonsters]);
+
+  // 인기 몬스터 여부 판단 함수
+  const isRecommendedMonster = useMemo(() => {
+    const recommendedSet = new Set<string>();
+    // 레벨 30 미만에서 주요 드랍 없이도 인기가 될 수 있는 예외 몬스터들
+    const EXCEPTION_MONSTER_IDS = new Set(['9400400', '2110200']); // 하급닌자, 뿔버섯
+    
+    baseFilteredMonsters.forEach((monster) => {
+      // 인기 조건: 레벨 20 이상
+      if (monster.level < 20) return;
+      
+      // 체경비 계산
+      const hpPerExp = monster.exp === 0 ? Infinity : monster.hp / monster.exp;
+      const featuredDropCount = monster.featuredDropItemIds?.length || 0;
+      
+      // 레벨 30 미만: 주요 드랍이 필수 (예외 몬스터 제외)
+      if (monster.level < 30) {
+        // 예외 몬스터: 체경비 < 10이면 인기
+        if (EXCEPTION_MONSTER_IDS.has(monster.id) && hpPerExp < 10) {
+          recommendedSet.add(monster.id);
+          return;
+        }
+        
+        // 그 외 레벨 30 미만 몬스터는 주요 드랍이 있어야 함
+        if (featuredDropCount === 0) return;
+        
+        // 주요 드랍이 있는 경우에만 체경비 조건 확인
+        // 조건 1: 체경비 < 10
+        if (hpPerExp < 10) {
+          recommendedSet.add(monster.id);
+          return;
+        }
+        
+        // 조건 2: 체경비 < 15 AND 주요 드랍 >= 1개
+        if (hpPerExp < 15 && featuredDropCount >= 1) {
+          recommendedSet.add(monster.id);
+          return;
+        }
+        
+        // 조건 3: 체경비 20 안팎 (18~22) AND 주요 드랍 >= 2개
+        if (hpPerExp >= 18 && hpPerExp <= 22 && featuredDropCount >= 2) {
+          recommendedSet.add(monster.id);
+          return;
+        }
+        return;
+      }
+      
+      // 레벨 30 이상: 기존 조건 유지
+      // 조건 1: 체경비 < 10
+      if (hpPerExp < 10) {
+        recommendedSet.add(monster.id);
+        return;
+      }
+      
+      // 조건 2: 체경비 < 15 AND 주요 드랍 >= 1개
+      if (hpPerExp < 15 && featuredDropCount >= 1) {
+        recommendedSet.add(monster.id);
+        return;
+      }
+      
+      // 조건 3: 체경비 20 안팎 (18~22) AND 주요 드랍 >= 2개
+      if (hpPerExp >= 18 && hpPerExp <= 22 && featuredDropCount >= 2) {
+        recommendedSet.add(monster.id);
+        return;
+      }
+    });
+    return recommendedSet;
   }, [baseFilteredMonsters]);
 
   // 출시된 몬스터만 필터링하고, 레벨 범위로 필터링
@@ -169,6 +248,56 @@ export default function MonsterSearch({ monsters }: MonsterSearchProps) {
       monstersWithExpiring = monstersWithExpiring.filter((monster) => monster.isExpiringSoon);
     }
 
+    // 인기 몬스터 필터
+    if (showRecommendedOnly) {
+      // 레벨 30 미만에서 주요 드랍 없이도 인기가 될 수 있는 예외 몬스터들
+      const EXCEPTION_MONSTER_IDS = new Set(['9400400', '2110200']); // 하급닌자, 뿔버섯
+      
+      monstersWithExpiring = monstersWithExpiring.filter((monster) => {
+        // 인기 조건: 레벨 20 이상
+        if (monster.level < 20) return false;
+        
+        // 체경비 계산
+        const hpPerExp = monster.exp === 0 ? Infinity : monster.hp / monster.exp;
+        const featuredDropCount = monster.featuredDropItemIds?.length || 0;
+        
+        // 레벨 30 미만: 주요 드랍이 필수 (예외 몬스터 제외)
+        if (monster.level < 30) {
+          // 예외 몬스터: 체경비 < 10이면 인기
+          if (EXCEPTION_MONSTER_IDS.has(monster.id) && hpPerExp < 10) {
+            return true;
+          }
+          
+          // 그 외 레벨 30 미만 몬스터는 주요 드랍이 있어야 함
+          if (featuredDropCount === 0) return false;
+          
+          // 주요 드랍이 있는 경우에만 체경비 조건 확인
+          // 조건 1: 체경비 < 10
+          if (hpPerExp < 10) return true;
+          
+          // 조건 2: 체경비 < 15 AND 주요 드랍 >= 1개
+          if (hpPerExp < 15 && featuredDropCount >= 1) return true;
+          
+          // 조건 3: 체경비 20 안팎 (18~22) AND 주요 드랍 >= 2개
+          if (hpPerExp >= 18 && hpPerExp <= 22 && featuredDropCount >= 2) return true;
+          
+          return false;
+        }
+        
+        // 레벨 30 이상: 기존 조건 유지
+        // 조건 1: 체경비 < 10
+        if (hpPerExp < 10) return true;
+        
+        // 조건 2: 체경비 < 15 AND 주요 드랍 >= 1개
+        if (hpPerExp < 15 && featuredDropCount >= 1) return true;
+        
+        // 조건 3: 체경비 20 안팎 (18~22) AND 주요 드랍 >= 2개
+        if (hpPerExp >= 18 && hpPerExp <= 22 && featuredDropCount >= 2) return true;
+        
+        return false;
+      });
+    }
+
     if (selectedRegions.length > 0) {
       monstersWithExpiring = monstersWithExpiring.filter((monster) => {
         if (!monster.regionIds || monster.regionIds.length === 0) return false;
@@ -218,8 +347,18 @@ export default function MonsterSearch({ monsters }: MonsterSearchProps) {
       }
     });
 
-    return sorted;
-  }, [baseFilteredMonsters, searchName, minLevel, maxLevel, minHp, maxHp, minExp, maxExp, showExpiringOnly, selectedRegions, sortBy]) as MonsterWithExpiring[];
+    // 중복 ID 제거 (첫 번째 항목만 유지)
+    const seenIds = new Set<string | number>();
+    const uniqueSorted = sorted.filter((monster) => {
+      if (seenIds.has(monster.id)) {
+        return false;
+      }
+      seenIds.add(monster.id);
+      return true;
+    });
+
+    return uniqueSorted;
+  }, [baseFilteredMonsters, searchName, minLevel, maxLevel, minHp, maxHp, minExp, maxExp, showExpiringOnly, showRecommendedOnly, selectedRegions, sortBy]) as MonsterWithExpiring[];
 
   return (
     <div className="flex min-h-screen flex-col bg-gray-900">
@@ -258,7 +397,7 @@ export default function MonsterSearch({ monsters }: MonsterSearchProps) {
 
         {/* 상세 검색 및 필터 UI - 레벨 입력 밑에 항상 표시 */}
         {level !== '' && (
-          <div className="mb-6 flex justify-center">
+          <div className="mb-6 flex justify-center items-start gap-4 flex-wrap">
             <div className="w-full max-w-md">
               <div className="rounded-lg border border-gray-700 bg-gray-800">
                 <button
@@ -334,6 +473,19 @@ export default function MonsterSearch({ monsters }: MonsterSearchProps) {
                       </select>
                     </div>
 
+                    {/* 인기 몬스터만 보기 */}
+                    {/* <div>
+                      <label className="flex items-start gap-2 cursor-pointer">
+                        <input
+                          type="checkbox"
+                          checked={showRecommendedOnly}
+                          onChange={(e) => setShowRecommendedOnly(e.target.checked)}
+                          className="w-4 h-4 rounded border-gray-600 bg-gray-700 text-yellow-500 focus:ring-yellow-500 focus:ring-2"
+                        />
+                        <span className="text-sm font-medium text-gray-300">인기 몬스터만 보기</span>
+                      </label>
+                    </div> */}
+
                     {/* 필터 초기화 버튼 */}
                     <button
                       onClick={() => {
@@ -345,6 +497,7 @@ export default function MonsterSearch({ monsters }: MonsterSearchProps) {
                         setMinExp('');
                         setMaxExp('');
                         setShowExpiringOnly(false);
+                        setShowRecommendedOnly(false);
                         setSelectedRegions([]);
                         setSortBy('level-asc');
                       }}
@@ -355,6 +508,20 @@ export default function MonsterSearch({ monsters }: MonsterSearchProps) {
                   </div>
                 )}
               </div>
+            </div>
+            
+            {/* 인기 몬스터 보기 버튼 */}
+            <div className="max-w-40 flex items-center">
+              <button
+                onClick={() => setShowRecommendedOnly(!showRecommendedOnly)}
+                className={`w-full rounded-lg border-2 px-4 py-3 text-sm font-medium transition-all ${
+                  showRecommendedOnly
+                    ? 'border-yellow-500 bg-yellow-500/20 text-yellow-400'
+                    : 'border-gray-700 bg-gray-800 text-gray-300 hover:border-yellow-500/50 hover:bg-gray-750'
+                }`}
+              >
+                {showRecommendedOnly ? '인기 몬스터 보기 중' : '인기 몬스터 보기'}
+              </button>
             </div>
           </div>
         )}
@@ -429,6 +596,7 @@ export default function MonsterSearch({ monsters }: MonsterSearchProps) {
                 monster={monster}
                 isExpiringSoon={monster.isExpiringSoon}
                 userLevel={level !== '' ? Number(level) : undefined}
+                isRecommended={isRecommendedMonster.has(monster.id)}
               />
             ))}
           </div>

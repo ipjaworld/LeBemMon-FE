@@ -28,7 +28,7 @@
   },
   {
     "id": "2040030",
-    "name": "귀 장식 민첩 주문서 100%",
+    "name": "귀장식 민첩 주문서 100%",
     "imageUrl": "https://maplestory.io/api/gms/200/item/2040027/icon?resize=2",
     "majorCategory": "consumable",
     "mediumCategory": "equip-scroll",
@@ -37,7 +37,7 @@
   },
   {
     "id": "2040028",
-    "name": "귀 장식 민첩 주문서 60%",
+    "name": "귀장식 민첩 주문서 60%",
     "imageUrl": "https://maplestory.io/api/gms/200/item/2040029/icon?resize=2",
     "majorCategory": "consumable",
     "mediumCategory": "equip-scroll",
@@ -46,7 +46,7 @@
   },
   {
     "id": "2040032",
-    "name": "귀 장식 민첩 주문서 10%",
+    "name": "귀장식 민첩 주문서 10%",
     "imageUrl": "https://maplestory.io/api/gms/200/item/2040031/icon?resize=2",
     "majorCategory": "consumable",
     "mediumCategory": "equip-scroll",
@@ -55,7 +55,7 @@
   },
   {
     "id": "2040033",
-    "name": "귀 장식 행운 주문서 100%",
+    "name": "귀장식 행운 주문서 100%",
     "imageUrl": "https://maplestory.io/api/gms/200/item/2040027/icon?resize=2",
     "majorCategory": "consumable",
     "mediumCategory": "equip-scroll",
@@ -64,7 +64,7 @@
   },
   {
     "id": "2040034",
-    "name": "귀 장식 행운 주문서 60%",
+    "name": "귀장식 행운 주문서 60%",
     "imageUrl": "https://maplestory.io/api/gms/200/item/2040029/icon?resize=2",
     "majorCategory": "consumable",
     "mediumCategory": "equip-scroll",
@@ -73,7 +73,7 @@
   },
   {
     "id": "2040035",
-    "name": "귀 장식 행운 주문서 10%",
+    "name": "귀장식 행운 주문서 10%",
     "imageUrl": "https://maplestory.io/api/gms/200/item/2040031/icon?resize=2",
     "majorCategory": "consumable",
     "mediumCategory": "equip-scroll",
@@ -82,7 +82,7 @@
   },
   {
     "id": "2040036",
-    "name": "귀 장식 체력 주문서 100%",
+    "name": "귀장식 체력 주문서 100%",
     "imageUrl": "https://maplestory.io/api/gms/200/item/2040027/icon?resize=2",
     "majorCategory": "consumable",
     "mediumCategory": "equip-scroll",
@@ -91,7 +91,7 @@
   },
   {
     "id": "2040037",
-    "name": "귀 장식 체력 주문서 60%",
+    "name": "귀장식 체력 주문서 60%",
     "imageUrl": "https://maplestory.io/api/gms/200/item/2040029/icon?resize=2",
     "majorCategory": "consumable",
     "mediumCategory": "equip-scroll",
@@ -100,7 +100,7 @@
   },
   {
     "id": "2040038",
-    "name": "귀 장식 체력 주문서 10%",
+    "name": "귀장식 체력 주문서 10%",
     "imageUrl": "https://maplestory.io/api/gms/200/item/2040031/icon?resize=2",
     "majorCategory": "consumable",
     "mediumCategory": "equip-scroll",
@@ -195,6 +195,26 @@
     "majorCategory": "consumable",
     "mediumCategory": "equip-scroll",
     "minorCategory": "shoes",
+    "isReleased": true
+  },
+  {
+    "id": "2070000",
+    "name": "뇌전 수리검",
+    "imageUrl": "https://maplestory.io/api/gms/200/item/2070000/icon?resize=2",
+    "majorCategory": "consumable",
+    "mediumCategory": "shuriken",
+    "attackPower": 25,
+    "description": "아대를 쓰는 도적들만이 사용가능한 표창이다",
+    "isReleased": true
+  },
+  {
+    "id": "2070001",
+    "name": "일비 표창",
+    "imageUrl": "https://maplestory.io/api/gms/200/item/2070001/icon?resize=2",
+    "majorCategory": "consumable",
+    "mediumCategory": "shuriken",
+    "attackPower": 27,
+    "description": "아대를 쓰는 도적들만이 사용가능한 표창이다",
     "isReleased": true
   }
 ]

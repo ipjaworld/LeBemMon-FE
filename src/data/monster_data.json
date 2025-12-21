@@ -3420,7 +3420,8 @@
     ],
     "featuredDropItemIds": [
       "2040034",
-      "2040045"
+      "2040045",
+      "2070000"
     ]
   },
   {
@@ -4493,7 +4494,8 @@
       "2040033"
     ],
     "featuredDropItemIds": [
-      "2040033"
+      "2040033",
+      "2070000"
     ]
   },
   {
@@ -4511,6 +4513,9 @@
       "얼음속성약점",
       "불속성약점",
       "성속성약점"
+    ],
+    "featuredDropItemIds": [
+      "2070000"
     ]
   },
   {
@@ -4533,7 +4538,8 @@
     "featuredDropItemIds": [
       "2040039",
       "2040045",
-      "2040047"
+      "2040047",
+      "2070001"
     ]
   },
   {
@@ -4622,6 +4628,9 @@
     "isReleased": true,
     "regionIds": [
       "mu-lung"
+    ],
+    "featuredDropItemIds": [
+      "2070000"
     ]
   },
   {
@@ -5764,6 +5773,9 @@
     ],
     "attributes": [
       "독속성무효"
+    ],
+    "featuredDropItemIds": [
+      "2070000"
     ]
   },
   {
@@ -5954,7 +5966,8 @@
       "2040034"
     ],
     "featuredDropItemIds": [
-      "2040034"
+      "2040034",
+      "2070000"
     ]
   },
   {
@@ -6084,6 +6097,9 @@
     ],
     "attributes": [
       "성속성약점"
+    ],
+    "featuredDropItemIds": [
+      "2070000"
     ]
   },
   {
@@ -6099,6 +6115,9 @@
     ],
     "attributes": [
       "전기속성반감"
+    ],
+    "featuredDropItemIds": [
+      "2070000"
     ]
   },
   {
@@ -6224,7 +6243,8 @@
       "2040040"
     ],
     "featuredDropItemIds": [
-      "2040040"
+      "2040040",
+      "2070000"
     ]
   },
   {
@@ -6307,6 +6327,9 @@
     "attributes": [
       "얼음속성반감",
       "불속성약점"
+    ],
+    "featuredDropItemIds": [
+      "2070001"
     ]
   },
   {
@@ -6436,7 +6459,8 @@
     ],
     "featuredDropItemIds": [
       "2040028",
-      "2040032"
+      "2040032",
+      "2070000"
     ]
   },
   {
@@ -6529,7 +6553,8 @@
     ],
     "featuredDropItemIds": [
       "2040030",
-      "2040041"
+      "2040041",
+      "2070000"
     ]
   },
   {
@@ -6696,6 +6721,9 @@
     "attributes": [
       "얼음속성반감",
       "불속성약점"
+    ],
+    "featuredDropItemIds": [
+      "2070000"
     ]
   },
   {
@@ -6732,7 +6760,8 @@
       "2040035"
     ],
     "featuredDropItemIds": [
-      "2040035"
+      "2040035",
+      "2070001"
     ]
   },
   {
@@ -6940,7 +6969,8 @@
       "2040028"
     ],
     "featuredDropItemIds": [
-      "2040028"
+      "2040028",
+      "2070001"
     ]
   },
   {
@@ -7583,7 +7613,7 @@
   },
   {
     "id": "8190002",
-    "name": "네스트골렘",
+    "name": "변신 네스트골렘",
     "imageUrl": "https://maplestory.io/api/gms/62/mob/8190002/icon?resize=2",
     "level": 110,
     "hp": 80000,
@@ -8125,5 +8155,18 @@
     "hp": 70,
     "exp": 95,
     "isReleased": false
+  },
+  {
+    "id": "8190005",
+    "name": "네스트골렘",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/8190003/icon?resize=2",
+    "level": 110,
+    "hp": 80000,
+    "exp": 4450,
+    "isReleased": true,
+    "regionIds": [
+      "leafre"
+    ],
+    "attributes": null
   }
 ]

@@ -96,6 +96,10 @@
     "itemId": "2040032"
   },
   {
+    "monsterId": "8510000",
+    "itemId": "2040032"
+  },
+  {
     "monsterId": "2100105",
     "itemId": "2040033"
   },
@@ -502,5 +506,97 @@
   {
     "monsterId": "5300000",
     "itemId": "2040048"
+  },
+  {
+    "monsterId": "8140201",
+    "itemId": "2070000"
+  },
+  {
+    "monsterId": "5100001",
+    "itemId": "2070000"
+  },
+  {
+    "monsterId": "7160001",
+    "itemId": "2070000"
+  },
+  {
+    "monsterId": "7160000",
+    "itemId": "2070000"
+  },
+  {
+    "monsterId": "4501000",
+    "itemId": "2070000"
+  },
+  {
+    "monsterId": "9500133",
+    "itemId": "2070000"
+  },
+  {
+    "monsterId": "6130203",
+    "itemId": "2070000"
+  },
+  {
+    "monsterId": "7130501",
+    "itemId": "2070000"
+  },
+  {
+    "monsterId": "5756000",
+    "itemId": "2070000"
+  },
+  {
+    "monsterId": "6130100",
+    "itemId": "2070000"
+  },
+  {
+    "monsterId": "8140001",
+    "itemId": "2070000"
+  },
+  {
+    "monsterId": "8140002",
+    "itemId": "2070000"
+  },
+  {
+    "monsterId": "5210000",
+    "itemId": "2070001"
+  },
+  {
+    "monsterId": "6130101",
+    "itemId": "2070001"
+  },
+  {
+    "monsterId": "8140111",
+    "itemId": "2070001"
+  },
+  {
+    "monsterId": "6298000",
+    "itemId": "2070001"
+  },
+  {
+    "monsterId": "8141000",
+    "itemId": "2070001"
+  },
+  {
+    "monsterId": "8140300",
+    "itemId": "2070000"
+  },
+  {
+    "monsterId": "5100000",
+    "itemId": "2070000"
+  },
+  {
+    "monsterId": "7130003",
+    "itemId": "2070000"
+  },
+  {
+    "monsterId": "9400003",
+    "itemId": "2070000"
+  },
+  {
+    "monsterId": "7130100",
+    "itemId": "2070000"
+  },
+  {
+    "monsterId": "8140000",
+    "itemId": "2070001"
   }
 ]

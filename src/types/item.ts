@@ -30,6 +30,7 @@ export type ItemMediumCategory =
   | 'bow'         // 활
   // 소비
   | 'equip-scroll' // 장비 주문서
+  | 'shuriken'     // 표창
   | 'etc';         // 기타
 
 /**

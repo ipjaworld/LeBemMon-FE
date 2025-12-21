@@ -10,9 +10,10 @@ interface MonsterCardProps {
   monster: Monster;
   isExpiringSoon?: boolean;
   userLevel?: number;
+  isRecommended?: boolean;
 }
 
-export default function MonsterCard({ monster, isExpiringSoon, userLevel }: MonsterCardProps) {
+export default function MonsterCard({ monster, isExpiringSoon, userLevel, isRecommended }: MonsterCardProps) {
   const [isHovered, setIsHovered] = useState(false);
   const [isWarningHovered, setIsWarningHovered] = useState(false);
   const [isHpPerExpTooltipHovered, setIsHpPerExpTooltipHovered] = useState(false);
@@ -151,9 +152,16 @@ export default function MonsterCard({ monster, isExpiringSoon, userLevel }: Mons
           unoptimized
         />
       </div>
-      <h3 className="mb-2 text-base font-semibold text-gray-100 sm:text-lg">
-        {monster.name}
-      </h3>
+      <div className="mb-2 flex items-center justify-center gap-2 flex-wrap">
+        <h3 className="text-base font-semibold text-gray-100 sm:text-lg">
+          {monster.name}
+        </h3>
+        {isRecommended && (
+          <span className="rounded-full bg-yellow-500/20 px-2 py-0.5 text-xs font-semibold text-yellow-400 border border-yellow-500/50">
+            인기
+          </span>
+        )}
+      </div>
 
       {/* 지역 뱃지 */}
       {monsterRegions.length > 0 && (
