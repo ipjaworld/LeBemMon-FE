@@ -390,7 +390,8 @@
     "level": 19,
     "hp": 320,
     "exp": 35,
-    "isReleased": false
+    "isReleased": false,
+    "regionIds": ["masteria-newleafcity"]
   },
   {
     "id": "9500194",
@@ -504,7 +505,8 @@
     "level": 21,
     "hp": 350,
     "exp": 37,
-    "isReleased": false
+    "isReleased": false,
+    "regionIds": ["masteria-newleafcity"]
   },
   {
     "id": "2130103",
@@ -762,7 +764,8 @@
     "level": 25,
     "hp": 730,
     "exp": 60,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["masteria-newleafcity"]
   },
   {
     "id": "9400400",
@@ -792,7 +795,8 @@
     "level": 27,
     "hp": 700,
     "exp": 55,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["masteria-newleafcity"]
   },
   {
     "id": "2230100",
@@ -918,7 +922,8 @@
     "level": 30,
     "hp": 950,
     "exp": 65,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["masteria-newleafcity"]
   },
   {
     "id": "3230400",
@@ -1199,7 +1204,7 @@
     "exp": 62,
     "isReleased": true,
     "regionIds": [
-      "victoria"
+      "nihan-magatia"
     ]
   },
   {
@@ -1326,7 +1331,8 @@
     "level": 35,
     "hp": 1400,
     "exp": 75,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["nihan-magatia"]
   },
   {
     "id": "9000101",
@@ -1581,7 +1587,8 @@
     "level": 36,
     "hp": 1450,
     "exp": 85,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["masteria-newleafcity"]
   },
   {
     "id": "3210203",
@@ -1719,7 +1726,8 @@
     "level": 38,
     "hp": 1850,
     "exp": 85,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["nihan-magatia"]
   },
   {
     "id": "9300131",
@@ -1887,7 +1895,8 @@
     "level": 41,
     "hp": 1600,
     "exp": 95,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["masteria-newleafcity"]
   },
   {
     "id": "4230107",
@@ -1941,7 +1950,8 @@
     "level": 42,
     "hp": 2400,
     "exp": 102,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["nihan-magatia"]
   },
   {
     "id": "9300060",
@@ -2061,7 +2071,8 @@
     "level": 44,
     "hp": 2490,
     "exp": 120,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["masteria-newleafcity"]
   },
   {
     "id": "4230112",
@@ -2265,7 +2276,8 @@
     "level": 47,
     "hp": 23000,
     "exp": 300,
-    "isReleased": false
+    "isReleased": false,
+    "regionIds": ["nihan-magatia"]
   },
   {
     "id": "4130102",
@@ -2310,7 +2322,8 @@
     "level": 47,
     "hp": 2750,
     "exp": 117,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["nihan-magatia"]
   },
   {
     "id": "9400101",
@@ -2385,7 +2398,8 @@
     "level": 50,
     "hp": 3300,
     "exp": 220,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["masteria-newleafcity"]
   },
   {
     "id": "9500177",
@@ -2430,7 +2444,8 @@
     "level": 50,
     "hp": 3700,
     "exp": 135,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["masteria-newleafcity"]
   },
   {
     "id": "9410010",
@@ -2538,7 +2553,8 @@
     "level": 51,
     "hp": 3600,
     "exp": 142,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["masteria-newleafcity"]
   },
   {
     "id": "5120504",
@@ -3459,7 +3475,8 @@
     "level": 63,
     "hp": 7600,
     "exp": 245,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["nihan-magatia"]
   },
   {
     "id": "9300020",
@@ -3657,7 +3674,8 @@
     "level": 65,
     "hp": 11000,
     "exp": 390,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["masteria-newleafcity"]
   },
   {
     "id": "9300183",
@@ -3930,7 +3948,8 @@
     "level": 68,
     "hp": 13000,
     "exp": 409,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["nihan-magatia"]
   },
   {
     "id": "6130208",
@@ -4191,7 +4210,8 @@
     "level": 73,
     "hp": 20000,
     "exp": 300,
-    "isReleased": false
+    "isReleased": false,
+    "regionIds": ["nihan-magatia"]
   },
   {
     "id": "7130000",
@@ -4248,7 +4268,8 @@
     "level": 75,
     "hp": 16000,
     "exp": 350,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["nihan-magatia"]
   },
   {
     "id": "9300177",
@@ -4293,7 +4314,8 @@
     "level": 75,
     "hp": 16000,
     "exp": 350,
-    "isReleased": false
+    "isReleased": false,
+    "regionIds": ["nihan-magatia"]
   },
   {
     "id": "7130101",
@@ -4377,7 +4399,8 @@
     "level": 78,
     "hp": 29000,
     "exp": 295,
-    "isReleased": false
+    "isReleased": false,
+    "regionIds": ["nihan-magatia"]
   },
   {
     "id": "7130102",
@@ -4431,7 +4454,8 @@
     "level": 80,
     "hp": 35000,
     "exp": 390,
-    "isReleased": false
+    "isReleased": false,
+    "regionIds": ["nihan-magatia"]
   },
   {
     "id": "9001003",
@@ -4458,7 +4482,8 @@
     "level": 80,
     "hp": 27000,
     "exp": 850,
-    "isReleased": false
+    "isReleased": false,
+    "regionIds": ["nihan-magatia"]
   },
   {
     "id": "8140000",
@@ -4485,7 +4510,8 @@
     "level": 80,
     "hp": 28000,
     "exp": 1200,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["masteria-newleafcity"]
   },
   {
     "id": "9300085",
@@ -4704,7 +4730,8 @@
     "level": 85,
     "hp": 96000,
     "exp": 3000,
-    "isReleased": false
+    "isReleased": false,
+    "regionIds": ["nihan-magatia"]
   },
   {
     "id": "9410014",

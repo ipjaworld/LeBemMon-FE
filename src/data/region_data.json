@@ -147,6 +147,13 @@
     "isReleased": true
   },
   {
+    "id": "masteria-newleafcity",
+    "name": "뉴리프시티",
+    "parentId": "masteria",
+    "type": "town",
+    "isReleased": true
+  },
+  {
     "id": "nihan-desert",
     "name": "니할 사막",
     "parentId": null,
