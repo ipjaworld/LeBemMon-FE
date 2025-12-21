@@ -5,7 +5,9 @@ import MonsterCard from '@/components/MonsterCard';
 import Footer from '@/components/Footer';
 import { Monster } from '@/types/monster';
 import { Region } from '@/types/region';
+import { Item } from '@/types/item';
 import regionData from '@/data/region_data.json';
+import itemData from '@/data/item_data.json';
 
 type MonsterWithExpiring = Monster & {
   isExpiringSoon: boolean;
@@ -37,6 +39,16 @@ export default function MonsterSearch({ monsters }: MonsterSearchProps) {
   const [sortBy, setSortBy] = useState<SortOption>('level-asc');
   
   const regions = regionData as Region[];
+  const items = itemData as Item[];
+  
+  // 인기 마스터리북 ID 목록
+  const popularMasteryBookIds = useMemo(() => {
+    return new Set(
+      items
+        .filter((item) => item.isPopularMasteryBook === true)
+        .map((item) => item.id)
+    );
+  }, []);
 
   // document.title 업데이트
   useEffect(() => {
@@ -124,14 +136,50 @@ export default function MonsterSearch({ monsters }: MonsterSearchProps) {
     const recommendedSet = new Set<string>();
     // 레벨 30 미만에서 주요 드랍 없이도 인기가 될 수 있는 예외 몬스터들
     const EXCEPTION_MONSTER_IDS = new Set(['9400400', '2110200']); // 하급닌자, 뿔버섯
+    // 지형/드랍 등의 이유로 무조건 인기인 몬스터들
+    const ALWAYS_POPULAR_MONSTER_IDS = new Set(['8140001', '8140002']); // 하프, 블러드 하프
+    // 특별 아이템 ID
+    const ILBI_ID = '2070001'; // 일비 표창
+    const HWABI_ID = '2070000'; // 뇌전 수리검
     
     baseFilteredMonsters.forEach((monster) => {
+      // 무조건 인기인 예외 몬스터
+      if (ALWAYS_POPULAR_MONSTER_IDS.has(monster.id)) {
+        recommendedSet.add(monster.id);
+        return;
+      }
+      
+      // 인기 마스터리북을 드랍하는 몬스터는 무조건 인기
+      const hasPopularMasteryBook = monster.featuredDropItemIds?.some(
+        (itemId) => popularMasteryBookIds.has(itemId)
+      );
+      if (hasPopularMasteryBook) {
+        recommendedSet.add(monster.id);
+        return;
+      }
+      
+      // 일비 표창을 드랍하는 몬스터는 무조건 인기
+      const hasIlbi = monster.featuredDropItemIds?.includes(ILBI_ID) || 
+                      monster.dropItemIds?.includes(ILBI_ID);
+      if (hasIlbi) {
+        recommendedSet.add(monster.id);
+        return;
+      }
+      
       // 인기 조건: 레벨 20 이상
       if (monster.level < 20) return;
       
       // 체경비 계산
       const hpPerExp = monster.exp === 0 ? Infinity : monster.hp / monster.exp;
       const featuredDropCount = monster.featuredDropItemIds?.length || 0;
+      
+      // 뇌전 수리검을 드랍하는 몬스터는 체경비 기준 완화 (체경비 < 35)
+      const hasHwabi = monster.featuredDropItemIds?.includes(HWABI_ID) || 
+                       monster.dropItemIds?.includes(HWABI_ID);
+      if (hasHwabi && hpPerExp < 35) {
+        recommendedSet.add(monster.id);
+        return;
+      }
       
       // 레벨 30 미만: 주요 드랍이 필수 (예외 몬스터 제외)
       if (monster.level < 30) {
@@ -185,7 +233,7 @@ export default function MonsterSearch({ monsters }: MonsterSearchProps) {
       }
     });
     return recommendedSet;
-  }, [baseFilteredMonsters]);
+  }, [baseFilteredMonsters, popularMasteryBookIds]);
 
   // 출시된 몬스터만 필터링하고, 레벨 범위로 필터링
   const filteredMonsters = useMemo(() => {
@@ -252,14 +300,38 @@ export default function MonsterSearch({ monsters }: MonsterSearchProps) {
     if (showRecommendedOnly) {
       // 레벨 30 미만에서 주요 드랍 없이도 인기가 될 수 있는 예외 몬스터들
       const EXCEPTION_MONSTER_IDS = new Set(['9400400', '2110200']); // 하급닌자, 뿔버섯
+      // 지형/드랍 등의 이유로 무조건 인기인 몬스터들
+      const ALWAYS_POPULAR_MONSTER_IDS = new Set(['8140001', '8140002']); // 하프, 블러드 하프
+      // 특별 아이템 ID
+      const ILBI_ID = '2070001'; // 일비 표창
+      const HWABI_ID = '2070000'; // 뇌전 수리검
       
       monstersWithExpiring = monstersWithExpiring.filter((monster) => {
+        // 무조건 인기인 예외 몬스터
+        if (ALWAYS_POPULAR_MONSTER_IDS.has(monster.id)) return true;
+        
+        // 인기 마스터리북을 드랍하는 몬스터는 무조건 인기
+        const hasPopularMasteryBook = monster.featuredDropItemIds?.some(
+          (itemId) => popularMasteryBookIds.has(itemId)
+        );
+        if (hasPopularMasteryBook) return true;
+        
+        // 일비 표창을 드랍하는 몬스터는 무조건 인기
+        const hasIlbi = monster.featuredDropItemIds?.includes(ILBI_ID) || 
+                        monster.dropItemIds?.includes(ILBI_ID);
+        if (hasIlbi) return true;
+        
         // 인기 조건: 레벨 20 이상
         if (monster.level < 20) return false;
         
         // 체경비 계산
         const hpPerExp = monster.exp === 0 ? Infinity : monster.hp / monster.exp;
         const featuredDropCount = monster.featuredDropItemIds?.length || 0;
+        
+        // 뇌전 수리검을 드랍하는 몬스터는 체경비 기준 완화 (체경비 < 35)
+        const hasHwabi = monster.featuredDropItemIds?.includes(HWABI_ID) || 
+                         monster.dropItemIds?.includes(HWABI_ID);
+        if (hasHwabi && hpPerExp < 35) return true;
         
         // 레벨 30 미만: 주요 드랍이 필수 (예외 몬스터 제외)
         if (monster.level < 30) {
@@ -358,7 +430,7 @@ export default function MonsterSearch({ monsters }: MonsterSearchProps) {
     });
 
     return uniqueSorted;
-  }, [baseFilteredMonsters, searchName, minLevel, maxLevel, minHp, maxHp, minExp, maxExp, showExpiringOnly, showRecommendedOnly, selectedRegions, sortBy]) as MonsterWithExpiring[];
+  }, [baseFilteredMonsters, searchName, minLevel, maxLevel, minHp, maxHp, minExp, maxExp, showExpiringOnly, showRecommendedOnly, selectedRegions, sortBy, popularMasteryBookIds]) as MonsterWithExpiring[];
 
   return (
     <div className="flex min-h-screen flex-col bg-gray-900">

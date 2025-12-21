@@ -3863,6 +3863,12 @@
     "isReleased": true,
     "regionIds": [
       "mu-lung"
+    ],
+    "dropItemIds": [
+      "2040028"
+    ],
+    "featuredDropItemIds": [
+      "2040028"
     ]
   },
   {
@@ -3964,6 +3970,12 @@
     ],
     "attributes": [
       "성속성약점"
+    ],
+    "dropItemIds": [
+      "2040028"
+    ],
+    "featuredDropItemIds": [
+      "2040028"
     ]
   },
   {
@@ -6841,7 +6853,11 @@
     "attributes": [
       "불속성약점",
       "얼음속성반감"
-    ]
+    ],
+    "dropItemIds": [
+      "mb_a5d212"
+    ],
+    "featuredDropItemIds": []
   },
   {
     "id": "9400205",
@@ -6966,7 +6982,8 @@
       "전기속성약점"
     ],
     "dropItemIds": [
-      "2040028"
+      "2040028",
+      "mb_ff654e"
     ],
     "featuredDropItemIds": [
       "2040028",
@@ -7109,7 +7126,11 @@
     "attributes": [
       "불속성반감",
       "얼음속성약점"
-    ]
+    ],
+    "dropItemIds": [
+      "mb_48c815"
+    ],
+    "featuredDropItemIds": []
   },
   {
     "id": "8141100",
@@ -7192,7 +7213,12 @@
     ],
     "attributes": [
       "독속성반감"
-    ]
+    ],
+    "dropItemIds": [
+      "mb_ba8c90",
+      "mb_b336dc"
+    ],
+    "featuredDropItemIds": []
   },
   {
     "id": "9300031",
@@ -7395,10 +7421,13 @@
       "얼음속성반감"
     ],
     "dropItemIds": [
-      "2040046"
+      "2040046",
+      "mb_100b69",
+      "mb_ffc25b"
     ],
     "featuredDropItemIds": [
-      "2040046"
+      "2040046",
+      "mb_ffc25b"
     ]
   },
   {
@@ -7414,7 +7443,13 @@
     ],
     "attributes": null,
     "dropItemIds": [
-      "2040046"
+      "2040046",
+      "mb_11e6ed",
+      "mb_8e468e",
+      "mb_975027",
+      "mb_dc431a",
+      "mb_73a61f",
+      "mb_be41b3"
     ],
     "featuredDropItemIds": [
       "2040046"
@@ -7455,7 +7490,17 @@
     ],
     "dropItemIds": [
       "2040046",
-      "2040048"
+      "2040048",
+      "mb_868d2d",
+      "mb_8e468e",
+      "mb_100b69",
+      "mb_04fbff",
+      "mb_b915ca",
+      "mb_cceca7",
+      "mb_11c911",
+      "mb_4b7608",
+      "mb_73a61f",
+      "mb_be41b3"
     ],
     "featuredDropItemIds": [
       "2040046",
@@ -7473,7 +7518,16 @@
     "regionIds": [
       "leafre"
     ],
-    "attributes": null
+    "attributes": null,
+    "dropItemIds": [
+      "mb_d1e1ea",
+      "mb_21fbaf",
+      "mb_451126",
+      "mb_b55866",
+      "mb_020c61",
+      "mb_4b7608"
+    ],
+    "featuredDropItemIds": []
   },
   {
     "id": "8190001",
@@ -7508,10 +7562,18 @@
       "독속성반감"
     ],
     "dropItemIds": [
-      "2040046"
+      "2040046",
+      "mb_d52f8d",
+      "mb_ec7f48",
+      "mb_5f9aea",
+      "mb_21fbaf",
+      "mb_1c7ee5",
+      "mb_cceca7",
+      "mb_6ba3c3"
     ],
     "featuredDropItemIds": [
-      "2040046"
+      "2040046",
+      "mb_d52f8d"
     ]
   },
   {
@@ -7558,7 +7620,16 @@
     ],
     "dropItemIds": [
       "2040038",
-      "2040044"
+      "2040044",
+      "mb_8f04cf",
+      "mb_ea9d42",
+      "mb_936445",
+      "mb_21fbaf",
+      "mb_451126",
+      "mb_192585",
+      "mb_90d98e",
+      "mb_a693b4",
+      "mb_dca0dc"
     ],
     "featuredDropItemIds": [
       "2040038",
@@ -7664,6 +7735,17 @@
     ],
     "attributes": [
       "성속성약점"
+    ],
+    "dropItemIds": [
+      "mb_8bb965",
+      "mb_4074a1",
+      "mb_23cc47",
+      "mb_2f1063",
+      "mb_a472ad",
+      "mb_0775d9"
+    ],
+    "featuredDropItemIds": [
+      "mb_a472ad"
     ]
   },
   {
@@ -7679,6 +7761,33 @@
     ],
     "attributes": [
       "불속성약점"
+    ],
+    "dropItemIds": [
+      "mb_9a467a",
+      "mb_9b7bed",
+      "mb_ec7f48",
+      "mb_3f4314",
+      "mb_975027",
+      "mb_7124b0",
+      "mb_5f9aea",
+      "mb_66aed7",
+      "mb_ffc25b",
+      "mb_c318f8",
+      "mb_b55866",
+      "mb_005f12",
+      "mb_dc431a",
+      "mb_d647a8",
+      "mb_ff654e",
+      "mb_b1afc6",
+      "mb_c3287f",
+      "mb_732f6c"
+    ],
+    "featuredDropItemIds": [
+      "mb_3f4314",
+      "mb_7124b0",
+      "mb_ffc25b",
+      "mb_c318f8",
+      "mb_d647a8"
     ]
   },
   {
@@ -7705,10 +7814,20 @@
       "성속성약점"
     ],
     "dropItemIds": [
-      "2040037"
+      "2040037",
+      "mb_f5a27a",
+      "mb_57c2bf",
+      "mb_23c260",
+      "mb_c318f8",
+      "mb_f46559",
+      "mb_837a9e",
+      "mb_36b5d8",
+      "mb_a693b4",
+      "mb_dca0dc"
     ],
     "featuredDropItemIds": [
-      "2040037"
+      "2040037",
+      "mb_c318f8"
     ]
   },
   {
@@ -7859,11 +7978,32 @@
     "attributes": null,
     "dropItemIds": [
       "2040032",
-      "2040034"
+      "2040034",
+      "mb_d52f8d",
+      "mb_fa7b3b",
+      "mb_658662",
+      "mb_d0a461",
+      "mb_61bb26",
+      "mb_9211c4",
+      "mb_8535b6",
+      "mb_1c7ee5",
+      "mb_3fc7de",
+      "mb_c997e9",
+      "mb_020c61",
+      "mb_6ba3c3",
+      "mb_12b7bb",
+      "mb_437e85",
+      "mb_453254",
+      "mb_96d2f6",
+      "mb_a5d212",
+      "mb_791a17"
     ],
     "featuredDropItemIds": [
       "2040032",
-      "2040034"
+      "2040034",
+      "mb_d52f8d",
+      "mb_3fc7de",
+      "mb_437e85"
     ]
   },
   {
@@ -7898,7 +8038,40 @@
     "level": 140,
     "hp": 66000000,
     "exp": 0,
-    "isReleased": true
+    "isReleased": true,
+    "dropItemIds": [
+      "mb_a04609",
+      "mb_1616ab",
+      "mb_c01972",
+      "mb_313222",
+      "mb_980e85",
+      "mb_27c598",
+      "mb_541713",
+      "mb_d52dc5",
+      "mb_a45d96",
+      "mb_e8fcac",
+      "mb_435120",
+      "mb_0f263f",
+      "mb_aa1d54",
+      "mb_b991c8",
+      "mb_f9fe06",
+      "mb_6e1dad",
+      "mb_a2a215",
+      "mb_cd7d27",
+      "mb_10e927",
+      "mb_10640f",
+      "mb_4c4587",
+      "mb_16d829",
+      "mb_3c4498",
+      "mb_b984f9",
+      "mb_b6be3d",
+      "mb_ef02d8",
+      "mb_d07ab2"
+    ],
+    "featuredDropItemIds": [
+      "mb_a45d96",
+      "mb_cd7d27"
+    ]
   },
   {
     "id": "8800001",

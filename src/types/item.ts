@@ -30,8 +30,11 @@ export type ItemMediumCategory =
   | 'bow'         // 활
   // 소비
   | 'equip-scroll' // 장비 주문서
+  | 'mastery-book' // 마스터리북
   | 'shuriken'     // 표창
   | 'etc';         // 기타
+
+import { JobCategoryId, JobSubCategoryId } from './job';
 
 /**
  * 아이템 인터페이스
@@ -93,5 +96,20 @@ export interface Item {
   
   /** 아이템 설명 (선택적) */
   description?: string;
+  
+  /** 마스터리북: 스킬 이름 */
+  skillName?: string;
+  
+  /** 마스터리북: 스킬 레벨 (10, 20, 30 등) */
+  skillLevel?: number;
+  
+  /** 마스터리북: 직업 카테고리 */
+  jobCategory?: JobCategoryId;
+  
+  /** 마스터리북: 직업 세부 분류 */
+  jobSubCategory?: JobSubCategoryId;
+  
+  /** 마스터리북: 인기 마스터리북 여부 */
+  isPopularMasteryBook?: boolean;
 }
 

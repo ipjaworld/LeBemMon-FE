@@ -1,0 +1,73 @@
+[
+  {
+    "id": "common",
+    "name": "공통",
+    "isReleased": true,
+    "subCategories": []
+  },
+  {
+    "id": "warrior",
+    "name": "전사",
+    "isReleased": true,
+    "subCategories": [
+      { "id": "warrior-common", "name": "전사 공통", "parentId": "warrior" },
+      { "id": "hero", "name": "히어로", "parentId": "warrior" },
+      { "id": "dark-knight", "name": "다크나이트", "parentId": "warrior" },
+      { "id": "paladin", "name": "팔라딘", "parentId": "warrior" }
+    ]
+  },
+  {
+    "id": "mage",
+    "name": "마법사",
+    "isReleased": true,
+    "subCategories": [
+      { "id": "mage-common", "name": "마법사 공통", "parentId": "mage" },
+      { "id": "bishop", "name": "비숍", "parentId": "mage" },
+      { "id": "arch-mage-fp", "name": "불.독 아크메이지", "parentId": "mage" },
+      { "id": "arch-mage-il", "name": "썬.콜 아크메이지", "parentId": "mage" }
+    ]
+  },
+  {
+    "id": "archer",
+    "name": "궁수",
+    "isReleased": true,
+    "subCategories": [
+      { "id": "archer-common", "name": "궁수 공통", "parentId": "archer" },
+      { "id": "bow-master", "name": "보우마스터", "parentId": "archer" },
+      { "id": "marksman", "name": "신궁", "parentId": "archer" }
+    ]
+  },
+  {
+    "id": "rogue",
+    "name": "도적",
+    "isReleased": true,
+    "subCategories": [
+      { "id": "rogue-common", "name": "도적 공통", "parentId": "rogue" },
+      { "id": "night-lord", "name": "나이트로드", "parentId": "rogue" },
+      { "id": "shadower", "name": "섀도어", "parentId": "rogue" }
+    ]
+  },
+  {
+    "id": "pirate",
+    "name": "해적",
+    "isReleased": false,
+    "subCategories": [
+      { "id": "pirate-common", "name": "해적 공통", "parentId": "pirate" },
+      { "id": "captain", "name": "캡틴", "parentId": "pirate" },
+      { "id": "viper", "name": "바이퍼", "parentId": "pirate" }
+    ]
+  },
+  {
+    "id": "evan",
+    "name": "에반",
+    "isReleased": true,
+    "subCategories": []
+  },
+  {
+    "id": "aran",
+    "name": "아란",
+    "isReleased": true,
+    "subCategories": []
+  }
+]
+
