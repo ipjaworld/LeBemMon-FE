@@ -7,7 +7,10 @@
     "hp": 8,
     "exp": 3,
     "isReleased": true,
-    "regionIds": ["victoria", "world-travel-japan"],
+    "regionIds": [
+      "victoria",
+      "world-travel-japan"
+    ],
     "attributes": null
   },
   {
@@ -45,7 +48,10 @@
     "hp": 20,
     "exp": 5,
     "isReleased": true,
-    "regionIds": ["victoria", "world-travel-japan"],
+    "regionIds": [
+      "victoria",
+      "world-travel-japan"
+    ],
     "attributes": null
   },
   {
@@ -56,7 +62,10 @@
     "hp": 15,
     "exp": 4,
     "isReleased": true,
-    "regionIds": ["victoria", "world-travel-japan"],
+    "regionIds": [
+      "victoria",
+      "world-travel-japan"
+    ],
     "attributes": null
   },
   {
@@ -67,7 +76,10 @@
     "hp": 40,
     "exp": 8,
     "isReleased": true,
-    "regionIds": ["victoria", "world-travel-japan"],
+    "regionIds": [
+      "victoria",
+      "world-travel-japan"
+    ],
     "attributes": null
   },
   {
@@ -78,8 +90,13 @@
     "hp": 40,
     "exp": 8,
     "isReleased": true,
-    "regionIds": ["victoria", "world-travel-japan"],
-    "attributes": ["불속성약점"]
+    "regionIds": [
+      "victoria",
+      "world-travel-japan"
+    ],
+    "attributes": [
+      "불속성약점"
+    ]
   },
   {
     "id": "9500302",
@@ -98,8 +115,12 @@
     "hp": 50,
     "exp": 10,
     "isReleased": true,
-    "regionIds": ["victoria"],
-    "attributes": ["전기속성약점"]
+    "regionIds": [
+      "victoria"
+    ],
+    "attributes": [
+      "전기속성약점"
+    ]
   },
   {
     "id": "9500203",
@@ -118,7 +139,9 @@
     "hp": 75,
     "exp": 15,
     "isReleased": true,
-    "regionIds": ["victoria"],
+    "regionIds": [
+      "victoria"
+    ],
     "attributes": null
   },
   {
@@ -129,7 +152,9 @@
     "hp": 75,
     "exp": 17,
     "isReleased": true,
-    "regionIds": ["world-travel-japan"],
+    "regionIds": [
+      "world-travel-japan"
+    ],
     "attributes": null
   },
   {
@@ -140,8 +165,17 @@
     "hp": 80,
     "exp": 15,
     "isReleased": true,
-    "regionIds": ["victoria", "world-travel-japan"],
-    "attributes": null
+    "regionIds": [
+      "victoria",
+      "world-travel-japan"
+    ],
+    "attributes": null,
+    "dropItemIds": [
+      "2040048"
+    ],
+    "featuredDropItemIds": [
+      "2040048"
+    ]
   },
   {
     "id": "9500204",
@@ -196,8 +230,12 @@
     "hp": 250,
     "exp": 18,
     "isReleased": true,
-    "regionIds": ["victoria"],
-    "attributes": ["불속성약점"]
+    "regionIds": [
+      "victoria"
+    ],
+    "attributes": [
+      "불속성약점"
+    ]
   },
   {
     "id": "2130100",
@@ -207,8 +245,13 @@
     "hp": 550,
     "exp": 38,
     "isReleased": true,
-    "regionIds": ["victoria", "ludus-lake-underground-town"],
-    "attributes": ["불속성약점"]
+    "regionIds": [
+      "victoria",
+      "ludus-lake-underground-town"
+    ],
+    "attributes": [
+      "불속성약점"
+    ]
   },
   {
     "id": "1210101",
@@ -218,7 +261,9 @@
     "hp": 120,
     "exp": 20,
     "isReleased": true,
-    "regionIds": ["victoria"],
+    "regionIds": [
+      "victoria"
+    ],
     "attributes": null
   },
   {
@@ -286,8 +331,13 @@
     "hp": 3500,
     "exp": 0,
     "isReleased": true,
-    "regionIds": ["ludus-lake-underground-town"],
-    "attributes": ["성속성약점", "얼음속성약점"]
+    "regionIds": [
+      "ludus-lake-underground-town"
+    ],
+    "attributes": [
+      "성속성약점",
+      "얼음속성약점"
+    ]
   },
   {
     "id": "1120100",
@@ -297,8 +347,12 @@
     "hp": 200,
     "exp": 24,
     "isReleased": true,
-    "regionIds": ["victoria"],
-    "attributes": ["전기속성약점"]
+    "regionIds": [
+      "victoria"
+    ],
+    "attributes": [
+      "전기속성약점"
+    ]
   },
   {
     "id": "9500184",
@@ -335,7 +389,9 @@
     "hp": 240,
     "exp": 26,
     "isReleased": true,
-    "regionIds": ["victoria"],
+    "regionIds": [
+      "victoria"
+    ],
     "attributes": null
   },
   {
@@ -355,8 +411,12 @@
     "hp": 250,
     "exp": 26,
     "isReleased": true,
-    "regionIds": ["victoria"],
-    "attributes": ["독속성무효"]
+    "regionIds": [
+      "victoria"
+    ],
+    "attributes": [
+      "독속성무효"
+    ]
   },
   {
     "id": "9500151",
@@ -393,7 +453,9 @@
     "hp": 300,
     "exp": 30,
     "isReleased": true,
-    "regionIds": ["victoria"],
+    "regionIds": [
+      "victoria"
+    ],
     "attributes": null
   },
   {
@@ -404,7 +466,9 @@
     "hp": 330,
     "exp": 33,
     "isReleased": true,
-    "regionIds": ["victoria"],
+    "regionIds": [
+      "victoria"
+    ],
     "attributes": null
   },
   {
@@ -415,7 +479,9 @@
     "hp": 320,
     "exp": 35,
     "isReleased": false,
-    "regionIds": ["masteria-newleafcity"]
+    "regionIds": [
+      "masteria-newleafcity"
+    ]
   },
   {
     "id": "9500194",
@@ -452,7 +518,9 @@
     "hp": 340,
     "exp": 33,
     "isReleased": true,
-    "regionIds": ["world-travel-japan"],
+    "regionIds": [
+      "world-travel-japan"
+    ],
     "attributes": null
   },
   {
@@ -481,8 +549,16 @@
     "hp": 300,
     "exp": 33,
     "isReleased": true,
-    "regionIds": ["victoria"],
-    "attributes": null
+    "regionIds": [
+      "victoria"
+    ],
+    "attributes": null,
+    "dropItemIds": [
+      "2040039"
+    ],
+    "featuredDropItemIds": [
+      "2040039"
+    ]
   },
   {
     "id": "9500152",
@@ -501,7 +577,10 @@
     "hp": 350,
     "exp": 32,
     "isReleased": true,
-    "regionIds": ["victoria", "world-travel-japan"],
+    "regionIds": [
+      "victoria",
+      "world-travel-japan"
+    ],
     "attributes": null
   },
   {
@@ -538,7 +617,9 @@
     "hp": 350,
     "exp": 37,
     "isReleased": false,
-    "regionIds": ["masteria-newleafcity"]
+    "regionIds": [
+      "masteria-newleafcity"
+    ]
   },
   {
     "id": "2130103",
@@ -548,7 +629,9 @@
     "hp": 285,
     "exp": 38,
     "isReleased": true,
-    "regionIds": ["victoria"],
+    "regionIds": [
+      "victoria"
+    ],
     "attributes": null
   },
   {
@@ -559,7 +642,9 @@
     "hp": 300,
     "exp": 35,
     "isReleased": true,
-    "regionIds": ["victoria"],
+    "regionIds": [
+      "victoria"
+    ],
     "attributes": null
   },
   {
@@ -570,7 +655,9 @@
     "hp": 380,
     "exp": 37,
     "isReleased": true,
-    "regionIds": ["world-travel-japan"],
+    "regionIds": [
+      "world-travel-japan"
+    ],
     "attributes": null
   },
   {
@@ -584,7 +671,15 @@
     "regionIds": [
       "nihan-ariant"
     ],
-    "attributes": ["불속성약점"]
+    "attributes": [
+      "불속성약점"
+    ],
+    "dropItemIds": [
+      "2040048"
+    ],
+    "featuredDropItemIds": [
+      "2040048"
+    ]
   },
   {
     "id": "2230108",
@@ -594,8 +689,12 @@
     "hp": 400,
     "exp": 36,
     "isReleased": true,
-    "regionIds": ["aqua-road"],
-    "attributes": ["불속성반감"]
+    "regionIds": [
+      "aqua-road"
+    ],
+    "attributes": [
+      "불속성반감"
+    ]
   },
   {
     "id": "9410000",
@@ -605,7 +704,9 @@
     "hp": 500,
     "exp": 40,
     "isReleased": true,
-    "regionIds": ["world-travel-japan"],
+    "regionIds": [
+      "world-travel-japan"
+    ],
     "attributes": null
   },
   {
@@ -616,8 +717,20 @@
     "hp": 500,
     "exp": 42,
     "isReleased": true,
-    "regionIds": ["nihan-ariant"],
-    "attributes": ["독속성반감"]
+    "regionIds": [
+      "nihan-ariant"
+    ],
+    "attributes": [
+      "독속성반감"
+    ],
+    "dropItemIds": [
+      "2040030",
+      "2040033"
+    ],
+    "featuredDropItemIds": [
+      "2040030",
+      "2040033"
+    ]
   },
   {
     "id": "2230105",
@@ -627,8 +740,13 @@
     "hp": 500,
     "exp": 42,
     "isReleased": true,
-    "regionIds": ["aqua-road"],
-    "attributes": ["독속성약점", "불속성반감"]
+    "regionIds": [
+      "aqua-road"
+    ],
+    "attributes": [
+      "독속성약점",
+      "불속성반감"
+    ]
   },
   {
     "id": "9300027",
@@ -650,7 +768,9 @@
     "hp": 500,
     "exp": 42,
     "isReleased": true,
-    "regionIds": ["victoria"],
+    "regionIds": [
+      "victoria"
+    ],
     "attributes": null
   },
   {
@@ -661,7 +781,9 @@
     "hp": 600,
     "exp": 40,
     "isReleased": true,
-    "regionIds": ["orbis"],
+    "regionIds": [
+      "orbis"
+    ],
     "attributes": null
   },
   {
@@ -672,8 +794,15 @@
     "hp": 8000,
     "exp": 800,
     "isReleased": true,
-    "regionIds": ["victoria"],
-    "attributes": ["얼음속성반감", "불속성반감", "전기속성반감", "성속성반감"]
+    "regionIds": [
+      "victoria"
+    ],
+    "attributes": [
+      "얼음속성반감",
+      "불속성반감",
+      "전기속성반감",
+      "성속성반감"
+    ]
   },
   {
     "id": "2230103",
@@ -683,8 +812,19 @@
     "hp": 450,
     "exp": 42,
     "isReleased": true,
-    "regionIds": ["ludus-lake-earth-defense-hq"],
-    "attributes": ["성속성반감", "불속성약점"]
+    "regionIds": [
+      "ludus-lake-earth-defense-hq"
+    ],
+    "attributes": [
+      "성속성반감",
+      "불속성약점"
+    ],
+    "dropItemIds": [
+      "2040033"
+    ],
+    "featuredDropItemIds": [
+      "2040033"
+    ]
   },
   {
     "id": "2100106",
@@ -697,7 +837,9 @@
     "regionIds": [
       "nihan-ariant"
     ],
-    "attributes": ["불속성반감"]
+    "attributes": [
+      "불속성반감"
+    ]
   },
   {
     "id": "2110300",
@@ -720,8 +862,16 @@
     "hp": 600,
     "exp": 45,
     "isReleased": true,
-    "regionIds": ["victoria"],
-    "attributes": null
+    "regionIds": [
+      "victoria"
+    ],
+    "attributes": null,
+    "dropItemIds": [
+      "2040047"
+    ],
+    "featuredDropItemIds": [
+      "2040047"
+    ]
   },
   {
     "id": "2230101",
@@ -731,8 +881,12 @@
     "hp": 500,
     "exp": 42,
     "isReleased": true,
-    "regionIds": ["victoria"],
-    "attributes": ["성속성약점"]
+    "regionIds": [
+      "victoria"
+    ],
+    "attributes": [
+      "성속성약점"
+    ]
   },
   {
     "id": "2230107",
@@ -742,8 +896,13 @@
     "hp": 500,
     "exp": 45,
     "isReleased": true,
-    "regionIds": ["aqua-road"],
-    "attributes": ["독속성약점", "불속성반감"]
+    "regionIds": [
+      "aqua-road"
+    ],
+    "attributes": [
+      "독속성약점",
+      "불속성반감"
+    ]
   },
   {
     "id": "9400000",
@@ -762,7 +921,9 @@
     "hp": 500,
     "exp": 46,
     "isReleased": true,
-    "regionIds": ["world-travel-japan"],
+    "regionIds": [
+      "world-travel-japan"
+    ],
     "attributes": null
   },
   {
@@ -773,7 +934,9 @@
     "hp": 550,
     "exp": 43,
     "isReleased": true,
-    "regionIds": ["world-travel-japan"],
+    "regionIds": [
+      "world-travel-japan"
+    ],
     "attributes": null
   },
   {
@@ -784,8 +947,13 @@
     "hp": 550,
     "exp": 42,
     "isReleased": true,
-    "regionIds": ["aqua-road"],
-    "attributes": ["독속성약점", "불속성반감"]
+    "regionIds": [
+      "aqua-road"
+    ],
+    "attributes": [
+      "독속성약점",
+      "불속성반감"
+    ]
   },
   {
     "id": "9600003",
@@ -795,7 +963,9 @@
     "hp": 550,
     "exp": 42,
     "isReleased": true,
-    "regionIds": ["world-travel-japan"],
+    "regionIds": [
+      "world-travel-japan"
+    ],
     "attributes": null
   },
   {
@@ -806,7 +976,9 @@
     "hp": 550,
     "exp": 42,
     "isReleased": true,
-    "regionIds": ["victoria"],
+    "regionIds": [
+      "victoria"
+    ],
     "attributes": null
   },
   {
@@ -820,7 +992,9 @@
     "regionIds": [
       "nihan-ariant"
     ],
-    "attributes": ["불속성약점"]
+    "attributes": [
+      "불속성약점"
+    ]
   },
   {
     "id": "9500153",
@@ -839,7 +1013,9 @@
     "hp": 730,
     "exp": 60,
     "isReleased": true,
-    "regionIds": ["masteria-newleafcity"]
+    "regionIds": [
+      "masteria-newleafcity"
+    ]
   },
   {
     "id": "9400400",
@@ -861,7 +1037,9 @@
     "regionIds": [
       "nihan-ariant"
     ],
-    "attributes": ["불속성반감"]
+    "attributes": [
+      "불속성반감"
+    ]
   },
   {
     "id": "9400547",
@@ -871,7 +1049,9 @@
     "hp": 700,
     "exp": 55,
     "isReleased": true,
-    "regionIds": ["masteria-newleafcity"]
+    "regionIds": [
+      "masteria-newleafcity"
+    ]
   },
   {
     "id": "2230100",
@@ -881,7 +1061,9 @@
     "hp": 720,
     "exp": 50,
     "isReleased": true,
-    "regionIds": ["victoria"],
+    "regionIds": [
+      "victoria"
+    ],
     "attributes": null
   },
   {
@@ -892,8 +1074,12 @@
     "hp": 780,
     "exp": 55,
     "isReleased": true,
-    "regionIds": ["ludus-lake-earth-defense-hq"],
-    "attributes": ["독속성무효"]
+    "regionIds": [
+      "ludus-lake-earth-defense-hq"
+    ],
+    "attributes": [
+      "독속성무효"
+    ]
   },
   {
     "id": "9420000",
@@ -903,7 +1089,9 @@
     "hp": 720,
     "exp": 58,
     "isReleased": true,
-    "regionIds": ["world-travel-japan"],
+    "regionIds": [
+      "world-travel-japan"
+    ],
     "attributes": null
   },
   {
@@ -917,7 +1105,9 @@
     "regionIds": [
       "nihan-ariant"
     ],
-    "attributes": ["불속성약점"]
+    "attributes": [
+      "불속성약점"
+    ]
   },
   {
     "id": "2230109",
@@ -927,8 +1117,14 @@
     "hp": 740,
     "exp": 52,
     "isReleased": true,
-    "regionIds": ["aqua-road"],
-    "attributes": ["전기속성약점", "독속성약점", "불속성반감"]
+    "regionIds": [
+      "aqua-road"
+    ],
+    "attributes": [
+      "전기속성약점",
+      "독속성약점",
+      "불속성반감"
+    ]
   },
   {
     "id": "2100108",
@@ -938,7 +1134,9 @@
     "hp": 780,
     "exp": 58,
     "isReleased": true,
-    "regionIds": ["nihan-ariant"],
+    "regionIds": [
+      "nihan-ariant"
+    ],
     "attributes": null
   },
   {
@@ -949,7 +1147,9 @@
     "hp": 780,
     "exp": 58,
     "isReleased": true,
-    "regionIds": ["nihan-ariant"],
+    "regionIds": [
+      "nihan-ariant"
+    ],
     "attributes": null
   },
   {
@@ -960,8 +1160,14 @@
     "hp": 790,
     "exp": 58,
     "isReleased": true,
-    "regionIds": ["aqua-road"],
-    "attributes": ["얼음속성약점", "독속성반감", "불속성반감"]
+    "regionIds": [
+      "aqua-road"
+    ],
+    "attributes": [
+      "얼음속성약점",
+      "독속성반감",
+      "불속성반감"
+    ]
   },
   {
     "id": "9400002",
@@ -971,8 +1177,12 @@
     "hp": 920,
     "exp": 55,
     "isReleased": true,
-    "regionIds": ["world-travel-japan"],
-    "attributes": ["불속성약점"]
+    "regionIds": [
+      "world-travel-japan"
+    ],
+    "attributes": [
+      "불속성약점"
+    ]
   },
   {
     "id": "9300129",
@@ -982,7 +1192,10 @@
     "hp": 1400,
     "exp": 78,
     "isReleased": true,
-    "regionIds": ["ludibrium", "ludus-lake-underground-town"],
+    "regionIds": [
+      "ludibrium",
+      "ludus-lake-underground-town"
+    ],
     "attributes": null
   },
   {
@@ -993,8 +1206,13 @@
     "hp": 2000,
     "exp": 99,
     "isReleased": true,
-    "regionIds": ["ludibrium"],
-    "attributes": ["얼음속성반감", "불속성반감"]
+    "regionIds": [
+      "ludibrium"
+    ],
+    "attributes": [
+      "얼음속성반감",
+      "불속성반감"
+    ]
   },
   {
     "id": "9300135",
@@ -1004,8 +1222,16 @@
     "hp": 2600,
     "exp": 115,
     "isReleased": true,
-    "regionIds": ["ludibrium"],
-    "attributes": null
+    "regionIds": [
+      "ludibrium"
+    ],
+    "attributes": null,
+    "dropItemIds": [
+      "2040029"
+    ],
+    "featuredDropItemIds": [
+      "2040029"
+    ]
   },
   {
     "id": "9400548",
@@ -1015,7 +1241,9 @@
     "hp": 950,
     "exp": 65,
     "isReleased": true,
-    "regionIds": ["masteria-newleafcity"]
+    "regionIds": [
+      "masteria-newleafcity"
+    ]
   },
   {
     "id": "3230400",
@@ -1025,7 +1253,9 @@
     "hp": 950,
     "exp": 60,
     "isReleased": true,
-    "regionIds": ["ludus-lake-earth-defense-hq"],
+    "regionIds": [
+      "ludus-lake-earth-defense-hq"
+    ],
     "attributes": null
   },
   {
@@ -1036,8 +1266,12 @@
     "hp": 900,
     "exp": 55,
     "isReleased": true,
-    "regionIds": ["world-travel-japan"],
-    "attributes": ["얼음속성약점"]
+    "regionIds": [
+      "world-travel-japan"
+    ],
+    "attributes": [
+      "얼음속성약점"
+    ]
   },
   {
     "id": "9300127",
@@ -1047,7 +1281,9 @@
     "hp": 950,
     "exp": 60,
     "isReleased": true,
-    "regionIds": ["ludibrium"],
+    "regionIds": [
+      "ludibrium"
+    ],
     "attributes": null
   },
   {
@@ -1058,7 +1294,9 @@
     "hp": 1300,
     "exp": 72,
     "isReleased": true,
-    "regionIds": ["ludus-lake-earth-defense-hq"],
+    "regionIds": [
+      "ludus-lake-earth-defense-hq"
+    ],
     "attributes": null
   },
   {
@@ -1078,8 +1316,20 @@
     "hp": 900,
     "exp": 55,
     "isReleased": true,
-    "regionIds": ["orbis"],
-    "attributes": ["성속성반감", "전기속성반감", "얼음속성약점"]
+    "regionIds": [
+      "orbis"
+    ],
+    "attributes": [
+      "성속성반감",
+      "전기속성반감",
+      "얼음속성약점"
+    ],
+    "dropItemIds": [
+      "2040030"
+    ],
+    "featuredDropItemIds": [
+      "2040030"
+    ]
   },
   {
     "id": "9100013",
@@ -1107,8 +1357,13 @@
     "hp": 900,
     "exp": 55,
     "isReleased": true,
-    "regionIds": ["orbis"],
-    "attributes": ["얼음속성반감", "불속성약점"]
+    "regionIds": [
+      "orbis"
+    ],
+    "attributes": [
+      "얼음속성반감",
+      "불속성약점"
+    ]
   },
   {
     "id": "9600004",
@@ -1145,7 +1400,9 @@
     "hp": 1750,
     "exp": 82,
     "isReleased": true,
-    "regionIds": ["ludibrium"],
+    "regionIds": [
+      "ludibrium"
+    ],
     "attributes": null
   },
   {
@@ -1156,8 +1413,13 @@
     "hp": 900,
     "exp": 55,
     "isReleased": true,
-    "regionIds": ["aqua-road"],
-    "attributes": ["독속성약점", "불속성반감"]
+    "regionIds": [
+      "aqua-road"
+    ],
+    "attributes": [
+      "독속성약점",
+      "불속성반감"
+    ]
   },
   {
     "id": "3100102",
@@ -1167,7 +1429,9 @@
     "hp": 870,
     "exp": 60,
     "isReleased": true,
-    "regionIds": ["nihan-ariant"],
+    "regionIds": [
+      "nihan-ariant"
+    ],
     "attributes": null
   },
   {
@@ -1178,7 +1442,9 @@
     "hp": 2600,
     "exp": 110,
     "isReleased": true,
-    "regionIds": ["ludus-lake-earth-defense-hq"],
+    "regionIds": [
+      "ludus-lake-earth-defense-hq"
+    ],
     "attributes": null
   },
   {
@@ -1198,7 +1464,9 @@
     "hp": 1900,
     "exp": 95,
     "isReleased": true,
-    "regionIds": ["ludibrium"],
+    "regionIds": [
+      "ludibrium"
+    ],
     "attributes": null
   },
   {
@@ -1209,8 +1477,13 @@
     "hp": 900,
     "exp": 55,
     "isReleased": true,
-    "regionIds": ["orbis"],
-    "attributes": ["불속성반감", "얼음속성약점"]
+    "regionIds": [
+      "orbis"
+    ],
+    "attributes": [
+      "불속성반감",
+      "얼음속성약점"
+    ]
   },
   {
     "id": "3000001",
@@ -1220,7 +1493,9 @@
     "hp": 800,
     "exp": 120,
     "isReleased": true,
-    "regionIds": ["orbis"],
+    "regionIds": [
+      "orbis"
+    ],
     "attributes": null
   },
   {
@@ -1240,7 +1515,9 @@
     "hp": 800,
     "exp": 62,
     "isReleased": true,
-    "regionIds": ["ludus-lake-earth-defense-hq"],
+    "regionIds": [
+      "ludus-lake-earth-defense-hq"
+    ],
     "attributes": null
   },
   {
@@ -1251,7 +1528,9 @@
     "hp": 1000,
     "exp": 65,
     "isReleased": true,
-    "regionIds": ["ludus-lake-earth-defense-hq"],
+    "regionIds": [
+      "ludus-lake-earth-defense-hq"
+    ],
     "attributes": null
   },
   {
@@ -1262,8 +1541,13 @@
     "hp": 1200,
     "exp": 60,
     "isReleased": true,
-    "regionIds": ["victoria"],
-    "attributes": ["얼음속성반감", "불속성약점"]
+    "regionIds": [
+      "victoria"
+    ],
+    "attributes": [
+      "얼음속성반감",
+      "불속성약점"
+    ]
   },
   {
     "id": "5300000",
@@ -1273,8 +1557,20 @@
     "hp": 1000,
     "exp": 60,
     "isReleased": true,
-    "regionIds": ["ellin-forest", "orbis"],
-    "attributes": ["얼음속성반감", "불속성약점"]
+    "regionIds": [
+      "ellin-forest",
+      "orbis"
+    ],
+    "attributes": [
+      "얼음속성반감",
+      "불속성약점"
+    ],
+    "dropItemIds": [
+      "2040048"
+    ],
+    "featuredDropItemIds": [
+      "2040048"
+    ]
   },
   {
     "id": "3230104",
@@ -1284,8 +1580,12 @@
     "hp": 1000,
     "exp": 65,
     "isReleased": true,
-    "regionIds": ["aqua-road"],
-    "attributes": ["불속성반감"]
+    "regionIds": [
+      "aqua-road"
+    ],
+    "attributes": [
+      "불속성반감"
+    ]
   },
   {
     "id": "3100101",
@@ -1298,7 +1598,10 @@
     "regionIds": [
       "nihan-ariant"
     ],
-    "attributes": ["불속성약점", "얼음속성약점"]
+    "attributes": [
+      "불속성약점",
+      "얼음속성약점"
+    ]
   },
   {
     "id": "3110301",
@@ -1311,7 +1614,10 @@
     "regionIds": [
       "nihan-ariant"
     ],
-    "attributes": ["불속성반감", "얼음속성약점"]
+    "attributes": [
+      "불속성반감",
+      "얼음속성약점"
+    ]
   },
   {
     "id": "9300005",
@@ -1342,8 +1648,13 @@
     "hp": 1000,
     "exp": 60,
     "isReleased": true,
-    "regionIds": ["victoria"],
-    "attributes": ["불속성반감", "얼음속성약점"]
+    "regionIds": [
+      "victoria"
+    ],
+    "attributes": [
+      "불속성반감",
+      "얼음속성약점"
+    ]
   },
   {
     "id": "3110101",
@@ -1353,7 +1664,9 @@
     "hp": 1050,
     "exp": 65,
     "isReleased": true,
-    "regionIds": ["ludibrium"],
+    "regionIds": [
+      "ludibrium"
+    ],
     "attributes": null
   },
   {
@@ -1364,8 +1677,12 @@
     "hp": 1100,
     "exp": 65,
     "isReleased": true,
-    "regionIds": ["orbis"],
-    "attributes": ["성속성약점"]
+    "regionIds": [
+      "orbis"
+    ],
+    "attributes": [
+      "성속성약점"
+    ]
   },
   {
     "id": "9600006",
@@ -1375,7 +1692,9 @@
     "hp": 1200,
     "exp": 66,
     "isReleased": true,
-    "regionIds": ["world-travel-japan"],
+    "regionIds": [
+      "world-travel-japan"
+    ],
     "attributes": null
   },
   {
@@ -1386,8 +1705,13 @@
     "hp": 1100,
     "exp": 65,
     "isReleased": true,
-    "regionIds": ["orbis"],
-    "attributes": ["얼음속성반감", "불속성약점"]
+    "regionIds": [
+      "orbis"
+    ],
+    "attributes": [
+      "얼음속성반감",
+      "불속성약점"
+    ]
   },
   {
     "id": "3210201",
@@ -1397,8 +1721,13 @@
     "hp": 1100,
     "exp": 65,
     "isReleased": true,
-    "regionIds": ["orbis"],
-    "attributes": ["전기속성반감", "얼음속성약점"]
+    "regionIds": [
+      "orbis"
+    ],
+    "attributes": [
+      "전기속성반감",
+      "얼음속성약점"
+    ]
   },
   {
     "id": "3210200",
@@ -1408,8 +1737,13 @@
     "hp": 1100,
     "exp": 65,
     "isReleased": true,
-    "regionIds": ["orbis"],
-    "attributes": ["불속성반감", "얼음속성약점"]
+    "regionIds": [
+      "orbis"
+    ],
+    "attributes": [
+      "불속성반감",
+      "얼음속성약점"
+    ]
   },
   {
     "id": "3210204",
@@ -1419,7 +1753,9 @@
     "hp": 1200,
     "exp": 70,
     "isReleased": true,
-    "regionIds": ["ludibrium"],
+    "regionIds": [
+      "ludibrium"
+    ],
     "attributes": null
   },
   {
@@ -1430,7 +1766,9 @@
     "hp": 1150,
     "exp": 70,
     "isReleased": true,
-    "regionIds": ["ludus-lake-earth-defense-hq"],
+    "regionIds": [
+      "ludus-lake-earth-defense-hq"
+    ],
     "attributes": null
   },
   {
@@ -1459,7 +1797,9 @@
     "hp": 1100,
     "exp": 70,
     "isReleased": true,
-    "regionIds": ["ludibrium"],
+    "regionIds": [
+      "ludibrium"
+    ],
     "attributes": null
   },
   {
@@ -1479,7 +1819,15 @@
     "hp": 1400,
     "exp": 75,
     "isReleased": true,
-    "regionIds": ["nihan-magatia"]
+    "regionIds": [
+      "nihan-magatia"
+    ],
+    "dropItemIds": [
+      "2040036"
+    ],
+    "featuredDropItemIds": [
+      "2040036"
+    ]
   },
   {
     "id": "9000101",
@@ -1537,8 +1885,12 @@
     "hp": 1300,
     "exp": 72,
     "isReleased": true,
-    "regionIds": ["orbis"],
-    "attributes": ["성속성반감"]
+    "regionIds": [
+      "orbis"
+    ],
+    "attributes": [
+      "성속성반감"
+    ]
   },
   {
     "id": "3220000",
@@ -1548,7 +1900,9 @@
     "hp": 7000,
     "exp": 405,
     "isReleased": true,
-    "regionIds": ["victoria"],
+    "regionIds": [
+      "victoria"
+    ],
     "attributes": null
   },
   {
@@ -1591,6 +1945,12 @@
     "isReleased": true,
     "regionIds": [
       "victoria"
+    ],
+    "dropItemIds": [
+      "2040042"
+    ],
+    "featuredDropItemIds": [
+      "2040042"
     ]
   },
   {
@@ -1601,7 +1961,9 @@
     "hp": 1700,
     "exp": 150,
     "isReleased": true,
-    "regionIds": ["victoria"],
+    "regionIds": [
+      "victoria"
+    ],
     "attributes": null
   },
   {
@@ -1612,8 +1974,14 @@
     "hp": 1400,
     "exp": 75,
     "isReleased": true,
-    "regionIds": ["ellin-forest", "orbis"],
-    "attributes": ["얼음속성반감", "불속성약점"]
+    "regionIds": [
+      "ellin-forest",
+      "orbis"
+    ],
+    "attributes": [
+      "얼음속성반감",
+      "불속성약점"
+    ]
   },
   {
     "id": "9300007",
@@ -1632,8 +2000,12 @@
     "hp": 1250,
     "exp": 70,
     "isReleased": true,
-    "regionIds": ["victoria"],
-    "attributes": ["독속성반감"]
+    "regionIds": [
+      "victoria"
+    ],
+    "attributes": [
+      "독속성반감"
+    ]
   },
   {
     "id": "9500143",
@@ -1697,7 +2069,9 @@
     "hp": 1200,
     "exp": 71,
     "isReleased": true,
-    "regionIds": ["world-travel-japan"],
+    "regionIds": [
+      "world-travel-japan"
+    ],
     "attributes": null
   },
   {
@@ -1708,8 +2082,14 @@
     "hp": 1430,
     "exp": 80,
     "isReleased": true,
-    "regionIds": ["aqua-road", "orbis"],
-    "attributes": ["얼음속성반감", "불속성반감"]
+    "regionIds": [
+      "aqua-road",
+      "orbis"
+    ],
+    "attributes": [
+      "얼음속성반감",
+      "불속성반감"
+    ]
   },
   {
     "id": "9410009",
@@ -1719,7 +2099,9 @@
     "hp": 1550,
     "exp": 81,
     "isReleased": true,
-    "regionIds": ["world-travel-japan"],
+    "regionIds": [
+      "world-travel-japan"
+    ],
     "attributes": null
   },
   {
@@ -1730,7 +2112,9 @@
     "hp": 1400,
     "exp": 81,
     "isReleased": true,
-    "regionIds": ["world-travel-japan"],
+    "regionIds": [
+      "world-travel-japan"
+    ],
     "attributes": null
   },
   {
@@ -1741,7 +2125,9 @@
     "hp": 1350,
     "exp": 77,
     "isReleased": true,
-    "regionIds": ["ludus-lake-earth-defense-hq"],
+    "regionIds": [
+      "ludus-lake-earth-defense-hq"
+    ],
     "attributes": null
   },
   {
@@ -1752,7 +2138,9 @@
     "hp": 1450,
     "exp": 85,
     "isReleased": true,
-    "regionIds": ["masteria-newleafcity"]
+    "regionIds": [
+      "masteria-newleafcity"
+    ]
   },
   {
     "id": "3210203",
@@ -1762,7 +2150,9 @@
     "hp": 1400,
     "exp": 77,
     "isReleased": true,
-    "regionIds": ["ludibrium"],
+    "regionIds": [
+      "ludibrium"
+    ],
     "attributes": null
   },
   {
@@ -1773,7 +2163,9 @@
     "hp": 1500,
     "exp": 79,
     "isReleased": true,
-    "regionIds": ["world-travel-japan"],
+    "regionIds": [
+      "world-travel-japan"
+    ],
     "attributes": null
   },
   {
@@ -1783,7 +2175,13 @@
     "level": 37,
     "hp": 1950,
     "exp": 80,
-    "isReleased": true
+    "isReleased": true,
+    "dropItemIds": [
+      "2040039"
+    ],
+    "featuredDropItemIds": [
+      "2040039"
+    ]
   },
   {
     "id": "3210800",
@@ -1805,7 +2203,9 @@
     "hp": 1700,
     "exp": 82,
     "isReleased": true,
-    "regionIds": ["ludus-lake-earth-defense-hq"],
+    "regionIds": [
+      "ludus-lake-earth-defense-hq"
+    ],
     "attributes": null
   },
   {
@@ -1816,8 +2216,13 @@
     "hp": 1900,
     "exp": 88,
     "isReleased": true,
-    "regionIds": ["world-travel-japan"],
-    "attributes": ["전기속성약점", "독속성반감"]
+    "regionIds": [
+      "world-travel-japan"
+    ],
+    "attributes": [
+      "전기속성약점",
+      "독속성반감"
+    ]
   },
   {
     "id": "3220001",
@@ -1827,7 +2232,9 @@
     "hp": 7700,
     "exp": 445,
     "isReleased": true,
-    "regionIds": ["nihan-ariant"],
+    "regionIds": [
+      "nihan-ariant"
+    ],
     "attributes": null
   },
   {
@@ -1838,8 +2245,13 @@
     "hp": 1900,
     "exp": 88,
     "isReleased": true,
-    "regionIds": ["world-travel-japan"],
-    "attributes": ["얼음속성약점", "불속성반감"]
+    "regionIds": [
+      "world-travel-japan"
+    ],
+    "attributes": [
+      "얼음속성약점",
+      "불속성반감"
+    ]
   },
   {
     "id": "3230304",
@@ -1849,8 +2261,16 @@
     "hp": 1830,
     "exp": 85,
     "isReleased": true,
-    "regionIds": ["ludus-lake-earth-defense-hq"],
-    "attributes": null
+    "regionIds": [
+      "ludus-lake-earth-defense-hq"
+    ],
+    "attributes": null,
+    "dropItemIds": [
+      "2040030"
+    ],
+    "featuredDropItemIds": [
+      "2040030"
+    ]
   },
   {
     "id": "9410006",
@@ -1860,8 +2280,13 @@
     "hp": 1900,
     "exp": 88,
     "isReleased": true,
-    "regionIds": ["world-travel-japan"],
-    "attributes": ["독속성약점", "전기속성반감"]
+    "regionIds": [
+      "world-travel-japan"
+    ],
+    "attributes": [
+      "독속성약점",
+      "전기속성반감"
+    ]
   },
   {
     "id": "9600007",
@@ -1871,7 +2296,9 @@
     "hp": 1800,
     "exp": 86,
     "isReleased": true,
-    "regionIds": ["world-travel-japan"],
+    "regionIds": [
+      "world-travel-japan"
+    ],
     "attributes": null
   },
   {
@@ -1882,8 +2309,12 @@
     "hp": 1850,
     "exp": 85,
     "isReleased": true,
-    "regionIds": ["aqua-road"],
-    "attributes": ["불속성반감"]
+    "regionIds": [
+      "aqua-road"
+    ],
+    "attributes": [
+      "불속성반감"
+    ]
   },
   {
     "id": "9500145",
@@ -1902,7 +2333,9 @@
     "hp": 1850,
     "exp": 85,
     "isReleased": true,
-    "regionIds": ["ludus-lake-earth-defense-hq"],
+    "regionIds": [
+      "ludus-lake-earth-defense-hq"
+    ],
     "attributes": null
   },
   {
@@ -1913,7 +2346,9 @@
     "hp": 1850,
     "exp": 85,
     "isReleased": true,
-    "regionIds": ["nihan-magatia"]
+    "regionIds": [
+      "nihan-magatia"
+    ]
   },
   {
     "id": "9300131",
@@ -1923,7 +2358,9 @@
     "hp": 1920,
     "exp": 92,
     "isReleased": true,
-    "regionIds": ["ludibrium"],
+    "regionIds": [
+      "ludibrium"
+    ],
     "attributes": null
   },
   {
@@ -1934,7 +2371,9 @@
     "hp": 1900,
     "exp": 85,
     "isReleased": true,
-    "regionIds": ["ludus-lake-earth-defense-hq"],
+    "regionIds": [
+      "ludus-lake-earth-defense-hq"
+    ],
     "attributes": null
   },
   {
@@ -1945,7 +2384,9 @@
     "hp": 1850,
     "exp": 95,
     "isReleased": true,
-    "regionIds": ["world-travel-japan"],
+    "regionIds": [
+      "world-travel-japan"
+    ],
     "attributes": null
   },
   {
@@ -1959,7 +2400,10 @@
     "regionIds": [
       "nihan-ariant"
     ],
-    "attributes": ["불속성약점", "얼음속성약점"]
+    "attributes": [
+      "불속성약점",
+      "얼음속성약점"
+    ]
   },
   {
     "id": "4230116",
@@ -1969,7 +2413,9 @@
     "hp": 1930,
     "exp": 95,
     "isReleased": true,
-    "regionIds": ["ludus-lake-earth-defense-hq"],
+    "regionIds": [
+      "ludus-lake-earth-defense-hq"
+    ],
     "attributes": null
   },
   {
@@ -1980,7 +2426,9 @@
     "hp": 1900,
     "exp": 95,
     "isReleased": true,
-    "regionIds": ["mu-lung"]
+    "regionIds": [
+      "mu-lung"
+    ]
   },
   {
     "id": "9420003",
@@ -1990,7 +2438,9 @@
     "hp": 1920,
     "exp": 0,
     "isReleased": true,
-    "regionIds": ["world-travel-japan"],
+    "regionIds": [
+      "world-travel-japan"
+    ],
     "attributes": null
   },
   {
@@ -2001,8 +2451,13 @@
     "hp": 1920,
     "exp": 93,
     "isReleased": true,
-    "regionIds": ["world-travel-japan"],
-    "attributes": ["얼음속성약점", "불속성반감"]
+    "regionIds": [
+      "world-travel-japan"
+    ],
+    "attributes": [
+      "얼음속성약점",
+      "불속성반감"
+    ]
   },
   {
     "id": "4230101",
@@ -2033,8 +2488,13 @@
     "hp": 2000,
     "exp": 85,
     "isReleased": true,
-    "regionIds": ["victoria"],
-    "attributes": ["얼음속성반감", "불속성약점"]
+    "regionIds": [
+      "victoria"
+    ],
+    "attributes": [
+      "얼음속성반감",
+      "불속성약점"
+    ]
   },
   {
     "id": "4230201",
@@ -2044,8 +2504,13 @@
     "hp": 1910,
     "exp": 97,
     "isReleased": true,
-    "regionIds": ["aqua-road"],
-    "attributes": ["독속성반감", "불속성반감"]
+    "regionIds": [
+      "aqua-road"
+    ],
+    "attributes": [
+      "독속성반감",
+      "불속성반감"
+    ]
   },
   {
     "id": "9500178",
@@ -2073,8 +2538,13 @@
     "hp": 1900,
     "exp": 95,
     "isReleased": true,
-    "regionIds": ["aqua-road"],
-    "attributes": ["독속성약점", "불속성반감"]
+    "regionIds": [
+      "aqua-road"
+    ],
+    "attributes": [
+      "독속성약점",
+      "불속성반감"
+    ]
   },
   {
     "id": "9500318",
@@ -2093,8 +2563,16 @@
     "hp": 2080,
     "exp": 99,
     "isReleased": true,
-    "regionIds": ["ludus-lake-earth-defense-hq"],
-    "attributes": null
+    "regionIds": [
+      "ludus-lake-earth-defense-hq"
+    ],
+    "attributes": null,
+    "dropItemIds": [
+      "2040045"
+    ],
+    "featuredDropItemIds": [
+      "2040045"
+    ]
   },
   {
     "id": "9400543",
@@ -2104,7 +2582,15 @@
     "hp": 1600,
     "exp": 95,
     "isReleased": true,
-    "regionIds": ["masteria-newleafcity"]
+    "regionIds": [
+      "masteria-newleafcity"
+    ],
+    "dropItemIds": [
+      "2040045"
+    ],
+    "featuredDropItemIds": [
+      "2040045"
+    ]
   },
   {
     "id": "4230107",
@@ -2114,7 +2600,10 @@
     "hp": 1600,
     "exp": 95,
     "isReleased": true,
-    "regionIds": ["aqua-road", "ellin-forest"],
+    "regionIds": [
+      "aqua-road",
+      "ellin-forest"
+    ],
     "attributes": null
   },
   {
@@ -2125,8 +2614,16 @@
     "hp": 2050,
     "exp": 99,
     "isReleased": true,
-    "regionIds": ["ludibrium"],
-    "attributes": null
+    "regionIds": [
+      "ludibrium"
+    ],
+    "attributes": null,
+    "dropItemIds": [
+      "2040045"
+    ],
+    "featuredDropItemIds": [
+      "2040045"
+    ]
   },
   {
     "id": "4230501",
@@ -2136,7 +2633,9 @@
     "hp": 2000,
     "exp": 99,
     "isReleased": true,
-    "regionIds": ["mu-lung"]
+    "regionIds": [
+      "mu-lung"
+    ]
   },
   {
     "id": "4230105",
@@ -2146,8 +2645,12 @@
     "hp": 2100,
     "exp": 99,
     "isReleased": true,
-    "regionIds": ["orbis"],
-    "attributes": ["불속성약점"]
+    "regionIds": [
+      "orbis"
+    ],
+    "attributes": [
+      "불속성약점"
+    ]
   },
   {
     "id": "4230109",
@@ -2157,8 +2660,14 @@
     "hp": 2400,
     "exp": 102,
     "isReleased": true,
-    "regionIds": ["ludus-lake-earth-defense-hq"],
-    "attributes": ["전기속성반감", "얼음속성반감", "불속성약점"]
+    "regionIds": [
+      "ludus-lake-earth-defense-hq"
+    ],
+    "attributes": [
+      "전기속성반감",
+      "얼음속성반감",
+      "불속성약점"
+    ]
   },
   {
     "id": "4110300",
@@ -2168,7 +2677,9 @@
     "hp": 2400,
     "exp": 102,
     "isReleased": true,
-    "regionIds": ["nihan-magatia"]
+    "regionIds": [
+      "nihan-magatia"
+    ]
   },
   {
     "id": "9300060",
@@ -2178,8 +2689,16 @@
     "hp": 2200,
     "exp": 99,
     "isReleased": true,
-    "regionIds": ["victoria"],
-    "attributes": null
+    "regionIds": [
+      "victoria"
+    ],
+    "attributes": null,
+    "dropItemIds": [
+      "2040042"
+    ],
+    "featuredDropItemIds": [
+      "2040042"
+    ]
   },
   {
     "id": "4250000",
@@ -2201,7 +2720,9 @@
     "hp": 2300,
     "exp": 102,
     "isReleased": true,
-    "regionIds": ["ludus-lake-earth-defense-hq"],
+    "regionIds": [
+      "ludus-lake-earth-defense-hq"
+    ],
     "attributes": null
   },
   {
@@ -2212,8 +2733,13 @@
     "hp": 2300,
     "exp": 102,
     "isReleased": true,
-    "regionIds": ["aqua-road"],
-    "attributes": ["얼음속성반감", "불속성반감"]
+    "regionIds": [
+      "aqua-road"
+    ],
+    "attributes": [
+      "얼음속성반감",
+      "불속성반감"
+    ]
   },
   {
     "id": "9500146",
@@ -2232,7 +2758,9 @@
     "hp": 2300,
     "exp": 102,
     "isReleased": true,
-    "regionIds": ["world-travel-japan"],
+    "regionIds": [
+      "world-travel-japan"
+    ],
     "attributes": null
   },
   {
@@ -2243,8 +2771,13 @@
     "hp": 2400,
     "exp": 103,
     "isReleased": true,
-    "regionIds": ["aqua-road"],
-    "attributes": ["전기속성반감", "불속성반감"]
+    "regionIds": [
+      "aqua-road"
+    ],
+    "attributes": [
+      "전기속성반감",
+      "불속성반감"
+    ]
   },
   {
     "id": "4230108",
@@ -2254,7 +2787,9 @@
     "hp": 2300,
     "exp": 102,
     "isReleased": true,
-    "regionIds": ["ellin-forest"],
+    "regionIds": [
+      "ellin-forest"
+    ],
     "attributes": null
   },
   {
@@ -2292,7 +2827,9 @@
     "hp": 2400,
     "exp": 103,
     "isReleased": true,
-    "regionIds": ["mu-lung"]
+    "regionIds": [
+      "mu-lung"
+    ]
   },
   {
     "id": "9400546",
@@ -2302,7 +2839,9 @@
     "hp": 2490,
     "exp": 120,
     "isReleased": true,
-    "regionIds": ["masteria-newleafcity"]
+    "regionIds": [
+      "masteria-newleafcity"
+    ]
   },
   {
     "id": "4230112",
@@ -2312,7 +2851,9 @@
     "hp": 2450,
     "exp": 105,
     "isReleased": true,
-    "regionIds": ["ludibrium"],
+    "regionIds": [
+      "ludibrium"
+    ],
     "attributes": null
   },
   {
@@ -2323,8 +2864,18 @@
     "hp": 2450,
     "exp": 107,
     "isReleased": true,
-    "regionIds": ["victoria"],
-    "attributes": ["성속성약점"]
+    "regionIds": [
+      "victoria"
+    ],
+    "attributes": [
+      "성속성약점"
+    ],
+    "dropItemIds": [
+      "2040048"
+    ],
+    "featuredDropItemIds": [
+      "2040048"
+    ]
   },
   {
     "id": "4230120",
@@ -2334,8 +2885,18 @@
     "hp": 2480,
     "exp": 105,
     "isReleased": true,
-    "regionIds": ["ludus-lake-earth-defense-hq"],
-    "attributes": null
+    "regionIds": [
+      "ludus-lake-earth-defense-hq"
+    ],
+    "attributes": null,
+    "dropItemIds": [
+      "2040045",
+      "2040036"
+    ],
+    "featuredDropItemIds": [
+      "2040036",
+      "2040045"
+    ]
   },
   {
     "id": "4230106",
@@ -2345,8 +2906,18 @@
     "hp": 2500,
     "exp": 105,
     "isReleased": true,
-    "regionIds": ["orbis"],
-    "attributes": null
+    "regionIds": [
+      "orbis"
+    ],
+    "attributes": null,
+    "dropItemIds": [
+      "2040048",
+      "2040033"
+    ],
+    "featuredDropItemIds": [
+      "2040033",
+      "2040048"
+    ]
   },
   {
     "id": "4220000",
@@ -2356,7 +2927,9 @@
     "hp": 7800,
     "exp": 330,
     "isReleased": true,
-    "regionIds": ["aqua-road"],
+    "regionIds": [
+      "aqua-road"
+    ],
     "attributes": null
   },
   {
@@ -2376,8 +2949,13 @@
     "hp": 2800,
     "exp": 130,
     "isReleased": true,
-    "regionIds": ["world-travel-japan"],
-    "attributes": ["독속성약점", "불속성약점"]
+    "regionIds": [
+      "world-travel-japan"
+    ],
+    "attributes": [
+      "독속성약점",
+      "불속성약점"
+    ]
   },
   {
     "id": "4230400",
@@ -2387,7 +2965,9 @@
     "hp": 2650,
     "exp": 115,
     "isReleased": true,
-    "regionIds": ["victoria"],
+    "regionIds": [
+      "victoria"
+    ],
     "attributes": null
   },
   {
@@ -2398,8 +2978,18 @@
     "hp": 2550,
     "exp": 110,
     "isReleased": true,
-    "regionIds": ["ludus-lake-earth-defense-hq"],
-    "attributes": ["전기속성반감"]
+    "regionIds": [
+      "ludus-lake-earth-defense-hq"
+    ],
+    "attributes": [
+      "전기속성반감"
+    ],
+    "dropItemIds": [
+      "2040043"
+    ],
+    "featuredDropItemIds": [
+      "2040043"
+    ]
   },
   {
     "id": "4230300",
@@ -2409,8 +2999,21 @@
     "hp": 2600,
     "exp": 110,
     "isReleased": true,
-    "regionIds": ["ludus-lake-underground-town"],
-    "attributes": ["얼음속성반감", "불속성약점"]
+    "regionIds": [
+      "ludus-lake-underground-town"
+    ],
+    "attributes": [
+      "얼음속성반감",
+      "불속성약점"
+    ],
+    "dropItemIds": [
+      "2040029",
+      "2040048"
+    ],
+    "featuredDropItemIds": [
+      "2040029",
+      "2040048"
+    ]
   },
   {
     "id": "9500148",
@@ -2429,7 +3032,9 @@
     "hp": 2550,
     "exp": 110,
     "isReleased": true,
-    "regionIds": ["mu-lung"]
+    "regionIds": [
+      "mu-lung"
+    ]
   },
   {
     "id": "9300160",
@@ -2438,7 +3043,13 @@
     "level": 45,
     "hp": 2550,
     "exp": 0,
-    "isReleased": false
+    "isReleased": false,
+    "dropItemIds": [
+      "2040048"
+    ],
+    "featuredDropItemIds": [
+      "2040048"
+    ]
   },
   {
     "id": "4130100",
@@ -2448,7 +3059,9 @@
     "hp": 2700,
     "exp": 105,
     "isReleased": true,
-    "regionIds": ["victoria"],
+    "regionIds": [
+      "victoria"
+    ],
     "attributes": null
   },
   {
@@ -2459,8 +3072,12 @@
     "hp": 2600,
     "exp": 110,
     "isReleased": true,
-    "regionIds": ["world-travel-japan"],
-    "attributes": ["전기속성약점"]
+    "regionIds": [
+      "world-travel-japan"
+    ],
+    "attributes": [
+      "전기속성약점"
+    ]
   },
   {
     "id": "9500170",
@@ -2482,7 +3099,9 @@
     "hp": 2550,
     "exp": 110,
     "isReleased": true,
-    "regionIds": ["mu-lung"]
+    "regionIds": [
+      "mu-lung"
+    ]
   },
   {
     "id": "9300161",
@@ -2501,7 +3120,9 @@
     "hp": 2600,
     "exp": 110,
     "isReleased": true,
-    "regionIds": ["ludus-lake-earth-defense-hq"],
+    "regionIds": [
+      "ludus-lake-earth-defense-hq"
+    ],
     "attributes": null
   },
   {
@@ -2511,7 +3132,13 @@
     "level": 46,
     "hp": 2550,
     "exp": 110,
-    "isReleased": true
+    "isReleased": true,
+    "dropItemIds": [
+      "2040044"
+    ],
+    "featuredDropItemIds": [
+      "2040044"
+    ]
   },
   {
     "id": "4250001",
@@ -2530,7 +3157,17 @@
     "hp": 23000,
     "exp": 300,
     "isReleased": false,
-    "regionIds": ["nihan-magatia"]
+    "regionIds": [
+      "nihan-magatia"
+    ],
+    "dropItemIds": [
+      "2040028",
+      "2040042"
+    ],
+    "featuredDropItemIds": [
+      "2040028",
+      "2040042"
+    ]
   },
   {
     "id": "4130102",
@@ -2540,8 +3177,12 @@
     "hp": 2700,
     "exp": 115,
     "isReleased": true,
-    "regionIds": ["orbis"],
-    "attributes": ["성속성약점"]
+    "regionIds": [
+      "orbis"
+    ],
+    "attributes": [
+      "성속성약점"
+    ]
   },
   {
     "id": "4230505",
@@ -2551,7 +3192,9 @@
     "hp": 2700,
     "exp": 117,
     "isReleased": true,
-    "regionIds": ["mu-lung"]
+    "regionIds": [
+      "mu-lung"
+    ]
   },
   {
     "id": "4130103",
@@ -2561,7 +3204,9 @@
     "hp": 11000,
     "exp": 720,
     "isReleased": true,
-    "regionIds": ["ludus-lake-earth-defense-hq"],
+    "regionIds": [
+      "ludus-lake-earth-defense-hq"
+    ],
     "attributes": null
   },
   {
@@ -2572,8 +3217,12 @@
     "hp": 2750,
     "exp": 117,
     "isReleased": true,
-    "regionIds": ["victoria"],
-    "attributes": ["성속성약점"]
+    "regionIds": [
+      "victoria"
+    ],
+    "attributes": [
+      "성속성약점"
+    ]
   },
   {
     "id": "4110302",
@@ -2583,7 +3232,9 @@
     "hp": 2750,
     "exp": 117,
     "isReleased": true,
-    "regionIds": ["nihan-magatia"]
+    "regionIds": [
+      "nihan-magatia"
+    ]
   },
   {
     "id": "9400101",
@@ -2593,8 +3244,13 @@
     "hp": 2800,
     "exp": 139,
     "isReleased": true,
-    "regionIds": ["world-travel-japan"],
-    "attributes": ["독속성약점", "불속성약점"]
+    "regionIds": [
+      "world-travel-japan"
+    ],
+    "attributes": [
+      "독속성약점",
+      "불속성약점"
+    ]
   },
   {
     "id": "9300010",
@@ -2613,7 +3269,9 @@
     "hp": 2800,
     "exp": 117,
     "isReleased": true,
-    "regionIds": ["world-travel-japan"],
+    "regionIds": [
+      "world-travel-japan"
+    ],
     "attributes": null
   },
   {
@@ -2626,6 +3284,12 @@
     "isReleased": true,
     "regionIds": [
       "victoria"
+    ],
+    "dropItemIds": [
+      "2040041"
+    ],
+    "featuredDropItemIds": [
+      "2040041"
     ]
   },
   {
@@ -2636,7 +3300,9 @@
     "hp": 2800,
     "exp": 123,
     "isReleased": true,
-    "regionIds": ["mu-lung"]
+    "regionIds": [
+      "mu-lung"
+    ]
   },
   {
     "id": "4230104",
@@ -2655,8 +3321,15 @@
     "hp": 9000,
     "exp": 580,
     "isReleased": true,
-    "regionIds": ["ludus-lake-earth-defense-hq"],
-    "attributes": ["얼음속성반감", "전기속성반감", "불속성반감", "성속성반감"]
+    "regionIds": [
+      "ludus-lake-earth-defense-hq"
+    ],
+    "attributes": [
+      "얼음속성반감",
+      "전기속성반감",
+      "불속성반감",
+      "성속성반감"
+    ]
   },
   {
     "id": "9400544",
@@ -2666,7 +3339,9 @@
     "hp": 3300,
     "exp": 220,
     "isReleased": true,
-    "regionIds": ["masteria-newleafcity"]
+    "regionIds": [
+      "masteria-newleafcity"
+    ]
   },
   {
     "id": "9500177",
@@ -2676,7 +3351,9 @@
     "hp": 20692,
     "exp": 1780,
     "isReleased": true,
-    "regionIds": ["world-travel-japan"],
+    "regionIds": [
+      "world-travel-japan"
+    ],
     "attributes": null
   },
   {
@@ -2687,7 +3364,9 @@
     "hp": 3200,
     "exp": 135,
     "isReleased": true,
-    "regionIds": ["victoria"],
+    "regionIds": [
+      "victoria"
+    ],
     "attributes": null
   },
   {
@@ -2698,8 +3377,13 @@
     "hp": 3100,
     "exp": 148,
     "isReleased": true,
-    "regionIds": ["world-travel-japan"],
-    "attributes": ["독속성약점", "불속성약점"]
+    "regionIds": [
+      "world-travel-japan"
+    ],
+    "attributes": [
+      "독속성약점",
+      "불속성약점"
+    ]
   },
   {
     "id": "9410008",
@@ -2709,7 +3393,9 @@
     "hp": 3000,
     "exp": 130,
     "isReleased": true,
-    "regionIds": ["world-travel-japan"],
+    "regionIds": [
+      "world-travel-japan"
+    ],
     "attributes": null
   },
   {
@@ -2720,8 +3406,22 @@
     "hp": 3700,
     "exp": 135,
     "isReleased": true,
-    "regionIds": ["masteria-newleafcity", "ellin-forest"],
-    "attributes": ["얼음속성반감", "불속성약점"]
+    "regionIds": [
+      "masteria-newleafcity",
+      "ellin-forest"
+    ],
+    "attributes": [
+      "얼음속성반감",
+      "불속성약점"
+    ],
+    "dropItemIds": [
+      "2040045",
+      "2040034"
+    ],
+    "featuredDropItemIds": [
+      "2040034",
+      "2040045"
+    ]
   },
   {
     "id": "9410010",
@@ -2731,7 +3431,9 @@
     "hp": 3800,
     "exp": 135,
     "isReleased": true,
-    "regionIds": ["world-travel-japan"],
+    "regionIds": [
+      "world-travel-japan"
+    ],
     "attributes": null
   },
   {
@@ -2742,8 +3444,13 @@
     "hp": 4200,
     "exp": 190,
     "isReleased": true,
-    "regionIds": ["world-travel-japan"],
-    "attributes": ["전기속성약점", "불속성약점"]
+    "regionIds": [
+      "world-travel-japan"
+    ],
+    "attributes": [
+      "전기속성약점",
+      "불속성약점"
+    ]
   },
   {
     "id": "9500149",
@@ -2762,7 +3469,9 @@
     "hp": 9800,
     "exp": 410,
     "isReleased": false,
-    "regionIds": ["victoria"],
+    "regionIds": [
+      "victoria"
+    ],
     "attributes": null
   },
   {
@@ -2782,8 +3491,16 @@
     "hp": 3800,
     "exp": 140,
     "isReleased": true,
-    "regionIds": ["ludus-lake-underground-town"],
-    "attributes": null
+    "regionIds": [
+      "ludus-lake-underground-town"
+    ],
+    "attributes": null,
+    "dropItemIds": [
+      "2040045"
+    ],
+    "featuredDropItemIds": [
+      "2040045"
+    ]
   },
   {
     "id": "5120503",
@@ -2793,7 +3510,9 @@
     "hp": 3000,
     "exp": 135,
     "isReleased": true,
-    "regionIds": ["mu-lung"]
+    "regionIds": [
+      "mu-lung"
+    ]
   },
   {
     "id": "5250001",
@@ -2839,8 +3558,20 @@
     "hp": 3600,
     "exp": 142,
     "isReleased": true,
-    "regionIds": ["masteria-newleafcity", "ellin-forest"],
-    "attributes": ["불속성반감", "얼음속성약점"]
+    "regionIds": [
+      "masteria-newleafcity",
+      "ellin-forest"
+    ],
+    "attributes": [
+      "불속성반감",
+      "얼음속성약점"
+    ],
+    "dropItemIds": [
+      "2040037"
+    ],
+    "featuredDropItemIds": [
+      "2040037"
+    ]
   },
   {
     "id": "5120504",
@@ -2850,7 +3581,9 @@
     "hp": 3200,
     "exp": 142,
     "isReleased": true,
-    "regionIds": ["mu-lung"]
+    "regionIds": [
+      "mu-lung"
+    ]
   },
   {
     "id": "5120000",
@@ -2860,8 +3593,21 @@
     "hp": 4000,
     "exp": 155,
     "isReleased": true,
-    "regionIds": ["orbis"],
-    "attributes": ["얼음속성반감", "불속성반감", "전기속성반감", "성속성반감"]
+    "regionIds": [
+      "orbis"
+    ],
+    "attributes": [
+      "얼음속성반감",
+      "불속성반감",
+      "전기속성반감",
+      "성속성반감"
+    ],
+    "dropItemIds": [
+      "2040036"
+    ],
+    "featuredDropItemIds": [
+      "2040036"
+    ]
   },
   {
     "id": "5130103",
@@ -2871,8 +3617,16 @@
     "hp": 3800,
     "exp": 170,
     "isReleased": true,
-    "regionIds": ["victoria"],
-    "attributes": null
+    "regionIds": [
+      "victoria"
+    ],
+    "attributes": null,
+    "dropItemIds": [
+      "2040042"
+    ],
+    "featuredDropItemIds": [
+      "2040042"
+    ]
   },
   {
     "id": "5120003",
@@ -2882,8 +3636,19 @@
     "hp": 4200,
     "exp": 160,
     "isReleased": true,
-    "regionIds": ["orbis"],
-    "attributes": ["얼음속성반감", "불속성약점"]
+    "regionIds": [
+      "orbis"
+    ],
+    "attributes": [
+      "얼음속성반감",
+      "불속성약점"
+    ],
+    "dropItemIds": [
+      "2040035"
+    ],
+    "featuredDropItemIds": [
+      "2040035"
+    ]
   },
   {
     "id": "5120501",
@@ -2893,7 +3658,9 @@
     "hp": 4200,
     "exp": 160,
     "isReleased": true,
-    "regionIds": ["mu-lung"]
+    "regionIds": [
+      "mu-lung"
+    ]
   },
   {
     "id": "5120002",
@@ -2903,8 +3670,13 @@
     "hp": 4200,
     "exp": 160,
     "isReleased": true,
-    "regionIds": ["orbis"],
-    "attributes": ["전기속성반감", "얼음속성약점"]
+    "regionIds": [
+      "orbis"
+    ],
+    "attributes": [
+      "전기속성반감",
+      "얼음속성약점"
+    ]
   },
   {
     "id": "5120001",
@@ -2914,8 +3686,13 @@
     "hp": 4200,
     "exp": 160,
     "isReleased": true,
-    "regionIds": ["orbis"],
-    "attributes": ["불속성반감", "얼음속성약점"]
+    "regionIds": [
+      "orbis"
+    ],
+    "attributes": [
+      "불속성반감",
+      "얼음속성약점"
+    ]
   },
   {
     "id": "9300046",
@@ -2949,8 +3726,19 @@
     "hp": 4500,
     "exp": 165,
     "isReleased": true,
-    "regionIds": ["ludus-lake-underground-town"],
-    "attributes": ["불속성반감", "얼음속성약점"]
+    "regionIds": [
+      "ludus-lake-underground-town"
+    ],
+    "attributes": [
+      "불속성반감",
+      "얼음속성약점"
+    ],
+    "dropItemIds": [
+      "2040030"
+    ],
+    "featuredDropItemIds": [
+      "2040030"
+    ]
   },
   {
     "id": "5120502",
@@ -2960,7 +3748,9 @@
     "hp": 4400,
     "exp": 168,
     "isReleased": true,
-    "regionIds": ["mu-lung"]
+    "regionIds": [
+      "mu-lung"
+    ]
   },
   {
     "id": "5120100",
@@ -2970,7 +3760,9 @@
     "hp": 13500,
     "exp": 980,
     "isReleased": true,
-    "regionIds": ["ludus-lake-earth-defense-hq"],
+    "regionIds": [
+      "ludus-lake-earth-defense-hq"
+    ],
     "attributes": null
   },
   {
@@ -3053,8 +3845,12 @@
     "hp": 4000,
     "exp": 175,
     "isReleased": true,
-    "regionIds": ["victoria"],
-    "attributes": ["성속성약점"]
+    "regionIds": [
+      "victoria"
+    ],
+    "attributes": [
+      "성속성약점"
+    ]
   },
   {
     "id": "5120506",
@@ -3064,7 +3860,9 @@
     "hp": 4500,
     "exp": 175,
     "isReleased": true,
-    "regionIds": ["mu-lung"]
+    "regionIds": [
+      "mu-lung"
+    ]
   },
   {
     "id": "9300185",
@@ -3083,7 +3881,9 @@
     "hp": 4000,
     "exp": 170,
     "isReleased": true,
-    "regionIds": ["victoria"],
+    "regionIds": [
+      "victoria"
+    ],
     "attributes": null
   },
   {
@@ -3139,8 +3939,16 @@
     "hp": 4600,
     "exp": 170,
     "isReleased": true,
-    "regionIds": ["ellin-forest"],
-    "attributes": null
+    "regionIds": [
+      "ellin-forest"
+    ],
+    "attributes": null,
+    "dropItemIds": [
+      "2040037"
+    ],
+    "featuredDropItemIds": [
+      "2040037"
+    ]
   },
   {
     "id": "5130105",
@@ -3150,8 +3958,12 @@
     "hp": 4400,
     "exp": 180,
     "isReleased": true,
-    "regionIds": ["ellin-forest"],
-    "attributes": ["성속성약점"]
+    "regionIds": [
+      "ellin-forest"
+    ],
+    "attributes": [
+      "성속성약점"
+    ]
   },
   {
     "id": "5130106",
@@ -3160,7 +3972,15 @@
     "level": 56,
     "hp": 4400,
     "exp": 0,
-    "isReleased": true
+    "isReleased": true,
+    "dropItemIds": [
+      "2040028",
+      "2040042"
+    ],
+    "featuredDropItemIds": [
+      "2040028",
+      "2040042"
+    ]
   },
   {
     "id": "5120500",
@@ -3170,7 +3990,15 @@
     "hp": 4800,
     "exp": 185,
     "isReleased": true,
-    "regionIds": ["mu-lung"]
+    "regionIds": [
+      "mu-lung"
+    ],
+    "dropItemIds": [
+      "2040043"
+    ],
+    "featuredDropItemIds": [
+      "2040043"
+    ]
   },
   {
     "id": "9300108",
@@ -3189,8 +4017,13 @@
     "hp": 4500,
     "exp": 185,
     "isReleased": true,
-    "regionIds": ["ludus-lake-underground-town"],
-    "attributes": ["불속성약점", "성속성약점"]
+    "regionIds": [
+      "ludus-lake-underground-town"
+    ],
+    "attributes": [
+      "불속성약점",
+      "성속성약점"
+    ]
   },
   {
     "id": "5090000",
@@ -3200,7 +4033,9 @@
     "hp": 4800,
     "exp": 180,
     "isReleased": false,
-    "regionIds": ["victoria"],
+    "regionIds": [
+      "victoria"
+    ],
     "attributes": null
   },
   {
@@ -3253,8 +4088,13 @@
     "hp": 4500,
     "exp": 190,
     "isReleased": true,
-    "regionIds": ["ellin-forest"],
-    "attributes": ["독속성무효", "성속성약점"]
+    "regionIds": [
+      "ellin-forest"
+    ],
+    "attributes": [
+      "독속성무효",
+      "성속성약점"
+    ]
   },
   {
     "id": "5150001",
@@ -3264,8 +4104,12 @@
     "hp": 4600,
     "exp": 190,
     "isReleased": true,
-    "regionIds": ["victoria"],
-    "attributes": ["성속성약점"]
+    "regionIds": [
+      "victoria"
+    ],
+    "attributes": [
+      "성속성약점"
+    ]
   },
   {
     "id": "9300042",
@@ -3311,8 +4155,14 @@
     "hp": 4500,
     "exp": 190,
     "isReleased": true,
-    "regionIds": ["ellin-forest", "world-travel-japan"],
-    "attributes": ["독속성무효", "성속성약점"]
+    "regionIds": [
+      "ellin-forest",
+      "world-travel-japan"
+    ],
+    "attributes": [
+      "독속성무효",
+      "성속성약점"
+    ]
   },
   {
     "id": "9500202",
@@ -3331,8 +4181,12 @@
     "hp": 4800,
     "exp": 200,
     "isReleased": true,
-    "regionIds": ["victoria"],
-    "attributes": ["성속성약점"]
+    "regionIds": [
+      "victoria"
+    ],
+    "attributes": [
+      "성속성약점"
+    ]
   },
   {
     "id": "9300110",
@@ -3372,8 +4226,18 @@
     "hp": 5600,
     "exp": 205,
     "isReleased": true,
-    "regionIds": ["mu-lung"],
-    "attributes": ["독속성약점"]
+    "regionIds": [
+      "mu-lung"
+    ],
+    "attributes": [
+      "독속성약점"
+    ],
+    "dropItemIds": [
+      "2040045"
+    ],
+    "featuredDropItemIds": [
+      "2040045"
+    ]
   },
   {
     "id": "5140000",
@@ -3383,8 +4247,19 @@
     "hp": 5800,
     "exp": 220,
     "isReleased": true,
-    "regionIds": ["ellin-forest"],
-    "attributes": ["얼음속성반감", "불속성약점"]
+    "regionIds": [
+      "ellin-forest"
+    ],
+    "attributes": [
+      "얼음속성반감",
+      "불속성약점"
+    ],
+    "dropItemIds": [
+      "2040039"
+    ],
+    "featuredDropItemIds": [
+      "2040039"
+    ]
   },
   {
     "id": "9300038",
@@ -3460,8 +4335,16 @@
     "hp": 6000,
     "exp": 210,
     "isReleased": true,
-    "regionIds": ["victoria"],
-    "attributes": null
+    "regionIds": [
+      "victoria"
+    ],
+    "attributes": null,
+    "dropItemIds": [
+      "2040045"
+    ],
+    "featuredDropItemIds": [
+      "2040045"
+    ]
   },
   {
     "id": "5090001",
@@ -3471,7 +4354,9 @@
     "hp": 5600,
     "exp": 220,
     "isReleased": false,
-    "regionIds": ["mu-lung"],
+    "regionIds": [
+      "mu-lung"
+    ],
     "attributes": null
   },
   {
@@ -3500,7 +4385,9 @@
     "hp": 21000,
     "exp": 650,
     "isReleased": true,
-    "regionIds": ["ludibrium"],
+    "regionIds": [
+      "ludibrium"
+    ],
     "attributes": null
   },
   {
@@ -3511,7 +4398,9 @@
     "hp": 6000,
     "exp": 230,
     "isReleased": true,
-    "regionIds": ["world-travel-japan"],
+    "regionIds": [
+      "world-travel-japan"
+    ],
     "attributes": null
   },
   {
@@ -3531,8 +4420,14 @@
     "hp": 7000,
     "exp": 330,
     "isReleased": true,
-    "regionIds": ["ludus-lake-underground-town"],
-    "attributes": ["불속성반감", "얼음속성반감", "성속성약점"]
+    "regionIds": [
+      "ludus-lake-underground-town"
+    ],
+    "attributes": [
+      "불속성반감",
+      "얼음속성반감",
+      "성속성약점"
+    ]
   },
   {
     "id": "9300119",
@@ -3587,8 +4482,19 @@
     "hp": 6000,
     "exp": 220,
     "isReleased": true,
-    "regionIds": ["victoria"],
-    "attributes": ["불속성반감", "얼음속성약점"]
+    "regionIds": [
+      "victoria"
+    ],
+    "attributes": [
+      "불속성반감",
+      "얼음속성약점"
+    ],
+    "dropItemIds": [
+      "2040033"
+    ],
+    "featuredDropItemIds": [
+      "2040033"
+    ]
   },
   {
     "id": "9400003",
@@ -3598,8 +4504,14 @@
     "hp": 7100,
     "exp": 220,
     "isReleased": true,
-    "regionIds": ["world-travel-japan"],
-    "attributes": ["얼음속성약점", "불속성약점", "성속성약점"]
+    "regionIds": [
+      "world-travel-japan"
+    ],
+    "attributes": [
+      "얼음속성약점",
+      "불속성약점",
+      "성속성약점"
+    ]
   },
   {
     "id": "6130101",
@@ -3609,8 +4521,20 @@
     "hp": 20000,
     "exp": 1200,
     "isReleased": true,
-    "regionIds": ["victoria"],
-    "attributes": null
+    "regionIds": [
+      "victoria"
+    ],
+    "attributes": null,
+    "dropItemIds": [
+      "2040039",
+      "2040045",
+      "2040047"
+    ],
+    "featuredDropItemIds": [
+      "2040039",
+      "2040045",
+      "2040047"
+    ]
   },
   {
     "id": "9400012",
@@ -3620,8 +4544,13 @@
     "hp": 7100,
     "exp": 220,
     "isReleased": true,
-    "regionIds": ["world-travel-japan"],
-    "attributes": ["불속성약점", "얼음속성반감"]
+    "regionIds": [
+      "world-travel-japan"
+    ],
+    "attributes": [
+      "불속성약점",
+      "얼음속성반감"
+    ]
   },
   {
     "id": "9500176",
@@ -3649,7 +4578,9 @@
     "hp": 6000,
     "exp": 280,
     "isReleased": true,
-    "regionIds": ["world-travel-japan"],
+    "regionIds": [
+      "world-travel-japan"
+    ],
     "attributes": null
   },
   {
@@ -3660,7 +4591,9 @@
     "hp": 1500,
     "exp": 0,
     "isReleased": true,
-    "regionIds": ["world-travel-japan"],
+    "regionIds": [
+      "world-travel-japan"
+    ],
     "attributes": null
   },
   {
@@ -3671,8 +4604,13 @@
     "hp": 6500,
     "exp": 290,
     "isReleased": true,
-    "regionIds": ["world-travel-japan"],
-    "attributes": ["불속성약점", "성속성약점"]
+    "regionIds": [
+      "world-travel-japan"
+    ],
+    "attributes": [
+      "불속성약점",
+      "성속성약점"
+    ]
   },
   {
     "id": "6130203",
@@ -3682,7 +4620,9 @@
     "hp": 6500,
     "exp": 225,
     "isReleased": true,
-    "regionIds": ["mu-lung"]
+    "regionIds": [
+      "mu-lung"
+    ]
   },
   {
     "id": "6130103",
@@ -3692,8 +4632,13 @@
     "hp": 7200,
     "exp": 220,
     "isReleased": true,
-    "regionIds": ["ellin-forest"],
-    "attributes": ["얼음속성반감", "불속성약점"]
+    "regionIds": [
+      "ellin-forest"
+    ],
+    "attributes": [
+      "얼음속성반감",
+      "불속성약점"
+    ]
   },
   {
     "id": "6130102",
@@ -3703,8 +4648,13 @@
     "hp": 7200,
     "exp": 420,
     "isReleased": true,
-    "regionIds": ["ellin-forest"],
-    "attributes": ["얼음속성반감", "불속성약점"]
+    "regionIds": [
+      "ellin-forest"
+    ],
+    "attributes": [
+      "얼음속성반감",
+      "불속성약점"
+    ]
   },
   {
     "id": "9300050",
@@ -3723,7 +4673,9 @@
     "hp": 7400,
     "exp": 230,
     "isReleased": true,
-    "regionIds": ["ludibrium"],
+    "regionIds": [
+      "ludibrium"
+    ],
     "attributes": null
   },
   {
@@ -3734,8 +4686,13 @@
     "hp": 10000,
     "exp": 310,
     "isReleased": true,
-    "regionIds": ["world-travel-japan"],
-    "attributes": ["독속성약점", "불속성약점"]
+    "regionIds": [
+      "world-travel-japan"
+    ],
+    "attributes": [
+      "독속성약점",
+      "불속성약점"
+    ]
   },
   {
     "id": "9300122",
@@ -3781,7 +4738,9 @@
     "hp": 6000,
     "exp": 240,
     "isReleased": true,
-    "regionIds": ["ludus-lake-underground-town"],
+    "regionIds": [
+      "ludus-lake-underground-town"
+    ],
     "attributes": null
   },
   {
@@ -3792,8 +4751,16 @@
     "hp": 5500,
     "exp": 240,
     "isReleased": true,
-    "regionIds": ["victoria"],
-    "attributes": null
+    "regionIds": [
+      "victoria"
+    ],
+    "attributes": null,
+    "dropItemIds": [
+      "2040035"
+    ],
+    "featuredDropItemIds": [
+      "2040035"
+    ]
   },
   {
     "id": "6130207",
@@ -3803,7 +4770,9 @@
     "hp": 7500,
     "exp": 240,
     "isReleased": true,
-    "regionIds": ["mu-lung"]
+    "regionIds": [
+      "mu-lung"
+    ]
   },
   {
     "id": "9300026",
@@ -3849,7 +4818,9 @@
     "hp": 7600,
     "exp": 245,
     "isReleased": true,
-    "regionIds": ["nihan-magatia"]
+    "regionIds": [
+      "nihan-magatia"
+    ]
   },
   {
     "id": "9300020",
@@ -3868,8 +4839,20 @@
     "hp": 7600,
     "exp": 245,
     "isReleased": true,
-    "regionIds": ["ludibrium"],
-    "attributes": ["전기속성반감", "얼음속성반감", "성속성약점"]
+    "regionIds": [
+      "ludibrium"
+    ],
+    "attributes": [
+      "전기속성반감",
+      "얼음속성반감",
+      "성속성약점"
+    ],
+    "dropItemIds": [
+      "2040045"
+    ],
+    "featuredDropItemIds": [
+      "2040045"
+    ]
   },
   {
     "id": "6230602",
@@ -3879,8 +4862,20 @@
     "hp": 7500,
     "exp": 240,
     "isReleased": true,
-    "regionIds": ["victoria"],
-    "attributes": ["성속성약점"]
+    "regionIds": [
+      "victoria"
+    ],
+    "attributes": [
+      "성속성약점"
+    ],
+    "dropItemIds": [
+      "2040038",
+      "2040045"
+    ],
+    "featuredDropItemIds": [
+      "2040038",
+      "2040045"
+    ]
   },
   {
     "id": "6230401",
@@ -3890,8 +4885,13 @@
     "hp": 7600,
     "exp": 245,
     "isReleased": true,
-    "regionIds": ["orbis"],
-    "attributes": ["독속성무효", "성속성약점"]
+    "regionIds": [
+      "orbis"
+    ],
+    "attributes": [
+      "독속성무효",
+      "성속성약점"
+    ]
   },
   {
     "id": "6230101",
@@ -3919,8 +4919,13 @@
     "hp": 9000,
     "exp": 320,
     "isReleased": true,
-    "regionIds": ["world-travel-japan"],
-    "attributes": ["독속성약점", "불속성약점"]
+    "regionIds": [
+      "world-travel-japan"
+    ],
+    "attributes": [
+      "독속성약점",
+      "불속성약점"
+    ]
   },
   {
     "id": "6130204",
@@ -3930,7 +4935,15 @@
     "hp": 7800,
     "exp": 250,
     "isReleased": true,
-    "regionIds": ["mu-lung"]
+    "regionIds": [
+      "mu-lung"
+    ],
+    "dropItemIds": [
+      "2040047"
+    ],
+    "featuredDropItemIds": [
+      "2040047"
+    ]
   },
   {
     "id": "6230200",
@@ -3940,8 +4953,12 @@
     "hp": 7800,
     "exp": 250,
     "isReleased": true,
-    "regionIds": ["ellin-forest"],
-    "attributes": ["성속성약점"]
+    "regionIds": [
+      "ellin-forest"
+    ],
+    "attributes": [
+      "성속성약점"
+    ]
   },
   {
     "id": "6230201",
@@ -3951,8 +4968,12 @@
     "hp": 7800,
     "exp": 700,
     "isReleased": true,
-    "regionIds": ["ellin-forest"],
-    "attributes": ["성속성약점"]
+    "regionIds": [
+      "ellin-forest"
+    ],
+    "attributes": [
+      "성속성약점"
+    ]
   },
   {
     "id": "9300118",
@@ -3980,8 +5001,21 @@
     "hp": 7700,
     "exp": 250,
     "isReleased": true,
-    "regionIds": ["victoria"],
-    "attributes": ["얼음속성반감", "불속성약점"]
+    "regionIds": [
+      "victoria"
+    ],
+    "attributes": [
+      "얼음속성반감",
+      "불속성약점"
+    ],
+    "dropItemIds": [
+      "2040038",
+      "2040028"
+    ],
+    "featuredDropItemIds": [
+      "2040028",
+      "2040038"
+    ]
   },
   {
     "id": "9500201",
@@ -4009,7 +5043,9 @@
     "hp": 31000,
     "exp": 810,
     "isReleased": false,
-    "regionIds": ["victoria"],
+    "regionIds": [
+      "victoria"
+    ],
     "attributes": null
   },
   {
@@ -4038,7 +5074,9 @@
     "hp": 11000,
     "exp": 255,
     "isReleased": true,
-    "regionIds": ["ellin-forest"],
+    "regionIds": [
+      "ellin-forest"
+    ],
     "attributes": null
   },
   {
@@ -4049,7 +5087,9 @@
     "hp": 2000,
     "exp": 120,
     "isReleased": false,
-    "regionIds": ["victoria"],
+    "regionIds": [
+      "victoria"
+    ],
     "attributes": null
   },
   {
@@ -4078,8 +5118,20 @@
     "hp": 11000,
     "exp": 390,
     "isReleased": true,
-    "regionIds": ["masteria-newleafcity", "ellin-forest"],
-    "attributes": ["얼음속성반감", "불속성약점"]
+    "regionIds": [
+      "masteria-newleafcity",
+      "ellin-forest"
+    ],
+    "attributes": [
+      "얼음속성반감",
+      "불속성약점"
+    ],
+    "dropItemIds": [
+      "2040047"
+    ],
+    "featuredDropItemIds": [
+      "2040047"
+    ]
   },
   {
     "id": "9300183",
@@ -4116,8 +5168,13 @@
     "hp": 11000,
     "exp": 346,
     "isReleased": true,
-    "regionIds": ["ellin-forest"],
-    "attributes": ["얼음속성반감", "불속성약점"]
+    "regionIds": [
+      "ellin-forest"
+    ],
+    "attributes": [
+      "얼음속성반감",
+      "불속성약점"
+    ]
   },
   {
     "id": "6300006",
@@ -4127,8 +5184,13 @@
     "hp": 11000,
     "exp": 455,
     "isReleased": true,
-    "regionIds": ["ellin-forest"],
-    "attributes": ["얼음속성반감", "불속성약점"]
+    "regionIds": [
+      "ellin-forest"
+    ],
+    "attributes": [
+      "얼음속성반감",
+      "불속성약점"
+    ]
   },
   {
     "id": "6220001",
@@ -4138,7 +5200,9 @@
     "hp": 36000,
     "exp": 940,
     "isReleased": true,
-    "regionIds": ["ludus-lake-earth-defense-hq"],
+    "regionIds": [
+      "ludus-lake-earth-defense-hq"
+    ],
     "attributes": null
   },
   {
@@ -4149,7 +5213,9 @@
     "hp": 35000,
     "exp": 1500,
     "isReleased": true,
-    "regionIds": ["victoria"],
+    "regionIds": [
+      "victoria"
+    ],
     "attributes": null
   },
   {
@@ -4244,8 +5310,18 @@
     "hp": 9400,
     "exp": 296,
     "isReleased": true,
-    "regionIds": ["ludibrium"],
-    "attributes": null
+    "regionIds": [
+      "ludibrium"
+    ],
+    "attributes": null,
+    "dropItemIds": [
+      "2040047",
+      "2040032"
+    ],
+    "featuredDropItemIds": [
+      "2040032",
+      "2040047"
+    ]
   },
   {
     "id": "6130209",
@@ -4255,7 +5331,9 @@
     "hp": 9000,
     "exp": 283,
     "isReleased": true,
-    "regionIds": ["mu-lung"]
+    "regionIds": [
+      "mu-lung"
+    ]
   },
   {
     "id": "9300023",
@@ -4301,8 +5379,14 @@
     "hp": 11000,
     "exp": 346,
     "isReleased": true,
-    "regionIds": ["ludibrium"],
-    "attributes": ["전기속성반감", "얼음속성무효", "성속성약점"]
+    "regionIds": [
+      "ludibrium"
+    ],
+    "attributes": [
+      "전기속성반감",
+      "얼음속성무효",
+      "성속성약점"
+    ]
   },
   {
     "id": "9300024",
@@ -4339,8 +5423,16 @@
     "hp": 13000,
     "exp": 409,
     "isReleased": true,
-    "regionIds": ["victoria"],
-    "attributes": null
+    "regionIds": [
+      "victoria"
+    ],
+    "attributes": null,
+    "dropItemIds": [
+      "2040039"
+    ],
+    "featuredDropItemIds": [
+      "2040039"
+    ]
   },
   {
     "id": "6400000",
@@ -4350,8 +5442,12 @@
     "hp": 13000,
     "exp": 409,
     "isReleased": true,
-    "regionIds": ["ellin-forest"],
-    "attributes": ["성속성약점"]
+    "regionIds": [
+      "ellin-forest"
+    ],
+    "attributes": [
+      "성속성약점"
+    ]
   },
   {
     "id": "6400001",
@@ -4361,8 +5457,12 @@
     "hp": 13000,
     "exp": 445,
     "isReleased": true,
-    "regionIds": ["ellin-forest"],
-    "attributes": ["성속성약점"]
+    "regionIds": [
+      "ellin-forest"
+    ],
+    "attributes": [
+      "성속성약점"
+    ]
   },
   {
     "id": "6400002",
@@ -4372,8 +5472,12 @@
     "hp": 13000,
     "exp": 715,
     "isReleased": true,
-    "regionIds": ["ellin-forest"],
-    "attributes": ["성속성약점"]
+    "regionIds": [
+      "ellin-forest"
+    ],
+    "attributes": [
+      "성속성약점"
+    ]
   },
   {
     "id": "6090002",
@@ -4401,7 +5505,9 @@
     "hp": 13000,
     "exp": 409,
     "isReleased": true,
-    "regionIds": ["nihan-magatia"]
+    "regionIds": [
+      "nihan-magatia"
+    ]
   },
   {
     "id": "6130208",
@@ -4411,7 +5517,9 @@
     "hp": 12500,
     "exp": 393,
     "isReleased": true,
-    "regionIds": ["mu-lung"]
+    "regionIds": [
+      "mu-lung"
+    ]
   },
   {
     "id": "6400003",
@@ -4439,7 +5547,9 @@
     "hp": 89000,
     "exp": 1300,
     "isReleased": true,
-    "regionIds": ["ludus-lake-underground-town"],
+    "regionIds": [
+      "ludus-lake-underground-town"
+    ],
     "attributes": null
   },
   {
@@ -4459,8 +5569,19 @@
     "hp": 25000,
     "exp": 400,
     "isReleased": true,
-    "regionIds": ["ludus-lake-underground-town"],
-    "attributes": ["불속성반감", "얼음속성약점"]
+    "regionIds": [
+      "ludus-lake-underground-town"
+    ],
+    "attributes": [
+      "불속성반감",
+      "얼음속성약점"
+    ],
+    "dropItemIds": [
+      "2040046"
+    ],
+    "featuredDropItemIds": [
+      "2040046"
+    ]
   },
   {
     "id": "7130500",
@@ -4470,8 +5591,20 @@
     "hp": 14500,
     "exp": 456,
     "isReleased": true,
-    "regionIds": ["leafre"],
-    "attributes": ["독속성약점"]
+    "regionIds": [
+      "leafre"
+    ],
+    "attributes": [
+      "독속성약점"
+    ],
+    "dropItemIds": [
+      "2040037",
+      "2040048"
+    ],
+    "featuredDropItemIds": [
+      "2040037",
+      "2040048"
+    ]
   },
   {
     "id": "9300138",
@@ -4544,8 +5677,19 @@
     "hp": 25000,
     "exp": 400,
     "isReleased": true,
-    "regionIds": ["ludus-lake-underground-town"],
-    "attributes": ["독속성무효"]
+    "regionIds": [
+      "ludus-lake-underground-town"
+    ],
+    "attributes": [
+      "독속성무효"
+    ],
+    "dropItemIds": [
+      "2040039",
+      "2040041"
+    ],
+    "featuredDropItemIds": [
+      "2040041"
+    ]
   },
   {
     "id": "9500323",
@@ -4573,7 +5717,15 @@
     "hp": 15000,
     "exp": 472,
     "isReleased": true,
-    "regionIds": ["mu-lung"]
+    "regionIds": [
+      "mu-lung"
+    ],
+    "dropItemIds": [
+      "2040048"
+    ],
+    "featuredDropItemIds": [
+      "2040048"
+    ]
   },
   {
     "id": "8140200",
@@ -4583,8 +5735,21 @@
     "hp": 15000,
     "exp": 472,
     "isReleased": true,
-    "regionIds": ["ludibrium"],
-    "attributes": ["성속성약점", "불속성약점"]
+    "regionIds": [
+      "ludibrium"
+    ],
+    "attributes": [
+      "성속성약점",
+      "불속성약점"
+    ],
+    "dropItemIds": [
+      "2040046",
+      "2040032"
+    ],
+    "featuredDropItemIds": [
+      "2040032",
+      "2040046"
+    ]
   },
   {
     "id": "7130100",
@@ -4594,8 +5759,12 @@
     "hp": 15000,
     "exp": 472,
     "isReleased": true,
-    "regionIds": ["victoria"],
-    "attributes": ["독속성무효"]
+    "regionIds": [
+      "victoria"
+    ],
+    "attributes": [
+      "독속성무효"
+    ]
   },
   {
     "id": "7130401",
@@ -4605,8 +5774,13 @@
     "hp": 25000,
     "exp": 400,
     "isReleased": true,
-    "regionIds": ["ludus-lake-underground-town"],
-    "attributes": ["불속성약점", "얼음속성반감"]
+    "regionIds": [
+      "ludus-lake-underground-town"
+    ],
+    "attributes": [
+      "불속성약점",
+      "얼음속성반감"
+    ]
   },
   {
     "id": "9300102",
@@ -4634,7 +5808,9 @@
     "hp": 93000,
     "exp": 1580,
     "isReleased": false,
-    "regionIds": ["mu-lung"],
+    "regionIds": [
+      "mu-lung"
+    ],
     "attributes": null
   },
   {
@@ -4645,7 +5821,9 @@
     "hp": 15200,
     "exp": 478,
     "isReleased": true,
-    "regionIds": ["ellin-forest"],
+    "regionIds": [
+      "ellin-forest"
+    ],
     "attributes": null
   },
   {
@@ -4656,8 +5834,12 @@
     "hp": 15200,
     "exp": 478,
     "isReleased": true,
-    "regionIds": ["leafre"],
-    "attributes": ["전기속성반감"]
+    "regionIds": [
+      "leafre"
+    ],
+    "attributes": [
+      "전기속성반감"
+    ]
   },
   {
     "id": "9400103",
@@ -4667,8 +5849,14 @@
     "hp": 15100,
     "exp": 465,
     "isReleased": true,
-    "regionIds": ["world-travel-japan"],
-    "attributes": ["불속성약점", "성속성약점", "얼음속성약점"]
+    "regionIds": [
+      "world-travel-japan"
+    ],
+    "attributes": [
+      "불속성약점",
+      "성속성약점",
+      "얼음속성약점"
+    ]
   },
   {
     "id": "7130600",
@@ -4678,8 +5866,12 @@
     "hp": 15000,
     "exp": 472,
     "isReleased": true,
-    "regionIds": ["leafre"],
-    "attributes": ["독속성약점"]
+    "regionIds": [
+      "leafre"
+    ],
+    "attributes": [
+      "독속성약점"
+    ]
   },
   {
     "id": "9300143",
@@ -4689,7 +5881,9 @@
     "hp": 20000,
     "exp": 300,
     "isReleased": false,
-    "regionIds": ["nihan-magatia"]
+    "regionIds": [
+      "nihan-magatia"
+    ]
   },
   {
     "id": "7130000",
@@ -4699,8 +5893,13 @@
     "hp": 15500,
     "exp": 488,
     "isReleased": true,
-    "regionIds": ["orbis"],
-    "attributes": ["독속성무효", "성속성약점"]
+    "regionIds": [
+      "orbis"
+    ],
+    "attributes": [
+      "독속성무효",
+      "성속성약점"
+    ]
   },
   {
     "id": "9300142",
@@ -4722,8 +5921,20 @@
     "hp": 15300,
     "exp": 481,
     "isReleased": true,
-    "regionIds": ["victoria"],
-    "attributes": ["성속성약점", "얼음속성반감", "독속성무효"]
+    "regionIds": [
+      "victoria"
+    ],
+    "attributes": [
+      "성속성약점",
+      "얼음속성반감",
+      "독속성무효"
+    ],
+    "dropItemIds": [
+      "2040047"
+    ],
+    "featuredDropItemIds": [
+      "2040047"
+    ]
   },
   {
     "id": "7130501",
@@ -4733,8 +5944,18 @@
     "hp": 15500,
     "exp": 488,
     "isReleased": true,
-    "regionIds": ["leafre"],
-    "attributes": ["독속성반감"]
+    "regionIds": [
+      "leafre"
+    ],
+    "attributes": [
+      "독속성반감"
+    ],
+    "dropItemIds": [
+      "2040034"
+    ],
+    "featuredDropItemIds": [
+      "2040034"
+    ]
   },
   {
     "id": "6300100",
@@ -4744,8 +5965,13 @@
     "hp": 16000,
     "exp": 504,
     "isReleased": true,
-    "regionIds": ["ludibrium"],
-    "attributes": ["얼음속성약점", "불속성반감"]
+    "regionIds": [
+      "ludibrium"
+    ],
+    "attributes": [
+      "얼음속성약점",
+      "불속성반감"
+    ]
   },
   {
     "id": "7110300",
@@ -4755,7 +5981,9 @@
     "hp": 16000,
     "exp": 350,
     "isReleased": true,
-    "regionIds": ["nihan-magatia"]
+    "regionIds": [
+      "nihan-magatia"
+    ]
   },
   {
     "id": "9300177",
@@ -4792,8 +6020,18 @@
     "hp": 16000,
     "exp": 504,
     "isReleased": true,
-    "regionIds": ["ellin-forest"],
-    "attributes": null
+    "regionIds": [
+      "ellin-forest"
+    ],
+    "attributes": null,
+    "dropItemIds": [
+      "2040046",
+      "2040043"
+    ],
+    "featuredDropItemIds": [
+      "2040043",
+      "2040046"
+    ]
   },
   {
     "id": "7090000",
@@ -4803,7 +6041,9 @@
     "hp": 16000,
     "exp": 350,
     "isReleased": false,
-    "regionIds": ["nihan-magatia"]
+    "regionIds": [
+      "nihan-magatia"
+    ]
   },
   {
     "id": "7130101",
@@ -4813,8 +6053,14 @@
     "hp": 18000,
     "exp": 567,
     "isReleased": true,
-    "regionIds": ["victoria"],
-    "attributes": ["독속성무효", "불속성반감", "전기속성반감"]
+    "regionIds": [
+      "victoria"
+    ],
+    "attributes": [
+      "독속성무효",
+      "불속성반감",
+      "전기속성반감"
+    ]
   },
   {
     "id": "7130602",
@@ -4833,8 +6079,12 @@
     "hp": 18000,
     "exp": 567,
     "isReleased": true,
-    "regionIds": ["ludibrium"],
-    "attributes": ["성속성약점"]
+    "regionIds": [
+      "ludibrium"
+    ],
+    "attributes": [
+      "성속성약점"
+    ]
   },
   {
     "id": "7130003",
@@ -4844,8 +6094,12 @@
     "hp": 18000,
     "exp": 567,
     "isReleased": true,
-    "regionIds": ["leafre"],
-    "attributes": ["전기속성반감"]
+    "regionIds": [
+      "leafre"
+    ],
+    "attributes": [
+      "전기속성반감"
+    ]
   },
   {
     "id": "7130601",
@@ -4855,8 +6109,12 @@
     "hp": 18000,
     "exp": 567,
     "isReleased": true,
-    "regionIds": ["leafre"],
-    "attributes": ["독속성반감"]
+    "regionIds": [
+      "leafre"
+    ],
+    "attributes": [
+      "독속성반감"
+    ]
   },
   {
     "id": "6400100",
@@ -4866,8 +6124,19 @@
     "hp": 19000,
     "exp": 598,
     "isReleased": true,
-    "regionIds": ["ludibrium"],
-    "attributes": ["얼음속성약점", "불속성반감"]
+    "regionIds": [
+      "ludibrium"
+    ],
+    "attributes": [
+      "얼음속성약점",
+      "불속성반감"
+    ],
+    "dropItemIds": [
+      "2040034"
+    ],
+    "featuredDropItemIds": [
+      "2040034"
+    ]
   },
   {
     "id": "7220002",
@@ -4877,7 +6146,9 @@
     "hp": 108000,
     "exp": 2280,
     "isReleased": false,
-    "regionIds": ["mu-lung"],
+    "regionIds": [
+      "mu-lung"
+    ],
     "attributes": null
   },
   {
@@ -4890,6 +6161,12 @@
     "isReleased": false,
     "regionIds": [
       "nihan-magatia"
+    ],
+    "dropItemIds": [
+      "2040040"
+    ],
+    "featuredDropItemIds": [
+      "2040040"
     ]
   },
   {
@@ -4900,7 +6177,15 @@
     "hp": 29000,
     "exp": 295,
     "isReleased": false,
-    "regionIds": ["nihan-magatia"]
+    "regionIds": [
+      "nihan-magatia"
+    ],
+    "dropItemIds": [
+      "2040035"
+    ],
+    "featuredDropItemIds": [
+      "2040035"
+    ]
   },
   {
     "id": "7130102",
@@ -4910,8 +6195,13 @@
     "hp": 20000,
     "exp": 0,
     "isReleased": true,
-    "regionIds": ["ellin-forest"],
-    "attributes": ["얼음속성반감", "불속성약점"]
+    "regionIds": [
+      "ellin-forest"
+    ],
+    "attributes": [
+      "얼음속성반감",
+      "불속성약점"
+    ]
   },
   {
     "id": "9200020",
@@ -4929,7 +6219,13 @@
     "level": 78,
     "hp": 20000,
     "exp": 0,
-    "isReleased": true
+    "isReleased": true,
+    "dropItemIds": [
+      "2040040"
+    ],
+    "featuredDropItemIds": [
+      "2040040"
+    ]
   },
   {
     "id": "9500200",
@@ -4957,7 +6253,15 @@
     "hp": 35000,
     "exp": 390,
     "isReleased": false,
-    "regionIds": ["nihan-magatia"]
+    "regionIds": [
+      "nihan-magatia"
+    ],
+    "dropItemIds": [
+      "2040045"
+    ],
+    "featuredDropItemIds": [
+      "2040045"
+    ]
   },
   {
     "id": "9001003",
@@ -4985,7 +6289,9 @@
     "hp": 27000,
     "exp": 850,
     "isReleased": false,
-    "regionIds": ["nihan-magatia"]
+    "regionIds": [
+      "nihan-magatia"
+    ]
   },
   {
     "id": "8140000",
@@ -4995,8 +6301,13 @@
     "hp": 27000,
     "exp": 850,
     "isReleased": true,
-    "regionIds": ["ellin-forest"],
-    "attributes": ["얼음속성반감", "불속성약점"]
+    "regionIds": [
+      "ellin-forest"
+    ],
+    "attributes": [
+      "얼음속성반감",
+      "불속성약점"
+    ]
   },
   {
     "id": "9400402",
@@ -5006,8 +6317,13 @@
     "hp": 25000,
     "exp": 1150,
     "isReleased": true,
-    "regionIds": ["world-travel-japan"],
-    "attributes": ["성속성약점", "독속성무효"]
+    "regionIds": [
+      "world-travel-japan"
+    ],
+    "attributes": [
+      "성속성약점",
+      "독속성무효"
+    ]
   },
   {
     "id": "9400545",
@@ -5017,7 +6333,9 @@
     "hp": 28000,
     "exp": 1200,
     "isReleased": true,
-    "regionIds": ["masteria-newleafcity"]
+    "regionIds": [
+      "masteria-newleafcity"
+    ]
   },
   {
     "id": "9300085",
@@ -5045,8 +6363,13 @@
     "hp": 50000,
     "exp": 2000,
     "isReleased": true,
-    "regionIds": ["victoria"],
-    "attributes": ["독속성무효", "성속성약점"]
+    "regionIds": [
+      "victoria"
+    ],
+    "attributes": [
+      "독속성무효",
+      "성속성약점"
+    ]
   },
   {
     "id": "9001000",
@@ -5101,8 +6424,20 @@
     "hp": 27000,
     "exp": 850,
     "isReleased": true,
-    "regionIds": ["leafre"],
-    "attributes": ["독속성약점"]
+    "regionIds": [
+      "leafre"
+    ],
+    "attributes": [
+      "독속성약점"
+    ],
+    "dropItemIds": [
+      "2040028",
+      "2040032"
+    ],
+    "featuredDropItemIds": [
+      "2040028",
+      "2040032"
+    ]
   },
   {
     "id": "9001002",
@@ -5121,8 +6456,13 @@
     "hp": 27000,
     "exp": 850,
     "isReleased": true,
-    "regionIds": ["leafre"],
-    "attributes": ["불속성약점", "독속성약점"]
+    "regionIds": [
+      "leafre"
+    ],
+    "attributes": [
+      "불속성약점",
+      "독속성약점"
+    ]
   },
   {
     "id": "8110300",
@@ -5153,8 +6493,20 @@
     "hp": 29000,
     "exp": 0,
     "isReleased": true,
-    "regionIds": ["ellin-forest"],
-    "attributes": ["성속성약점"]
+    "regionIds": [
+      "ellin-forest"
+    ],
+    "attributes": [
+      "성속성약점"
+    ],
+    "dropItemIds": [
+      "2040038",
+      "2040032"
+    ],
+    "featuredDropItemIds": [
+      "2040032",
+      "2040038"
+    ]
   },
   {
     "id": "8140002",
@@ -5164,8 +6516,21 @@
     "hp": 30000,
     "exp": 1100,
     "isReleased": true,
-    "regionIds": ["leafre"],
-    "attributes": ["불속성반감", "얼음속성약점"]
+    "regionIds": [
+      "leafre"
+    ],
+    "attributes": [
+      "불속성반감",
+      "얼음속성약점"
+    ],
+    "dropItemIds": [
+      "2040030",
+      "2040041"
+    ],
+    "featuredDropItemIds": [
+      "2040030",
+      "2040041"
+    ]
   },
   {
     "id": "8220000",
@@ -5175,7 +6540,9 @@
     "hp": 87000,
     "exp": 2800,
     "isReleased": true,
-    "regionIds": ["orbis"],
+    "regionIds": [
+      "orbis"
+    ],
     "attributes": null
   },
   {
@@ -5186,8 +6553,13 @@
     "hp": 30000,
     "exp": 1100,
     "isReleased": true,
-    "regionIds": ["ludibrium"],
-    "attributes": ["얼음속성반감", "불속성약점"]
+    "regionIds": [
+      "ludibrium"
+    ],
+    "attributes": [
+      "얼음속성반감",
+      "불속성약점"
+    ]
   },
   {
     "id": "9300140",
@@ -5215,8 +6587,20 @@
     "hp": 32000,
     "exp": 1300,
     "isReleased": true,
-    "regionIds": ["ludibrium"],
-    "attributes": ["성속성약점", "불속성약점"]
+    "regionIds": [
+      "ludibrium"
+    ],
+    "attributes": [
+      "성속성약점",
+      "불속성약점"
+    ],
+    "dropItemIds": [
+      "2040041",
+      "2040040"
+    ],
+    "featuredDropItemIds": [
+      "2040041"
+    ]
   },
   {
     "id": "7130020",
@@ -5226,8 +6610,18 @@
     "hp": 17000,
     "exp": 1400,
     "isReleased": true,
-    "regionIds": ["aqua-road"],
-    "attributes": ["불속성반감"]
+    "regionIds": [
+      "aqua-road"
+    ],
+    "attributes": [
+      "불속성반감"
+    ],
+    "dropItemIds": [
+      "2040036"
+    ],
+    "featuredDropItemIds": [
+      "2040036"
+    ]
   },
   {
     "id": "8140110",
@@ -5237,8 +6631,13 @@
     "hp": 32000,
     "exp": 1420,
     "isReleased": true,
-    "regionIds": ["leafre"],
-    "attributes": ["성속성반감", "얼음속성약점"]
+    "regionIds": [
+      "leafre"
+    ],
+    "attributes": [
+      "성속성반감",
+      "얼음속성약점"
+    ]
   },
   {
     "id": "9300097",
@@ -5257,7 +6656,9 @@
     "hp": 96000,
     "exp": 3000,
     "isReleased": false,
-    "regionIds": ["nihan-magatia"]
+    "regionIds": [
+      "nihan-magatia"
+    ]
   },
   {
     "id": "9410014",
@@ -5276,7 +6677,9 @@
     "hp": 230000,
     "exp": 4230,
     "isReleased": true,
-    "regionIds": ["world-travel-japan"],
+    "regionIds": [
+      "world-travel-japan"
+    ],
     "attributes": null
   },
   {
@@ -5287,8 +6690,13 @@
     "hp": 35000,
     "exp": 1500,
     "isReleased": true,
-    "regionIds": ["ludibrium"],
-    "attributes": ["얼음속성반감", "불속성약점"]
+    "regionIds": [
+      "ludibrium"
+    ],
+    "attributes": [
+      "얼음속성반감",
+      "불속성약점"
+    ]
   },
   {
     "id": "8140101",
@@ -5298,8 +6706,12 @@
     "hp": 37000,
     "exp": 1600,
     "isReleased": true,
-    "regionIds": ["leafre"],
-    "attributes": ["성속성약점"]
+    "regionIds": [
+      "leafre"
+    ],
+    "attributes": [
+      "성속성약점"
+    ]
   },
   {
     "id": "8140111",
@@ -5309,8 +6721,19 @@
     "hp": 37000,
     "exp": 1620,
     "isReleased": true,
-    "regionIds": ["leafre"],
-    "attributes": ["성속성반감", "독속성반감"]
+    "regionIds": [
+      "leafre"
+    ],
+    "attributes": [
+      "성속성반감",
+      "독속성반감"
+    ],
+    "dropItemIds": [
+      "2040035"
+    ],
+    "featuredDropItemIds": [
+      "2040035"
+    ]
   },
   {
     "id": "8140102",
@@ -5320,8 +6743,21 @@
     "hp": 37000,
     "exp": 1600,
     "isReleased": true,
-    "regionIds": ["leafre"],
-    "attributes": ["불속성반감", "얼음속성약점"]
+    "regionIds": [
+      "leafre"
+    ],
+    "attributes": [
+      "불속성반감",
+      "얼음속성약점"
+    ],
+    "dropItemIds": [
+      "2040044",
+      "2040034"
+    ],
+    "featuredDropItemIds": [
+      "2040034",
+      "2040044"
+    ]
   },
   {
     "id": "8140103",
@@ -5331,8 +6767,13 @@
     "hp": 37000,
     "exp": 1600,
     "isReleased": true,
-    "regionIds": ["leafre"],
-    "attributes": ["얼음속성반감", "불속성약점"]
+    "regionIds": [
+      "leafre"
+    ],
+    "attributes": [
+      "얼음속성반감",
+      "불속성약점"
+    ]
   },
   {
     "id": "7130300",
@@ -5342,8 +6783,20 @@
     "hp": 40000,
     "exp": 1720,
     "isReleased": true,
-    "regionIds": ["ludibrium"],
-    "attributes": ["성속성약점", "얼음속성반감", "전기속성반감"]
+    "regionIds": [
+      "ludibrium"
+    ],
+    "attributes": [
+      "성속성약점",
+      "얼음속성반감",
+      "전기속성반감"
+    ],
+    "dropItemIds": [
+      "2040043"
+    ],
+    "featuredDropItemIds": [
+      "2040043"
+    ]
   },
   {
     "id": "8140700",
@@ -5356,7 +6809,10 @@
     "regionIds": [
       "leafre"
     ],
-    "attributes": ["불속성약점", "얼음속성반감"]
+    "attributes": [
+      "불속성약점",
+      "얼음속성반감"
+    ]
   },
   {
     "id": "9400205",
@@ -5366,8 +6822,12 @@
     "hp": 200000,
     "exp": 10000,
     "isReleased": true,
-    "regionIds": ["world-travel-japan"],
-    "attributes": ["불속성약점"]
+    "regionIds": [
+      "world-travel-japan"
+    ],
+    "attributes": [
+      "불속성약점"
+    ]
   },
   {
     "id": "8220001",
@@ -5377,7 +6837,9 @@
     "hp": 120000,
     "exp": 5200,
     "isReleased": true,
-    "regionIds": ["ellin-forest"],
+    "regionIds": [
+      "ellin-forest"
+    ],
     "attributes": null
   },
   {
@@ -5397,8 +6859,14 @@
     "hp": 45000,
     "exp": 1800,
     "isReleased": true,
-    "regionIds": ["ellin-forest", "world-travel-japan"],
-    "attributes": ["불속성반감", "얼음속성약점"]
+    "regionIds": [
+      "ellin-forest",
+      "world-travel-japan"
+    ],
+    "attributes": [
+      "불속성반감",
+      "얼음속성약점"
+    ]
   },
   {
     "id": "8140555",
@@ -5417,8 +6885,13 @@
     "hp": 42500,
     "exp": 2000,
     "isReleased": true,
-    "regionIds": ["aqua-road"],
-    "attributes": ["불속성반감", "성속성약점"]
+    "regionIds": [
+      "aqua-road"
+    ],
+    "attributes": [
+      "불속성반감",
+      "성속성약점"
+    ]
   },
   {
     "id": "9300098",
@@ -5443,7 +6916,10 @@
     "regionIds": [
       "leafre"
     ],
-    "attributes": ["불속성반감", "얼음속성약점"]
+    "attributes": [
+      "불속성반감",
+      "얼음속성약점"
+    ]
   },
   {
     "id": "8141000",
@@ -5453,8 +6929,19 @@
     "hp": 50000,
     "exp": 2100,
     "isReleased": true,
-    "regionIds": ["ludibrium"],
-    "attributes": ["불속성반감", "전기속성약점"]
+    "regionIds": [
+      "ludibrium"
+    ],
+    "attributes": [
+      "불속성반감",
+      "전기속성약점"
+    ],
+    "dropItemIds": [
+      "2040028"
+    ],
+    "featuredDropItemIds": [
+      "2040028"
+    ]
   },
   {
     "id": "8141300",
@@ -5464,8 +6951,13 @@
     "hp": 46000,
     "exp": 2200,
     "isReleased": true,
-    "regionIds": ["aqua-road"],
-    "attributes": ["독속성반감", "불속성반감"]
+    "regionIds": [
+      "aqua-road"
+    ],
+    "attributes": [
+      "독속성반감",
+      "불속성반감"
+    ]
   },
   {
     "id": "9400120",
@@ -5475,8 +6967,13 @@
     "hp": 85000,
     "exp": 5500,
     "isReleased": true,
-    "regionIds": ["world-travel-japan"],
-    "attributes": ["불속성약점", "전기속성약점"]
+    "regionIds": [
+      "world-travel-japan"
+    ],
+    "attributes": [
+      "불속성약점",
+      "전기속성약점"
+    ]
   },
   {
     "id": "8140702",
@@ -5486,8 +6983,13 @@
     "hp": 50000,
     "exp": 2280,
     "isReleased": true,
-    "regionIds": ["leafre"],
-    "attributes": ["전기속성약점", "독속성약점"]
+    "regionIds": [
+      "leafre"
+    ],
+    "attributes": [
+      "전기속성약점",
+      "독속성약점"
+    ]
   },
   {
     "id": "8142000",
@@ -5497,8 +6999,14 @@
     "hp": 53000,
     "exp": 2300,
     "isReleased": true,
-    "regionIds": ["ludibrium"],
-    "attributes": ["성속성약점", "얼음속성반감", "불속성약점"]
+    "regionIds": [
+      "ludibrium"
+    ],
+    "attributes": [
+      "성속성약점",
+      "얼음속성반감",
+      "불속성약점"
+    ]
   },
   {
     "id": "9300069",
@@ -5526,8 +7034,13 @@
     "hp": 53000,
     "exp": 2500,
     "isReleased": true,
-    "regionIds": ["leafre"],
-    "attributes": ["불속성반감", "얼음속성약점"]
+    "regionIds": [
+      "leafre"
+    ],
+    "attributes": [
+      "불속성반감",
+      "얼음속성약점"
+    ]
   },
   {
     "id": "8142100",
@@ -5537,8 +7050,20 @@
     "hp": 49000,
     "exp": 2500,
     "isReleased": true,
-    "regionIds": ["aqua-road"],
-    "attributes": ["불속성반감", "전기속성반감"]
+    "regionIds": [
+      "aqua-road"
+    ],
+    "attributes": [
+      "불속성반감",
+      "전기속성반감"
+    ],
+    "dropItemIds": [
+      "2040045",
+      "2040032"
+    ],
+    "featuredDropItemIds": [
+      "2040045"
+    ]
   },
   {
     "id": "8140703",
@@ -5548,8 +7073,13 @@
     "hp": 55000,
     "exp": 2500,
     "isReleased": true,
-    "regionIds": ["leafre"],
-    "attributes": ["불속성반감", "얼음속성약점"]
+    "regionIds": [
+      "leafre"
+    ],
+    "attributes": [
+      "불속성반감",
+      "얼음속성약점"
+    ]
   },
   {
     "id": "8141100",
@@ -5559,8 +7089,21 @@
     "hp": 58000,
     "exp": 2600,
     "isReleased": true,
-    "regionIds": ["ludibrium"],
-    "attributes": ["불속성반감", "전기속성약점"]
+    "regionIds": [
+      "ludibrium"
+    ],
+    "attributes": [
+      "불속성반감",
+      "전기속성약점"
+    ],
+    "dropItemIds": [
+      "2040043",
+      "2040040"
+    ],
+    "featuredDropItemIds": [
+      "2040040",
+      "2040043"
+    ]
   },
   {
     "id": "8143000",
@@ -5570,8 +7113,14 @@
     "hp": 60000,
     "exp": 2800,
     "isReleased": true,
-    "regionIds": ["ludibrium"],
-    "attributes": ["성속성약점", "불속성약점", "얼음속성무효"]
+    "regionIds": [
+      "ludibrium"
+    ],
+    "attributes": [
+      "성속성약점",
+      "불속성약점",
+      "얼음속성무효"
+    ]
   },
   {
     "id": "9300029",
@@ -5608,8 +7157,12 @@
     "hp": 56000,
     "exp": 3000,
     "isReleased": true,
-    "regionIds": ["leafre"],
-    "attributes": ["독속성반감"]
+    "regionIds": [
+      "leafre"
+    ],
+    "attributes": [
+      "독속성반감"
+    ]
   },
   {
     "id": "9300031",
@@ -5646,8 +7199,15 @@
     "hp": 71000,
     "exp": 4050,
     "isReleased": true,
-    "regionIds": ["world-travel-japan"],
-    "attributes": ["성속성약점", "전기속성반감", "독속성무효", "불속성반감"]
+    "regionIds": [
+      "world-travel-japan"
+    ],
+    "attributes": [
+      "성속성약점",
+      "전기속성반감",
+      "독속성무효",
+      "불속성반감"
+    ]
   },
   {
     "id": "9300065",
@@ -5684,8 +7244,12 @@
     "hp": 56000,
     "exp": 3000,
     "isReleased": true,
-    "regionIds": ["aqua-road"],
-    "attributes": ["불속성반감"]
+    "regionIds": [
+      "aqua-road"
+    ],
+    "attributes": [
+      "불속성반감"
+    ]
   },
   {
     "id": "8500000",
@@ -5713,8 +7277,25 @@
     "hp": 100000,
     "exp": 3500,
     "isReleased": true,
-    "regionIds": ["orbis"],
-    "attributes": ["독속성무효", "성속성약점"]
+    "regionIds": [
+      "orbis"
+    ],
+    "attributes": [
+      "독속성무효",
+      "성속성약점"
+    ],
+    "dropItemIds": [
+      "2040046",
+      "2040048",
+      "2040029",
+      "2040044"
+    ],
+    "featuredDropItemIds": [
+      "2040029",
+      "2040044",
+      "2040046",
+      "2040048"
+    ]
   },
   {
     "id": "9500193",
@@ -5760,8 +7341,13 @@
     "hp": 57000,
     "exp": 3050,
     "isReleased": true,
-    "regionIds": ["leafre"],
-    "attributes": ["불속성약점", "얼음속성반감"]
+    "regionIds": [
+      "leafre"
+    ],
+    "attributes": [
+      "불속성약점",
+      "얼음속성반감"
+    ]
   },
   {
     "id": "8150101",
@@ -5771,8 +7357,19 @@
     "hp": 58500,
     "exp": 3100,
     "isReleased": true,
-    "regionIds": ["aqua-road"],
-    "attributes": ["불속성반감", "얼음속성반감"]
+    "regionIds": [
+      "aqua-road"
+    ],
+    "attributes": [
+      "불속성반감",
+      "얼음속성반감"
+    ],
+    "dropItemIds": [
+      "2040046"
+    ],
+    "featuredDropItemIds": [
+      "2040046"
+    ]
   },
   {
     "id": "8150302",
@@ -5782,8 +7379,16 @@
     "hp": 60000,
     "exp": 3150,
     "isReleased": true,
-    "regionIds": ["leafre"],
-    "attributes": null
+    "regionIds": [
+      "leafre"
+    ],
+    "attributes": null,
+    "dropItemIds": [
+      "2040046"
+    ],
+    "featuredDropItemIds": [
+      "2040046"
+    ]
   },
   {
     "id": "9300073",
@@ -5811,8 +7416,21 @@
     "hp": 3700000,
     "exp": 13500,
     "isReleased": true,
-    "regionIds": ["leafre"],
-    "attributes": ["전기속성반감", "독속성약점"]
+    "regionIds": [
+      "leafre"
+    ],
+    "attributes": [
+      "전기속성반감",
+      "독속성약점"
+    ],
+    "dropItemIds": [
+      "2040046",
+      "2040048"
+    ],
+    "featuredDropItemIds": [
+      "2040046",
+      "2040048"
+    ]
   },
   {
     "id": "8190000",
@@ -5822,7 +7440,9 @@
     "hp": 68000,
     "exp": 3800,
     "isReleased": true,
-    "regionIds": ["leafre"],
+    "regionIds": [
+      "leafre"
+    ],
     "attributes": null
   },
   {
@@ -5851,8 +7471,18 @@
     "hp": 67000,
     "exp": 3700,
     "isReleased": true,
-    "regionIds": ["leafre"],
-    "attributes": ["독속성반감"]
+    "regionIds": [
+      "leafre"
+    ],
+    "attributes": [
+      "독속성반감"
+    ],
+    "dropItemIds": [
+      "2040046"
+    ],
+    "featuredDropItemIds": [
+      "2040046"
+    ]
   },
   {
     "id": "9300078",
@@ -5889,8 +7519,21 @@
     "hp": 3700000,
     "exp": 13500,
     "isReleased": true,
-    "regionIds": ["leafre"],
-    "attributes": ["불속성반감", "얼음속성약점"]
+    "regionIds": [
+      "leafre"
+    ],
+    "attributes": [
+      "불속성반감",
+      "얼음속성약점"
+    ],
+    "dropItemIds": [
+      "2040038",
+      "2040044"
+    ],
+    "featuredDropItemIds": [
+      "2040038",
+      "2040044"
+    ]
   },
   {
     "id": "8160000",
@@ -5900,8 +7543,18 @@
     "hp": 78000,
     "exp": 4300,
     "isReleased": true,
-    "regionIds": ["ludibrium"],
-    "attributes": ["전기속성반감"]
+    "regionIds": [
+      "ludibrium"
+    ],
+    "attributes": [
+      "전기속성반감"
+    ],
+    "dropItemIds": [
+      "2040048"
+    ],
+    "featuredDropItemIds": [
+      "2040048"
+    ]
   },
   {
     "id": "9300086",
@@ -5920,8 +7573,13 @@
     "hp": 70000,
     "exp": 4100,
     "isReleased": true,
-    "regionIds": ["ludibrium"],
-    "attributes": ["성속성약점", "얼음속성반감"]
+    "regionIds": [
+      "ludibrium"
+    ],
+    "attributes": [
+      "성속성약점",
+      "얼음속성반감"
+    ]
   },
   {
     "id": "8190002",
@@ -5931,7 +7589,9 @@
     "hp": 80000,
     "exp": 8050,
     "isReleased": true,
-    "regionIds": ["leafre"],
+    "regionIds": [
+      "leafre"
+    ],
     "attributes": null
   },
   {
@@ -5972,7 +7632,9 @@
     "regionIds": [
       "leafre"
     ],
-    "attributes": ["성속성약점"]
+    "attributes": [
+      "성속성약점"
+    ]
   },
   {
     "id": "8510000",
@@ -5982,8 +7644,12 @@
     "hp": 30000000,
     "exp": 1300000,
     "isReleased": true,
-    "regionIds": ["aqua-road"],
-    "attributes": ["불속성약점"]
+    "regionIds": [
+      "aqua-road"
+    ],
+    "attributes": [
+      "불속성약점"
+    ]
   },
   {
     "id": "9300077",
@@ -6005,7 +7671,15 @@
     "regionIds": [
       "leafre"
     ],
-    "attributes": ["성속성약점"]
+    "attributes": [
+      "성속성약점"
+    ],
+    "dropItemIds": [
+      "2040037"
+    ],
+    "featuredDropItemIds": [
+      "2040037"
+    ]
   },
   {
     "id": "9300028",
@@ -6033,8 +7707,16 @@
     "hp": 78000000,
     "exp": 3680000,
     "isReleased": true,
-    "regionIds": ["world-travel-japan"],
-    "attributes": ["불속성반감", "전기속성약점", "성속성약점", "얼음속성약점", "독속성무효"]
+    "regionIds": [
+      "world-travel-japan"
+    ],
+    "attributes": [
+      "불속성반감",
+      "전기속성약점",
+      "성속성약점",
+      "얼음속성약점",
+      "독속성무효"
+    ]
   },
   {
     "id": "8220003",
@@ -6044,8 +7726,13 @@
     "hp": 13400000,
     "exp": 47355,
     "isReleased": false,
-    "regionIds": ["leafre"],
-    "attributes": ["불속성반감", "얼음속성반감"]
+    "regionIds": [
+      "leafre"
+    ],
+    "attributes": [
+      "불속성반감",
+      "얼음속성반감"
+    ]
   },
   {
     "id": "9300163",
@@ -6054,7 +7741,13 @@
     "level": 120,
     "hp": 25000,
     "exp": 0,
-    "isReleased": false
+    "isReleased": false,
+    "dropItemIds": [
+      "2040047"
+    ],
+    "featuredDropItemIds": [
+      "2040047"
+    ]
   },
   {
     "id": "9300164",
@@ -6063,7 +7756,13 @@
     "level": 120,
     "hp": 28000,
     "exp": 0,
-    "isReleased": false
+    "isReleased": false,
+    "dropItemIds": [
+      "2040028"
+    ],
+    "featuredDropItemIds": [
+      "2040028"
+    ]
   },
   {
     "id": "9300165",
@@ -6072,7 +7771,13 @@
     "level": 120,
     "hp": 21000,
     "exp": 0,
-    "isReleased": false
+    "isReleased": false,
+    "dropItemIds": [
+      "2040038"
+    ],
+    "featuredDropItemIds": [
+      "2040038"
+    ]
   },
   {
     "id": "9300158",
@@ -6118,8 +7823,18 @@
     "hp": 1590000,
     "exp": 970000,
     "isReleased": true,
-    "regionIds": ["ludibrium"],
-    "attributes": null
+    "regionIds": [
+      "ludibrium"
+    ],
+    "attributes": null,
+    "dropItemIds": [
+      "2040032",
+      "2040034"
+    ],
+    "featuredDropItemIds": [
+      "2040032",
+      "2040034"
+    ]
   },
   {
     "id": "8500001",
@@ -6138,8 +7853,13 @@
     "hp": 75000000,
     "exp": 1447275,
     "isReleased": true,
-    "regionIds": ["world-travel-japan"],
-    "attributes": ["전기속성약점", "성속성약점"]
+    "regionIds": [
+      "world-travel-japan"
+    ],
+    "attributes": [
+      "전기속성약점",
+      "성속성약점"
+    ]
   },
   {
     "id": "8800000",
@@ -6166,7 +7886,20 @@
     "level": 140,
     "hp": 110000000,
     "exp": 7000000,
-    "isReleased": true
+    "isReleased": true,
+    "dropItemIds": [
+      "2040038",
+      "2040043",
+      "2040029",
+      "2040034",
+      "2040041"
+    ],
+    "featuredDropItemIds": [
+      "2040034",
+      "2040038",
+      "2040041",
+      "2040043"
+    ]
   },
   {
     "id": "8800003",

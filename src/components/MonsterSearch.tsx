@@ -11,7 +11,7 @@ type MonsterWithExpiring = Monster & {
   isExpiringSoon: boolean;
 };
 
-type SortOption = 'level-asc' | 'level-desc' | 'hp-asc' | 'hp-desc' | 'exp-asc' | 'exp-desc' | 'name-asc' | 'name-desc';
+type SortOption = 'level-asc' | 'level-desc' | 'exp-asc' | 'exp-desc' | 'hp-per-exp-asc' | 'hp-per-exp-desc' | 'region-asc' | 'name-asc' | 'name-desc';
 
 interface MonsterSearchProps {
   monsters: Monster[];
@@ -183,14 +183,32 @@ export default function MonsterSearch({ monsters }: MonsterSearchProps) {
           return a.level - b.level;
         case 'level-desc':
           return b.level - a.level;
-        case 'hp-asc':
-          return a.hp - b.hp;
-        case 'hp-desc':
-          return b.hp - a.hp;
         case 'exp-asc':
           return a.exp - b.exp;
         case 'exp-desc':
           return b.exp - a.exp;
+        case 'hp-per-exp-asc': {
+          // 체경비 낮은 순 (체력 / 경험치) - 효율 좋은 순
+          const aHpPerExp = a.exp === 0 ? Infinity : a.hp / a.exp;
+          const bHpPerExp = b.exp === 0 ? Infinity : b.hp / b.exp;
+          return aHpPerExp - bHpPerExp;
+        }
+        case 'hp-per-exp-desc': {
+          // 체경비 높은 순 (체력 / 경험치) - 효율 나쁜 순
+          const aHpPerExp = a.exp === 0 ? Infinity : a.hp / a.exp;
+          const bHpPerExp = b.exp === 0 ? Infinity : b.hp / b.exp;
+          return bHpPerExp - aHpPerExp;
+        }
+        case 'region-asc': {
+          // 지역 가나다순 (첫 번째 지역 기준)
+          const aRegionName = a.regionIds && a.regionIds.length > 0
+            ? regions.find(r => r.id === a.regionIds?.[0])?.name || ''
+            : '';
+          const bRegionName = b.regionIds && b.regionIds.length > 0
+            ? regions.find(r => r.id === b.regionIds?.[0])?.name || ''
+            : '';
+          return aRegionName.localeCompare(bRegionName, 'ko');
+        }
         case 'name-asc':
           return a.name.localeCompare(b.name, 'ko');
         case 'name-desc':
@@ -306,10 +324,11 @@ export default function MonsterSearch({ monsters }: MonsterSearchProps) {
                       >
                         <option value="level-asc">레벨 순 (낮은 순)</option>
                         <option value="level-desc">레벨 순 (높은 순)</option>
-                        <option value="hp-asc">HP 순 (낮은 순)</option>
-                        <option value="hp-desc">HP 순 (높은 순)</option>
                         <option value="exp-asc">EXP 순 (낮은 순)</option>
                         <option value="exp-desc">EXP 순 (높은 순)</option>
+                        <option value="hp-per-exp-asc">체경비 순 (낮은 순)</option>
+                        <option value="hp-per-exp-desc">체경비 순 (높은 순)</option>
+                        <option value="region-asc">지역 순 (가나다)</option>
                         <option value="name-asc">이름 순 (가나다)</option>
                         <option value="name-desc">이름 순 (다나가)</option>
                       </select>

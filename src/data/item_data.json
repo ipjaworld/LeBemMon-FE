@@ -1,0 +1,200 @@
+[
+  {
+    "id": "2040029",
+    "name": "투구 민첩 주문서 60%",
+    "imageUrl": "https://maplestory.io/api/gms/200/item/2040029/icon?resize=2",
+    "majorCategory": "consumable",
+    "mediumCategory": "equip-scroll",
+    "minorCategory": "hat",
+    "isReleased": true
+  },
+  {
+    "id": "1442030",
+    "name": "메이플 스노우보드",
+    "imageUrl": "https://maplestory.io/api/gms/200/item/1442030/icon?resize=2",
+    "majorCategory": "weapon",
+    "mediumCategory": "snowboard",
+    "reqLevel": 70,
+    "reqStr": 0,
+    "reqDex": 0,
+    "reqInt": 0,
+    "reqLuk": 0,
+    "reqPop": 0,
+    "shopPrice": 1,
+    "attackSpeed": "보통",
+    "attackPower": 85,
+    "upgradeSlots": 7,
+    "isReleased": true
+  },
+  {
+    "id": "2040030",
+    "name": "귀 장식 민첩 주문서 100%",
+    "imageUrl": "https://maplestory.io/api/gms/200/item/2040027/icon?resize=2",
+    "majorCategory": "consumable",
+    "mediumCategory": "equip-scroll",
+    "minorCategory": "earring",
+    "isReleased": true
+  },
+  {
+    "id": "2040028",
+    "name": "귀 장식 민첩 주문서 60%",
+    "imageUrl": "https://maplestory.io/api/gms/200/item/2040029/icon?resize=2",
+    "majorCategory": "consumable",
+    "mediumCategory": "equip-scroll",
+    "minorCategory": "earring",
+    "isReleased": true
+  },
+  {
+    "id": "2040032",
+    "name": "귀 장식 민첩 주문서 10%",
+    "imageUrl": "https://maplestory.io/api/gms/200/item/2040031/icon?resize=2",
+    "majorCategory": "consumable",
+    "mediumCategory": "equip-scroll",
+    "minorCategory": "earring",
+    "isReleased": true
+  },
+  {
+    "id": "2040033",
+    "name": "귀 장식 행운 주문서 100%",
+    "imageUrl": "https://maplestory.io/api/gms/200/item/2040027/icon?resize=2",
+    "majorCategory": "consumable",
+    "mediumCategory": "equip-scroll",
+    "minorCategory": "earring",
+    "isReleased": true
+  },
+  {
+    "id": "2040034",
+    "name": "귀 장식 행운 주문서 60%",
+    "imageUrl": "https://maplestory.io/api/gms/200/item/2040029/icon?resize=2",
+    "majorCategory": "consumable",
+    "mediumCategory": "equip-scroll",
+    "minorCategory": "earring",
+    "isReleased": true
+  },
+  {
+    "id": "2040035",
+    "name": "귀 장식 행운 주문서 10%",
+    "imageUrl": "https://maplestory.io/api/gms/200/item/2040031/icon?resize=2",
+    "majorCategory": "consumable",
+    "mediumCategory": "equip-scroll",
+    "minorCategory": "earring",
+    "isReleased": true
+  },
+  {
+    "id": "2040036",
+    "name": "귀 장식 체력 주문서 100%",
+    "imageUrl": "https://maplestory.io/api/gms/200/item/2040027/icon?resize=2",
+    "majorCategory": "consumable",
+    "mediumCategory": "equip-scroll",
+    "minorCategory": "earring",
+    "isReleased": true
+  },
+  {
+    "id": "2040037",
+    "name": "귀 장식 체력 주문서 60%",
+    "imageUrl": "https://maplestory.io/api/gms/200/item/2040029/icon?resize=2",
+    "majorCategory": "consumable",
+    "mediumCategory": "equip-scroll",
+    "minorCategory": "earring",
+    "isReleased": true
+  },
+  {
+    "id": "2040038",
+    "name": "귀 장식 체력 주문서 10%",
+    "imageUrl": "https://maplestory.io/api/gms/200/item/2040031/icon?resize=2",
+    "majorCategory": "consumable",
+    "mediumCategory": "equip-scroll",
+    "minorCategory": "earring",
+    "isReleased": true
+  },
+  {
+    "id": "2040039",
+    "name": "투구 지력 주문서 100%",
+    "imageUrl": "https://maplestory.io/api/gms/200/item/2040027/icon?resize=2",
+    "majorCategory": "consumable",
+    "mediumCategory": "equip-scroll",
+    "minorCategory": "hat",
+    "isReleased": true
+  },
+  {
+    "id": "2040040",
+    "name": "투구 지력 주문서 60%",
+    "imageUrl": "https://maplestory.io/api/gms/200/item/2040029/icon?resize=2",
+    "majorCategory": "consumable",
+    "mediumCategory": "equip-scroll",
+    "minorCategory": "hat",
+    "isReleased": true
+  },
+  {
+    "id": "2040041",
+    "name": "투구 지력 주문서 10%",
+    "imageUrl": "https://maplestory.io/api/gms/200/item/2040031/icon?resize=2",
+    "majorCategory": "consumable",
+    "mediumCategory": "equip-scroll",
+    "minorCategory": "hat",
+    "isReleased": true
+  },
+  {
+    "id": "2040042",
+    "name": "투구 민첩 주문서 100%",
+    "imageUrl": "https://maplestory.io/api/gms/200/item/2040027/icon?resize=2",
+    "majorCategory": "consumable",
+    "mediumCategory": "equip-scroll",
+    "minorCategory": "hat",
+    "isReleased": true
+  },
+  {
+    "id": "2040043",
+    "name": "투구 민첩 주문서 10%",
+    "imageUrl": "https://maplestory.io/api/gms/200/item/2040031/icon?resize=2",
+    "majorCategory": "consumable",
+    "mediumCategory": "equip-scroll",
+    "minorCategory": "hat",
+    "isReleased": true
+  },
+  {
+    "id": "2040044",
+    "name": "장갑 공격력 주문서 10%",
+    "imageUrl": "https://maplestory.io/api/gms/200/item/2040031/icon?resize=2",
+    "majorCategory": "consumable",
+    "mediumCategory": "equip-scroll",
+    "minorCategory": "gloves",
+    "isReleased": true
+  },
+  {
+    "id": "2040045",
+    "name": "장갑 공격력 주문서 60%",
+    "imageUrl": "https://maplestory.io/api/gms/200/item/2040029/icon?resize=2",
+    "majorCategory": "consumable",
+    "mediumCategory": "equip-scroll",
+    "minorCategory": "gloves",
+    "isReleased": true
+  },
+  {
+    "id": "2040046",
+    "name": "귀장식 지력 주문서 10%",
+    "imageUrl": "https://maplestory.io/api/gms/200/item/2040031/icon?resize=2",
+    "majorCategory": "consumable",
+    "mediumCategory": "equip-scroll",
+    "minorCategory": "earring",
+    "isReleased": true
+  },
+  {
+    "id": "2040047",
+    "name": "귀장식 지력 주문서 60%",
+    "imageUrl": "https://maplestory.io/api/gms/200/item/2040029/icon?resize=2",
+    "majorCategory": "consumable",
+    "mediumCategory": "equip-scroll",
+    "minorCategory": "earring",
+    "isReleased": true
+  },
+  {
+    "id": "2040048",
+    "name": "신발 점프력 주문서 10%",
+    "imageUrl": "https://maplestory.io/api/gms/200/item/2040031/icon?resize=2",
+    "majorCategory": "consumable",
+    "mediumCategory": "equip-scroll",
+    "minorCategory": "shoes",
+    "isReleased": true
+  }
+]

@@ -1,6 +1,10 @@
 import { Monster } from '@/types/monster';
+import { Region } from '@/types/region';
+import { Item } from '@/types/item';
 import Image from 'next/image';
-import { useState } from 'react';
+import { useState, useMemo } from 'react';
+import regionData from '@/data/region_data.json';
+import itemData from '@/data/item_data.json';
 
 interface MonsterCardProps {
   monster: Monster;
@@ -11,21 +15,88 @@ interface MonsterCardProps {
 export default function MonsterCard({ monster, isExpiringSoon, userLevel }: MonsterCardProps) {
   const [isHovered, setIsHovered] = useState(false);
   const [isWarningHovered, setIsWarningHovered] = useState(false);
+  const [isHpPerExpTooltipHovered, setIsHpPerExpTooltipHovered] = useState(false);
   
   // 몬스터 레벨이 사용자 레벨보다 5 이상 낮은지 확인 (고렙 몬스터는 항상 파티 경험치 획득 가능)
   const isOutOfPartyExpRange = userLevel !== undefined && monster.level < userLevel - 5;
 
+  const regions = regionData as Region[];
+  const items = itemData as Item[];
+
+  // 지역 정보 가져오기
+  const monsterRegions = useMemo(() => {
+    if (!monster.regionIds || monster.regionIds.length === 0) return [];
+    return regions.filter((region) => monster.regionIds?.includes(region.id));
+  }, [monster.regionIds]);
+
+  // 주요 드랍 아이템 정보 가져오기
+  const featuredDropItems = useMemo(() => {
+    if (!monster.featuredDropItemIds || monster.featuredDropItemIds.length === 0) return [];
+    return items.filter((item) => monster.featuredDropItemIds?.includes(item.id));
+  }, [monster.featuredDropItemIds]);
+
+  // 체경비 계산 (체력 / 경험치) - useMemo로 최적화
+  const hpPerExp = useMemo(() => {
+    if (monster.exp === 0) return Infinity;
+    return monster.hp / monster.exp;
+  }, [monster.hp, monster.exp]);
+
+  // 체경비에 따른 색상 결정
+  const getHpPerExpColor = (hpPerExp: number) => {
+    if (hpPerExp < 10) {
+      return 'text-green-400'; // 너무 좋음
+    } else if (hpPerExp < 20) {
+      return 'text-yellow-400'; // 적당히 쓸만함
+    } else if (hpPerExp < 33) {
+      return 'text-gray-400'; // 평범한 수준
+    } else {
+      return 'text-red-400'; // 너무 구림
+    }
+  };
+
+  // 속성 색상 및 스타일 매핑 함수
+  const getAttributeStyle = (attribute: string) => {
+    if (attribute.includes('불속성')) {
+      return { color: 'text-red-400', bg: 'bg-red-900/30', border: 'border-red-500/50' };
+    } else if (attribute.includes('전기속성')) {
+      return { color: 'text-yellow-400', bg: 'bg-yellow-900/30', border: 'border-yellow-500/50' };
+    } else if (attribute.includes('독속성')) {
+      return { color: 'text-purple-400', bg: 'bg-purple-900/30', border: 'border-purple-500/50' };
+    } else if (attribute.includes('얼음속성')) {
+      return { color: 'text-sky-400', bg: 'bg-sky-900/30', border: 'border-sky-500/50' };
+    } else if (attribute.includes('성속성')) {
+      return { color: 'text-yellow-50', bg: 'bg-yellow-900/20', border: 'border-yellow-400/40' };
+    }
+    return { color: 'text-gray-300', bg: 'bg-gray-700/30', border: 'border-gray-500/50' };
+  };
+
+  // 속성 타입 파싱 (약점/반감/무효)
+  const parseAttribute = (attribute: string) => {
+    if (attribute.includes('약점')) {
+      const name = attribute.replace('약점', '').trim();
+      return { type: 'weakness', name };
+    } else if (attribute.includes('반감')) {
+      const name = attribute.replace('반감', '').trim();
+      return { type: 'resistance', name };
+    } else if (attribute.includes('무효')) {
+      const name = attribute.replace('무효', '').trim();
+      return { type: 'immune', name };
+    }
+    return { type: 'unknown', name: attribute };
+  };
+
   return (
     <div
-      className={`relative flex flex-col items-center rounded-lg border-2 bg-gray-800 p-4 shadow-sm transition-all hover:shadow-md ${
+      className={`relative flex flex-col items-center rounded-lg border-2 bg-gray-800 p-4 shadow-sm transition-all hover:shadow-md cursor-pointer ${
         isExpiringSoon
-          ? 'border-red-500'
-          : 'border-gray-700'
+          ? 'border-red-500 hover:border-yellow-500'
+          : 'border-gray-700 hover:border-yellow-500'
       }`}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => {
         setIsHovered(false);
         setIsWarningHovered(false);
+        setIsHpPerExpTooltipHovered(false);
       }}
     >
       {/* 경고 아이콘 (레벨 차이 5 초과) */}
@@ -83,6 +154,22 @@ export default function MonsterCard({ monster, isExpiringSoon, userLevel }: Mons
       <h3 className="mb-2 text-base font-semibold text-gray-100 sm:text-lg">
         {monster.name}
       </h3>
+
+      {/* 지역 뱃지 */}
+      {monsterRegions.length > 0 && (
+        <div className="mb-2 flex w-full flex-wrap gap-1.5 justify-center">
+          {monsterRegions.map((region) => (
+            <span
+              key={region.id}
+              className="rounded-full bg-gray-700 px-3 py-1 text-xs font-medium text-gray-300"
+            >
+              {region.name}
+            </span>
+          ))}
+        </div>
+      )}
+
+
       <div className="flex w-full flex-col gap-1 text-xs text-gray-400 sm:text-sm">
         <div className="flex justify-between">
           <span className="font-medium">레벨:</span>
@@ -98,7 +185,93 @@ export default function MonsterCard({ monster, isExpiringSoon, userLevel }: Mons
             {monster.exp.toLocaleString()}
           </span>
         </div>
+        <div className="flex items-center justify-between">
+          <span className="font-medium">체경비:</span>
+          <div className="flex items-center gap-1">
+            <span className={`latin-font numeric ${getHpPerExpColor(hpPerExp)}`}>
+              {hpPerExp === Infinity ? '∞' : hpPerExp.toFixed(2)}
+            </span>
+            <div 
+              className="relative"
+              onMouseEnter={(e) => {
+                e.stopPropagation();
+                setIsHpPerExpTooltipHovered(true);
+              }}
+              onMouseLeave={() => setIsHpPerExpTooltipHovered(false)}
+              onTouchStart={(e) => {
+                e.stopPropagation();
+                setIsHpPerExpTooltipHovered(!isHpPerExpTooltipHovered);
+              }}
+            >
+              <svg
+                className="h-4 w-4 cursor-help text-gray-500 hover:text-gray-400"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="2" fill="none" />
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                />
+              </svg>
+              {isHpPerExpTooltipHovered && (
+                <div className="absolute right-0 top-6 z-20 w-64 rounded-md bg-gray-700 px-3 py-2 text-xs text-gray-100 shadow-lg">
+                  <div className="font-semibold mb-1">체경비 (체력 대비 경험치)</div>
+                  <div className="text-gray-300">
+                    체력 ÷ 경험치로 계산됩니다.
+                    <br />
+                    체경비가 낮을수록 경험치 효율이 좋습니다.
+                  </div>
+                  <div className="absolute -top-1 right-4 h-2 w-2 rotate-45 bg-gray-700"></div>
+                </div>
+              )}
+            </div>
+          </div>
+        </div>
+        {/* 주요 드랍 */}
+        {featuredDropItems.length > 0 && (
+          <div className="mt-1 flex flex-col gap-1">
+            <span className="font-medium text-gray-400">주요 드랍:</span>
+            <div className="flex flex-wrap gap-1">
+              {featuredDropItems.map((item) => (
+                <span
+                  key={item.id}
+                  className="rounded-md bg-blue-900/40 px-2 py-0.5 text-xs font-medium text-blue-300"
+                >
+                  {item.name}
+                </span>
+              ))}
+            </div>
+          </div>
+        )}
       </div>
+
+      {/* 속성 약점/반감 표시 */}
+      {monster.attributes && monster.attributes.length > 0 && (
+        <div className="mt-2 flex w-full flex-wrap gap-1.5 justify-center">
+          {monster.attributes.map((attribute, index) => {
+            const style = getAttributeStyle(attribute);
+            const parsed = parseAttribute(attribute);
+            const isWeakness = parsed.type === 'weakness';
+            
+            return (
+              <span
+                key={index}
+                className={`rounded-md border px-2 py-1 text-xs ${
+                  style.color
+                } ${style.bg} ${style.border} ${isWeakness ? 'font-bold' : 'font-normal'}`}
+              >
+                {parsed.name}
+                {isWeakness ? ' 약점' : parsed.type === 'resistance' ? ' 반감' : parsed.type === 'immune' ? ' 무효' : ''}
+              </span>
+            );
+          })}
+        </div>
+      )}
     </div>
   );
 }

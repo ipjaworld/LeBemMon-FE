@@ -1,0 +1,506 @@
+[
+  {
+    "monsterId": "8800002",
+    "itemId": "2040029"
+  },
+  {
+    "monsterId": "8800003",
+    "itemId": "2040029"
+  },
+  {
+    "monsterId": "8800004",
+    "itemId": "2040029"
+  },
+  {
+    "monsterId": "8800005",
+    "itemId": "2040029"
+  },
+  {
+    "monsterId": "8800100",
+    "itemId": "1442030"
+  },
+  {
+    "monsterId": "8800101",
+    "itemId": "1442030"
+  },
+  {
+    "monsterId": "8800102",
+    "itemId": "1442030"
+  },
+  {
+    "monsterId": "2100105",
+    "itemId": "2040030"
+  },
+  {
+    "monsterId": "3000000",
+    "itemId": "2040030"
+  },
+  {
+    "monsterId": "3230304",
+    "itemId": "2040030"
+  },
+  {
+    "monsterId": "5100005",
+    "itemId": "2040030"
+  },
+  {
+    "monsterId": "8140002",
+    "itemId": "2040030"
+  },
+  {
+    "monsterId": "9300144",
+    "itemId": "2040028"
+  },
+  {
+    "monsterId": "9300164",
+    "itemId": "2040028"
+  },
+  {
+    "monsterId": "5130106",
+    "itemId": "2040028"
+  },
+  {
+    "monsterId": "6230600",
+    "itemId": "2040028"
+  },
+  {
+    "monsterId": "8141000",
+    "itemId": "2040028"
+  },
+  {
+    "monsterId": "8140001",
+    "itemId": "2040028"
+  },
+  {
+    "monsterId": "6230300",
+    "itemId": "2040032"
+  },
+  {
+    "monsterId": "8140200",
+    "itemId": "2040032"
+  },
+  {
+    "monsterId": "8140100",
+    "itemId": "2040032"
+  },
+  {
+    "monsterId": "8142100",
+    "itemId": "2040032"
+  },
+  {
+    "monsterId": "8140001",
+    "itemId": "2040032"
+  },
+  {
+    "monsterId": "8500002",
+    "itemId": "2040032"
+  },
+  {
+    "monsterId": "2100105",
+    "itemId": "2040033"
+  },
+  {
+    "monsterId": "2230103",
+    "itemId": "2040033"
+  },
+  {
+    "monsterId": "4230106",
+    "itemId": "2040033"
+  },
+  {
+    "monsterId": "6130100",
+    "itemId": "2040033"
+  },
+  {
+    "monsterId": "5100000",
+    "itemId": "2040034"
+  },
+  {
+    "monsterId": "7130501",
+    "itemId": "2040034"
+  },
+  {
+    "monsterId": "6400100",
+    "itemId": "2040034"
+  },
+  {
+    "monsterId": "8140102",
+    "itemId": "2040034"
+  },
+  {
+    "monsterId": "8500002",
+    "itemId": "2040034"
+  },
+  {
+    "monsterId": "8800002",
+    "itemId": "2040034"
+  },
+  {
+    "monsterId": "5120003",
+    "itemId": "2040035"
+  },
+  {
+    "monsterId": "9300149",
+    "itemId": "2040035"
+  },
+  {
+    "monsterId": "6230100",
+    "itemId": "2040035"
+  },
+  {
+    "monsterId": "8140111",
+    "itemId": "2040035"
+  },
+  {
+    "monsterId": "3110302",
+    "itemId": "2040036"
+  },
+  {
+    "monsterId": "4230120",
+    "itemId": "2040036"
+  },
+  {
+    "monsterId": "5120000",
+    "itemId": "2040036"
+  },
+  {
+    "monsterId": "7130020",
+    "itemId": "2040036"
+  },
+  {
+    "monsterId": "5100002",
+    "itemId": "2040037"
+  },
+  {
+    "monsterId": "7130500",
+    "itemId": "2040037"
+  },
+  {
+    "monsterId": "5130104",
+    "itemId": "2040037"
+  },
+  {
+    "monsterId": "8190004",
+    "itemId": "2040037"
+  },
+  {
+    "monsterId": "9300165",
+    "itemId": "2040038"
+  },
+  {
+    "monsterId": "6230602",
+    "itemId": "2040038"
+  },
+  {
+    "monsterId": "6230600",
+    "itemId": "2040038"
+  },
+  {
+    "monsterId": "8140100",
+    "itemId": "2040038"
+  },
+  {
+    "monsterId": "8180000",
+    "itemId": "2040038"
+  },
+  {
+    "monsterId": "8800002",
+    "itemId": "2040038"
+  },
+  {
+    "monsterId": "2300100",
+    "itemId": "2040039"
+  },
+  {
+    "monsterId": "3230102",
+    "itemId": "2040039"
+  },
+  {
+    "monsterId": "6130101",
+    "itemId": "2040039"
+  },
+  {
+    "monsterId": "5140000",
+    "itemId": "2040039"
+  },
+  {
+    "monsterId": "6230601",
+    "itemId": "2040039"
+  },
+  {
+    "monsterId": "7130402",
+    "itemId": "2040039"
+  },
+  {
+    "monsterId": "9300147",
+    "itemId": "2040040"
+  },
+  {
+    "monsterId": "9500133",
+    "itemId": "2040040"
+  },
+  {
+    "monsterId": "7130010",
+    "itemId": "2040040"
+  },
+  {
+    "monsterId": "8141100",
+    "itemId": "2040040"
+  },
+  {
+    "monsterId": "4230102",
+    "itemId": "2040041"
+  },
+  {
+    "monsterId": "7130402",
+    "itemId": "2040041"
+  },
+  {
+    "monsterId": "7130010",
+    "itemId": "2040041"
+  },
+  {
+    "monsterId": "8140002",
+    "itemId": "2040041"
+  },
+  {
+    "monsterId": "8800002",
+    "itemId": "2040041"
+  },
+  {
+    "monsterId": "3230101",
+    "itemId": "2040042"
+  },
+  {
+    "monsterId": "9300060",
+    "itemId": "2040042"
+  },
+  {
+    "monsterId": "9300144",
+    "itemId": "2040042"
+  },
+  {
+    "monsterId": "5130103",
+    "itemId": "2040042"
+  },
+  {
+    "monsterId": "5130106",
+    "itemId": "2040042"
+  },
+  {
+    "monsterId": "4230300",
+    "itemId": "2040029"
+  },
+  {
+    "monsterId": "9300135",
+    "itemId": "2040029"
+  },
+  {
+    "monsterId": "8150000",
+    "itemId": "2040029"
+  },
+  {
+    "monsterId": "4230118",
+    "itemId": "2040043"
+  },
+  {
+    "monsterId": "5120500",
+    "itemId": "2040043"
+  },
+  {
+    "monsterId": "7130200",
+    "itemId": "2040043"
+  },
+  {
+    "monsterId": "7130300",
+    "itemId": "2040043"
+  },
+  {
+    "monsterId": "8141100",
+    "itemId": "2040043"
+  },
+  {
+    "monsterId": "8800002",
+    "itemId": "2040043"
+  },
+  {
+    "monsterId": "8140102",
+    "itemId": "2040044"
+  },
+  {
+    "monsterId": "4130101",
+    "itemId": "2040044"
+  },
+  {
+    "monsterId": "8180000",
+    "itemId": "2040044"
+  },
+  {
+    "monsterId": "8150000",
+    "itemId": "2040044"
+  },
+  {
+    "monsterId": "9300150",
+    "itemId": "2040045"
+  },
+  {
+    "monsterId": "6130101",
+    "itemId": "2040045"
+  },
+  {
+    "monsterId": "5120505",
+    "itemId": "2040045"
+  },
+  {
+    "monsterId": "6230602",
+    "itemId": "2040045"
+  },
+  {
+    "monsterId": "5150000",
+    "itemId": "2040045"
+  },
+  {
+    "monsterId": "5100003",
+    "itemId": "2040045"
+  },
+  {
+    "monsterId": "5100000",
+    "itemId": "2040045"
+  },
+  {
+    "monsterId": "6230400",
+    "itemId": "2040045"
+  },
+  {
+    "monsterId": "8142100",
+    "itemId": "2040045"
+  },
+  {
+    "monsterId": "4230114",
+    "itemId": "2040045"
+  },
+  {
+    "monsterId": "4230119",
+    "itemId": "2040045"
+  },
+  {
+    "monsterId": "4230120",
+    "itemId": "2040045"
+  },
+  {
+    "monsterId": "9400543",
+    "itemId": "2040045"
+  },
+  {
+    "monsterId": "8150000",
+    "itemId": "2040046"
+  },
+  {
+    "monsterId": "8180001",
+    "itemId": "2040046"
+  },
+  {
+    "monsterId": "7130400",
+    "itemId": "2040046"
+  },
+  {
+    "monsterId": "8140200",
+    "itemId": "2040046"
+  },
+  {
+    "monsterId": "8150302",
+    "itemId": "2040046"
+  },
+  {
+    "monsterId": "8150201",
+    "itemId": "2040046"
+  },
+  {
+    "monsterId": "7130200",
+    "itemId": "2040046"
+  },
+  {
+    "monsterId": "8150101",
+    "itemId": "2040046"
+  },
+  {
+    "monsterId": "6130101",
+    "itemId": "2040047"
+  },
+  {
+    "monsterId": "9300163",
+    "itemId": "2040047"
+  },
+  {
+    "monsterId": "6300001",
+    "itemId": "2040047"
+  },
+  {
+    "monsterId": "6300001",
+    "itemId": "2040047"
+  },
+  {
+    "monsterId": "2230111",
+    "itemId": "2040047"
+  },
+  {
+    "monsterId": "6230300",
+    "itemId": "2040047"
+  },
+  {
+    "monsterId": "7130103",
+    "itemId": "2040047"
+  },
+  {
+    "monsterId": "6130204",
+    "itemId": "2040047"
+  },
+  {
+    "monsterId": "8180001",
+    "itemId": "2040048"
+  },
+  {
+    "monsterId": "8150000",
+    "itemId": "2040048"
+  },
+  {
+    "monsterId": "2100102",
+    "itemId": "2040048"
+  },
+  {
+    "monsterId": "8160000",
+    "itemId": "2040048"
+  },
+  {
+    "monsterId": "4230300",
+    "itemId": "2040048"
+  },
+  {
+    "monsterId": "9300160",
+    "itemId": "2040048"
+  },
+  {
+    "monsterId": "1210102",
+    "itemId": "2040048"
+  },
+  {
+    "monsterId": "4230106",
+    "itemId": "2040048"
+  },
+  {
+    "monsterId": "4230125",
+    "itemId": "2040048"
+  },
+  {
+    "monsterId": "7130500",
+    "itemId": "2040048"
+  },
+  {
+    "monsterId": "7130104",
+    "itemId": "2040048"
+  },
+  {
+    "monsterId": "5300000",
+    "itemId": "2040048"
+  }
+]
