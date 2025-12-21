@@ -10,6 +10,7 @@ interface MonsterCardProps {
 
 export default function MonsterCard({ monster, isExpiringSoon, userLevel }: MonsterCardProps) {
   const [isHovered, setIsHovered] = useState(false);
+  const [isWarningHovered, setIsWarningHovered] = useState(false);
   
   // 몬스터 레벨이 사용자 레벨보다 5 이상 낮은지 확인 (고렙 몬스터는 항상 파티 경험치 획득 가능)
   const isOutOfPartyExpRange = userLevel !== undefined && monster.level < userLevel - 5;
@@ -22,12 +23,22 @@ export default function MonsterCard({ monster, isExpiringSoon, userLevel }: Mons
           : 'border-gray-700'
       }`}
       onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
+      onMouseLeave={() => {
+        setIsHovered(false);
+        setIsWarningHovered(false);
+      }}
     >
       {/* 경고 아이콘 (레벨 차이 5 초과) */}
       {isOutOfPartyExpRange && (
         <div className="absolute left-2 top-2 z-10">
-          <div className="relative">
+          <div 
+            className="relative"
+            onMouseEnter={(e) => {
+              e.stopPropagation();
+              setIsWarningHovered(true);
+            }}
+            onMouseLeave={() => setIsWarningHovered(false)}
+          >
             <svg
               className="h-5 w-5 cursor-help text-yellow-500"
               fill="none"
@@ -43,7 +54,7 @@ export default function MonsterCard({ monster, isExpiringSoon, userLevel }: Mons
                 d="M12 8v4m0 4h.01"
               />
             </svg>
-            {isHovered && (
+            {isWarningHovered && (
               <div className="absolute left-0 top-6 z-20 w-48 rounded-md bg-yellow-600 px-3 py-1.5 text-xs text-white shadow-lg">
                 레벨 범위가 5 이내가 아니어서 파티 경험치를 획득할 수 없습니다
                 <div className="absolute -top-1 left-2 h-2 w-2 rotate-45 bg-yellow-600"></div>
@@ -53,7 +64,7 @@ export default function MonsterCard({ monster, isExpiringSoon, userLevel }: Mons
         </div>
       )}
       
-      {isExpiringSoon && isHovered && (
+      {isExpiringSoon && isHovered && !isWarningHovered && (
         <div className="absolute -top-10 left-1/2 z-10 -translate-x-1/2 rounded-md bg-red-600 px-3 py-1.5 text-sm text-white shadow-lg">
           곧 레범몬이 아니게 됩니다
           <div className="absolute bottom-0 left-1/2 -mb-1 h-2 w-2 -translate-x-1/2 rotate-45 bg-red-600"></div>

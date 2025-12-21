@@ -1,0 +1,171 @@
+[
+  {
+    "id": "victoria",
+    "name": "빅토리아",
+    "parentId": null,
+    "type": "region",
+    "isReleased": true
+  },
+  {
+    "id": "victoria-perion",
+    "name": "페리온",
+    "parentId": "victoria",
+    "type": "town",
+    "isReleased": true
+  },
+  {
+    "id": "victoria-henesys",
+    "name": "헤네시스",
+    "parentId": "victoria",
+    "type": "town",
+    "isReleased": true
+  },
+  {
+    "id": "victoria-kerning",
+    "name": "커닝시티",
+    "parentId": "victoria",
+    "type": "town",
+    "isReleased": true
+  },
+  {
+    "id": "victoria-lith",
+    "name": "리스항구",
+    "parentId": "victoria",
+    "type": "town",
+    "isReleased": true
+  },
+  {
+    "id": "victoria-ellinia",
+    "name": "엘리니아",
+    "parentId": "victoria",
+    "type": "town",
+    "isReleased": true
+  },
+  {
+    "id": "victoria-florina",
+    "name": "플로리나비치",
+    "parentId": "victoria",
+    "type": "town",
+    "isReleased": true
+  },
+  {
+    "id": "victoria-sleepywood",
+    "name": "슬리피우드",
+    "parentId": "victoria",
+    "type": "town",
+    "isReleased": true
+  },
+  {
+    "id": "orbis",
+    "name": "오르비스",
+    "parentId": null,
+    "type": "region",
+    "isReleased": true
+  },
+  {
+    "id": "ellin-forest",
+    "name": "엘나스 산맥",
+    "parentId": null,
+    "type": "region",
+    "isReleased": true
+  },
+  {
+    "id": "ludibrium",
+    "name": "루디브리엄",
+    "parentId": null,
+    "type": "region",
+    "isReleased": true
+  },
+  {
+    "id": "aqua-road",
+    "name": "아쿠아로드",
+    "parentId": null,
+    "type": "region",
+    "isReleased": true
+  },
+  {
+    "id": "world-travel-china",
+    "name": "세계여행-중국",
+    "parentId": null,
+    "type": "region",
+    "isReleased": true
+  },
+  {
+    "id": "world-travel-taiwan",
+    "name": "세계여행-대만",
+    "parentId": null,
+    "type": "region",
+    "isReleased": true
+  },
+  {
+    "id": "world-travel-thailand",
+    "name": "세계여행-태국",
+    "parentId": null,
+    "type": "region",
+    "isReleased": true
+  },
+  {
+    "id": "world-travel-japan",
+    "name": "세계여행-일본",
+    "parentId": null,
+    "type": "region",
+    "isReleased": true
+  },
+  {
+    "id": "japan-mushroom-shrine",
+    "name": "버섯신사",
+    "parentId": "world-travel-japan",
+    "type": "town",
+    "isReleased": true
+  },
+  {
+    "id": "japan-showa-town",
+    "name": "쇼와마을",
+    "parentId": "world-travel-japan",
+    "type": "town",
+    "isReleased": true
+  },
+  {
+    "id": "japan-kaede-castle",
+    "name": "일본:카에데성",
+    "parentId": "world-travel-japan",
+    "type": "town",
+    "isReleased": true
+  },
+  {
+    "id": "leafre",
+    "name": "리프레",
+    "parentId": null,
+    "type": "region",
+    "isReleased": true
+  },
+  {
+    "id": "masteria",
+    "name": "마스테리아",
+    "parentId": null,
+    "type": "region",
+    "isReleased": true
+  },
+  {
+    "id": "nihan-desert",
+    "name": "니할 사막",
+    "parentId": null,
+    "type": "region",
+    "isReleased": true
+  },
+  {
+    "id": "nihan-ariant",
+    "name": "아리안트",
+    "parentId": "nihan-desert",
+    "type": "town",
+    "isReleased": true
+  },
+  {
+    "id": "nihan-magatia",
+    "name": "마가티아",
+    "parentId": "nihan-desert",
+    "type": "town",
+    "isReleased": true
+  }
+]
+

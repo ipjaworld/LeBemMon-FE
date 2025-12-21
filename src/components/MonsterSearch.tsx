@@ -4,10 +4,14 @@ import { useState, useMemo, useEffect } from 'react';
 import MonsterCard from '@/components/MonsterCard';
 import Footer from '@/components/Footer';
 import { Monster } from '@/types/monster';
+import { Region } from '@/types/region';
+import regionData from '@/data/region_data.json';
 
 type MonsterWithExpiring = Monster & {
   isExpiringSoon: boolean;
 };
+
+type SortOption = 'level-asc' | 'level-desc' | 'hp-asc' | 'hp-desc' | 'exp-asc' | 'exp-desc' | 'name-asc' | 'name-desc';
 
 interface MonsterSearchProps {
   monsters: Monster[];
@@ -15,6 +19,23 @@ interface MonsterSearchProps {
 
 export default function MonsterSearch({ monsters }: MonsterSearchProps) {
   const [level, setLevel] = useState<number | ''>('');
+  const [isFilterOpen, setIsFilterOpen] = useState(false);
+  
+  // 필터 상태
+  const [searchName, setSearchName] = useState('');
+  const [minLevel, setMinLevel] = useState<number | ''>('');
+  const [maxLevel, setMaxLevel] = useState<number | ''>('');
+  const [minHp, setMinHp] = useState<number | ''>('');
+  const [maxHp, setMaxHp] = useState<number | ''>('');
+  const [minExp, setMinExp] = useState<number | ''>('');
+  const [maxExp, setMaxExp] = useState<number | ''>('');
+  const [showExpiringOnly, setShowExpiringOnly] = useState(false);
+  const [selectedRegions, setSelectedRegions] = useState<string[]>([]);
+  
+  // 정렬 상태
+  const [sortBy, setSortBy] = useState<SortOption>('level-asc');
+  
+  const regions = regionData as Region[];
 
   // document.title 업데이트
   useEffect(() => {
@@ -23,8 +44,8 @@ export default function MonsterSearch({ monsters }: MonsterSearchProps) {
       : '메이플랜드 레범몬';
   }, [level]);
 
-  // 출시된 몬스터만 필터링하고, 레벨 범위로 필터링
-  const filteredMonsters = useMemo(() => {
+  // 레벨 범위로 필터링된 기본 몬스터 목록 (필터 적용 전)
+  const baseFilteredMonsters = useMemo(() => {
     // 먼저 출시된 몬스터만 필터링
     // TODO: 개발 완료 후 주석을 해제하세요
     const releasedMonsters = monsters.filter((monster) => monster.isReleased);
@@ -40,7 +61,7 @@ export default function MonsterSearch({ monsters }: MonsterSearchProps) {
     }
 
     // 레벨 80 이상이면 70 이상의 몬스터도 포함, 그 외에는 ±10 범위
-    const filtered = releasedMonsters.filter((monster) => {
+    let filtered = releasedMonsters.filter((monster) => {
       if (levelNum >= 80) {
         // 레벨 80 이상: ±10 범위 또는 70 이상의 몬스터
         return (
@@ -54,8 +75,9 @@ export default function MonsterSearch({ monsters }: MonsterSearchProps) {
     });
 
     // 레벨 1업 시 레범몬이 아니게 되는지 판단
-    return filtered
-      .map((monster): MonsterWithExpiring => ({
+    return filtered.map((monster): MonsterWithExpiring => {
+      const levelNum = Number(level);
+      return {
         ...monster,
         isExpiringSoon: (() => {
           if (levelNum >= 80) {
@@ -71,9 +93,115 @@ export default function MonsterSearch({ monsters }: MonsterSearchProps) {
             return !(monster.level >= nextLevel - 10 && monster.level <= nextLevel + 10);
           }
         })(),
-      }))
-      .sort((a, b) => a.level - b.level);
+      };
+    });
   }, [level, monsters]) as MonsterWithExpiring[];
+
+  // 검색 결과에 존재하는 지역 ID 추출
+  const availableRegionIds = useMemo(() => {
+    const regionIdSet = new Set<string>();
+    baseFilteredMonsters.forEach((monster) => {
+      if (monster.regionIds && monster.regionIds.length > 0) {
+        monster.regionIds.forEach((id) => regionIdSet.add(id));
+      }
+    });
+    return Array.from(regionIdSet);
+  }, [baseFilteredMonsters]);
+
+  // 출시된 몬스터만 필터링하고, 레벨 범위로 필터링
+  const filteredMonsters = useMemo(() => {
+    if (baseFilteredMonsters.length === 0) {
+      return [];
+    }
+
+    let monstersWithExpiring = [...baseFilteredMonsters];
+
+    // 추가 필터 적용
+    if (searchName) {
+      monstersWithExpiring = monstersWithExpiring.filter((monster) =>
+        monster.name.includes(searchName)
+      );
+    }
+
+    if (minLevel !== '') {
+      const min = Number(minLevel);
+      if (!isNaN(min)) {
+        monstersWithExpiring = monstersWithExpiring.filter((monster) => monster.level >= min);
+      }
+    }
+
+    if (maxLevel !== '') {
+      const max = Number(maxLevel);
+      if (!isNaN(max)) {
+        monstersWithExpiring = monstersWithExpiring.filter((monster) => monster.level <= max);
+      }
+    }
+
+    if (minHp !== '') {
+      const min = Number(minHp);
+      if (!isNaN(min)) {
+        monstersWithExpiring = monstersWithExpiring.filter((monster) => monster.hp >= min);
+      }
+    }
+
+    if (maxHp !== '') {
+      const max = Number(maxHp);
+      if (!isNaN(max)) {
+        monstersWithExpiring = monstersWithExpiring.filter((monster) => monster.hp <= max);
+      }
+    }
+
+    if (minExp !== '') {
+      const min = Number(minExp);
+      if (!isNaN(min)) {
+        monstersWithExpiring = monstersWithExpiring.filter((monster) => monster.exp >= min);
+      }
+    }
+
+    if (maxExp !== '') {
+      const max = Number(maxExp);
+      if (!isNaN(max)) {
+        monstersWithExpiring = monstersWithExpiring.filter((monster) => monster.exp <= max);
+      }
+    }
+
+    if (showExpiringOnly) {
+      monstersWithExpiring = monstersWithExpiring.filter((monster) => monster.isExpiringSoon);
+    }
+
+    if (selectedRegions.length > 0) {
+      monstersWithExpiring = monstersWithExpiring.filter((monster) => {
+        if (!monster.regionIds || monster.regionIds.length === 0) return false;
+        return monster.regionIds.some((regionId) => selectedRegions.includes(regionId));
+      });
+    }
+
+    // 정렬 적용
+    const sorted = [...monstersWithExpiring].sort((a, b) => {
+      switch (sortBy) {
+        case 'level-asc':
+          return a.level - b.level;
+        case 'level-desc':
+          return b.level - a.level;
+        case 'hp-asc':
+          return a.hp - b.hp;
+        case 'hp-desc':
+          return b.hp - a.hp;
+        case 'exp-asc':
+          return a.exp - b.exp;
+        case 'exp-desc':
+          return b.exp - a.exp;
+        case 'name-asc':
+          return a.name.localeCompare(b.name, 'ko');
+        case 'name-desc':
+          return b.name.localeCompare(a.name, 'ko');
+        default:
+          return a.level - b.level;
+      }
+    });
+
+    return sorted;
+  }, [baseFilteredMonsters, searchName, minLevel, maxLevel, minHp, maxHp, minExp, maxExp, showExpiringOnly, selectedRegions, sortBy]) as MonsterWithExpiring[];
 
   return (
     <div className="flex min-h-screen flex-col bg-gray-900">
@@ -109,6 +237,151 @@ export default function MonsterSearch({ monsters }: MonsterSearchProps) {
             />
           </div>
         </div>
+
+        {/* 상세 검색 및 필터 UI - 레벨 입력 밑에 항상 표시 */}
+        {level !== '' && (
+          <div className="mb-6 flex justify-center">
+            <div className="w-full max-w-md">
+              <div className="rounded-lg border border-gray-700 bg-gray-800">
+                <button
+                  onClick={() => setIsFilterOpen(!isFilterOpen)}
+                  className="flex w-full items-center justify-between px-4 py-3 text-left text-gray-200 hover:bg-gray-750 transition-colors"
+                >
+                  <span className="font-medium">상세 검색 및 필터</span>
+                  <svg
+                    className={`h-5 w-5 transition-transform ${isFilterOpen ? 'rotate-180' : ''}`}
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                  </svg>
+                </button>
+                
+                {isFilterOpen && (
+                  <div className="border-t border-gray-700 p-4 space-y-4">
+                    {/* 이름 검색 */}
+                    <div>
+                      <label className="mb-1 block text-sm font-medium text-gray-300">이름 검색</label>
+                      <input
+                        type="text"
+                        value={searchName}
+                        onChange={(e) => setSearchName(e.target.value)}
+                        placeholder="몬스터 이름 입력"
+                        className="w-full rounded-lg border border-gray-600 bg-gray-700 px-3 py-2 text-gray-100 placeholder:text-gray-500 focus:border-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-400"
+                      />
+                    </div>
+
+                    {/* 레벨 범위 */}
+                    <div className="grid grid-cols-2 gap-3">
+                      <div>
+                        <label className="mb-1 block text-sm font-medium text-gray-300">최소 레벨</label>
+                        <input
+                          type="number"
+                          value={minLevel}
+                          onChange={(e) => setMinLevel(e.target.value === '' ? '' : Number(e.target.value))}
+                          placeholder="최소"
+                          className="latin-font numeric w-full rounded-lg border border-gray-600 bg-gray-700 px-3 py-2 text-gray-100 placeholder:text-gray-500 focus:border-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-400"
+                        />
+                      </div>
+                      <div>
+                        <label className="mb-1 block text-sm font-medium text-gray-300">최대 레벨</label>
+                        <input
+                          type="number"
+                          value={maxLevel}
+                          onChange={(e) => setMaxLevel(e.target.value === '' ? '' : Number(e.target.value))}
+                          placeholder="최대"
+                          className="latin-font numeric w-full rounded-lg border border-gray-600 bg-gray-700 px-3 py-2 text-gray-100 placeholder:text-gray-500 focus:border-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-400"
+                        />
+                      </div>
+                    </div>
+
+                    {/* 정렬 옵션 */}
+                    <div>
+                      <label className="mb-2 block text-sm font-medium text-gray-300">정렬</label>
+                      <select
+                        value={sortBy}
+                        onChange={(e) => setSortBy(e.target.value as SortOption)}
+                        className="w-full rounded-lg border border-gray-600 bg-gray-700 px-3 py-2 text-gray-100 focus:border-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-400"
+                      >
+                        <option value="level-asc">레벨 순 (낮은 순)</option>
+                        <option value="level-desc">레벨 순 (높은 순)</option>
+                        <option value="hp-asc">HP 순 (낮은 순)</option>
+                        <option value="hp-desc">HP 순 (높은 순)</option>
+                        <option value="exp-asc">EXP 순 (낮은 순)</option>
+                        <option value="exp-desc">EXP 순 (높은 순)</option>
+                        <option value="name-asc">이름 순 (가나다)</option>
+                        <option value="name-desc">이름 순 (다나가)</option>
+                      </select>
+                    </div>
+
+                    {/* 필터 초기화 버튼 */}
+                    <button
+                      onClick={() => {
+                        setSearchName('');
+                        setMinLevel('');
+                        setMaxLevel('');
+                        setMinHp('');
+                        setMaxHp('');
+                        setMinExp('');
+                        setMaxExp('');
+                        setShowExpiringOnly(false);
+                        setSelectedRegions([]);
+                        setSortBy('level-asc');
+                      }}
+                      className="w-full rounded-lg bg-gray-700 px-4 py-2 text-sm text-gray-300 hover:bg-gray-600 transition-colors"
+                    >
+                      필터 초기화
+                    </button>
+                  </div>
+                )}
+              </div>
+            </div>
+          </div>
+        )}
+
+        {/* 지역 필터 뱃지 - 검색 결과에 존재하는 지역만 표시 */}
+        {level !== '' && baseFilteredMonsters.length > 0 && availableRegionIds.length > 0 && (
+          <div className="mb-6 flex justify-center">
+            <div className="w-full max-w-4xl">
+              <div className="mb-2 text-sm font-medium text-gray-400">지역 필터</div>
+              <div className="flex flex-wrap gap-2">
+                {regions
+                  .filter((region) => availableRegionIds.includes(region.id))
+                  .map((region) => {
+                    const isSelected = selectedRegions.includes(region.id);
+                    return (
+                      <button
+                        key={region.id}
+                        onClick={() => {
+                          if (isSelected) {
+                            setSelectedRegions(selectedRegions.filter((id) => id !== region.id));
+                          } else {
+                            setSelectedRegions([...selectedRegions, region.id]);
+                          }
+                        }}
+                        className={`rounded-full px-4 py-2 text-sm font-medium transition-all ${
+                          isSelected
+                            ? 'bg-blue-600 text-white shadow-md'
+                            : 'bg-gray-700 text-gray-300 hover:bg-gray-600'
+                        }`}
+                      >
+                        {region.name}
+                      </button>
+                    );
+                  })}
+                {selectedRegions.length > 0 && (
+                  <button
+                    onClick={() => setSelectedRegions([])}
+                    className="rounded-full bg-gray-700 px-4 py-2 text-sm font-medium text-gray-300 hover:bg-gray-600 transition-colors"
+                  >
+                    전체 해제
+                  </button>
+                )}
+              </div>
+            </div>
+          </div>
+        )}
 
         {level !== '' && filteredMonsters.length > 0 && (
           <div className="mb-4 text-center text-gray-400">

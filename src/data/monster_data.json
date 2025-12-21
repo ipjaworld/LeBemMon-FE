@@ -6,7 +6,10 @@
     "level": 1,
     "hp": 8,
     "exp": 3,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": [
+      "victoria"
+    ]
   },
   {
     "id": "9500400",
@@ -51,7 +54,10 @@
     "level": 2,
     "hp": 15,
     "exp": 4,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": [
+      "victoria"
+    ]
   },
   {
     "id": "130101",
@@ -60,7 +66,10 @@
     "level": 4,
     "hp": 40,
     "exp": 8,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": [
+      "victoria"
+    ]
   },
   {
     "id": "130100",
@@ -87,7 +96,10 @@
     "level": 6,
     "hp": 50,
     "exp": 10,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": [
+      "victoria"
+    ]
   },
   {
     "id": "9500203",
@@ -240,7 +252,10 @@
     "level": 10,
     "hp": 120,
     "exp": 19,
-    "isReleased": false
+    "isReleased": false,
+    "regionIds": [
+      "victoria"
+    ]
   },
   {
     "id": "9500167",
@@ -375,7 +390,7 @@
     "level": 19,
     "hp": 320,
     "exp": 35,
-    "isReleased": true
+    "isReleased": false
   },
   {
     "id": "9500194",
@@ -465,7 +480,10 @@
     "level": 20,
     "hp": 350,
     "exp": 32,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": [
+      "nihan-ariant"
+    ]
   },
   {
     "id": "2100101",
@@ -474,7 +492,10 @@
     "level": 21,
     "hp": 400,
     "exp": 34,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": [
+      "nihan-ariant"
+    ]
   },
   {
     "id": "9400539",
@@ -483,7 +504,7 @@
     "level": 21,
     "hp": 350,
     "exp": 37,
-    "isReleased": true
+    "isReleased": false
   },
   {
     "id": "2130103",
@@ -519,7 +540,10 @@
     "level": 22,
     "hp": 450,
     "exp": 37,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": [
+      "nihan-ariant"
+    ]
   },
   {
     "id": "2230108",
@@ -564,7 +588,10 @@
     "level": 23,
     "hp": 1000,
     "exp": 170,
-    "isReleased": false
+    "isReleased": false,
+    "regionIds": [
+      "victoria"
+    ]
   },
   {
     "id": "2230110",
@@ -609,7 +636,10 @@
     "level": 24,
     "hp": 550,
     "exp": 45,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": [
+      "nihan-ariant"
+    ]
   },
   {
     "id": "2110300",
@@ -618,7 +648,10 @@
     "level": 24,
     "hp": 600,
     "exp": 55,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": [
+      "nihan-ariant"
+    ]
   },
   {
     "id": "2230111",
@@ -708,7 +741,10 @@
     "level": 25,
     "hp": 550,
     "exp": 47,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": [
+      "nihan-ariant"
+    ]
   },
   {
     "id": "9500153",
@@ -744,7 +780,10 @@
     "level": 27,
     "hp": 700,
     "exp": 50,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": [
+      "nihan-ariant"
+    ]
   },
   {
     "id": "9400547",
@@ -789,7 +828,10 @@
     "level": 28,
     "hp": 750,
     "exp": 55,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": [
+      "nihan-ariant"
+    ]
   },
   {
     "id": "2230109",
@@ -798,7 +840,10 @@
     "level": 28,
     "hp": 740,
     "exp": 52,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": [
+      "aqua-road"
+    ]
   },
   {
     "id": "2100108",
@@ -825,7 +870,10 @@
     "level": 29,
     "hp": 790,
     "exp": 58,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": [
+      "aqua-road"
+    ]
   },
   {
     "id": "9400002",
@@ -1104,7 +1152,10 @@
     "level": 32,
     "hp": 1000,
     "exp": 65,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": [
+      "aqua-road"
+    ]
   },
   {
     "id": "3100101",
@@ -1113,7 +1164,10 @@
     "level": 32,
     "hp": 1000,
     "exp": 60,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": [
+      "nihan-ariant"
+    ]
   },
   {
     "id": "3110301",
@@ -1122,7 +1176,10 @@
     "level": 32,
     "hp": 1000,
     "exp": 62,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": [
+      "nihan-ariant"
+    ]
   },
   {
     "id": "9300005",
@@ -1140,7 +1197,10 @@
     "level": 32,
     "hp": 1000,
     "exp": 62,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": [
+      "victoria"
+    ]
   },
   {
     "id": "3210100",
@@ -1275,7 +1335,10 @@
     "level": 35,
     "hp": 800,
     "exp": 0,
-    "isReleased": false
+    "isReleased": false,
+    "regionIds": [
+      "victoria"
+    ]
   },
   {
     "id": "6130104",
@@ -1320,7 +1383,10 @@
     "level": 35,
     "hp": 1300,
     "exp": 72,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": [
+      "orbis"
+    ]
   },
   {
     "id": "3220000",
@@ -1356,7 +1422,10 @@
     "level": 35,
     "hp": 800,
     "exp": 0,
-    "isReleased": false
+    "isReleased": false,
+    "regionIds": [
+      "victoria"
+    ]
   },
   {
     "id": "3230101",
@@ -1365,7 +1434,10 @@
     "level": 35,
     "hp": 1200,
     "exp": 70,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": [
+      "victoria"
+    ]
   },
   {
     "id": "3230300",
@@ -1545,7 +1617,10 @@
     "level": 37,
     "hp": 1500,
     "exp": 77,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": [
+      "victoria"
+    ]
   },
   {
     "id": "3230303",
@@ -1680,7 +1755,10 @@
     "level": 40,
     "hp": 1800,
     "exp": 95,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": [
+      "nihan-ariant"
+    ]
   },
   {
     "id": "4230116",
@@ -1725,7 +1803,10 @@
     "level": 40,
     "hp": 1800,
     "exp": 90,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": [
+      "victoria"
+    ]
   },
   {
     "id": "9300009",
@@ -1878,7 +1959,10 @@
     "level": 42,
     "hp": 2400,
     "exp": 102,
-    "isReleased": false
+    "isReleased": false,
+    "regionIds": [
+      "victoria"
+    ]
   },
   {
     "id": "4230117",
@@ -2013,7 +2097,10 @@
     "level": 45,
     "hp": 2500,
     "exp": 105,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": [
+      "orbis"
+    ]
   },
   {
     "id": "4220000",
@@ -2121,7 +2208,10 @@
     "level": 45,
     "hp": 8925,
     "exp": 543,
-    "isReleased": false
+    "isReleased": false,
+    "regionIds": [
+      "orbis"
+    ]
   },
   {
     "id": "4230504",
@@ -2256,7 +2346,10 @@
     "level": 48,
     "hp": 2800,
     "exp": 120,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": [
+      "victoria"
+    ]
   },
   {
     "id": "4230506",
@@ -2463,7 +2556,10 @@
     "level": 52,
     "hp": 4000,
     "exp": 155,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": [
+      "orbis"
+    ]
   },
   {
     "id": "5130103",
@@ -2517,7 +2613,10 @@
     "level": 53,
     "hp": 6300,
     "exp": 320,
-    "isReleased": false
+    "isReleased": false,
+    "regionIds": [
+      "orbis"
+    ]
   },
   {
     "id": "9300055",
@@ -2526,7 +2625,10 @@
     "level": 53,
     "hp": 6300,
     "exp": 320,
-    "isReleased": false
+    "isReleased": false,
+    "regionIds": [
+      "orbis"
+    ]
   },
   {
     "id": "5100005",
@@ -2571,7 +2673,10 @@
     "level": 54,
     "hp": 6600,
     "exp": 325,
-    "isReleased": false
+    "isReleased": false,
+    "regionIds": [
+      "orbis"
+    ]
   },
   {
     "id": "9300054",
@@ -2580,7 +2685,10 @@
     "level": 54,
     "hp": 6600,
     "exp": 335,
-    "isReleased": false
+    "isReleased": false,
+    "regionIds": [
+      "orbis"
+    ]
   },
   {
     "id": "9300194",
@@ -2616,7 +2724,10 @@
     "level": 55,
     "hp": 6000,
     "exp": 240,
-    "isReleased": false
+    "isReleased": false,
+    "regionIds": [
+      "victoria"
+    ]
   },
   {
     "id": "5300100",
@@ -2778,7 +2889,10 @@
     "level": 56,
     "hp": 7200,
     "exp": 355,
-    "isReleased": false
+    "isReleased": false,
+    "regionIds": [
+      "orbis"
+    ]
   },
   {
     "id": "9300056",
@@ -2787,7 +2901,10 @@
     "level": 56,
     "hp": 7200,
     "exp": 355,
-    "isReleased": false
+    "isReleased": false,
+    "regionIds": [
+      "orbis"
+    ]
   },
   {
     "id": "9300109",
@@ -2904,7 +3021,10 @@
     "level": 58,
     "hp": 5600,
     "exp": 205,
-    "isReleased": false
+    "isReleased": false,
+    "regionIds": [
+      "nihan-magatia"
+    ]
   },
   {
     "id": "5120505",
@@ -2931,7 +3051,10 @@
     "level": 59,
     "hp": 9000,
     "exp": 420,
-    "isReleased": false
+    "isReleased": false,
+    "regionIds": [
+      "orbis"
+    ]
   },
   {
     "id": "9300112",
@@ -3606,7 +3729,10 @@
     "level": 65,
     "hp": 13000,
     "exp": 0,
-    "isReleased": false
+    "isReleased": false,
+    "regionIds": [
+      "victoria"
+    ]
   },
   {
     "id": "9300190",
@@ -3633,7 +3759,10 @@
     "level": 65,
     "hp": 672000,
     "exp": 17000,
-    "isReleased": false
+    "isReleased": false,
+    "regionIds": [
+      "orbis"
+    ]
   },
   {
     "id": "9300141",
@@ -3642,7 +3771,10 @@
     "level": 65,
     "hp": 11000,
     "exp": 255,
-    "isReleased": false
+    "isReleased": false,
+    "regionIds": [
+      "nihan-magatia"
+    ]
   },
   {
     "id": "9300174",
@@ -3660,7 +3792,10 @@
     "level": 65,
     "hp": 11000,
     "exp": 346,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": [
+      "nihan-magatia"
+    ]
   },
   {
     "id": "6230300",
@@ -4074,7 +4209,10 @@
     "level": 73,
     "hp": 15500,
     "exp": 320,
-    "isReleased": false
+    "isReleased": false,
+    "regionIds": [
+      "nihan-magatia"
+    ]
   },
   {
     "id": "7130103",
@@ -4227,7 +4365,10 @@
     "level": 77,
     "hp": 20000,
     "exp": 488,
-    "isReleased": false
+    "isReleased": false,
+    "regionIds": [
+      "nihan-magatia"
+    ]
   },
   {
     "id": "9300149",
@@ -4452,7 +4593,10 @@
     "level": 80,
     "hp": 27000,
     "exp": 850,
-    "isReleased": false
+    "isReleased": false,
+    "regionIds": [
+      "nihan-magatia"
+    ]
   },
   {
     "id": "9300139",
@@ -4641,7 +4785,10 @@
     "level": 90,
     "hp": 40000,
     "exp": 1780,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": [
+      "leafre"
+    ]
   },
   {
     "id": "9400205",
@@ -4695,7 +4842,10 @@
     "level": 92,
     "hp": 42500,
     "exp": 2000,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": [
+      "aqua-road"
+    ]
   },
   {
     "id": "9300098",
@@ -4704,7 +4854,10 @@
     "level": 92,
     "hp": 42500,
     "exp": 2000,
-    "isReleased": false
+    "isReleased": false,
+    "regionIds": [
+      "aqua-road"
+    ]
   },
   {
     "id": "8140701",
@@ -4713,7 +4866,10 @@
     "level": 93,
     "hp": 49000,
     "exp": 2100,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": [
+      "leafre"
+    ]
   },
   {
     "id": "8141000",
@@ -4731,7 +4887,10 @@
     "level": 94,
     "hp": 46000,
     "exp": 2200,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": [
+      "aqua-road"
+    ]
   },
   {
     "id": "9400120",
@@ -4794,7 +4953,10 @@
     "level": 97,
     "hp": 49000,
     "exp": 2500,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": [
+      "aqua-road"
+    ]
   },
   {
     "id": "8140703",
@@ -5172,7 +5334,10 @@
     "level": 110,
     "hp": 80000,
     "exp": 1500,
-    "isReleased": false
+    "isReleased": false,
+    "regionIds": [
+      "leafre"
+    ]
   },
   {
     "id": "9300076",
@@ -5181,7 +5346,10 @@
     "level": 110,
     "hp": 80000,
     "exp": 1500,
-    "isReleased": false
+    "isReleased": false,
+    "regionIds": [
+      "leafre"
+    ]
   },
   {
     "id": "8190003",
@@ -5190,7 +5358,10 @@
     "level": 110,
     "hp": 80000,
     "exp": 4500,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": [
+      "leafre"
+    ]
   },
   {
     "id": "8510000",
@@ -5217,7 +5388,10 @@
     "level": 113,
     "hp": 85000,
     "exp": 4750,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": [
+      "leafre"
+    ]
   },
   {
     "id": "9300028",
@@ -5505,7 +5679,10 @@
     "level": 200,
     "hp": 9999,
     "exp": 0,
-    "isReleased": false
+    "isReleased": false,
+    "regionIds": [
+      "victoria"
+    ]
   },
   {
     "id": "9100001",
@@ -5559,7 +5736,10 @@
     "level": 200,
     "hp": 99999,
     "exp": 0,
-    "isReleased": false
+    "isReleased": false,
+    "regionIds": [
+      "victoria"
+    ]
   },
   {
     "id": "9100009",
@@ -5568,7 +5748,10 @@
     "level": 200,
     "hp": 99999,
     "exp": 0,
-    "isReleased": false
+    "isReleased": false,
+    "regionIds": [
+      "victoria"
+    ]
   },
   {
     "id": "9300013",
