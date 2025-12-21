@@ -7,9 +7,8 @@
     "hp": 8,
     "exp": 3,
     "isReleased": true,
-    "regionIds": [
-      "victoria"
-    ]
+    "regionIds": ["victoria", "world-travel-japan"],
+    "attributes": null
   },
   {
     "id": "9500400",
@@ -45,7 +44,9 @@
     "level": 2,
     "hp": 20,
     "exp": 5,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["victoria", "world-travel-japan"],
+    "attributes": null
   },
   {
     "id": "100101",
@@ -55,9 +56,8 @@
     "hp": 15,
     "exp": 4,
     "isReleased": true,
-    "regionIds": [
-      "victoria"
-    ]
+    "regionIds": ["victoria", "world-travel-japan"],
+    "attributes": null
   },
   {
     "id": "130101",
@@ -67,18 +67,19 @@
     "hp": 40,
     "exp": 8,
     "isReleased": true,
-    "regionIds": [
-      "victoria"
-    ]
+    "regionIds": ["victoria", "world-travel-japan"],
+    "attributes": null
   },
   {
     "id": "130100",
     "name": "스텀프",
     "imageUrl": "https://maplestory.io/api/gms/62/mob/130100/icon?resize=2",
     "level": 4,
-    "hp": 45,
+    "hp": 40,
     "exp": 8,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["victoria", "world-travel-japan"],
+    "attributes": ["불속성약점"]
   },
   {
     "id": "9500302",
@@ -97,9 +98,8 @@
     "hp": 50,
     "exp": 10,
     "isReleased": true,
-    "regionIds": [
-      "victoria"
-    ]
+    "regionIds": ["victoria"],
+    "attributes": ["전기속성약점"]
   },
   {
     "id": "9500203",
@@ -117,7 +117,9 @@
     "level": 7,
     "hp": 75,
     "exp": 15,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["victoria"],
+    "attributes": null
   },
   {
     "id": "9420001",
@@ -126,7 +128,9 @@
     "level": 8,
     "hp": 75,
     "exp": 17,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["world-travel-japan"],
+    "attributes": null
   },
   {
     "id": "1210102",
@@ -135,7 +139,9 @@
     "level": 8,
     "hp": 80,
     "exp": 15,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["victoria", "world-travel-japan"],
+    "attributes": null
   },
   {
     "id": "9500204",
@@ -189,16 +195,20 @@
     "level": 10,
     "hp": 250,
     "exp": 18,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["victoria"],
+    "attributes": ["불속성약점"]
   },
   {
     "id": "2130100",
     "name": "다크 엑스텀프",
     "imageUrl": "https://maplestory.io/api/gms/62/mob/2130100/icon?resize=2",
-    "level": 10,
+    "level": 22,
     "hp": 550,
     "exp": 38,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["victoria", "ludus-lake-underground-town"],
+    "attributes": ["불속성약점"]
   },
   {
     "id": "1210101",
@@ -207,7 +217,9 @@
     "level": 10,
     "hp": 120,
     "exp": 20,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["victoria"],
+    "attributes": null
   },
   {
     "id": "9400513",
@@ -270,10 +282,12 @@
     "id": "9300064",
     "name": "도깨비불",
     "imageUrl": "https://maplestory.io/api/gms/62/mob/9300064/icon?resize=2",
-    "level": 11,
-    "hp": 155,
-    "exp": 22,
-    "isReleased": false
+    "level": 60,
+    "hp": 3500,
+    "exp": 0,
+    "isReleased": true,
+    "regionIds": ["ludus-lake-underground-town"],
+    "attributes": ["성속성약점", "얼음속성약점"]
   },
   {
     "id": "1120100",
@@ -282,7 +296,9 @@
     "level": 12,
     "hp": 200,
     "exp": 24,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["victoria"],
+    "attributes": ["전기속성약점"]
   },
   {
     "id": "9500184",
@@ -318,7 +334,9 @@
     "level": 15,
     "hp": 240,
     "exp": 26,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["victoria"],
+    "attributes": null
   },
   {
     "id": "9500196",
@@ -336,7 +354,9 @@
     "level": 15,
     "hp": 250,
     "exp": 26,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["victoria"],
+    "attributes": ["독속성무효"]
   },
   {
     "id": "9500151",
@@ -372,7 +392,9 @@
     "level": 17,
     "hp": 300,
     "exp": 30,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["victoria"],
+    "attributes": null
   },
   {
     "id": "1140100",
@@ -381,7 +403,9 @@
     "level": 19,
     "hp": 330,
     "exp": 33,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["victoria"],
+    "attributes": null
   },
   {
     "id": "9400538",
@@ -427,7 +451,9 @@
     "level": 20,
     "hp": 340,
     "exp": 33,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["world-travel-japan"],
+    "attributes": null
   },
   {
     "id": "9500187",
@@ -454,7 +480,9 @@
     "level": 20,
     "hp": 300,
     "exp": 33,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["victoria"],
+    "attributes": null
   },
   {
     "id": "9500152",
@@ -472,7 +500,9 @@
     "level": 20,
     "hp": 350,
     "exp": 32,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["victoria", "world-travel-japan"],
+    "attributes": null
   },
   {
     "id": "2100100",
@@ -484,7 +514,8 @@
     "isReleased": true,
     "regionIds": [
       "nihan-ariant"
-    ]
+    ],
+    "attributes": null
   },
   {
     "id": "2100101",
@@ -496,7 +527,8 @@
     "isReleased": true,
     "regionIds": [
       "nihan-ariant"
-    ]
+    ],
+    "attributes": null
   },
   {
     "id": "9400539",
@@ -515,7 +547,9 @@
     "level": 21,
     "hp": 285,
     "exp": 38,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["victoria"],
+    "attributes": null
   },
   {
     "id": "2110200",
@@ -524,7 +558,9 @@
     "level": 22,
     "hp": 300,
     "exp": 35,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["victoria"],
+    "attributes": null
   },
   {
     "id": "9600002",
@@ -533,7 +569,9 @@
     "level": 22,
     "hp": 380,
     "exp": 37,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["world-travel-japan"],
+    "attributes": null
   },
   {
     "id": "2100102",
@@ -545,7 +583,8 @@
     "isReleased": true,
     "regionIds": [
       "nihan-ariant"
-    ]
+    ],
+    "attributes": ["불속성약점"]
   },
   {
     "id": "2230108",
@@ -554,7 +593,9 @@
     "level": 22,
     "hp": 400,
     "exp": 36,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["aqua-road"],
+    "attributes": ["불속성반감"]
   },
   {
     "id": "9410000",
@@ -563,7 +604,9 @@
     "level": 23,
     "hp": 500,
     "exp": 40,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["world-travel-japan"],
+    "attributes": null
   },
   {
     "id": "2100105",
@@ -572,7 +615,9 @@
     "level": 23,
     "hp": 500,
     "exp": 42,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["nihan-ariant"],
+    "attributes": ["독속성반감"]
   },
   {
     "id": "2230105",
@@ -581,7 +626,9 @@
     "level": 23,
     "hp": 500,
     "exp": 42,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["aqua-road"],
+    "attributes": ["독속성약점", "불속성반감"]
   },
   {
     "id": "9300027",
@@ -602,7 +649,9 @@
     "level": 23,
     "hp": 500,
     "exp": 42,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["victoria"],
+    "attributes": null
   },
   {
     "id": "5200000",
@@ -611,16 +660,20 @@
     "level": 23,
     "hp": 600,
     "exp": 40,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["orbis"],
+    "attributes": null
   },
   {
     "id": "9500325",
     "name": "킹슬라임",
     "imageUrl": "https://maplestory.io/api/gms/62/mob/9500325/icon?resize=2",
-    "level": 23,
-    "hp": 5000,
-    "exp": 210,
-    "isReleased": false
+    "level": 40,
+    "hp": 8000,
+    "exp": 800,
+    "isReleased": true,
+    "regionIds": ["victoria"],
+    "attributes": ["얼음속성반감", "불속성반감", "전기속성반감", "성속성반감"]
   },
   {
     "id": "2230103",
@@ -629,7 +682,9 @@
     "level": 23,
     "hp": 450,
     "exp": 42,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["ludus-lake-earth-defense-hq"],
+    "attributes": ["성속성반감", "불속성약점"]
   },
   {
     "id": "2100106",
@@ -641,7 +696,8 @@
     "isReleased": true,
     "regionIds": [
       "nihan-ariant"
-    ]
+    ],
+    "attributes": ["불속성반감"]
   },
   {
     "id": "2110300",
@@ -653,7 +709,8 @@
     "isReleased": true,
     "regionIds": [
       "nihan-ariant"
-    ]
+    ],
+    "attributes": null
   },
   {
     "id": "2230111",
@@ -662,7 +719,9 @@
     "level": 24,
     "hp": 600,
     "exp": 45,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["victoria"],
+    "attributes": null
   },
   {
     "id": "2230101",
@@ -671,7 +730,9 @@
     "level": 24,
     "hp": 500,
     "exp": 42,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["victoria"],
+    "attributes": ["성속성약점"]
   },
   {
     "id": "2230107",
@@ -680,7 +741,9 @@
     "level": 24,
     "hp": 500,
     "exp": 45,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["aqua-road"],
+    "attributes": ["독속성약점", "불속성반감"]
   },
   {
     "id": "9400000",
@@ -698,7 +761,9 @@
     "level": 25,
     "hp": 500,
     "exp": 46,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["world-travel-japan"],
+    "attributes": null
   },
   {
     "id": "9410001",
@@ -707,7 +772,9 @@
     "level": 25,
     "hp": 550,
     "exp": 43,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["world-travel-japan"],
+    "attributes": null
   },
   {
     "id": "2230106",
@@ -716,7 +783,9 @@
     "level": 25,
     "hp": 550,
     "exp": 42,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["aqua-road"],
+    "attributes": ["독속성약점", "불속성반감"]
   },
   {
     "id": "9600003",
@@ -725,7 +794,9 @@
     "level": 25,
     "hp": 550,
     "exp": 42,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["world-travel-japan"],
+    "attributes": null
   },
   {
     "id": "2230102",
@@ -734,7 +805,9 @@
     "level": 25,
     "hp": 550,
     "exp": 42,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["victoria"],
+    "attributes": null
   },
   {
     "id": "2100103",
@@ -746,7 +819,8 @@
     "isReleased": true,
     "regionIds": [
       "nihan-ariant"
-    ]
+    ],
+    "attributes": ["불속성약점"]
   },
   {
     "id": "9500153",
@@ -786,7 +860,8 @@
     "isReleased": true,
     "regionIds": [
       "nihan-ariant"
-    ]
+    ],
+    "attributes": ["불속성반감"]
   },
   {
     "id": "9400547",
@@ -805,7 +880,9 @@
     "level": 27,
     "hp": 720,
     "exp": 50,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["victoria"],
+    "attributes": null
   },
   {
     "id": "2230104",
@@ -814,7 +891,9 @@
     "level": 28,
     "hp": 780,
     "exp": 55,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["ludus-lake-earth-defense-hq"],
+    "attributes": ["독속성무효"]
   },
   {
     "id": "9420000",
@@ -823,7 +902,9 @@
     "level": 28,
     "hp": 720,
     "exp": 58,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["world-travel-japan"],
+    "attributes": null
   },
   {
     "id": "2100104",
@@ -835,7 +916,8 @@
     "isReleased": true,
     "regionIds": [
       "nihan-ariant"
-    ]
+    ],
+    "attributes": ["불속성약점"]
   },
   {
     "id": "2230109",
@@ -845,9 +927,8 @@
     "hp": 740,
     "exp": 52,
     "isReleased": true,
-    "regionIds": [
-      "aqua-road"
-    ]
+    "regionIds": ["aqua-road"],
+    "attributes": ["전기속성약점", "독속성약점", "불속성반감"]
   },
   {
     "id": "2100108",
@@ -856,7 +937,9 @@
     "level": 29,
     "hp": 780,
     "exp": 58,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["nihan-ariant"],
+    "attributes": null
   },
   {
     "id": "2110301",
@@ -865,7 +948,9 @@
     "level": 29,
     "hp": 780,
     "exp": 58,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["nihan-ariant"],
+    "attributes": null
   },
   {
     "id": "2230200",
@@ -875,9 +960,8 @@
     "hp": 790,
     "exp": 58,
     "isReleased": true,
-    "regionIds": [
-      "aqua-road"
-    ]
+    "regionIds": ["aqua-road"],
+    "attributes": ["얼음속성약점", "독속성반감", "불속성반감"]
   },
   {
     "id": "9400002",
@@ -886,34 +970,42 @@
     "level": 30,
     "hp": 920,
     "exp": 55,
-    "isReleased": false
+    "isReleased": true,
+    "regionIds": ["world-travel-japan"],
+    "attributes": ["불속성약점"]
   },
   {
     "id": "9300129",
     "name": "레츠",
     "imageUrl": "https://maplestory.io/api/gms/62/mob/9300129/icon?resize=2",
-    "level": 30,
-    "hp": 1600,
-    "exp": 115,
-    "isReleased": false
+    "level": 36,
+    "hp": 1400,
+    "exp": 78,
+    "isReleased": true,
+    "regionIds": ["ludibrium", "ludus-lake-underground-town"],
+    "attributes": null
   },
   {
     "id": "9300133",
     "name": "로보토이",
     "imageUrl": "https://maplestory.io/api/gms/62/mob/9300133/icon?resize=2",
-    "level": 30,
-    "hp": 3000,
-    "exp": 120,
-    "isReleased": false
+    "level": 41,
+    "hp": 2000,
+    "exp": 99,
+    "isReleased": true,
+    "regionIds": ["ludibrium"],
+    "attributes": ["얼음속성반감", "불속성반감"]
   },
   {
     "id": "9300135",
     "name": "마스터 크로노스",
     "imageUrl": "https://maplestory.io/api/gms/62/mob/9300135/icon?resize=2",
-    "level": 30,
-    "hp": 3000,
-    "exp": 153,
-    "isReleased": false
+    "level": 46,
+    "hp": 2600,
+    "exp": 115,
+    "isReleased": true,
+    "regionIds": ["ludibrium"],
+    "attributes": null
   },
   {
     "id": "9400548",
@@ -932,34 +1024,42 @@
     "level": 30,
     "hp": 950,
     "exp": 60,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["ludus-lake-earth-defense-hq"],
+    "attributes": null
   },
   {
     "id": "9400001",
     "name": "불너구리",
     "imageUrl": "https://maplestory.io/api/gms/62/mob/9400001/icon?resize=2",
     "level": 30,
-    "hp": 1200,
+    "hp": 900,
     "exp": 55,
-    "isReleased": false
+    "isReleased": true,
+    "regionIds": ["world-travel-japan"],
+    "attributes": ["얼음속성약점"]
   },
   {
     "id": "9300127",
     "name": "브라운테니",
     "imageUrl": "https://maplestory.io/api/gms/62/mob/9300127/icon?resize=2",
     "level": 30,
-    "hp": 1800,
-    "exp": 110,
-    "isReleased": false
+    "hp": 950,
+    "exp": 60,
+    "isReleased": true,
+    "regionIds": ["ludibrium"],
+    "attributes": null
   },
   {
     "id": "9300128",
     "name": "블록퍼스",
     "imageUrl": "https://maplestory.io/api/gms/62/mob/9300128/icon?resize=2",
-    "level": 30,
-    "hp": 1800,
-    "exp": 113,
-    "isReleased": false
+    "level": 35,
+    "hp": 1300,
+    "exp": 72,
+    "isReleased": true,
+    "regionIds": ["ludus-lake-earth-defense-hq"],
+    "attributes": null
   },
   {
     "id": "9500189",
@@ -977,7 +1077,9 @@
     "level": 30,
     "hp": 900,
     "exp": 55,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["orbis"],
+    "attributes": ["성속성반감", "전기속성반감", "얼음속성약점"]
   },
   {
     "id": "9100013",
@@ -1004,7 +1106,9 @@
     "level": 30,
     "hp": 900,
     "exp": 55,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["orbis"],
+    "attributes": ["얼음속성반감", "불속성약점"]
   },
   {
     "id": "9600004",
@@ -1037,10 +1141,12 @@
     "id": "9300130",
     "name": "크로노스",
     "imageUrl": "https://maplestory.io/api/gms/62/mob/9300130/icon?resize=2",
-    "level": 30,
-    "hp": 2300,
-    "exp": 113,
-    "isReleased": false
+    "level": 37,
+    "hp": 1750,
+    "exp": 82,
+    "isReleased": true,
+    "regionIds": ["ludibrium"],
+    "attributes": null
   },
   {
     "id": "3000006",
@@ -1049,7 +1155,9 @@
     "level": 30,
     "hp": 900,
     "exp": 55,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["aqua-road"],
+    "attributes": ["독속성약점", "불속성반감"]
   },
   {
     "id": "3100102",
@@ -1058,16 +1166,20 @@
     "level": 30,
     "hp": 870,
     "exp": 60,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["nihan-ariant"],
+    "attributes": null
   },
   {
     "id": "9300134",
     "name": "킹 블록골렘",
     "imageUrl": "https://maplestory.io/api/gms/62/mob/9300134/icon?resize=2",
-    "level": 30,
-    "hp": 3300,
-    "exp": 135,
-    "isReleased": false
+    "level": 45,
+    "hp": 2600,
+    "exp": 110,
+    "isReleased": true,
+    "regionIds": ["ludus-lake-earth-defense-hq"],
+    "attributes": null
   },
   {
     "id": "9300093",
@@ -1082,10 +1194,12 @@
     "id": "9300132",
     "name": "틱톡",
     "imageUrl": "https://maplestory.io/api/gms/62/mob/9300132/icon?resize=2",
-    "level": 30,
-    "hp": 2400,
-    "exp": 117,
-    "isReleased": false
+    "level": 40,
+    "hp": 1900,
+    "exp": 95,
+    "isReleased": true,
+    "regionIds": ["ludibrium"],
+    "attributes": null
   },
   {
     "id": "5200002",
@@ -1094,7 +1208,9 @@
     "level": 30,
     "hp": 900,
     "exp": 55,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["orbis"],
+    "attributes": ["불속성반감", "얼음속성약점"]
   },
   {
     "id": "3000001",
@@ -1103,7 +1219,9 @@
     "level": 30,
     "hp": 800,
     "exp": 120,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["orbis"],
+    "attributes": null
   },
   {
     "id": "9300180",
@@ -1121,7 +1239,9 @@
     "level": 31,
     "hp": 800,
     "exp": 62,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["ludus-lake-earth-defense-hq"],
+    "attributes": null
   },
   {
     "id": "3110102",
@@ -1130,7 +1250,9 @@
     "level": 32,
     "hp": 1000,
     "exp": 65,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["ludus-lake-earth-defense-hq"],
+    "attributes": null
   },
   {
     "id": "3110100",
@@ -1139,7 +1261,9 @@
     "level": 32,
     "hp": 1200,
     "exp": 60,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["victoria"],
+    "attributes": ["얼음속성반감", "불속성약점"]
   },
   {
     "id": "5300000",
@@ -1148,7 +1272,9 @@
     "level": 32,
     "hp": 1000,
     "exp": 60,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["ellin-forest", "orbis"],
+    "attributes": ["얼음속성반감", "불속성약점"]
   },
   {
     "id": "3230104",
@@ -1158,9 +1284,8 @@
     "hp": 1000,
     "exp": 65,
     "isReleased": true,
-    "regionIds": [
-      "aqua-road"
-    ]
+    "regionIds": ["aqua-road"],
+    "attributes": ["불속성반감"]
   },
   {
     "id": "3100101",
@@ -1172,7 +1297,8 @@
     "isReleased": true,
     "regionIds": [
       "nihan-ariant"
-    ]
+    ],
+    "attributes": ["불속성약점", "얼음속성약점"]
   },
   {
     "id": "3110301",
@@ -1184,7 +1310,8 @@
     "isReleased": true,
     "regionIds": [
       "nihan-ariant"
-    ]
+    ],
+    "attributes": ["불속성반감", "얼음속성약점"]
   },
   {
     "id": "9300005",
@@ -1214,7 +1341,9 @@
     "level": 32,
     "hp": 1000,
     "exp": 60,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["victoria"],
+    "attributes": ["불속성반감", "얼음속성약점"]
   },
   {
     "id": "3110101",
@@ -1223,7 +1352,9 @@
     "level": 32,
     "hp": 1050,
     "exp": 65,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["ludibrium"],
+    "attributes": null
   },
   {
     "id": "5300001",
@@ -1232,7 +1363,9 @@
     "level": 33,
     "hp": 1100,
     "exp": 65,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["orbis"],
+    "attributes": ["성속성약점"]
   },
   {
     "id": "9600006",
@@ -1241,7 +1374,9 @@
     "level": 33,
     "hp": 1200,
     "exp": 66,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["world-travel-japan"],
+    "attributes": null
   },
   {
     "id": "3210202",
@@ -1250,7 +1385,9 @@
     "level": 33,
     "hp": 1100,
     "exp": 65,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["orbis"],
+    "attributes": ["얼음속성반감", "불속성약점"]
   },
   {
     "id": "3210201",
@@ -1259,7 +1396,9 @@
     "level": 33,
     "hp": 1100,
     "exp": 65,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["orbis"],
+    "attributes": ["전기속성반감", "얼음속성약점"]
   },
   {
     "id": "3210200",
@@ -1268,7 +1407,9 @@
     "level": 33,
     "hp": 1100,
     "exp": 65,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["orbis"],
+    "attributes": ["불속성반감", "얼음속성약점"]
   },
   {
     "id": "3210204",
@@ -1277,7 +1418,9 @@
     "level": 34,
     "hp": 1200,
     "exp": 70,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["ludibrium"],
+    "attributes": null
   },
   {
     "id": "3210205",
@@ -1286,7 +1429,9 @@
     "level": 34,
     "hp": 1150,
     "exp": 70,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["ludus-lake-earth-defense-hq"],
+    "attributes": null
   },
   {
     "id": "9300006",
@@ -1313,7 +1458,9 @@
     "level": 34,
     "hp": 1100,
     "exp": 70,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["ludibrium"],
+    "attributes": null
   },
   {
     "id": "9000300",
@@ -1390,9 +1537,8 @@
     "hp": 1300,
     "exp": 72,
     "isReleased": true,
-    "regionIds": [
-      "orbis"
-    ]
+    "regionIds": ["orbis"],
+    "attributes": ["성속성반감"]
   },
   {
     "id": "3220000",
@@ -1401,7 +1547,9 @@
     "level": 35,
     "hp": 7000,
     "exp": 405,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["victoria"],
+    "attributes": null
   },
   {
     "id": "9000201",
@@ -1452,7 +1600,9 @@
     "level": 35,
     "hp": 1700,
     "exp": 150,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["victoria"],
+    "attributes": null
   },
   {
     "id": "5400000",
@@ -1461,7 +1611,9 @@
     "level": 35,
     "hp": 1400,
     "exp": 75,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["ellin-forest", "orbis"],
+    "attributes": ["얼음속성반감", "불속성약점"]
   },
   {
     "id": "9300007",
@@ -1479,7 +1631,9 @@
     "level": 35,
     "hp": 1250,
     "exp": 70,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["victoria"],
+    "attributes": ["독속성반감"]
   },
   {
     "id": "9500143",
@@ -1540,9 +1694,11 @@
     "name": "흑염소",
     "imageUrl": "https://maplestory.io/api/gms/62/mob/9600005/icon?resize=2",
     "level": 35,
-    "hp": 1250,
+    "hp": 1200,
     "exp": 71,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["world-travel-japan"],
+    "attributes": null
   },
   {
     "id": "3210450",
@@ -1551,7 +1707,9 @@
     "level": 36,
     "hp": 1430,
     "exp": 80,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["aqua-road", "orbis"],
+    "attributes": ["얼음속성반감", "불속성반감"]
   },
   {
     "id": "9410009",
@@ -1560,7 +1718,9 @@
     "level": 36,
     "hp": 1550,
     "exp": 81,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["world-travel-japan"],
+    "attributes": null
   },
   {
     "id": "9410011",
@@ -1569,7 +1729,9 @@
     "level": 36,
     "hp": 1400,
     "exp": 81,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["world-travel-japan"],
+    "attributes": null
   },
   {
     "id": "3210206",
@@ -1578,7 +1740,9 @@
     "level": 36,
     "hp": 1350,
     "exp": 77,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["ludus-lake-earth-defense-hq"],
+    "attributes": null
   },
   {
     "id": "9400542",
@@ -1597,7 +1761,9 @@
     "level": 36,
     "hp": 1400,
     "exp": 77,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["ludibrium"],
+    "attributes": null
   },
   {
     "id": "9600008",
@@ -1606,7 +1772,9 @@
     "level": 37,
     "hp": 1500,
     "exp": 79,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["world-travel-japan"],
+    "attributes": null
   },
   {
     "id": "3230102",
@@ -1636,7 +1804,9 @@
     "level": 37,
     "hp": 1700,
     "exp": 82,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["ludus-lake-earth-defense-hq"],
+    "attributes": null
   },
   {
     "id": "9410007",
@@ -1644,8 +1814,10 @@
     "imageUrl": "https://maplestory.io/api/gms/62/mob/9410007/icon?resize=2",
     "level": 38,
     "hp": 1900,
-    "exp": 90,
-    "isReleased": true
+    "exp": 88,
+    "isReleased": true,
+    "regionIds": ["world-travel-japan"],
+    "attributes": ["전기속성약점", "독속성반감"]
   },
   {
     "id": "3220001",
@@ -1654,7 +1826,9 @@
     "level": 38,
     "hp": 7700,
     "exp": 445,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["nihan-ariant"],
+    "attributes": null
   },
   {
     "id": "9410005",
@@ -1662,8 +1836,10 @@
     "imageUrl": "https://maplestory.io/api/gms/62/mob/9410005/icon?resize=2",
     "level": 38,
     "hp": 1900,
-    "exp": 90,
-    "isReleased": true
+    "exp": 88,
+    "isReleased": true,
+    "regionIds": ["world-travel-japan"],
+    "attributes": ["얼음속성약점", "불속성반감"]
   },
   {
     "id": "3230304",
@@ -1672,7 +1848,9 @@
     "level": 38,
     "hp": 1830,
     "exp": 85,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["ludus-lake-earth-defense-hq"],
+    "attributes": null
   },
   {
     "id": "9410006",
@@ -1680,8 +1858,10 @@
     "imageUrl": "https://maplestory.io/api/gms/62/mob/9410006/icon?resize=2",
     "level": 38,
     "hp": 1900,
-    "exp": 90,
-    "isReleased": true
+    "exp": 88,
+    "isReleased": true,
+    "regionIds": ["world-travel-japan"],
+    "attributes": ["독속성약점", "전기속성반감"]
   },
   {
     "id": "9600007",
@@ -1690,7 +1870,9 @@
     "level": 38,
     "hp": 1800,
     "exp": 86,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["world-travel-japan"],
+    "attributes": null
   },
   {
     "id": "3230405",
@@ -1699,7 +1881,9 @@
     "level": 38,
     "hp": 1850,
     "exp": 85,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["aqua-road"],
+    "attributes": ["불속성반감"]
   },
   {
     "id": "9500145",
@@ -1717,7 +1901,9 @@
     "level": 38,
     "hp": 1850,
     "exp": 85,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["ludus-lake-earth-defense-hq"],
+    "attributes": null
   },
   {
     "id": "3110303",
@@ -1734,9 +1920,11 @@
     "name": "장난감 목마",
     "imageUrl": "https://maplestory.io/api/gms/62/mob/9300131/icon?resize=2",
     "level": 39,
-    "hp": 2300,
-    "exp": 115,
-    "isReleased": false
+    "hp": 1920,
+    "exp": 92,
+    "isReleased": true,
+    "regionIds": ["ludibrium"],
+    "attributes": null
   },
   {
     "id": "3230308",
@@ -1745,7 +1933,9 @@
     "level": 39,
     "hp": 1900,
     "exp": 85,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["ludus-lake-earth-defense-hq"],
+    "attributes": null
   },
   {
     "id": "9410003",
@@ -1754,7 +1944,9 @@
     "level": 40,
     "hp": 1850,
     "exp": 95,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["world-travel-japan"],
+    "attributes": null
   },
   {
     "id": "4230600",
@@ -1766,7 +1958,8 @@
     "isReleased": true,
     "regionIds": [
       "nihan-ariant"
-    ]
+    ],
+    "attributes": ["불속성약점", "얼음속성약점"]
   },
   {
     "id": "4230116",
@@ -1775,7 +1968,9 @@
     "level": 40,
     "hp": 1930,
     "exp": 95,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["ludus-lake-earth-defense-hq"],
+    "attributes": null
   },
   {
     "id": "4230500",
@@ -1784,7 +1979,8 @@
     "level": 40,
     "hp": 1900,
     "exp": 95,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["mu-lung"]
   },
   {
     "id": "9420003",
@@ -1792,8 +1988,10 @@
     "imageUrl": "https://maplestory.io/api/gms/62/mob/9420003/icon?resize=2",
     "level": 40,
     "hp": 1920,
-    "exp": 95,
-    "isReleased": true
+    "exp": 0,
+    "isReleased": true,
+    "regionIds": ["world-travel-japan"],
+    "attributes": null
   },
   {
     "id": "9400011",
@@ -1802,7 +2000,9 @@
     "level": 40,
     "hp": 1920,
     "exp": 93,
-    "isReleased": false
+    "isReleased": true,
+    "regionIds": ["world-travel-japan"],
+    "attributes": ["얼음속성약점", "불속성반감"]
   },
   {
     "id": "4230101",
@@ -1832,7 +2032,9 @@
     "level": 40,
     "hp": 2000,
     "exp": 85,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["victoria"],
+    "attributes": ["얼음속성반감", "불속성약점"]
   },
   {
     "id": "4230201",
@@ -1841,7 +2043,9 @@
     "level": 40,
     "hp": 1910,
     "exp": 97,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["aqua-road"],
+    "attributes": ["독속성반감", "불속성반감"]
   },
   {
     "id": "9500178",
@@ -1868,7 +2072,9 @@
     "level": 40,
     "hp": 1900,
     "exp": 95,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["aqua-road"],
+    "attributes": ["독속성약점", "불속성반감"]
   },
   {
     "id": "9500318",
@@ -1886,7 +2092,9 @@
     "level": 41,
     "hp": 2080,
     "exp": 99,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["ludus-lake-earth-defense-hq"],
+    "attributes": null
   },
   {
     "id": "9400543",
@@ -1905,7 +2113,9 @@
     "level": 41,
     "hp": 1600,
     "exp": 95,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["aqua-road", "ellin-forest"],
+    "attributes": null
   },
   {
     "id": "4230114",
@@ -1914,7 +2124,9 @@
     "level": 41,
     "hp": 2050,
     "exp": 99,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["ludibrium"],
+    "attributes": null
   },
   {
     "id": "4230501",
@@ -1923,7 +2135,8 @@
     "level": 41,
     "hp": 2000,
     "exp": 99,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["mu-lung"]
   },
   {
     "id": "4230105",
@@ -1932,7 +2145,9 @@
     "level": 42,
     "hp": 2100,
     "exp": 99,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["orbis"],
+    "attributes": ["불속성약점"]
   },
   {
     "id": "4230109",
@@ -1941,7 +2156,9 @@
     "level": 42,
     "hp": 2400,
     "exp": 102,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["ludus-lake-earth-defense-hq"],
+    "attributes": ["전기속성반감", "얼음속성반감", "불속성약점"]
   },
   {
     "id": "4110300",
@@ -1958,9 +2175,11 @@
     "name": "아이언 호그",
     "imageUrl": "https://maplestory.io/api/gms/62/mob/9300060/icon?resize=2",
     "level": 42,
-    "hp": 1100,
-    "exp": 296,
-    "isReleased": false
+    "hp": 2200,
+    "exp": 99,
+    "isReleased": true,
+    "regionIds": ["victoria"],
+    "attributes": null
   },
   {
     "id": "4250000",
@@ -1981,7 +2200,9 @@
     "level": 42,
     "hp": 2300,
     "exp": 102,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["ludus-lake-earth-defense-hq"],
+    "attributes": null
   },
   {
     "id": "4230124",
@@ -1990,7 +2211,9 @@
     "level": 42,
     "hp": 2300,
     "exp": 102,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["aqua-road"],
+    "attributes": ["얼음속성반감", "불속성반감"]
   },
   {
     "id": "9500146",
@@ -2008,7 +2231,9 @@
     "level": 42,
     "hp": 2300,
     "exp": 102,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["world-travel-japan"],
+    "attributes": null
   },
   {
     "id": "4230123",
@@ -2017,7 +2242,9 @@
     "level": 43,
     "hp": 2400,
     "exp": 103,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["aqua-road"],
+    "attributes": ["전기속성반감", "불속성반감"]
   },
   {
     "id": "4230108",
@@ -2026,7 +2253,9 @@
     "level": 43,
     "hp": 2300,
     "exp": 102,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["ellin-forest"],
+    "attributes": null
   },
   {
     "id": "9300084",
@@ -2062,7 +2291,8 @@
     "level": 43,
     "hp": 2400,
     "exp": 103,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["mu-lung"]
   },
   {
     "id": "9400546",
@@ -2081,7 +2311,9 @@
     "level": 44,
     "hp": 2450,
     "exp": 105,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["ludibrium"],
+    "attributes": null
   },
   {
     "id": "4230125",
@@ -2090,7 +2322,9 @@
     "level": 44,
     "hp": 2450,
     "exp": 107,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["victoria"],
+    "attributes": ["성속성약점"]
   },
   {
     "id": "4230120",
@@ -2099,7 +2333,9 @@
     "level": 44,
     "hp": 2480,
     "exp": 105,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["ludus-lake-earth-defense-hq"],
+    "attributes": null
   },
   {
     "id": "4230106",
@@ -2109,9 +2345,8 @@
     "hp": 2500,
     "exp": 105,
     "isReleased": true,
-    "regionIds": [
-      "orbis"
-    ]
+    "regionIds": ["orbis"],
+    "attributes": null
   },
   {
     "id": "4220000",
@@ -2120,7 +2355,9 @@
     "level": 45,
     "hp": 7800,
     "exp": 330,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["aqua-road"],
+    "attributes": null
   },
   {
     "id": "4220001",
@@ -2138,7 +2375,9 @@
     "level": 45,
     "hp": 2800,
     "exp": 130,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["world-travel-japan"],
+    "attributes": ["독속성약점", "불속성약점"]
   },
   {
     "id": "4230400",
@@ -2147,7 +2386,9 @@
     "level": 45,
     "hp": 2650,
     "exp": 115,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["victoria"],
+    "attributes": null
   },
   {
     "id": "4230118",
@@ -2156,7 +2397,9 @@
     "level": 45,
     "hp": 2550,
     "exp": 110,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["ludus-lake-earth-defense-hq"],
+    "attributes": ["전기속성반감"]
   },
   {
     "id": "4230300",
@@ -2165,7 +2408,9 @@
     "level": 45,
     "hp": 2600,
     "exp": 110,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["ludus-lake-underground-town"],
+    "attributes": ["얼음속성반감", "불속성약점"]
   },
   {
     "id": "9500148",
@@ -2183,7 +2428,8 @@
     "level": 45,
     "hp": 2550,
     "exp": 110,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["mu-lung"]
   },
   {
     "id": "9300160",
@@ -2201,7 +2447,9 @@
     "level": 45,
     "hp": 2700,
     "exp": 105,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["victoria"],
+    "attributes": null
   },
   {
     "id": "9400004",
@@ -2210,7 +2458,9 @@
     "level": 45,
     "hp": 2600,
     "exp": 110,
-    "isReleased": false
+    "isReleased": true,
+    "regionIds": ["world-travel-japan"],
+    "attributes": ["전기속성약점"]
   },
   {
     "id": "9500170",
@@ -2231,7 +2481,8 @@
     "level": 45,
     "hp": 2550,
     "exp": 110,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["mu-lung"]
   },
   {
     "id": "9300161",
@@ -2249,7 +2500,9 @@
     "level": 46,
     "hp": 2600,
     "exp": 110,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["ludus-lake-earth-defense-hq"],
+    "attributes": null
   },
   {
     "id": "4130101",
@@ -2286,7 +2539,9 @@
     "level": 47,
     "hp": 2700,
     "exp": 115,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["orbis"],
+    "attributes": ["성속성약점"]
   },
   {
     "id": "4230505",
@@ -2295,7 +2550,8 @@
     "level": 47,
     "hp": 2700,
     "exp": 117,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["mu-lung"]
   },
   {
     "id": "4130103",
@@ -2304,7 +2560,9 @@
     "level": 47,
     "hp": 11000,
     "exp": 720,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["ludus-lake-earth-defense-hq"],
+    "attributes": null
   },
   {
     "id": "4230126",
@@ -2313,7 +2571,9 @@
     "level": 47,
     "hp": 2750,
     "exp": 117,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["victoria"],
+    "attributes": ["성속성약점"]
   },
   {
     "id": "4110302",
@@ -2332,7 +2592,9 @@
     "level": 47,
     "hp": 2800,
     "exp": 139,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["world-travel-japan"],
+    "attributes": ["독속성약점", "불속성약점"]
   },
   {
     "id": "9300010",
@@ -2350,7 +2612,9 @@
     "level": 47,
     "hp": 2800,
     "exp": 117,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["world-travel-japan"],
+    "attributes": null
   },
   {
     "id": "4230102",
@@ -2371,7 +2635,8 @@
     "level": 48,
     "hp": 2800,
     "exp": 123,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["mu-lung"]
   },
   {
     "id": "4230104",
@@ -2389,7 +2654,9 @@
     "level": 49,
     "hp": 9000,
     "exp": 580,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["ludus-lake-earth-defense-hq"],
+    "attributes": ["얼음속성반감", "전기속성반감", "불속성반감", "성속성반감"]
   },
   {
     "id": "9400544",
@@ -2408,7 +2675,9 @@
     "level": 50,
     "hp": 20692,
     "exp": 1780,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["world-travel-japan"],
+    "attributes": null
   },
   {
     "id": "5130100",
@@ -2417,7 +2686,9 @@
     "level": 50,
     "hp": 3200,
     "exp": 135,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["victoria"],
+    "attributes": null
   },
   {
     "id": "9400102",
@@ -2426,16 +2697,20 @@
     "level": 50,
     "hp": 3100,
     "exp": 148,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["world-travel-japan"],
+    "attributes": ["독속성약점", "불속성약점"]
   },
   {
     "id": "9410008",
     "name": "예티 인형자판기",
     "imageUrl": "https://maplestory.io/api/gms/62/mob/9410008/icon?resize=2",
     "level": 50,
-    "hp": 3800,
-    "exp": 150,
-    "isReleased": true
+    "hp": 3000,
+    "exp": 130,
+    "isReleased": true,
+    "regionIds": ["world-travel-japan"],
+    "attributes": null
   },
   {
     "id": "5100000",
@@ -2445,7 +2720,8 @@
     "hp": 3700,
     "exp": 135,
     "isReleased": true,
-    "regionIds": ["masteria-newleafcity"]
+    "regionIds": ["masteria-newleafcity", "ellin-forest"],
+    "attributes": ["얼음속성반감", "불속성약점"]
   },
   {
     "id": "9410010",
@@ -2453,8 +2729,10 @@
     "imageUrl": "https://maplestory.io/api/gms/62/mob/9410010/icon?resize=2",
     "level": 50,
     "hp": 3800,
-    "exp": 152,
-    "isReleased": true
+    "exp": 135,
+    "isReleased": true,
+    "regionIds": ["world-travel-japan"],
+    "attributes": null
   },
   {
     "id": "9400401",
@@ -2463,7 +2741,9 @@
     "level": 50,
     "hp": 4200,
     "exp": 190,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["world-travel-japan"],
+    "attributes": ["전기속성약점", "불속성약점"]
   },
   {
     "id": "9500149",
@@ -2481,7 +2761,9 @@
     "level": 50,
     "hp": 9800,
     "exp": 410,
-    "isReleased": false
+    "isReleased": false,
+    "regionIds": ["victoria"],
+    "attributes": null
   },
   {
     "id": "9500335",
@@ -2499,7 +2781,9 @@
     "level": 50,
     "hp": 3800,
     "exp": 140,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["ludus-lake-underground-town"],
+    "attributes": null
   },
   {
     "id": "5120503",
@@ -2508,7 +2792,8 @@
     "level": 50,
     "hp": 3000,
     "exp": 135,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["mu-lung"]
   },
   {
     "id": "5250001",
@@ -2554,7 +2839,8 @@
     "hp": 3600,
     "exp": 142,
     "isReleased": true,
-    "regionIds": ["masteria-newleafcity"]
+    "regionIds": ["masteria-newleafcity", "ellin-forest"],
+    "attributes": ["불속성반감", "얼음속성약점"]
   },
   {
     "id": "5120504",
@@ -2563,7 +2849,8 @@
     "level": 51,
     "hp": 3200,
     "exp": 142,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["mu-lung"]
   },
   {
     "id": "5120000",
@@ -2573,9 +2860,8 @@
     "hp": 4000,
     "exp": 155,
     "isReleased": true,
-    "regionIds": [
-      "orbis"
-    ]
+    "regionIds": ["orbis"],
+    "attributes": ["얼음속성반감", "불속성반감", "전기속성반감", "성속성반감"]
   },
   {
     "id": "5130103",
@@ -2584,7 +2870,9 @@
     "level": 52,
     "hp": 3800,
     "exp": 170,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["victoria"],
+    "attributes": null
   },
   {
     "id": "5120003",
@@ -2593,7 +2881,9 @@
     "level": 53,
     "hp": 4200,
     "exp": 160,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["orbis"],
+    "attributes": ["얼음속성반감", "불속성약점"]
   },
   {
     "id": "5120501",
@@ -2602,7 +2892,8 @@
     "level": 53,
     "hp": 4200,
     "exp": 160,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["mu-lung"]
   },
   {
     "id": "5120002",
@@ -2611,7 +2902,9 @@
     "level": 53,
     "hp": 4200,
     "exp": 160,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["orbis"],
+    "attributes": ["전기속성반감", "얼음속성약점"]
   },
   {
     "id": "5120001",
@@ -2620,7 +2913,9 @@
     "level": 53,
     "hp": 4200,
     "exp": 160,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["orbis"],
+    "attributes": ["불속성반감", "얼음속성약점"]
   },
   {
     "id": "9300046",
@@ -2653,7 +2948,9 @@
     "level": 53,
     "hp": 4500,
     "exp": 165,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["ludus-lake-underground-town"],
+    "attributes": ["불속성반감", "얼음속성약점"]
   },
   {
     "id": "5120502",
@@ -2662,7 +2959,8 @@
     "level": 54,
     "hp": 4400,
     "exp": 168,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["mu-lung"]
   },
   {
     "id": "5120100",
@@ -2671,7 +2969,9 @@
     "level": 54,
     "hp": 13500,
     "exp": 980,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["ludus-lake-earth-defense-hq"],
+    "attributes": null
   },
   {
     "id": "9300004",
@@ -2752,7 +3052,9 @@
     "level": 55,
     "hp": 4000,
     "exp": 175,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["victoria"],
+    "attributes": ["성속성약점"]
   },
   {
     "id": "5120506",
@@ -2761,7 +3063,8 @@
     "level": 55,
     "hp": 4500,
     "exp": 175,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["mu-lung"]
   },
   {
     "id": "9300185",
@@ -2779,7 +3082,9 @@
     "level": 55,
     "hp": 4000,
     "exp": 170,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["victoria"],
+    "attributes": null
   },
   {
     "id": "5250000",
@@ -2833,7 +3138,9 @@
     "level": 55,
     "hp": 4600,
     "exp": 170,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["ellin-forest"],
+    "attributes": null
   },
   {
     "id": "5130105",
@@ -2842,7 +3149,9 @@
     "level": 56,
     "hp": 4400,
     "exp": 180,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["ellin-forest"],
+    "attributes": ["성속성약점"]
   },
   {
     "id": "5130106",
@@ -2860,7 +3169,8 @@
     "level": 56,
     "hp": 4800,
     "exp": 185,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["mu-lung"]
   },
   {
     "id": "9300108",
@@ -2878,7 +3188,9 @@
     "level": 56,
     "hp": 4500,
     "exp": 185,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["ludus-lake-underground-town"],
+    "attributes": ["불속성약점", "성속성약점"]
   },
   {
     "id": "5090000",
@@ -2887,7 +3199,9 @@
     "level": 56,
     "hp": 4800,
     "exp": 180,
-    "isReleased": false
+    "isReleased": false,
+    "regionIds": ["victoria"],
+    "attributes": null
   },
   {
     "id": "9300012",
@@ -2938,7 +3252,9 @@
     "level": 57,
     "hp": 4500,
     "exp": 190,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["ellin-forest"],
+    "attributes": ["독속성무효", "성속성약점"]
   },
   {
     "id": "5150001",
@@ -2947,7 +3263,9 @@
     "level": 57,
     "hp": 4600,
     "exp": 190,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["victoria"],
+    "attributes": ["성속성약점"]
   },
   {
     "id": "9300042",
@@ -2992,7 +3310,9 @@
     "level": 57,
     "hp": 4500,
     "exp": 190,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["ellin-forest", "world-travel-japan"],
+    "attributes": ["독속성무효", "성속성약점"]
   },
   {
     "id": "9500202",
@@ -3010,7 +3330,9 @@
     "level": 58,
     "hp": 4800,
     "exp": 200,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["victoria"],
+    "attributes": ["성속성약점"]
   },
   {
     "id": "9300110",
@@ -3049,7 +3371,9 @@
     "level": 58,
     "hp": 5600,
     "exp": 205,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["mu-lung"],
+    "attributes": ["독속성약점"]
   },
   {
     "id": "5140000",
@@ -3058,7 +3382,9 @@
     "level": 58,
     "hp": 5800,
     "exp": 220,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["ellin-forest"],
+    "attributes": ["얼음속성반감", "불속성약점"]
   },
   {
     "id": "9300038",
@@ -3133,7 +3459,9 @@
     "level": 59,
     "hp": 6000,
     "exp": 210,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["victoria"],
+    "attributes": null
   },
   {
     "id": "5090001",
@@ -3142,7 +3470,9 @@
     "level": 59,
     "hp": 5600,
     "exp": 220,
-    "isReleased": false
+    "isReleased": false,
+    "regionIds": ["mu-lung"],
+    "attributes": null
   },
   {
     "id": "9300048",
@@ -3169,7 +3499,9 @@
     "level": 59,
     "hp": 21000,
     "exp": 650,
-    "isReleased": false
+    "isReleased": true,
+    "regionIds": ["ludibrium"],
+    "attributes": null
   },
   {
     "id": "9420002",
@@ -3178,7 +3510,9 @@
     "level": 60,
     "hp": 6000,
     "exp": 230,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["world-travel-japan"],
+    "attributes": null
   },
   {
     "id": "6130201",
@@ -3196,7 +3530,9 @@
     "level": 60,
     "hp": 7000,
     "exp": 330,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["ludus-lake-underground-town"],
+    "attributes": ["불속성반감", "얼음속성반감", "성속성약점"]
   },
   {
     "id": "9300119",
@@ -3250,7 +3586,9 @@
     "level": 60,
     "hp": 6000,
     "exp": 220,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["victoria"],
+    "attributes": ["불속성반감", "얼음속성약점"]
   },
   {
     "id": "9400003",
@@ -3259,7 +3597,9 @@
     "level": 60,
     "hp": 7100,
     "exp": 220,
-    "isReleased": false
+    "isReleased": true,
+    "regionIds": ["world-travel-japan"],
+    "attributes": ["얼음속성약점", "불속성약점", "성속성약점"]
   },
   {
     "id": "6130101",
@@ -3268,7 +3608,9 @@
     "level": 60,
     "hp": 20000,
     "exp": 1200,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["victoria"],
+    "attributes": null
   },
   {
     "id": "9400012",
@@ -3277,7 +3619,9 @@
     "level": 60,
     "hp": 7100,
     "exp": 220,
-    "isReleased": false
+    "isReleased": true,
+    "regionIds": ["world-travel-japan"],
+    "attributes": ["불속성약점", "얼음속성반감"]
   },
   {
     "id": "9500176",
@@ -3303,8 +3647,10 @@
     "imageUrl": "https://maplestory.io/api/gms/62/mob/9410013/icon?resize=2",
     "level": 60,
     "hp": 6000,
-    "exp": 440,
-    "isReleased": true
+    "exp": 280,
+    "isReleased": true,
+    "regionIds": ["world-travel-japan"],
+    "attributes": null
   },
   {
     "id": "9410012",
@@ -3312,8 +3658,10 @@
     "imageUrl": "https://maplestory.io/api/gms/62/mob/9410012/icon?resize=2",
     "level": 60,
     "hp": 1500,
-    "exp": 10,
-    "isReleased": true
+    "exp": 0,
+    "isReleased": true,
+    "regionIds": ["world-travel-japan"],
+    "attributes": null
   },
   {
     "id": "9400406",
@@ -3322,7 +3670,9 @@
     "level": 60,
     "hp": 6500,
     "exp": 290,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["world-travel-japan"],
+    "attributes": ["불속성약점", "성속성약점"]
   },
   {
     "id": "6130203",
@@ -3331,16 +3681,30 @@
     "level": 60,
     "hp": 6500,
     "exp": 225,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["mu-lung"]
+  },
+  {
+    "id": "6130103",
+    "name": "페페",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/6130103/icon?resize=2",
+    "level": 60,
+    "hp": 7200,
+    "exp": 220,
+    "isReleased": true,
+    "regionIds": ["ellin-forest"],
+    "attributes": ["얼음속성반감", "불속성약점"]
   },
   {
     "id": "6130102",
-    "name": "페페",
+    "name": "분리된 페페",
     "imageUrl": "https://maplestory.io/api/gms/62/mob/6130102/icon?resize=2",
     "level": 60,
     "hp": 7200,
     "exp": 420,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["ellin-forest"],
+    "attributes": ["얼음속성반감", "불속성약점"]
   },
   {
     "id": "9300050",
@@ -3358,7 +3722,9 @@
     "level": 61,
     "hp": 7400,
     "exp": 230,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["ludibrium"],
+    "attributes": null
   },
   {
     "id": "9400110",
@@ -3367,7 +3733,9 @@
     "level": 62,
     "hp": 10000,
     "exp": 310,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["world-travel-japan"],
+    "attributes": ["독속성약점", "불속성약점"]
   },
   {
     "id": "9300122",
@@ -3412,7 +3780,9 @@
     "level": 62,
     "hp": 6000,
     "exp": 240,
-    "isReleased": false
+    "isReleased": true,
+    "regionIds": ["ludus-lake-underground-town"],
+    "attributes": null
   },
   {
     "id": "6230100",
@@ -3421,7 +3791,9 @@
     "level": 62,
     "hp": 5500,
     "exp": 240,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["victoria"],
+    "attributes": null
   },
   {
     "id": "6130207",
@@ -3430,7 +3802,8 @@
     "level": 62,
     "hp": 7500,
     "exp": 240,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["mu-lung"]
   },
   {
     "id": "9300026",
@@ -3494,7 +3867,9 @@
     "level": 63,
     "hp": 7600,
     "exp": 245,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["ludibrium"],
+    "attributes": ["전기속성반감", "얼음속성반감", "성속성약점"]
   },
   {
     "id": "6230602",
@@ -3503,7 +3878,9 @@
     "level": 63,
     "hp": 7500,
     "exp": 240,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["victoria"],
+    "attributes": ["성속성약점"]
   },
   {
     "id": "6230401",
@@ -3512,7 +3889,9 @@
     "level": 63,
     "hp": 7600,
     "exp": 245,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["orbis"],
+    "attributes": ["독속성무효", "성속성약점"]
   },
   {
     "id": "6230101",
@@ -3539,7 +3918,9 @@
     "level": 64,
     "hp": 9000,
     "exp": 320,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["world-travel-japan"],
+    "attributes": ["독속성약점", "불속성약점"]
   },
   {
     "id": "6130204",
@@ -3548,16 +3929,30 @@
     "level": 64,
     "hp": 7800,
     "exp": 250,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["mu-lung"]
+  },
+  {
+    "id": "6230200",
+    "name": "다크 페페",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/6230200/icon?resize=2",
+    "level": 64,
+    "hp": 7800,
+    "exp": 250,
+    "isReleased": true,
+    "regionIds": ["ellin-forest"],
+    "attributes": ["성속성약점"]
   },
   {
     "id": "6230201",
-    "name": "다크 페페",
+    "name": "분리된 다크 페페",
     "imageUrl": "https://maplestory.io/api/gms/62/mob/6230201/icon?resize=2",
     "level": 64,
     "hp": 7800,
     "exp": 700,
-    "isReleased": false
+    "isReleased": true,
+    "regionIds": ["ellin-forest"],
+    "attributes": ["성속성약점"]
   },
   {
     "id": "9300118",
@@ -3584,7 +3979,9 @@
     "level": 64,
     "hp": 7700,
     "exp": 250,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["victoria"],
+    "attributes": ["얼음속성반감", "불속성약점"]
   },
   {
     "id": "9500201",
@@ -3611,7 +4008,9 @@
     "level": 65,
     "hp": 31000,
     "exp": 810,
-    "isReleased": false
+    "isReleased": false,
+    "regionIds": ["victoria"],
+    "attributes": null
   },
   {
     "id": "9300188",
@@ -3638,16 +4037,20 @@
     "level": 65,
     "hp": 11000,
     "exp": 255,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["ellin-forest"],
+    "attributes": null
   },
   {
     "id": "9300184",
     "name": "마노",
     "imageUrl": "https://maplestory.io/api/gms/62/mob/9300184/icon?resize=2",
-    "level": 65,
-    "hp": 13000,
-    "exp": 255,
-    "isReleased": false
+    "level": 20,
+    "hp": 2000,
+    "exp": 120,
+    "isReleased": false,
+    "regionIds": ["victoria"],
+    "attributes": null
   },
   {
     "id": "9300019",
@@ -3675,7 +4078,8 @@
     "hp": 11000,
     "exp": 390,
     "isReleased": true,
-    "regionIds": ["masteria-newleafcity"]
+    "regionIds": ["masteria-newleafcity", "ellin-forest"],
+    "attributes": ["얼음속성반감", "불속성약점"]
   },
   {
     "id": "9300183",
@@ -3710,8 +4114,21 @@
     "imageUrl": "https://maplestory.io/api/gms/62/mob/6300002/icon?resize=2",
     "level": 65,
     "hp": 11000,
-    "exp": 409,
-    "isReleased": false
+    "exp": 346,
+    "isReleased": true,
+    "regionIds": ["ellin-forest"],
+    "attributes": ["얼음속성반감", "불속성약점"]
+  },
+  {
+    "id": "6300006",
+    "name": "분리된 예티",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/6300006/icon?resize=2",
+    "level": 65,
+    "hp": 11000,
+    "exp": 455,
+    "isReleased": true,
+    "regionIds": ["ellin-forest"],
+    "attributes": ["얼음속성반감", "불속성약점"]
   },
   {
     "id": "6220001",
@@ -3720,7 +4137,9 @@
     "level": 65,
     "hp": 36000,
     "exp": 940,
-    "isReleased": false
+    "isReleased": true,
+    "regionIds": ["ludus-lake-earth-defense-hq"],
+    "attributes": null
   },
   {
     "id": "6300005",
@@ -3729,7 +4148,9 @@
     "level": 65,
     "hp": 35000,
     "exp": 1500,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["victoria"],
+    "attributes": null
   },
   {
     "id": "9300173",
@@ -3822,7 +4243,9 @@
     "level": 66,
     "hp": 9400,
     "exp": 296,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["ludibrium"],
+    "attributes": null
   },
   {
     "id": "6130209",
@@ -3831,7 +4254,8 @@
     "level": 66,
     "hp": 9000,
     "exp": 283,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["mu-lung"]
   },
   {
     "id": "9300023",
@@ -3876,7 +4300,9 @@
     "level": 67,
     "hp": 11000,
     "exp": 346,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["ludibrium"],
+    "attributes": ["전기속성반감", "얼음속성무효", "성속성약점"]
   },
   {
     "id": "9300024",
@@ -3912,7 +4338,9 @@
     "level": 68,
     "hp": 13000,
     "exp": 409,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["victoria"],
+    "attributes": null
   },
   {
     "id": "6400000",
@@ -3921,7 +4349,31 @@
     "level": 68,
     "hp": 13000,
     "exp": 409,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["ellin-forest"],
+    "attributes": ["성속성약점"]
+  },
+  {
+    "id": "6400001",
+    "name": "변신한 다크 예티",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/6400001/icon?resize=2",
+    "level": 68,
+    "hp": 13000,
+    "exp": 445,
+    "isReleased": true,
+    "regionIds": ["ellin-forest"],
+    "attributes": ["성속성약점"]
+  },
+  {
+    "id": "6400002",
+    "name": "분리된 다크 예티",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/6400002/icon?resize=2",
+    "level": 68,
+    "hp": 13000,
+    "exp": 715,
+    "isReleased": true,
+    "regionIds": ["ellin-forest"],
+    "attributes": ["성속성약점"]
   },
   {
     "id": "6090002",
@@ -3958,7 +4410,8 @@
     "level": 68,
     "hp": 12500,
     "exp": 393,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["mu-lung"]
   },
   {
     "id": "6400003",
@@ -3985,7 +4438,9 @@
     "level": 70,
     "hp": 89000,
     "exp": 1300,
-    "isReleased": false
+    "isReleased": true,
+    "regionIds": ["ludus-lake-underground-town"],
+    "attributes": null
   },
   {
     "id": "9300101",
@@ -4003,7 +4458,9 @@
     "level": 70,
     "hp": 25000,
     "exp": 400,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["ludus-lake-underground-town"],
+    "attributes": ["불속성반감", "얼음속성약점"]
   },
   {
     "id": "7130500",
@@ -4012,7 +4469,9 @@
     "level": 70,
     "hp": 14500,
     "exp": 456,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["leafre"],
+    "attributes": ["독속성약점"]
   },
   {
     "id": "9300138",
@@ -4084,7 +4543,9 @@
     "level": 70,
     "hp": 25000,
     "exp": 400,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["ludus-lake-underground-town"],
+    "attributes": ["독속성무효"]
   },
   {
     "id": "9500323",
@@ -4111,7 +4572,8 @@
     "level": 70,
     "hp": 15000,
     "exp": 472,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["mu-lung"]
   },
   {
     "id": "8140200",
@@ -4120,7 +4582,9 @@
     "level": 70,
     "hp": 15000,
     "exp": 472,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["ludibrium"],
+    "attributes": ["성속성약점", "불속성약점"]
   },
   {
     "id": "7130100",
@@ -4129,7 +4593,9 @@
     "level": 70,
     "hp": 15000,
     "exp": 472,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["victoria"],
+    "attributes": ["독속성무효"]
   },
   {
     "id": "7130401",
@@ -4138,7 +4604,9 @@
     "level": 70,
     "hp": 25000,
     "exp": 400,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["ludus-lake-underground-town"],
+    "attributes": ["불속성약점", "얼음속성반감"]
   },
   {
     "id": "9300102",
@@ -4165,7 +4633,9 @@
     "level": 71,
     "hp": 93000,
     "exp": 1580,
-    "isReleased": false
+    "isReleased": false,
+    "regionIds": ["mu-lung"],
+    "attributes": null
   },
   {
     "id": "7130001",
@@ -4174,7 +4644,9 @@
     "level": 72,
     "hp": 15200,
     "exp": 478,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["ellin-forest"],
+    "attributes": null
   },
   {
     "id": "7130002",
@@ -4183,7 +4655,9 @@
     "level": 72,
     "hp": 15200,
     "exp": 478,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["leafre"],
+    "attributes": ["전기속성반감"]
   },
   {
     "id": "9400103",
@@ -4192,7 +4666,9 @@
     "level": 72,
     "hp": 15100,
     "exp": 465,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["world-travel-japan"],
+    "attributes": ["불속성약점", "성속성약점", "얼음속성약점"]
   },
   {
     "id": "7130600",
@@ -4201,7 +4677,9 @@
     "level": 72,
     "hp": 15000,
     "exp": 472,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["leafre"],
+    "attributes": ["독속성약점"]
   },
   {
     "id": "9300143",
@@ -4220,7 +4698,9 @@
     "level": 73,
     "hp": 15500,
     "exp": 488,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["orbis"],
+    "attributes": ["독속성무효", "성속성약점"]
   },
   {
     "id": "9300142",
@@ -4241,7 +4721,9 @@
     "level": 73,
     "hp": 15300,
     "exp": 481,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["victoria"],
+    "attributes": ["성속성약점", "얼음속성반감", "독속성무효"]
   },
   {
     "id": "7130501",
@@ -4250,7 +4732,9 @@
     "level": 74,
     "hp": 15500,
     "exp": 488,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["leafre"],
+    "attributes": ["독속성반감"]
   },
   {
     "id": "6300100",
@@ -4259,7 +4743,9 @@
     "level": 74,
     "hp": 16000,
     "exp": 504,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["ludibrium"],
+    "attributes": ["얼음속성약점", "불속성반감"]
   },
   {
     "id": "7110300",
@@ -4305,7 +4791,9 @@
     "level": 75,
     "hp": 16000,
     "exp": 504,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["ellin-forest"],
+    "attributes": null
   },
   {
     "id": "7090000",
@@ -4324,7 +4812,9 @@
     "level": 75,
     "hp": 18000,
     "exp": 567,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["victoria"],
+    "attributes": ["독속성무효", "불속성반감", "전기속성반감"]
   },
   {
     "id": "7130602",
@@ -4342,7 +4832,9 @@
     "level": 76,
     "hp": 18000,
     "exp": 567,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["ludibrium"],
+    "attributes": ["성속성약점"]
   },
   {
     "id": "7130003",
@@ -4351,7 +4843,9 @@
     "level": 76,
     "hp": 18000,
     "exp": 567,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["leafre"],
+    "attributes": ["전기속성반감"]
   },
   {
     "id": "7130601",
@@ -4360,7 +4854,9 @@
     "level": 76,
     "hp": 18000,
     "exp": 567,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["leafre"],
+    "attributes": ["독속성반감"]
   },
   {
     "id": "6400100",
@@ -4369,7 +4865,9 @@
     "level": 77,
     "hp": 19000,
     "exp": 598,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["ludibrium"],
+    "attributes": ["얼음속성약점", "불속성반감"]
   },
   {
     "id": "7220002",
@@ -4378,7 +4876,9 @@
     "level": 77,
     "hp": 108000,
     "exp": 2280,
-    "isReleased": false
+    "isReleased": false,
+    "regionIds": ["mu-lung"],
+    "attributes": null
   },
   {
     "id": "9300147",
@@ -4409,7 +4909,9 @@
     "level": 78,
     "hp": 20000,
     "exp": 0,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["ellin-forest"],
+    "attributes": ["얼음속성반감", "불속성약점"]
   },
   {
     "id": "9200020",
@@ -4492,7 +4994,9 @@
     "level": 80,
     "hp": 27000,
     "exp": 850,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["ellin-forest"],
+    "attributes": ["얼음속성반감", "불속성약점"]
   },
   {
     "id": "9400402",
@@ -4501,7 +5005,9 @@
     "level": 80,
     "hp": 25000,
     "exp": 1150,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["world-travel-japan"],
+    "attributes": ["성속성약점", "독속성무효"]
   },
   {
     "id": "9400545",
@@ -4538,7 +5044,9 @@
     "level": 80,
     "hp": 50000,
     "exp": 2000,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["victoria"],
+    "attributes": ["독속성무효", "성속성약점"]
   },
   {
     "id": "9001000",
@@ -4592,7 +5100,9 @@
     "level": 80,
     "hp": 27000,
     "exp": 850,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["leafre"],
+    "attributes": ["독속성약점"]
   },
   {
     "id": "9001002",
@@ -4610,7 +5120,9 @@
     "level": 80,
     "hp": 27000,
     "exp": 850,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["leafre"],
+    "attributes": ["불속성약점", "독속성약점"]
   },
   {
     "id": "8110300",
@@ -4640,7 +5152,9 @@
     "level": 82,
     "hp": 29000,
     "exp": 0,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["ellin-forest"],
+    "attributes": ["성속성약점"]
   },
   {
     "id": "8140002",
@@ -4649,7 +5163,9 @@
     "level": 83,
     "hp": 30000,
     "exp": 1100,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["leafre"],
+    "attributes": ["불속성반감", "얼음속성약점"]
   },
   {
     "id": "8220000",
@@ -4658,7 +5174,9 @@
     "level": 83,
     "hp": 87000,
     "exp": 2800,
-    "isReleased": false
+    "isReleased": true,
+    "regionIds": ["orbis"],
+    "attributes": null
   },
   {
     "id": "7140000",
@@ -4667,7 +5185,9 @@
     "level": 83,
     "hp": 30000,
     "exp": 1100,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["ludibrium"],
+    "attributes": ["얼음속성반감", "불속성약점"]
   },
   {
     "id": "9300140",
@@ -4694,7 +5214,9 @@
     "level": 85,
     "hp": 32000,
     "exp": 1300,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["ludibrium"],
+    "attributes": ["성속성약점", "불속성약점"]
   },
   {
     "id": "7130020",
@@ -4703,7 +5225,9 @@
     "level": 85,
     "hp": 17000,
     "exp": 1400,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["aqua-road"],
+    "attributes": ["불속성반감"]
   },
   {
     "id": "8140110",
@@ -4712,7 +5236,9 @@
     "level": 85,
     "hp": 32000,
     "exp": 1420,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["leafre"],
+    "attributes": ["성속성반감", "얼음속성약점"]
   },
   {
     "id": "9300097",
@@ -4749,7 +5275,9 @@
     "level": 85,
     "hp": 230000,
     "exp": 4230,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["world-travel-japan"],
+    "attributes": null
   },
   {
     "id": "7160000",
@@ -4758,7 +5286,9 @@
     "level": 87,
     "hp": 35000,
     "exp": 1500,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["ludibrium"],
+    "attributes": ["얼음속성반감", "불속성약점"]
   },
   {
     "id": "8140101",
@@ -4767,7 +5297,9 @@
     "level": 88,
     "hp": 37000,
     "exp": 1600,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["leafre"],
+    "attributes": ["성속성약점"]
   },
   {
     "id": "8140111",
@@ -4776,7 +5308,9 @@
     "level": 88,
     "hp": 37000,
     "exp": 1620,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["leafre"],
+    "attributes": ["성속성반감", "독속성반감"]
   },
   {
     "id": "8140102",
@@ -4785,7 +5319,9 @@
     "level": 88,
     "hp": 37000,
     "exp": 1600,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["leafre"],
+    "attributes": ["불속성반감", "얼음속성약점"]
   },
   {
     "id": "8140103",
@@ -4794,7 +5330,9 @@
     "level": 88,
     "hp": 37000,
     "exp": 1600,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["leafre"],
+    "attributes": ["얼음속성반감", "불속성약점"]
   },
   {
     "id": "7130300",
@@ -4803,7 +5341,9 @@
     "level": 89,
     "hp": 40000,
     "exp": 1720,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["ludibrium"],
+    "attributes": ["성속성약점", "얼음속성반감", "전기속성반감"]
   },
   {
     "id": "8140700",
@@ -4815,7 +5355,8 @@
     "isReleased": true,
     "regionIds": [
       "leafre"
-    ]
+    ],
+    "attributes": ["불속성약점", "얼음속성반감"]
   },
   {
     "id": "9400205",
@@ -4824,7 +5365,9 @@
     "level": 90,
     "hp": 200000,
     "exp": 10000,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["world-travel-japan"],
+    "attributes": ["불속성약점"]
   },
   {
     "id": "8220001",
@@ -4833,7 +5376,9 @@
     "level": 90,
     "hp": 120000,
     "exp": 5200,
-    "isReleased": false
+    "isReleased": true,
+    "regionIds": ["ellin-forest"],
+    "attributes": null
   },
   {
     "id": "9500138",
@@ -4851,7 +5396,9 @@
     "level": 90,
     "hp": 45000,
     "exp": 1800,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["ellin-forest", "world-travel-japan"],
+    "attributes": ["불속성반감", "얼음속성약점"]
   },
   {
     "id": "8140555",
@@ -4870,9 +5417,8 @@
     "hp": 42500,
     "exp": 2000,
     "isReleased": true,
-    "regionIds": [
-      "aqua-road"
-    ]
+    "regionIds": ["aqua-road"],
+    "attributes": ["불속성반감", "성속성약점"]
   },
   {
     "id": "9300098",
@@ -4896,7 +5442,8 @@
     "isReleased": true,
     "regionIds": [
       "leafre"
-    ]
+    ],
+    "attributes": ["불속성반감", "얼음속성약점"]
   },
   {
     "id": "8141000",
@@ -4905,7 +5452,9 @@
     "level": 93,
     "hp": 50000,
     "exp": 2100,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["ludibrium"],
+    "attributes": ["불속성반감", "전기속성약점"]
   },
   {
     "id": "8141300",
@@ -4915,9 +5464,8 @@
     "hp": 46000,
     "exp": 2200,
     "isReleased": true,
-    "regionIds": [
-      "aqua-road"
-    ]
+    "regionIds": ["aqua-road"],
+    "attributes": ["독속성반감", "불속성반감"]
   },
   {
     "id": "9400120",
@@ -4926,7 +5474,9 @@
     "level": 95,
     "hp": 85000,
     "exp": 5500,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["world-travel-japan"],
+    "attributes": ["불속성약점", "전기속성약점"]
   },
   {
     "id": "8140702",
@@ -4935,7 +5485,9 @@
     "level": 95,
     "hp": 50000,
     "exp": 2280,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["leafre"],
+    "attributes": ["전기속성약점", "독속성약점"]
   },
   {
     "id": "8142000",
@@ -4944,7 +5496,9 @@
     "level": 95,
     "hp": 53000,
     "exp": 2300,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["ludibrium"],
+    "attributes": ["성속성약점", "얼음속성반감", "불속성약점"]
   },
   {
     "id": "9300069",
@@ -4971,7 +5525,9 @@
     "level": 97,
     "hp": 53000,
     "exp": 2500,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["leafre"],
+    "attributes": ["불속성반감", "얼음속성약점"]
   },
   {
     "id": "8142100",
@@ -4981,9 +5537,8 @@
     "hp": 49000,
     "exp": 2500,
     "isReleased": true,
-    "regionIds": [
-      "aqua-road"
-    ]
+    "regionIds": ["aqua-road"],
+    "attributes": ["불속성반감", "전기속성반감"]
   },
   {
     "id": "8140703",
@@ -4992,7 +5547,9 @@
     "level": 97,
     "hp": 55000,
     "exp": 2500,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["leafre"],
+    "attributes": ["불속성반감", "얼음속성약점"]
   },
   {
     "id": "8141100",
@@ -5001,7 +5558,9 @@
     "level": 98,
     "hp": 58000,
     "exp": 2600,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["ludibrium"],
+    "attributes": ["불속성반감", "전기속성약점"]
   },
   {
     "id": "8143000",
@@ -5010,7 +5569,9 @@
     "level": 99,
     "hp": 60000,
     "exp": 2800,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["ludibrium"],
+    "attributes": ["성속성약점", "불속성약점", "얼음속성무효"]
   },
   {
     "id": "9300029",
@@ -5046,7 +5607,9 @@
     "level": 100,
     "hp": 56000,
     "exp": 3000,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["leafre"],
+    "attributes": ["독속성반감"]
   },
   {
     "id": "9300031",
@@ -5082,7 +5645,9 @@
     "level": 100,
     "hp": 71000,
     "exp": 4050,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["world-travel-japan"],
+    "attributes": ["성속성약점", "전기속성반감", "독속성무효", "불속성반감"]
   },
   {
     "id": "9300065",
@@ -5118,7 +5683,9 @@
     "level": 100,
     "hp": 56000,
     "exp": 3000,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["aqua-road"],
+    "attributes": ["불속성반감"]
   },
   {
     "id": "8500000",
@@ -5145,7 +5712,9 @@
     "level": 100,
     "hp": 100000,
     "exp": 3500,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["orbis"],
+    "attributes": ["독속성무효", "성속성약점"]
   },
   {
     "id": "9500193",
@@ -5190,7 +5759,9 @@
     "level": 101,
     "hp": 57000,
     "exp": 3050,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["leafre"],
+    "attributes": ["불속성약점", "얼음속성반감"]
   },
   {
     "id": "8150101",
@@ -5199,7 +5770,9 @@
     "level": 102,
     "hp": 58500,
     "exp": 3100,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["aqua-road"],
+    "attributes": ["불속성반감", "얼음속성반감"]
   },
   {
     "id": "8150302",
@@ -5208,7 +5781,9 @@
     "level": 103,
     "hp": 60000,
     "exp": 3150,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["leafre"],
+    "attributes": null
   },
   {
     "id": "9300073",
@@ -5235,7 +5810,9 @@
     "level": 105,
     "hp": 3700000,
     "exp": 13500,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["leafre"],
+    "attributes": ["전기속성반감", "독속성약점"]
   },
   {
     "id": "8190000",
@@ -5244,7 +5821,9 @@
     "level": 105,
     "hp": 68000,
     "exp": 3800,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["leafre"],
+    "attributes": null
   },
   {
     "id": "8190001",
@@ -5271,7 +5850,9 @@
     "level": 105,
     "hp": 67000,
     "exp": 3700,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["leafre"],
+    "attributes": ["독속성반감"]
   },
   {
     "id": "9300078",
@@ -5307,7 +5888,9 @@
     "level": 105,
     "hp": 3700000,
     "exp": 13500,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["leafre"],
+    "attributes": ["불속성반감", "얼음속성약점"]
   },
   {
     "id": "8160000",
@@ -5316,7 +5899,9 @@
     "level": 108,
     "hp": 78000,
     "exp": 4300,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["ludibrium"],
+    "attributes": ["전기속성반감"]
   },
   {
     "id": "9300086",
@@ -5334,7 +5919,9 @@
     "level": 108,
     "hp": 70000,
     "exp": 4100,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["ludibrium"],
+    "attributes": ["성속성약점", "얼음속성반감"]
   },
   {
     "id": "8190002",
@@ -5343,7 +5930,9 @@
     "level": 110,
     "hp": 80000,
     "exp": 8050,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["leafre"],
+    "attributes": null
   },
   {
     "id": "9300079",
@@ -5361,10 +5950,7 @@
     "level": 110,
     "hp": 80000,
     "exp": 1500,
-    "isReleased": false,
-    "regionIds": [
-      "leafre"
-    ]
+    "isReleased": false
   },
   {
     "id": "9300076",
@@ -5373,10 +5959,7 @@
     "level": 110,
     "hp": 80000,
     "exp": 1500,
-    "isReleased": false,
-    "regionIds": [
-      "leafre"
-    ]
+    "isReleased": false
   },
   {
     "id": "8190003",
@@ -5388,7 +5971,8 @@
     "isReleased": true,
     "regionIds": [
       "leafre"
-    ]
+    ],
+    "attributes": ["성속성약점"]
   },
   {
     "id": "8510000",
@@ -5397,7 +5981,9 @@
     "level": 110,
     "hp": 30000000,
     "exp": 1300000,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["aqua-road"],
+    "attributes": ["불속성약점"]
   },
   {
     "id": "9300077",
@@ -5418,7 +6004,8 @@
     "isReleased": true,
     "regionIds": [
       "leafre"
-    ]
+    ],
+    "attributes": ["성속성약점"]
   },
   {
     "id": "9300028",
@@ -5445,7 +6032,9 @@
     "level": 120,
     "hp": 78000000,
     "exp": 3680000,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["world-travel-japan"],
+    "attributes": ["불속성반감", "전기속성약점", "성속성약점", "얼음속성약점", "독속성무효"]
   },
   {
     "id": "8220003",
@@ -5454,7 +6043,9 @@
     "level": 120,
     "hp": 13400000,
     "exp": 47355,
-    "isReleased": false
+    "isReleased": false,
+    "regionIds": ["leafre"],
+    "attributes": ["불속성반감", "얼음속성반감"]
   },
   {
     "id": "9300163",
@@ -5526,7 +6117,9 @@
     "level": 125,
     "hp": 1590000,
     "exp": 970000,
-    "isReleased": true
+    "isReleased": true,
+    "regionIds": ["ludibrium"],
+    "attributes": null
   },
   {
     "id": "8500001",
@@ -5543,8 +6136,10 @@
     "imageUrl": "https://maplestory.io/api/gms/62/mob/9400121/icon?resize=2",
     "level": 130,
     "hp": 75000000,
-    "exp": 3900000,
-    "isReleased": true
+    "exp": 1447275,
+    "isReleased": true,
+    "regionIds": ["world-travel-japan"],
+    "attributes": ["전기속성약점", "성속성약점"]
   },
   {
     "id": "8800000",

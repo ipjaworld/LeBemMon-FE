@@ -17,5 +17,8 @@ export interface Region {
   
   /** 출시 여부 */
   isReleased: boolean;
+  
+  /** 표시용 라벨 (선택적, name과 다를 경우 사용) */
+  displayName?: string;
 }
 

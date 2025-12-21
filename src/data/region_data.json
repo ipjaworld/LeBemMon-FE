@@ -70,11 +70,33 @@
     "isReleased": true
   },
   {
-    "id": "ludibrium",
-    "name": "루디브리엄",
+    "id": "ludus-lake",
+    "name": "루더스호수",
     "parentId": null,
     "type": "region",
     "isReleased": true
+  },
+  {
+    "id": "ludibrium",
+    "name": "루디브리엄",
+    "parentId": "ludus-lake",
+    "type": "town",
+    "isReleased": true
+  },
+  {
+    "id": "ludus-lake-underground-town",
+    "name": "아랫마을",
+    "parentId": "ludus-lake",
+    "type": "town",
+    "isReleased": true
+  },
+  {
+    "id": "ludus-lake-earth-defense-hq",
+    "name": "지구방위본부",
+    "parentId": "ludus-lake",
+    "type": "town",
+    "isReleased": true,
+    "displayName": "지구방위본부, 에오스탑"
   },
   {
     "id": "aqua-road",
@@ -171,6 +193,27 @@
     "id": "nihan-magatia",
     "name": "마가티아",
     "parentId": "nihan-desert",
+    "type": "town",
+    "isReleased": true
+  },
+  {
+    "id": "mu-lung",
+    "name": "무릉도원",
+    "parentId": null,
+    "type": "region",
+    "isReleased": true
+  },
+  {
+    "id": "mu-lung-town",
+    "name": "무릉",
+    "parentId": "mu-lung",
+    "type": "town",
+    "isReleased": true
+  },
+  {
+    "id": "mu-lung-baekcho",
+    "name": "백초마을",
+    "parentId": "mu-lung",
     "type": "town",
     "isReleased": true
   }
