@@ -18,8 +18,8 @@ export default function MonsterCard({ monster, isExpiringSoon, userLevel, isReco
   const [isWarningHovered, setIsWarningHovered] = useState(false);
   const [isHpPerExpTooltipHovered, setIsHpPerExpTooltipHovered] = useState(false);
   
-  // 몬스터 레벨이 사용자 레벨보다 5 이상 낮은지 확인 (고렙 몬스터는 항상 파티 경험치 획득 가능)
-  const isOutOfPartyExpRange = userLevel !== undefined && monster.level < userLevel - 5;
+  // 파티 경험치 획득 조건: 몬스터 레벨이 사용자 레벨+5를 초과하면 파티 경험치를 획득할 수 없음
+  const isOutOfPartyExpRange = userLevel !== undefined && monster.level > userLevel + 5;
 
   const regions = regionData as Region[];
   const items = itemData as Item[];
