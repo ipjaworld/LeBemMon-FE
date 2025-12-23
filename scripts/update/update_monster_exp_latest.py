@@ -2,6 +2,12 @@
 최신 패치(2025년 12월 23일) 몬스터 경험치 업데이트 스크립트
 """
 import json
+import sys
+from pathlib import Path
+
+# scripts/utils.py import를 위한 경로 추가
+sys.path.insert(0, str(Path(__file__).parent.parent))
+from utils import get_data_path
 
 # 최신 패치에서 업데이트할 몬스터의 경험치 정보
 # (몬스터 ID, 기존 경험치, 새로운 경험치)
@@ -16,7 +22,7 @@ EXP_UPDATES = [
 
 def main():
     # 몬스터 데이터 로드
-    with open('src/data/monster_data.json', 'r', encoding='utf-8') as f:
+    with open(get_data_path('monster_data.json'), 'r', encoding='utf-8') as f:
         monsters = json.load(f)
     
     updated_count = 0
@@ -46,11 +52,12 @@ def main():
             print(f"  ID: {monster_id}, 예상 경험치: {old_exp} -> {new_exp}")
     
     # 파일에 저장
-    with open('src/data/monster_data.json', 'w', encoding='utf-8') as f:
+    monster_file = get_data_path('monster_data.json')
+    with open(monster_file, 'w', encoding='utf-8') as f:
         json.dump(monsters, f, ensure_ascii=False, indent=2)
     
     print(f"\n총 {updated_count}개의 몬스터 경험치가 업데이트되었습니다.")
-    print(f"업데이트된 데이터가 src/data/monster_data.json에 저장되었습니다.")
+    print(f"업데이트된 데이터가 {monster_file}에 저장되었습니다.")
     
     return updated_count
 

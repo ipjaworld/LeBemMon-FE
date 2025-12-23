@@ -2,6 +2,12 @@
 귀장식 민첩 주문서 60% 드랍 정보 업데이트 스크립트
 """
 import json
+import sys
+from pathlib import Path
+
+# scripts/utils.py import를 위한 경로 추가
+sys.path.insert(0, str(Path(__file__).parent.parent))
+from utils import get_data_path
 
 # 귀장식 민첩 주문서 60% ID
 ITEM_ID = "2040028"
@@ -16,7 +22,7 @@ MONSTER_IDS = [
 
 def main():
     # 몬스터 데이터 로드
-    with open('src/data/monster_data.json', 'r', encoding='utf-8') as f:
+    with open(get_data_path('monster_data.json'), 'r', encoding='utf-8') as f:
         monsters = json.load(f)
     
     updated_count = 0
@@ -39,7 +45,7 @@ def main():
             updated_count += 1
     
     # 저장
-    with open('src/data/monster_data.json', 'w', encoding='utf-8') as f:
+    with open(get_data_path('monster_data.json'), 'w', encoding='utf-8') as f:
         json.dump(monsters, f, ensure_ascii=False, indent=2)
     
     print(f"\n총 {updated_count}개 몬스터 업데이트됨")

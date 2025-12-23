@@ -1,7 +1,12 @@
 import json
 from pathlib import Path
+import sys
 
-file_path = Path(__file__).parent / "src" / "data" / "monster_data.json"
+# scripts/utils.py import를 위한 경로 추가
+sys.path.insert(0, str(Path(__file__).parent.parent))
+from utils import get_data_path
+
+file_path = get_data_path("monster_data.json")
 
 with open(file_path, 'r', encoding='utf-8') as f:
     data = json.load(f)

@@ -4,6 +4,11 @@
 import json
 from pathlib import Path
 from typing import Optional
+import sys
+
+# scripts/utils.py import를 위한 경로 추가
+sys.path.insert(0, str(Path(__file__).parent.parent))
+from utils import get_data_path
 
 # 인기 마스터리북 목록
 POPULAR_MASTERY_BOOKS = [
@@ -299,13 +304,13 @@ MASTERY_BOOK_DATA = [
 
 def load_monster_data():
     """몬스터 데이터 로드"""
-    with open('src/data/monster_data.json', 'r', encoding='utf-8') as f:
+    with open(get_data_path('monster_data.json'), 'r', encoding='utf-8') as f:
         return json.load(f)
 
 
 def load_item_data():
     """아이템 데이터 로드"""
-    with open('src/data/item_data.json', 'r', encoding='utf-8') as f:
+    with open(get_data_path('item_data.json'), 'r', encoding='utf-8') as f:
         return json.load(f)
 
 
@@ -380,7 +385,7 @@ def main():
     all_items = existing_items + mastery_books
     
     # 아이템 데이터 저장
-    with open('src/data/item_data.json', 'w', encoding='utf-8') as f:
+    with open(get_data_path('item_data.json'), 'w', encoding='utf-8') as f:
         json.dump(all_items, f, ensure_ascii=False, indent=2)
     
     print(f"[OK] 마스터리북 {len(mastery_books)}개 추가됨")
@@ -409,7 +414,7 @@ def main():
             updated_count += 1
     
     # 몬스터 데이터 저장
-    with open('src/data/monster_data.json', 'w', encoding='utf-8') as f:
+    with open(get_data_path('monster_data.json'), 'w', encoding='utf-8') as f:
         json.dump(monsters, f, ensure_ascii=False, indent=2)
     
     print(f"[OK] 몬스터 {updated_count}개 업데이트됨")
