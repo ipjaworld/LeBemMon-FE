@@ -69,3 +69,4 @@ export interface JobSubCategory {
   parentId: JobCategoryId;
 }
 
+

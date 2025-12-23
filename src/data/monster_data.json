@@ -4667,7 +4667,7 @@
     "imageUrl": "https://maplestory.io/api/gms/62/mob/6130102/icon?resize=2",
     "level": 60,
     "hp": 7200,
-    "exp": 420,
+    "exp": 584,
     "isReleased": true,
     "regionIds": [
       "ellin-forest"
@@ -4987,7 +4987,7 @@
     "imageUrl": "https://maplestory.io/api/gms/62/mob/6230201/icon?resize=2",
     "level": 64,
     "hp": 7800,
-    "exp": 700,
+    "exp": 777,
     "isReleased": true,
     "regionIds": [
       "ellin-forest"
@@ -5137,7 +5137,7 @@
     "imageUrl": "https://maplestory.io/api/gms/62/mob/6300001/icon?resize=2",
     "level": 65,
     "hp": 11000,
-    "exp": 390,
+    "exp": 481,
     "isReleased": true,
     "regionIds": [
       "masteria-newleafcity",
@@ -5203,7 +5203,7 @@
     "imageUrl": "https://maplestory.io/api/gms/62/mob/6300006/icon?resize=2",
     "level": 65,
     "hp": 11000,
-    "exp": 455,
+    "exp": 619,
     "isReleased": true,
     "regionIds": [
       "ellin-forest"
@@ -5476,7 +5476,7 @@
     "imageUrl": "https://maplestory.io/api/gms/62/mob/6400001/icon?resize=2",
     "level": 68,
     "hp": 13000,
-    "exp": 445,
+    "exp": 589,
     "isReleased": true,
     "regionIds": [
       "ellin-forest"
@@ -5491,7 +5491,7 @@
     "imageUrl": "https://maplestory.io/api/gms/62/mob/6400002/icon?resize=2",
     "level": 68,
     "hp": 13000,
-    "exp": 715,
+    "exp": 792,
     "isReleased": true,
     "regionIds": [
       "ellin-forest"
