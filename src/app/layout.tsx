@@ -9,22 +9,50 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: "메이플랜드 레범몬 - 레벨 범위 몬스터 검색 | 메이플스토리월드",
-  description: "메이플스토리월드 메이플랜드 레범몬(레벨 범위 몬스터) 검색 서비스. 레벨을 입력하면 해당 레벨 ±10 범위의 몬스터를 빠르게 찾을 수 있습니다. 레범몬, 레벨범위몬스터, 메이플랜드 몬스터 검색, 메랜 몬스터 정보 제공.",
-  keywords: ["레범몬", "레벨 범위 몬스터", "레벨범위몬스터", "메이플랜드", "메랜", "메이플스토리월드", "몬스터 검색", "메이플랜드 몬스터", "레벨별 몬스터", "메이플 몬스터 정보"],
+  title: "레범몬 : 메이플랜드 레벨 범위 몬스터 간편 조회",
+  description: "메이플랜드 레벨 범위 몬스터를 간편하게 검색하고 비교해보세요! 레벨을 입력하면 해당 레벨 ±10 범위의 몬스터를 빠르게 찾을 수 있습니다.",
+  keywords: ["레범몬", "레벨 범위 몬스터", "레벨범위몬스터", "메이플랜드", "메랜", "메이플스토리월드", "몬스터 검색", "메이플랜드 몬스터", "레벨별 몬스터", "메이플 몬스터 정보", "레범몬 검색", "메이플랜드 몬스터 조회"],
+  authors: [{ name: "레범몬" }],
+  creator: "레범몬",
+  publisher: "레범몬",
   openGraph: {
-    title: "메이플랜드 레범몬 - 레벨 범위 몬스터 검색",
-    description: "메이플스토리월드 메이플랜드에서 레벨 범위에 맞는 몬스터를 빠르게 검색하세요. 레범몬 정보를 한눈에 확인할 수 있습니다.",
+    title: "레범몬 : 메이플랜드 레벨 범위 몬스터 간편 조회",
+    description: "메이플랜드 레벨 범위 몬스터를 간편하게 검색하고 비교해보세요!",
     type: "website",
     locale: "ko_KR",
+    siteName: "레범몬",
+    url: "https://rebemon.vercel.app",
+    images: [
+      {
+        url: "/icon.png",
+        width: 512,
+        height: 512,
+        alt: "레범몬 파비콘",
+      },
+    ],
   },
   twitter: {
     card: "summary",
-    title: "메이플랜드 레범몬",
-    description: "메이플스토리월드 메이플랜드 레벨 범위 몬스터 검색 서비스",
+    title: "레범몬 : 메이플랜드 레벨 범위 몬스터 간편 조회",
+    description: "메이플랜드 레벨 범위 몬스터를 간편하게 검색하고 비교해보세요!",
+    images: ["/icon.png"],
   },
   alternates: {
     canonical: "https://rebemon.vercel.app",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  verification: {
+    google: "google42c7fc98589ab843",
   },
 };
 
