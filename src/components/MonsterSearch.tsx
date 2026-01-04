@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useMemo, useEffect } from 'react';
+import { useState, useMemo, useEffect, useRef } from 'react';
 import MonsterCard from '@/components/MonsterCard';
 import Footer from '@/components/Footer';
 import { Monster } from '@/types/monster';
@@ -22,6 +22,28 @@ interface MonsterSearchProps {
 export default function MonsterSearch({ monsters }: MonsterSearchProps) {
   const [level, setLevel] = useState<number | ''>('');
   const [isFilterOpen, setIsFilterOpen] = useState(false);
+  const [isQuickSelectOpen, setIsQuickSelectOpen] = useState(false);
+  const quickSelectRef = useRef<HTMLDivElement>(null);
+
+  // 외부 클릭 감지
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (
+        quickSelectRef.current &&
+        !quickSelectRef.current.contains(event.target as Node)
+      ) {
+        setIsQuickSelectOpen(false);
+      }
+    };
+
+    if (isQuickSelectOpen) {
+      document.addEventListener('mousedown', handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [isQuickSelectOpen]);
   
   // 필터 상태
   const [searchName, setSearchName] = useState('');
@@ -446,24 +468,123 @@ export default function MonsterSearch({ monsters }: MonsterSearchProps) {
 
         <div className="mb-8 flex justify-center">
           <div className="w-full max-w-md">
-            <label
-              htmlFor="level-input"
-              className="mb-2 block text-sm font-medium text-gray-400"
-            >
-              레벨 입력
-            </label>
-            <input
-              id="level-input"
-              type="number"
-              min="1"
-              value={level}
-              onChange={(e) => {
-                const value = e.target.value;
-                setLevel(value === '' ? '' : Number(value));
-              }}
-              placeholder="예: 50"
-              className="latin-font numeric w-full rounded-lg border border-gray-600 bg-gray-800 px-4 py-3 text-lg text-gray-100 shadow-sm placeholder:text-gray-500 focus:border-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-400"
-            />
+            <div className="mb-2 flex items-center justify-between">
+              <label
+                htmlFor="level-input"
+                className="block text-sm font-medium text-gray-400"
+              >
+                레벨 입력
+              </label>
+            </div>
+              <div className="relative flex gap-2">
+              <input
+                id="level-input"
+                type="number"
+                min="1"
+                value={level}
+                onChange={(e) => {
+                  const value = e.target.value;
+                  setLevel(value === '' ? '' : Number(value));
+                }}
+                placeholder="예: 50"
+                className="latin-font numeric h-10 flex-1 rounded-lg border border-gray-600 bg-gray-800 px-4 text-lg text-gray-100 shadow-sm placeholder:text-gray-500 focus:border-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-400"
+              />
+              <div className="relative" ref={quickSelectRef}>
+                <button
+                  onClick={() => setIsQuickSelectOpen(!isQuickSelectOpen)}
+                  className={`h-10 flex items-center gap-2 rounded-lg border-2 px-4 font-semibold text-sm transition-all ${
+                    isQuickSelectOpen
+                      ? 'border-blue-500 bg-blue-500/20 text-blue-400'
+                      : 'border-blue-500 bg-blue-500 text-white hover:bg-blue-600 hover:border-blue-600 active:scale-95'
+                  }`}
+                >
+                  <svg
+                    className="h-5 w-5"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M13 10V3L4 14h7v7l9-11h-7z"
+                    />
+                  </svg>
+                  <span>빠른 선택</span>
+                  <svg
+                    className={`h-4 w-4 transition-transform ${isQuickSelectOpen ? 'rotate-180' : ''}`}
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                </button>
+
+                {/* 빠른 선택 팝업 */}
+                {isQuickSelectOpen && (
+                  <>
+                    {/* 팝업과 버튼을 연결하는 화살표 */}
+                    <div className="absolute top-full left-1/2 z-10 -translate-x-1/2 -mt-1">
+                      <div className="h-3 w-3 rotate-45 border-l border-t border-gray-700 bg-gray-800"></div>
+                    </div>
+                    <div className="absolute top-full left-0 z-10 mt-2 w-80 rounded-lg border border-gray-700 bg-gray-800 p-4 shadow-xl">
+                      <div className="mb-3 flex items-center justify-between">
+                        <h3 className="text-sm font-semibold text-gray-300">레벨 빠른 선택</h3>
+                        <button
+                          onClick={() => setIsQuickSelectOpen(false)}
+                          className="rounded p-1 text-gray-400 hover:bg-gray-700 hover:text-gray-200 transition-colors"
+                          aria-label="닫기"
+                        >
+                          <svg
+                            className="h-4 w-4"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth={2}
+                              d="M6 18L18 6M6 6l12 12"
+                            />
+                          </svg>
+                        </button>
+                      </div>
+                      <div className="grid grid-cols-4 gap-2">
+                        {[10, 20, 30, 40, 50, 60, 70].map((levelOption) => (
+                          <button
+                            key={levelOption}
+                            onClick={() => {
+                              setLevel(levelOption);
+                              setIsQuickSelectOpen(false);
+                            }}
+                            className="rounded-lg border-2 border-gray-600 bg-gray-700 px-3 py-2.5 text-base font-semibold text-gray-100 transition-all hover:border-blue-400 hover:bg-blue-500/20 hover:text-blue-400 active:scale-95"
+                          >
+                            {levelOption}
+                          </button>
+                        ))}
+                        <button
+                          onClick={() => {
+                            setLevel(80);
+                            setIsQuickSelectOpen(false);
+                          }}
+                          className="rounded-lg border-2 border-gray-600 bg-gray-700 px-3 py-2.5 text-base font-semibold text-gray-100 transition-all hover:border-blue-400 hover:bg-blue-500/20 hover:text-blue-400 active:scale-95"
+                        >
+                          80+
+                        </button>
+                      </div>
+                    </div>
+                  </>
+                )}
+              </div>
+            </div>
           </div>
         </div>
 
@@ -474,7 +595,7 @@ export default function MonsterSearch({ monsters }: MonsterSearchProps) {
               <div className="rounded-lg border border-gray-700 bg-gray-800">
                 <button
                   onClick={() => setIsFilterOpen(!isFilterOpen)}
-                  className="flex w-full items-center justify-between px-4 py-3 text-left text-gray-200 hover:bg-gray-750 transition-colors"
+                  className="h-10 flex w-full items-center justify-between px-4 text-left text-gray-200 hover:bg-gray-750 transition-colors"
                 >
                   <span className="font-medium">상세 검색 및 필터</span>
                   <svg
@@ -586,7 +707,7 @@ export default function MonsterSearch({ monsters }: MonsterSearchProps) {
             <div className="max-w-40 flex items-center">
               <button
                 onClick={() => setShowRecommendedOnly(!showRecommendedOnly)}
-                className={`w-full rounded-lg border-2 px-4 py-3 text-sm font-medium transition-all ${
+                className={`h-10 w-full rounded-lg border-2 px-4 text-sm font-medium transition-all ${
                   showRecommendedOnly
                     ? 'border-yellow-500 bg-yellow-500/20 text-yellow-400'
                     : 'border-gray-700 bg-gray-800 text-gray-300 hover:border-yellow-500/50 hover:bg-gray-750'
