@@ -57,3 +57,12 @@ input[type="number"],
   font-family: var(--font-montserrat), "Pretendard Variable", sans-serif;
   font-variant-numeric: tabular-nums;
 }
+
+/* 전역 button 스타일 */
+button {
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: not-allowed;
+}

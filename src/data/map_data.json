@@ -1,0 +1,343 @@
+[
+  {
+    "id": "100000000",
+    "name": "헤네시스",
+    "regionId": "victoria-henesys",
+    "mapType": "town",
+    "monsterIds": [],
+    "isReleased": true,
+    "description": "헤네시스 마을 중심지",
+    "portalMapIds": ["100000000", "100000100", "100000200", "100010000", "104040000", "106010000"],
+    "imageUrls": {
+      "render": "https://maplestory.io/api/gms/92/map/100000000/render",
+      "minimap": "https://maplestory.io/api/gms/92/map/100000000/minimap",
+      "icon": "https://maplestory.io/api/gms/92/map/100000000/icon"
+    }
+  },
+  {
+    "id": "100000003",
+    "name": "돼지의공원",
+    "regionId": "victoria-henesys",
+    "mapType": "field",
+    "monsterIds": ["9300060"],
+    "isReleased": true,
+    "recommendedLevel": {
+      "min": 15,
+      "max": 25
+    },
+    "description": "아이언호그",
+    "portalMapIds": ["100000006", "100000004"],
+    "imageUrls": {
+      "render": "https://maplestory.io/api/gms/92/map/100000003/render",
+      "minimap": "https://maplestory.io/api/gms/92/map/100000003/minimap",
+      "icon": "https://maplestory.io/api/gms/92/map/100000003/icon"
+    }
+  },
+  {
+    "id": "100000004",
+    "name": "돼지의공원2",
+    "regionId": "victoria-henesys",
+    "mapType": "field",
+    "monsterIds": ["9300060"],
+    "monsterSpawns": {
+      "9300060": 22
+    },
+    "isReleased": true,
+    "recommendedLevel": {
+      "min": 15,
+      "max": 25
+    },
+    "description": "아이언호그",
+    "portalMapIds": ["100000005", "100000003"],
+    "imageUrls": {
+      "render": "https://maplestory.io/api/gms/92/map/100000004/render",
+      "minimap": "https://maplestory.io/api/gms/92/map/100000004/minimap",
+      "icon": "https://maplestory.io/api/gms/92/map/100000004/icon"
+    }
+  },
+  {
+    "id": "100000005",
+    "name": "남의집",
+    "regionId": "victoria-henesys",
+    "mapType": "field",
+    "monsterIds": ["9300060", "3000001", "6130101"],
+    "isReleased": true,
+    "recommendedLevel": {
+      "min": 20,
+      "max": 35
+    },
+    "description": "아이언호그, 페어리, 머쉬맘",
+    "portalMapIds": ["100000004"],
+    "imageUrls": {
+      "render": "https://maplestory.io/api/gms/92/map/100000005/render",
+      "minimap": "https://maplestory.io/api/gms/92/map/100000005/minimap",
+      "icon": "https://maplestory.io/api/gms/92/map/100000005/icon"
+    }
+  },
+  {
+    "id": "100000006",
+    "name": "버섯공원쉼터",
+    "regionId": "victoria-henesys",
+    "mapType": "field",
+    "monsterIds": [],
+    "isReleased": true,
+    "description": "휴식 공간",
+    "portalMapIds": ["100000003"],
+    "imageUrls": {
+      "render": "https://maplestory.io/api/gms/92/map/100000006/render",
+      "minimap": "https://maplestory.io/api/gms/92/map/100000006/minimap",
+      "icon": "https://maplestory.io/api/gms/92/map/100000006/icon"
+    }
+  },
+  {
+    "id": "100000100",
+    "name": "헤네시스 시장",
+    "regionId": "victoria-henesys",
+    "mapType": "town",
+    "monsterIds": [],
+    "isReleased": true,
+    "description": "상점가",
+    "portalMapIds": ["100000000", "100000100", "100000200"],
+    "imageUrls": {
+      "render": "https://maplestory.io/api/gms/92/map/100000100/render",
+      "minimap": "https://maplestory.io/api/gms/92/map/100000100/minimap",
+      "icon": "https://maplestory.io/api/gms/92/map/100000100/icon"
+    }
+  },
+  {
+    "id": "100000200",
+    "name": "헤네시스공원",
+    "regionId": "victoria-henesys",
+    "mapType": "field",
+    "monsterIds": [],
+    "isReleased": true,
+    "description": "공원 지역",
+    "imageUrls": {
+      "render": "https://maplestory.io/api/gms/92/map/100000200/render",
+      "minimap": "https://maplestory.io/api/gms/92/map/100000200/minimap",
+      "icon": "https://maplestory.io/api/gms/92/map/100000200/icon"
+    }
+  },
+  {
+    "id": "100000202",
+    "name": "펫산책로",
+    "regionId": "victoria-henesys",
+    "mapType": "field",
+    "monsterIds": [],
+    "isReleased": true,
+    "description": "펫 관련 맵",
+    "portalMapIds": ["100000200", "100000202"],
+    "imageUrls": {
+      "render": "https://maplestory.io/api/gms/92/map/100000202/render",
+      "minimap": "https://maplestory.io/api/gms/92/map/100000202/minimap",
+      "icon": "https://maplestory.io/api/gms/92/map/100000202/icon"
+    }
+  },
+  {
+    "id": "100000203",
+    "name": "헤네시스게임공원",
+    "regionId": "victoria-henesys",
+    "mapType": "field",
+    "monsterIds": [],
+    "isReleased": true,
+    "description": "미니게임 공간",
+    "portalMapIds": ["100000200", "100000203"],
+    "imageUrls": {
+      "render": "https://maplestory.io/api/gms/92/map/100000203/render",
+      "minimap": "https://maplestory.io/api/gms/92/map/100000203/minimap",
+      "icon": "https://maplestory.io/api/gms/92/map/100000203/icon"
+    }
+  },
+  {
+    "id": "100010000",
+    "name": "헤네시스 북쪽언덕",
+    "regionId": "victoria-henesys",
+    "mapType": "field",
+    "monsterIds": [],
+    "isReleased": true,
+    "imageUrls": {
+      "render": "https://maplestory.io/api/gms/92/map/100010000/render",
+      "minimap": "https://maplestory.io/api/gms/92/map/100010000/minimap",
+      "icon": "https://maplestory.io/api/gms/92/map/100010000/icon"
+    }
+  },
+  {
+    "id": "104040000",
+    "name": "헤네시스사냥터1",
+    "regionId": "victoria-henesys",
+    "mapType": "field",
+    "monsterIds": [],
+    "isReleased": true,
+    "imageUrls": {
+      "render": "https://maplestory.io/api/gms/92/map/104040000/render",
+      "minimap": "https://maplestory.io/api/gms/92/map/104040000/minimap",
+      "icon": "https://maplestory.io/api/gms/92/map/104040000/icon"
+    }
+  },
+  {
+    "id": "105040000",
+    "name": "깊은숲 습지",
+    "regionId": "victoria-henesys",
+    "mapType": "field",
+    "monsterIds": [],
+    "isReleased": true,
+    "imageUrls": {
+      "render": "https://maplestory.io/api/gms/92/map/105040000/render",
+      "minimap": "https://maplestory.io/api/gms/92/map/105040000/minimap",
+      "icon": "https://maplestory.io/api/gms/92/map/105040000/icon"
+    }
+  },
+  {
+    "id": "106010000",
+    "name": "던전으로가는길",
+    "regionId": "victoria-henesys",
+    "mapType": "field",
+    "monsterIds": ["120100", "2220100", "210100", "1210101", "100101"],
+    "isReleased": true,
+    "recommendedLevel": {
+      "min": 10,
+      "max": 20
+    },
+    "description": "스포아, 파란버섯, 슬라임, 리본돼지, 파란 달팽이",
+    "portalMapIds": ["100000000", "106010100"],
+    "imageUrls": {
+      "render": "https://maplestory.io/api/gms/92/map/106010000/render",
+      "minimap": "https://maplestory.io/api/gms/92/map/106010000/minimap",
+      "icon": "https://maplestory.io/api/gms/92/map/106010000/icon"
+    }
+  },
+  {
+    "id": "106010100",
+    "name": "헤네시스던전입구",
+    "regionId": "victoria-henesys",
+    "mapType": "dungeon",
+    "monsterIds": ["210100", "1110100", "2220100", "3210800"],
+    "isReleased": true,
+    "recommendedLevel": {
+      "min": 15,
+      "max": 25
+    },
+    "description": "슬라임, 초록버섯, 파란버섯, 루팡",
+    "portalMapIds": ["105040000", "106010000"],
+    "imageUrls": {
+      "render": "https://maplestory.io/api/gms/92/map/106010100/render",
+      "minimap": "https://maplestory.io/api/gms/92/map/106010100/minimap",
+      "icon": "https://maplestory.io/api/gms/92/map/106010100/icon"
+    }
+  },
+  {
+    "id": "106010101",
+    "name": "숨쉬는바위",
+    "regionId": "victoria-henesys",
+    "mapType": "dungeon",
+    "monsterIds": ["2220100", "3210800", "5130101", "3000001"],
+    "isReleased": true,
+    "recommendedLevel": {
+      "min": 20,
+      "max": 30
+    },
+    "description": "파란버섯, 루팡, 스톤골렘, 페어리",
+    "portalMapIds": ["106010100", "106010102"],
+    "imageUrls": {
+      "render": "https://maplestory.io/api/gms/92/map/106010101/render",
+      "minimap": "https://maplestory.io/api/gms/92/map/106010101/minimap",
+      "icon": "https://maplestory.io/api/gms/92/map/106010101/icon"
+    }
+  },
+  {
+    "id": "106010102",
+    "name": "골렘의사원입구",
+    "regionId": "victoria-henesys",
+    "mapType": "dungeon",
+    "monsterIds": ["2220100", "5130101", "3000001"],
+    "isReleased": true,
+    "recommendedLevel": {
+      "min": 25,
+      "max": 35
+    },
+    "description": "파란버섯, 스톤골렘, 페어리",
+    "portalMapIds": ["106010101", "106010103", "106010104", "106010105", "106010106"],
+    "imageUrls": {
+      "render": "https://maplestory.io/api/gms/92/map/106010102/render",
+      "minimap": "https://maplestory.io/api/gms/92/map/106010102/minimap",
+      "icon": "https://maplestory.io/api/gms/92/map/106010102/icon"
+    }
+  },
+  {
+    "id": "106010103",
+    "name": "골렘의사원1",
+    "regionId": "victoria-henesys",
+    "mapType": "dungeon",
+    "monsterIds": ["5130101", "2220100", "3210800", "3000001"],
+    "isReleased": true,
+    "recommendedLevel": {
+      "min": 25,
+      "max": 35
+    },
+    "description": "스톤골렘, 파란버섯, 루팡, 페어리",
+    "portalMapIds": ["106010102"],
+    "imageUrls": {
+      "render": "https://maplestory.io/api/gms/92/map/106010103/render",
+      "minimap": "https://maplestory.io/api/gms/92/map/106010103/minimap",
+      "icon": "https://maplestory.io/api/gms/92/map/106010103/icon"
+    }
+  },
+  {
+    "id": "106010104",
+    "name": "골렘의사원2",
+    "regionId": "victoria-henesys",
+    "mapType": "dungeon",
+    "monsterIds": ["5130101", "2220100", "3210800", "3000001"],
+    "isReleased": true,
+    "recommendedLevel": {
+      "min": 28,
+      "max": 38
+    },
+    "description": "스톤골렘, 파란버섯, 루팡, 페어리",
+    "portalMapIds": ["106010102"],
+    "imageUrls": {
+      "render": "https://maplestory.io/api/gms/92/map/106010104/render",
+      "minimap": "https://maplestory.io/api/gms/92/map/106010104/minimap",
+      "icon": "https://maplestory.io/api/gms/92/map/106010104/icon"
+    }
+  },
+  {
+    "id": "106010105",
+    "name": "골렘의사원3",
+    "regionId": "victoria-henesys",
+    "mapType": "dungeon",
+    "monsterIds": ["5130102", "2220100", "3000001"],
+    "isReleased": true,
+    "recommendedLevel": {
+      "min": 30,
+      "max": 40
+    },
+    "description": "다크스톤골렘, 파란버섯, 페어리",
+    "portalMapIds": ["106010102"],
+    "imageUrls": {
+      "render": "https://maplestory.io/api/gms/92/map/106010105/render",
+      "minimap": "https://maplestory.io/api/gms/92/map/106010105/minimap",
+      "icon": "https://maplestory.io/api/gms/92/map/106010105/icon"
+    }
+  },
+  {
+    "id": "106010106",
+    "name": "골렘의사원4",
+    "regionId": "victoria-henesys",
+    "mapType": "dungeon",
+    "monsterIds": ["5150000", "2220100", "3000001"],
+    "isReleased": true,
+    "recommendedLevel": {
+      "min": 32,
+      "max": 42
+    },
+    "description": "믹스골렘, 파란버섯, 페어리",
+    "portalMapIds": ["106010102"],
+    "imageUrls": {
+      "render": "https://maplestory.io/api/gms/92/map/106010106/render",
+      "minimap": "https://maplestory.io/api/gms/92/map/106010106/minimap",
+      "icon": "https://maplestory.io/api/gms/92/map/106010106/icon"
+    }
+  }
+]
+

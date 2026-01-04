@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://le-bem-mon-fe.vercel.app/sitemap.xml
+
