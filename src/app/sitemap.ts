@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://rebemon.vercel.app';
+  const baseUrl = 'https://rebemon.xyz';
 
   return [
     {
@@ -12,4 +12,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   ];
 }
+
 
