@@ -487,19 +487,21 @@ export default function MonsterSearch({ monsters }: MonsterSearchProps) {
                   setLevel(value === '' ? '' : Number(value));
                 }}
                 placeholder="예: 50"
-                className="latin-font numeric h-10 flex-1 rounded-lg border border-gray-600 bg-gray-800 px-4 text-lg text-gray-100 shadow-sm placeholder:text-gray-500 focus:border-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-400"
+                className="latin-font numeric h-10 min-w-0 flex-1 rounded-lg border border-gray-600 bg-gray-800 px-3 sm:px-4 text-lg text-gray-100 shadow-sm placeholder:text-gray-500 focus:border-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-400"
               />
               <div className="relative" ref={quickSelectRef}>
                 <button
                   onClick={() => setIsQuickSelectOpen(!isQuickSelectOpen)}
-                  className={`h-10 flex items-center gap-2 rounded-lg border-2 px-4 font-semibold text-sm transition-all ${
+                  aria-haspopup="dialog"
+                  aria-expanded={isQuickSelectOpen}
+                  className={`h-10 flex items-center gap-2 whitespace-nowrap rounded-lg border-2 px-3 sm:px-4 font-semibold text-xs sm:text-sm transition-all ${
                     isQuickSelectOpen
                       ? 'border-blue-500 bg-blue-500/20 text-blue-400'
                       : 'border-blue-500 bg-blue-500 text-white hover:bg-blue-600 hover:border-blue-600 active:scale-95'
                   }`}
                 >
                   <svg
-                    className="h-5 w-5"
+                    className="h-4 w-4 sm:h-5 sm:w-5"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -511,7 +513,8 @@ export default function MonsterSearch({ monsters }: MonsterSearchProps) {
                       d="M13 10V3L4 14h7v7l9-11h-7z"
                     />
                   </svg>
-                  <span>빠른 선택</span>
+                  <span className="hidden sm:inline">빠른 선택</span>
+                  <span className="sr-only sm:hidden">빠른 선택</span>
                   <svg
                     className={`h-4 w-4 transition-transform ${isQuickSelectOpen ? 'rotate-180' : ''}`}
                     fill="none"
@@ -534,7 +537,7 @@ export default function MonsterSearch({ monsters }: MonsterSearchProps) {
                     <div className="absolute top-full left-1/2 z-10 -translate-x-1/2 -mt-1">
                       <div className="h-3 w-3 rotate-45 border-l border-t border-gray-700 bg-gray-800"></div>
                     </div>
-                    <div className="absolute top-full left-0 z-10 mt-2 w-80 rounded-lg border border-gray-700 bg-gray-800 p-4 shadow-xl">
+                    <div className="absolute top-full right-0 sm:left-0 sm:right-auto z-10 mt-2 w-[min(20rem,calc(100vw-2rem))] rounded-lg border border-gray-700 bg-gray-800 p-4 shadow-xl">
                       <div className="mb-3 flex items-center justify-between">
                         <h3 className="text-sm font-semibold text-gray-300">레벨 빠른 선택</h3>
                         <button
