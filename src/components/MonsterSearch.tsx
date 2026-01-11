@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useMemo, useEffect, useRef } from 'react';
+import { useState, useMemo, useEffect, useRef, useCallback } from 'react';
 import MonsterCard from '@/components/MonsterCard';
 import MonsterDetailModal from '@/components/MonsterDetailModal';
 import Footer from '@/components/Footer';
@@ -74,6 +74,7 @@ export default function MonsterSearch({ monsters }: MonsterSearchProps) {
   const [showExpiringOnly, setShowExpiringOnly] = useState(false);
   const [showRecommendedOnly, setShowRecommendedOnly] = useState(false);
   const [selectedRegions, setSelectedRegions] = useState<string[]>([]);
+  const [showWeaknessOnly, setShowWeaknessOnly] = useState(false);
 
   // 정렬 상태
   const [sortBy, setSortBy] = useState<SortOption>('level-asc');
@@ -83,6 +84,9 @@ export default function MonsterSearch({ monsters }: MonsterSearchProps) {
   
   // 최근 확인한 몬스터 목록
   const [recentMonsters, setRecentMonsters] = useState<Monster[]>([]);
+  const [isRecentMonstersExpanded, setIsRecentMonstersExpanded] = useState(false);
+  const [shouldShowRecentMonstersExpandButton, setShouldShowRecentMonstersExpandButton] = useState(false);
+  const recentMonstersContainerRef = useRef<HTMLDivElement>(null);
   
   // 지역 필터 펼쳐보기 상태
   const [isRegionFilterExpanded, setIsRegionFilterExpanded] = useState(false);
@@ -175,8 +179,8 @@ export default function MonsterSearch({ monsters }: MonsterSearchProps) {
     }
   }, [level, showRebemonOnly]);
 
-  // 최근 확인한 몬스터 목록 로드 (컴포넌트 마운트 시)
-  useEffect(() => {
+  // 최근 확인한 몬스터 목록 로드 함수
+  const loadRecentMonsters = useCallback(() => {
     if (typeof window === 'undefined') return;
     
     try {
@@ -205,11 +209,49 @@ export default function MonsterSearch({ monsters }: MonsterSearchProps) {
         if (data.length !== sortedData.length) {
           localStorage.setItem('recentMonsters', JSON.stringify(sortedData));
         }
+      } else {
+        setRecentMonsters([]);
       }
     } catch (error) {
       console.error('Failed to load recent monsters:', error);
+      setRecentMonsters([]);
     }
   }, [monsters]);
+
+  // 최근 확인한 몬스터 목록 로드 (컴포넌트 마운트 시)
+  useEffect(() => {
+    loadRecentMonsters();
+  }, [loadRecentMonsters]);
+
+  // 개별 몬스터 삭제 함수
+  const removeRecentMonster = (monsterId: string) => {
+    if (typeof window === 'undefined') return;
+    
+    try {
+      const stored = localStorage.getItem('recentMonsters');
+      if (!stored) return;
+      
+      const data = JSON.parse(stored);
+      const filtered = data.filter((item: { monsterId: string }) => item.monsterId !== monsterId);
+      
+      localStorage.setItem('recentMonsters', JSON.stringify(filtered));
+      loadRecentMonsters();
+    } catch (error) {
+      console.error('Failed to remove recent monster:', error);
+    }
+  };
+
+  // 전체 히스토리 초기화 함수
+  const clearRecentMonsters = () => {
+    if (typeof window === 'undefined') return;
+    
+    try {
+      localStorage.setItem('recentMonsters', JSON.stringify([]));
+      setRecentMonsters([]);
+    } catch (error) {
+      console.error('Failed to clear recent monsters:', error);
+    }
+  };
 
   // 모달이 열릴 때 최근 확인한 몬스터 목록에 추가
   useEffect(() => {
@@ -344,6 +386,44 @@ export default function MonsterSearch({ monsters }: MonsterSearchProps) {
     return Array.from(regionIdSet);
   }, [baseFilteredMonsters]);
 
+  // 최근 확인한 몬스터가 1줄을 넘어가는지 확인
+  useEffect(() => {
+    if (!recentMonstersContainerRef.current) {
+      setShouldShowRecentMonstersExpandButton(false);
+      return;
+    }
+
+    const checkOverflow = () => {
+      const container = recentMonstersContainerRef.current;
+      if (!container) return;
+
+      const children = Array.from(container.children) as HTMLElement[];
+      if (children.length === 0) {
+        setShouldShowRecentMonstersExpandButton(false);
+        return;
+      }
+
+      // 첫 번째 줄의 높이 계산
+      const firstRowHeight = children[0]?.offsetTop + children[0]?.offsetHeight || 0;
+      
+      // 두 번째 줄이 있는지 확인
+      const hasSecondRow = children.some((child) => child.offsetTop >= firstRowHeight);
+      
+      setShouldShowRecentMonstersExpandButton(hasSecondRow);
+    };
+
+    // 초기 확인 (약간의 지연을 두어 렌더링 완료 후 확인)
+    const timeoutId = setTimeout(checkOverflow, 100);
+    
+    // 리사이즈 이벤트 리스너 추가
+    window.addEventListener('resize', checkOverflow);
+    
+    return () => {
+      clearTimeout(timeoutId);
+      window.removeEventListener('resize', checkOverflow);
+    };
+  }, [recentMonsters, isRecentMonstersExpanded]);
+
   // 지역 필터가 1줄을 넘어가는지 확인
   useEffect(() => {
     if (!regionFilterContainerRef.current) {
@@ -390,8 +470,8 @@ export default function MonsterSearch({ monsters }: MonsterSearchProps) {
     // 지형/드랍 등의 이유로 무조건 인기인 몬스터들
     const ALWAYS_POPULAR_MONSTER_IDS = new Set(['8140001', '8140002']); // 하프, 블러드 하프
     // 특별 아이템 ID
-    const ILBI_ID = '2070001'; // 일비 표창
-    const HWABI_ID = '2070000'; // 뇌전 수리검
+    const ILBI_ID = '2070006';
+    const HWABI_ID = '2070005';
 
     baseFilteredMonsters.forEach((monster) => {
       // 무조건 인기인 예외 몬스터
@@ -628,6 +708,15 @@ export default function MonsterSearch({ monsters }: MonsterSearchProps) {
       });
     }
 
+    // 속성 약점 필터
+    if (showWeaknessOnly) {
+      monstersWithExpiring = monstersWithExpiring.filter((monster) => {
+        if (!monster.attributes || monster.attributes.length === 0) return false;
+        // 속성 중 하나라도 "약점"이 포함되어 있으면 통과
+        return monster.attributes.some((attr) => attr.includes('약점'));
+      });
+    }
+
     // 정렬 적용
     const sorted = [...monstersWithExpiring].sort((a, b) => {
       switch (sortBy) {
@@ -681,7 +770,7 @@ export default function MonsterSearch({ monsters }: MonsterSearchProps) {
     });
 
     return uniqueSorted;
-  }, [baseFilteredMonsters, searchName, minLevel, maxLevel, minHp, maxHp, minExp, maxExp, showExpiringOnly, showRecommendedOnly, selectedRegions, sortBy, popularMasteryBookIds, regions]) as MonsterWithExpiring[];
+  }, [baseFilteredMonsters, searchName, minLevel, maxLevel, minHp, maxHp, minExp, maxExp, showExpiringOnly, showRecommendedOnly, selectedRegions, showWeaknessOnly, sortBy, popularMasteryBookIds, regions]) as MonsterWithExpiring[];
 
   return (
     <div className="flex min-h-screen flex-col bg-gray-900">
@@ -831,17 +920,66 @@ export default function MonsterSearch({ monsters }: MonsterSearchProps) {
         {recentMonsters.length > 0 && (
           <div className="mb-6 flex justify-center">
             <div className="w-full max-w-xl">
-              <div className="mb-2 text-sm font-medium text-gray-400">최근 확인한 몬스터</div>
-              <div className="flex flex-wrap gap-2">
-                {recentMonsters.map((monster) => (
+              <div className="mb-2 flex items-center justify-between">
+                <div className="text-sm font-medium text-gray-400">최근 확인한 몬스터</div>
+                <button
+                  onClick={clearRecentMonsters}
+                  className="text-xs text-gray-500 hover:text-gray-300 transition-colors"
+                >
+                  히스토리 초기화
+                </button>
+              </div>
+              <div className="w-full">
+                <div
+                  ref={recentMonstersContainerRef}
+                  className={`flex flex-wrap gap-2 overflow-hidden transition-all ${
+                    isRecentMonstersExpanded ? '' : 'max-h-[3rem]'
+                  }`}
+                >
+                  {recentMonsters.map((monster) => (
+                    <div
+                      key={monster.id}
+                      className="group relative inline-flex items-center rounded-full border border-gray-600 bg-gray-800 px-3 py-1.5 pr-1.5 text-sm font-medium text-gray-200 transition-colors hover:border-blue-500 hover:bg-gray-700"
+                    >
+                      <button
+                        onClick={() => setSelectedMonster(monster)}
+                        className="pr-1"
+                      >
+                        {monster.name}
+                      </button>
+                      <button
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          removeRecentMonster(monster.id);
+                        }}
+                        className="ml-1 flex h-4 w-4 items-center justify-center rounded-full text-gray-400 transition-colors hover:bg-gray-600 hover:text-gray-200 cursor-pointer"
+                        aria-label={`${monster.name} 삭제`}
+                      >
+                        <svg
+                          className="h-3 w-3"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M6 18L18 6M6 6l12 12"
+                          />
+                        </svg>
+                      </button>
+                    </div>
+                  ))}
+                </div>
+                {shouldShowRecentMonstersExpandButton && (
                   <button
-                    key={monster.id}
-                    onClick={() => setSelectedMonster(monster)}
-                    className="rounded-full border border-gray-600 bg-gray-800 px-3 py-1.5 text-sm font-medium text-gray-200 transition-colors hover:border-blue-500 hover:bg-gray-700 hover:text-blue-400"
+                    onClick={() => setIsRecentMonstersExpanded(!isRecentMonstersExpanded)}
+                    className="mt-2 text-sm text-gray-400 hover:text-gray-300 transition-colors"
                   >
-                    {monster.name}
+                    {isRecentMonstersExpanded ? '접기' : '펼쳐보기'}
                   </button>
-                ))}
+                )}
               </div>
             </div>
           </div>
@@ -925,6 +1063,19 @@ export default function MonsterSearch({ monsters }: MonsterSearchProps) {
                       </select>
                     </div>
 
+                    {/* 속성 약점 필터 */}
+                    <div>
+                      <label className="flex items-start gap-2 cursor-pointer">
+                        <input
+                          type="checkbox"
+                          checked={showWeaknessOnly}
+                          onChange={(e) => setShowWeaknessOnly(e.target.checked)}
+                          className="mt-0.5 w-4 h-4 rounded border-gray-600 bg-gray-700 text-blue-500 focus:ring-blue-500 focus:ring-2"
+                        />
+                        <span className="text-sm font-medium text-gray-300">속성 약점이 있는 몬스터만 보기</span>
+                      </label>
+                    </div>
+
                     {/* 인기 몬스터만 보기 */}
                     {/* <div>
                       <label className="flex items-start gap-2 cursor-pointer">
@@ -951,6 +1102,7 @@ export default function MonsterSearch({ monsters }: MonsterSearchProps) {
                         setShowExpiringOnly(false);
                         setShowRecommendedOnly(false);
                         setSelectedRegions([]);
+                        setShowWeaknessOnly(false);
                         setSortBy('level-asc');
                       }}
                       className="w-full rounded-lg bg-gray-700 px-4 py-2 text-sm text-gray-300 hover:bg-gray-600 transition-colors"
@@ -1082,6 +1234,7 @@ export default function MonsterSearch({ monsters }: MonsterSearchProps) {
       <MonsterDetailModal
         monster={selectedMonster}
         onClose={() => setSelectedMonster(null)}
+        onMonsterClick={(monster) => setSelectedMonster(monster)}
       />
     </div>
   );

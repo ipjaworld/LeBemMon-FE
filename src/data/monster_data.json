@@ -17,7 +17,8 @@
       "victoria-sleepywood",
       "world-travel-japan"
     ],
-    "attributes": null
+    "attributes": null,
+    "featuredDropItemIds": []
   },
   {
     "id": "100101",
@@ -36,7 +37,8 @@
       "victoria-perion",
       "world-travel-japan"
     ],
-    "attributes": null
+    "attributes": null,
+    "featuredDropItemIds": []
   },
   {
     "id": "120100",
@@ -53,7 +55,8 @@
       "victoria-lith",
       "world-travel-japan"
     ],
-    "attributes": null
+    "attributes": null,
+    "featuredDropItemIds": []
   },
   {
     "id": "130100",
@@ -75,7 +78,8 @@
     ],
     "attributes": [
       "불속성약점"
-    ]
+    ],
+    "featuredDropItemIds": []
   },
   {
     "id": "130101",
@@ -94,7 +98,10 @@
       "victoria-perion",
       "world-travel-japan"
     ],
-    "attributes": null
+    "attributes": null,
+    "featuredDropItemIds": [
+      "2040502"
+    ]
   },
   {
     "id": "210100",
@@ -114,7 +121,8 @@
     ],
     "attributes": [
       "전기속성약점"
-    ]
+    ],
+    "featuredDropItemIds": []
   },
   {
     "id": "1110100",
@@ -135,6 +143,9 @@
     ],
     "attributes": [
       "독속성무효"
+    ],
+    "featuredDropItemIds": [
+      "1092008"
     ]
   },
   {
@@ -154,7 +165,8 @@
     ],
     "attributes": [
       "불속성약점"
-    ]
+    ],
+    "featuredDropItemIds": []
   },
   {
     "id": "1120100",
@@ -173,6 +185,9 @@
     ],
     "attributes": [
       "전기속성약점"
+    ],
+    "featuredDropItemIds": [
+      "2043002"
     ]
   },
   {
@@ -189,7 +204,8 @@
       "victoria-henesys",
       "victoria-perion"
     ],
-    "attributes": null
+    "attributes": null,
+    "featuredDropItemIds": []
   },
   {
     "id": "1140100",
@@ -203,7 +219,10 @@
       "victoria",
       "victoria-ellinia"
     ],
-    "attributes": null
+    "attributes": null,
+    "featuredDropItemIds": [
+      "2040501"
+    ]
   },
   {
     "id": "1210100",
@@ -219,7 +238,8 @@
       "victoria-kerning",
       "victoria-lith"
     ],
-    "attributes": null
+    "attributes": null,
+    "featuredDropItemIds": []
   },
   {
     "id": "1210101",
@@ -235,7 +255,8 @@
       "victoria-kerning",
       "victoria-lith"
     ],
-    "attributes": null
+    "attributes": null,
+    "featuredDropItemIds": []
   },
   {
     "id": "1210102",
@@ -258,6 +279,7 @@
       "2040048"
     ],
     "featuredDropItemIds": [
+      "2040705",
       "2040048"
     ]
   },
@@ -273,7 +295,10 @@
       "victoria",
       "victoria-kerning"
     ],
-    "attributes": null
+    "attributes": null,
+    "featuredDropItemIds": [
+      "2043302"
+    ]
   },
   {
     "id": "2100100",
@@ -286,7 +311,8 @@
     "regionIds": [
       "nihan-ariant"
     ],
-    "attributes": null
+    "attributes": null,
+    "featuredDropItemIds": []
   },
   {
     "id": "2100101",
@@ -299,7 +325,10 @@
     "regionIds": [
       "nihan-ariant"
     ],
-    "attributes": null
+    "attributes": null,
+    "featuredDropItemIds": [
+      "2044602"
+    ]
   },
   {
     "id": "2100102",
@@ -319,6 +348,7 @@
       "2040048"
     ],
     "featuredDropItemIds": [
+      "2040705",
       "2040048"
     ]
   },
@@ -335,6 +365,9 @@
     ],
     "attributes": [
       "불속성약점"
+    ],
+    "featuredDropItemIds": [
+      "2040501"
     ]
   },
   {
@@ -350,7 +383,8 @@
     ],
     "attributes": [
       "불속성약점"
-    ]
+    ],
+    "featuredDropItemIds": []
   },
   {
     "id": "2100105",
@@ -371,8 +405,7 @@
       "2040033"
     ],
     "featuredDropItemIds": [
-      "2040030",
-      "2040033"
+      "2044002"
     ]
   },
   {
@@ -388,7 +421,8 @@
     ],
     "attributes": [
       "불속성반감"
-    ]
+    ],
+    "featuredDropItemIds": []
   },
   {
     "id": "2100107",
@@ -403,7 +437,8 @@
     ],
     "attributes": [
       "불속성반감"
-    ]
+    ],
+    "featuredDropItemIds": []
   },
   {
     "id": "2100108",
@@ -416,7 +451,10 @@
     "regionIds": [
       "nihan-ariant"
     ],
-    "attributes": null
+    "attributes": null,
+    "featuredDropItemIds": [
+      "2043002"
+    ]
   },
   {
     "id": "2110200",
@@ -432,7 +470,8 @@
       "victoria-henesys",
       "victoria-sleepywood"
     ],
-    "attributes": null
+    "attributes": null,
+    "featuredDropItemIds": []
   },
   {
     "id": "2110300",
@@ -445,7 +484,8 @@
     "regionIds": [
       "nihan-ariant"
     ],
-    "attributes": null
+    "attributes": null,
+    "featuredDropItemIds": []
   },
   {
     "id": "2110301",
@@ -458,7 +498,10 @@
     "regionIds": [
       "nihan-ariant"
     ],
-    "attributes": null
+    "attributes": null,
+    "featuredDropItemIds": [
+      "2043002"
+    ]
   },
   {
     "id": "2130100",
@@ -477,7 +520,8 @@
     ],
     "attributes": [
       "불속성약점"
-    ]
+    ],
+    "featuredDropItemIds": []
   },
   {
     "id": "2130103",
@@ -493,7 +537,8 @@
       "victoria-kerning",
       "victoria-sleepywood"
     ],
-    "attributes": null
+    "attributes": null,
+    "featuredDropItemIds": []
   },
   {
     "id": "2220100",
@@ -510,7 +555,10 @@
       "victoria-perion",
       "world-travel-japan"
     ],
-    "attributes": null
+    "attributes": null,
+    "featuredDropItemIds": [
+      "2044002"
+    ]
   },
   {
     "id": "2230100",
@@ -524,7 +572,8 @@
       "victoria",
       "victoria-sleepywood"
     ],
-    "attributes": null
+    "attributes": null,
+    "featuredDropItemIds": []
   },
   {
     "id": "2230101",
@@ -540,6 +589,9 @@
     ],
     "attributes": [
       "성속성약점"
+    ],
+    "featuredDropItemIds": [
+      "2044302"
     ]
   },
   {
@@ -555,7 +607,8 @@
       "victoria-ellinia",
       "victoria-perion"
     ],
-    "attributes": null
+    "attributes": null,
+    "featuredDropItemIds": []
   },
   {
     "id": "2230103",
@@ -576,7 +629,6 @@
       "2040033"
     ],
     "featuredDropItemIds": [
-      "2040033",
       "2070005"
     ]
   },
@@ -593,7 +645,8 @@
     ],
     "attributes": [
       "독속성무효"
-    ]
+    ],
+    "featuredDropItemIds": []
   },
   {
     "id": "2230105",
@@ -628,7 +681,8 @@
     "attributes": [
       "독속성약점",
       "불속성반감"
-    ]
+    ],
+    "featuredDropItemIds": []
   },
   {
     "id": "2230107",
@@ -644,6 +698,9 @@
     "attributes": [
       "독속성약점",
       "불속성반감"
+    ],
+    "featuredDropItemIds": [
+      "2044302"
     ]
   },
   {
@@ -659,7 +716,8 @@
     ],
     "attributes": [
       "불속성반감"
-    ]
+    ],
+    "featuredDropItemIds": []
   },
   {
     "id": "2230109",
@@ -676,6 +734,9 @@
       "전기속성약점",
       "독속성약점",
       "불속성반감"
+    ],
+    "featuredDropItemIds": [
+      "1051007"
     ]
   },
   {
@@ -690,7 +751,10 @@
       "victoria",
       "victoria-ellinia"
     ],
-    "attributes": null
+    "attributes": null,
+    "featuredDropItemIds": [
+      "2041016"
+    ]
   },
   {
     "id": "2230111",
@@ -709,8 +773,7 @@
       "2040047"
     ],
     "featuredDropItemIds": [
-      "2040047",
-      "2040301"
+      "2040047"
     ]
   },
   {
@@ -728,6 +791,9 @@
       "얼음속성약점",
       "독속성반감",
       "불속성반감"
+    ],
+    "featuredDropItemIds": [
+      "2040501"
     ]
   },
   {
@@ -748,7 +814,8 @@
       "2040039"
     ],
     "featuredDropItemIds": [
-      "2040039"
+      "2040039",
+      "2040024"
     ]
   },
   {
@@ -771,7 +838,7 @@
       "2040030"
     ],
     "featuredDropItemIds": [
-      "2040030"
+      "2041016"
     ]
   },
   {
@@ -785,7 +852,8 @@
     "regionIds": [
       "orbis"
     ],
-    "attributes": null
+    "attributes": null,
+    "featuredDropItemIds": []
   },
   {
     "id": "3000006",
@@ -801,7 +869,8 @@
     "attributes": [
       "독속성약점",
       "불속성반감"
-    ]
+    ],
+    "featuredDropItemIds": []
   },
   {
     "id": "3100101",
@@ -817,6 +886,9 @@
     "attributes": [
       "불속성약점",
       "얼음속성약점"
+    ],
+    "featuredDropItemIds": [
+      "2044701"
     ]
   },
   {
@@ -830,7 +902,8 @@
     "regionIds": [
       "nihan-ariant"
     ],
-    "attributes": null
+    "attributes": null,
+    "featuredDropItemIds": []
   },
   {
     "id": "3110100",
@@ -846,7 +919,8 @@
     "attributes": [
       "얼음속성반감",
       "불속성약점"
-    ]
+    ],
+    "featuredDropItemIds": []
   },
   {
     "id": "3110101",
@@ -859,7 +933,8 @@
     "regionIds": [
       "ludibrium"
     ],
-    "attributes": null
+    "attributes": null,
+    "featuredDropItemIds": []
   },
   {
     "id": "3110102",
@@ -872,7 +947,8 @@
     "regionIds": [
       "ludus-lake-earth-defense-hq"
     ],
-    "attributes": null
+    "attributes": null,
+    "featuredDropItemIds": []
   },
   {
     "id": "3110300",
@@ -884,6 +960,9 @@
     "isReleased": true,
     "regionIds": [
       "nihan-magatia"
+    ],
+    "featuredDropItemIds": [
+      "2044701"
     ]
   },
   {
@@ -900,6 +979,9 @@
     "attributes": [
       "불속성반감",
       "얼음속성약점"
+    ],
+    "featuredDropItemIds": [
+      "2044701"
     ]
   },
   {
@@ -917,7 +999,7 @@
       "2040036"
     ],
     "featuredDropItemIds": [
-      "2040036"
+      "2044502"
     ]
   },
   {
@@ -932,7 +1014,7 @@
       "nihan-magatia"
     ],
     "featuredDropItemIds": [
-      "2040302"
+      "2040046"
     ]
   },
   {
@@ -951,9 +1033,7 @@
       "불속성반감",
       "얼음속성약점"
     ],
-    "featuredDropItemIds": [
-      "2070001"
-    ]
+    "featuredDropItemIds": []
   },
   {
     "id": "3210200",
@@ -971,7 +1051,7 @@
       "얼음속성약점"
     ],
     "featuredDropItemIds": [
-      "2070001"
+      "2044701"
     ]
   },
   {
@@ -988,7 +1068,8 @@
     "attributes": [
       "전기속성반감",
       "얼음속성약점"
-    ]
+    ],
+    "featuredDropItemIds": []
   },
   {
     "id": "3210202",
@@ -1004,7 +1085,8 @@
     "attributes": [
       "얼음속성반감",
       "불속성약점"
-    ]
+    ],
+    "featuredDropItemIds": []
   },
   {
     "id": "3210203",
@@ -1017,7 +1099,10 @@
     "regionIds": [
       "ludibrium"
     ],
-    "attributes": null
+    "attributes": null,
+    "featuredDropItemIds": [
+      "1051006"
+    ]
   },
   {
     "id": "3210204",
@@ -1030,7 +1115,8 @@
     "regionIds": [
       "ludibrium"
     ],
-    "attributes": null
+    "attributes": null,
+    "featuredDropItemIds": []
   },
   {
     "id": "3210205",
@@ -1043,7 +1129,8 @@
     "regionIds": [
       "ludus-lake-earth-defense-hq"
     ],
-    "attributes": null
+    "attributes": null,
+    "featuredDropItemIds": []
   },
   {
     "id": "3210206",
@@ -1056,7 +1143,8 @@
     "regionIds": [
       "ludus-lake-earth-defense-hq"
     ],
-    "attributes": null
+    "attributes": null,
+    "featuredDropItemIds": []
   },
   {
     "id": "3210207",
@@ -1069,7 +1157,8 @@
     "regionIds": [
       "ludibrium"
     ],
-    "attributes": null
+    "attributes": null,
+    "featuredDropItemIds": []
   },
   {
     "id": "3210450",
@@ -1086,7 +1175,8 @@
     "attributes": [
       "얼음속성반감",
       "불속성반감"
-    ]
+    ],
+    "featuredDropItemIds": []
   },
   {
     "id": "3210800",
@@ -1103,7 +1193,8 @@
       "victoria-kerning",
       "victoria-perion",
       "victoria-sleepywood"
-    ]
+    ],
+    "featuredDropItemIds": []
   },
   {
     "id": "3220000",
@@ -1117,7 +1208,8 @@
       "victoria",
       "victoria-ellinia"
     ],
-    "attributes": null
+    "attributes": null,
+    "featuredDropItemIds": []
   },
   {
     "id": "3220001",
@@ -1130,7 +1222,10 @@
     "regionIds": [
       "nihan-ariant"
     ],
-    "attributes": null
+    "attributes": null,
+    "featuredDropItemIds": [
+      "2040501"
+    ]
   },
   {
     "id": "3230100",
@@ -1148,6 +1243,9 @@
     ],
     "attributes": [
       "독속성반감"
+    ],
+    "featuredDropItemIds": [
+      "2044502"
     ]
   },
   {
@@ -1166,8 +1264,9 @@
       "2040042"
     ],
     "featuredDropItemIds": [
-      "2040027",
-      "2040042"
+      "1051008",
+      "2040042",
+      "2040027"
     ]
   },
   {
@@ -1182,6 +1281,7 @@
       "2040039"
     ],
     "featuredDropItemIds": [
+      "2040024",
       "2040039"
     ]
   },
@@ -1198,7 +1298,7 @@
     ],
     "attributes": null,
     "featuredDropItemIds": [
-      "2040302"
+      "2040046"
     ]
   },
   {
@@ -1214,7 +1314,8 @@
     ],
     "attributes": [
       "불속성반감"
-    ]
+    ],
+    "featuredDropItemIds": []
   },
   {
     "id": "3230200",
@@ -1229,6 +1330,9 @@
     ],
     "attributes": [
       "성속성반감"
+    ],
+    "featuredDropItemIds": [
+      "1092008"
     ]
   },
   {
@@ -1245,7 +1349,8 @@
       "victoria-kerning",
       "victoria-sleepywood"
     ],
-    "attributes": null
+    "attributes": null,
+    "featuredDropItemIds": []
   },
   {
     "id": "3230303",
@@ -1258,7 +1363,8 @@
     "regionIds": [
       "ludus-lake-earth-defense-hq"
     ],
-    "attributes": null
+    "attributes": null,
+    "featuredDropItemIds": []
   },
   {
     "id": "3230304",
@@ -1276,8 +1382,7 @@
       "2040030"
     ],
     "featuredDropItemIds": [
-      "2040030",
-      "2040302"
+      "2040046"
     ]
   },
   {
@@ -1291,7 +1396,8 @@
     "regionIds": [
       "ludus-lake-earth-defense-hq"
     ],
-    "attributes": null
+    "attributes": null,
+    "featuredDropItemIds": []
   },
   {
     "id": "3230308",
@@ -1304,7 +1410,8 @@
     "regionIds": [
       "ludus-lake-earth-defense-hq"
     ],
-    "attributes": null
+    "attributes": null,
+    "featuredDropItemIds": []
   },
   {
     "id": "3230400",
@@ -1317,7 +1424,10 @@
     "regionIds": [
       "ludus-lake-earth-defense-hq"
     ],
-    "attributes": null
+    "attributes": null,
+    "featuredDropItemIds": [
+      "1092008"
+    ]
   },
   {
     "id": "3230405",
@@ -1335,7 +1445,7 @@
       "불속성반감"
     ],
     "featuredDropItemIds": [
-      "2040302"
+      "2040046"
     ]
   },
   {
@@ -1348,6 +1458,9 @@
     "isReleased": true,
     "regionIds": [
       "nihan-magatia"
+    ],
+    "featuredDropItemIds": [
+      "2041019"
     ]
   },
   {
@@ -1357,7 +1470,10 @@
     "isReleased": false,
     "level": 45,
     "hp": 2550,
-    "exp": 110
+    "exp": 110,
+    "featuredDropItemIds": [
+      "2044002"
+    ]
   },
   {
     "id": "4110302",
@@ -1369,7 +1485,8 @@
     "isReleased": true,
     "regionIds": [
       "nihan-magatia"
-    ]
+    ],
+    "featuredDropItemIds": []
   },
   {
     "id": "4130100",
@@ -1383,7 +1500,10 @@
       "victoria",
       "victoria-ellinia"
     ],
-    "attributes": null
+    "attributes": null,
+    "featuredDropItemIds": [
+      "2040025"
+    ]
   },
   {
     "id": "4130101",
@@ -1397,7 +1517,8 @@
       "2040805"
     ],
     "featuredDropItemIds": [
-      "2040805"
+      "2040805",
+      "2041013"
     ]
   },
   {
@@ -1413,7 +1534,8 @@
     ],
     "attributes": [
       "성속성약점"
-    ]
+    ],
+    "featuredDropItemIds": []
   },
   {
     "id": "4130103",
@@ -1426,7 +1548,8 @@
     "regionIds": [
       "ludus-lake-earth-defense-hq"
     ],
-    "attributes": null
+    "attributes": null,
+    "featuredDropItemIds": []
   },
   {
     "id": "4220000",
@@ -1439,7 +1562,8 @@
     "regionIds": [
       "aqua-road"
     ],
-    "attributes": null
+    "attributes": null,
+    "featuredDropItemIds": []
   },
   {
     "id": "4220001",
@@ -1448,7 +1572,8 @@
     "level": 45,
     "hp": 2550,
     "exp": 0,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "4230100",
@@ -1466,7 +1591,8 @@
     "attributes": [
       "얼음속성반감",
       "불속성약점"
-    ]
+    ],
+    "featuredDropItemIds": []
   },
   {
     "id": "4230101",
@@ -1479,6 +1605,9 @@
     "regionIds": [
       "victoria",
       "victoria-henesys"
+    ],
+    "featuredDropItemIds": [
+      "1051009"
     ]
   },
   {
@@ -1497,6 +1626,7 @@
       "2040041"
     ],
     "featuredDropItemIds": [
+      "2040026",
       "2040041"
     ]
   },
@@ -1507,7 +1637,8 @@
     "level": 48,
     "hp": 3000,
     "exp": 128,
-    "isReleased": true
+    "isReleased": true,
+    "featuredDropItemIds": []
   },
   {
     "id": "4230105",
@@ -1522,7 +1653,8 @@
     ],
     "attributes": [
       "불속성약점"
-    ]
+    ],
+    "featuredDropItemIds": []
   },
   {
     "id": "4230106",
@@ -1541,7 +1673,7 @@
       "2040033"
     ],
     "featuredDropItemIds": [
-      "2040033",
+      "2040705",
       "2040048"
     ]
   },
@@ -1557,7 +1689,8 @@
       "aqua-road",
       "ellin-forest"
     ],
-    "attributes": null
+    "attributes": null,
+    "featuredDropItemIds": []
   },
   {
     "id": "4230108",
@@ -1570,7 +1703,8 @@
     "regionIds": [
       "ellin-forest"
     ],
-    "attributes": null
+    "attributes": null,
+    "featuredDropItemIds": []
   },
   {
     "id": "4230109",
@@ -1587,7 +1721,8 @@
       "전기속성반감",
       "얼음속성반감",
       "불속성약점"
-    ]
+    ],
+    "featuredDropItemIds": []
   },
   {
     "id": "4230112",
@@ -1600,7 +1735,10 @@
     "regionIds": [
       "ludibrium"
     ],
-    "attributes": null
+    "attributes": null,
+    "featuredDropItemIds": [
+      "2040502"
+    ]
   },
   {
     "id": "4230114",
@@ -1618,6 +1756,7 @@
       "2040804"
     ],
     "featuredDropItemIds": [
+      "1092029",
       "2040804"
     ]
   },
@@ -1632,7 +1771,8 @@
     "regionIds": [
       "ludus-lake-earth-defense-hq"
     ],
-    "attributes": null
+    "attributes": null,
+    "featuredDropItemIds": []
   },
   {
     "id": "4230117",
@@ -1645,7 +1785,10 @@
     "regionIds": [
       "ludus-lake-earth-defense-hq"
     ],
-    "attributes": null
+    "attributes": null,
+    "featuredDropItemIds": [
+      "1092020"
+    ]
   },
   {
     "id": "4230118",
@@ -1665,8 +1808,8 @@
       "2040043"
     ],
     "featuredDropItemIds": [
-      "2040031",
-      "2040043"
+      "2040043",
+      "2040031"
     ]
   },
   {
@@ -1705,7 +1848,6 @@
       "2040804"
     ],
     "featuredDropItemIds": [
-      "2040036",
       "2040804"
     ]
   },
@@ -1720,7 +1862,10 @@
     "regionIds": [
       "ludus-lake-earth-defense-hq"
     ],
-    "attributes": null
+    "attributes": null,
+    "featuredDropItemIds": [
+      "2043802"
+    ]
   },
   {
     "id": "4230123",
@@ -1736,7 +1881,8 @@
     "attributes": [
       "전기속성반감",
       "불속성반감"
-    ]
+    ],
+    "featuredDropItemIds": []
   },
   {
     "id": "4230124",
@@ -1752,6 +1898,9 @@
     "attributes": [
       "얼음속성반감",
       "불속성반감"
+    ],
+    "featuredDropItemIds": [
+      "2041019"
     ]
   },
   {
@@ -1773,6 +1922,7 @@
       "2040048"
     ],
     "featuredDropItemIds": [
+      "2040705",
       "2040048"
     ]
   },
@@ -1790,7 +1940,8 @@
     ],
     "attributes": [
       "성속성약점"
-    ]
+    ],
+    "featuredDropItemIds": []
   },
   {
     "id": "4230200",
@@ -1807,7 +1958,8 @@
     "attributes": [
       "독속성약점",
       "불속성반감"
-    ]
+    ],
+    "featuredDropItemIds": []
   },
   {
     "id": "4230201",
@@ -1823,7 +1975,8 @@
     "attributes": [
       "독속성반감",
       "불속성반감"
-    ]
+    ],
+    "featuredDropItemIds": []
   },
   {
     "id": "4230300",
@@ -1846,8 +1999,9 @@
       "2040048"
     ],
     "featuredDropItemIds": [
-      "2040029",
-      "2040048"
+      "2040705",
+      "2040048",
+      "2040029"
     ]
   },
   {
@@ -1862,7 +2016,8 @@
       "victoria",
       "victoria-ellinia"
     ],
-    "attributes": null
+    "attributes": null,
+    "featuredDropItemIds": []
   },
   {
     "id": "4230500",
@@ -1874,7 +2029,8 @@
     "isReleased": true,
     "regionIds": [
       "mu-lung"
-    ]
+    ],
+    "featuredDropItemIds": []
   },
   {
     "id": "4230501",
@@ -1886,7 +2042,8 @@
     "isReleased": true,
     "regionIds": [
       "mu-lung"
-    ]
+    ],
+    "featuredDropItemIds": []
   },
   {
     "id": "4230502",
@@ -1898,7 +2055,8 @@
     "isReleased": true,
     "regionIds": [
       "mu-lung"
-    ]
+    ],
+    "featuredDropItemIds": []
   },
   {
     "id": "4230503",
@@ -1910,6 +2068,9 @@
     "isReleased": true,
     "regionIds": [
       "mu-lung"
+    ],
+    "featuredDropItemIds": [
+      "2040705"
     ]
   },
   {
@@ -1922,6 +2083,9 @@
     "isReleased": true,
     "regionIds": [
       "mu-lung"
+    ],
+    "featuredDropItemIds": [
+      "2044002"
     ]
   },
   {
@@ -1934,7 +2098,8 @@
     "isReleased": true,
     "regionIds": [
       "mu-lung"
-    ]
+    ],
+    "featuredDropItemIds": []
   },
   {
     "id": "4230506",
@@ -1946,7 +2111,8 @@
     "isReleased": true,
     "regionIds": [
       "mu-lung"
-    ]
+    ],
+    "featuredDropItemIds": []
   },
   {
     "id": "4230600",
@@ -1962,7 +2128,8 @@
     "attributes": [
       "불속성약점",
       "얼음속성약점"
-    ]
+    ],
+    "featuredDropItemIds": []
   },
   {
     "id": "4240000",
@@ -1995,7 +2162,8 @@
     "isReleased": false,
     "regionIds": [
       "victoria"
-    ]
+    ],
+    "featuredDropItemIds": []
   },
   {
     "id": "4250001",
@@ -2004,7 +2172,8 @@
     "level": 46,
     "hp": 2600,
     "exp": 112,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "5090000",
@@ -2018,7 +2187,8 @@
       "victoria",
       "victoria-kerning"
     ],
-    "attributes": null
+    "attributes": null,
+    "featuredDropItemIds": []
   },
   {
     "id": "5090001",
@@ -2031,7 +2201,8 @@
     "regionIds": [
       "mu-lung"
     ],
-    "attributes": null
+    "attributes": null,
+    "featuredDropItemIds": []
   },
   {
     "id": "5100000",
@@ -2054,9 +2225,10 @@
       "2040804"
     ],
     "featuredDropItemIds": [
-      "2040034",
+      "2070005",
       "2040804",
-      "2070005"
+      "2044602",
+      "2040034"
     ]
   },
   {
@@ -2078,9 +2250,7 @@
     "dropItemIds": [
       "2040037"
     ],
-    "featuredDropItemIds": [
-      "2040037"
-    ]
+    "featuredDropItemIds": []
   },
   {
     "id": "5100003",
@@ -2099,7 +2269,8 @@
       "2040804"
     ],
     "featuredDropItemIds": [
-      "2040804"
+      "2040804",
+      "2044602"
     ]
   },
   {
@@ -2116,7 +2287,8 @@
     "attributes": [
       "불속성약점",
       "성속성약점"
-    ]
+    ],
+    "featuredDropItemIds": []
   },
   {
     "id": "5100005",
@@ -2137,9 +2309,7 @@
     "dropItemIds": [
       "2040030"
     ],
-    "featuredDropItemIds": [
-      "2040030"
-    ]
+    "featuredDropItemIds": []
   },
   {
     "id": "5110300",
@@ -2150,6 +2320,8 @@
     "hp": 3000,
     "exp": 135,
     "featuredDropItemIds": [
+      "2040317",
+      "2044602",
       "2040027"
     ]
   },
@@ -2160,7 +2332,8 @@
     "isReleased": false,
     "level": 54,
     "hp": 4400,
-    "exp": 168
+    "exp": 168,
+    "featuredDropItemIds": []
   },
   {
     "id": "5110302",
@@ -2194,9 +2367,7 @@
     "dropItemIds": [
       "2040036"
     ],
-    "featuredDropItemIds": [
-      "2040036"
-    ]
+    "featuredDropItemIds": []
   },
   {
     "id": "5120001",
@@ -2212,6 +2383,9 @@
     "attributes": [
       "불속성반감",
       "얼음속성약점"
+    ],
+    "featuredDropItemIds": [
+      "2043002"
     ]
   },
   {
@@ -2228,7 +2402,8 @@
     "attributes": [
       "전기속성반감",
       "얼음속성약점"
-    ]
+    ],
+    "featuredDropItemIds": []
   },
   {
     "id": "5120003",
@@ -2263,7 +2438,10 @@
     "regionIds": [
       "ludus-lake-earth-defense-hq"
     ],
-    "attributes": null
+    "attributes": null,
+    "featuredDropItemIds": [
+      "2044602"
+    ]
   },
   {
     "id": "5120500",
@@ -2280,8 +2458,9 @@
       "2040043"
     ],
     "featuredDropItemIds": [
+      "2040043",
       "2040031",
-      "2040043"
+      "2040515"
     ]
   },
   {
@@ -2294,7 +2473,8 @@
     "isReleased": true,
     "regionIds": [
       "mu-lung"
-    ]
+    ],
+    "featuredDropItemIds": []
   },
   {
     "id": "5120502",
@@ -2306,7 +2486,8 @@
     "isReleased": true,
     "regionIds": [
       "mu-lung"
-    ]
+    ],
+    "featuredDropItemIds": []
   },
   {
     "id": "5120503",
@@ -2318,6 +2499,10 @@
     "isReleased": true,
     "regionIds": [
       "mu-lung"
+    ],
+    "featuredDropItemIds": [
+      "2040026",
+      "2044602"
     ]
   },
   {
@@ -2330,7 +2515,8 @@
     "isReleased": true,
     "regionIds": [
       "mu-lung"
-    ]
+    ],
+    "featuredDropItemIds": []
   },
   {
     "id": "5120505",
@@ -2368,7 +2554,7 @@
       "2040028"
     ],
     "featuredDropItemIds": [
-      "2040028"
+      "2040317"
     ]
   },
   {
@@ -2383,7 +2569,10 @@
       "victoria",
       "victoria-sleepywood"
     ],
-    "attributes": null
+    "attributes": null,
+    "featuredDropItemIds": [
+      "1092008"
+    ]
   },
   {
     "id": "5130101",
@@ -2397,7 +2586,8 @@
       "victoria",
       "victoria-henesys"
     ],
-    "attributes": null
+    "attributes": null,
+    "featuredDropItemIds": []
   },
   {
     "id": "5130102",
@@ -2414,6 +2604,10 @@
     ],
     "attributes": [
       "성속성약점"
+    ],
+    "featuredDropItemIds": [
+      "1382007",
+      "1082088"
     ]
   },
   {
@@ -2432,8 +2626,8 @@
       "2040042"
     ],
     "featuredDropItemIds": [
-      "2040027",
-      "2040042"
+      "2040042",
+      "2040027"
     ]
   },
   {
@@ -2452,7 +2646,7 @@
       "2040037"
     ],
     "featuredDropItemIds": [
-      "2040037"
+      "2041019"
     ]
   },
   {
@@ -2473,8 +2667,8 @@
       "2040028"
     ],
     "featuredDropItemIds": [
-      "2040027",
-      "2040028"
+      "2040317",
+      "2040027"
     ]
   },
   {
@@ -2490,7 +2684,6 @@
       "2040042"
     ],
     "featuredDropItemIds": [
-      "2040028",
       "2040042"
     ]
   },
@@ -2509,6 +2702,10 @@
     "attributes": [
       "독속성무효",
       "성속성약점"
+    ],
+    "featuredDropItemIds": [
+      "2040026",
+      "2040515"
     ]
   },
   {
@@ -2549,7 +2746,8 @@
       "2040039"
     ],
     "featuredDropItemIds": [
-      "2040039"
+      "2040039",
+      "2040024"
     ]
   },
   {
@@ -2587,6 +2785,9 @@
     ],
     "attributes": [
       "성속성약점"
+    ],
+    "featuredDropItemIds": [
+      "2044701"
     ]
   },
   {
@@ -2619,6 +2820,9 @@
     "attributes": [
       "얼음속성반감",
       "불속성약점"
+    ],
+    "featuredDropItemIds": [
+      "2041016"
     ]
   },
   {
@@ -2647,7 +2851,8 @@
     "level": 55,
     "hp": 25000,
     "exp": 1210,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "5220001",
@@ -2656,7 +2861,8 @@
     "level": 55,
     "hp": 4000,
     "exp": 0,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "5220002",
@@ -2670,7 +2876,8 @@
       "victoria",
       "victoria-henesys"
     ],
-    "attributes": null
+    "attributes": null,
+    "featuredDropItemIds": []
   },
   {
     "id": "5220003",
@@ -2683,7 +2890,8 @@
     "regionIds": [
       "ludibrium"
     ],
-    "attributes": null
+    "attributes": null,
+    "featuredDropItemIds": []
   },
   {
     "id": "5250000",
@@ -2692,7 +2900,8 @@
     "level": 55,
     "hp": 4400,
     "exp": 175,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "5250001",
@@ -2701,7 +2910,8 @@
     "level": 51,
     "hp": 3600,
     "exp": 142,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "5250002",
@@ -2710,7 +2920,8 @@
     "level": 57,
     "hp": 4500,
     "exp": 200,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "5300000",
@@ -2732,8 +2943,8 @@
       "2040048"
     ],
     "featuredDropItemIds": [
-      "2040048",
-      "2070001"
+      "2040705",
+      "2040048"
     ]
   },
   {
@@ -2749,7 +2960,8 @@
     ],
     "attributes": [
       "성속성약점"
-    ]
+    ],
+    "featuredDropItemIds": []
   },
   {
     "id": "5300100",
@@ -2765,7 +2977,8 @@
     ],
     "attributes": [
       "성속성약점"
-    ]
+    ],
+    "featuredDropItemIds": []
   },
   {
     "id": "5400000",
@@ -2782,7 +2995,8 @@
     "attributes": [
       "얼음속성반감",
       "불속성약점"
-    ]
+    ],
+    "featuredDropItemIds": []
   },
   {
     "id": "6090000",
@@ -2795,7 +3009,8 @@
     "regionIds": [
       "ellin-forest"
     ],
-    "attributes": null
+    "attributes": null,
+    "featuredDropItemIds": []
   },
   {
     "id": "6090001",
@@ -2804,7 +3019,8 @@
     "level": 64,
     "hp": 7700,
     "exp": 250,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "6090002",
@@ -2813,7 +3029,8 @@
     "level": 68,
     "hp": 12500,
     "exp": 265,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "6090003",
@@ -2826,7 +3043,8 @@
     "regionIds": [
       "ludus-lake-underground-town"
     ],
-    "attributes": null
+    "attributes": null,
+    "featuredDropItemIds": []
   },
   {
     "id": "6090004",
@@ -2838,7 +3056,8 @@
     "isReleased": true,
     "regionIds": [
       "nihan-magatia"
-    ]
+    ],
+    "featuredDropItemIds": []
   },
   {
     "id": "6110300",
@@ -2850,6 +3069,9 @@
     "isReleased": true,
     "regionIds": [
       "nihan-magatia"
+    ],
+    "featuredDropItemIds": [
+      "1382007"
     ]
   },
   {
@@ -2862,6 +3084,9 @@
     "isReleased": true,
     "regionIds": [
       "nihan-magatia"
+    ],
+    "featuredDropItemIds": [
+      "2043302"
     ]
   },
   {
@@ -2883,7 +3108,6 @@
       "2040033"
     ],
     "featuredDropItemIds": [
-      "2040033",
       "2070005"
     ]
   },
@@ -2906,11 +3130,12 @@
       "2040804"
     ],
     "featuredDropItemIds": [
-      "2040039",
-      "2040047",
-      "2040301",
       "2040804",
-      "2070001"
+      "2040039",
+      "2040501",
+      "2070006",
+      "2040024",
+      "2040047"
     ]
   },
   {
@@ -2927,7 +3152,11 @@
     "attributes": [
       "얼음속성반감",
       "불속성약점"
-    ]
+    ],
+    "featuredDropItemIds": [
+      "2044702"
+    ],
+    "transformsFromMonsterId": "7130102"
   },
   {
     "id": "6130103",
@@ -2943,7 +3172,8 @@
     "attributes": [
       "얼음속성반감",
       "불속성약점"
-    ]
+    ],
+    "featuredDropItemIds": []
   },
   {
     "id": "6130104",
@@ -2952,7 +3182,8 @@
     "level": 35,
     "hp": 14800,
     "exp": 400,
-    "isReleased": true
+    "isReleased": true,
+    "featuredDropItemIds": []
   },
   {
     "id": "6130200",
@@ -2965,7 +3196,8 @@
     "regionIds": [
       "ludibrium"
     ],
-    "attributes": null
+    "attributes": null,
+    "featuredDropItemIds": []
   },
   {
     "id": "6130201",
@@ -2977,7 +3209,8 @@
     "isReleased": false,
     "regionIds": [
       "ludus-lake-underground-town"
-    ]
+    ],
+    "featuredDropItemIds": []
   },
   {
     "id": "6130202",
@@ -2994,6 +3227,9 @@
       "불속성반감",
       "얼음속성반감",
       "성속성약점"
+    ],
+    "featuredDropItemIds": [
+      "2040501"
     ]
   },
   {
@@ -3026,8 +3262,7 @@
       "2040047"
     ],
     "featuredDropItemIds": [
-      "2040047",
-      "2040301"
+      "2040047"
     ]
   },
   {
@@ -3040,7 +3275,8 @@
     "isReleased": true,
     "regionIds": [
       "mu-lung"
-    ]
+    ],
+    "featuredDropItemIds": []
   },
   {
     "id": "6130208",
@@ -3052,6 +3288,9 @@
     "isReleased": true,
     "regionIds": [
       "mu-lung"
+    ],
+    "featuredDropItemIds": [
+      "2043302"
     ]
   },
   {
@@ -3065,9 +3304,7 @@
     "regionIds": [
       "mu-lung"
     ],
-    "featuredDropItemIds": [
-      "2040301"
-    ]
+    "featuredDropItemIds": []
   },
   {
     "id": "6220000",
@@ -3080,7 +3317,8 @@
     "regionIds": [
       "victoria"
     ],
-    "attributes": null
+    "attributes": null,
+    "featuredDropItemIds": []
   },
   {
     "id": "6220001",
@@ -3093,7 +3331,8 @@
     "regionIds": [
       "ludus-lake-earth-defense-hq"
     ],
-    "attributes": null
+    "attributes": null,
+    "featuredDropItemIds": []
   },
   {
     "id": "6230100",
@@ -3122,7 +3361,8 @@
     "level": 63,
     "hp": 20000,
     "exp": 190,
-    "isReleased": true
+    "isReleased": true,
+    "featuredDropItemIds": []
   },
   {
     "id": "6230200",
@@ -3137,6 +3377,9 @@
     ],
     "attributes": [
       "성속성약점"
+    ],
+    "featuredDropItemIds": [
+      "1082088"
     ]
   },
   {
@@ -3152,7 +3395,9 @@
     ],
     "attributes": [
       "성속성약점"
-    ]
+    ],
+    "featuredDropItemIds": [],
+    "transformsFromMonsterId": "8140100"
   },
   {
     "id": "6230300",
@@ -3171,9 +3416,8 @@
       "2040032"
     ],
     "featuredDropItemIds": [
-      "2040032",
       "2040047",
-      "2040301"
+      "2040032"
     ]
   },
   {
@@ -3196,6 +3440,7 @@
       "2040804"
     ],
     "featuredDropItemIds": [
+      "2043802",
       "2040804"
     ]
   },
@@ -3213,6 +3458,9 @@
     "attributes": [
       "독속성무효",
       "성속성약점"
+    ],
+    "featuredDropItemIds": [
+      "2040515"
     ]
   },
   {
@@ -3230,6 +3478,9 @@
       "전기속성반감",
       "얼음속성무효",
       "성속성약점"
+    ],
+    "featuredDropItemIds": [
+      "2041022"
     ]
   },
   {
@@ -3253,8 +3504,7 @@
       "2040028"
     ],
     "featuredDropItemIds": [
-      "2040028",
-      "2040038"
+      "2040317"
     ]
   },
   {
@@ -3274,7 +3524,8 @@
       "2040039"
     ],
     "featuredDropItemIds": [
-      "2040039"
+      "2040039",
+      "2040024"
     ]
   },
   {
@@ -3297,8 +3548,8 @@
       "2040804"
     ],
     "featuredDropItemIds": [
-      "2040038",
-      "2040804"
+      "2040804",
+      "2043802"
     ]
   },
   {
@@ -3321,8 +3572,7 @@
       "2040047"
     ],
     "featuredDropItemIds": [
-      "2040047",
-      "2040301"
+      "2040047"
     ]
   },
   {
@@ -3351,7 +3601,8 @@
     "level": 67,
     "hp": 40000,
     "exp": 210,
-    "isReleased": true
+    "isReleased": true,
+    "featuredDropItemIds": []
   },
   {
     "id": "6300004",
@@ -3360,7 +3611,8 @@
     "level": 66,
     "hp": 38000,
     "exp": 200,
-    "isReleased": true
+    "isReleased": true,
+    "featuredDropItemIds": []
   },
   {
     "id": "6300005",
@@ -3374,12 +3626,16 @@
       "victoria",
       "victoria-sleepywood"
     ],
-    "attributes": null
+    "attributes": null,
+    "featuredDropItemIds": [
+      "2044701",
+      "2070006"
+    ]
   },
   {
     "id": "6300006",
     "name": "분리된 예티",
-    "imageUrl": "https://maplestory.io/api/gms/62/mob/6300006/icon?resize=2",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/6300002/icon?resize=2",
     "level": 65,
     "hp": 11000,
     "exp": 619,
@@ -3390,7 +3646,20 @@
     "attributes": [
       "얼음속성반감",
       "불속성약점"
-    ]
+    ],
+    "featuredDropItemIds": [],
+    "transformsFromMonsterId": "7130102",
+    "stats": {
+      "mp": 80,
+      "knockbackDamage": "2000+",
+      "physicalDamage": 182,
+      "magicDamage": 270,
+      "physicalDefense": 170,
+      "magicDefense": 245,
+      "speed": -50,
+      "requiredAccuracy": 87.984,
+      "mesos": 487.5
+    }
   },
   {
     "id": "6300100",
@@ -3406,6 +3675,9 @@
     "attributes": [
       "얼음속성약점",
       "불속성반감"
+    ],
+    "featuredDropItemIds": [
+      "2041022"
     ]
   },
   {
@@ -3421,6 +3693,9 @@
     ],
     "attributes": [
       "성속성약점"
+    ],
+    "featuredDropItemIds": [
+      "2041022"
     ]
   },
   {
@@ -3436,6 +3711,9 @@
     ],
     "attributes": [
       "성속성약점"
+    ],
+    "featuredDropItemIds": [
+      "2043302"
     ]
   },
   {
@@ -3451,7 +3729,9 @@
     ],
     "attributes": [
       "성속성약점"
-    ]
+    ],
+    "featuredDropItemIds": [],
+    "transformsFromMonsterId": "8140100"
   },
   {
     "id": "6400003",
@@ -3460,7 +3740,8 @@
     "level": 69,
     "hp": 60000,
     "exp": 240,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "6400004",
@@ -3469,7 +3750,8 @@
     "level": 70,
     "hp": 80000,
     "exp": 250,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "6400100",
@@ -3490,6 +3772,7 @@
       "2040034"
     ],
     "featuredDropItemIds": [
+      "2041013",
       "2040034"
     ]
   },
@@ -3503,7 +3786,8 @@
     "isReleased": false,
     "regionIds": [
       "nihan-magatia"
-    ]
+    ],
+    "featuredDropItemIds": []
   },
   {
     "id": "7110300",
@@ -3517,7 +3801,10 @@
       "nihan-magatia"
     ],
     "featuredDropItemIds": [
-      "2040302"
+      "2040026",
+      "2040046",
+      "2044701",
+      "1082100"
     ]
   },
   {
@@ -3527,7 +3814,10 @@
     "isReleased": false,
     "level": 73,
     "hp": 15500,
-    "exp": 488
+    "exp": 488,
+    "featuredDropItemIds": [
+      "2040025"
+    ]
   },
   {
     "id": "7130000",
@@ -3543,7 +3833,8 @@
     "attributes": [
       "독속성무효",
       "성속성약점"
-    ]
+    ],
+    "featuredDropItemIds": []
   },
   {
     "id": "7130001",
@@ -3556,7 +3847,10 @@
     "regionIds": [
       "ellin-forest"
     ],
-    "attributes": null
+    "attributes": null,
+    "featuredDropItemIds": [
+      "1372016"
+    ]
   },
   {
     "id": "7130002",
@@ -3572,7 +3866,22 @@
     ],
     "attributes": [
       "전기속성반감"
-    ]
+    ],
+    "featuredDropItemIds": [
+      "1382007",
+      "1082100"
+    ],
+    "stats": {
+      "mp": 120,
+      "knockbackDamage": "2000+",
+      "physicalDamage": 272,
+      "magicDamage": 310,
+      "physicalDefense": 335,
+      "magicDefense": 265,
+      "speed": -20,
+      "requiredAccuracy": 109.98,
+      "mesos": 540.0
+    }
   },
   {
     "id": "7130003",
@@ -3591,7 +3900,18 @@
     ],
     "featuredDropItemIds": [
       "2070005"
-    ]
+    ],
+    "stats": {
+      "mp": 200,
+      "knockbackDamage": "2000+",
+      "physicalDamage": 300,
+      "magicDamage": 350,
+      "physicalDefense": 400,
+      "magicDefense": 400,
+      "speed": -20,
+      "requiredAccuracy": 98.982,
+      "mesos": 570.0
+    }
   },
   {
     "id": "7130010",
@@ -3613,7 +3933,12 @@
       "2040040"
     ],
     "featuredDropItemIds": [
-      "2040041"
+      "1372016",
+      "2040025",
+      "1082123",
+      "2041016",
+      "2040041",
+      "2040040"
     ]
   },
   {
@@ -3634,7 +3959,7 @@
       "2040036"
     ],
     "featuredDropItemIds": [
-      "2040036"
+      "2044701"
     ]
   },
   {
@@ -3672,6 +3997,10 @@
       "독속성무효",
       "불속성반감",
       "전기속성반감"
+    ],
+    "featuredDropItemIds": [
+      "1382010",
+      "1082100"
     ]
   },
   {
@@ -3690,6 +4019,8 @@
       "불속성약점"
     ],
     "featuredDropItemIds": [
+      "2044702",
+      "2040025",
       "2070005"
     ]
   },
@@ -3714,8 +4045,8 @@
       "2040047"
     ],
     "featuredDropItemIds": [
-      "2040047",
-      "2040301"
+      "2040516",
+      "2040047"
     ]
   },
   {
@@ -3733,6 +4064,7 @@
       "2040048"
     ],
     "featuredDropItemIds": [
+      "2040705",
       "2040048"
     ]
   },
@@ -3753,10 +4085,11 @@
       "2040043"
     ],
     "featuredDropItemIds": [
-      "2040031",
       "2040043",
+      "2040031",
       "2040046",
-      "2040302"
+      "2044701",
+      "1082100"
     ]
   },
   {
@@ -3779,8 +4112,8 @@
       "2040043"
     ],
     "featuredDropItemIds": [
-      "2040031",
-      "2040043"
+      "2040043",
+      "2040031"
     ]
   },
   {
@@ -3802,8 +4135,7 @@
       "2040046"
     ],
     "featuredDropItemIds": [
-      "2040046",
-      "2040302"
+      "2040046"
     ]
   },
   {
@@ -3820,6 +4152,9 @@
     "attributes": [
       "불속성약점",
       "얼음속성반감"
+    ],
+    "featuredDropItemIds": [
+      "2070007"
     ]
   },
   {
@@ -3841,6 +4176,9 @@
       "2040041"
     ],
     "featuredDropItemIds": [
+      "2040039",
+      "2040024",
+      "2070007",
       "2040041"
     ]
   },
@@ -3864,9 +4202,20 @@
       "2040048"
     ],
     "featuredDropItemIds": [
-      "2040037",
+      "2040705",
       "2040048"
-    ]
+    ],
+    "stats": {
+      "mp": 150,
+      "knockbackDamage": "1450+",
+      "physicalDamage": 245,
+      "magicDamage": 0,
+      "physicalDefense": 235,
+      "magicDefense": 245,
+      "speed": -20,
+      "requiredAccuracy": 91.65,
+      "mesos": 525.0
+    }
   },
   {
     "id": "7130501",
@@ -3887,9 +4236,22 @@
       "2040034"
     ],
     "featuredDropItemIds": [
-      "2040034",
-      "2070005"
-    ]
+      "2043002",
+      "2070005",
+      "2040515",
+      "2040034"
+    ],
+    "stats": {
+      "mp": 150,
+      "knockbackDamage": "1550+",
+      "physicalDamage": 295,
+      "magicDamage": 0,
+      "physicalDefense": 285,
+      "magicDefense": 295,
+      "speed": -20,
+      "requiredAccuracy": 98.982,
+      "mesos": 555.0
+    }
   },
   {
     "id": "7130600",
@@ -3905,7 +4267,19 @@
     ],
     "attributes": [
       "독속성약점"
-    ]
+    ],
+    "featuredDropItemIds": [],
+    "stats": {
+      "mp": 150,
+      "knockbackDamage": "2000+",
+      "physicalDamage": 270,
+      "magicDamage": 310,
+      "physicalDefense": 330,
+      "magicDefense": 260,
+      "speed": -30,
+      "requiredAccuracy": 91.65,
+      "mesos": 540.0
+    }
   },
   {
     "id": "7130601",
@@ -3921,7 +4295,21 @@
     ],
     "attributes": [
       "독속성반감"
-    ]
+    ],
+    "featuredDropItemIds": [
+      "2044602"
+    ],
+    "stats": {
+      "mp": 200,
+      "knockbackDamage": "2000+",
+      "physicalDamage": 300,
+      "magicDamage": 350,
+      "physicalDefense": 400,
+      "magicDefense": 350,
+      "speed": -30,
+      "requiredAccuracy": 102.648,
+      "mesos": 570.0
+    }
   },
   {
     "id": "7130602",
@@ -3930,7 +4318,8 @@
     "level": 76,
     "hp": 8000,
     "exp": 0,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "7140000",
@@ -3946,6 +4335,9 @@
     "attributes": [
       "얼음속성반감",
       "불속성약점"
+    ],
+    "featuredDropItemIds": [
+      "2040502"
     ]
   },
   {
@@ -3980,7 +4372,12 @@
     ],
     "attributes": null,
     "featuredDropItemIds": [
-      "2040805"
+      "2040705",
+      "2040025",
+      "2041022",
+      "1382010",
+      "2040805",
+      "2040514"
     ]
   },
   {
@@ -3996,9 +4393,15 @@
     ],
     "attributes": null,
     "featuredDropItemIds": [
-      "2040301",
+      "2044702",
+      "2040025",
+      "2040501",
+      "2041016",
+      "2070005",
+      "2040513",
       "2040804",
-      "2070005"
+      "2043702",
+      "1082100"
     ]
   },
   {
@@ -4012,7 +4415,14 @@
     "regionIds": [
       "mu-lung"
     ],
-    "attributes": null
+    "attributes": null,
+    "featuredDropItemIds": [
+      "1372016",
+      "1382008",
+      "2040501",
+      "2040502",
+      "2044302"
+    ]
   },
   {
     "id": "8090000",
@@ -4024,7 +4434,8 @@
     "isReleased": false,
     "regionIds": [
       "nihan-magatia"
-    ]
+    ],
+    "featuredDropItemIds": []
   },
   {
     "id": "8110300",
@@ -4038,7 +4449,8 @@
       "nihan-magatia"
     ],
     "featuredDropItemIds": [
-      "2070005"
+      "2070005",
+      "2044602"
     ]
   },
   {
@@ -4056,6 +4468,11 @@
     "attributes": [
       "독속성무효",
       "성속성약점"
+    ],
+    "featuredDropItemIds": [
+      "1382007",
+      "2070007",
+      "2044701"
     ]
   },
   {
@@ -4074,7 +4491,7 @@
       "불속성약점"
     ],
     "featuredDropItemIds": [
-      "2070001"
+      "2070006"
     ]
   },
   {
@@ -4097,10 +4514,21 @@
       "2040032"
     ],
     "featuredDropItemIds": [
-      "2040028",
+      "2070005",
       "2040032",
-      "2070005"
-    ]
+      "2044602"
+    ],
+    "stats": {
+      "mp": 300,
+      "knockbackDamage": "2800+",
+      "physicalDamage": 350,
+      "magicDamage": 410,
+      "physicalDefense": 650,
+      "magicDefense": 450,
+      "speed": -10,
+      "requiredAccuracy": 102.648,
+      "mesos": 600.0
+    }
   },
   {
     "id": "8140002",
@@ -4123,10 +4551,22 @@
       "2040041"
     ],
     "featuredDropItemIds": [
-      "2040030",
-      "2040041",
-      "2070005"
-    ]
+      "2070005",
+      "1382010",
+      "2040026",
+      "2040041"
+    ],
+    "stats": {
+      "mp": 160,
+      "knockbackDamage": "3000+",
+      "physicalDamage": 365,
+      "magicDamage": 400,
+      "physicalDefense": 700,
+      "magicDefense": 465,
+      "speed": -10,
+      "requiredAccuracy": 98.982,
+      "mesos": 622.5
+    }
   },
   {
     "id": "8140100",
@@ -4147,8 +4587,7 @@
       "2040032"
     ],
     "featuredDropItemIds": [
-      "2040032",
-      "2040038"
+      "2040032"
     ]
   },
   {
@@ -4165,7 +4604,22 @@
     ],
     "attributes": [
       "성속성약점"
-    ]
+    ],
+    "featuredDropItemIds": [
+      "1382008",
+      "1472053"
+    ],
+    "stats": {
+      "mp": 200,
+      "knockbackDamage": "3000+",
+      "physicalDamage": 390,
+      "magicDamage": 430,
+      "physicalDefense": 800,
+      "magicDefense": 495,
+      "speed": -20,
+      "requiredAccuracy": 102.648,
+      "mesos": 660.0
+    }
   },
   {
     "id": "8140102",
@@ -4188,9 +4642,22 @@
       "2040805"
     ],
     "featuredDropItemIds": [
-      "2040034",
-      "2040805"
-    ]
+      "1452019",
+      "2040805",
+      "1382035",
+      "2040034"
+    ],
+    "stats": {
+      "mp": 200,
+      "knockbackDamage": "3000+",
+      "physicalDamage": 390,
+      "magicDamage": 430,
+      "physicalDefense": 800,
+      "magicDefense": 495,
+      "speed": 0,
+      "requiredAccuracy": 102.648,
+      "mesos": 660.0
+    }
   },
   {
     "id": "8140103",
@@ -4207,7 +4674,19 @@
     "attributes": [
       "얼음속성반감",
       "불속성약점"
-    ]
+    ],
+    "featuredDropItemIds": [],
+    "stats": {
+      "mp": 200,
+      "knockbackDamage": "3000+",
+      "physicalDamage": 390,
+      "magicDamage": 430,
+      "physicalDefense": 800,
+      "magicDefense": 495,
+      "speed": 0,
+      "requiredAccuracy": 102.648,
+      "mesos": 660.0
+    }
   },
   {
     "id": "8140110",
@@ -4224,7 +4703,25 @@
     "attributes": [
       "성속성반감",
       "얼음속성약점"
-    ]
+    ],
+    "featuredDropItemIds": [
+      "1332052",
+      "2044702",
+      "1302056",
+      "1372010",
+      "2043802"
+    ],
+    "stats": {
+      "mp": 150,
+      "knockbackDamage": "3200+",
+      "physicalDamage": 380,
+      "magicDamage": 0,
+      "physicalDefense": 760,
+      "magicDefense": 465,
+      "speed": -30,
+      "requiredAccuracy": 98.982,
+      "mesos": 637.5
+    }
   },
   {
     "id": "8140111",
@@ -4246,9 +4743,24 @@
       "2040035"
     ],
     "featuredDropItemIds": [
+      "1372016",
+      "1462015",
       "2040035",
-      "2070001"
-    ]
+      "1432030",
+      "1442044",
+      "2070006"
+    ],
+    "stats": {
+      "mp": 200,
+      "knockbackDamage": "3700+",
+      "physicalDamage": 395,
+      "magicDamage": 0,
+      "physicalDefense": 850,
+      "magicDefense": 480,
+      "speed": -30,
+      "requiredAccuracy": 102.648,
+      "mesos": 660.0
+    }
   },
   {
     "id": "8140200",
@@ -4270,9 +4782,8 @@
       "2040032"
     ],
     "featuredDropItemIds": [
-      "2040032",
       "2040046",
-      "2040302"
+      "2040032"
     ]
   },
   {
@@ -4290,7 +4801,10 @@
       "성속성약점"
     ],
     "featuredDropItemIds": [
-      "2070005"
+      "2044602",
+      "2070005",
+      "2040513",
+      "1382010"
     ]
   },
   {
@@ -4308,6 +4822,10 @@
     "attributes": [
       "불속성반감",
       "얼음속성약점"
+    ],
+    "featuredDropItemIds": [
+      "2041022",
+      "1032017"
     ]
   },
   {
@@ -4317,7 +4835,8 @@
     "level": 90,
     "hp": 40500,
     "exp": 0,
-    "isReleased": true
+    "isReleased": true,
+    "featuredDropItemIds": []
   },
   {
     "id": "8140600",
@@ -4333,6 +4852,11 @@
     "attributes": [
       "불속성반감",
       "성속성약점"
+    ],
+    "featuredDropItemIds": [
+      "2040513",
+      "2040501",
+      "1032017"
     ]
   },
   {
@@ -4354,7 +4878,24 @@
     "dropItemIds": [
       "mb_a5d212"
     ],
-    "featuredDropItemIds": []
+    "featuredDropItemIds": [
+      "1082134",
+      "1472033",
+      "1372009",
+      "2040515",
+      "2041022"
+    ],
+    "stats": {
+      "mp": 150,
+      "knockbackDamage": "5000+",
+      "physicalDamage": 410,
+      "magicDamage": 0,
+      "physicalDefense": 820,
+      "magicDefense": 480,
+      "speed": -40,
+      "requiredAccuracy": 135.642,
+      "mesos": 675.0
+    }
   },
   {
     "id": "8140701",
@@ -4371,7 +4912,21 @@
     "attributes": [
       "불속성반감",
       "얼음속성약점"
-    ]
+    ],
+    "featuredDropItemIds": [
+      "1302023"
+    ],
+    "stats": {
+      "mp": 160,
+      "knockbackDamage": "5000+",
+      "physicalDamage": 420,
+      "magicDamage": 0,
+      "physicalDefense": 830,
+      "magicDefense": 500,
+      "speed": -40,
+      "requiredAccuracy": 135.642,
+      "mesos": 697.5
+    }
   },
   {
     "id": "8140702",
@@ -4388,7 +4943,21 @@
     "attributes": [
       "전기속성약점",
       "독속성약점"
-    ]
+    ],
+    "featuredDropItemIds": [
+      "2044701"
+    ],
+    "stats": {
+      "mp": 200,
+      "knockbackDamage": "5000+",
+      "physicalDamage": 460,
+      "magicDamage": 510,
+      "physicalDefense": 840,
+      "magicDefense": 550,
+      "speed": -50,
+      "requiredAccuracy": 135.642,
+      "mesos": 712.5
+    }
   },
   {
     "id": "8140703",
@@ -4409,7 +4978,18 @@
     "dropItemIds": [
       "mb_48c815"
     ],
-    "featuredDropItemIds": []
+    "featuredDropItemIds": [],
+    "stats": {
+      "mp": 200,
+      "knockbackDamage": "5000+",
+      "physicalDamage": 470,
+      "magicDamage": 520,
+      "physicalDefense": 850,
+      "magicDefense": 570,
+      "speed": -50,
+      "requiredAccuracy": 135.642,
+      "mesos": 727.5
+    }
   },
   {
     "id": "8141000",
@@ -4431,8 +5011,9 @@
       "mb_ff654e"
     ],
     "featuredDropItemIds": [
-      "2040028",
-      "2070001"
+      "2040317",
+      "2070006",
+      "2044602"
     ]
   },
   {
@@ -4455,9 +5036,12 @@
       "2040040"
     ],
     "featuredDropItemIds": [
+      "2040043",
       "2040031",
-      "2040040",
-      "2040043"
+      "2040025",
+      "2043002",
+      "1082134",
+      "2040040"
     ]
   },
   {
@@ -4474,7 +5058,8 @@
     "attributes": [
       "독속성반감",
       "불속성반감"
-    ]
+    ],
+    "featuredDropItemIds": []
   },
   {
     "id": "8142000",
@@ -4491,6 +5076,9 @@
       "성속성약점",
       "얼음속성반감",
       "불속성약점"
+    ],
+    "featuredDropItemIds": [
+      "2041022"
     ]
   },
   {
@@ -4513,7 +5101,9 @@
       "2040804"
     ],
     "featuredDropItemIds": [
-      "2040804"
+      "2040804",
+      "2040032",
+      "1032017"
     ]
   },
   {
@@ -4531,6 +5121,9 @@
       "성속성약점",
       "불속성약점",
       "얼음속성무효"
+    ],
+    "featuredDropItemIds": [
+      "2044702"
     ]
   },
   {
@@ -4555,11 +5148,22 @@
       "2040805"
     ],
     "featuredDropItemIds": [
-      "2040029",
-      "2040046",
+      "2040705",
+      "2044702",
+      "2043302",
+      "2044502",
+      "2040502",
+      "2044602",
       "2040048",
-      "2040302",
-      "2040805"
+      "2043802",
+      "2044302",
+      "2070007",
+      "2043002",
+      "2040046",
+      "2044002",
+      "2043702",
+      "2040805",
+      "2040029"
     ]
   },
   {
@@ -4575,6 +5179,10 @@
     ],
     "attributes": [
       "불속성반감"
+    ],
+    "featuredDropItemIds": [
+      "1032017",
+      "2041013"
     ]
   },
   {
@@ -4599,8 +5207,7 @@
     ],
     "featuredDropItemIds": [
       "2040046",
-      "2040301",
-      "mb_ffc25b"
+      "2041022"
     ]
   },
   {
@@ -4622,7 +5229,18 @@
       "mb_ba8c90",
       "mb_b336dc"
     ],
-    "featuredDropItemIds": []
+    "featuredDropItemIds": [],
+    "stats": {
+      "mp": 200,
+      "knockbackDamage": "5000+",
+      "physicalDamage": 480,
+      "magicDamage": 0,
+      "physicalDefense": 800,
+      "magicDefense": 500,
+      "speed": -10,
+      "requiredAccuracy": 164.97,
+      "mesos": 750.0
+    }
   },
   {
     "id": "8150201",
@@ -4650,10 +5268,21 @@
       "mb_6ba3c3"
     ],
     "featuredDropItemIds": [
+      "1382035",
       "2040046",
-      "2040302",
-      "mb_d52f8d"
-    ]
+      "1402016"
+    ],
+    "stats": {
+      "mp": 200,
+      "knockbackDamage": "5000+",
+      "physicalDamage": 495,
+      "magicDamage": 0,
+      "physicalDefense": 800,
+      "magicDefense": 500,
+      "speed": -10,
+      "requiredAccuracy": 164.97,
+      "mesos": 787.5
+    }
   },
   {
     "id": "8150300",
@@ -4670,7 +5299,22 @@
     "attributes": [
       "불속성반감",
       "얼음속성약점"
-    ]
+    ],
+    "featuredDropItemIds": [
+      "2043002",
+      "2040516"
+    ],
+    "stats": {
+      "mp": 210,
+      "knockbackDamage": "5000+",
+      "physicalDamage": 450,
+      "magicDamage": 500,
+      "physicalDefense": 830,
+      "magicDefense": 550,
+      "speed": -20,
+      "requiredAccuracy": 135.642,
+      "mesos": 727.5
+    }
   },
   {
     "id": "8150301",
@@ -4687,7 +5331,21 @@
     "attributes": [
       "불속성약점",
       "얼음속성반감"
-    ]
+    ],
+    "featuredDropItemIds": [
+      "1372010"
+    ],
+    "stats": {
+      "mp": 250,
+      "knockbackDamage": "5000+",
+      "physicalDamage": 495,
+      "magicDamage": 535,
+      "physicalDefense": 850,
+      "magicDefense": 570,
+      "speed": -20,
+      "requiredAccuracy": 139.308,
+      "mesos": 757.5
+    }
   },
   {
     "id": "8150302",
@@ -4712,9 +5370,19 @@
       "mb_be41b3"
     ],
     "featuredDropItemIds": [
-      "2040046",
-      "2040302"
-    ]
+      "2040046"
+    ],
+    "stats": {
+      "mp": 250,
+      "knockbackDamage": "5000+",
+      "physicalDamage": 505,
+      "magicDamage": 540,
+      "physicalDefense": 900,
+      "magicDefense": 580,
+      "speed": -20,
+      "requiredAccuracy": 139.308,
+      "mesos": 772.5
+    }
   },
   {
     "id": "8160000",
@@ -4734,6 +5402,8 @@
       "2040048"
     ],
     "featuredDropItemIds": [
+      "2040705",
+      "1082123",
       "2040048"
     ]
   },
@@ -4751,6 +5421,9 @@
     "attributes": [
       "성속성약점",
       "얼음속성반감"
+    ],
+    "featuredDropItemIds": [
+      "1032017"
     ]
   },
   {
@@ -4758,7 +5431,7 @@
     "name": "마뇽",
     "imageUrl": "https://maplestory.io/api/gms/62/mob/8180000/icon?resize=2",
     "level": 105,
-    "hp": 3700000,
+    "hp": 3,
     "exp": 13500,
     "isReleased": true,
     "regionIds": [
@@ -4783,16 +5456,36 @@
       "mb_ea9d42"
     ],
     "featuredDropItemIds": [
-      "2040038",
-      "2040805"
-    ]
+      "1332052",
+      "1462015",
+      "1432030",
+      "1442044",
+      "1302056",
+      "1382035",
+      "1452019",
+      "2044701",
+      "2040805",
+      "1372010",
+      "1472053"
+    ],
+    "stats": {
+      "mp": 1500,
+      "knockbackDamage": "5000+",
+      "physicalDamage": 550,
+      "magicDamage": 680,
+      "physicalDefense": 900,
+      "magicDefense": 850,
+      "speed": -20,
+      "requiredAccuracy": 142.974,
+      "mesos": 787.5
+    }
   },
   {
     "id": "8180001",
     "name": "그리프",
     "imageUrl": "https://maplestory.io/api/gms/62/mob/8180001/icon?resize=2",
     "level": 105,
-    "hp": 3700000,
+    "hp": 3,
     "exp": 13500,
     "isReleased": true,
     "regionIds": [
@@ -4818,10 +5511,32 @@
       "mb_be41b3"
     ],
     "featuredDropItemIds": [
-      "2040046",
+      "2040705",
+      "1332052",
+      "1462015",
+      "1432030",
+      "1442044",
+      "1302056",
+      "1382035",
       "2040048",
-      "2040302"
-    ]
+      "1452019",
+      "2040046",
+      "2040513",
+      "2040516",
+      "1372010",
+      "1472053"
+    ],
+    "stats": {
+      "mp": 1500,
+      "knockbackDamage": "5000+",
+      "physicalDamage": 550,
+      "magicDamage": 680,
+      "physicalDefense": 900,
+      "magicDefense": 850,
+      "speed": -20,
+      "requiredAccuracy": 142.974,
+      "mesos": 787.5
+    }
   },
   {
     "id": "8190000",
@@ -4844,7 +5559,22 @@
       "mb_020c61",
       "mb_4b7608"
     ],
-    "featuredDropItemIds": []
+    "featuredDropItemIds": [
+      "1332052",
+      "2044702",
+      "1402016"
+    ],
+    "stats": {
+      "mp": 200,
+      "knockbackDamage": "5000+",
+      "physicalDamage": 500,
+      "magicDamage": 550,
+      "physicalDefense": 750,
+      "magicDefense": 680,
+      "speed": 0,
+      "requiredAccuracy": 139.308,
+      "mesos": 787.5
+    }
   },
   {
     "id": "8190001",
@@ -4853,7 +5583,8 @@
     "level": 105,
     "hp": 68000,
     "exp": 0,
-    "isReleased": true
+    "isReleased": true,
+    "featuredDropItemIds": []
   },
   {
     "id": "8190002",
@@ -4867,7 +5598,21 @@
       "leafre",
       "ripa"
     ],
-    "attributes": null
+    "attributes": null,
+    "featuredDropItemIds": [
+      "1452019"
+    ],
+    "stats": {
+      "mp": 240,
+      "knockbackDamage": "5000+",
+      "physicalDamage": 580,
+      "magicDamage": 650,
+      "physicalDefense": 900,
+      "magicDefense": 600,
+      "speed": -50,
+      "requiredAccuracy": 139.308,
+      "mesos": 825.0
+    }
   },
   {
     "id": "8190003",
@@ -4893,9 +5638,21 @@
       "mb_0775d9"
     ],
     "featuredDropItemIds": [
+      "2044602",
       "2040805",
-      "mb_a472ad"
-    ]
+      "1032017"
+    ],
+    "stats": {
+      "mp": 240,
+      "knockbackDamage": "5000+",
+      "physicalDamage": 520,
+      "magicDamage": 660,
+      "physicalDefense": 800,
+      "magicDefense": 700,
+      "speed": -20,
+      "requiredAccuracy": 139.308,
+      "mesos": 825.0
+    }
   },
   {
     "id": "8190004",
@@ -4925,9 +5682,20 @@
       "mb_dca0dc"
     ],
     "featuredDropItemIds": [
-      "2040037",
-      "mb_c318f8"
-    ]
+      "1302056",
+      "2041013"
+    ],
+    "stats": {
+      "mp": 250,
+      "knockbackDamage": "5000+",
+      "physicalDamage": 530,
+      "magicDamage": 670,
+      "physicalDefense": 810,
+      "magicDefense": 710,
+      "speed": -20,
+      "requiredAccuracy": 139.308,
+      "mesos": 847.5
+    }
   },
   {
     "id": "8190005",
@@ -4940,7 +5708,8 @@
     "regionIds": [
       "leafre"
     ],
-    "attributes": null
+    "attributes": null,
+    "featuredDropItemIds": []
   },
   {
     "id": "8220000",
@@ -4953,7 +5722,8 @@
     "regionIds": [
       "orbis"
     ],
-    "attributes": null
+    "attributes": null,
+    "featuredDropItemIds": []
   },
   {
     "id": "8220001",
@@ -4966,7 +5736,8 @@
     "regionIds": [
       "ellin-forest"
     ],
-    "attributes": null
+    "attributes": null,
+    "featuredDropItemIds": []
   },
   {
     "id": "8220002",
@@ -4978,15 +5749,16 @@
     "isReleased": false,
     "regionIds": [
       "nihan-magatia"
-    ]
+    ],
+    "featuredDropItemIds": []
   },
   {
     "id": "8220003",
     "name": "레비아탄",
     "imageUrl": "https://maplestory.io/api/gms/62/mob/8220003/icon?resize=2",
     "level": 120,
-    "hp": 13400000,
-    "exp": 47355,
+    "hp": 13,
+    "exp": 47000,
     "isReleased": false,
     "regionIds": [
       "leafre",
@@ -4995,7 +5767,29 @@
     "attributes": [
       "불속성반감",
       "얼음속성반감"
-    ]
+    ],
+    "featuredDropItemIds": [
+      "1332052",
+      "1462015",
+      "1432030",
+      "1442044",
+      "1302056",
+      "1372010",
+      "1382035",
+      "1472053",
+      "1452019"
+    ],
+    "stats": {
+      "mp": 3500,
+      "knockbackDamage": "10000+",
+      "physicalDamage": 620,
+      "magicDamage": 710,
+      "physicalDefense": 950,
+      "magicDefense": 1050,
+      "speed": -20,
+      "requiredAccuracy": 150.306,
+      "mesos": 900.0
+    }
   },
   {
     "id": "8500000",
@@ -5004,7 +5798,8 @@
     "level": 100,
     "hp": 16000,
     "exp": 0,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "8500001",
@@ -5013,7 +5808,8 @@
     "level": 125,
     "hp": 23000000,
     "exp": 596000,
-    "isReleased": true
+    "isReleased": true,
+    "featuredDropItemIds": []
   },
   {
     "id": "8500002",
@@ -5050,11 +5846,13 @@
       "mb_791a17"
     ],
     "featuredDropItemIds": [
+      "2041022",
       "2040032",
-      "2040034",
-      "mb_d52f8d",
-      "mb_3fc7de",
-      "mb_437e85"
+      "1372009",
+      "2041016",
+      "2041013",
+      "2041019",
+      "2040034"
     ]
   },
   {
@@ -5064,7 +5862,8 @@
     "level": 71,
     "hp": 10000,
     "exp": 0,
-    "isReleased": true
+    "isReleased": true,
+    "featuredDropItemIds": []
   },
   {
     "id": "8500004",
@@ -5073,7 +5872,8 @@
     "level": 80,
     "hp": 10000,
     "exp": 0,
-    "isReleased": true
+    "isReleased": true,
+    "featuredDropItemIds": []
   },
   {
     "id": "8510000",
@@ -5110,11 +5910,11 @@
       "mb_732f6c"
     ],
     "featuredDropItemIds": [
-      "mb_3f4314",
-      "mb_7124b0",
-      "mb_ffc25b",
-      "mb_c318f8",
-      "mb_d647a8"
+      "2040501",
+      "1302023",
+      "2040513",
+      "2040516",
+      "2040032"
     ]
   },
   {
@@ -5124,7 +5924,8 @@
     "level": 75,
     "hp": 10000,
     "exp": 0,
-    "isReleased": true
+    "isReleased": true,
+    "featuredDropItemIds": []
   },
   {
     "id": "8800000",
@@ -5165,8 +5966,7 @@
     ],
     "featuredDropItemIds": [
       "2040031",
-      "mb_a45d96",
-      "mb_cd7d27"
+      "2040026"
     ]
   },
   {
@@ -5176,7 +5976,8 @@
     "level": 140,
     "hp": 88000000,
     "exp": 0,
-    "isReleased": true
+    "isReleased": true,
+    "featuredDropItemIds": []
   },
   {
     "id": "8800002",
@@ -5194,11 +5995,10 @@
       "2040041"
     ],
     "featuredDropItemIds": [
+      "2040043",
       "2040029",
-      "2040034",
-      "2040038",
       "2040041",
-      "2040043"
+      "2040034"
     ]
   },
   {
@@ -5244,7 +6044,8 @@
     "level": 140,
     "hp": 22000000,
     "exp": 896000,
-    "isReleased": true
+    "isReleased": true,
+    "featuredDropItemIds": []
   },
   {
     "id": "8800007",
@@ -5253,7 +6054,8 @@
     "level": 140,
     "hp": 27500000,
     "exp": 1120000,
-    "isReleased": true
+    "isReleased": true,
+    "featuredDropItemIds": []
   },
   {
     "id": "8800008",
@@ -5262,7 +6064,8 @@
     "level": 140,
     "hp": 30000000,
     "exp": 1120000,
-    "isReleased": true
+    "isReleased": true,
+    "featuredDropItemIds": []
   },
   {
     "id": "8800009",
@@ -5271,7 +6074,8 @@
     "level": 140,
     "hp": 25300000,
     "exp": 1030400,
-    "isReleased": true
+    "isReleased": true,
+    "featuredDropItemIds": []
   },
   {
     "id": "8800010",
@@ -5280,7 +6084,8 @@
     "level": 140,
     "hp": 25300000,
     "exp": 1030400,
-    "isReleased": true
+    "isReleased": true,
+    "featuredDropItemIds": []
   },
   {
     "id": "8810022",
@@ -5289,7 +6094,8 @@
     "level": 100,
     "hp": 56000,
     "exp": 1000,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "8810023",
@@ -5298,7 +6104,8 @@
     "level": 105,
     "hp": 67000,
     "exp": 1200,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9000001",
@@ -5310,7 +6117,8 @@
     "isReleased": false,
     "regionIds": [
       "victoria"
-    ]
+    ],
+    "featuredDropItemIds": []
   },
   {
     "id": "9000100",
@@ -5319,7 +6127,8 @@
     "level": 35,
     "hp": 600,
     "exp": 0,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9000101",
@@ -5331,7 +6140,8 @@
     "isReleased": false,
     "regionIds": [
       "victoria"
-    ]
+    ],
+    "featuredDropItemIds": []
   },
   {
     "id": "9000200",
@@ -5340,7 +6150,8 @@
     "level": 35,
     "hp": 800,
     "exp": 0,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9000201",
@@ -5349,7 +6160,8 @@
     "level": 35,
     "hp": 600,
     "exp": 0,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9000300",
@@ -5358,7 +6170,8 @@
     "level": 35,
     "hp": 800,
     "exp": 0,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9000301",
@@ -5367,7 +6180,8 @@
     "level": 35,
     "hp": 600,
     "exp": 0,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9001000",
@@ -5376,7 +6190,8 @@
     "level": 80,
     "hp": 150000,
     "exp": 2400,
-    "isReleased": true
+    "isReleased": true,
+    "featuredDropItemIds": []
   },
   {
     "id": "9001001",
@@ -5385,7 +6200,8 @@
     "level": 80,
     "hp": 90000,
     "exp": 2400,
-    "isReleased": true
+    "isReleased": true,
+    "featuredDropItemIds": []
   },
   {
     "id": "9001002",
@@ -5394,7 +6210,8 @@
     "level": 80,
     "hp": 120000,
     "exp": 2400,
-    "isReleased": true
+    "isReleased": true,
+    "featuredDropItemIds": []
   },
   {
     "id": "9001003",
@@ -5403,7 +6220,8 @@
     "level": 80,
     "hp": 120000,
     "exp": 2400,
-    "isReleased": true
+    "isReleased": true,
+    "featuredDropItemIds": []
   },
   {
     "id": "9001004",
@@ -5412,7 +6230,8 @@
     "level": 80,
     "hp": 130000,
     "exp": 2400,
-    "isReleased": true
+    "isReleased": true,
+    "featuredDropItemIds": []
   },
   {
     "id": "9001005",
@@ -5421,7 +6240,8 @@
     "level": 35,
     "hp": 800,
     "exp": 0,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9001006",
@@ -5430,7 +6250,8 @@
     "level": 35,
     "hp": 800,
     "exp": 0,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9001007",
@@ -5439,7 +6260,8 @@
     "level": 35,
     "hp": 800,
     "exp": 0,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9001008",
@@ -5448,7 +6270,8 @@
     "level": 80,
     "hp": 70000,
     "exp": 0,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9100000",
@@ -5460,7 +6283,8 @@
     "isReleased": false,
     "regionIds": [
       "victoria"
-    ]
+    ],
+    "featuredDropItemIds": []
   },
   {
     "id": "9100001",
@@ -5469,7 +6293,8 @@
     "level": 200,
     "hp": 9999,
     "exp": 0,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9100002",
@@ -5478,7 +6303,8 @@
     "level": 200,
     "hp": 9999,
     "exp": 0,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9100003",
@@ -5487,7 +6313,8 @@
     "level": 200,
     "hp": 99999,
     "exp": 0,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9100004",
@@ -5496,7 +6323,8 @@
     "level": 200,
     "hp": 99999,
     "exp": 0,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9100005",
@@ -5505,7 +6333,8 @@
     "level": 200,
     "hp": 99999,
     "exp": 0,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9100006",
@@ -5514,7 +6343,8 @@
     "level": 200,
     "hp": 99999,
     "exp": 0,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9100007",
@@ -5523,7 +6353,8 @@
     "level": 200,
     "hp": 9999,
     "exp": 0,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9100008",
@@ -5535,7 +6366,8 @@
     "isReleased": false,
     "regionIds": [
       "victoria"
-    ]
+    ],
+    "featuredDropItemIds": []
   },
   {
     "id": "9100009",
@@ -5547,7 +6379,8 @@
     "isReleased": false,
     "regionIds": [
       "victoria"
-    ]
+    ],
+    "featuredDropItemIds": []
   },
   {
     "id": "9100010",
@@ -5556,7 +6389,8 @@
     "level": 200,
     "hp": 99999,
     "exp": 0,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9100013",
@@ -5565,16 +6399,8 @@
     "level": 30,
     "hp": 8000,
     "exp": 100,
-    "isReleased": false
-  },
-  {
-    "id": "9200020",
-    "name": "예티와 페페",
-    "imageUrl": "https://maplestory.io/api/gms/62/mob/9200020/icon?resize=2",
-    "level": 78,
-    "hp": 20000,
-    "exp": 0,
-    "isReleased": true
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9300004",
@@ -5583,7 +6409,8 @@
     "level": 54,
     "hp": 4100,
     "exp": 165,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9300005",
@@ -5592,7 +6419,8 @@
     "level": 32,
     "hp": 3700,
     "exp": 260,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9300006",
@@ -5601,7 +6429,8 @@
     "level": 34,
     "hp": 4300,
     "exp": 280,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9300007",
@@ -5610,7 +6439,8 @@
     "level": 35,
     "hp": 4900,
     "exp": 288,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9300008",
@@ -5619,7 +6449,8 @@
     "level": 43,
     "hp": 7100,
     "exp": 340,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9300009",
@@ -5628,7 +6459,8 @@
     "level": 40,
     "hp": 6500,
     "exp": 408,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9300010",
@@ -5637,7 +6469,8 @@
     "level": 47,
     "hp": 33000,
     "exp": 850,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9300012",
@@ -5646,7 +6479,8 @@
     "level": 56,
     "hp": 125000,
     "exp": 4800,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9300013",
@@ -5655,7 +6489,8 @@
     "level": 200,
     "hp": 99999,
     "exp": 1,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9300014",
@@ -5664,7 +6499,8 @@
     "level": 43,
     "hp": 6500,
     "exp": 340,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9300019",
@@ -5673,7 +6509,8 @@
     "level": 65,
     "hp": 40000,
     "exp": 1120,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9300020",
@@ -5682,7 +6519,8 @@
     "level": 63,
     "hp": 16000,
     "exp": 520,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9300021",
@@ -5691,7 +6529,8 @@
     "level": 200,
     "hp": 9999999,
     "exp": 0,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9300022",
@@ -5700,7 +6539,8 @@
     "level": 66,
     "hp": 40000,
     "exp": 1060,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9300023",
@@ -5709,7 +6549,8 @@
     "level": 66,
     "hp": 40000,
     "exp": 1060,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9300024",
@@ -5718,7 +6559,8 @@
     "level": 67,
     "hp": 35000,
     "exp": 1100,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9300025",
@@ -5727,7 +6569,8 @@
     "level": 68,
     "hp": 35000,
     "exp": 1150,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9300026",
@@ -5736,7 +6579,8 @@
     "level": 62,
     "hp": 15000,
     "exp": 430,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9300027",
@@ -5748,7 +6592,8 @@
     "isReleased": false,
     "regionIds": [
       "victoria"
-    ]
+    ],
+    "featuredDropItemIds": []
   },
   {
     "id": "9300028",
@@ -5757,7 +6602,8 @@
     "level": 115,
     "hp": 1700000,
     "exp": 150000,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9300029",
@@ -5766,7 +6612,8 @@
     "level": 99,
     "hp": 1000000,
     "exp": 0,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9300030",
@@ -5775,7 +6622,8 @@
     "level": 99,
     "hp": 800000,
     "exp": 0,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9300031",
@@ -5784,7 +6632,8 @@
     "level": 100,
     "hp": 900000,
     "exp": 0,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9300032",
@@ -5793,7 +6642,8 @@
     "level": 100,
     "hp": 900000,
     "exp": 0,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9300034",
@@ -5802,7 +6652,8 @@
     "level": 66,
     "hp": 20000,
     "exp": 0,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9300035",
@@ -5811,7 +6662,8 @@
     "level": 62,
     "hp": 15000,
     "exp": 0,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9300038",
@@ -5823,7 +6675,8 @@
     "isReleased": false,
     "regionIds": [
       "orbis"
-    ]
+    ],
+    "featuredDropItemIds": []
   },
   {
     "id": "9300039",
@@ -5835,7 +6688,8 @@
     "isReleased": false,
     "regionIds": [
       "orbis"
-    ]
+    ],
+    "featuredDropItemIds": []
   },
   {
     "id": "9300041",
@@ -5844,7 +6698,8 @@
     "level": 57,
     "hp": 7300,
     "exp": 370,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9300042",
@@ -5853,7 +6708,8 @@
     "level": 57,
     "hp": 7300,
     "exp": 370,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9300043",
@@ -5862,7 +6718,8 @@
     "level": 57,
     "hp": 7300,
     "exp": 370,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9300044",
@@ -5871,7 +6728,8 @@
     "level": 65,
     "hp": 3000,
     "exp": 0,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9300045",
@@ -5883,7 +6741,8 @@
     "isReleased": false,
     "regionIds": [
       "orbis"
-    ]
+    ],
+    "featuredDropItemIds": []
   },
   {
     "id": "9300046",
@@ -5895,7 +6754,8 @@
     "isReleased": false,
     "regionIds": [
       "orbis"
-    ]
+    ],
+    "featuredDropItemIds": []
   },
   {
     "id": "9300047",
@@ -5907,7 +6767,8 @@
     "isReleased": false,
     "regionIds": [
       "orbis"
-    ]
+    ],
+    "featuredDropItemIds": []
   },
   {
     "id": "9300048",
@@ -5916,7 +6777,8 @@
     "level": 59,
     "hp": 10000,
     "exp": 430,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9300049",
@@ -5925,7 +6787,8 @@
     "level": 59,
     "hp": 10000,
     "exp": 430,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9300050",
@@ -5934,7 +6797,8 @@
     "level": 60,
     "hp": 25000,
     "exp": 515,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9300051",
@@ -5943,7 +6807,8 @@
     "level": 51,
     "hp": 6400,
     "exp": 305,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9300052",
@@ -5952,7 +6817,8 @@
     "level": 51,
     "hp": 6400,
     "exp": 305,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9300053",
@@ -5961,7 +6827,8 @@
     "level": 51,
     "hp": 6400,
     "exp": 305,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9300054",
@@ -5973,7 +6840,8 @@
     "isReleased": false,
     "regionIds": [
       "orbis"
-    ]
+    ],
+    "featuredDropItemIds": []
   },
   {
     "id": "9300055",
@@ -5985,7 +6853,8 @@
     "isReleased": false,
     "regionIds": [
       "orbis"
-    ]
+    ],
+    "featuredDropItemIds": []
   },
   {
     "id": "9300056",
@@ -5997,7 +6866,8 @@
     "isReleased": false,
     "regionIds": [
       "orbis"
-    ]
+    ],
+    "featuredDropItemIds": []
   },
   {
     "id": "9300060",
@@ -6025,7 +6895,8 @@
     "level": 30,
     "hp": 5000,
     "exp": 0,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9300064",
@@ -6041,7 +6912,8 @@
     "attributes": [
       "성속성약점",
       "얼음속성약점"
-    ]
+    ],
+    "featuredDropItemIds": []
   },
   {
     "id": "9300065",
@@ -6050,7 +6922,8 @@
     "level": 100,
     "hp": 56000,
     "exp": 1000,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9300066",
@@ -6059,7 +6932,8 @@
     "level": 100,
     "hp": 56000,
     "exp": 1000,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9300067",
@@ -6068,7 +6942,8 @@
     "level": 105,
     "hp": 67000,
     "exp": 1200,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9300068",
@@ -6077,7 +6952,8 @@
     "level": 105,
     "hp": 67000,
     "exp": 1200,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9300069",
@@ -6086,7 +6962,8 @@
     "level": 97,
     "hp": 53000,
     "exp": 800,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9300070",
@@ -6095,7 +6972,8 @@
     "level": 97,
     "hp": 53000,
     "exp": 800,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9300071",
@@ -6104,7 +6982,8 @@
     "level": 101,
     "hp": 57000,
     "exp": 1000,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9300072",
@@ -6113,7 +6992,8 @@
     "level": 101,
     "hp": 57000,
     "exp": 1000,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9300073",
@@ -6122,7 +7002,8 @@
     "level": 103,
     "hp": 60000,
     "exp": 1050,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9300074",
@@ -6131,7 +7012,8 @@
     "level": 103,
     "hp": 60000,
     "exp": 1050,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9300075",
@@ -6140,7 +7022,8 @@
     "level": 110,
     "hp": 80000,
     "exp": 1500,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9300076",
@@ -6149,7 +7032,8 @@
     "level": 110,
     "hp": 80000,
     "exp": 1500,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9300077",
@@ -6158,7 +7042,8 @@
     "level": 113,
     "hp": 85000,
     "exp": 1500,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9300078",
@@ -6167,7 +7052,8 @@
     "level": 105,
     "hp": 68000,
     "exp": 1250,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9300079",
@@ -6176,7 +7062,8 @@
     "level": 110,
     "hp": 80000,
     "exp": 1500,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9300084",
@@ -6185,7 +7072,8 @@
     "level": 43,
     "hp": 6500,
     "exp": 340,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9300085",
@@ -6194,7 +7082,8 @@
     "level": 80,
     "hp": 50000,
     "exp": 2000,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9300086",
@@ -6203,7 +7092,8 @@
     "level": 108,
     "hp": 70000,
     "exp": 4100,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9300087",
@@ -6212,7 +7102,8 @@
     "level": 75,
     "hp": 18000,
     "exp": 350,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9300088",
@@ -6221,7 +7112,8 @@
     "level": 80,
     "hp": 120000,
     "exp": 2400,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9300089",
@@ -6230,7 +7122,8 @@
     "level": 120,
     "hp": 1350000,
     "exp": 13500,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9300090",
@@ -6239,7 +7132,8 @@
     "level": 120,
     "hp": 1350000,
     "exp": 13500,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9300091",
@@ -6248,7 +7142,8 @@
     "level": 200,
     "hp": 9999999,
     "exp": 0,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9300092",
@@ -6257,7 +7152,8 @@
     "level": 80,
     "hp": 50000,
     "exp": 2000,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9300093",
@@ -6266,7 +7162,8 @@
     "level": 30,
     "hp": 100000,
     "exp": 0,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9300094",
@@ -6275,7 +7172,8 @@
     "level": 100,
     "hp": 50000,
     "exp": 3500,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9300095",
@@ -6284,7 +7182,8 @@
     "level": 80,
     "hp": 19000,
     "exp": 850,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9300097",
@@ -6293,7 +7192,8 @@
     "level": 85,
     "hp": 17000,
     "exp": 1400,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9300098",
@@ -6305,7 +7205,8 @@
     "isReleased": false,
     "regionIds": [
       "aqua-road"
-    ]
+    ],
+    "featuredDropItemIds": []
   },
   {
     "id": "9300099",
@@ -6314,7 +7215,8 @@
     "level": 100,
     "hp": 56000,
     "exp": 3000,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9300101",
@@ -6323,7 +7225,8 @@
     "level": 70,
     "hp": 200,
     "exp": 0,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9300102",
@@ -6332,7 +7235,8 @@
     "level": 70,
     "hp": 24000,
     "exp": 0,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9300103",
@@ -6341,7 +7245,8 @@
     "level": 70,
     "hp": 4500,
     "exp": 0,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9300104",
@@ -6350,7 +7255,8 @@
     "level": 70,
     "hp": 4500,
     "exp": 0,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9300105",
@@ -6359,7 +7265,8 @@
     "level": 63,
     "hp": 480000,
     "exp": 8800,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9300106",
@@ -6368,7 +7275,8 @@
     "level": 68,
     "hp": 540000,
     "exp": 12000,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9300107",
@@ -6377,7 +7285,8 @@
     "level": 70,
     "hp": 300000,
     "exp": 4000,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9300108",
@@ -6386,7 +7295,8 @@
     "level": 56,
     "hp": 4300,
     "exp": 92,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9300109",
@@ -6395,7 +7305,8 @@
     "level": 57,
     "hp": 4500,
     "exp": 95,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9300110",
@@ -6404,7 +7315,8 @@
     "level": 58,
     "hp": 4700,
     "exp": 98,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9300111",
@@ -6413,7 +7325,8 @@
     "level": 59,
     "hp": 4900,
     "exp": 100,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9300112",
@@ -6422,7 +7335,8 @@
     "level": 59,
     "hp": 4100,
     "exp": 100,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9300113",
@@ -6431,7 +7345,8 @@
     "level": 60,
     "hp": 4300,
     "exp": 104,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9300114",
@@ -6440,7 +7355,8 @@
     "level": 58,
     "hp": 2700,
     "exp": 68,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9300115",
@@ -6449,7 +7365,8 @@
     "level": 59,
     "hp": 2820,
     "exp": 70,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9300116",
@@ -6458,7 +7375,8 @@
     "level": 60,
     "hp": 2940,
     "exp": 72,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9300117",
@@ -6467,7 +7385,8 @@
     "level": 62,
     "hp": 22800,
     "exp": 313,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9300118",
@@ -6476,7 +7395,8 @@
     "level": 64,
     "hp": 28200,
     "exp": 378,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9300119",
@@ -6485,7 +7405,10 @@
     "level": 60,
     "hp": 420000,
     "exp": 7200,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": [
+      "2040502"
+    ]
   },
   {
     "id": "9300120",
@@ -6494,7 +7417,8 @@
     "level": 59,
     "hp": 8820,
     "exp": 180,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9300121",
@@ -6503,7 +7427,8 @@
     "level": 60,
     "hp": 9360,
     "exp": 187,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9300122",
@@ -6512,7 +7437,8 @@
     "level": 62,
     "hp": 10440,
     "exp": 198,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9300123",
@@ -6521,7 +7447,8 @@
     "level": 59,
     "hp": 7350,
     "exp": 150,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9300124",
@@ -6530,7 +7457,8 @@
     "level": 60,
     "hp": 7800,
     "exp": 156,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9300125",
@@ -6539,7 +7467,8 @@
     "level": 62,
     "hp": 8700,
     "exp": 165,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9300126",
@@ -6548,7 +7477,8 @@
     "level": 59,
     "hp": 9500,
     "exp": 105,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9300127",
@@ -6561,7 +7491,8 @@
     "regionIds": [
       "ludibrium"
     ],
-    "attributes": null
+    "attributes": null,
+    "featuredDropItemIds": []
   },
   {
     "id": "9300128",
@@ -6574,7 +7505,37 @@
     "regionIds": [
       "ludus-lake-earth-defense-hq"
     ],
-    "attributes": null
+    "attributes": null,
+    "featuredDropItemIds": [
+      "1051009"
+    ],
+    "stats": {
+      "mp": 0,
+      "knockbackDamage": "0+",
+      "physicalDamage": 105,
+      "magicDamage": 115,
+      "physicalDefense": 100,
+      "magicDefense": 130,
+      "speed": 0,
+      "requiredAccuracy": 54.99,
+      "mesos": 262.5
+    },
+    "dropItemIds": [
+      "1051009",
+      "1072078",
+      "1002141",
+      "1040075",
+      "2000003",
+      "1072040",
+      "1462006",
+      "1442009",
+      "2041023",
+      "2000002",
+      "1060071",
+      "1060064",
+      "1472010",
+      "1040082"
+    ]
   },
   {
     "id": "9300129",
@@ -6588,7 +7549,8 @@
       "ludibrium",
       "ludus-lake-underground-town"
     ],
-    "attributes": null
+    "attributes": null,
+    "featuredDropItemIds": []
   },
   {
     "id": "9300130",
@@ -6601,7 +7563,8 @@
     "regionIds": [
       "ludibrium"
     ],
-    "attributes": null
+    "attributes": null,
+    "featuredDropItemIds": []
   },
   {
     "id": "9300131",
@@ -6614,7 +7577,8 @@
     "regionIds": [
       "ludibrium"
     ],
-    "attributes": null
+    "attributes": null,
+    "featuredDropItemIds": []
   },
   {
     "id": "9300132",
@@ -6627,7 +7591,8 @@
     "regionIds": [
       "ludibrium"
     ],
-    "attributes": null
+    "attributes": null,
+    "featuredDropItemIds": []
   },
   {
     "id": "9300133",
@@ -6643,7 +7608,8 @@
     "attributes": [
       "얼음속성반감",
       "불속성반감"
-    ]
+    ],
+    "featuredDropItemIds": []
   },
   {
     "id": "9300134",
@@ -6656,7 +7622,8 @@
     "regionIds": [
       "ludus-lake-earth-defense-hq"
     ],
-    "attributes": null
+    "attributes": null,
+    "featuredDropItemIds": []
   },
   {
     "id": "9300135",
@@ -6684,7 +7651,8 @@
     "level": 70,
     "hp": 30000,
     "exp": 0,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9300138",
@@ -6693,7 +7661,8 @@
     "level": 70,
     "hp": 30000,
     "exp": 0,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9300139",
@@ -6702,7 +7671,8 @@
     "level": 81,
     "hp": 660000,
     "exp": 12000,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9300140",
@@ -6711,7 +7681,8 @@
     "level": 84,
     "hp": 850000,
     "exp": 25000,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9300141",
@@ -6723,7 +7694,8 @@
     "isReleased": false,
     "regionIds": [
       "nihan-magatia"
-    ]
+    ],
+    "featuredDropItemIds": []
   },
   {
     "id": "9300142",
@@ -6735,7 +7707,8 @@
     "isReleased": false,
     "regionIds": [
       "nihan-magatia"
-    ]
+    ],
+    "featuredDropItemIds": []
   },
   {
     "id": "9300143",
@@ -6747,7 +7720,8 @@
     "isReleased": false,
     "regionIds": [
       "nihan-magatia"
-    ]
+    ],
+    "featuredDropItemIds": []
   },
   {
     "id": "9300144",
@@ -6765,7 +7739,6 @@
       "2040042"
     ],
     "featuredDropItemIds": [
-      "2040028",
       "2040042"
     ]
   },
@@ -6830,7 +7803,8 @@
     "level": 62,
     "hp": 7500,
     "exp": 0,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9300154",
@@ -6842,7 +7816,8 @@
     "isReleased": false,
     "regionIds": [
       "nihan-magatia"
-    ]
+    ],
+    "featuredDropItemIds": []
   },
   {
     "id": "9300156",
@@ -6851,7 +7826,8 @@
     "level": 10,
     "hp": 300,
     "exp": 15,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9300158",
@@ -6860,7 +7836,8 @@
     "level": 120,
     "hp": 100000000,
     "exp": 0,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9300159",
@@ -6869,7 +7846,8 @@
     "level": 120,
     "hp": 100000000,
     "exp": 0,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9300160",
@@ -6893,7 +7871,8 @@
     "level": 45,
     "hp": 2550,
     "exp": 0,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9300162",
@@ -6902,7 +7881,8 @@
     "level": 55,
     "hp": 95000,
     "exp": 0,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9300163",
@@ -6930,9 +7910,7 @@
     "dropItemIds": [
       "2040028"
     ],
-    "featuredDropItemIds": [
-      "2040028"
-    ]
+    "featuredDropItemIds": []
   },
   {
     "id": "9300165",
@@ -6945,9 +7923,7 @@
     "dropItemIds": [
       "2040038"
     ],
-    "featuredDropItemIds": [
-      "2040038"
-    ]
+    "featuredDropItemIds": []
   },
   {
     "id": "9300166",
@@ -6956,7 +7932,8 @@
     "level": 35,
     "hp": 10000,
     "exp": 0,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9300170",
@@ -6965,7 +7942,8 @@
     "level": 34,
     "hp": 4300,
     "exp": 280,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9300172",
@@ -6974,7 +7952,8 @@
     "level": 62,
     "hp": 10500,
     "exp": 240,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9300173",
@@ -6983,7 +7962,8 @@
     "level": 65,
     "hp": 12500,
     "exp": 255,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9300174",
@@ -6992,7 +7972,8 @@
     "level": 65,
     "hp": 13000,
     "exp": 255,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9300175",
@@ -7001,7 +7982,8 @@
     "level": 55,
     "hp": 8500,
     "exp": 0,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9300176",
@@ -7010,7 +7992,8 @@
     "level": 65,
     "hp": 720000,
     "exp": 0,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9300177",
@@ -7019,7 +8002,8 @@
     "level": 75,
     "hp": 930000,
     "exp": 0,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9300178",
@@ -7028,7 +8012,8 @@
     "level": 85,
     "hp": 1350000,
     "exp": 44950,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9300179",
@@ -7037,7 +8022,8 @@
     "level": 65,
     "hp": 3000,
     "exp": 0,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9300180",
@@ -7046,7 +8032,8 @@
     "level": 30,
     "hp": 10000,
     "exp": 0,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9300181",
@@ -7055,7 +8042,8 @@
     "level": 65,
     "hp": 12500,
     "exp": 255,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9300182",
@@ -7064,7 +8052,8 @@
     "level": 62,
     "hp": 10500,
     "exp": 240,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9300183",
@@ -7073,7 +8062,8 @@
     "level": 65,
     "hp": 12500,
     "exp": 255,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9300184",
@@ -7086,7 +8076,8 @@
     "regionIds": [
       "victoria"
     ],
-    "attributes": null
+    "attributes": null,
+    "featuredDropItemIds": []
   },
   {
     "id": "9300185",
@@ -7095,7 +8086,8 @@
     "level": 55,
     "hp": 8500,
     "exp": 0,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9300186",
@@ -7104,7 +8096,8 @@
     "level": 55,
     "hp": 8500,
     "exp": 0,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9300187",
@@ -7116,7 +8109,8 @@
     "isReleased": false,
     "regionIds": [
       "victoria"
-    ]
+    ],
+    "featuredDropItemIds": []
   },
   {
     "id": "9300188",
@@ -7125,7 +8119,8 @@
     "level": 65,
     "hp": 3000,
     "exp": 0,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9300189",
@@ -7134,7 +8129,8 @@
     "level": 65,
     "hp": 13000,
     "exp": 0,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9300190",
@@ -7143,7 +8139,8 @@
     "level": 65,
     "hp": 3000,
     "exp": 0,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9300192",
@@ -7152,7 +8149,8 @@
     "level": 65,
     "hp": 3000,
     "exp": 0,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9300193",
@@ -7161,7 +8159,8 @@
     "level": 55,
     "hp": 8500,
     "exp": 0,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9300194",
@@ -7170,7 +8169,8 @@
     "level": 55,
     "hp": 8500,
     "exp": 0,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9400000",
@@ -7182,6 +8182,9 @@
     "isReleased": false,
     "regionIds": [
       "world-travel-japan"
+    ],
+    "featuredDropItemIds": [
+      "1092008"
     ]
   },
   {
@@ -7197,6 +8200,9 @@
     ],
     "attributes": [
       "얼음속성약점"
+    ],
+    "featuredDropItemIds": [
+      "1051008"
     ]
   },
   {
@@ -7212,6 +8218,10 @@
     ],
     "attributes": [
       "불속성약점"
+    ],
+    "featuredDropItemIds": [
+      "2044002",
+      "1002418"
     ]
   },
   {
@@ -7231,7 +8241,10 @@
       "성속성약점"
     ],
     "featuredDropItemIds": [
-      "2070005"
+      "2070005",
+      "1092020",
+      "2041016",
+      "2041019"
     ]
   },
   {
@@ -7247,6 +8260,9 @@
     ],
     "attributes": [
       "전기속성약점"
+    ],
+    "featuredDropItemIds": [
+      "2043302"
     ]
   },
   {
@@ -7263,7 +8279,8 @@
     "attributes": [
       "얼음속성약점",
       "불속성반감"
-    ]
+    ],
+    "featuredDropItemIds": []
   },
   {
     "id": "9400012",
@@ -7279,6 +8296,9 @@
     "attributes": [
       "불속성약점",
       "얼음속성반감"
+    ],
+    "featuredDropItemIds": [
+      "2040516"
     ]
   },
   {
@@ -7288,7 +8308,8 @@
     "level": 100,
     "hp": 68000,
     "exp": 3200,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9400014",
@@ -7297,7 +8318,8 @@
     "level": 115,
     "hp": 35000000,
     "exp": 1780000,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9400100",
@@ -7313,7 +8335,8 @@
     "attributes": [
       "독속성약점",
       "불속성약점"
-    ]
+    ],
+    "featuredDropItemIds": []
   },
   {
     "id": "9400101",
@@ -7329,7 +8352,8 @@
     "attributes": [
       "독속성약점",
       "불속성약점"
-    ]
+    ],
+    "featuredDropItemIds": []
   },
   {
     "id": "9400102",
@@ -7345,7 +8369,8 @@
     "attributes": [
       "독속성약점",
       "불속성약점"
-    ]
+    ],
+    "featuredDropItemIds": []
   },
   {
     "id": "9400103",
@@ -7362,7 +8387,8 @@
       "불속성약점",
       "성속성약점",
       "얼음속성약점"
-    ]
+    ],
+    "featuredDropItemIds": []
   },
   {
     "id": "9400110",
@@ -7378,7 +8404,8 @@
     "attributes": [
       "독속성약점",
       "불속성약점"
-    ]
+    ],
+    "featuredDropItemIds": []
   },
   {
     "id": "9400111",
@@ -7394,7 +8421,8 @@
     "attributes": [
       "독속성약점",
       "불속성약점"
-    ]
+    ],
+    "featuredDropItemIds": []
   },
   {
     "id": "9400120",
@@ -7410,7 +8438,8 @@
     "attributes": [
       "불속성약점",
       "전기속성약점"
-    ]
+    ],
+    "featuredDropItemIds": []
   },
   {
     "id": "9400121",
@@ -7426,7 +8455,8 @@
     "attributes": [
       "전기속성약점",
       "성속성약점"
-    ]
+    ],
+    "featuredDropItemIds": []
   },
   {
     "id": "9400204",
@@ -7438,7 +8468,8 @@
     "isReleased": false,
     "regionIds": [
       "victoria"
-    ]
+    ],
+    "featuredDropItemIds": []
   },
   {
     "id": "9400205",
@@ -7453,7 +8484,8 @@
     ],
     "attributes": [
       "불속성약점"
-    ]
+    ],
+    "featuredDropItemIds": []
   },
   {
     "id": "9400400",
@@ -7465,7 +8497,8 @@
     "isReleased": true,
     "regionIds": [
       "world-travel-japan"
-    ]
+    ],
+    "featuredDropItemIds": []
   },
   {
     "id": "9400401",
@@ -7481,7 +8514,8 @@
     "attributes": [
       "전기속성약점",
       "불속성약점"
-    ]
+    ],
+    "featuredDropItemIds": []
   },
   {
     "id": "9400402",
@@ -7497,7 +8531,8 @@
     "attributes": [
       "성속성약점",
       "독속성무효"
-    ]
+    ],
+    "featuredDropItemIds": []
   },
   {
     "id": "9400403",
@@ -7515,7 +8550,8 @@
       "전기속성반감",
       "독속성무효",
       "불속성반감"
-    ]
+    ],
+    "featuredDropItemIds": []
   },
   {
     "id": "9400404",
@@ -7527,7 +8563,8 @@
     "isReleased": true,
     "regionIds": [
       "world-travel-japan"
-    ]
+    ],
+    "featuredDropItemIds": []
   },
   {
     "id": "9400405",
@@ -7546,7 +8583,8 @@
       "성속성약점",
       "얼음속성약점",
       "독속성무효"
-    ]
+    ],
+    "featuredDropItemIds": []
   },
   {
     "id": "9400406",
@@ -7562,7 +8600,8 @@
     "attributes": [
       "불속성약점",
       "성속성약점"
-    ]
+    ],
+    "featuredDropItemIds": []
   },
   {
     "id": "9400408",
@@ -7571,7 +8610,8 @@
     "level": 180,
     "hp": 620000000,
     "exp": 22550000,
-    "isReleased": true
+    "isReleased": true,
+    "featuredDropItemIds": []
   },
   {
     "id": "9400513",
@@ -7580,7 +8620,8 @@
     "level": 10,
     "hp": 250,
     "exp": 20,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9400538",
@@ -7592,6 +8633,9 @@
     "isReleased": false,
     "regionIds": [
       "masteria-newleafcity"
+    ],
+    "featuredDropItemIds": [
+      "2043302"
     ]
   },
   {
@@ -7604,6 +8648,9 @@
     "isReleased": false,
     "regionIds": [
       "masteria-newleafcity"
+    ],
+    "featuredDropItemIds": [
+      "2044002"
     ]
   },
   {
@@ -7616,7 +8663,8 @@
     "isReleased": true,
     "regionIds": [
       "masteria-newleafcity"
-    ]
+    ],
+    "featuredDropItemIds": []
   },
   {
     "id": "9400542",
@@ -7631,7 +8679,8 @@
       "masteria-newleafcity"
     ],
     "featuredDropItemIds": [
-      "2040805"
+      "2040805",
+      "1051006"
     ]
   },
   {
@@ -7663,6 +8712,9 @@
     "isReleased": true,
     "regionIds": [
       "masteria-newleafcity"
+    ],
+    "featuredDropItemIds": [
+      "2044002"
     ]
   },
   {
@@ -7675,6 +8727,10 @@
     "isReleased": true,
     "regionIds": [
       "masteria-newleafcity"
+    ],
+    "featuredDropItemIds": [
+      "2044702",
+      "2070006"
     ]
   },
   {
@@ -7687,6 +8743,9 @@
     "isReleased": true,
     "regionIds": [
       "masteria-newleafcity"
+    ],
+    "featuredDropItemIds": [
+      "2044002"
     ]
   },
   {
@@ -7699,7 +8758,8 @@
     "isReleased": true,
     "regionIds": [
       "masteria-newleafcity"
-    ]
+    ],
+    "featuredDropItemIds": []
   },
   {
     "id": "9400548",
@@ -7711,14 +8771,15 @@
     "isReleased": true,
     "regionIds": [
       "masteria-newleafcity"
-    ]
+    ],
+    "featuredDropItemIds": []
   },
   {
     "id": "9400549",
     "name": "머리없는 기수",
     "imageUrl": "https://maplestory.io/api/gms/62/mob/9400549/icon?resize=2",
     "level": 101,
-    "hp": 3500000,
+    "hp": 3,
     "exp": 300000,
     "isReleased": true,
     "regionIds": [
@@ -7726,7 +8787,19 @@
     ],
     "attributes": [
       "전기속성약점"
-    ]
+    ],
+    "featuredDropItemIds": [],
+    "stats": {
+      "mp": 5000,
+      "knockbackDamage": "1500+",
+      "physicalDamage": 600,
+      "magicDamage": 650,
+      "physicalDefense": 800,
+      "magicDefense": 800,
+      "speed": -15,
+      "requiredAccuracy": 153.972,
+      "mesos": 757.5
+    }
   },
   {
     "id": "9400573",
@@ -7739,7 +8812,19 @@
     "regionIds": [
       "masteria-crimsonwood"
     ],
-    "attributes": null
+    "attributes": null,
+    "featuredDropItemIds": [],
+    "stats": {
+      "mp": 100,
+      "knockbackDamage": "500+",
+      "physicalDamage": 0,
+      "magicDamage": 0,
+      "physicalDefense": 0,
+      "magicDefense": 0,
+      "speed": 0,
+      "requiredAccuracy": 0.0,
+      "mesos": 75.0
+    }
   },
   {
     "id": "9400574",
@@ -7755,15 +8840,29 @@
     "attributes": [
       "얼음속성무효",
       "독속성무효"
-    ]
+    ],
+    "featuredDropItemIds": [
+      "1332052"
+    ],
+    "stats": {
+      "mp": 230,
+      "knockbackDamage": "0+",
+      "physicalDamage": 270,
+      "magicDamage": 400,
+      "physicalDefense": 500,
+      "magicDefense": 450,
+      "speed": 0,
+      "requiredAccuracy": 146.64,
+      "mesos": 750.0
+    }
   },
   {
     "id": "9400575",
     "name": "빅풋",
     "imageUrl": "https://maplestory.io/api/gms/62/mob/9400575/icon?resize=2",
     "level": 110,
-    "hp": 32000000,
-    "exp": 2660000,
+    "hp": 32,
+    "exp": 2,
     "isReleased": true,
     "regionIds": [
       "masteria-crimsonwood"
@@ -7772,7 +8871,19 @@
       "불속성약점",
       "얼음속성무효",
       "성속성무효"
-    ]
+    ],
+    "featuredDropItemIds": [],
+    "stats": {
+      "mp": 10,
+      "knockbackDamage": "2000+",
+      "physicalDamage": 1200,
+      "magicDamage": 700,
+      "physicalDefense": 1400,
+      "magicDefense": 1400,
+      "speed": 90,
+      "requiredAccuracy": 135.642,
+      "mesos": 825.0
+    }
   },
   {
     "id": "9400576",
@@ -7787,7 +8898,19 @@
     ],
     "attributes": [
       "독속성무효"
-    ]
+    ],
+    "featuredDropItemIds": [],
+    "stats": {
+      "mp": 400,
+      "knockbackDamage": "0+",
+      "physicalDamage": 300,
+      "magicDamage": 415,
+      "physicalDefense": 265,
+      "magicDefense": 365,
+      "speed": -40,
+      "requiredAccuracy": 109.98,
+      "mesos": 525.0
+    }
   },
   {
     "id": "9400577",
@@ -7802,7 +8925,21 @@
     ],
     "attributes": [
       "불속성반감"
-    ]
+    ],
+    "featuredDropItemIds": [
+      "1372009"
+    ],
+    "stats": {
+      "mp": 5000,
+      "knockbackDamage": "500+",
+      "physicalDamage": 420,
+      "magicDamage": 490,
+      "physicalDefense": 820,
+      "magicDefense": 600,
+      "speed": 30,
+      "requiredAccuracy": 135.642,
+      "mesos": 675.0
+    }
   },
   {
     "id": "9400578",
@@ -7818,7 +8955,20 @@
     "attributes": [
       "불속성무효",
       "얼음속성약점"
-    ]
+    ],
+    "featuredDropItemIds": [],
+    "stats": {
+      "mp": 10000,
+      "knockbackDamage": "500+",
+      "physicalDamage": 470,
+      "magicDamage": 560,
+      "physicalDefense": 920,
+      "magicDefense": 700,
+      "speed": 90,
+      "requiredAccuracy": 135.642,
+      "mesos": 675.0
+    },
+    "transformsFromMonsterId": "9400577"
   },
   {
     "id": "9400579",
@@ -7834,7 +8984,21 @@
     "attributes": [
       "얼음속성무효",
       "독속성무효"
-    ]
+    ],
+    "featuredDropItemIds": [
+      "2041013"
+    ],
+    "stats": {
+      "mp": 200,
+      "knockbackDamage": "0+",
+      "physicalDamage": 480,
+      "magicDamage": 610,
+      "physicalDefense": 800,
+      "magicDefense": 560,
+      "speed": -10,
+      "requiredAccuracy": 164.97,
+      "mesos": 750.0
+    }
   },
   {
     "id": "9400580",
@@ -7850,7 +9014,19 @@
     "attributes": [
       "성속성약점",
       "얼음속성무효"
-    ]
+    ],
+    "featuredDropItemIds": [],
+    "stats": {
+      "mp": 500,
+      "knockbackDamage": "0+",
+      "physicalDamage": 560,
+      "magicDamage": 610,
+      "physicalDefense": 940,
+      "magicDefense": 550,
+      "speed": 95,
+      "requiredAccuracy": 139.308,
+      "mesos": 712.5
+    }
   },
   {
     "id": "9400581",
@@ -7865,7 +9041,21 @@
     ],
     "attributes": [
       "전기속성무효"
-    ]
+    ],
+    "featuredDropItemIds": [
+      "2040513"
+    ],
+    "stats": {
+      "mp": 5000,
+      "knockbackDamage": "0+",
+      "physicalDamage": 410,
+      "magicDamage": 460,
+      "physicalDefense": 700,
+      "magicDefense": 480,
+      "speed": 35,
+      "requiredAccuracy": 109.98,
+      "mesos": 600.0
+    }
   },
   {
     "id": "9400582",
@@ -7883,7 +9073,19 @@
       "얼음속성반감",
       "독속성반감",
       "성속성무효"
-    ]
+    ],
+    "featuredDropItemIds": [],
+    "stats": {
+      "mp": 2000,
+      "knockbackDamage": "0+",
+      "physicalDamage": 650,
+      "magicDamage": 800,
+      "physicalDefense": 1000,
+      "magicDefense": 800,
+      "speed": -20,
+      "requiredAccuracy": 146.64,
+      "mesos": 900.0
+    }
   },
   {
     "id": "9400583",
@@ -7899,7 +9101,23 @@
     "attributes": [
       "성속성약점",
       "얼음속성무효"
-    ]
+    ],
+    "featuredDropItemIds": [
+      "1092029",
+      "2070005",
+      "1382010"
+    ],
+    "stats": {
+      "mp": 0,
+      "physicalDamage": 135,
+      "magicDamage": 0,
+      "physicalDefense": 150,
+      "magicDefense": 160,
+      "speed": 0,
+      "requiredAccuracy": 73.32,
+      "mesos": 337.5
+    },
+    "transformsFromMonsterId": "9400584"
   },
   {
     "id": "9400584",
@@ -7915,7 +9133,19 @@
     "attributes": [
       "성속성약점",
       "얼음속성무효"
-    ]
+    ],
+    "featuredDropItemIds": [],
+    "stats": {
+      "mp": 0,
+      "knockbackDamage": "0+",
+      "physicalDamage": 0,
+      "magicDamage": 0,
+      "physicalDefense": 0,
+      "magicDefense": 0,
+      "speed": 0,
+      "requiredAccuracy": 0.0,
+      "mesos": 337.5
+    }
   },
   {
     "id": "9400586",
@@ -7930,7 +9160,19 @@
     ],
     "attributes": [
       "불속성약점"
-    ]
+    ],
+    "featuredDropItemIds": [],
+    "stats": {
+      "mp": 50,
+      "knockbackDamage": "500+",
+      "physicalDamage": 140,
+      "magicDamage": 0,
+      "physicalDefense": 150,
+      "magicDefense": 200,
+      "speed": 40,
+      "requiredAccuracy": 36.66,
+      "mesos": 375.0
+    }
   },
   {
     "id": "9400588",
@@ -7945,7 +9187,19 @@
     ],
     "attributes": [
       "불속성약점"
-    ]
+    ],
+    "featuredDropItemIds": [],
+    "stats": {
+      "mp": 50,
+      "knockbackDamage": "500+",
+      "physicalDamage": 140,
+      "magicDamage": 0,
+      "physicalDefense": 150,
+      "magicDefense": 200,
+      "speed": 40,
+      "requiredAccuracy": 36.66,
+      "mesos": 375.0
+    }
   },
   {
     "id": "9409000",
@@ -7954,7 +9208,8 @@
     "level": 1,
     "hp": 8,
     "exp": 1,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9409001",
@@ -7963,7 +9218,8 @@
     "level": 1,
     "hp": 8,
     "exp": 1,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9410000",
@@ -7977,7 +9233,8 @@
       "world-travel-japan",
       "world-travel-taiwan"
     ],
-    "attributes": null
+    "attributes": null,
+    "featuredDropItemIds": []
   },
   {
     "id": "9410001",
@@ -7991,7 +9248,8 @@
       "world-travel-japan",
       "world-travel-taiwan"
     ],
-    "attributes": null
+    "attributes": null,
+    "featuredDropItemIds": []
   },
   {
     "id": "9410002",
@@ -8005,7 +9263,8 @@
       "world-travel-japan",
       "world-travel-taiwan"
     ],
-    "attributes": null
+    "attributes": null,
+    "featuredDropItemIds": []
   },
   {
     "id": "9410003",
@@ -8019,7 +9278,8 @@
       "world-travel-japan",
       "world-travel-taiwan"
     ],
-    "attributes": null
+    "attributes": null,
+    "featuredDropItemIds": []
   },
   {
     "id": "9410004",
@@ -8033,7 +9293,8 @@
       "world-travel-japan",
       "world-travel-taiwan"
     ],
-    "attributes": null
+    "attributes": null,
+    "featuredDropItemIds": []
   },
   {
     "id": "9410005",
@@ -8050,6 +9311,9 @@
     "attributes": [
       "얼음속성약점",
       "불속성반감"
+    ],
+    "featuredDropItemIds": [
+      "2040502"
     ]
   },
   {
@@ -8067,6 +9331,9 @@
     "attributes": [
       "독속성약점",
       "전기속성반감"
+    ],
+    "featuredDropItemIds": [
+      "2044702"
     ]
   },
   {
@@ -8084,7 +9351,8 @@
     "attributes": [
       "전기속성약점",
       "독속성반감"
-    ]
+    ],
+    "featuredDropItemIds": []
   },
   {
     "id": "9410008",
@@ -8098,7 +9366,8 @@
       "world-travel-japan",
       "world-travel-taiwan"
     ],
-    "attributes": null
+    "attributes": null,
+    "featuredDropItemIds": []
   },
   {
     "id": "9410009",
@@ -8129,7 +9398,8 @@
       "world-travel-japan",
       "world-travel-taiwan"
     ],
-    "attributes": null
+    "attributes": null,
+    "featuredDropItemIds": []
   },
   {
     "id": "9410011",
@@ -8143,7 +9413,10 @@
       "world-travel-japan",
       "world-travel-taiwan"
     ],
-    "attributes": null
+    "attributes": null,
+    "featuredDropItemIds": [
+      "2040516"
+    ]
   },
   {
     "id": "9410012",
@@ -8157,7 +9430,8 @@
       "world-travel-japan",
       "world-travel-taiwan"
     ],
-    "attributes": null
+    "attributes": null,
+    "featuredDropItemIds": []
   },
   {
     "id": "9410013",
@@ -8171,7 +9445,8 @@
       "world-travel-japan",
       "world-travel-taiwan"
     ],
-    "attributes": null
+    "attributes": null,
+    "featuredDropItemIds": []
   },
   {
     "id": "9410014",
@@ -8180,7 +9455,8 @@
     "level": 85,
     "hp": 5000,
     "exp": 0,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9410015",
@@ -8194,7 +9470,8 @@
       "world-travel-japan",
       "world-travel-taiwan"
     ],
-    "attributes": null
+    "attributes": null,
+    "featuredDropItemIds": []
   },
   {
     "id": "9420000",
@@ -8208,7 +9485,8 @@
       "world-travel-china",
       "world-travel-japan"
     ],
-    "attributes": null
+    "attributes": null,
+    "featuredDropItemIds": []
   },
   {
     "id": "9420001",
@@ -8222,7 +9500,8 @@
       "world-travel-china",
       "world-travel-japan"
     ],
-    "attributes": null
+    "attributes": null,
+    "featuredDropItemIds": []
   },
   {
     "id": "9420002",
@@ -8236,7 +9515,8 @@
       "world-travel-china",
       "world-travel-japan"
     ],
-    "attributes": null
+    "attributes": null,
+    "featuredDropItemIds": []
   },
   {
     "id": "9420003",
@@ -8250,7 +9530,8 @@
       "world-travel-china",
       "world-travel-japan"
     ],
-    "attributes": null
+    "attributes": null,
+    "featuredDropItemIds": []
   },
   {
     "id": "9420004",
@@ -8264,7 +9545,8 @@
       "world-travel-china",
       "world-travel-japan"
     ],
-    "attributes": null
+    "attributes": null,
+    "featuredDropItemIds": []
   },
   {
     "id": "9420005",
@@ -8273,23 +9555,14 @@
     "level": 15,
     "hp": 230,
     "exp": 28,
-    "isReleased": true
-  },
-  {
-    "id": "9500133",
-    "name": "예티와 페페",
-    "imageUrl": "https://maplestory.io/api/gms/62/mob/9500133/icon?resize=2",
-    "level": 78,
-    "hp": 20000,
-    "exp": 0,
     "isReleased": true,
-    "dropItemIds": [
-      "2040040"
-    ],
-    "featuredDropItemIds": [
-      "2040040",
-      "2070005"
-    ]
+    "featuredDropItemIds": [],
+    "stats": {
+      "mp": 25,
+      "physicalDefense": 11,
+      "magicDefense": 40,
+      "requiredAccuracy": 45
+    }
   },
   {
     "id": "9500138",
@@ -8298,7 +9571,8 @@
     "level": 90,
     "hp": 45000,
     "exp": 1800,
-    "isReleased": true
+    "isReleased": true,
+    "featuredDropItemIds": []
   },
   {
     "id": "9500143",
@@ -8307,7 +9581,8 @@
     "level": 35,
     "hp": 1400,
     "exp": 72,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9500144",
@@ -8319,6 +9594,10 @@
     "isReleased": false,
     "regionIds": [
       "victoria"
+    ],
+    "featuredDropItemIds": [
+      "2040501",
+      "2040705"
     ]
   },
   {
@@ -8328,7 +9607,8 @@
     "level": 38,
     "hp": 1850,
     "exp": 87,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9500146",
@@ -8337,7 +9617,8 @@
     "level": 42,
     "hp": 2250,
     "exp": 100,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9500147",
@@ -8346,7 +9627,8 @@
     "level": 70,
     "hp": 20000,
     "exp": 272,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9500148",
@@ -8355,7 +9637,8 @@
     "level": 45,
     "hp": 2600,
     "exp": 110,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9500149",
@@ -8364,7 +9647,8 @@
     "level": 50,
     "hp": 3600,
     "exp": 136,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9500150",
@@ -8373,7 +9657,8 @@
     "level": 60,
     "hp": 6900,
     "exp": 221,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9500151",
@@ -8382,7 +9667,10 @@
     "level": 15,
     "hp": 240,
     "exp": 26,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": [
+      "2040705"
+    ]
   },
   {
     "id": "9500152",
@@ -8391,7 +9679,10 @@
     "level": 20,
     "hp": 350,
     "exp": 32,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": [
+      "2044502"
+    ]
   },
   {
     "id": "9500153",
@@ -8400,7 +9691,11 @@
     "level": 25,
     "hp": 560,
     "exp": 43,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": [
+      "2044302",
+      "2044602"
+    ]
   },
   {
     "id": "9500154",
@@ -8409,7 +9704,8 @@
     "level": 30,
     "hp": 930,
     "exp": 56,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9500161",
@@ -8425,7 +9721,8 @@
     "attributes": [
       "불속성약점",
       "독속성약점"
-    ]
+    ],
+    "featuredDropItemIds": []
   },
   {
     "id": "9500167",
@@ -8434,7 +9731,8 @@
     "level": 10,
     "hp": 120,
     "exp": 20,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9500170",
@@ -8446,7 +9744,8 @@
     "isReleased": false,
     "regionIds": [
       "orbis"
-    ]
+    ],
+    "featuredDropItemIds": []
   },
   {
     "id": "9500176",
@@ -8455,7 +9754,8 @@
     "level": 60,
     "hp": 50400,
     "exp": 2260,
-    "isReleased": true
+    "isReleased": true,
+    "featuredDropItemIds": []
   },
   {
     "id": "9500177",
@@ -8469,7 +9769,8 @@
       "world-travel-japan",
       "world-travel-taiwan"
     ],
-    "attributes": null
+    "attributes": null,
+    "featuredDropItemIds": []
   },
   {
     "id": "9500178",
@@ -8478,7 +9779,8 @@
     "level": 40,
     "hp": 1435,
     "exp": 0,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9500179",
@@ -8487,7 +9789,8 @@
     "level": 40,
     "hp": 5810,
     "exp": 532,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9500182",
@@ -8496,7 +9799,8 @@
     "level": 35,
     "hp": 330000000,
     "exp": 35,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9500184",
@@ -8505,7 +9809,8 @@
     "level": 15,
     "hp": 15,
     "exp": 20,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9500185",
@@ -8514,7 +9819,8 @@
     "level": 15,
     "hp": 15,
     "exp": 20,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9500186",
@@ -8523,7 +9829,8 @@
     "level": 15,
     "hp": 15,
     "exp": 20,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9500187",
@@ -8532,7 +9839,8 @@
     "level": 20,
     "hp": 20,
     "exp": 25,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9500188",
@@ -8541,7 +9849,8 @@
     "level": 20,
     "hp": 20,
     "exp": 25,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9500189",
@@ -8550,7 +9859,8 @@
     "level": 30,
     "hp": 100,
     "exp": 50,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9500190",
@@ -8559,7 +9869,8 @@
     "level": 1800,
     "hp": 70,
     "exp": 95,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9500191",
@@ -8568,7 +9879,8 @@
     "level": 16,
     "hp": 20,
     "exp": 20,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9500192",
@@ -8577,7 +9889,8 @@
     "level": 100,
     "hp": 10,
     "exp": 12,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9500193",
@@ -8586,7 +9899,8 @@
     "level": 100,
     "hp": 10,
     "exp": 12,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9500194",
@@ -8595,7 +9909,8 @@
     "level": 20,
     "hp": 350,
     "exp": 1,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9500195",
@@ -8604,7 +9919,8 @@
     "level": 10,
     "hp": 10,
     "exp": 16,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9500196",
@@ -8613,7 +9929,8 @@
     "level": 15,
     "hp": 15,
     "exp": 16,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9500197",
@@ -8622,7 +9939,8 @@
     "level": 10,
     "hp": 50,
     "exp": 0,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9500200",
@@ -8631,7 +9949,8 @@
     "level": 80,
     "hp": 50000,
     "exp": 0,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9500201",
@@ -8640,7 +9959,8 @@
     "level": 65,
     "hp": 11000,
     "exp": 10,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9500202",
@@ -8649,7 +9969,8 @@
     "level": 58,
     "hp": 10000,
     "exp": 10,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9500203",
@@ -8658,7 +9979,8 @@
     "level": 7,
     "hp": 10000,
     "exp": 10,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9500204",
@@ -8667,7 +9989,8 @@
     "level": 10,
     "hp": 10000,
     "exp": 10,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9500302",
@@ -8676,7 +9999,8 @@
     "level": 5,
     "hp": 50,
     "exp": 0,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9500303",
@@ -8685,7 +10009,8 @@
     "level": 20,
     "hp": 350,
     "exp": 1,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9500304",
@@ -8694,7 +10019,8 @@
     "level": 20,
     "hp": 350,
     "exp": 1,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9500305",
@@ -8703,7 +10029,8 @@
     "level": 10,
     "hp": 10,
     "exp": 0,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9500317",
@@ -8712,7 +10039,8 @@
     "level": 10,
     "hp": 3000,
     "exp": 20,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9500318",
@@ -8721,7 +10049,8 @@
     "level": 40,
     "hp": 4500,
     "exp": 85,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9500319",
@@ -8730,7 +10059,8 @@
     "level": 70,
     "hp": 6000,
     "exp": 270,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9500320",
@@ -8739,7 +10069,8 @@
     "level": 10,
     "hp": 50,
     "exp": 0,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9500321",
@@ -8748,7 +10079,8 @@
     "level": 10,
     "hp": 600,
     "exp": 0,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9500323",
@@ -8757,7 +10089,8 @@
     "level": 70,
     "hp": 5000000,
     "exp": 0,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9500324",
@@ -8766,7 +10099,8 @@
     "level": 70,
     "hp": 5000000,
     "exp": 0,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9500325",
@@ -8784,7 +10118,8 @@
       "불속성반감",
       "전기속성반감",
       "성속성반감"
-    ]
+    ],
+    "featuredDropItemIds": []
   },
   {
     "id": "9500328",
@@ -8793,7 +10128,8 @@
     "level": 35,
     "hp": 13000,
     "exp": 360,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9500335",
@@ -8802,7 +10138,8 @@
     "level": 50,
     "hp": 30000,
     "exp": 675,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9500400",
@@ -8811,7 +10148,8 @@
     "level": 1,
     "hp": 10000,
     "exp": 0,
-    "isReleased": false
+    "isReleased": false,
+    "featuredDropItemIds": []
   },
   {
     "id": "9600001",
@@ -8825,7 +10163,8 @@
       "world-travel-japan",
       "world-travel-taiwan"
     ],
-    "attributes": null
+    "attributes": null,
+    "featuredDropItemIds": []
   },
   {
     "id": "9600002",
@@ -8839,7 +10178,8 @@
       "world-travel-japan",
       "world-travel-taiwan"
     ],
-    "attributes": null
+    "attributes": null,
+    "featuredDropItemIds": []
   },
   {
     "id": "9600003",
@@ -8853,7 +10193,8 @@
       "world-travel-japan",
       "world-travel-taiwan"
     ],
-    "attributes": null
+    "attributes": null,
+    "featuredDropItemIds": []
   },
   {
     "id": "9600004",
@@ -8865,7 +10206,8 @@
     "isReleased": true,
     "regionIds": [
       "world-travel-taiwan"
-    ]
+    ],
+    "featuredDropItemIds": []
   },
   {
     "id": "9600005",
@@ -8879,7 +10221,8 @@
       "world-travel-japan",
       "world-travel-taiwan"
     ],
-    "attributes": null
+    "attributes": null,
+    "featuredDropItemIds": []
   },
   {
     "id": "9600006",
@@ -8893,7 +10236,8 @@
       "world-travel-japan",
       "world-travel-taiwan"
     ],
-    "attributes": null
+    "attributes": null,
+    "featuredDropItemIds": []
   },
   {
     "id": "9600007",
@@ -8907,7 +10251,10 @@
       "world-travel-japan",
       "world-travel-taiwan"
     ],
-    "attributes": null
+    "attributes": null,
+    "featuredDropItemIds": [
+      "1051009"
+    ]
   },
   {
     "id": "9600008",
@@ -8921,6 +10268,7 @@
       "world-travel-japan",
       "world-travel-taiwan"
     ],
-    "attributes": null
+    "attributes": null,
+    "featuredDropItemIds": []
   }
 ]
