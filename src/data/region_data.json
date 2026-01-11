@@ -176,6 +176,13 @@
     "isReleased": true
   },
   {
+    "id": "masteria-crimsonwood",
+    "name": "크림슨우드",
+    "parentId": "masteria",
+    "type": "town",
+    "isReleased": true
+  },
+  {
     "id": "nihan-desert",
     "name": "니할 사막",
     "parentId": null,
