@@ -3849,7 +3849,18 @@
     "featuredDropItemIds": [
       "1082100",
       "1382007"
-    ]
+    ],
+    "stats": {
+      "mp": 120,
+      "knockbackDamage": "2000+",
+      "physicalDamage": 272,
+      "magicDamage": 310,
+      "physicalDefense": 335,
+      "magicDefense": 265,
+      "speed": -20,
+      "requiredAccuracy": 109.98,
+      "mesos": 540.0
+    }
   },
   {
     "id": "7130003",
@@ -3868,7 +3879,18 @@
     ],
     "featuredDropItemIds": [
       "2070005"
-    ]
+    ],
+    "stats": {
+      "mp": 200,
+      "knockbackDamage": "2000+",
+      "physicalDamage": 300,
+      "magicDamage": 350,
+      "physicalDefense": 400,
+      "magicDefense": 400,
+      "speed": -20,
+      "requiredAccuracy": 98.982,
+      "mesos": 570.0
+    }
   },
   {
     "id": "7130010",
@@ -4158,7 +4180,18 @@
     "featuredDropItemIds": [
       "2040048",
       "2040705"
-    ]
+    ],
+    "stats": {
+      "mp": 150,
+      "knockbackDamage": "1450+",
+      "physicalDamage": 245,
+      "magicDamage": 0,
+      "physicalDefense": 235,
+      "magicDefense": 245,
+      "speed": -20,
+      "requiredAccuracy": 91.65,
+      "mesos": 525.0
+    }
   },
   {
     "id": "7130501",
@@ -4183,7 +4216,18 @@
       "2070005",
       "2043002",
       "2040515"
-    ]
+    ],
+    "stats": {
+      "mp": 150,
+      "knockbackDamage": "1550+",
+      "physicalDamage": 295,
+      "magicDamage": 0,
+      "physicalDefense": 285,
+      "magicDefense": 295,
+      "speed": -20,
+      "requiredAccuracy": 98.982,
+      "mesos": 555.0
+    }
   },
   {
     "id": "7130600",
@@ -4200,7 +4244,18 @@
     "attributes": [
       "독속성약점"
     ],
-    "featuredDropItemIds": []
+    "featuredDropItemIds": [],
+    "stats": {
+      "mp": 150,
+      "knockbackDamage": "2000+",
+      "physicalDamage": 270,
+      "magicDamage": 310,
+      "physicalDefense": 330,
+      "magicDefense": 260,
+      "speed": -30,
+      "requiredAccuracy": 91.65,
+      "mesos": 540.0
+    }
   },
   {
     "id": "7130601",
@@ -4219,7 +4274,18 @@
     ],
     "featuredDropItemIds": [
       "2044602"
-    ]
+    ],
+    "stats": {
+      "mp": 200,
+      "knockbackDamage": "2000+",
+      "physicalDamage": 300,
+      "magicDamage": 350,
+      "physicalDefense": 400,
+      "magicDefense": 350,
+      "speed": -30,
+      "requiredAccuracy": 102.648,
+      "mesos": 570.0
+    }
   },
   {
     "id": "7130602",
@@ -4426,7 +4492,18 @@
       "2070005",
       "2044602",
       "2040032"
-    ]
+    ],
+    "stats": {
+      "mp": 300,
+      "knockbackDamage": "2800+",
+      "physicalDamage": 350,
+      "magicDamage": 410,
+      "physicalDefense": 650,
+      "magicDefense": 450,
+      "speed": -10,
+      "requiredAccuracy": 102.648,
+      "mesos": 600.0
+    }
   },
   {
     "id": "8140002",
@@ -4453,7 +4530,18 @@
       "2040026",
       "1382010",
       "2040041"
-    ]
+    ],
+    "stats": {
+      "mp": 160,
+      "knockbackDamage": "3000+",
+      "physicalDamage": 365,
+      "magicDamage": 400,
+      "physicalDefense": 700,
+      "magicDefense": 465,
+      "speed": -10,
+      "requiredAccuracy": 98.982,
+      "mesos": 622.5
+    }
   },
   {
     "id": "8140100",
@@ -4495,7 +4583,18 @@
     "featuredDropItemIds": [
       "1472053",
       "1382008"
-    ]
+    ],
+    "stats": {
+      "mp": 200,
+      "knockbackDamage": "3000+",
+      "physicalDamage": 390,
+      "magicDamage": 430,
+      "physicalDefense": 800,
+      "magicDefense": 495,
+      "speed": -20,
+      "requiredAccuracy": 102.648,
+      "mesos": 660.0
+    }
   },
   {
     "id": "8140102",
@@ -4522,7 +4621,18 @@
       "2040034",
       "1452019",
       "2040805"
-    ]
+    ],
+    "stats": {
+      "mp": 200,
+      "knockbackDamage": "3000+",
+      "physicalDamage": 390,
+      "magicDamage": 430,
+      "physicalDefense": 800,
+      "magicDefense": 495,
+      "speed": 0,
+      "requiredAccuracy": 102.648,
+      "mesos": 660.0
+    }
   },
   {
     "id": "8140103",
@@ -4540,7 +4650,18 @@
       "얼음속성반감",
       "불속성약점"
     ],
-    "featuredDropItemIds": []
+    "featuredDropItemIds": [],
+    "stats": {
+      "mp": 200,
+      "knockbackDamage": "3000+",
+      "physicalDamage": 390,
+      "magicDamage": 430,
+      "physicalDefense": 800,
+      "magicDefense": 495,
+      "speed": 0,
+      "requiredAccuracy": 102.648,
+      "mesos": 660.0
+    }
   },
   {
     "id": "8140110",
@@ -4564,7 +4685,18 @@
       "2044702",
       "1372010",
       "1302056"
-    ]
+    ],
+    "stats": {
+      "mp": 150,
+      "knockbackDamage": "3200+",
+      "physicalDamage": 380,
+      "magicDamage": 0,
+      "physicalDefense": 760,
+      "magicDefense": 465,
+      "speed": -30,
+      "requiredAccuracy": 98.982,
+      "mesos": 637.5
+    }
   },
   {
     "id": "8140111",
@@ -4592,7 +4724,18 @@
       "2040035",
       "2070001",
       "1462015"
-    ]
+    ],
+    "stats": {
+      "mp": 200,
+      "knockbackDamage": "3700+",
+      "physicalDamage": 395,
+      "magicDamage": 0,
+      "physicalDefense": 850,
+      "magicDefense": 480,
+      "speed": -30,
+      "requiredAccuracy": 102.648,
+      "mesos": 660.0
+    }
   },
   {
     "id": "8140200",
@@ -4716,7 +4859,18 @@
       "1082134",
       "2040515",
       "1472033"
-    ]
+    ],
+    "stats": {
+      "mp": 150,
+      "knockbackDamage": "5000+",
+      "physicalDamage": 410,
+      "magicDamage": 0,
+      "physicalDefense": 820,
+      "magicDefense": 480,
+      "speed": -40,
+      "requiredAccuracy": 135.642,
+      "mesos": 675.0
+    }
   },
   {
     "id": "8140701",
@@ -4736,7 +4890,18 @@
     ],
     "featuredDropItemIds": [
       "1302023"
-    ]
+    ],
+    "stats": {
+      "mp": 160,
+      "knockbackDamage": "5000+",
+      "physicalDamage": 420,
+      "magicDamage": 0,
+      "physicalDefense": 830,
+      "magicDefense": 500,
+      "speed": -40,
+      "requiredAccuracy": 135.642,
+      "mesos": 697.5
+    }
   },
   {
     "id": "8140702",
@@ -4756,7 +4921,18 @@
     ],
     "featuredDropItemIds": [
       "2044701"
-    ]
+    ],
+    "stats": {
+      "mp": 200,
+      "knockbackDamage": "5000+",
+      "physicalDamage": 460,
+      "magicDamage": 510,
+      "physicalDefense": 840,
+      "magicDefense": 550,
+      "speed": -50,
+      "requiredAccuracy": 135.642,
+      "mesos": 712.5
+    }
   },
   {
     "id": "8140703",
@@ -4777,7 +4953,18 @@
     "dropItemIds": [
       "mb_48c815"
     ],
-    "featuredDropItemIds": []
+    "featuredDropItemIds": [],
+    "stats": {
+      "mp": 200,
+      "knockbackDamage": "5000+",
+      "physicalDamage": 470,
+      "magicDamage": 520,
+      "physicalDefense": 850,
+      "magicDefense": 570,
+      "speed": -50,
+      "requiredAccuracy": 135.642,
+      "mesos": 727.5
+    }
   },
   {
     "id": "8141000",
@@ -5016,7 +5203,18 @@
       "mb_ba8c90",
       "mb_b336dc"
     ],
-    "featuredDropItemIds": []
+    "featuredDropItemIds": [],
+    "stats": {
+      "mp": 200,
+      "knockbackDamage": "5000+",
+      "physicalDamage": 480,
+      "magicDamage": 0,
+      "physicalDefense": 800,
+      "magicDefense": 500,
+      "speed": -10,
+      "requiredAccuracy": 164.97,
+      "mesos": 750.0
+    }
   },
   {
     "id": "8150201",
@@ -5047,7 +5245,18 @@
       "1402016",
       "1382035",
       "2040046"
-    ]
+    ],
+    "stats": {
+      "mp": 200,
+      "knockbackDamage": "5000+",
+      "physicalDamage": 495,
+      "magicDamage": 0,
+      "physicalDefense": 800,
+      "magicDefense": 500,
+      "speed": -10,
+      "requiredAccuracy": 164.97,
+      "mesos": 787.5
+    }
   },
   {
     "id": "8150300",
@@ -5068,7 +5277,18 @@
     "featuredDropItemIds": [
       "2043002",
       "2040516"
-    ]
+    ],
+    "stats": {
+      "mp": 210,
+      "knockbackDamage": "5000+",
+      "physicalDamage": 450,
+      "magicDamage": 500,
+      "physicalDefense": 830,
+      "magicDefense": 550,
+      "speed": -20,
+      "requiredAccuracy": 135.642,
+      "mesos": 727.5
+    }
   },
   {
     "id": "8150301",
@@ -5088,7 +5308,18 @@
     ],
     "featuredDropItemIds": [
       "1372010"
-    ]
+    ],
+    "stats": {
+      "mp": 250,
+      "knockbackDamage": "5000+",
+      "physicalDamage": 495,
+      "magicDamage": 535,
+      "physicalDefense": 850,
+      "magicDefense": 570,
+      "speed": -20,
+      "requiredAccuracy": 139.308,
+      "mesos": 757.5
+    }
   },
   {
     "id": "8150302",
@@ -5114,7 +5345,18 @@
     ],
     "featuredDropItemIds": [
       "2040046"
-    ]
+    ],
+    "stats": {
+      "mp": 250,
+      "knockbackDamage": "5000+",
+      "physicalDamage": 505,
+      "magicDamage": 540,
+      "physicalDefense": 900,
+      "magicDefense": 580,
+      "speed": -20,
+      "requiredAccuracy": 139.308,
+      "mesos": 772.5
+    }
   },
   {
     "id": "8160000",
@@ -5163,7 +5405,7 @@
     "name": "마뇽",
     "imageUrl": "https://maplestory.io/api/gms/62/mob/8180000/icon?resize=2",
     "level": 105,
-    "hp": 3700000,
+    "hp": 3,
     "exp": 13500,
     "isReleased": true,
     "regionIds": [
@@ -5199,14 +5441,25 @@
       "1442044",
       "2044701",
       "2040805"
-    ]
+    ],
+    "stats": {
+      "mp": 1500,
+      "knockbackDamage": "5000+",
+      "physicalDamage": 550,
+      "magicDamage": 680,
+      "physicalDefense": 900,
+      "magicDefense": 850,
+      "speed": -20,
+      "requiredAccuracy": 142.974,
+      "mesos": 787.5
+    }
   },
   {
     "id": "8180001",
     "name": "그리프",
     "imageUrl": "https://maplestory.io/api/gms/62/mob/8180001/icon?resize=2",
     "level": 105,
-    "hp": 3700000,
+    "hp": 3,
     "exp": 13500,
     "isReleased": true,
     "regionIds": [
@@ -5246,7 +5499,18 @@
       "2040516",
       "2040046",
       "2040513"
-    ]
+    ],
+    "stats": {
+      "mp": 1500,
+      "knockbackDamage": "5000+",
+      "physicalDamage": 550,
+      "magicDamage": 680,
+      "physicalDefense": 900,
+      "magicDefense": 850,
+      "speed": -20,
+      "requiredAccuracy": 142.974,
+      "mesos": 787.5
+    }
   },
   {
     "id": "8190000",
@@ -5273,7 +5537,18 @@
       "1402016",
       "2044702",
       "1332052"
-    ]
+    ],
+    "stats": {
+      "mp": 200,
+      "knockbackDamage": "5000+",
+      "physicalDamage": 500,
+      "magicDamage": 550,
+      "physicalDefense": 750,
+      "magicDefense": 680,
+      "speed": 0,
+      "requiredAccuracy": 139.308,
+      "mesos": 787.5
+    }
   },
   {
     "id": "8190001",
@@ -5300,7 +5575,18 @@
     "attributes": null,
     "featuredDropItemIds": [
       "1452019"
-    ]
+    ],
+    "stats": {
+      "mp": 240,
+      "knockbackDamage": "5000+",
+      "physicalDamage": 580,
+      "magicDamage": 650,
+      "physicalDefense": 900,
+      "magicDefense": 600,
+      "speed": -50,
+      "requiredAccuracy": 139.308,
+      "mesos": 825.0
+    }
   },
   {
     "id": "8190003",
@@ -5329,7 +5615,18 @@
       "1032017",
       "2044602",
       "2040805"
-    ]
+    ],
+    "stats": {
+      "mp": 240,
+      "knockbackDamage": "5000+",
+      "physicalDamage": 520,
+      "magicDamage": 660,
+      "physicalDefense": 800,
+      "magicDefense": 700,
+      "speed": -20,
+      "requiredAccuracy": 139.308,
+      "mesos": 825.0
+    }
   },
   {
     "id": "8190004",
@@ -5361,7 +5658,18 @@
     "featuredDropItemIds": [
       "1302056",
       "2041013"
-    ]
+    ],
+    "stats": {
+      "mp": 250,
+      "knockbackDamage": "5000+",
+      "physicalDamage": 530,
+      "magicDamage": 670,
+      "physicalDefense": 810,
+      "magicDefense": 710,
+      "speed": -20,
+      "requiredAccuracy": 139.308,
+      "mesos": 847.5
+    }
   },
   {
     "id": "8190005",
@@ -5423,8 +5731,8 @@
     "name": "레비아탄",
     "imageUrl": "https://maplestory.io/api/gms/62/mob/8220003/icon?resize=2",
     "level": 120,
-    "hp": 13400000,
-    "exp": 47355,
+    "hp": 13,
+    "exp": 47000,
     "isReleased": false,
     "regionIds": [
       "leafre",
@@ -5444,7 +5752,18 @@
       "1372010",
       "1472053",
       "1302056"
-    ]
+    ],
+    "stats": {
+      "mp": 3500,
+      "knockbackDamage": "10000+",
+      "physicalDamage": 620,
+      "magicDamage": 710,
+      "physicalDefense": 950,
+      "magicDefense": 1050,
+      "speed": -20,
+      "requiredAccuracy": 150.306,
+      "mesos": 900.0
+    }
   },
   {
     "id": "8500000",
@@ -8441,7 +8760,7 @@
     "name": "머리없는 기수",
     "imageUrl": "https://maplestory.io/api/gms/62/mob/9400549/icon?resize=2",
     "level": 101,
-    "hp": 3500000,
+    "hp": 3,
     "exp": 300000,
     "isReleased": true,
     "regionIds": [
@@ -8450,7 +8769,18 @@
     "attributes": [
       "전기속성약점"
     ],
-    "featuredDropItemIds": []
+    "featuredDropItemIds": [],
+    "stats": {
+      "mp": 5000,
+      "knockbackDamage": "1500+",
+      "physicalDamage": 600,
+      "magicDamage": 650,
+      "physicalDefense": 800,
+      "magicDefense": 800,
+      "speed": -15,
+      "requiredAccuracy": 153.972,
+      "mesos": 757.5
+    }
   },
   {
     "id": "9400573",
@@ -8464,7 +8794,18 @@
       "masteria-crimsonwood"
     ],
     "attributes": null,
-    "featuredDropItemIds": []
+    "featuredDropItemIds": [],
+    "stats": {
+      "mp": 100,
+      "knockbackDamage": "500+",
+      "physicalDamage": 0,
+      "magicDamage": 0,
+      "physicalDefense": 0,
+      "magicDefense": 0,
+      "speed": 0,
+      "requiredAccuracy": 0.0,
+      "mesos": 75.0
+    }
   },
   {
     "id": "9400574",
@@ -8483,15 +8824,26 @@
     ],
     "featuredDropItemIds": [
       "1332052"
-    ]
+    ],
+    "stats": {
+      "mp": 230,
+      "knockbackDamage": "0+",
+      "physicalDamage": 270,
+      "magicDamage": 400,
+      "physicalDefense": 500,
+      "magicDefense": 450,
+      "speed": 0,
+      "requiredAccuracy": 146.64,
+      "mesos": 750.0
+    }
   },
   {
     "id": "9400575",
     "name": "빅풋",
     "imageUrl": "https://maplestory.io/api/gms/62/mob/9400575/icon?resize=2",
     "level": 110,
-    "hp": 32000000,
-    "exp": 2660000,
+    "hp": 32,
+    "exp": 2,
     "isReleased": true,
     "regionIds": [
       "masteria-crimsonwood"
@@ -8501,7 +8853,18 @@
       "얼음속성무효",
       "성속성무효"
     ],
-    "featuredDropItemIds": []
+    "featuredDropItemIds": [],
+    "stats": {
+      "mp": 10,
+      "knockbackDamage": "2000+",
+      "physicalDamage": 1200,
+      "magicDamage": 700,
+      "physicalDefense": 1400,
+      "magicDefense": 1400,
+      "speed": 90,
+      "requiredAccuracy": 135.642,
+      "mesos": 825.0
+    }
   },
   {
     "id": "9400576",
@@ -8517,7 +8880,18 @@
     "attributes": [
       "독속성무효"
     ],
-    "featuredDropItemIds": []
+    "featuredDropItemIds": [],
+    "stats": {
+      "mp": 400,
+      "knockbackDamage": "0+",
+      "physicalDamage": 300,
+      "magicDamage": 415,
+      "physicalDefense": 265,
+      "magicDefense": 365,
+      "speed": -40,
+      "requiredAccuracy": 109.98,
+      "mesos": 525.0
+    }
   },
   {
     "id": "9400577",
@@ -8535,7 +8909,18 @@
     ],
     "featuredDropItemIds": [
       "1372009"
-    ]
+    ],
+    "stats": {
+      "mp": 5000,
+      "knockbackDamage": "500+",
+      "physicalDamage": 420,
+      "magicDamage": 490,
+      "physicalDefense": 820,
+      "magicDefense": 600,
+      "speed": 30,
+      "requiredAccuracy": 135.642,
+      "mesos": 675.0
+    }
   },
   {
     "id": "9400578",
@@ -8552,7 +8937,18 @@
       "불속성무효",
       "얼음속성약점"
     ],
-    "featuredDropItemIds": []
+    "featuredDropItemIds": [],
+    "stats": {
+      "mp": 10000,
+      "knockbackDamage": "500+",
+      "physicalDamage": 470,
+      "magicDamage": 560,
+      "physicalDefense": 920,
+      "magicDefense": 700,
+      "speed": 90,
+      "requiredAccuracy": 135.642,
+      "mesos": 675.0
+    }
   },
   {
     "id": "9400579",
@@ -8571,7 +8967,18 @@
     ],
     "featuredDropItemIds": [
       "2041013"
-    ]
+    ],
+    "stats": {
+      "mp": 200,
+      "knockbackDamage": "0+",
+      "physicalDamage": 480,
+      "magicDamage": 610,
+      "physicalDefense": 800,
+      "magicDefense": 560,
+      "speed": -10,
+      "requiredAccuracy": 164.97,
+      "mesos": 750.0
+    }
   },
   {
     "id": "9400580",
@@ -8588,7 +8995,18 @@
       "성속성약점",
       "얼음속성무효"
     ],
-    "featuredDropItemIds": []
+    "featuredDropItemIds": [],
+    "stats": {
+      "mp": 500,
+      "knockbackDamage": "0+",
+      "physicalDamage": 560,
+      "magicDamage": 610,
+      "physicalDefense": 940,
+      "magicDefense": 550,
+      "speed": 95,
+      "requiredAccuracy": 139.308,
+      "mesos": 712.5
+    }
   },
   {
     "id": "9400581",
@@ -8606,7 +9024,18 @@
     ],
     "featuredDropItemIds": [
       "2040513"
-    ]
+    ],
+    "stats": {
+      "mp": 5000,
+      "knockbackDamage": "0+",
+      "physicalDamage": 410,
+      "magicDamage": 460,
+      "physicalDefense": 700,
+      "magicDefense": 480,
+      "speed": 35,
+      "requiredAccuracy": 109.98,
+      "mesos": 600.0
+    }
   },
   {
     "id": "9400582",
@@ -8625,7 +9054,18 @@
       "독속성반감",
       "성속성무효"
     ],
-    "featuredDropItemIds": []
+    "featuredDropItemIds": [],
+    "stats": {
+      "mp": 2000,
+      "knockbackDamage": "0+",
+      "physicalDamage": 650,
+      "magicDamage": 800,
+      "physicalDefense": 1000,
+      "magicDefense": 800,
+      "speed": -20,
+      "requiredAccuracy": 146.64,
+      "mesos": 900.0
+    }
   },
   {
     "id": "9400583",
@@ -8646,7 +9086,17 @@
       "2070000",
       "1092029",
       "1382010"
-    ]
+    ],
+    "stats": {
+      "mp": 0,
+      "physicalDamage": 135,
+      "magicDamage": 0,
+      "physicalDefense": 150,
+      "magicDefense": 160,
+      "speed": 0,
+      "requiredAccuracy": 73.32,
+      "mesos": 337.5
+    }
   },
   {
     "id": "9400584",
@@ -8663,7 +9113,18 @@
       "성속성약점",
       "얼음속성무효"
     ],
-    "featuredDropItemIds": []
+    "featuredDropItemIds": [],
+    "stats": {
+      "mp": 0,
+      "knockbackDamage": "0+",
+      "physicalDamage": 0,
+      "magicDamage": 0,
+      "physicalDefense": 0,
+      "magicDefense": 0,
+      "speed": 0,
+      "requiredAccuracy": 0.0,
+      "mesos": 337.5
+    }
   },
   {
     "id": "9400586",
@@ -8679,7 +9140,18 @@
     "attributes": [
       "불속성약점"
     ],
-    "featuredDropItemIds": []
+    "featuredDropItemIds": [],
+    "stats": {
+      "mp": 50,
+      "knockbackDamage": "500+",
+      "physicalDamage": 140,
+      "magicDamage": 0,
+      "physicalDefense": 150,
+      "magicDefense": 200,
+      "speed": 40,
+      "requiredAccuracy": 36.66,
+      "mesos": 375.0
+    }
   },
   {
     "id": "9400588",
@@ -8695,7 +9167,18 @@
     "attributes": [
       "불속성약점"
     ],
-    "featuredDropItemIds": []
+    "featuredDropItemIds": [],
+    "stats": {
+      "mp": 50,
+      "knockbackDamage": "500+",
+      "physicalDamage": 140,
+      "magicDamage": 0,
+      "physicalDefense": 150,
+      "magicDefense": 200,
+      "speed": 40,
+      "requiredAccuracy": 36.66,
+      "mesos": 375.0
+    }
   },
   {
     "id": "9409000",
@@ -9052,7 +9535,13 @@
     "hp": 230,
     "exp": 28,
     "isReleased": true,
-    "featuredDropItemIds": []
+    "featuredDropItemIds": [],
+    "stats": {
+      "mp": 25,
+      "physicalDefense": 11,
+      "magicDefense": 40,
+      "requiredAccuracy": 45
+    }
   },
   {
     "id": "9500133",

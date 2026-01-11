@@ -74,6 +74,7 @@ export default function MonsterSearch({ monsters }: MonsterSearchProps) {
   const [showExpiringOnly, setShowExpiringOnly] = useState(false);
   const [showRecommendedOnly, setShowRecommendedOnly] = useState(false);
   const [selectedRegions, setSelectedRegions] = useState<string[]>([]);
+  const [showWeaknessOnly, setShowWeaknessOnly] = useState(false);
 
   // 정렬 상태
   const [sortBy, setSortBy] = useState<SortOption>('level-asc');
@@ -628,6 +629,15 @@ export default function MonsterSearch({ monsters }: MonsterSearchProps) {
       });
     }
 
+    // 속성 약점 필터
+    if (showWeaknessOnly) {
+      monstersWithExpiring = monstersWithExpiring.filter((monster) => {
+        if (!monster.attributes || monster.attributes.length === 0) return false;
+        // 속성 중 하나라도 "약점"이 포함되어 있으면 통과
+        return monster.attributes.some((attr) => attr.includes('약점'));
+      });
+    }
+
     // 정렬 적용
     const sorted = [...monstersWithExpiring].sort((a, b) => {
       switch (sortBy) {
@@ -681,7 +691,7 @@ export default function MonsterSearch({ monsters }: MonsterSearchProps) {
     });
 
     return uniqueSorted;
-  }, [baseFilteredMonsters, searchName, minLevel, maxLevel, minHp, maxHp, minExp, maxExp, showExpiringOnly, showRecommendedOnly, selectedRegions, sortBy, popularMasteryBookIds, regions]) as MonsterWithExpiring[];
+  }, [baseFilteredMonsters, searchName, minLevel, maxLevel, minHp, maxHp, minExp, maxExp, showExpiringOnly, showRecommendedOnly, selectedRegions, showWeaknessOnly, sortBy, popularMasteryBookIds, regions]) as MonsterWithExpiring[];
 
   return (
     <div className="flex min-h-screen flex-col bg-gray-900">
@@ -925,6 +935,19 @@ export default function MonsterSearch({ monsters }: MonsterSearchProps) {
                       </select>
                     </div>
 
+                    {/* 속성 약점 필터 */}
+                    <div>
+                      <label className="flex items-start gap-2 cursor-pointer">
+                        <input
+                          type="checkbox"
+                          checked={showWeaknessOnly}
+                          onChange={(e) => setShowWeaknessOnly(e.target.checked)}
+                          className="mt-0.5 w-4 h-4 rounded border-gray-600 bg-gray-700 text-blue-500 focus:ring-blue-500 focus:ring-2"
+                        />
+                        <span className="text-sm font-medium text-gray-300">속성 약점이 있는 몬스터만 보기</span>
+                      </label>
+                    </div>
+
                     {/* 인기 몬스터만 보기 */}
                     {/* <div>
                       <label className="flex items-start gap-2 cursor-pointer">
@@ -951,6 +974,7 @@ export default function MonsterSearch({ monsters }: MonsterSearchProps) {
                         setShowExpiringOnly(false);
                         setShowRecommendedOnly(false);
                         setSelectedRegions([]);
+                        setShowWeaknessOnly(false);
                         setSortBy('level-asc');
                       }}
                       className="w-full rounded-lg bg-gray-700 px-4 py-2 text-sm text-gray-300 hover:bg-gray-600 transition-colors"

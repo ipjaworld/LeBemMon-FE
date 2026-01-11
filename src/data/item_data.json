@@ -15878,15 +15878,6 @@
     "isReleased": true
   },
   {
-    "id": "2040302",
-    "name": "귀 장식 지력 주문서 10%",
-    "imageUrl": "https://maplestory.io/api/gms/200/item/2040302/icon?resize=2",
-    "majorCategory": "consumable",
-    "mediumCategory": "equip-scroll",
-    "minorCategory": "earring",
-    "isReleased": true
-  },
-  {
     "id": "2040303",
     "name": "클래식메이플 드랍테이블 검색 &amp; 데이터베이스",
     "imageUrl": "https://maplestory.io/api/gms/200/item/2040303/icon?resize=2",
