@@ -25,9 +25,22 @@ export type ItemMediumCategory =
   | 'cape'        // 망토
   // 무기
   | 'snowboard'   // 스노우보드
-  | 'sword'       // 검
-  | 'wand'        // 지팡이
+  | 'one-handed-sword'    // 한손검
+  | 'two-handed-sword'    // 두손검
+  | 'one-handed-axe'      // 한손도끼
+  | 'two-handed-axe'      // 두손도끼
+  | 'one-handed-blunt'    // 한손둔기
+  | 'two-handed-blunt'    // 두손둔기
+  | 'spear'       // 창
+  | 'polearm'     // 폴암
   | 'bow'         // 활
+  | 'crossbow'    // 석궁
+  | 'wand'        // 완드
+  | 'staff'       // 스태프
+  | 'dagger'      // 단검
+  | 'gauntlet'    // 아대
+  | 'knuckle'     // 너클
+  | 'gun'         // 총
   // 소비
   | 'equip-scroll' // 장비 주문서
   | 'mastery-book' // 마스터리북
@@ -88,8 +101,17 @@ export interface Item {
   /** 마력 */
   magicPower?: number;
   
+  /** 마법방어력 */
+  magicDefense?: number;
+  
   /** 업그레이드 가능 횟수 */
   upgradeSlots?: number;
+  
+  /** 최대 HP */
+  maxHP?: number;
+  
+  /** 최대 MP */
+  maxMP?: number;
   
   /** 출시 여부 */
   isReleased: boolean;
