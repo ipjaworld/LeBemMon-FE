@@ -321,7 +321,7 @@ export default function MonsterCard({ monster, isExpiringSoon, userLevel, isReco
           <div className="mt-1 flex flex-col gap-1">
             <span className="font-medium text-gray-400">주요 드랍:</span>
             <div className="flex flex-wrap gap-1">
-              {featuredDropItems.map((item) => (
+              {featuredDropItems.slice(0, 3).map((item) => (
                 <span
                   key={item.id}
                   className="rounded-md bg-blue-900/40 px-2 py-0.5 text-xs font-medium text-blue-300"
@@ -329,6 +329,11 @@ export default function MonsterCard({ monster, isExpiringSoon, userLevel, isReco
                   {item.name}
                 </span>
               ))}
+              {featuredDropItems.length > 3 && (
+                <span className="rounded-md bg-blue-900/40 px-2 py-0.5 text-xs font-medium text-blue-300">
+                  외 {featuredDropItems.length - 3}건
+                </span>
+              )}
             </div>
           </div>
         )}

@@ -22,6 +22,7 @@ interface MonsterDetailModalProps {
 }
 
 export default function MonsterDetailModal({ monster, onClose }: MonsterDetailModalProps) {
+  const [showStats, setShowStats] = useState(false);
   const items = itemData as Item[];
   const regions = regionData as Region[];
   const maps = mapData as GameMap[];
@@ -275,13 +276,121 @@ export default function MonsterDetailModal({ monster, onClose }: MonsterDetailMo
                   {hpPerExp === Infinity ? '∞' : hpPerExp.toFixed(2)}
                 </div>
               </div>
-              <div className="rounded-xl border border-gray-800 bg-gray-900/40 p-4">
-                <div className="text-xs text-gray-400">드롭</div>
-                <div className="mt-1 text-lg font-semibold text-gray-100 latin-font numeric">
-                  {dropItems.length}개
+              <button
+                onClick={() => setShowStats(!showStats)}
+                className={`rounded-xl border p-4 transition-all ${
+                  showStats
+                    ? 'border-blue-500 bg-blue-500/20'
+                    : 'border-gray-800 bg-gray-900/40 hover:border-blue-500/50 hover:bg-gray-900/60'
+                }`}
+              >
+                <div className="text-xs text-gray-400">능력치</div>
+                <div className="mt-1 flex items-center gap-1 text-lg font-semibold text-gray-100">
+                  <span>상세 정보</span>
+                  <svg
+                    className={`h-4 w-4 transition-transform ${showStats ? 'rotate-180' : ''}`}
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
                 </div>
-              </div>
+              </button>
             </div>
+
+            {/* 능력치 상세 정보 */}
+            {showStats && monster.stats && (
+              <div className="mb-6 rounded-2xl border border-gray-800 bg-gray-900/30 p-4">
+                <h3 className="mb-4 text-base font-semibold text-gray-100">능력치 상세</h3>
+                <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-5">
+                  {monster.stats.mp !== undefined && (
+                    <div className="rounded-xl border border-gray-800 bg-gray-900/40 p-3">
+                      <div className="text-xs text-gray-400">MP</div>
+                      <div className="mt-1 text-base font-semibold text-gray-100 latin-font numeric">
+                        {monster.stats.mp.toLocaleString()}
+                      </div>
+                    </div>
+                  )}
+                  {monster.stats.knockbackDamage !== undefined && (
+                    <div className="rounded-xl border border-gray-800 bg-gray-900/40 p-3">
+                      <div className="text-xs text-gray-400">넉백 가능 데미지</div>
+                      <div className="mt-1 text-base font-semibold text-gray-100 latin-font numeric">
+                        {typeof monster.stats.knockbackDamage === 'string'
+                          ? monster.stats.knockbackDamage
+                          : monster.stats.knockbackDamage.toLocaleString()}
+                      </div>
+                    </div>
+                  )}
+                  {monster.stats.physicalDamage !== undefined && (
+                    <div className="rounded-xl border border-gray-800 bg-gray-900/40 p-3">
+                      <div className="text-xs text-gray-400">물리 데미지</div>
+                      <div className="mt-1 text-base font-semibold text-gray-100 latin-font numeric">
+                        {monster.stats.physicalDamage.toLocaleString()}
+                      </div>
+                    </div>
+                  )}
+                  {monster.stats.magicDamage !== undefined && (
+                    <div className="rounded-xl border border-gray-800 bg-gray-900/40 p-3">
+                      <div className="text-xs text-gray-400">마법 데미지</div>
+                      <div className="mt-1 text-base font-semibold text-gray-100 latin-font numeric">
+                        {monster.stats.magicDamage.toLocaleString()}
+                      </div>
+                    </div>
+                  )}
+                  {monster.stats.physicalDefense !== undefined && (
+                    <div className="rounded-xl border border-gray-800 bg-gray-900/40 p-3">
+                      <div className="text-xs text-gray-400">물리 방어력</div>
+                      <div className="mt-1 text-base font-semibold text-gray-100 latin-font numeric">
+                        {monster.stats.physicalDefense.toLocaleString()}
+                      </div>
+                    </div>
+                  )}
+                  {monster.stats.magicDefense !== undefined && (
+                    <div className="rounded-xl border border-gray-800 bg-gray-900/40 p-3">
+                      <div className="text-xs text-gray-400">마법 방어력</div>
+                      <div className="mt-1 text-base font-semibold text-gray-100 latin-font numeric">
+                        {monster.stats.magicDefense.toLocaleString()}
+                      </div>
+                    </div>
+                  )}
+                  {monster.stats.speed !== undefined && (
+                    <div className="rounded-xl border border-gray-800 bg-gray-900/40 p-3">
+                      <div className="text-xs text-gray-400">속도</div>
+                      <div className="mt-1 text-base font-semibold text-gray-100 latin-font numeric">
+                        {monster.stats.speed.toLocaleString()}
+                      </div>
+                    </div>
+                  )}
+                  {monster.stats.requiredAccuracy !== undefined && (
+                    <div className="rounded-xl border border-gray-800 bg-gray-900/40 p-3">
+                      <div className="text-xs text-gray-400">필요 명중</div>
+                      <div className="mt-1 text-base font-semibold text-gray-100 latin-font numeric">
+                        {monster.stats.requiredAccuracy.toFixed(2)}
+                      </div>
+                    </div>
+                  )}
+                  {monster.stats.mesos !== undefined && (
+                    <div className="rounded-xl border border-gray-800 bg-gray-900/40 p-3">
+                      <div className="text-xs text-gray-400">메소</div>
+                      <div className="mt-1 text-base font-semibold text-yellow-400 latin-font numeric">
+                        {monster.stats.mesos.toLocaleString()}
+                      </div>
+                    </div>
+                  )}
+                </div>
+                {!monster.stats || Object.keys(monster.stats).length === 0 ? (
+                  <div className="mt-4 text-center text-sm text-gray-400">
+                    능력치 정보가 아직 준비되지 않았습니다.
+                  </div>
+                ) : null}
+              </div>
+            )}
 
             <div className="grid grid-cols-1 gap-6 md:grid-cols-12">
               {/* 왼쪽: 맥락 정보 */}
