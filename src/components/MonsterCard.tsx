@@ -11,9 +11,10 @@ interface MonsterCardProps {
   isExpiringSoon?: boolean;
   userLevel?: number;
   isRecommended?: boolean;
+  onClick?: () => void;
 }
 
-export default function MonsterCard({ monster, isExpiringSoon, userLevel, isRecommended }: MonsterCardProps) {
+export default function MonsterCard({ monster, isExpiringSoon, userLevel, isRecommended, onClick }: MonsterCardProps) {
   const [isHovered, setIsHovered] = useState(false);
   const [isWarningHovered, setIsWarningHovered] = useState(false);
   const [isHpPerExpTooltipHovered, setIsHpPerExpTooltipHovered] = useState(false);
@@ -28,13 +29,23 @@ export default function MonsterCard({ monster, isExpiringSoon, userLevel, isReco
   const monsterRegions = useMemo(() => {
     if (!monster.regionIds || monster.regionIds.length === 0) return [];
     return regions.filter((region) => monster.regionIds?.includes(region.id));
-  }, [monster.regionIds]);
+  }, [monster.regionIds, regions]);
 
-  // 주요 드랍 아이템 정보 가져오기
+  // 주요 드랍 아이템 정보 가져오기 (중복 이름 제거)
   const featuredDropItems = useMemo(() => {
     if (!monster.featuredDropItemIds || monster.featuredDropItemIds.length === 0) return [];
-    return items.filter((item) => monster.featuredDropItemIds?.includes(item.id));
-  }, [monster.featuredDropItemIds]);
+    const filtered = items.filter((item) => monster.featuredDropItemIds?.includes(item.id));
+    
+    // 같은 이름의 아이템이 중복 렌더링되지 않도록 중복 제거 (첫 번째 항목만 유지)
+    const seenNames = new Set<string>();
+    return filtered.filter((item) => {
+      if (seenNames.has(item.name)) {
+        return false;
+      }
+      seenNames.add(item.name);
+      return true;
+    });
+  }, [monster.featuredDropItemIds, items]);
 
   // 체경비 계산 (체력 / 경험치) - useMemo로 최적화
   const hpPerExp = useMemo(() => {
@@ -93,6 +104,7 @@ export default function MonsterCard({ monster, isExpiringSoon, userLevel, isReco
           ? 'border-red-500 hover:border-yellow-500'
           : 'border-gray-700 hover:border-yellow-500'
       }`}
+      onClick={onClick}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => {
         setIsHovered(false);

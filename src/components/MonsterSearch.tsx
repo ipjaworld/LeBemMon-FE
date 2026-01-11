@@ -2,6 +2,7 @@
 
 import { useState, useMemo, useEffect, useRef } from 'react';
 import MonsterCard from '@/components/MonsterCard';
+import MonsterDetailModal from '@/components/MonsterDetailModal';
 import Footer from '@/components/Footer';
 import { Monster } from '@/types/monster';
 import { Region } from '@/types/region';
@@ -21,6 +22,7 @@ interface MonsterSearchProps {
 
 export default function MonsterSearch({ monsters }: MonsterSearchProps) {
   const [level, setLevel] = useState<number | ''>('');
+  const [showRebemonOnly, setShowRebemonOnly] = useState(true);
   const [isFilterOpen, setIsFilterOpen] = useState(false);
   const [isQuickSelectOpen, setIsQuickSelectOpen] = useState(false);
   const quickSelectRef = useRef<HTMLDivElement>(null);
@@ -44,7 +46,7 @@ export default function MonsterSearch({ monsters }: MonsterSearchProps) {
       document.removeEventListener('mousedown', handleClickOutside);
     };
   }, [isQuickSelectOpen]);
-  
+
   // 필터 상태
   const [searchName, setSearchName] = useState('');
   const [minLevel, setMinLevel] = useState<number | ''>('');
@@ -56,13 +58,16 @@ export default function MonsterSearch({ monsters }: MonsterSearchProps) {
   const [showExpiringOnly, setShowExpiringOnly] = useState(false);
   const [showRecommendedOnly, setShowRecommendedOnly] = useState(false);
   const [selectedRegions, setSelectedRegions] = useState<string[]>([]);
-  
+
   // 정렬 상태
   const [sortBy, setSortBy] = useState<SortOption>('level-asc');
-  
+
+  // 선택된 몬스터 (모달용)
+  const [selectedMonster, setSelectedMonster] = useState<Monster | null>(null);
+
   const regions = regionData as Region[];
   const items = itemData as Item[];
-  
+
   // 인기 마스터리북 ID 목록
   const popularMasteryBookIds = useMemo(() => {
     return new Set(
@@ -70,14 +75,18 @@ export default function MonsterSearch({ monsters }: MonsterSearchProps) {
         .filter((item) => item.isPopularMasteryBook === true)
         .map((item) => item.id)
     );
-  }, []);
+  }, [items]);
 
   // document.title 업데이트
   useEffect(() => {
-    document.title = level !== '' 
-      ? `레벨 ${level} 레범몬 - 메이플랜드 레범몬`
-      : '메이플랜드 레범몬';
-  }, [level]);
+    if (level !== '') {
+      document.title = showRebemonOnly
+        ? `레벨 ${level} 레범몬 - 메이플랜드 레범몬`
+        : `레벨 ${level} 몬스터 - 메이플랜드 레범몬`;
+    } else {
+      document.title = '메이플랜드 레범몬';
+    }
+  }, [level, showRebemonOnly]);
 
   // 레벨 범위로 필터링된 기본 몬스터 목록 (필터 적용 전)
   const baseFilteredMonsters = useMemo(() => {
@@ -95,19 +104,28 @@ export default function MonsterSearch({ monsters }: MonsterSearchProps) {
       return [];
     }
 
-    // 레벨 80 이상이면 70 이상의 몬스터도 포함, 그 외에는 ±10 범위
-    let filtered = releasedMonsters.filter((monster) => {
-      if (levelNum >= 80) {
-        // 레벨 80 이상: ±10 범위 또는 70 이상의 몬스터
-        return (
-          (monster.level >= levelNum - 10 && monster.level <= levelNum + 10) ||
-          monster.level >= 70
-        );
-      } else {
-        // 레벨 80 미만: ±10 범위만
+    let filtered: Monster[];
+
+    if (showRebemonOnly) {
+      // 레범몬 모드: 레벨 80 이상이면 70 이상의 몬스터도 포함, 그 외에는 ±10 범위
+      filtered = releasedMonsters.filter((monster) => {
+        if (levelNum >= 80) {
+          // 레벨 80 이상: ±10 범위 또는 70 이상의 몬스터
+          return (
+            (monster.level >= levelNum - 10 && monster.level <= levelNum + 10) ||
+            monster.level >= 70
+          );
+        } else {
+          // 레벨 80 미만: ±10 범위만
+          return monster.level >= levelNum - 10 && monster.level <= levelNum + 10;
+        }
+      });
+    } else {
+      // 일반 모드: 단순히 ±10 범위만
+      filtered = releasedMonsters.filter((monster) => {
         return monster.level >= levelNum - 10 && monster.level <= levelNum + 10;
-      }
-    });
+      });
+    }
 
     // 중복 ID 제거 (첫 번째 항목만 유지)
     const seenIds = new Set<string | number>();
@@ -119,8 +137,15 @@ export default function MonsterSearch({ monsters }: MonsterSearchProps) {
       return true;
     });
 
-    // 레벨 1업 시 레범몬이 아니게 되는지 판단
+    // 레벨 1업 시 레범몬이 아니게 되는지 판단 (레범몬 모드일 때만)
     return uniqueFiltered.map((monster): MonsterWithExpiring => {
+      if (!showRebemonOnly) {
+        return {
+          ...monster,
+          isExpiringSoon: false,
+        };
+      }
+
       const levelNum = Number(level);
       return {
         ...monster,
@@ -140,7 +165,7 @@ export default function MonsterSearch({ monsters }: MonsterSearchProps) {
         })(),
       };
     });
-  }, [level, monsters]) as MonsterWithExpiring[];
+  }, [level, monsters, showRebemonOnly]) as MonsterWithExpiring[];
 
   // 검색 결과에 존재하는 지역 ID 추출
   const availableRegionIds = useMemo(() => {
@@ -163,14 +188,14 @@ export default function MonsterSearch({ monsters }: MonsterSearchProps) {
     // 특별 아이템 ID
     const ILBI_ID = '2070001'; // 일비 표창
     const HWABI_ID = '2070000'; // 뇌전 수리검
-    
+
     baseFilteredMonsters.forEach((monster) => {
       // 무조건 인기인 예외 몬스터
       if (ALWAYS_POPULAR_MONSTER_IDS.has(monster.id)) {
         recommendedSet.add(monster.id);
         return;
       }
-      
+
       // 인기 마스터리북을 드랍하는 몬스터는 무조건 인기
       const hasPopularMasteryBook = monster.featuredDropItemIds?.some(
         (itemId) => popularMasteryBookIds.has(itemId)
@@ -179,30 +204,30 @@ export default function MonsterSearch({ monsters }: MonsterSearchProps) {
         recommendedSet.add(monster.id);
         return;
       }
-      
+
       // 일비 표창을 드랍하는 몬스터는 무조건 인기
-      const hasIlbi = monster.featuredDropItemIds?.includes(ILBI_ID) || 
-                      monster.dropItemIds?.includes(ILBI_ID);
+      const hasIlbi = monster.featuredDropItemIds?.includes(ILBI_ID) ||
+        monster.dropItemIds?.includes(ILBI_ID);
       if (hasIlbi) {
         recommendedSet.add(monster.id);
         return;
       }
-      
+
       // 인기 조건: 레벨 20 이상
       if (monster.level < 20) return;
-      
+
       // 체경비 계산
       const hpPerExp = monster.exp === 0 ? Infinity : monster.hp / monster.exp;
       const featuredDropCount = monster.featuredDropItemIds?.length || 0;
-      
+
       // 뇌전 수리검을 드랍하는 몬스터는 체경비 기준 완화 (체경비 < 35)
-      const hasHwabi = monster.featuredDropItemIds?.includes(HWABI_ID) || 
-                       monster.dropItemIds?.includes(HWABI_ID);
+      const hasHwabi = monster.featuredDropItemIds?.includes(HWABI_ID) ||
+        monster.dropItemIds?.includes(HWABI_ID);
       if (hasHwabi && hpPerExp < 35) {
         recommendedSet.add(monster.id);
         return;
       }
-      
+
       // 레벨 30 미만: 주요 드랍이 필수 (예외 몬스터 제외)
       if (monster.level < 30) {
         // 예외 몬스터: 체경비 < 10이면 인기
@@ -210,23 +235,23 @@ export default function MonsterSearch({ monsters }: MonsterSearchProps) {
           recommendedSet.add(monster.id);
           return;
         }
-        
+
         // 그 외 레벨 30 미만 몬스터는 주요 드랍이 있어야 함
         if (featuredDropCount === 0) return;
-        
+
         // 주요 드랍이 있는 경우에만 체경비 조건 확인
         // 조건 1: 체경비 < 10
         if (hpPerExp < 10) {
           recommendedSet.add(monster.id);
           return;
         }
-        
+
         // 조건 2: 체경비 < 15 AND 주요 드랍 >= 1개
         if (hpPerExp < 15 && featuredDropCount >= 1) {
           recommendedSet.add(monster.id);
           return;
         }
-        
+
         // 조건 3: 체경비 20 안팎 (18~22) AND 주요 드랍 >= 2개
         if (hpPerExp >= 18 && hpPerExp <= 22 && featuredDropCount >= 2) {
           recommendedSet.add(monster.id);
@@ -234,20 +259,20 @@ export default function MonsterSearch({ monsters }: MonsterSearchProps) {
         }
         return;
       }
-      
+
       // 레벨 30 이상: 기존 조건 유지
       // 조건 1: 체경비 < 10
       if (hpPerExp < 10) {
         recommendedSet.add(monster.id);
         return;
       }
-      
+
       // 조건 2: 체경비 < 15 AND 주요 드랍 >= 1개
       if (hpPerExp < 15 && featuredDropCount >= 1) {
         recommendedSet.add(monster.id);
         return;
       }
-      
+
       // 조건 3: 체경비 20 안팎 (18~22) AND 주요 드랍 >= 2개
       if (hpPerExp >= 18 && hpPerExp <= 22 && featuredDropCount >= 2) {
         recommendedSet.add(monster.id);
@@ -327,67 +352,67 @@ export default function MonsterSearch({ monsters }: MonsterSearchProps) {
       // 특별 아이템 ID
       const ILBI_ID = '2070001'; // 일비 표창
       const HWABI_ID = '2070000'; // 뇌전 수리검
-      
+
       monstersWithExpiring = monstersWithExpiring.filter((monster) => {
         // 무조건 인기인 예외 몬스터
         if (ALWAYS_POPULAR_MONSTER_IDS.has(monster.id)) return true;
-        
+
         // 인기 마스터리북을 드랍하는 몬스터는 무조건 인기
         const hasPopularMasteryBook = monster.featuredDropItemIds?.some(
           (itemId) => popularMasteryBookIds.has(itemId)
         );
         if (hasPopularMasteryBook) return true;
-        
+
         // 일비 표창을 드랍하는 몬스터는 무조건 인기
-        const hasIlbi = monster.featuredDropItemIds?.includes(ILBI_ID) || 
-                        monster.dropItemIds?.includes(ILBI_ID);
+        const hasIlbi = monster.featuredDropItemIds?.includes(ILBI_ID) ||
+          monster.dropItemIds?.includes(ILBI_ID);
         if (hasIlbi) return true;
-        
+
         // 인기 조건: 레벨 20 이상
         if (monster.level < 20) return false;
-        
+
         // 체경비 계산
         const hpPerExp = monster.exp === 0 ? Infinity : monster.hp / monster.exp;
         const featuredDropCount = monster.featuredDropItemIds?.length || 0;
-        
+
         // 뇌전 수리검을 드랍하는 몬스터는 체경비 기준 완화 (체경비 < 35)
-        const hasHwabi = monster.featuredDropItemIds?.includes(HWABI_ID) || 
-                         monster.dropItemIds?.includes(HWABI_ID);
+        const hasHwabi = monster.featuredDropItemIds?.includes(HWABI_ID) ||
+          monster.dropItemIds?.includes(HWABI_ID);
         if (hasHwabi && hpPerExp < 35) return true;
-        
+
         // 레벨 30 미만: 주요 드랍이 필수 (예외 몬스터 제외)
         if (monster.level < 30) {
           // 예외 몬스터: 체경비 < 10이면 인기
           if (EXCEPTION_MONSTER_IDS.has(monster.id) && hpPerExp < 10) {
             return true;
           }
-          
+
           // 그 외 레벨 30 미만 몬스터는 주요 드랍이 있어야 함
           if (featuredDropCount === 0) return false;
-          
+
           // 주요 드랍이 있는 경우에만 체경비 조건 확인
           // 조건 1: 체경비 < 10
           if (hpPerExp < 10) return true;
-          
+
           // 조건 2: 체경비 < 15 AND 주요 드랍 >= 1개
           if (hpPerExp < 15 && featuredDropCount >= 1) return true;
-          
+
           // 조건 3: 체경비 20 안팎 (18~22) AND 주요 드랍 >= 2개
           if (hpPerExp >= 18 && hpPerExp <= 22 && featuredDropCount >= 2) return true;
-          
+
           return false;
         }
-        
+
         // 레벨 30 이상: 기존 조건 유지
         // 조건 1: 체경비 < 10
         if (hpPerExp < 10) return true;
-        
+
         // 조건 2: 체경비 < 15 AND 주요 드랍 >= 1개
         if (hpPerExp < 15 && featuredDropCount >= 1) return true;
-        
+
         // 조건 3: 체경비 20 안팎 (18~22) AND 주요 드랍 >= 2개
         if (hpPerExp >= 18 && hpPerExp <= 22 && featuredDropCount >= 2) return true;
-        
+
         return false;
       });
     }
@@ -452,7 +477,7 @@ export default function MonsterSearch({ monsters }: MonsterSearchProps) {
     });
 
     return uniqueSorted;
-  }, [baseFilteredMonsters, searchName, minLevel, maxLevel, minHp, maxHp, minExp, maxExp, showExpiringOnly, showRecommendedOnly, selectedRegions, sortBy, popularMasteryBookIds]) as MonsterWithExpiring[];
+  }, [baseFilteredMonsters, searchName, minLevel, maxLevel, minHp, maxHp, minExp, maxExp, showExpiringOnly, showRecommendedOnly, selectedRegions, sortBy, popularMasteryBookIds, regions]) as MonsterWithExpiring[];
 
   return (
     <div className="flex min-h-screen flex-col bg-gray-900">
@@ -467,7 +492,7 @@ export default function MonsterSearch({ monsters }: MonsterSearchProps) {
         </div>
 
         <div className="mb-8 flex justify-center">
-          <div className="w-full max-w-md">
+          <div className="w-full max-w-xl">
             <div className="mb-2 flex items-center justify-between">
               <label
                 htmlFor="level-input"
@@ -476,7 +501,18 @@ export default function MonsterSearch({ monsters }: MonsterSearchProps) {
                 레벨 입력
               </label>
             </div>
-              <div className="relative flex gap-2">
+            <div className="relative flex gap-2">
+              <label className="flex items-center gap-2 cursor-pointer flex-shrink-0">
+                <input
+                  type="checkbox"
+                  checked={showRebemonOnly}
+                  onChange={(e) => setShowRebemonOnly(e.target.checked)}
+                  className="w-4 h-4 rounded border-gray-600 bg-gray-700 text-blue-500 focus:ring-blue-500 focus:ring-2 cursor-pointer"
+                />
+                <span className="text-sm font-medium text-gray-300 whitespace-nowrap">
+                  레범몬만
+                </span>
+              </label>
               <input
                 id="level-input"
                 type="number"
@@ -486,19 +522,18 @@ export default function MonsterSearch({ monsters }: MonsterSearchProps) {
                   const value = e.target.value;
                   setLevel(value === '' ? '' : Number(value));
                 }}
-                placeholder="예: 50"
-                className="latin-font numeric h-10 min-w-0 flex-1 rounded-lg border border-gray-600 bg-gray-800 px-3 sm:px-4 text-lg text-gray-100 shadow-sm placeholder:text-gray-500 focus:border-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-400"
+                placeholder={showRebemonOnly ? "자신의 레벨을 입력(예: 50)" : "몬스터의 레벨을 적어보세요"}
+                className="latin-font numeric h-10 min-w-0 flex-1 rounded-lg border border-gray-600 bg-gray-800 px-3 sm:px-4 text-base text-gray-100 shadow-sm placeholder:text-gray-500 focus:border-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-400"
               />
               <div className="relative" ref={quickSelectRef}>
                 <button
                   onClick={() => setIsQuickSelectOpen(!isQuickSelectOpen)}
                   aria-haspopup="dialog"
                   aria-expanded={isQuickSelectOpen}
-                  className={`h-10 flex items-center gap-2 whitespace-nowrap rounded-lg border-2 px-3 sm:px-4 font-semibold text-xs sm:text-sm transition-all ${
-                    isQuickSelectOpen
+                  className={`h-10 flex items-center gap-2 whitespace-nowrap rounded-lg border-2 px-3 sm:px-4 font-semibold text-xs sm:text-sm transition-all ${isQuickSelectOpen
                       ? 'border-blue-500 bg-blue-500/20 text-blue-400'
                       : 'border-blue-500 bg-blue-500 text-white hover:bg-blue-600 hover:border-blue-600 active:scale-95'
-                  }`}
+                    }`}
                 >
                   <svg
                     className="h-4 w-4 sm:h-5 sm:w-5"
@@ -592,8 +627,7 @@ export default function MonsterSearch({ monsters }: MonsterSearchProps) {
         </div>
 
         {/* 상세 검색 및 필터 UI - 레벨 입력 밑에 항상 표시 */}
-        {level !== '' && (
-          <div className="mb-6 flex justify-center items-start gap-4 flex-wrap">
+        <div className="mb-6 flex justify-center items-start gap-4 flex-wrap">
             <div className="w-full max-w-md">
               <div className="rounded-lg border border-gray-700 bg-gray-800">
                 <button
@@ -610,7 +644,7 @@ export default function MonsterSearch({ monsters }: MonsterSearchProps) {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                   </svg>
                 </button>
-                
+
                 {isFilterOpen && (
                   <div className="border-t border-gray-700 p-4 space-y-4">
                     {/* 이름 검색 */}
@@ -705,22 +739,20 @@ export default function MonsterSearch({ monsters }: MonsterSearchProps) {
                 )}
               </div>
             </div>
-            
+
             {/* 인기 몬스터 보기 버튼 */}
             <div className="max-w-40 flex items-center">
               <button
                 onClick={() => setShowRecommendedOnly(!showRecommendedOnly)}
-                className={`h-10 w-full rounded-lg border-2 px-4 text-sm font-medium transition-all ${
-                  showRecommendedOnly
+                className={`h-10 w-full rounded-lg border-2 px-4 text-sm font-medium transition-all ${showRecommendedOnly
                     ? 'border-yellow-500 bg-yellow-500/20 text-yellow-400'
                     : 'border-gray-700 bg-gray-800 text-gray-300 hover:border-yellow-500/50 hover:bg-gray-750'
-                }`}
+                  }`}
               >
                 {showRecommendedOnly ? '인기 몬스터 보기 중' : '인기 몬스터 보기'}
               </button>
             </div>
           </div>
-        )}
 
         {/* 지역 필터 뱃지 - 검색 결과에 존재하는 지역만 표시 */}
         {level !== '' && baseFilteredMonsters.length > 0 && availableRegionIds.length > 0 && (
@@ -742,11 +774,10 @@ export default function MonsterSearch({ monsters }: MonsterSearchProps) {
                             setSelectedRegions([...selectedRegions, region.id]);
                           }
                         }}
-                        className={`rounded-full px-4 py-2 text-sm font-medium transition-all ${
-                          isSelected
+                        className={`rounded-full px-4 py-2 text-sm font-medium transition-all ${isSelected
                             ? 'bg-blue-600 text-white shadow-md'
                             : 'bg-gray-700 text-gray-300 hover:bg-gray-600'
-                        }`}
+                          }`}
                       >
                         {region.name}
                       </button>
@@ -768,8 +799,8 @@ export default function MonsterSearch({ monsters }: MonsterSearchProps) {
         {level !== '' && filteredMonsters.length > 0 && (
           <div className="mb-4 text-center text-gray-400">
             <p>
-              레벨 <span className="latin-font font-medium">{level}</span> 기준 레범몬 {filteredMonsters.length}개
-              {Number(level) >= 80 && (
+              레벨 <span className="latin-font font-medium">{level}</span> 기준 {showRebemonOnly ? '레범몬' : '몬스터'} {filteredMonsters.length}개
+              {showRebemonOnly && Number(level) >= 80 && (
                 <span className="block text-sm mt-1 text-gray-500">
                   (레벨 80 이상이므로 70 이상 몬스터도 포함됩니다)
                 </span>
@@ -793,6 +824,7 @@ export default function MonsterSearch({ monsters }: MonsterSearchProps) {
                 isExpiringSoon={monster.isExpiringSoon}
                 userLevel={level !== '' ? Number(level) : undefined}
                 isRecommended={isRecommendedMonster.has(monster.id)}
+                onClick={() => setSelectedMonster(monster)}
               />
             ))}
           </div>
@@ -807,6 +839,12 @@ export default function MonsterSearch({ monsters }: MonsterSearchProps) {
       <div className="mt-auto">
         <Footer />
       </div>
+      
+      {/* 상세 몬스터 카드 모달 */}
+      <MonsterDetailModal
+        monster={selectedMonster}
+        onClose={() => setSelectedMonster(null)}
+      />
     </div>
   );
 }
