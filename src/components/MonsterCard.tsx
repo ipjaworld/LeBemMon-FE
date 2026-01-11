@@ -2,7 +2,7 @@ import { Monster } from '@/types/monster';
 import { Region } from '@/types/region';
 import { Item } from '@/types/item';
 import Image from 'next/image';
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useEffect, useRef } from 'react';
 import regionData from '@/data/region_data.json';
 import itemData from '@/data/item_data.json';
 
@@ -18,6 +18,9 @@ export default function MonsterCard({ monster, isExpiringSoon, userLevel, isReco
   const [isHovered, setIsHovered] = useState(false);
   const [isWarningHovered, setIsWarningHovered] = useState(false);
   const [isHpPerExpTooltipHovered, setIsHpPerExpTooltipHovered] = useState(false);
+  const [isRegionsExpanded, setIsRegionsExpanded] = useState(false);
+  const [shouldShowExpandButton, setShouldShowExpandButton] = useState(false);
+  const regionsContainerRef = useRef<HTMLDivElement>(null);
   
   // 파티 경험치 획득 조건: 몬스터 레벨이 사용자 레벨+5를 초과하면 파티 경험치를 획득할 수 없음
   const isOutOfPartyExpRange = userLevel !== undefined && monster.level > userLevel + 5;
@@ -30,6 +33,49 @@ export default function MonsterCard({ monster, isExpiringSoon, userLevel, isReco
     if (!monster.regionIds || monster.regionIds.length === 0) return [];
     return regions.filter((region) => monster.regionIds?.includes(region.id));
   }, [monster.regionIds, regions]);
+
+  // 지역 태그가 1줄을 넘어가는지 확인
+  useEffect(() => {
+    if (!regionsContainerRef.current || monsterRegions.length === 0) {
+      setShouldShowExpandButton(false);
+      return;
+    }
+
+    const checkOverflow = () => {
+      const container = regionsContainerRef.current;
+      if (!container) return;
+
+      // scrollHeight와 clientHeight를 비교하여 오버플로우 확인
+      // scrollHeight가 clientHeight보다 크면 내용이 넘친 것
+      const hasOverflow = container.scrollHeight > container.clientHeight;
+      
+      // 또는 첫 번째 줄의 높이를 기준으로 두 번째 줄이 있는지 확인
+      const children = Array.from(container.children) as HTMLElement[];
+      if (children.length === 0) {
+        setShouldShowExpandButton(false);
+        return;
+      }
+
+      // 첫 번째 줄의 높이 계산
+      const firstRowHeight = children[0]?.offsetTop + children[0]?.offsetHeight || 0;
+      
+      // 두 번째 줄이 있는지 확인
+      const hasSecondRow = children.some((child) => child.offsetTop >= firstRowHeight);
+      
+      setShouldShowExpandButton(hasOverflow || hasSecondRow);
+    };
+
+    // 초기 확인 (약간의 지연을 두어 렌더링 완료 후 확인)
+    const timeoutId = setTimeout(checkOverflow, 100);
+    
+    // 리사이즈 이벤트 리스너 추가
+    window.addEventListener('resize', checkOverflow);
+    
+    return () => {
+      clearTimeout(timeoutId);
+      window.removeEventListener('resize', checkOverflow);
+    };
+  }, [monsterRegions, isRegionsExpanded]);
 
   // 주요 드랍 아이템 정보 가져오기 (중복 이름 제거)
   const featuredDropItems = useMemo(() => {
@@ -177,15 +223,33 @@ export default function MonsterCard({ monster, isExpiringSoon, userLevel, isReco
 
       {/* 지역 뱃지 */}
       {monsterRegions.length > 0 && (
-        <div className="mb-2 flex w-full flex-wrap gap-1.5 justify-center">
-          {monsterRegions.map((region) => (
-            <span
-              key={region.id}
-              className="rounded-full bg-gray-700 px-3 py-1 text-xs font-medium text-gray-300"
+        <div className="mb-2 w-full">
+          <div
+            ref={regionsContainerRef}
+            className={`flex w-full flex-wrap gap-1.5 justify-center overflow-hidden transition-all ${
+              isRegionsExpanded ? '' : 'max-h-[2.5rem]'
+            }`}
+          >
+            {monsterRegions.map((region) => (
+              <span
+                key={region.id}
+                className="rounded-full bg-gray-700 px-3 py-1 text-xs font-medium text-gray-300"
+              >
+                {region.name}
+              </span>
+            ))}
+          </div>
+          {shouldShowExpandButton && (
+            <button
+              onClick={(e) => {
+                e.stopPropagation();
+                setIsRegionsExpanded(!isRegionsExpanded);
+              }}
+              className="mt-1 w-full text-xs text-gray-400 hover:text-gray-300 transition-colors"
             >
-              {region.name}
-            </span>
-          ))}
+              {isRegionsExpanded ? '접기' : '펼쳐보기'}
+            </button>
+          )}
         </div>
       )}
 
