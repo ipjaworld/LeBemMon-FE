@@ -197,7 +197,7 @@ export default function MonsterSearch({ monsters }: MonsterSearchProps) {
           .map((item: { monsterId: string }) => 
             monsters.find(m => m.id === item.monsterId)
           )
-          .filter((m): m is Monster => m !== undefined);
+          .filter((m: Monster | undefined): m is Monster => m !== undefined);
         
         setRecentMonsters(sortedMonsters);
         
@@ -241,7 +241,7 @@ export default function MonsterSearch({ monsters }: MonsterSearchProps) {
         .map((item: { monsterId: string }) => 
           monsters.find(m => m.id === item.monsterId)
         )
-        .filter((m): m is Monster => m !== undefined);
+        .filter((m: Monster | undefined): m is Monster => m !== undefined);
       
       setRecentMonsters(sortedMonsters);
     } catch (error) {
