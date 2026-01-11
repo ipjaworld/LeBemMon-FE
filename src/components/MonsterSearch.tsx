@@ -4,11 +4,25 @@ import { useState, useMemo, useEffect, useRef } from 'react';
 import MonsterCard from '@/components/MonsterCard';
 import MonsterDetailModal from '@/components/MonsterDetailModal';
 import Footer from '@/components/Footer';
+import LevelRangeSettingsButton from '@/components/LevelRangeSettingsButton';
 import { Monster } from '@/types/monster';
 import { Region } from '@/types/region';
 import { Item } from '@/types/item';
 import regionData from '@/data/region_data.json';
 import itemData from '@/data/item_data.json';
+
+const LEVEL_RANGE_SETTINGS_STORAGE_KEY = 'rebemon:levelRangeSettings:v1';
+const DEFAULT_LEVEL_RANGE_SETTINGS = {
+  showRebemonOnly: true,
+  customLowerOffset: 10,
+  customUpperOffset: 10,
+} as const;
+
+type StoredLevelRangeSettings = {
+  showRebemonOnly?: boolean;
+  customLowerOffset?: number;
+  customUpperOffset?: number;
+};
 
 type MonsterWithExpiring = Monster & {
   isExpiringSoon: boolean;
@@ -23,6 +37,8 @@ interface MonsterSearchProps {
 export default function MonsterSearch({ monsters }: MonsterSearchProps) {
   const [level, setLevel] = useState<number | ''>('');
   const [showRebemonOnly, setShowRebemonOnly] = useState(true);
+  const [levelRangeLowerOffset, setLevelRangeLowerOffset] = useState(10);
+  const [levelRangeUpperOffset, setLevelRangeUpperOffset] = useState(10);
   const [isFilterOpen, setIsFilterOpen] = useState(false);
   const [isQuickSelectOpen, setIsQuickSelectOpen] = useState(false);
   const quickSelectRef = useRef<HTMLDivElement>(null);
@@ -64,9 +80,80 @@ export default function MonsterSearch({ monsters }: MonsterSearchProps) {
 
   // 선택된 몬스터 (모달용)
   const [selectedMonster, setSelectedMonster] = useState<Monster | null>(null);
+  
+  // 최근 확인한 몬스터 목록
+  const [recentMonsters, setRecentMonsters] = useState<Monster[]>([]);
+  
+  // 지역 필터 펼쳐보기 상태
+  const [isRegionFilterExpanded, setIsRegionFilterExpanded] = useState(false);
+  const [shouldShowRegionExpandButton, setShouldShowRegionExpandButton] = useState(false);
+  const regionFilterContainerRef = useRef<HTMLDivElement>(null);
+
+  const didLoadLevelRangeSettingsRef = useRef(false);
 
   const regions = regionData as Region[];
   const items = itemData as Item[];
+
+  // 레벨 범위(레범몬 on/off + 커스텀 범위) 로드
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+    if (didLoadLevelRangeSettingsRef.current) return;
+
+    try {
+      const raw = localStorage.getItem(LEVEL_RANGE_SETTINGS_STORAGE_KEY);
+      if (!raw) {
+        didLoadLevelRangeSettingsRef.current = true;
+        return;
+      }
+
+      const parsedUnknown = JSON.parse(raw) as unknown;
+      if (!parsedUnknown || typeof parsedUnknown !== 'object' || Array.isArray(parsedUnknown)) {
+        throw new Error('Invalid stored shape');
+      }
+      const parsed = parsedUnknown as StoredLevelRangeSettings;
+      if (typeof parsed.showRebemonOnly === 'boolean') {
+        setShowRebemonOnly(parsed.showRebemonOnly);
+      }
+      if (typeof parsed.customLowerOffset === 'number' && Number.isFinite(parsed.customLowerOffset)) {
+        setLevelRangeLowerOffset(Math.max(0, Math.min(200, Math.trunc(parsed.customLowerOffset))));
+      }
+      if (typeof parsed.customUpperOffset === 'number' && Number.isFinite(parsed.customUpperOffset)) {
+        setLevelRangeUpperOffset(Math.max(0, Math.min(200, Math.trunc(parsed.customUpperOffset))));
+      }
+    } catch (error) {
+      console.warn('Failed to load level range settings. Resetting storage:', error);
+      try {
+        localStorage.removeItem(LEVEL_RANGE_SETTINGS_STORAGE_KEY);
+      } catch {
+        // ignore
+      }
+      setShowRebemonOnly(DEFAULT_LEVEL_RANGE_SETTINGS.showRebemonOnly);
+      setLevelRangeLowerOffset(DEFAULT_LEVEL_RANGE_SETTINGS.customLowerOffset);
+      setLevelRangeUpperOffset(DEFAULT_LEVEL_RANGE_SETTINGS.customUpperOffset);
+    } finally {
+      didLoadLevelRangeSettingsRef.current = true;
+    }
+  }, []);
+
+  // 레벨 범위(레범몬 on/off + 커스텀 범위) 저장
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+    if (!didLoadLevelRangeSettingsRef.current) return;
+
+    const next: StoredLevelRangeSettings = {
+      showRebemonOnly,
+      // 레범몬 모드에서는 범위가 항상 -10/+10이지만,
+      // OFF로 돌아왔을 때 복원되도록 커스텀 값은 항상 저장한다.
+      customLowerOffset: levelRangeLowerOffset,
+      customUpperOffset: levelRangeUpperOffset,
+    };
+
+    try {
+      localStorage.setItem(LEVEL_RANGE_SETTINGS_STORAGE_KEY, JSON.stringify(next));
+    } catch (error) {
+      console.warn('Failed to save level range settings:', error);
+    }
+  }, [showRebemonOnly, levelRangeLowerOffset, levelRangeUpperOffset]);
 
   // 인기 마스터리북 ID 목록
   const popularMasteryBookIds = useMemo(() => {
@@ -88,6 +175,80 @@ export default function MonsterSearch({ monsters }: MonsterSearchProps) {
     }
   }, [level, showRebemonOnly]);
 
+  // 최근 확인한 몬스터 목록 로드 (컴포넌트 마운트 시)
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+    
+    try {
+      const stored = localStorage.getItem('recentMonsters');
+      if (stored) {
+        const data = JSON.parse(stored);
+        const now = Date.now();
+        const sevenDaysInMs = 7 * 24 * 60 * 60 * 1000;
+        
+        // 7일 이내의 항목만 필터링하고 최신순으로 정렬
+        const sortedData = data
+          .filter((item: { monsterId: string; timestamp: number }) => 
+            now - item.timestamp < sevenDaysInMs
+          )
+          .sort((a: { timestamp: number }, b: { timestamp: number }) => b.timestamp - a.timestamp);
+        
+        const sortedMonsters = sortedData
+          .map((item: { monsterId: string }) => 
+            monsters.find(m => m.id === item.monsterId)
+          )
+          .filter((m): m is Monster => m !== undefined);
+        
+        setRecentMonsters(sortedMonsters);
+        
+        // 만료된 항목 제거
+        if (data.length !== sortedData.length) {
+          localStorage.setItem('recentMonsters', JSON.stringify(sortedData));
+        }
+      }
+    } catch (error) {
+      console.error('Failed to load recent monsters:', error);
+    }
+  }, [monsters]);
+
+  // 모달이 열릴 때 최근 확인한 몬스터 목록에 추가
+  useEffect(() => {
+    if (!selectedMonster) return;
+    
+    try {
+      const stored = localStorage.getItem('recentMonsters');
+      const data = stored ? JSON.parse(stored) : [];
+      const now = Date.now();
+      
+      // 이미 존재하는 경우 제거 (중복 방지)
+      const filtered = data.filter((item: { monsterId: string }) => 
+        item.monsterId !== selectedMonster.id
+      );
+      
+      // 최신 항목을 맨 앞에 추가
+      filtered.unshift({
+        monsterId: selectedMonster.id,
+        timestamp: now
+      });
+      
+      // 최대 20개까지만 저장
+      const limited = filtered.slice(0, 20);
+      
+      localStorage.setItem('recentMonsters', JSON.stringify(limited));
+      
+      // 상태 업데이트
+      const sortedMonsters = limited
+        .map((item: { monsterId: string }) => 
+          monsters.find(m => m.id === item.monsterId)
+        )
+        .filter((m): m is Monster => m !== undefined);
+      
+      setRecentMonsters(sortedMonsters);
+    } catch (error) {
+      console.error('Failed to save recent monster:', error);
+    }
+  }, [selectedMonster, monsters]);
+
   // 레벨 범위로 필터링된 기본 몬스터 목록 (필터 적용 전)
   const baseFilteredMonsters = useMemo(() => {
     // 먼저 출시된 몬스터만 필터링
@@ -106,24 +267,29 @@ export default function MonsterSearch({ monsters }: MonsterSearchProps) {
 
     let filtered: Monster[];
 
+    const lowerOffset = showRebemonOnly ? 10 : levelRangeLowerOffset;
+    const upperOffset = showRebemonOnly ? 10 : levelRangeUpperOffset;
+    const minBase = levelNum - lowerOffset;
+    const maxBase = levelNum + upperOffset;
+
     if (showRebemonOnly) {
-      // 레범몬 모드: 레벨 80 이상이면 70 이상의 몬스터도 포함, 그 외에는 ±10 범위
+      // 레범몬 모드: 범위는 항상 -10/+10 고정 (레벨 80 이상이면 70 이상의 몬스터도 포함)
       filtered = releasedMonsters.filter((monster) => {
         if (levelNum >= 80) {
           // 레벨 80 이상: ±10 범위 또는 70 이상의 몬스터
           return (
-            (monster.level >= levelNum - 10 && monster.level <= levelNum + 10) ||
+            (monster.level >= minBase && monster.level <= maxBase) ||
             monster.level >= 70
           );
         } else {
-          // 레벨 80 미만: ±10 범위만
-          return monster.level >= levelNum - 10 && monster.level <= levelNum + 10;
+          // 레벨 80 미만: 범위만
+          return monster.level >= minBase && monster.level <= maxBase;
         }
       });
     } else {
-      // 일반 모드: 단순히 ±10 범위만
+      // 일반 모드: 유저가 지정한 범위를 사용
       filtered = releasedMonsters.filter((monster) => {
-        return monster.level >= levelNum - 10 && monster.level <= levelNum + 10;
+        return monster.level >= minBase && monster.level <= maxBase;
       });
     }
 
@@ -165,7 +331,7 @@ export default function MonsterSearch({ monsters }: MonsterSearchProps) {
         })(),
       };
     });
-  }, [level, monsters, showRebemonOnly]) as MonsterWithExpiring[];
+  }, [level, monsters, showRebemonOnly, levelRangeLowerOffset, levelRangeUpperOffset]) as MonsterWithExpiring[];
 
   // 검색 결과에 존재하는 지역 ID 추출
   const availableRegionIds = useMemo(() => {
@@ -177,6 +343,44 @@ export default function MonsterSearch({ monsters }: MonsterSearchProps) {
     });
     return Array.from(regionIdSet);
   }, [baseFilteredMonsters]);
+
+  // 지역 필터가 1줄을 넘어가는지 확인
+  useEffect(() => {
+    if (!regionFilterContainerRef.current) {
+      setShouldShowRegionExpandButton(false);
+      return;
+    }
+
+    const checkOverflow = () => {
+      const container = regionFilterContainerRef.current;
+      if (!container) return;
+
+      const children = Array.from(container.children) as HTMLElement[];
+      if (children.length === 0) {
+        setShouldShowRegionExpandButton(false);
+        return;
+      }
+
+      // 첫 번째 줄의 높이 계산
+      const firstRowHeight = children[0]?.offsetTop + children[0]?.offsetHeight || 0;
+      
+      // 두 번째 줄이 있는지 확인
+      const hasSecondRow = children.some((child) => child.offsetTop >= firstRowHeight);
+      
+      setShouldShowRegionExpandButton(hasSecondRow);
+    };
+
+    // 초기 확인 (약간의 지연을 두어 렌더링 완료 후 확인)
+    const timeoutId = setTimeout(checkOverflow, 100);
+    
+    // 리사이즈 이벤트 리스너 추가
+    window.addEventListener('resize', checkOverflow);
+    
+    return () => {
+      clearTimeout(timeoutId);
+      window.removeEventListener('resize', checkOverflow);
+    };
+  }, [level, baseFilteredMonsters, availableRegionIds, isRegionFilterExpanded]);
 
   // 인기 몬스터 여부 판단 함수
   const isRecommendedMonster = useMemo(() => {
@@ -487,7 +691,7 @@ export default function MonsterSearch({ monsters }: MonsterSearchProps) {
             메이플랜드 레범몬
           </h1>
           <p className="text-base text-gray-400 sm:text-lg">
-            레벨을 입력하면 해당 레벨 ±10 범위의 몬스터를 확인할 수 있습니다
+            레벨을 입력하면 기본 -10/+10 범위의 몬스터를 확인할 수 있으며, 범위 설정에서 커스텀할 수 있습니다
           </p>
         </div>
 
@@ -502,17 +706,14 @@ export default function MonsterSearch({ monsters }: MonsterSearchProps) {
               </label>
             </div>
             <div className="relative flex gap-2">
-              <label className="flex items-center gap-2 cursor-pointer flex-shrink-0">
-                <input
-                  type="checkbox"
-                  checked={showRebemonOnly}
-                  onChange={(e) => setShowRebemonOnly(e.target.checked)}
-                  className="w-4 h-4 rounded border-gray-600 bg-gray-700 text-blue-500 focus:ring-blue-500 focus:ring-2 cursor-pointer"
-                />
-                <span className="text-sm font-medium text-gray-300 whitespace-nowrap">
-                  레범몬만
-                </span>
-              </label>
+              <LevelRangeSettingsButton
+                showRebemonOnly={showRebemonOnly}
+                onChangeShowRebemonOnly={setShowRebemonOnly}
+                lowerOffset={levelRangeLowerOffset}
+                upperOffset={levelRangeUpperOffset}
+                onChangeLowerOffset={setLevelRangeLowerOffset}
+                onChangeUpperOffset={setLevelRangeUpperOffset}
+              />
               <input
                 id="level-input"
                 type="number"
@@ -522,7 +723,7 @@ export default function MonsterSearch({ monsters }: MonsterSearchProps) {
                   const value = e.target.value;
                   setLevel(value === '' ? '' : Number(value));
                 }}
-                placeholder={showRebemonOnly ? "자신의 레벨을 입력(예: 50)" : "몬스터의 레벨을 적어보세요"}
+                placeholder={showRebemonOnly ? "자신의 레벨을 입력(예: 50)" : "기준 레벨 입력(예: 50)"}
                 className="latin-font numeric h-10 min-w-0 flex-1 rounded-lg border border-gray-600 bg-gray-800 px-3 sm:px-4 text-base text-gray-100 shadow-sm placeholder:text-gray-500 focus:border-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-400"
               />
               <div className="relative" ref={quickSelectRef}>
@@ -626,9 +827,30 @@ export default function MonsterSearch({ monsters }: MonsterSearchProps) {
           </div>
         </div>
 
+        {/* 최근 확인한 몬스터 목록 */}
+        {recentMonsters.length > 0 && (
+          <div className="mb-6 flex justify-center">
+            <div className="w-full max-w-xl">
+              <div className="mb-2 text-sm font-medium text-gray-400">최근 확인한 몬스터</div>
+              <div className="flex flex-wrap gap-2">
+                {recentMonsters.map((monster) => (
+                  <button
+                    key={monster.id}
+                    onClick={() => setSelectedMonster(monster)}
+                    className="rounded-full border border-gray-600 bg-gray-800 px-3 py-1.5 text-sm font-medium text-gray-200 transition-colors hover:border-blue-500 hover:bg-gray-700 hover:text-blue-400"
+                  >
+                    {monster.name}
+                  </button>
+                ))}
+              </div>
+            </div>
+          </div>
+        )}
+
         {/* 상세 검색 및 필터 UI - 레벨 입력 밑에 항상 표시 */}
-        <div className="mb-6 flex justify-center items-start gap-4 flex-wrap">
-            <div className="w-full max-w-md">
+        <div className="mb-6 flex justify-center">
+          <div className="w-full max-w-xl flex items-start gap-4 flex-wrap">
+            <div className="flex-1 min-w-[16rem]">
               <div className="rounded-lg border border-gray-700 bg-gray-800">
                 <button
                   onClick={() => setIsFilterOpen(!isFilterOpen)}
@@ -741,7 +963,7 @@ export default function MonsterSearch({ monsters }: MonsterSearchProps) {
             </div>
 
             {/* 인기 몬스터 보기 버튼 */}
-            <div className="max-w-40 flex items-center">
+            <div className="w-full sm:w-40 flex items-center">
               <button
                 onClick={() => setShowRecommendedOnly(!showRecommendedOnly)}
                 className={`h-10 w-full rounded-lg border-2 px-4 text-sm font-medium transition-all ${showRecommendedOnly
@@ -753,42 +975,58 @@ export default function MonsterSearch({ monsters }: MonsterSearchProps) {
               </button>
             </div>
           </div>
+        </div>
 
         {/* 지역 필터 뱃지 - 검색 결과에 존재하는 지역만 표시 */}
         {level !== '' && baseFilteredMonsters.length > 0 && availableRegionIds.length > 0 && (
           <div className="mb-6 flex justify-center">
             <div className="w-full max-w-4xl">
               <div className="mb-2 text-sm font-medium text-gray-400">지역 필터</div>
-              <div className="flex flex-wrap gap-2">
-                {regions
-                  .filter((region) => availableRegionIds.includes(region.id))
-                  .map((region) => {
-                    const isSelected = selectedRegions.includes(region.id);
-                    return (
-                      <button
-                        key={region.id}
-                        onClick={() => {
-                          if (isSelected) {
-                            setSelectedRegions(selectedRegions.filter((id) => id !== region.id));
-                          } else {
-                            setSelectedRegions([...selectedRegions, region.id]);
-                          }
-                        }}
-                        className={`rounded-full px-4 py-2 text-sm font-medium transition-all ${isSelected
-                            ? 'bg-blue-600 text-white shadow-md'
-                            : 'bg-gray-700 text-gray-300 hover:bg-gray-600'
-                          }`}
-                      >
-                        {region.name}
-                      </button>
-                    );
-                  })}
-                {selectedRegions.length > 0 && (
+              <div className="w-full">
+                <div
+                  ref={regionFilterContainerRef}
+                  className={`flex flex-wrap gap-2 overflow-hidden transition-all ${
+                    isRegionFilterExpanded ? '' : 'max-h-[3rem]'
+                  }`}
+                >
+                  {regions
+                    .filter((region) => availableRegionIds.includes(region.id))
+                    .map((region) => {
+                      const isSelected = selectedRegions.includes(region.id);
+                      return (
+                        <button
+                          key={region.id}
+                          onClick={() => {
+                            if (isSelected) {
+                              setSelectedRegions(selectedRegions.filter((id) => id !== region.id));
+                            } else {
+                              setSelectedRegions([...selectedRegions, region.id]);
+                            }
+                          }}
+                          className={`rounded-full px-4 py-2 text-sm font-medium transition-all ${isSelected
+                              ? 'bg-blue-600 text-white shadow-md'
+                              : 'bg-gray-700 text-gray-300 hover:bg-gray-600'
+                            }`}
+                        >
+                          {region.name}
+                        </button>
+                      );
+                    })}
+                  {selectedRegions.length > 0 && (
+                    <button
+                      onClick={() => setSelectedRegions([])}
+                      className="rounded-full bg-gray-700 px-4 py-2 text-sm font-medium text-gray-300 hover:bg-gray-600 transition-colors"
+                    >
+                      전체 해제
+                    </button>
+                  )}
+                </div>
+                {shouldShowRegionExpandButton && (
                   <button
-                    onClick={() => setSelectedRegions([])}
-                    className="rounded-full bg-gray-700 px-4 py-2 text-sm font-medium text-gray-300 hover:bg-gray-600 transition-colors"
+                    onClick={() => setIsRegionFilterExpanded(!isRegionFilterExpanded)}
+                    className="mt-2 text-sm text-gray-400 hover:text-gray-300 transition-colors"
                   >
-                    전체 해제
+                    {isRegionFilterExpanded ? '접기' : '펼쳐보기'}
                   </button>
                 )}
               </div>
