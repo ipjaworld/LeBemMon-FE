@@ -10,6 +10,7 @@ import itemData from '@/data/item_data.json';
 import regionData from '@/data/region_data.json';
 import mapData from '@/data/map_data.json';
 import monsterItemRelations from '@/data/monster_item_relations.json';
+import monsterData from '@/data/monster_data.json';
 
 interface MonsterItemRelation {
   monsterId: string;
@@ -19,14 +20,16 @@ interface MonsterItemRelation {
 interface MonsterDetailModalProps {
   monster: Monster | null;
   onClose: () => void;
+  onMonsterClick?: (monster: Monster) => void;
 }
 
-export default function MonsterDetailModal({ monster, onClose }: MonsterDetailModalProps) {
+export default function MonsterDetailModal({ monster, onClose, onMonsterClick }: MonsterDetailModalProps) {
   const [showStats, setShowStats] = useState(false);
   const items = itemData as Item[];
   const regions = regionData as Region[];
   const maps = mapData as GameMap[];
   const relations = monsterItemRelations as MonsterItemRelation[];
+  const allMonsters = monsterData as Monster[];
 
   // 드롭 아이템 목록
   const dropItems = useMemo(() => {
@@ -97,6 +100,12 @@ export default function MonsterDetailModal({ monster, onClose }: MonsterDetailMo
     return new Map(regions.map((r) => [r.id, r.name]));
   }, [regions]);
 
+  // 변신 전 몬스터 정보
+  const transformsFromMonster = useMemo(() => {
+    if (!monster || !monster.transformsFromMonsterId) return null;
+    return allMonsters.find((m) => m.id === monster.transformsFromMonsterId) || null;
+  }, [monster, allMonsters]);
+
   // 출현 사냥터(맵) 정보: map_data.json에서 역으로 산출
   const huntingMaps = useMemo(() => {
     if (!monster) return [];
@@ -112,6 +121,22 @@ export default function MonsterDetailModal({ monster, onClose }: MonsterDetailMo
         return a.name.localeCompare(b.name, 'ko');
       });
   }, [monster, maps, regionNameById]);
+
+  // 변신 전 몬스터의 출현 사냥터 정보
+  const transformsFromHuntingMaps = useMemo(() => {
+    if (!transformsFromMonster) return [];
+    return maps
+      .filter((m) => m.isReleased)
+      .filter((m) => m.mapType !== 'town')
+      .filter((m) => m.monsterIds?.includes(transformsFromMonster.id))
+      .sort((a, b) => {
+        const ar = regionNameById.get(a.regionId) ?? a.regionId;
+        const br = regionNameById.get(b.regionId) ?? b.regionId;
+        if (ar !== br) return ar.localeCompare(br, 'ko');
+        if (a.mapType !== b.mapType) return a.mapType.localeCompare(b.mapType);
+        return a.name.localeCompare(b.name, 'ko');
+      });
+  }, [transformsFromMonster, maps, regionNameById]);
 
 
   // 체경비 계산
@@ -427,7 +452,90 @@ export default function MonsterDetailModal({ monster, onClose }: MonsterDetailMo
                     </h3>
                   </div>
 
-                  {huntingMaps.length > 0 ? (
+                  {transformsFromMonster && transformsFromHuntingMaps.length > 0 ? (
+                    <div className="space-y-3">
+                      <div className="flex items-center gap-2 text-xs text-gray-400">
+                        <span>이 몬스터는 다음 몬스터를 사냥하여 변신합니다:</span>
+                      </div>
+                      <div className="flex items-center gap-2 rounded-lg border border-gray-700 bg-gray-800/50 p-2">
+                        {onMonsterClick && (
+                          <button
+                            onClick={() => onMonsterClick(transformsFromMonster)}
+                            className="group relative flex shrink-0 items-center gap-2 rounded-lg border border-gray-700 bg-gray-900/50 p-2 transition-colors hover:border-blue-500 hover:bg-gray-800"
+                            title={transformsFromMonster.name}
+                          >
+                            <div className="relative h-10 w-10 overflow-hidden rounded border border-gray-700">
+                              <Image
+                                src={transformsFromMonster.imageUrl}
+                                alt={transformsFromMonster.name}
+                                fill
+                                className="object-contain"
+                                unoptimized
+                              />
+                            </div>
+                            <span className="text-sm font-medium text-gray-200 group-hover:text-blue-400">
+                              {transformsFromMonster.name}
+                            </span>
+                          </button>
+                        )}
+                        {!onMonsterClick && (
+                          <div className="flex shrink-0 items-center gap-2 rounded-lg border border-gray-700 bg-gray-900/50 p-2">
+                            <div className="relative h-10 w-10 overflow-hidden rounded border border-gray-700">
+                              <Image
+                                src={transformsFromMonster.imageUrl}
+                                alt={transformsFromMonster.name}
+                                fill
+                                className="object-contain"
+                                unoptimized
+                              />
+                            </div>
+                            <span className="text-sm font-medium text-gray-200">
+                              {transformsFromMonster.name}
+                            </span>
+                          </div>
+                        )}
+                      </div>
+                      <div className="max-h-[140px] overflow-y-auto pr-1">
+                        <div className="space-y-2">
+                          {transformsFromHuntingMaps.map((m) => {
+                            const regionName = regionNameById.get(m.regionId) ?? m.regionId;
+                            const spawnCount = m.monsterSpawns?.[transformsFromMonster.id];
+                            const levelRange = m.recommendedLevel
+                              ? `${m.recommendedLevel.min}~${m.recommendedLevel.max}`
+                              : null;
+
+                            return (
+                              <div
+                                key={m.id}
+                                className="flex items-start justify-between gap-3 rounded-xl border border-gray-800 bg-gray-950/20 px-3 py-2"
+                              >
+                                <div className="min-w-0">
+                                  <div className="truncate text-sm font-medium text-gray-100">
+                                    {m.name}
+                                  </div>
+                                  <div className="mt-0.5 flex flex-wrap gap-x-2 gap-y-1 text-xs text-gray-400">
+                                    <span className="truncate">{regionName}</span>
+                                    {levelRange && (
+                                      <>
+                                        <span className="text-gray-600">·</span>
+                                        <span className="latin-font numeric">추천 {levelRange}</span>
+                                      </>
+                                    )}
+                                  </div>
+                                </div>
+
+                                {typeof spawnCount === 'number' && (
+                                  <div className="shrink-0 rounded-full border border-gray-800 bg-gray-900/40 px-2.5 py-1 text-xs text-gray-300 latin-font numeric">
+                                    최대 {spawnCount}마리
+                                  </div>
+                                )}
+                              </div>
+                            );
+                          })}
+                        </div>
+                      </div>
+                    </div>
+                  ) : huntingMaps.length > 0 ? (
                     <div className="max-h-[140px] overflow-y-auto pr-1">
                       <div className="space-y-2">
                         {huntingMaps.map((m) => {

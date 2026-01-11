@@ -35,5 +35,7 @@ export interface Monster {
     /** 메소 (드롭 메소량) */
     mesos?: number;
   };
+  /** 변신 전 몬스터 ID (이 몬스터가 다른 몬스터를 사냥하여 변신한 경우) */
+  transformsFromMonsterId?: string;
 }
 
