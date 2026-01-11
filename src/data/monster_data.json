@@ -8341,5 +8341,239 @@
       "leafre"
     ],
     "attributes": null
+  },
+  {
+    "id": "9400573",
+    "name": "아기 티폰",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9400573/icon?resize=2",
+    "level": 10,
+    "hp": 100,
+    "exp": 10,
+    "isReleased": true,
+    "regionIds": [
+      "masteria-crimsonwood"
+    ],
+    "attributes": null
+  },
+  {
+    "id": "9400583",
+    "name": "레프러콘",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9400583/icon?resize=2",
+    "level": 45,
+    "hp": 2800,
+    "exp": 135,
+    "isReleased": true,
+    "regionIds": [
+      "masteria-crimsonwood"
+    ],
+    "attributes": [
+      "성속성약점",
+      "얼음속성무효"
+    ]
+  },
+  {
+    "id": "9400584",
+    "name": "레프러콘",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9400584/icon?resize=2",
+    "level": 45,
+    "hp": 45,
+    "exp": 0,
+    "isReleased": true,
+    "regionIds": [
+      "masteria-crimsonwood"
+    ],
+    "attributes": [
+      "성속성약점",
+      "얼음속성무효"
+    ]
+  },
+  {
+    "id": "9400586",
+    "name": "크림슨 트리",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9400586/icon?resize=2",
+    "level": 50,
+    "hp": 3500,
+    "exp": 122,
+    "isReleased": true,
+    "regionIds": [
+      "masteria-crimsonwood"
+    ],
+    "attributes": [
+      "불속성약점"
+    ]
+  },
+  {
+    "id": "9400588",
+    "name": "팬텀 트리",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9400588/icon?resize=2",
+    "level": 50,
+    "hp": 3500,
+    "exp": 122,
+    "isReleased": true,
+    "regionIds": [
+      "masteria-crimsonwood"
+    ],
+    "attributes": [
+      "불속성약점"
+    ]
+  },
+  {
+    "id": "9400576",
+    "name": "윈드레이더",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9400576/icon?resize=2",
+    "level": 70,
+    "hp": 16000,
+    "exp": 650,
+    "isReleased": true,
+    "regionIds": [
+      "masteria-crimsonwood"
+    ],
+    "attributes": [
+      "독속성무효"
+    ]
+  },
+  {
+    "id": "9400581",
+    "name": "스톰브레이커",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9400581/icon?resize=2",
+    "level": 80,
+    "hp": 38000,
+    "exp": 1650,
+    "isReleased": true,
+    "regionIds": [
+      "masteria-crimsonwood"
+    ],
+    "attributes": [
+      "전기속성무효"
+    ]
+  },
+  {
+    "id": "9400577",
+    "name": "파이어브랜드",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9400577/icon?resize=2",
+    "level": 90,
+    "hp": 21000,
+    "exp": 910,
+    "isReleased": true,
+    "regionIds": [
+      "masteria-crimsonwood"
+    ],
+    "attributes": [
+      "불속성반감"
+    ]
+  },
+  {
+    "id": "9400578",
+    "name": "파이어브랜드",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9400578/icon?resize=2",
+    "level": 90,
+    "hp": 45000,
+    "exp": 2350,
+    "isReleased": true,
+    "regionIds": [
+      "masteria-crimsonwood"
+    ],
+    "attributes": [
+      "불속성무효",
+      "얼음속성약점"
+    ]
+  },
+  {
+    "id": "9400580",
+    "name": "엘더레이스",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9400580/icon?resize=2",
+    "level": 95,
+    "hp": 51000,
+    "exp": 2480,
+    "isReleased": true,
+    "regionIds": [
+      "masteria-crimsonwood"
+    ],
+    "attributes": [
+      "성속성약점",
+      "얼음속성무효"
+    ]
+  },
+  {
+    "id": "9400574",
+    "name": "티폰",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9400574/icon?resize=2",
+    "level": 100,
+    "hp": 56000,
+    "exp": 1600,
+    "isReleased": true,
+    "regionIds": [
+      "masteria-crimsonwood"
+    ],
+    "attributes": [
+      "얼음속성무효",
+      "독속성무효"
+    ]
+  },
+  {
+    "id": "9400579",
+    "name": "나이트섀도우",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9400579/icon?resize=2",
+    "level": 100,
+    "hp": 70000,
+    "exp": 3600,
+    "isReleased": true,
+    "regionIds": [
+      "masteria-crimsonwood"
+    ],
+    "attributes": [
+      "얼음속성무효",
+      "독속성무효"
+    ]
+  },
+  {
+    "id": "9400549",
+    "name": "머리없는 기수",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9400549/icon?resize=2",
+    "level": 101,
+    "hp": 3500000,
+    "exp": 300000,
+    "isReleased": true,
+    "regionIds": [
+      "masteria-crimsonwood"
+    ],
+    "attributes": [
+      "전기속성약점"
+    ]
+  },
+  {
+    "id": "9400575",
+    "name": "빅풋",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9400575/icon?resize=2",
+    "level": 110,
+    "hp": 32000000,
+    "exp": 2660000,
+    "isReleased": true,
+    "regionIds": [
+      "masteria-crimsonwood"
+    ],
+    "attributes": [
+      "불속성약점",
+      "얼음속성무효",
+      "성속성무효"
+    ]
+  },
+  {
+    "id": "9400582",
+    "name": "크림슨 가디언",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/9400582/icon?resize=2",
+    "level": 120,
+    "hp": 120000,
+    "exp": 6100,
+    "isReleased": true,
+    "regionIds": [
+      "masteria-crimsonwood"
+    ],
+    "attributes": [
+      "불속성반감",
+      "얼음속성반감",
+      "독속성반감",
+      "성속성무효"
+    ]
   }
 ]
