@@ -25,6 +25,7 @@ interface MonsterDetailModalProps {
 
 export default function MonsterDetailModal({ monster, onClose, onMonsterClick }: MonsterDetailModalProps) {
   const [showStats, setShowStats] = useState(false);
+  const [isCompactMode, setIsCompactMode] = useState(true);
   const items = itemData as Item[];
   const regions = regionData as Region[];
   const maps = mapData as GameMap[];
@@ -145,6 +146,27 @@ export default function MonsterDetailModal({ monster, onClose, onMonsterClick }:
     return monster.hp / monster.exp;
   }, [monster]);
 
+  // 중요 드랍 아이템 (featuredDropItemIds)
+  const featuredDropItems = useMemo(() => {
+    if (!monster || !monster.featuredDropItemIds || monster.featuredDropItemIds.length === 0) return [];
+    const filtered = items.filter((item) => monster.featuredDropItemIds?.includes(item.id));
+    
+    // 같은 이름의 아이템이 중복 렌더링되지 않도록 중복 제거
+    const seenNames = new Set<string>();
+    return filtered.filter((item) => {
+      if (seenNames.has(item.name)) {
+        return false;
+      }
+      seenNames.add(item.name);
+      return true;
+    });
+  }, [monster, items]);
+
+  // 약점 여부 확인
+  const hasWeakness = useMemo(() => {
+    return monster?.attributes?.some(attr => attr.includes('약점')) || false;
+  }, [monster]);
+
   // 체경비에 따른 색상 결정
   const getHpPerExpColor = (hpPerExp: number) => {
     if (hpPerExp < 10) {
@@ -257,6 +279,41 @@ export default function MonsterDetailModal({ monster, onClose, onMonsterClick }:
                 </div>
               </div>
 
+              {/* 컴팩트 모드 토글 버튼 */}
+              <button
+                onClick={() => setIsCompactMode(!isCompactMode)}
+                className={`flex items-center gap-1.5 rounded-lg border px-3 py-1.5 text-xs font-medium transition-all ${
+                  isCompactMode
+                    ? 'border-gray-700 bg-gray-800 text-gray-300 hover:border-blue-500/50 hover:bg-gray-750'
+                    : 'border-blue-500 bg-blue-500/20 text-blue-400'
+                }`}
+                title={isCompactMode ? '상세보기로 전환' : '컴팩트 모드로 전환'}
+              >
+                <svg
+                  className="h-4 w-4"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  {isCompactMode ? (
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M4 6h16M4 10h16M4 14h16M4 18h16"
+                    />
+                  ) : (
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M4 6h16M4 12h16M4 18h16"
+                    />
+                  )}
+                </svg>
+                <span className="hidden sm:inline">{isCompactMode ? '상세보기' : '컴팩트'}</span>
+              </button>
+
               <button
                 onClick={onClose}
                 className="bg-gray-900 p-2 text-gray-300 transition-colors hover:text-white"
@@ -281,8 +338,79 @@ export default function MonsterDetailModal({ monster, onClose, onMonsterClick }:
 
           {/* 모달 내용 */}
           <div className="px-4 py-5 sm:px-6 sm:py-6">
-            {/* 핵심 스탯 (최상단: 스캔 우선) */}
-            <div className="mb-6 grid grid-cols-2 gap-3 sm:grid-cols-4">
+            {/* 컴팩트 모드 렌더링 */}
+            {isCompactMode ? (
+              <div className="flex flex-col items-center space-y-6">
+                {/* 큰 썸네일 */}
+                <div className="flex h-[240px] w-[240px] items-center justify-center overflow-hidden rounded-2xl border-2 border-gray-700 bg-gray-900/50 shadow-lg">
+                  <Image
+                    src={monster.imageUrl}
+                    alt={monster.name}
+                    width={240}
+                    height={240}
+                    className="h-full w-full object-contain"
+                    unoptimized
+                  />
+                </div>
+
+                {/* 핵심 정보 카드들 */}
+                <div className="w-full max-w-2xl space-y-4">
+                  {/* 모든 드랍 */}
+                  <div className="rounded-xl border-2 border-blue-500/50 bg-blue-900/30 px-6 py-4 shadow-md">
+                    <div className="mb-3 text-center text-base font-semibold text-blue-300">모든 드랍</div>
+                    {dropItems.length > 0 ? (
+                      <div className="max-h-[300px] overflow-y-auto pr-2">
+                        <div className="flex flex-wrap gap-2 justify-center">
+                          {dropItems.map((item) => (
+                            <span
+                              key={item.id}
+                              className={`rounded-lg border-2 px-3 py-1.5 text-sm font-semibold ${
+                                featuredDropItems.some(fi => fi.id === item.id)
+                                  ? 'border-blue-500/40 bg-blue-800/60 text-blue-200'
+                                  : 'border-gray-600/40 bg-gray-700/60 text-gray-300'
+                              }`}
+                            >
+                              {item.name}
+                            </span>
+                          ))}
+                        </div>
+                      </div>
+                    ) : (
+                      <div className="text-center py-2 text-sm text-gray-400">
+                        드랍 아이템 없음
+                      </div>
+                    )}
+                  </div>
+
+                  {/* 체력 */}
+                  <div className="flex items-center justify-between rounded-xl border-2 border-gray-700 bg-gray-800/50 px-6 py-4 shadow-md">
+                    <span className="text-lg font-semibold text-gray-300">체력 (HP)</span>
+                    <span className="latin-font numeric text-2xl font-bold text-gray-100">
+                      {monster.hp.toLocaleString()}
+                    </span>
+                  </div>
+
+                  {/* 경험치 */}
+                  <div className="flex items-center justify-between rounded-xl border-2 border-blue-500/50 bg-blue-900/30 px-6 py-4 shadow-md">
+                    <span className="text-lg font-semibold text-blue-300">경험치 (EXP)</span>
+                    <span className="latin-font numeric text-2xl font-bold text-blue-400">
+                      {monster.exp.toLocaleString()}
+                    </span>
+                  </div>
+
+                  {/* 체경비 */}
+                  <div className="flex items-center justify-between rounded-xl border-2 border-gray-700 bg-gray-800/50 px-6 py-4 shadow-md">
+                    <span className="text-lg font-semibold text-gray-300">체경비</span>
+                    <span className={`latin-font numeric text-2xl font-bold ${getHpPerExpColor(hpPerExp)}`}>
+                      {hpPerExp === Infinity ? '∞' : hpPerExp.toFixed(2)}
+                    </span>
+                  </div>
+                </div>
+              </div>
+            ) : (
+              <>
+                {/* 핵심 스탯 (최상단: 스캔 우선) */}
+                <div className="mb-6 grid grid-cols-2 gap-3 sm:grid-cols-4">
               <div className="rounded-xl border border-gray-800 bg-gray-900/40 p-4">
                 <div className="text-xs text-gray-400">HP</div>
                 <div className="mt-1 text-lg font-semibold text-gray-100 latin-font numeric">
@@ -628,6 +756,8 @@ export default function MonsterDetailModal({ monster, onClose, onMonsterClick }:
                 </div>
               </div>
             </div>
+          </>
+            )}
           </div>
         </div>
       </div>
