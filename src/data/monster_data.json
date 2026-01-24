@@ -3488,7 +3488,7 @@
   },
   {
     "id": "6230600",
-    "name": "아이스 드레이크",
+    "name": "아이스 드레이크 H",
     "imageUrl": "https://maplestory.io/api/gms/62/mob/6230600/icon?resize=2",
     "level": 64,
     "hp": 7700,
@@ -4597,7 +4597,7 @@
   },
   {
     "id": "8140101",
-    "name": "검은 켄타우로스",
+    "name": "검은 켄타우로스 H",
     "imageUrl": "https://maplestory.io/api/gms/62/mob/8140101/icon?resize=2",
     "level": 88,
     "hp": 37000,

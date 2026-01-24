@@ -23,6 +23,7 @@ export type ItemMediumCategory =
   | 'shield'      // 방패
   | 'earring'     // 귀고리
   | 'cape'        // 망토
+  | 'pendant'     // 펜던트
   // 무기
   | 'snowboard'   // 스노우보드
   | 'one-handed-sword'    // 한손검
