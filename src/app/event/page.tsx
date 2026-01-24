@@ -42,9 +42,21 @@ function normalizeName(name: string): string {
   return name.replace(/\s+/g, '');
 }
 
+// 몬스터 이름에서 알파벳 접미사 제거 (예: "검은 켄타우로스 H" -> "검은 켄타우로스")
+function removeAlphabetSuffix(name: string): string {
+  // 단일 알파벳으로 끝나는 경우 제거 (예: "검은 켄타우로스 H" -> "검은 켄타우로스")
+  const match = name.match(/^(.+?)\s+([A-Z])$/);
+  if (match) {
+    return match[1].trim();
+  }
+  return name;
+}
+
 // 몬스터 이름으로 알파벳 찾기
 function getAlphabetsForMonster(monsterName: string): string[] {
-  const normalized = normalizeName(monsterName);
+  // 알파벳 접미사 제거
+  const cleanedName = removeAlphabetSuffix(monsterName);
+  const normalized = normalizeName(cleanedName);
   const alphabets: string[] = [];
   
   for (const [alphabet, monsters] of Object.entries(ALPHABET_MONSTERS)) {
@@ -215,7 +227,7 @@ export default function EventPage() {
               className={`
                 px-4 py-2 rounded-lg text-sm font-medium transition-colors
                 ${viewMode === 'region'
-                  ? 'bg-neutral-20 text-foreground'
+                  ? 'bg-purple-600/30 border border-purple-500/50 text-purple-300 shadow-md shadow-purple-500/20'
                   : 'bg-neutral-10 text-neutral-60 hover:text-foreground hover:bg-neutral-20'
                 }
               `}
@@ -230,7 +242,7 @@ export default function EventPage() {
               className={`
                 px-4 py-2 rounded-lg text-sm font-medium transition-colors
                 ${viewMode === 'alphabet'
-                  ? 'bg-neutral-20 text-foreground'
+                  ? 'bg-purple-600/30 border border-purple-500/50 text-purple-300 shadow-md shadow-purple-500/20'
                   : 'bg-neutral-10 text-neutral-60 hover:text-foreground hover:bg-neutral-20'
                 }
               `}
@@ -247,10 +259,10 @@ export default function EventPage() {
               <button
                 onClick={() => setSelectedRegion(null)}
                 className={`
-                  px-4 py-2 rounded-lg text-sm font-medium transition-colors
+                  px-4 py-2 rounded-lg text-sm font-medium transition-colors border
                   ${selectedRegion === null
-                    ? 'bg-neutral-20 text-foreground'
-                    : 'bg-neutral-10 text-neutral-60 hover:text-foreground hover:bg-neutral-20'
+                    ? 'bg-purple-600/30 border-purple-500/50 text-purple-300 shadow-md shadow-purple-500/20'
+                    : 'bg-neutral-10 border-neutral-30 text-neutral-60 hover:text-foreground hover:bg-neutral-20 hover:border-neutral-40'
                   }
                 `}
               >
@@ -261,10 +273,10 @@ export default function EventPage() {
                   key={region!.id}
                   onClick={() => setSelectedRegion(region!.id)}
                   className={`
-                    px-4 py-2 rounded-lg text-sm font-medium transition-colors
+                    px-4 py-2 rounded-lg text-sm font-medium transition-colors border
                     ${selectedRegion === region!.id
-                      ? 'bg-neutral-20 text-foreground'
-                      : 'bg-neutral-10 text-neutral-60 hover:text-foreground hover:bg-neutral-20'
+                      ? 'bg-purple-600/30 border-purple-500/50 text-purple-300 shadow-md shadow-purple-500/20'
+                      : 'bg-neutral-10 border-neutral-30 text-neutral-60 hover:text-foreground hover:bg-neutral-20 hover:border-neutral-40'
                     }
                   `}
                 >
@@ -277,10 +289,10 @@ export default function EventPage() {
               <button
                 onClick={() => setSelectedAlphabet(null)}
                 className={`
-                  px-4 py-2 rounded-lg text-sm font-medium transition-colors
+                  px-4 py-2 rounded-lg text-sm font-medium transition-colors border
                   ${selectedAlphabet === null
-                    ? 'bg-neutral-20 text-foreground'
-                    : 'bg-neutral-10 text-neutral-60 hover:text-foreground hover:bg-neutral-20'
+                    ? 'bg-purple-600/30 border-purple-500/50 text-purple-300 shadow-md shadow-purple-500/20'
+                    : 'bg-neutral-10 border-neutral-30 text-neutral-60 hover:text-foreground hover:bg-neutral-20 hover:border-neutral-40'
                   }
                 `}
               >
@@ -291,10 +303,10 @@ export default function EventPage() {
                   key={alphabet}
                   onClick={() => setSelectedAlphabet(alphabet)}
                   className={`
-                    px-4 py-2 rounded-lg text-sm font-medium transition-colors
+                    px-4 py-2 rounded-lg text-sm font-medium transition-colors border
                     ${selectedAlphabet === alphabet
-                      ? 'bg-neutral-20 text-foreground'
-                      : 'bg-neutral-10 text-neutral-60 hover:text-foreground hover:bg-neutral-20'
+                      ? 'bg-purple-600/30 border-purple-500/50 text-purple-300 shadow-md shadow-purple-500/20'
+                      : 'bg-neutral-10 border-neutral-30 text-neutral-60 hover:text-foreground hover:bg-neutral-20 hover:border-neutral-40'
                     }
                   `}
                 >
