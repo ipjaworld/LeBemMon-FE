@@ -4,10 +4,11 @@ import { useState, useMemo } from 'react';
 import { Monster } from '@/types/monster';
 import monsterData from '@/data/monster_data.json';
 import regionData from '@/data/region_data.json';
+import MonsterDetailModal from '@/components/MonsterDetailModal';
 
 // 알파벳 드롭 정보 (스크립트에서 생성된 데이터 기반)
 const ALPHABET_MONSTERS: Record<string, string[]> = {
-  'H': ['주황버섯', '콜드샤크', '좀비버섯', '주니어스톤볼', '파이어스톤볼', '레쉬', '울트라그레이', '다크와이번', '돼지', '아이스드레이크'],
+  'H': ['주황버섯', '콜드샤크', '좀비버섯', '주니어스톤볼', '파이어스톤볼', '레쉬', '울트라그레이', '다크와이번', '돼지', '아이스드레이크', '검은 켄타우로스'],
   'A': ['리티', '타우로스피어', '루나픽시', '본피쉬', '비틀', '호돌이', '초록버섯', '마스터크로노스', '화이트팽', '스텀프', '주니어페페 인형', '트위터', '마이너 좀비', '페어리'],
   'P': ['쿨리좀비', '헥터', '포이즌푸퍼', '다크클라크', '주니어씰', '블루와이번', '깨비', '레이스', '검은 켄타우로스', '레드와이번', '와일드보어', '파이어보어', '페페', '엑스텀프', '호문쿨루', '머미독'],
   'Y': ['리티', '파란달팽이', '주니어페페', '버크', '스쿠버페페', '파이렛', '구름여우', '하프', '헹키', '스켈독', '버블링', '플라이아이', '마티안', '붉은 켄타우로스', '푸른 켄타우로스'],
@@ -70,11 +71,16 @@ function getAlphabetsForMonster(monsterName: string): string[] {
   return [...new Set(alphabets)].sort();
 }
 
+type ViewMode = 'region' | 'alphabet';
+
 export default function EventPage() {
   const monsters = monsterData as Monster[];
   const regions = regionData as Array<{ id: string; name: string; parentId: string | null; type: string }>;
   
+  const [viewMode, setViewMode] = useState<ViewMode>('region');
   const [selectedRegion, setSelectedRegion] = useState<string | null>(null);
+  const [selectedAlphabet, setSelectedAlphabet] = useState<string | null>(null);
+  const [selectedMonster, setSelectedMonster] = useState<Monster | null>(null);
 
   // 지역별로 몬스터 그룹화
   const monstersByRegion = useMemo(() => {
@@ -111,6 +117,34 @@ export default function EventPage() {
     return grouped;
   }, [monsters]);
 
+  // 알파벳별로 몬스터 그룹화
+  const monstersByAlphabet = useMemo(() => {
+    const grouped: Record<string, Array<Monster & { alphabets: string[] }>> = {};
+    const monsterMap = new Map<string, Monster & { alphabets: string[] }>();
+    
+    monsters.forEach((monster) => {
+      const alphabets = getAlphabetsForMonster(monster.name);
+      if (alphabets.length === 0) return; // 알파벳을 드롭하지 않는 몬스터 제외
+      
+      const monsterWithAlphabets = { ...monster, alphabets };
+      monsterMap.set(monster.id, monsterWithAlphabets);
+      
+      // 각 알파벳별로 그룹화
+      alphabets.forEach((alphabet) => {
+        if (!grouped[alphabet]) {
+          grouped[alphabet] = [];
+        }
+        // 중복 체크
+        const existingInAlphabet = grouped[alphabet].find(m => m.id === monster.id);
+        if (!existingInAlphabet) {
+          grouped[alphabet].push(monsterWithAlphabets);
+        }
+      });
+    });
+    
+    return grouped;
+  }, [monsters]);
+
   // 필터링된 지역 목록
   const filteredRegions = useMemo(() => {
     const regionMap = new Map(regions.map(r => [r.id, r]));
@@ -122,61 +156,153 @@ export default function EventPage() {
     return filtered;
   }, [monstersByRegion, regions]);
 
-  // 선택된 지역의 몬스터
+  // 사용 가능한 알파벳 목록 (정렬)
+  const availableAlphabets = useMemo(() => {
+    return Object.keys(monstersByAlphabet).sort();
+  }, [monstersByAlphabet]);
+
+  // 선택된 지역 또는 알파벳의 몬스터
   const displayedMonsters = useMemo(() => {
-    if (!selectedRegion) {
-      // 전체 보기: 중복 제거
-      const monsterMap = new Map<string, Monster & { alphabets: string[] }>();
-      Object.values(monstersByRegion).flat().forEach(monster => {
-        const existing = monsterMap.get(monster.id);
-        if (existing) {
-          // 알파벳 합치기
-          existing.alphabets = [...new Set([...existing.alphabets, ...monster.alphabets])].sort();
-        } else {
-          monsterMap.set(monster.id, { ...monster });
-        }
-      });
-      return Array.from(monsterMap.values());
+    if (viewMode === 'region') {
+      if (!selectedRegion) {
+        // 전체 보기: 중복 제거
+        const monsterMap = new Map<string, Monster & { alphabets: string[] }>();
+        Object.values(monstersByRegion).flat().forEach(monster => {
+          const existing = monsterMap.get(monster.id);
+          if (existing) {
+            // 알파벳 합치기
+            existing.alphabets = [...new Set([...existing.alphabets, ...monster.alphabets])].sort();
+          } else {
+            monsterMap.set(monster.id, { ...monster });
+          }
+        });
+        return Array.from(monsterMap.values());
+      }
+      return monstersByRegion[selectedRegion] || [];
+    } else {
+      // 알파벳별 보기
+      if (!selectedAlphabet) {
+        // 전체 보기: 중복 제거
+        const monsterMap = new Map<string, Monster & { alphabets: string[] }>();
+        Object.values(monstersByAlphabet).flat().forEach(monster => {
+          const existing = monsterMap.get(monster.id);
+          if (existing) {
+            // 알파벳 합치기
+            existing.alphabets = [...new Set([...existing.alphabets, ...monster.alphabets])].sort();
+          } else {
+            monsterMap.set(monster.id, { ...monster });
+          }
+        });
+        return Array.from(monsterMap.values());
+      }
+      return monstersByAlphabet[selectedAlphabet] || [];
     }
-    return monstersByRegion[selectedRegion] || [];
-  }, [selectedRegion, monstersByRegion]);
+  }, [viewMode, selectedRegion, selectedAlphabet, monstersByRegion, monstersByAlphabet]);
 
   return (
     <div className="min-h-screen bg-neutral-0">
       <div className="container mx-auto px-4 py-8">
-        <h1 className="text-3xl font-bold mb-6 text-foreground">이벤트 알파벳 드롭 몬스터</h1>
-        
-        {/* 지역 필터 */}
-        <div className="mb-6">
-          <div className="flex flex-wrap gap-2">
+        <div className="flex items-center justify-between mb-6">
+          <h1 className="text-3xl font-bold text-foreground">이벤트 알파벳 드롭 몬스터</h1>
+          
+          {/* 탭 */}
+          <div className="flex gap-2">
             <button
-              onClick={() => setSelectedRegion(null)}
+              onClick={() => {
+                setViewMode('region');
+                setSelectedAlphabet(null);
+              }}
               className={`
                 px-4 py-2 rounded-lg text-sm font-medium transition-colors
-                ${selectedRegion === null
+                ${viewMode === 'region'
                   ? 'bg-neutral-20 text-foreground'
                   : 'bg-neutral-10 text-neutral-60 hover:text-foreground hover:bg-neutral-20'
                 }
               `}
             >
-              전체
+              지역별 보기
             </button>
-            {filteredRegions.map((region) => (
+            <button
+              onClick={() => {
+                setViewMode('alphabet');
+                setSelectedRegion(null);
+              }}
+              className={`
+                px-4 py-2 rounded-lg text-sm font-medium transition-colors
+                ${viewMode === 'alphabet'
+                  ? 'bg-neutral-20 text-foreground'
+                  : 'bg-neutral-10 text-neutral-60 hover:text-foreground hover:bg-neutral-20'
+                }
+              `}
+            >
+              알파벳별 보기
+            </button>
+          </div>
+        </div>
+        
+        {/* 필터 */}
+        <div className="mb-6">
+          {viewMode === 'region' ? (
+            <div className="flex flex-wrap gap-2">
               <button
-                key={region!.id}
-                onClick={() => setSelectedRegion(region!.id)}
+                onClick={() => setSelectedRegion(null)}
                 className={`
                   px-4 py-2 rounded-lg text-sm font-medium transition-colors
-                  ${selectedRegion === region!.id
+                  ${selectedRegion === null
                     ? 'bg-neutral-20 text-foreground'
                     : 'bg-neutral-10 text-neutral-60 hover:text-foreground hover:bg-neutral-20'
                   }
                 `}
               >
-                {region!.name}
+                전체
               </button>
-            ))}
-          </div>
+              {filteredRegions.map((region) => (
+                <button
+                  key={region!.id}
+                  onClick={() => setSelectedRegion(region!.id)}
+                  className={`
+                    px-4 py-2 rounded-lg text-sm font-medium transition-colors
+                    ${selectedRegion === region!.id
+                      ? 'bg-neutral-20 text-foreground'
+                      : 'bg-neutral-10 text-neutral-60 hover:text-foreground hover:bg-neutral-20'
+                    }
+                  `}
+                >
+                  {region!.name}
+                </button>
+              ))}
+            </div>
+          ) : (
+            <div className="flex flex-wrap gap-2">
+              <button
+                onClick={() => setSelectedAlphabet(null)}
+                className={`
+                  px-4 py-2 rounded-lg text-sm font-medium transition-colors
+                  ${selectedAlphabet === null
+                    ? 'bg-neutral-20 text-foreground'
+                    : 'bg-neutral-10 text-neutral-60 hover:text-foreground hover:bg-neutral-20'
+                  }
+                `}
+              >
+                전체
+              </button>
+              {availableAlphabets.map((alphabet) => (
+                <button
+                  key={alphabet}
+                  onClick={() => setSelectedAlphabet(alphabet)}
+                  className={`
+                    px-4 py-2 rounded-lg text-sm font-medium transition-colors
+                    ${selectedAlphabet === alphabet
+                      ? 'bg-neutral-20 text-foreground'
+                      : 'bg-neutral-10 text-neutral-60 hover:text-foreground hover:bg-neutral-20'
+                    }
+                  `}
+                >
+                  {alphabet}
+                </button>
+              ))}
+            </div>
+          )}
         </div>
 
         {/* 몬스터 그리드 */}
@@ -184,7 +310,8 @@ export default function EventPage() {
           {displayedMonsters.map((monster) => (
             <div
               key={monster.id}
-              className="bg-neutral-10 rounded-lg p-3 border border-neutral-30 hover:border-neutral-40 transition-colors"
+              onClick={() => setSelectedMonster(monster)}
+              className="bg-neutral-10 rounded-lg p-3 border border-neutral-30 hover:border-neutral-40 transition-colors cursor-pointer"
             >
               <div className="aspect-square mb-2 bg-neutral-20 rounded overflow-hidden">
                 <img
@@ -215,10 +342,20 @@ export default function EventPage() {
 
         {displayedMonsters.length === 0 && (
           <div className="text-center py-12 text-neutral-60">
-            선택한 지역에 알파벳을 드롭하는 몬스터가 없습니다.
+            {viewMode === 'region'
+              ? '선택한 지역에 알파벳을 드롭하는 몬스터가 없습니다.'
+              : '선택한 알파벳을 드롭하는 몬스터가 없습니다.'
+            }
           </div>
         )}
       </div>
+      
+      {/* 상세 몬스터 카드 모달 */}
+      <MonsterDetailModal
+        monster={selectedMonster}
+        onClose={() => setSelectedMonster(null)}
+        onMonsterClick={(monster) => setSelectedMonster(monster)}
+      />
     </div>
   );
 }
