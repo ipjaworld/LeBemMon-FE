@@ -3,7 +3,6 @@
 import { useState, useMemo, useEffect, useRef, useCallback } from 'react';
 import MonsterCard from '@/components/MonsterCard';
 import MonsterDetailModal from '@/components/MonsterDetailModal';
-import Footer from '@/components/Footer';
 import LevelRangeSettingsButton from '@/components/LevelRangeSettingsButton';
 import { Monster } from '@/types/monster';
 import { Region } from '@/types/region';
@@ -1225,9 +1224,6 @@ export default function MonsterSearch({ monsters }: MonsterSearchProps) {
             <p>레벨을 입력하시면 몬스터 목록이 표시됩니다.</p>
           </div>
         )}
-      </div>
-      <div className="mt-auto">
-        <Footer />
       </div>
       
       {/* 상세 몬스터 카드 모달 */}
