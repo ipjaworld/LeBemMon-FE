@@ -38,6 +38,9 @@ export default function Header() {
               );
             })}
           </div>
+          <div className="text-xs text-neutral-60">
+            제작: 가스실광분견(민재쿤)
+          </div>
         </nav>
       </div>
     </header>
