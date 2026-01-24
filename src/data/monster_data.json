@@ -1913,7 +1913,8 @@
     "isReleased": true,
     "regionIds": [
       "victoria",
-      "victoria-ellinia"
+      "victoria-ellinia",
+      "victoria-perion"
     ],
     "attributes": [
       "성속성약점"
@@ -1936,7 +1937,8 @@
     "isReleased": true,
     "regionIds": [
       "victoria",
-      "victoria-ellinia"
+      "victoria-ellinia",
+      "victoria-perion"
     ],
     "attributes": [
       "성속성약점"
@@ -2781,7 +2783,8 @@
     "isReleased": true,
     "regionIds": [
       "victoria",
-      "victoria-ellinia"
+      "victoria-ellinia",
+      "victoria-perion"
     ],
     "attributes": [
       "성속성약점"
@@ -3538,7 +3541,8 @@
     "isReleased": true,
     "regionIds": [
       "victoria",
-      "victoria-ellinia"
+      "victoria-ellinia",
+      "victoria-perion"
     ],
     "attributes": [
       "성속성약점"
@@ -4034,7 +4038,8 @@
     "isReleased": true,
     "regionIds": [
       "victoria",
-      "victoria-ellinia"
+      "victoria-ellinia",
+      "victoria-perion"
     ],
     "attributes": [
       "성속성약점",
