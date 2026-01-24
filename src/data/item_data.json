@@ -21796,5 +21796,15 @@
     "jobCategory": "archer",
     "jobSubCategory": "archer-common",
     "isPopularMasteryBook": true
+  },
+  {
+    "id": "1122000",
+    "name": "혼테일의 목걸이",
+    "imageUrl": "https://maplestory.io/api/gms/200/item/1122000/icon?resize=2",
+    "majorCategory": "common",
+    "mediumCategory": "pendant",
+    "isReleased": true,
+    "reqLevel": 120,
+    "upgradeSlots": 3
   }
 ]
