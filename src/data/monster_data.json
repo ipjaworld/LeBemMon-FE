@@ -4597,7 +4597,7 @@
   },
   {
     "id": "8140101",
-    "name": "검은 켄타우로스 H",
+    "name": "검은 켄타우로스",
     "imageUrl": "https://maplestory.io/api/gms/62/mob/8140101/icon?resize=2",
     "level": 88,
     "hp": 37000,
@@ -5705,7 +5705,7 @@
   {
     "id": "8190005",
     "name": "네스트골렘",
-    "imageUrl": "https://maplestory.io/api/gms/62/mob/8190003/icon?resize=2",
+    "imageUrl": "https://maplestory.io/api/gms/62/mob/8190002/icon?resize=2",
     "level": 110,
     "hp": 80000,
     "exp": 4450,
