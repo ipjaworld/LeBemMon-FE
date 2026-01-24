@@ -255,6 +255,11 @@
     "dropRate": 20.0
   },
   {
+    "monsterId": "130100",
+    "itemId": "4000235",
+    "dropRate": 60.0
+  },
+  {
     "monsterId": "130101",
     "itemId": "1032003",
     "dropRate": 0.01
@@ -338,6 +343,11 @@
     "monsterId": "130101",
     "itemId": "4020004",
     "dropRate": 0.3
+  },
+  {
+    "monsterId": "130101",
+    "itemId": "4000238",
+    "dropRate": 60.0
   },
   {
     "monsterId": "210100",
@@ -23191,6 +23201,16 @@
   },
   {
     "monsterId": "7130002",
+    "itemId": "4000238",
+    "dropRate": 60.0
+  },
+  {
+    "monsterId": "7130002",
+    "itemId": "4000244",
+    "dropRate": 60.0
+  },
+  {
+    "monsterId": "7130002",
     "itemId": "4004001",
     "dropRate": 0.1
   },
@@ -27038,6 +27058,11 @@
   },
   {
     "monsterId": "8140001",
+    "itemId": "4000236",
+    "dropRate": 60.0
+  },
+  {
+    "monsterId": "8140001",
     "itemId": "4000238",
     "dropRate": 60.0
   },
@@ -27153,6 +27178,11 @@
     "monsterId": "8140002",
     "itemId": "2070005",
     "dropRate": 0.003
+  },
+  {
+    "monsterId": "8140002",
+    "itemId": "4000238",
+    "dropRate": 60.0
   },
   {
     "monsterId": "8140002",
@@ -27643,11 +27673,6 @@
   },
   {
     "monsterId": "8140102",
-    "itemId": "4000232",
-    "dropRate": 60.0
-  },
-  {
-    "monsterId": "8140102",
     "itemId": "4004004",
     "dropRate": 0.2
   },
@@ -27655,6 +27680,11 @@
     "monsterId": "8140102",
     "itemId": "4006000",
     "dropRate": 0.07
+  },
+  {
+    "monsterId": "8140102",
+    "itemId": "4000239",
+    "dropRate": 60.0
   },
   {
     "monsterId": "8140102",
@@ -28186,6 +28216,11 @@
     "monsterId": "8140200",
     "itemId": "4020001",
     "dropRate": 0.2
+  },
+  {
+    "monsterId": "8140200",
+    "itemId": "4000233",
+    "dropRate": 60.0
   },
   {
     "monsterId": "8140200",
@@ -29223,6 +29258,11 @@
     "monsterId": "8141000",
     "itemId": "4020008",
     "dropRate": 0.5
+  },
+  {
+    "monsterId": "8141000",
+    "itemId": "4000232",
+    "dropRate": 60.0
   },
   {
     "monsterId": "8141000",
@@ -30859,6 +30899,11 @@
   },
   {
     "monsterId": "8150301",
+    "itemId": "4000230",
+    "dropRate": 60.0
+  },
+  {
+    "monsterId": "8150301",
     "itemId": "4000244",
     "dropRate": 0.0003
   },
@@ -30866,11 +30911,6 @@
     "monsterId": "8150301",
     "itemId": "4000245",
     "dropRate": 0.0003
-  },
-  {
-    "monsterId": "8150301",
-    "itemId": "4000269",
-    "dropRate": 60.0
   },
   {
     "monsterId": "8150301",
@@ -32549,6 +32589,11 @@
     "itemId": "2022003"
   },
   {
+    "monsterId": "8190005",
+    "itemId": "4000244",
+    "dropRate": 60.0
+  },
+  {
     "monsterId": "8220003",
     "itemId": "1302056",
     "dropRate": 0.2
@@ -33904,6 +33949,11 @@
   {
     "monsterId": "9300135",
     "itemId": "2040029"
+  },
+  {
+    "monsterId": "9300135",
+    "itemId": "4000244",
+    "dropRate": 60.0
   },
   {
     "monsterId": "9300144",
