@@ -12,7 +12,7 @@ const ALPHABET_MONSTERS: Record<string, string[]> = {
   'A': ['스파커', '와일드보어', '브라운테니', '포이즌푸퍼', '구름여우', '크로노스', '리셀스퀴드', '다크엑스텀프', '벨라모아', '사이티', '스켈레톤지휘관', '라이오너', '망령', '프리져', '샐리온'],
   'P': ['믹스골렘', '쿨리좀비', '호문쿨루', '뿔버섯', '러스터픽시', '페페', '핀호브'],
   'Y': ['붉은 켄타우로스', '푸른 켄타우로스', '레쉬', '호걸', '슬라임', '스티지', '비틀', '묘선'],
-  'N': ['루이넬', '커즈아이', '스타픽시', '네오 휴로이드', '헹키', '하프', '마티안', '주니어페페', '리티', '파란달팽이', '로이드', '상급닌자', '주황버섯', '초록버섯'],
+  'N': ['루이넬', '커즈아이', '스타픽시', '네오 휴로이드', '헹키', '하프', '마티안', '주니어페페', '리티', '파란달팽이', '로이드', '상급닌자', '주황버섯', '초록버섯', '옐로우 버블티'],
   'E': ['데스테니', '좀비버섯', '화이트팽', '루나픽시', '블러드 하프', '물도깨비', '버크', '듀얼버크', '삼미호', '주니어레이스', '듀얼 비틀'],
   'W': ['다크와이번', '주황버섯', '월묘', '마스터크로노스', '와일드보어', '늙은 도라지', '미요캐츠', '쿨리좀비', '스텀프', '믹스골렘'],
   'R': ['바이킹', '리게이터', '크로코', '주니어스톤볼', '헥터', '망둥이', '플래툰크로노스', '리티', '샐리온', '페어리'],
@@ -202,9 +202,9 @@ export default function EventPageClient() {
 
   return (
     <div className="min-h-screen bg-neutral-0">
-      <div className="container mx-auto px-4 py-8">
-        <div className="flex items-center justify-between mb-6">
-          <h1 className="text-3xl font-bold text-foreground">이벤트 알파벳 드롭 몬스터</h1>
+      <div className="container mx-auto px-4 py-4 md:py-8">
+        <div className="mb-4 md:mb-6">
+          <h1 className="text-xl md:text-3xl font-bold text-foreground mb-4 md:mb-0">이벤트 알파벳 드롭 몬스터</h1>
           
           <div className="flex gap-2">
             <button
@@ -213,7 +213,7 @@ export default function EventPageClient() {
                 setSelectedAlphabet(null);
               }}
               className={`
-                px-4 py-2 rounded-lg text-sm font-medium transition-colors
+                flex-1 md:flex-none px-3 md:px-4 py-2 rounded-lg text-sm font-medium transition-colors
                 ${viewMode === 'region'
                   ? 'bg-purple-600/30 border border-purple-500/50 text-purple-300 shadow-md shadow-purple-500/20'
                   : 'bg-neutral-10 text-neutral-60 hover:text-foreground hover:bg-neutral-20'
@@ -228,7 +228,7 @@ export default function EventPageClient() {
                 setSelectedRegion(null);
               }}
               className={`
-                px-4 py-2 rounded-lg text-sm font-medium transition-colors
+                flex-1 md:flex-none px-3 md:px-4 py-2 rounded-lg text-sm font-medium transition-colors
                 ${viewMode === 'alphabet'
                   ? 'bg-purple-600/30 border border-purple-500/50 text-purple-300 shadow-md shadow-purple-500/20'
                   : 'bg-neutral-10 text-neutral-60 hover:text-foreground hover:bg-neutral-20'
@@ -242,65 +242,101 @@ export default function EventPageClient() {
         
         <div className="mb-6">
           {viewMode === 'region' ? (
-            <div className="flex flex-wrap gap-2">
-              <button
-                onClick={() => setSelectedRegion(null)}
-                className={`
-                  px-4 py-2 rounded-lg text-sm font-medium transition-colors border
-                  ${selectedRegion === null
-                    ? 'bg-purple-600/30 border-purple-500/50 text-purple-300 shadow-md shadow-purple-500/20'
-                    : 'bg-neutral-10 border-neutral-30 text-neutral-60 hover:text-foreground hover:bg-neutral-20 hover:border-neutral-40'
-                  }
-                `}
-              >
-                전체
-              </button>
-              {filteredRegions.map((region) => (
+            <>
+              {/* 모바일: select box */}
+              <div className="md:hidden">
+                <select
+                  value={selectedRegion || ''}
+                  onChange={(e) => setSelectedRegion(e.target.value || null)}
+                  className="w-full px-4 py-2 rounded-lg text-sm font-medium bg-neutral-10 border border-neutral-30 text-foreground focus:outline-none focus:ring-2 focus:ring-purple-500/50 focus:border-purple-500/50"
+                >
+                  <option value="">전체</option>
+                  {filteredRegions.map((region) => (
+                    <option key={region!.id} value={region!.id}>
+                      {region!.name}
+                    </option>
+                  ))}
+                </select>
+              </div>
+              {/* 데스크톱: 버튼 그리드 */}
+              <div className="hidden md:flex flex-wrap gap-2">
                 <button
-                  key={region!.id}
-                  onClick={() => setSelectedRegion(region!.id)}
+                  onClick={() => setSelectedRegion(null)}
                   className={`
                     px-4 py-2 rounded-lg text-sm font-medium transition-colors border
-                    ${selectedRegion === region!.id
+                    ${selectedRegion === null
                       ? 'bg-purple-600/30 border-purple-500/50 text-purple-300 shadow-md shadow-purple-500/20'
                       : 'bg-neutral-10 border-neutral-30 text-neutral-60 hover:text-foreground hover:bg-neutral-20 hover:border-neutral-40'
                     }
                   `}
                 >
-                  {region!.name}
+                  전체
                 </button>
-              ))}
-            </div>
+                {filteredRegions.map((region) => (
+                  <button
+                    key={region!.id}
+                    onClick={() => setSelectedRegion(region!.id)}
+                    className={`
+                      px-4 py-2 rounded-lg text-sm font-medium transition-colors border
+                      ${selectedRegion === region!.id
+                        ? 'bg-purple-600/30 border-purple-500/50 text-purple-300 shadow-md shadow-purple-500/20'
+                        : 'bg-neutral-10 border-neutral-30 text-neutral-60 hover:text-foreground hover:bg-neutral-20 hover:border-neutral-40'
+                      }
+                    `}
+                  >
+                    {region!.name}
+                  </button>
+                ))}
+              </div>
+            </>
           ) : (
-            <div className="flex flex-wrap gap-2">
-              <button
-                onClick={() => setSelectedAlphabet(null)}
-                className={`
-                  px-4 py-2 rounded-lg text-sm font-medium transition-colors border
-                  ${selectedAlphabet === null
-                    ? 'bg-purple-600/30 border-purple-500/50 text-purple-300 shadow-md shadow-purple-500/20'
-                    : 'bg-neutral-10 border-neutral-30 text-neutral-60 hover:text-foreground hover:bg-neutral-20 hover:border-neutral-40'
-                  }
-                `}
-              >
-                전체
-              </button>
-              {availableAlphabets.map((alphabet) => (
+            <>
+              {/* 모바일: select box */}
+              <div className="md:hidden">
+                <select
+                  value={selectedAlphabet || ''}
+                  onChange={(e) => setSelectedAlphabet(e.target.value || null)}
+                  className="w-full px-4 py-2 rounded-lg text-sm font-medium bg-neutral-10 border border-neutral-30 text-foreground focus:outline-none focus:ring-2 focus:ring-purple-500/50 focus:border-purple-500/50"
+                >
+                  <option value="">전체</option>
+                  {availableAlphabets.map((alphabet) => (
+                    <option key={alphabet} value={alphabet}>
+                      {alphabet}
+                    </option>
+                  ))}
+                </select>
+              </div>
+              {/* 데스크톱: 버튼 그리드 */}
+              <div className="hidden md:flex flex-wrap gap-2">
                 <button
-                  key={alphabet}
-                  onClick={() => setSelectedAlphabet(alphabet)}
+                  onClick={() => setSelectedAlphabet(null)}
                   className={`
                     px-4 py-2 rounded-lg text-sm font-medium transition-colors border
-                    ${selectedAlphabet === alphabet
+                    ${selectedAlphabet === null
                       ? 'bg-purple-600/30 border-purple-500/50 text-purple-300 shadow-md shadow-purple-500/20'
                       : 'bg-neutral-10 border-neutral-30 text-neutral-60 hover:text-foreground hover:bg-neutral-20 hover:border-neutral-40'
                     }
                   `}
                 >
-                  {alphabet}
+                  전체
                 </button>
-              ))}
-            </div>
+                {availableAlphabets.map((alphabet) => (
+                  <button
+                    key={alphabet}
+                    onClick={() => setSelectedAlphabet(alphabet)}
+                    className={`
+                      px-4 py-2 rounded-lg text-sm font-medium transition-colors border
+                      ${selectedAlphabet === alphabet
+                        ? 'bg-purple-600/30 border-purple-500/50 text-purple-300 shadow-md shadow-purple-500/20'
+                        : 'bg-neutral-10 border-neutral-30 text-neutral-60 hover:text-foreground hover:bg-neutral-20 hover:border-neutral-40'
+                      }
+                    `}
+                  >
+                    {alphabet}
+                  </button>
+                ))}
+              </div>
+            </>
           )}
         </div>
 

@@ -10,6 +10,9 @@ export default function Footer() {
             <p className="text-xs text-gray-500 sm:text-sm">
               메이플스토리월드 메이플랜드 레벨 범위 몬스터 검색 서비스
             </p>
+            <p className="mt-2 text-xs text-gray-500 md:hidden">
+              제작: 가스실광분견(민재쿤)
+            </p>
           </div>
           <div className="flex flex-col gap-1">
             <p className="text-xs text-gray-500">
