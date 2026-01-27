@@ -6,21 +6,34 @@ import monsterData from '@/data/monster_data.json';
 import regionData from '@/data/region_data.json';
 import MonsterDetailModal from '@/components/MonsterDetailModal';
 
-// 알파벳 드롭 정보 (스크립트에서 생성된 데이터 기반)
+// 신뢰도 높은 알파벳 드롭 정보 (제보 자료 - 신뢰도 100%)
+const VERIFIED_ALPHABET_MONSTERS: Record<string, string[]> = {
+  'H': ['파랑버섯', '옥토퍼스', '스톤골렘', '듀얼 파이렛', '다크레쉬', '아이스 드레이크', '검은 켄타우로스', '하급닌자', '블랙라츠', '비급', '본피쉬'],
+  'A': ['사이티', 'G팬텀워치', '머미독', '브라운테니', '크로노스', '포이즌 푸퍼', '프리저', '도라지'],
+  'P': ['뿔버섯', '플래툰크로노스', '사이티', '믹스골렘', '쿨리좀비', '콜드아이', '호저', '흑저', '별다람쥐', '바나드그레이', '호문클루', '주니어카투스', '러스터픽시', '루모', '트리플루모', '훈련용짚인형', '파이어보어', '스켈레톤사병'],
+  'Y': ['뿔버섯', '슬라임', '호돌이', '네펜데스', '다크네펜데스', '미스릴뮤테', '라츠', '레츠', '묘선', '푸른 켄타우로스', '다크 코니언'],
+  'N': ['루나픽시', '커즈아이', '네오휴로이드', '헹키', '루이넬', '마티안', '초록버섯', '리본돼지', '깨비', '뉴트주니어'],
+  'E': ['옥토퍼스', '루나픽시', '화이트팽', '스타픽시', '데스테니', '좀비버섯', '듀얼버크', '스켈독', '팬더테니', '타우로마시스'],
+  'W': ['파랑버섯', '다크와이번', '스텀프', '빨간달팽이', '늙은도라지', '레쉬', '마스터크로노스', '미요캐츠', '강화된 미스릴뮤테', '양', '타우로스피어', '네스트골렘', '스켈로스'],
+  'R': ['플래툰 크로노스', '리게이터', '크로코', '주니어스톤볼', '헥터', '마이너 좀비', '망둥이', '틱톡', '스콜피언', '울트라그레이', '바이킹'],
+};
+
+// 알파벳 드롭 정보 (전체 데이터 - 기존 + 제보)
 const ALPHABET_MONSTERS: Record<string, string[]> = {
-  'H': ['검은 켄타우로스', '파란버섯', '삼미호', '블루와이번', '본피쉬', '비급', '예티', '호브', '메카티안', '돼지', '핑크테니', '다크와이번'],
-  'A': ['스파커', '와일드보어', '브라운테니', '포이즌푸퍼', '구름여우', '크로노스', '리셀스퀴드', '다크엑스텀프', '벨라모아', '사이티', '스켈레톤지휘관', '라이오너', '망령', '프리져', '샐리온'],
-  'P': ['믹스골렘', '쿨리좀비', '호문쿨루', '뿔버섯', '러스터픽시', '페페', '핀호브'],
-  'Y': ['붉은 켄타우로스', '푸른 켄타우로스', '레쉬', '호걸', '슬라임', '스티지', '비틀', '묘선'],
-  'N': ['루이넬', '커즈아이', '스타픽시', '네오 휴로이드', '헹키', '하프', '마티안', '주니어페페', '리티', '파란달팽이', '로이드', '상급닌자', '주황버섯', '초록버섯', '옐로우 버블티'],
-  'E': ['데스테니', '좀비버섯', '화이트팽', '루나픽시', '블러드 하프', '물도깨비', '버크', '듀얼버크', '삼미호', '주니어레이스', '듀얼 비틀'],
-  'W': ['다크와이번', '주황버섯', '월묘', '마스터크로노스', '와일드보어', '늙은 도라지', '미요캐츠', '쿨리좀비', '스텀프', '믹스골렘'],
-  'R': ['바이킹', '리게이터', '크로코', '주니어스톤볼', '헥터', '망둥이', '플래툰크로노스', '리티', '샐리온', '페어리'],
+  'H': ['검은 켄타우로스', '파란버섯', '파랑버섯', '옥토퍼스', '스톤골렘', '듀얼 파이렛', '다크레쉬', '다크 레쉬', '아이스 드레이크', '아이스드레이크', '하급닌자', '블랙라츠', '블랙 라츠', '비급', '본피쉬', '본 피쉬', '삼미호', '블루와이번', '예티', '호브', '메카티안', '돼지', '핑크테니', '다크와이번'],
+  'A': ['사이티', 'G팬텀워치', '머미독', '브라운테니', '크로노스', '포이즌 푸퍼', '포이즌푸퍼', '프리저', '프리져', '도라지', '스파커', '와일드보어', '구름여우', '리셀스퀴드', '다크엑스텀프', '벨라모아', '스켈레톤지휘관', '라이오너', '망령', '샐리온'],
+  'P': ['뿔버섯', '플래툰크로노스', '플래툰 크로노스', '사이티', '믹스골렘', '쿨리좀비', '콜드아이', '호저', '흑저', '별다람쥐', '바나드그레이', '호문클루', '호문쿨루', '주니어카투스', '러스터픽시', '루모', '트리플루모', '훈련용짚인형', '파이어보어', '스켈레톤사병', '페페', '핀호브'],
+  'Y': ['뿔버섯', '슬라임', '호돌이', '네펜데스', '다크네펜데스', '미스릴뮤테', '라츠', '레츠', '묘선', '푸른 켄타우로스', '다크 코니언', '다크코니언', '붉은 켄타우로스', '레쉬', '호걸', '스티지', '비틀'],
+  'N': ['루나픽시', '커즈아이', '네오휴로이드', '네오 휴로이드', '헹키', '루이넬', '마티안', '초록버섯', '리본돼지', '깨비', '뉴트주니어', '스타픽시', '하프', '주니어페페', '리티', '파란달팽이', '로이드', '상급닌자', '주황버섯', '옐로우 버블티'],
+  'E': ['옥토퍼스', '루나픽시', '화이트팽', '스타픽시', '데스테니', '좀비버섯', '듀얼버크', '스켈독', '팬더테니', '타우로마시스', '블러드 하프', '물도깨비', '버크', '삼미호', '주니어레이스', '듀얼 비틀'],
+  'W': ['파랑버섯', '파란버섯', '다크와이번', '스텀프', '빨간달팽이', '늙은도라지', '늙은 도라지', '레쉬', '마스터크로노스', '마스터 크로노스', '미요캐츠', '강화된 미스릴뮤테', '양', '타우로스피어', '네스트골렘', '스켈로스', '주황버섯', '월묘', '와일드보어', '쿨리좀비', '믹스골렘'],
+  'R': ['플래툰 크로노스', '플래툰크로노스', '리게이터', '크로코', '주니어스톤볼', '헥터', '마이너 좀비', '마이너좀비', '망둥이', '틱톡', '스콜피언', '울트라그레이', '바이킹', '리티', '샐리온', '페어리'],
 };
 
 // 이름 변형 매핑
 const NAME_VARIANTS: Record<string, string[]> = {
-  '파란달팽이': ['파란 달팽이'],
+  '파란달팽이': ['파란 달팽이', '파랑버섯'],
+  '파랑버섯': ['파란버섯', '파란 달팽이'],
   '빨간달팽이': ['빨간 달팽이'],
   '스포어': ['스포아'],
   '검은 켄타우로스': ['검은켄타우로스', '검켄'],
@@ -43,6 +56,20 @@ const NAME_VARIANTS: Record<string, string[]> = {
   '듀얼 비틀': ['듀얼비틀'],
   '샐리온': ['주니어 샐리온'],
   '데스테니': ['마스터 데스테니'],
+  '다크레쉬': ['다크 레쉬'],
+  '아이스 드레이크': ['아이스드레이크'],
+  '포이즌 푸퍼': ['포이즌푸퍼'],
+  '프리저': ['프리져'],
+  '플래툰크로노스': ['플래툰 크로노스'],
+  '플래툰 크로노스': ['플래툰크로노스'],
+  '호문클루': ['호문쿨루'],
+  '호문쿨루': ['호문클루'],
+  '다크 코니언': ['다크코니언'],
+  '다크코니언': ['다크 코니언'],
+  '늙은도라지': ['늙은 도라지'],
+  '늙은 도라지': ['늙은도라지'],
+  '강화된 미스릴뮤테': ['강화된미스릴뮤테'],
+  '미스릴뮤테': ['미스릴 뮤테'],
 };
 
 // 이름 정규화 함수
@@ -59,32 +86,55 @@ function removeAlphabetSuffix(name: string): string {
   return name;
 }
 
-// 몬스터 이름으로 알파벳 찾기
-function getAlphabetsForMonster(monsterName: string): string[] {
+// 알파벳 정보 타입
+type AlphabetInfo = {
+  alphabet: string;
+  isVerified: boolean;
+};
+
+// 몬스터가 특정 알파벳을 드롭하는지 확인 (신뢰도 포함)
+function isMonsterInList(monsterName: string, monsterList: string[]): boolean {
   const cleanedName = removeAlphabetSuffix(monsterName);
   const normalized = normalizeName(cleanedName);
-  const alphabets: string[] = [];
   
-  for (const [alphabet, monsters] of Object.entries(ALPHABET_MONSTERS)) {
-    for (const monster of monsters) {
-      const normalizedMonster = normalizeName(monster);
-      
-      if (normalizedMonster === normalized) {
-        alphabets.push(alphabet);
-        break;
-      }
-      
-      const variants = NAME_VARIANTS[monster] || [];
-      for (const variant of variants) {
-        if (normalizeName(variant) === normalized) {
-          alphabets.push(alphabet);
-          break;
-        }
+  for (const monster of monsterList) {
+    const normalizedMonster = normalizeName(monster);
+    
+    if (normalizedMonster === normalized) {
+      return true;
+    }
+    
+    const variants = NAME_VARIANTS[monster] || [];
+    for (const variant of variants) {
+      if (normalizeName(variant) === normalized) {
+        return true;
       }
     }
   }
   
-  return [...new Set(alphabets)].sort();
+  return false;
+}
+
+// 몬스터 이름으로 알파벳 찾기 (신뢰도 정보 포함)
+function getAlphabetsForMonster(monsterName: string): AlphabetInfo[] {
+  const cleanedName = removeAlphabetSuffix(monsterName);
+  const normalized = normalizeName(cleanedName);
+  const alphabetMap = new Map<string, boolean>();
+  
+  // 전체 데이터에서 알파벳 찾기
+  for (const [alphabet, monsters] of Object.entries(ALPHABET_MONSTERS)) {
+    if (isMonsterInList(monsterName, monsters)) {
+      // 신뢰도 높은 데이터에 포함되어 있는지 확인
+      const verifiedMonsters = VERIFIED_ALPHABET_MONSTERS[alphabet] || [];
+      const isVerified = isMonsterInList(monsterName, verifiedMonsters);
+      alphabetMap.set(alphabet, isVerified);
+    }
+  }
+  
+  // 알파벳 순서대로 정렬하여 반환
+  return Array.from(alphabetMap.entries())
+    .map(([alphabet, isVerified]) => ({ alphabet, isVerified }))
+    .sort((a, b) => a.alphabet.localeCompare(b.alphabet));
 }
 
 type ViewMode = 'region' | 'alphabet';
@@ -99,8 +149,8 @@ export default function EventPageClient() {
   const [selectedMonster, setSelectedMonster] = useState<Monster | null>(null);
 
   const monstersByRegion = useMemo(() => {
-    const grouped: Record<string, Array<Monster & { alphabets: string[] }>> = {};
-    const monsterMap = new Map<string, Monster & { alphabets: string[] }>();
+    const grouped: Record<string, Array<Monster & { alphabets: AlphabetInfo[] }>> = {};
+    const monsterMap = new Map<string, Monster & { alphabets: AlphabetInfo[] }>();
     
     monsters.forEach((monster) => {
       const alphabets = getAlphabetsForMonster(monster.name);
@@ -108,7 +158,17 @@ export default function EventPageClient() {
       
       const existing = monsterMap.get(monster.id);
       if (existing) {
-        existing.alphabets = [...new Set([...existing.alphabets, ...alphabets])].sort();
+        // 중복 제거 및 병합
+        const alphabetMap = new Map<string, boolean>();
+        existing.alphabets.forEach(a => alphabetMap.set(a.alphabet, a.isVerified));
+        alphabets.forEach(a => {
+          const current = alphabetMap.get(a.alphabet);
+          // 둘 중 하나라도 verified면 verified로 유지
+          alphabetMap.set(a.alphabet, current === true || a.isVerified);
+        });
+        existing.alphabets = Array.from(alphabetMap.entries())
+          .map(([alphabet, isVerified]) => ({ alphabet, isVerified }))
+          .sort((a, b) => a.alphabet.localeCompare(b.alphabet));
       } else {
         const monsterWithAlphabets = { ...monster, alphabets };
         monsterMap.set(monster.id, monsterWithAlphabets);
@@ -130,8 +190,8 @@ export default function EventPageClient() {
   }, [monsters]);
 
   const monstersByAlphabet = useMemo(() => {
-    const grouped: Record<string, Array<Monster & { alphabets: string[] }>> = {};
-    const monsterMap = new Map<string, Monster & { alphabets: string[] }>();
+    const grouped: Record<string, Array<Monster & { alphabets: AlphabetInfo[] }>> = {};
+    const monsterMap = new Map<string, Monster & { alphabets: AlphabetInfo[] }>();
     
     monsters.forEach((monster) => {
       const alphabets = getAlphabetsForMonster(monster.name);
@@ -140,7 +200,8 @@ export default function EventPageClient() {
       const monsterWithAlphabets = { ...monster, alphabets };
       monsterMap.set(monster.id, monsterWithAlphabets);
       
-      alphabets.forEach((alphabet) => {
+      alphabets.forEach((alphabetInfo) => {
+        const alphabet = alphabetInfo.alphabet;
         if (!grouped[alphabet]) {
           grouped[alphabet] = [];
         }
@@ -171,11 +232,20 @@ export default function EventPageClient() {
   const displayedMonsters = useMemo(() => {
     if (viewMode === 'region') {
       if (!selectedRegion) {
-        const monsterMap = new Map<string, Monster & { alphabets: string[] }>();
+        const monsterMap = new Map<string, Monster & { alphabets: AlphabetInfo[] }>();
         Object.values(monstersByRegion).flat().forEach(monster => {
           const existing = monsterMap.get(monster.id);
           if (existing) {
-            existing.alphabets = [...new Set([...existing.alphabets, ...monster.alphabets])].sort();
+            // 중복 제거 및 병합
+            const alphabetMap = new Map<string, boolean>();
+            existing.alphabets.forEach(a => alphabetMap.set(a.alphabet, a.isVerified));
+            monster.alphabets.forEach(a => {
+              const current = alphabetMap.get(a.alphabet);
+              alphabetMap.set(a.alphabet, current === true || a.isVerified);
+            });
+            existing.alphabets = Array.from(alphabetMap.entries())
+              .map(([alphabet, isVerified]) => ({ alphabet, isVerified }))
+              .sort((a, b) => a.alphabet.localeCompare(b.alphabet));
           } else {
             monsterMap.set(monster.id, { ...monster });
           }
@@ -185,11 +255,20 @@ export default function EventPageClient() {
       return monstersByRegion[selectedRegion] || [];
     } else {
       if (!selectedAlphabet) {
-        const monsterMap = new Map<string, Monster & { alphabets: string[] }>();
+        const monsterMap = new Map<string, Monster & { alphabets: AlphabetInfo[] }>();
         Object.values(monstersByAlphabet).flat().forEach(monster => {
           const existing = monsterMap.get(monster.id);
           if (existing) {
-            existing.alphabets = [...new Set([...existing.alphabets, ...monster.alphabets])].sort();
+            // 중복 제거 및 병합
+            const alphabetMap = new Map<string, boolean>();
+            existing.alphabets.forEach(a => alphabetMap.set(a.alphabet, a.isVerified));
+            monster.alphabets.forEach(a => {
+              const current = alphabetMap.get(a.alphabet);
+              alphabetMap.set(a.alphabet, current === true || a.isVerified);
+            });
+            existing.alphabets = Array.from(alphabetMap.entries())
+              .map(([alphabet, isVerified]) => ({ alphabet, isVerified }))
+              .sort((a, b) => a.alphabet.localeCompare(b.alphabet));
           } else {
             monsterMap.set(monster.id, { ...monster });
           }
@@ -360,12 +439,16 @@ export default function EventPageClient() {
                   {monster.name}
                 </h3>
                 <div className="flex flex-wrap gap-1 justify-center">
-                  {monster.alphabets.map((alphabet) => (
+                  {monster.alphabets.map((alphabetInfo) => (
                     <span
-                      key={alphabet}
-                      className="inline-flex items-center justify-center w-6 h-6 rounded bg-neutral-20 text-xs font-bold text-foreground"
+                      key={alphabetInfo.alphabet}
+                      className="inline-flex items-center justify-center min-w-[1.5rem] h-6 px-1 rounded bg-neutral-20 text-xs font-bold text-foreground"
+                      title={alphabetInfo.isVerified ? undefined : '확인되지 않은 정보'}
                     >
-                      {alphabet}
+                      {alphabetInfo.alphabet}
+                      {!alphabetInfo.isVerified && (
+                        <span className="ml-0.5 text-[0.625rem] text-neutral-50">?</span>
+                      )}
                     </span>
                   ))}
                 </div>
