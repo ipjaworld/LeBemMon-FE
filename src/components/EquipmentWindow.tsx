@@ -11,6 +11,8 @@ interface EquipmentWindowProps {
   selectedJob: JobCategoryId | null;
   onSlotClick?: (slotType: EquipmentSlotType) => void;
   onJobChange?: (job: JobCategoryId | null) => void; // 선택적, 상단에서 관리할 수도 있음
+  /** 반지 윗칸(도핑) 슬롯 클릭 시 */
+  onDopingSlotClick?: () => void;
 }
 
 /**
@@ -22,6 +24,7 @@ export default function EquipmentWindow({
   selectedJob,
   onSlotClick,
   onJobChange,
+  onDopingSlotClick,
 }: EquipmentWindowProps) {
 
   const jobs = jobData as JobCategory[];
@@ -100,6 +103,22 @@ export default function EquipmentWindow({
         <div className="grid grid-cols-5 gap-1 w-[400px] bg-[#f0f0f0] p-2 rounded">
           {gridLayout.map((row, rowIndex) =>
             row.map((slot, colIndex) => {
+              // 반지 윗칸(row 0, col 4): 도핑 슬롯 (장비처럼 한 칸 차지)
+              if (rowIndex === 0 && colIndex === 4 && onDopingSlotClick) {
+                return (
+                  <button
+                    key={`${rowIndex}-${colIndex}`}
+                    type="button"
+                    onClick={onDopingSlotClick}
+                    className="aspect-square relative border-2 border-[#e0559a] rounded bg-[#ff69b4] hover:bg-[#ff85c1] cursor-pointer flex flex-col items-center justify-center p-1 transition-colors"
+                    style={{ boxShadow: 'inset 0 0 4px rgba(224, 85, 154, 0.4)' }}
+                    aria-label="도핑 입력"
+                    title="도핑"
+                  >
+                    <span className="text-white text-lg font-bold">?</span>
+                  </button>
+                );
+              }
               if (!slot) {
                 return (
                   <div

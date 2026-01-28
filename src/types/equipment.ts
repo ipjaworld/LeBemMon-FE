@@ -95,6 +95,10 @@ export interface EquipmentOptions {
   int?: number;
   /** 운 */
   luk?: number;
+  /** 명중률 */
+  accuracy?: number;
+  /** 회피율 */
+  evasion?: number;
   /** 강화 횟수 */
   upgradeCount?: number;
 }

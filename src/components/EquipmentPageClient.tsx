@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useCallback, useEffect } from 'react';
+import { useState, useCallback, useEffect, useRef } from 'react';
 import EquipmentWindow from '@/components/EquipmentWindow';
 import EquipmentOptionPanel from '@/components/EquipmentOptionPanel';
 import CharacterStatWindow from '@/components/CharacterStatWindow';
@@ -41,6 +41,14 @@ export default function EquipmentPageClient() {
   const [loadedPreset, setLoadedPreset] = useState<EquipmentPreset | null>(null);
   const [saveModalOpen, setSaveModalOpen] = useState(false);
   const [lastSnapshot, setLastSnapshot] = useState<CharacterSnapshot | null>(null);
+  /** 버프/도핑: 버프, 도핑1, 도핑2 (격수=공격력에만, 법사=마력에만 반영) */
+  const [buffValue, setBuffValue] = useState<number>(0);
+  const [doping1, setDoping1] = useState<number>(0);
+  const [doping2, setDoping2] = useState<number>(0);
+  /** 도핑 입력 패널 표시 여부 */
+  const [showDopingPanel, setShowDopingPanel] = useState(false);
+  const dopingPanelRef = useRef<HTMLDivElement>(null);
+  const leftColumnRef = useRef<HTMLDivElement>(null);
 
   const jobs = jobData as JobCategory[];
 
@@ -51,6 +59,18 @@ export default function EquipmentPageClient() {
   useEffect(() => {
     refreshPresets();
   }, [refreshPresets]);
+
+  // 도핑 패널 외부 클릭 시 닫기 (왼쪽 장비 영역·패널 밖 클릭 시)
+  useEffect(() => {
+    if (!showDopingPanel) return;
+    const handleClickOutside = (e: MouseEvent) => {
+      const el = e.target as Node;
+      if (dopingPanelRef.current?.contains(el) || leftColumnRef.current?.contains(el)) return;
+      setShowDopingPanel(false);
+    };
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, [showDopingPanel]);
 
   const isSimulatorDisabled = selectedJob === null || selectedJob === 'common';
   const [equipment, setEquipment] = useState<Record<EquipmentSlotType, EquipmentItem | null>>({
@@ -282,21 +302,74 @@ export default function EquipmentPageClient() {
 
         {!isSimulatorDisabled && (
           <div className="flex gap-6 items-stretch">
-            <div className="flex-shrink-0 flex">
+            {/* 왼쪽 장비 영역: 도핑 슬롯은 장비창 그리드 내 반지 윗칸에 있음 */}
+            <div ref={leftColumnRef} className="flex-shrink-0 flex relative">
+              {showDopingPanel && (
+                <div
+                  ref={dopingPanelRef}
+                  className="absolute top-14 right-0 z-20 w-56 bg-neutral-20 border-2 border-neutral-40 rounded-lg shadow-xl p-3 space-y-3"
+                >
+                  <div className="text-sm font-semibold text-neutral-80">버프/도핑</div>
+                  <div>
+                    <label className="block text-xs font-medium text-neutral-70 mb-1">버프</label>
+                    <input
+                      type="number"
+                      min={0}
+                      value={buffValue || ''}
+                      onChange={(e) => setBuffValue(parseInt(e.target.value, 10) || 0)}
+                      className="w-full px-2 py-1.5 bg-neutral-10 border border-neutral-30 rounded text-neutral-80 text-sm"
+                      placeholder="0"
+                    />
+                  </div>
+                  <div>
+                    <label className="block text-xs font-medium text-neutral-70 mb-1">도핑1</label>
+                    <input
+                      type="number"
+                      min={0}
+                      value={doping1 || ''}
+                      onChange={(e) => setDoping1(parseInt(e.target.value, 10) || 0)}
+                      className="w-full px-2 py-1.5 bg-neutral-10 border border-neutral-30 rounded text-neutral-80 text-sm"
+                      placeholder="0"
+                    />
+                  </div>
+                  <div>
+                    <label className="block text-xs font-medium text-neutral-70 mb-1">도핑2</label>
+                    <input
+                      type="number"
+                      min={0}
+                      value={doping2 || ''}
+                      onChange={(e) => setDoping2(parseInt(e.target.value, 10) || 0)}
+                      className="w-full px-2 py-1.5 bg-neutral-10 border border-neutral-30 rounded text-neutral-80 text-sm"
+                      placeholder="0"
+                    />
+                  </div>
+                </div>
+              )}
               <EquipmentWindow
                 equipment={equipment}
                 hasFullBody={hasFullBody}
                 selectedJob={selectedJob || 'common'}
                 onSlotClick={handleSlotClick}
                 onJobChange={undefined}
+                onDopingSlotClick={() => setShowDopingPanel((v) => !v)}
               />
             </div>
-            
+
             <div className="flex-shrink-0 flex">
               <CharacterStatWindow
                 key={presetLoadKey}
                 selectedJob={selectedJob!}
                 equipment={equipment}
+                dopingAttackPower={
+                  selectedJob === 'warrior' || selectedJob === 'archer' || selectedJob === 'rogue' || selectedJob === 'aran' || selectedJob === 'pirate'
+                    ? buffValue + doping1 + doping2
+                    : 0
+                }
+                dopingMagicPower={
+                  selectedJob === 'mage' || selectedJob === 'evan'
+                    ? buffValue + doping1 + doping2
+                    : 0
+                }
                 characterName={loadedPreset?.character.characterName}
                 initialLevel={loadedPreset?.character.level}
                 initialAllocatedStats={loadedPreset?.character.allocatedStats}
