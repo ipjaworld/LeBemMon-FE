@@ -255,6 +255,24 @@ export default function EquipmentOptionModal({
               />
             </div>
             <div>
+              <label className="block text-sm font-medium mb-1 text-neutral-70">명중률</label>
+              <input
+                type="number"
+                value={options.accuracy || ''}
+                onChange={(e) => handleOptionChange('accuracy', parseInt(e.target.value) || 0)}
+                className="w-full px-3 py-2 bg-neutral-10 border border-neutral-30 rounded text-neutral-80 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              />
+            </div>
+            <div>
+              <label className="block text-sm font-medium mb-1 text-neutral-70">회피율</label>
+              <input
+                type="number"
+                value={options.evasion || ''}
+                onChange={(e) => handleOptionChange('evasion', parseInt(e.target.value) || 0)}
+                className="w-full px-3 py-2 bg-neutral-10 border border-neutral-30 rounded text-neutral-80 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              />
+            </div>
+            <div>
               <label className="block text-sm font-medium mb-1 text-neutral-70">업그레이드 횟수</label>
               <input
                 type="number"
