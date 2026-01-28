@@ -69,6 +69,9 @@ export default function CharacterStatWindow({
   );
   /** 격수용 공격력 ? 뱃지 툴팁 표시 (호버 또는 터치로 토글) */
   const [showAttackPowerHint, setShowAttackPowerHint] = useState(false);
+  /** 합마력 / 손재주 ? 뱃지 툴팁 (호버) */
+  const [showMagicPowerHint, setShowMagicPowerHint] = useState(false);
+  const [showCraftsmanshipHint, setShowCraftsmanshipHint] = useState(false);
 
   // 순수스탯 직접 입력 모드 (각 스탯별로 독립적으로 관리)
   const [isDirectInputMode, setIsDirectInputMode] = useState<{
@@ -423,7 +426,7 @@ export default function CharacterStatWindow({
           </div>
 
           {/* 전사/궁수/도적: 공격력, 명중률, 회피율 */}
-          {(selectedJob === 'warrior' || selectedJob === 'archer' || selectedJob === 'rogue' || selectedJob === 'aran' || selectedJob === 'pirate') && selectedJob !== 'common' && (
+          {(selectedJob === 'warrior' || selectedJob === 'archer' || selectedJob === 'rogue' || selectedJob === 'aran' || selectedJob === 'pirate') && (
             <>
               <div className="flex justify-between items-center">
                 <span className="flex items-center gap-1">
@@ -469,16 +472,68 @@ export default function CharacterStatWindow({
             </>
           )}
 
-          {/* 마법사/에반: 합마력, 손재주, 회피율 — 합마력 = 장비 마력 합 + 스탯 INT(메용20 적용/미적용) */}
+          {/* 마법사/에반: 합마력, 손재주, 회피율 — 합마력 = 장비+버프+도핑+순수스탯 마력 합 / 손재주 = floor(INT/10)+floor(LUK/10) */}
           {(selectedJob === 'mage' || selectedJob === 'evan') && (
             <>
               <div className="flex justify-between items-center">
-                <span className="text-[#ff69b4] font-semibold text-sm">합마력</span>
+                <span className="flex items-center gap-1">
+                  <span className="text-[#ff69b4] font-semibold text-sm">합마력</span>
+                  <span
+                    role="button"
+                    tabIndex={0}
+                    aria-label="합마력 설명"
+                    className="relative inline-flex items-center justify-center w-4 h-4 rounded-full bg-[#808080] text-white text-xs font-bold cursor-help hover:bg-[#666] focus:outline-none focus:ring-2 focus:ring-[#4a90e2] select-none"
+                    onMouseEnter={() => setShowMagicPowerHint(true)}
+                    onMouseLeave={() => setShowMagicPowerHint(false)}
+                    onKeyDown={(e) => {
+                      if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        setShowMagicPowerHint((v) => !v);
+                      }
+                    }}
+                  >
+                    ?
+                    {showMagicPowerHint && (
+                      <span
+                        className="absolute bottom-full left-1/2 -translate-x-1/2 mb-1 z-10 px-2 py-1.5 text-xs font-medium text-white bg-[#333] rounded shadow-lg text-center pointer-events-none whitespace-nowrap"
+                      >
+                        장비와 버프, 도핑, 순수스탯에서 모든 마력의 합입니다.
+                      </span>
+                    )}
+                  </span>
+                </span>
                 <span className="text-[#555555] text-sm">{equipmentStats.magicPower + finalStats.int + dopingMagicPower}</span>
               </div>
               <div className="flex justify-between items-center">
-                <span className="text-[#ff69b4] font-semibold text-sm">손재주</span>
-                <span className="text-[#555555] text-sm">{finalStats.dex}</span>
+                <span className="flex items-center gap-1">
+                  <span className="text-[#ff69b4] font-semibold text-sm">손재주</span>
+                  <span
+                    role="button"
+                    tabIndex={0}
+                    aria-label="손재주 설명"
+                    className="relative inline-flex items-center justify-center w-4 h-4 rounded-full bg-[#808080] text-white text-xs font-bold cursor-help hover:bg-[#666] focus:outline-none focus:ring-2 focus:ring-[#4a90e2] select-none"
+                    onMouseEnter={() => setShowCraftsmanshipHint(true)}
+                    onMouseLeave={() => setShowCraftsmanshipHint(false)}
+                    onKeyDown={(e) => {
+                      if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        setShowCraftsmanshipHint((v) => !v);
+                      }
+                    }}
+                  >
+                    ?
+                    {showCraftsmanshipHint && (
+                      <span
+                        className="absolute bottom-full left-1/2 -translate-x-1/2 mb-1 z-10 px-2 py-1.5 text-xs font-medium text-white bg-[#333] rounded shadow-lg text-center pointer-events-none whitespace-nowrap"
+                      >
+                        마법 명중률에 관여하는 수치입니다.
+                      </span>
+                    )}
+                  </span>
+                </span>
+                <span className="text-[#555555] text-sm">
+                  {Math.floor(finalStats.int / 10) + Math.floor(finalStats.luk / 10)}
+                </span>
               </div>
               <div className="flex justify-between items-center">
                 <span className="text-[#ff69b4] font-semibold text-sm">회피율</span>
@@ -551,14 +606,6 @@ export default function CharacterStatWindow({
                     {finalStats.str} ({leftStat('str')}+{rightStat('str')})
                   </span>
                   <button
-                    onClick={() => handleAllRemainingToStat('str')}
-                    disabled={availableAp <= 0}
-                    className="text-[#4a90e2] hover:text-[#357abd] disabled:text-gray-400 disabled:cursor-not-allowed text-xs font-bold"
-                    title="남은 AP 전부 올리기"
-                  >
-                    ↑↑
-                  </button>
-                  <button
                     onClick={() => {
                       setDirectInputValues((prev) => ({ ...prev, str: leftStat('str') }));
                       setIsDirectInputMode((prev) => ({ ...prev, str: true }));
@@ -569,26 +616,26 @@ export default function CharacterStatWindow({
                     +
                   </button>
                   <button
-                    onClick={(e) => handleStatChange('str', 1, e.shiftKey)}
+                    onClick={(e) => {
+                      if (e.ctrlKey) handleAllRemainingToStat('str');
+                      else handleStatChange('str', 1, e.shiftKey);
+                    }}
                     disabled={availableAp <= 0}
                     className="text-[#4a90e2] hover:text-[#357abd] disabled:text-gray-400 disabled:cursor-not-allowed"
+                    title="ctrl+클릭: 남은 스탯 전부 배분, shift+클릭: 10개씩 스탯 배분"
                   >
                     ↑
                   </button>
                   <button
-                    onClick={(e) => handleStatChange('str', -1, e.shiftKey)}
+                    onClick={(e) => {
+                      if (e.ctrlKey) handleClearStat('str');
+                      else handleStatChange('str', -1, e.shiftKey);
+                    }}
                     disabled={allocatedStats.str <= 0}
                     className="text-[#4a90e2] hover:text-[#357abd] disabled:text-gray-400 disabled:cursor-not-allowed"
+                    title="ctrl+클릭: 해당 스탯 전부 제거, shift+클릭: 10개씩 제거"
                   >
                     ↓
-                  </button>
-                  <button
-                    onClick={() => handleClearStat('str')}
-                    disabled={allocatedStats.str <= 0}
-                    className="text-[#4a90e2] hover:text-[#357abd] disabled:text-gray-400 disabled:cursor-not-allowed text-xs font-bold"
-                    title="해당 스탯 전부 빼기 (기본만 남김)"
-                  >
-                    ↓↓
                   </button>
                 </>
               )}
@@ -637,14 +684,6 @@ export default function CharacterStatWindow({
                     {finalStats.dex} ({leftStat('dex')}+{rightStat('dex')})
                   </span>
                   <button
-                    onClick={() => handleAllRemainingToStat('dex')}
-                    disabled={availableAp <= 0}
-                    className="text-[#4a90e2] hover:text-[#357abd] disabled:text-gray-400 disabled:cursor-not-allowed text-xs font-bold"
-                    title="남은 AP 전부 올리기"
-                  >
-                    ↑↑
-                  </button>
-                  <button
                     onClick={() => {
                       setDirectInputValues((prev) => ({ ...prev, dex: leftStat('dex') }));
                       setIsDirectInputMode((prev) => ({ ...prev, dex: true }));
@@ -655,26 +694,26 @@ export default function CharacterStatWindow({
                     +
                   </button>
                   <button
-                    onClick={(e) => handleStatChange('dex', 1, e.shiftKey)}
+                    onClick={(e) => {
+                      if (e.ctrlKey) handleAllRemainingToStat('dex');
+                      else handleStatChange('dex', 1, e.shiftKey);
+                    }}
                     disabled={availableAp <= 0}
                     className="text-[#4a90e2] hover:text-[#357abd] disabled:text-gray-400 disabled:cursor-not-allowed"
+                    title="ctrl+클릭: 남은 스탯 전부 배분, shift+클릭: 10개씩 스탯 배분"
                   >
                     ↑
                   </button>
                   <button
-                    onClick={(e) => handleStatChange('dex', -1, e.shiftKey)}
+                    onClick={(e) => {
+                      if (e.ctrlKey) handleClearStat('dex');
+                      else handleStatChange('dex', -1, e.shiftKey);
+                    }}
                     disabled={allocatedStats.dex <= 0}
                     className="text-[#4a90e2] hover:text-[#357abd] disabled:text-gray-400 disabled:cursor-not-allowed"
+                    title="ctrl+클릭: 해당 스탯 전부 제거, shift+클릭: 10개씩 제거"
                   >
                     ↓
-                  </button>
-                  <button
-                    onClick={() => handleClearStat('dex')}
-                    disabled={allocatedStats.dex <= 0}
-                    className="text-[#4a90e2] hover:text-[#357abd] disabled:text-gray-400 disabled:cursor-not-allowed text-xs font-bold"
-                    title="해당 스탯 전부 빼기 (기본만 남김)"
-                  >
-                    ↓↓
                   </button>
                 </>
               )}
@@ -723,14 +762,6 @@ export default function CharacterStatWindow({
                     {finalStats.int} ({leftStat('int')}+{rightStat('int')})
                   </span>
                   <button
-                    onClick={() => handleAllRemainingToStat('int')}
-                    disabled={availableAp <= 0}
-                    className="text-[#4a90e2] hover:text-[#357abd] disabled:text-gray-400 disabled:cursor-not-allowed text-xs font-bold"
-                    title="남은 AP 전부 올리기"
-                  >
-                    ↑↑
-                  </button>
-                  <button
                     onClick={() => {
                       setDirectInputValues((prev) => ({ ...prev, int: leftStat('int') }));
                       setIsDirectInputMode((prev) => ({ ...prev, int: true }));
@@ -741,26 +772,26 @@ export default function CharacterStatWindow({
                     +
                   </button>
                   <button
-                    onClick={(e) => handleStatChange('int', 1, e.shiftKey)}
+                    onClick={(e) => {
+                      if (e.ctrlKey) handleAllRemainingToStat('int');
+                      else handleStatChange('int', 1, e.shiftKey);
+                    }}
                     disabled={availableAp <= 0}
                     className="text-[#4a90e2] hover:text-[#357abd] disabled:text-gray-400 disabled:cursor-not-allowed"
+                    title="ctrl+클릭: 남은 스탯 전부 배분, shift+클릭: 10개씩 스탯 배분"
                   >
                     ↑
                   </button>
                   <button
-                    onClick={(e) => handleStatChange('int', -1, e.shiftKey)}
+                    onClick={(e) => {
+                      if (e.ctrlKey) handleClearStat('int');
+                      else handleStatChange('int', -1, e.shiftKey);
+                    }}
                     disabled={allocatedStats.int <= 0}
                     className="text-[#4a90e2] hover:text-[#357abd] disabled:text-gray-400 disabled:cursor-not-allowed"
+                    title="ctrl+클릭: 해당 스탯 전부 제거, shift+클릭: 10개씩 제거"
                   >
                     ↓
-                  </button>
-                  <button
-                    onClick={() => handleClearStat('int')}
-                    disabled={allocatedStats.int <= 0}
-                    className="text-[#4a90e2] hover:text-[#357abd] disabled:text-gray-400 disabled:cursor-not-allowed text-xs font-bold"
-                    title="해당 스탯 전부 빼기 (기본만 남김)"
-                  >
-                    ↓↓
                   </button>
                 </>
               )}
@@ -809,14 +840,6 @@ export default function CharacterStatWindow({
                     {finalStats.luk} ({leftStat('luk')}+{rightStat('luk')})
                   </span>
                   <button
-                    onClick={() => handleAllRemainingToStat('luk')}
-                    disabled={availableAp <= 0}
-                    className="text-[#4a90e2] hover:text-[#357abd] disabled:text-gray-400 disabled:cursor-not-allowed text-xs font-bold"
-                    title="남은 AP 전부 올리기"
-                  >
-                    ↑↑
-                  </button>
-                  <button
                     onClick={() => {
                       setDirectInputValues((prev) => ({ ...prev, luk: leftStat('luk') }));
                       setIsDirectInputMode((prev) => ({ ...prev, luk: true }));
@@ -827,26 +850,26 @@ export default function CharacterStatWindow({
                     +
                   </button>
                   <button
-                    onClick={(e) => handleStatChange('luk', 1, e.shiftKey)}
+                    onClick={(e) => {
+                      if (e.ctrlKey) handleAllRemainingToStat('luk');
+                      else handleStatChange('luk', 1, e.shiftKey);
+                    }}
                     disabled={availableAp <= 0}
                     className="text-[#4a90e2] hover:text-[#357abd] disabled:text-gray-400 disabled:cursor-not-allowed"
+                    title="ctrl+클릭: 남은 스탯 전부 배분, shift+클릭: 10개씩 스탯 배분"
                   >
                     ↑
                   </button>
                   <button
-                    onClick={(e) => handleStatChange('luk', -1, e.shiftKey)}
+                    onClick={(e) => {
+                      if (e.ctrlKey) handleClearStat('luk');
+                      else handleStatChange('luk', -1, e.shiftKey);
+                    }}
                     disabled={allocatedStats.luk <= 0}
                     className="text-[#4a90e2] hover:text-[#357abd] disabled:text-gray-400 disabled:cursor-not-allowed"
+                    title="ctrl+클릭: 해당 스탯 전부 제거, shift+클릭: 10개씩 제거"
                   >
                     ↓
-                  </button>
-                  <button
-                    onClick={() => handleClearStat('luk')}
-                    disabled={allocatedStats.luk <= 0}
-                    className="text-[#4a90e2] hover:text-[#357abd] disabled:text-gray-400 disabled:cursor-not-allowed text-xs font-bold"
-                    title="해당 스탯 전부 빼기 (기본만 남김)"
-                  >
-                    ↓↓
                   </button>
                 </>
               )}
