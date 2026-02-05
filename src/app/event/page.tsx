@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import EventPageClient from '@/components/EventPageClient';
+import EventPageClient from '@/domains/features/event/components/EventPageClient';
 
 export const metadata: Metadata = {
   title: '이벤트 알파벳 드롭 몬스터 | 레범몬',

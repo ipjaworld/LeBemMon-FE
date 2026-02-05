@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import EquipmentPageClient from '@/components/EquipmentPageClient';
+import EquipmentPageClient from '@/domains/features/equipment/components/EquipmentPageClient';
 
 export const metadata: Metadata = {
   title: '장비 시뮬레이터 | 레범몬',
