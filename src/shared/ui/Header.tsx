@@ -39,7 +39,7 @@ export default function Header() {
             })}
           </div>
           <div className="hidden md:block text-xs text-neutral-60">
-            제작: 가스실광분견(민재쿤)
+            제작: <a href="https://hetrich.com/" className="hover:underline">이건하</a> · <a href="https://github.com/ipjaworld/LeBemMon-FE" className="hover:underline">GitHub</a>
           </div>
         </nav>
       </div>

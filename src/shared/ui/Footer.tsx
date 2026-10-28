@@ -11,7 +11,7 @@ export default function Footer() {
               메이플스토리월드 메이플랜드 레벨 범위 몬스터 검색 서비스
             </p>
             <p className="mt-2 text-xs text-gray-500 md:hidden">
-              제작: 가스실광분견(민재쿤)
+              제작: <a href="https://hetrich.com/" className="hover:underline">이건하</a> · <a href="https://github.com/ipjaworld/LeBemMon-FE" className="hover:underline">GitHub</a>
             </p>
           </div>
           <div className="flex flex-col gap-1">
