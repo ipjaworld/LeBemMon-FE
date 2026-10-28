@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
-import MonsterSearch from '@/components/MonsterSearch';
-import { Monster } from '@/types/monster';
-import monsterData from '@/data/monster_data.json';
+import MonsterSearch from '@/domains/features/monster/components/MonsterSearch';
+import { Monster } from '@/domains/features/monster/types/monster';
+import monsterData from '@/domains/features/monster/data/monster_data.json';
 
 export const metadata: Metadata = {
   title: '메이플랜드 레범몬 | 레벨 범위 몬스터 간편 조회',
